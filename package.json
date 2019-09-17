@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gaston-webpage",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "he delightful service solution for restaurant hospitality.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Apptiva AG <info@apptiva.ch>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.15.15",
@@ -49,9 +49,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/ApptivaAG/gaston-webpage"
   }
 }
