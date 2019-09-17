@@ -91,7 +91,7 @@ const BlogPage = () => (
         the table wants to pay separately. This means that you have to wait at
         least an extra minute per person.
       </p>
-      <h3>Is this really that bad?</h3>
+      <h3>Is it really that bad?</h3>
       <p>
         I think these situations are at least not so bad that I don't want to
         visit a restaurant anymore. But if I could choose, I'd rather be in a
