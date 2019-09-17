@@ -101,11 +101,11 @@ const BlogPage = () => (
         situations can be made much more pleasant or even completely avoided. In
         a next post we want to show how this would be possible.
       </p>
-      <h3>What are your annoying situations? </h3>
+      <h3>What are annoying situations that you experience? </h3>
       <p>
-        Are you experiencing a similar situation? Or do you have other annoying
-        things to experience when you visit a restaurant? Then write your
-        situation to contact@gaston.ch.
+        Are you experience similar situation? Or do you have other annoying
+        situations when you visit a restaurant? Then write us at
+        info@apptiva.ch.
       </p>
     </Container>
   </Layout>
