@@ -57,7 +57,8 @@ const IndexPage = () => (
         >
           <h2>Gaston</h2>
           <p>
-            The delightful service solution <br />  for restaurant hospitality.
+            The delightful service solution <br />
+            for restaurant hospitality.
           </p>
         </div>
         <ul
