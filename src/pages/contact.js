@@ -10,7 +10,7 @@ const ContactPage = () => (
     <Container>
       <h2>Contact</h2>
       <h3>Email</h3>
-      <p>contact@gaston</p>
+      <p>info@apptiva.ch</p>
       <h3>Phone</h3>
       <p>+41 41 322 26 26</p>
       <h3>Address</h3>
