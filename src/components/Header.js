@@ -9,11 +9,11 @@ const HeaderStyle = styled.header`
 
   font-weight: bold;
   height: 3.6em;
-  padding: 0 0.8rem;
 
-  font-size: 0.9rem;
+  font-size: 1rem;
   @media (min-width: 600px) {
     font-size: 1.2rem;
+    padding: 0 0.8rem;
   }
 
   nav {
@@ -37,7 +37,7 @@ const HeaderStyle = styled.header`
   }
 `
 const H1 = styled.h1`
-  font-size: 0.9rem;
+  font-size: 1rem;
   @media (min-width: 600px) {
     font-size: 1.2rem;
   }
