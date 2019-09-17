@@ -11,6 +11,7 @@ const HeaderStyle = styled.header`
   height: 3.6em;
   padding: 0 0.8rem;
 
+  font-size: 0.9rem;
   @media (min-width: 600px) {
     font-size: 1.2rem;
   }
@@ -36,7 +37,7 @@ const HeaderStyle = styled.header`
   }
 `
 const H1 = styled.h1`
-  font-size: 1rem;
+  font-size: 0.9rem;
   @media (min-width: 600px) {
     font-size: 1.2rem;
   }
