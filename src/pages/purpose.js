@@ -11,7 +11,7 @@ const PurposePage = () => (
       <h2>Purpose</h2>
       <p>
         Our purpose is to make every restaurant visit a delightful and modern
-        experice for its guests.
+        experience for its guests.
       </p>
       <p>
         We support restaurants with the needs to serve customers in the digital
