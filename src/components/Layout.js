@@ -20,14 +20,14 @@ const Grid = styled.div`
     'Header'
     'Content'
     'Footer';
-  height: 100vh;
+  min-height: 100vh;
 `
 
-const Layout = ({ children }) => {
+const Layout = ({ children, dark }) => {
   return (
     <ThemeProvider theme={theme}>
       <Grid>
-        <Header />
+        <Header dark={dark} />
         <main>{children}</main>
         <Footer />
         <GlobalStyle />

@@ -4,6 +4,7 @@ const Button = styled.button`
   display: inline-block;
   font-size: 1em;
   padding: 0.6em 2em;
+  margin-bottom: 2em;
   border: 0.16em solid ${p => p.theme.primary};
   border-radius: 0.4em;
   font-weight: bold;
@@ -26,6 +27,10 @@ const Button = styled.button`
   @media (max-width: 380px) {
     width: 100%;
     text-align: center;
+  }
+
+  a {
+    text-decoration: none;
   }
 `
 export default Button

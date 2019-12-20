@@ -41,8 +41,15 @@ module.exports = {
         redirect: true,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-66015649-9',
+        anonymize: true,
+
+      },
+    },
+    'gatsby-plugin-netlify-cache',
+    `gatsby-plugin-preload-fonts`,
   ],
 }

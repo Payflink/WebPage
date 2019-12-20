@@ -46,5 +46,11 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
 `
 export default GlobalStyle

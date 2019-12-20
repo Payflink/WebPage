@@ -8,12 +8,26 @@
     "ordering": "Ordering",
     "service": "Service",
     "payment": "Payment",
-    "calltoaction": "Explore with us"
-  },
-  "purpose": {
-    "title": "Purpose",
-    "paragraph1": "Our purpose is to make every restaurant visit a delightful and modern experience for its guests.",
-    "paragraph2": "We support restaurants with the needs to serve customers in the digital age."
+    "calltoaction": "Start for free",
+    "menutag": "Digital Menu Card",
+    "USP": {
+      "1": "Your design",
+      "2": "Easy menu customization",
+      "3": "With or without tablet devices",
+      "4": "Included Webpage"
+    },
+    "design": {
+      "title": "Your design",
+      "content": "Your menu should not look like a foreign object in your restaurant. That's why Gaston can create completely customized designs if you don't like any of the standard designs. This goes far beyond simply changing colours and images."
+    },
+    "administration": {
+      "title": "Easy menu customization",
+      "content": "Managing the food & drinks on your menu has never been so convenient! With our intuitive web interface, every change can be made in no time at all."
+    },
+    "rental": {
+      "title": "Tablets included",
+      "content": "The procurement of suitable tablets can be quite expensive at the beginning. Moreover, it is difficult to guess how long the tablets will last before they break. We know our way around menu tablets and therefore offer you the possibility to rent them simply & without any risk from us. Broken tablets are exchanged free of charge. In case of a cancellation you simply return the tablets."
+    }
   },
   "contact": {
     "contact": "Contact",
@@ -22,15 +36,113 @@
     "address": "Address",
     "switzerland": "Switzerland"
   },
+  "pricing": {
+    "heading": "Pricing",
+    "subtitle": "Our prices depend on the number of tablets you use in your company.",
+    "plans": {
+      "trial": {
+        "name": "Solo",
+        "text": "Our Solo plan includes the license for one tablet. Ideal for tiny restaurants or to test Gaston Menu without time limit.",
+        "features": "Licenses included: 1",
+        "price": "free"
+      },
+      "pro": {
+        "name": "Pro",
+        "text": "Subscribe to the Pro Plan if you want to use up to 50 tablets in your company.",
+        "feature1": "Licenses included: 10",
+        "feature2": "Each additional license: CHF {licensePrice}",
+        "price": "CHF {proPlanPrice}",
+        "priceUnit": " per Month",
+        "howManyTablets": "How many tablets do you need?",
+        "totalPrice": "Pro Plan including {tabletCount} tablet licenses."
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "text": "Do you need more than 50 tablets? We will be happy to make you an offer tailored to your needs.",
+        "features": "Licenses included: unlimited",
+        "contact": "Contact us"
+      }
+    },
+    "order": "Order",
+    "continue": "Continue",
+    "rent": {
+      "title": "Tablet rental",
+      "description": "We do not leave you alone with the choice of your tablets. You can also rent the optimal models for Gaston Menu from us.",
+      "price": "CHF {rentPrice}",
+      "priceUnit": " per month and tablet",
+      "android": {
+        "title": "Android tablets for rent",
+        "description": "Our Android tablets offer you the best price-performance ratio. You rent the tablets from us.",
+        "minimalRental": "Minimum rental period: 1 year",
+        "continue": "Continue with Android-Tablets"
+      },
+      "iPad": {
+        "title": "Rent iPads",
+        "description": "Best quality is close to your heart? Then rent Apple iPads from us.",
+        "minimalRental": "Minimum rental period: 1 year",
+        "continue": "Continue with iPads"
+      },
+      "select": "Select",
+      "noTablets": "Continue without Tablets"
+    },
+    "design": {
+      "title": "Your design",
+      "description": "Your menu should not look like a foreign object in your restaurant. That's why Gaston can create completely customized designs if you don't like any of the standard designs. This goes far beyond simply changing colors and images.",
+      "price": "One-off from CHF 1'000.",
+      "useCustomDesign": "Use custom design",
+      "noCustomDesign": "Use standard design"
+    },
+    "back": "Back"
+  },
+  "enrol": {
+    "title": {
+      "pro": "Order Pro Plan",
+      "trial": "Order Solo Plan"
+    },
+    "description": {
+      "pro": "Thank you very much for your interest. Please complete the following details so that we can send you an offer.",
+      "trial": "Thank you for your interest in the Solo plan. Please complete the following details so that we can send you the Solo plan access."
+    },
+    "yourDetails": "Your details",
+    "plan": "Your plan",
+    "tabletCount": "Number of Tablets",
+    "rent": "Rent Tablets",
+    "rentTypes": {
+      "none": "None",
+      "android": "Android Tablets",
+      "ipad": "iPads"
+    },
+    "customDesign": "I'm interested in a custom design.",
+    "YourName": "Your name (required)",
+    "YourEMail": "Your email address (required)",
+    "YourRestaurant": "Your restaurant (required)",
+    "YourMessage": "Anything else you want to tell us?",
+    "submit": "Order",
+    "failure": "Oops, a mandatory field is not filled out yet.",
+    "thanks": "Thank you. We have received your message and will get back to you as soon as possible.",
+    "sorry": "Unfortunately this did not work. Sorry for the inconvenience. If you send us an email at info@apptiva.ch we will contact you immediately."
+  },
+  "thanks": {
+    "title": "Thank you",
+    "instructions": "Thank you for your order. We will contact you via eMail, so that you can start using Gaston as soon as possible."
+  },
   "blog": {
     "title": "The five most annoying things about eating in a restaurant",
     "lead": "Practically at every restaurant there are similar things that are annoying. In this post we want to explorer what does things are and why they are a problem.",
     "content": "<p> Eating in a restaurant is clearly a very nice thing. You don't have to cook, you are served and you don't have to tidy up. In addition, the food is usually very tasty. What is there to complain about?</p> <p> But if we pay attention, there are always situations which are not so great. Most of the time we don't lose any thoughts of it, simply because we've got used to it. Slowly but surely, we from <i>Gaston</i> are no more willing to accept this. With this blog post our search for ways to avoid these situations begins. </p> <h3>The five most annoying things</h3> <p> The following five things are, in our opinion, the biggest turn-offs at restaurant visits. </p> <h4>1. Wait for the waiter or waitress</h4> <p> After arriving at the restaurant, it is often necessary to wait for the waitress to see what is on the menu. If the restaurant is well filled and there are only a few waiters, it can take up to 10 minutes until the waitress takes care of you. In the worst case you will be overlooked and only served after you have intervened. These are extremely unpleasant situations for the guest but also for the staff. </p> <h4>2. Time pressure at the menu selection</h4> <p> Some take more and some less time to make a decision what to order. And even the same person can sometimes take longer or shorter to decide depending on the occasion, time of day and restaurant. As soon as you have made your decision, you want to be able to place your order right away. But if the waitress comes before you have made a decision, you are under pressure. However the waiter times it, it is often unpleasant for the guest. </p> <h4>3. Get the wrong dish</h4> <p> Finally, the food comes. But what's this? You got the wrong dish! This is again an unpleasant situation for the guest and the staff. Either you accept what you got, or you have to insist on your order wherever the mistake happened. </p> <h4>4. Call for the waiter or waitress</h4> <p> No matter if you want to order another Coke or pay for it, the waitress has to be called. Therefore, it is necessary to draw attention within the restaurant. No matter how you do it, it is not a pleasant thing. Even if one has received the attention of the waitress, one is gladly put off with \"I'll come immediately\". If you are lucky, you can place your request after a minute. In the worst case you are forgotten and must intervene after a while again. </p> <h4>5. Payment processing</h4> <p> After you've enjoyed a good meal, it's time to pay. Paying is always an unpleasant thing, regardless of the circumstances. But the way it is done in restaurants makes it especially more unpleasant. After you have successfully called the waitress and waited a few minutes, the waitress finally appears to process the payment. Often you just get a receipt and the waitress is gone again. It is now expected that the corresponding amount will be deposited. Then the waitress will return and collect the money. If you want to pay with a credit card, in some cases the waitress will first need to get the terminal. All in all, there can be up to four interactions before you can finally pay. It is even worse if everyone at the table wants to pay separately. This means that you have to wait at least an extra minute per person. </p> <h3>Is it really that bad?</h3> <p> I think these situations are at least not so bad that I don't want to visit a restaurant anymore. But if I could choose, I'd rather be in a restaurant where these situations don't occur. That means, if it is possible to prevent them, I would absolutely prefer such a restaurant. Could it even be better? I am of the clear opinion that all these situations can be made much more pleasant or even completely avoided. In a next post we want to show how this would be possible. </p> <h3>What are annoying situations that you experience? </h3> <p> Are you experience similar situation? Or do you have other annoying situations when you visit a restaurant? Then write us at info@apptiva.ch. </p>"
   },
+  "about": {
+    "content": "<p><b>Gaston</b> is a young software start-up that was founded with the vision to revolutionize the ordering and payment process in restaurants, cafés and bars. We entered the gastro market with our first product <b>Gaston Menu</b>, but are already <a href='/en/blog/'>full of ideas</a> how to make restaurant visits even more pleasant in the future.",
+    "software-developer": "Software developer",
+    "product-developer": "Product developer",
+    "consultant": "Consultant",
+    "trainee": "Trainee"
+  },
   "header": {
-    "purpose": "Purpose",
     "blog": "Blog",
-    "contact": "Contact"
+    "contact": "Contact",
+    "pricing": "Pricing",
+    "about": "About\u00a0us"
   },
   "footer": {
     "by": "An exploration by",
@@ -39,5 +151,9 @@
   "notfound": {
     "header": "NOT FOUND",
     "description": "You just hit a route that doesn't exist... the sadness."
+  },
+  "cookies": {
+    "disclaimer": "We use cookies to further improve user-friendliness. For this we use anonymous tracking via Google Analytics.",
+    "accept": "I Agreed"
   }
 }
