@@ -59,14 +59,7 @@ export default injectIntl(({ intl }) => {
             { tabletCount }
           )}
         </h3>
-        <PriceTag
-          css="padding: 0 0 3em;"
-          price={intl.formatMessage(
-            { id: 'pricing.plans.pro.price' },
-            { proPlanPrice: totalProPrice(tabletCount) }
-          )}
-          unit={intl.formatMessage({ id: 'pricing.plans.pro.priceUnit' })}
-        />
+        <PriceTag css="padding: 0 0 3em;" price={totalProPrice(tabletCount)} />
       </div>
       <BackNext>
         <Right>

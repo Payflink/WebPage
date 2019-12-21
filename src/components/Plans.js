@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { injectIntl, Link } from 'gatsby-plugin-intl'
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 
@@ -7,6 +7,7 @@ import styled from 'styled-components'
 import DefaultButton from '../styles/Button'
 import PriceTag, { Price } from './PriceTag'
 import { licensePrice, proPlanPrice } from './prices'
+import CurrencyContext from '../contexts/CurrencyContext'
 
 const PlanWrapper = styled.div`
   display: grid;
@@ -49,7 +50,7 @@ const PlanFeature = styled.p`
 const SelectPlanButton = ({ to, children }) => (
   <Link to={to}>
     <DefaultButton
-      onClick={e => {
+      onClick={() => {
         // Lets track that custom click
         trackCustomEvent({
           // string - required - The object that was interacted with (e.g.video)
@@ -69,57 +70,68 @@ const SelectPlanButton = ({ to, children }) => (
   </Link>
 )
 
-export default injectIntl(({ intl }) => (
-  <>
-    <h1>{intl.formatMessage({ id: 'pricing.heading' })}</h1>
-    <h2>Gaston Menu</h2>
-    <p>{intl.formatMessage({ id: 'pricing.subtitle' })}</p>
-    <PlanWrapper>
-      <Plan>
-        <h3>{intl.formatMessage({ id: `pricing.plans.trial.name` })}</h3>
-        <PlanText>
-          {intl.formatMessage({ id: `pricing.plans.trial.text` })}
-        </PlanText>
-        <PlanFeature>
-          {intl.formatMessage({ id: `pricing.plans.trial.features` })}
-        </PlanFeature>
-        <Price>{intl.formatMessage({ id: `pricing.plans.trial.price` })}</Price>
-        <SelectPlanButton to="/pricing?step=enrol&plan=trial">
-          {intl.formatMessage({ id: `pricing.order` })}
-        </SelectPlanButton>
-      </Plan>
-      <Plan>
-        <h3>{intl.formatMessage({ id: `pricing.plans.pro.name` })}</h3>
-        <PlanText>
-          {intl.formatMessage({ id: `pricing.plans.pro.text` })}
-        </PlanText>
-        <PlanFeature>
-          {intl.formatMessage({ id: 'pricing.plans.pro.feature1' })}
-          <br />
-          {intl.formatMessage(
-            {
-              id: 'pricing.plans.pro.feature2',
-            },
-            { licensePrice }
-          )}
-        </PlanFeature>
-        <PriceTag price={proPlanPrice} />
-        <SelectPlanButton to="/pricing?step=count&plan=pro">
-          {intl.formatMessage({ id: `pricing.order` })}
-        </SelectPlanButton>
-      </Plan>
-      <Plan>
-        <h3>{intl.formatMessage({ id: `pricing.plans.enterprise.name` })}</h3>
-        <PlanText>
-          {intl.formatMessage({ id: `pricing.plans.enterprise.text` })}
-        </PlanText>
-        <PlanFeature>
-          {intl.formatMessage({ id: `pricing.plans.enterprise.features` })}
-        </PlanFeature>
-        <SelectPlanButton to="/contact">
-          {intl.formatMessage({ id: `pricing.plans.enterprise.contact` })}
-        </SelectPlanButton>
-      </Plan>
-    </PlanWrapper>
-  </>
-))
+export default injectIntl(({ intl }) => {
+  const { currency } = useContext(CurrencyContext)
+  return (
+    <>
+      <h2>{intl.formatMessage({ id: 'pricing.plans.heading' })}</h2>
+      <p>{intl.formatMessage({ id: 'pricing.subtitle' })}</p>
+      <PlanWrapper>
+        <Plan>
+          <h3>{intl.formatMessage({ id: `pricing.plans.trial.name` })}</h3>
+          <PlanText>
+            {intl.formatMessage({ id: `pricing.plans.trial.text` })}
+          </PlanText>
+          <PlanFeature>
+            {intl.formatMessage({ id: `pricing.plans.trial.features` })}
+          </PlanFeature>
+          <Price>
+            {intl.formatMessage({ id: `pricing.plans.trial.price` })}
+          </Price>
+          <SelectPlanButton to="/pricing?step=enrol&plan=trial">
+            {intl.formatMessage({ id: `pricing.order` })}
+          </SelectPlanButton>
+        </Plan>
+        <Plan>
+          <h3>{intl.formatMessage({ id: `pricing.plans.pro.name` })}</h3>
+          <PlanText>
+            {intl.formatMessage({ id: `pricing.plans.pro.text` })}
+          </PlanText>
+          <PlanFeature>
+            {intl.formatMessage({ id: 'pricing.plans.pro.feature1' })}
+            <br />
+            {intl.formatMessage(
+              {
+                id: 'pricing.plans.pro.feature2',
+              },
+              {
+                licensePrice: intl.formatNumber(licensePrice, {
+                  style: 'currency',
+                  currency,
+                  maximumFractionDigits: 0,
+                  minimumFractionDigits: 0,
+                }),
+              }
+            )}
+          </PlanFeature>
+          <PriceTag price={proPlanPrice} />
+          <SelectPlanButton to="/pricing?step=count&plan=pro">
+            {intl.formatMessage({ id: `pricing.order` })}
+          </SelectPlanButton>
+        </Plan>
+        <Plan>
+          <h3>{intl.formatMessage({ id: `pricing.plans.enterprise.name` })}</h3>
+          <PlanText>
+            {intl.formatMessage({ id: `pricing.plans.enterprise.text` })}
+          </PlanText>
+          <PlanFeature>
+            {intl.formatMessage({ id: `pricing.plans.enterprise.features` })}
+          </PlanFeature>
+          <SelectPlanButton to="/contact">
+            {intl.formatMessage({ id: `pricing.plans.enterprise.contact` })}
+          </SelectPlanButton>
+        </Plan>
+      </PlanWrapper>
+    </>
+  )
+})

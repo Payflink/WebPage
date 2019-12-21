@@ -40,6 +40,7 @@
     "heading": "Preise",
     "subtitle": "Unsere Preise richten sich nach der Anzahl Tablets, die Sie in Ihrem Betrieb verwenden.",
     "plans": {
+      "heading": "Angebote",
       "trial": {
         "name": "Solo",
         "text": "Unser Solo-Plan beinhaltet die Lizenz für ein Tablet. Ideal für Kleinstgaststätten oder um Gaston Menu ohne zeitliche Begrenzung zu testen.",
@@ -50,8 +51,7 @@
         "name": "Pro",
         "text": "Abonnieren Sie den Pro-Plan, wenn Sie bis zu 50 Tablets in Ihrem Betrieb einsetzen möchten.",
         "feature1": "Lizenzen inbegriffen: 10",
-        "feature2": "Jede weitere Lizenz: CHF {licensePrice}.-",
-        "price": "CHF {proPlanPrice}.-",
+        "feature2": "Jede weitere Lizenz: {licensePrice}.-",
         "priceUnit": " / Mt.",
         "howManyTablets": "Wieviele Tablets benötigen Sie?",
         "totalPrice": "Pro-Plan inklusive {tabletCount} Tablet-Lizenzen"
@@ -68,7 +68,6 @@
     "rent": {
       "title": "Tablet Vermietung",
       "description": "Wir lassen Sie bei der Wahl Ihrer Tablets nicht alleine. Sie können die optimalen Modelle für Gaston Menu auch bei uns mieten.",
-      "price": "CHF {rentPrice}.-",
       "priceUnit": " / Mt. / Tablet",
       "android": {
         "title": "Android-Tablets mieten",
@@ -84,13 +83,6 @@
       },
       "select": "Auswählen",
       "noTablets": "Ich habe eigene Tablets"
-    },
-    "design": {
-      "title": "In Ihrem Design",
-      "description": "Ihre Speisekarte sollte in ihrem Restaurant auf keinen Fall wie ein Fremdkörper wirken. Deshalb können Sie bei Gaston komplett massgeschneiderte Designs entwerfen lassen, falls ihnen keines der Standard-Designs gefällt. Dies geht weit über das simple verändern von Farben und Bildern hinaus.",
-      "price": "Einmalig ab CHF 1'000.-",
-      "useCustomDesign": "Benutzerdefiniertes Design verwenden",
-      "noCustomDesign": "Standard Design verwenden"
     },
     "back": "Zurück"
   },
