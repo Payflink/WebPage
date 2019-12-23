@@ -139,7 +139,7 @@ export default injectIntl(({ location, intl }) => {
 
   return (
     <>
-      <h1>{intl.formatMessage({ id: `enrol.title.${params.plan}` })}</h1>
+      <h2>{intl.formatMessage({ id: `enrol.title.${params.plan}` })}</h2>
       <p>{intl.formatMessage({ id: `enrol.description.${params.plan}` })}</p>
       <form
         name="enrol"
@@ -178,16 +178,7 @@ export default injectIntl(({ location, intl }) => {
             </p>
 
             <PriceTag
-              price={intl.formatMessage(
-                { id: 'pricing.plans.pro.price' },
-                {
-                  proPlanPrice: totalProPrice(
-                    params.tablets,
-                    tabletPrice(params.rent)
-                  ),
-                }
-              )}
-              unit={intl.formatMessage({ id: 'pricing.plans.pro.priceUnit' })}
+              price={totalProPrice(params.tablets, tabletPrice(params.rent))}
             />
           </>
         )}

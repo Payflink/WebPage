@@ -1,15 +1,28 @@
-import React from 'react'
+/* eslint-disable react/style-prop-object */
+import React, { useContext } from 'react'
 import styled from 'styled-components'
-import { injectIntl } from 'gatsby-plugin-intl'
+import { FormattedNumber, FormattedMessage } from 'gatsby-plugin-intl'
 
-export default injectIntl(({ price, intl }) => (
-  <Price>
-    {price}
-    <PriceUnit>
-      {intl.formatMessage({ id: 'pricing.plans.pro.priceUnit' })}
-    </PriceUnit>
-  </Price>
-))
+import CurrencyContext from '../contexts/CurrencyContext'
+
+const PriceTag = ({ price }) => {
+  const { currency } = useContext(CurrencyContext)
+
+  return (
+    <Price>
+      <FormattedNumber
+        value={price}
+        style="currency"
+        currency={currency}
+        maximumFractionDigits={0}
+        minimumFractionDigits={0}
+      />
+      <PriceUnit>
+        <FormattedMessage id="pricing.plans.pro.priceUnit" />
+      </PriceUnit>
+    </Price>
+  )
+}
 export const Price = styled.div`
   color: ${p => p.theme.primary};
   font-size: 1.8em;
@@ -19,3 +32,4 @@ export const Price = styled.div`
 export const PriceUnit = styled.span`
   font-size: 50%;
 `
+export default PriceTag

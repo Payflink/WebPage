@@ -2,7 +2,6 @@ import React from 'react'
 import { injectIntl, Link } from 'gatsby-plugin-intl'
 import queryString from 'querystring'
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
-import { css } from 'styled-components'
 
 import '../styles/rc-slider.css'
 import tablet from '../images/tablet.svg'
@@ -66,13 +65,7 @@ export default injectIntl(({ intl, location }) => {
               id: 'pricing.rent.android.minimalRental',
             })}
           </p>
-          <PriceTag
-            price={intl.formatMessage(
-              { id: 'pricing.rent.price' },
-              { rentPrice: androidRentPrice }
-            )}
-            unit={intl.formatMessage({ id: 'pricing.rent.priceUnit' })}
-          />
+          <PriceTag price={androidRentPrice} />
           <Right>
             <Link
               to={makeLink('android')}
@@ -94,13 +87,7 @@ export default injectIntl(({ intl, location }) => {
               id: 'pricing.rent.iPad.minimalRental',
             })}
           </p>
-          <PriceTag
-            price={intl.formatMessage(
-              { id: 'pricing.rent.price' },
-              { rentPrice: iPadRentPrice }
-            )}
-            unit={intl.formatMessage({ id: 'pricing.rent.priceUnit' })}
-          />
+          <PriceTag price={iPadRentPrice} />
 
           <Right>
             <Link
