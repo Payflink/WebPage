@@ -1,7 +1,6 @@
 import React from 'react'
 import { injectIntl, Link } from 'gatsby-plugin-intl'
 import queryString from 'querystring'
-import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 
 import '../styles/rc-slider.css'
 import tablet from '../images/tablet.svg'
@@ -12,17 +11,12 @@ import Right from '../styles/Right'
 import BackNext from '../styles/BackNext'
 import Left from '../styles/Left'
 
-const trackEvent = tabletType => () => {
-  // Lets track that custom click
-  trackCustomEvent({
-    // string - required - The object that was interacted with (e.g.video)
-    category: 'Tablet choose',
-    // string - required - Type of interaction (e.g. 'play')
-    action: 'Click',
-    // number - optional - Numeric value associated with the event. (e.g. A product ID)
-    value: tabletType,
+const trackEvent = tabletType => () =>
+  typeof window !== 'undefined' &&
+  window.gtag('event', 'tablet_chosen', {
+    event_category: 'order',
+    event_label: tabletType,
   })
-}
 
 export default injectIntl(({ intl, location }) => {
   const params = queryString.parse(location.search.slice(1))

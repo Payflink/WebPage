@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Slider from 'rc-slider'
-import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 import { Link, injectIntl } from 'gatsby-plugin-intl'
 import PriceTag from './PriceTag'
 import Button from '../styles/Button'
@@ -9,6 +8,13 @@ import BackNext from '../styles/BackNext'
 import Right from '../styles/Right'
 import Left from '../styles/Left'
 
+const trackEvent = count => () =>
+  typeof window !== 'undefined' &&
+  window.gtag('event', 'amount_chosen', {
+    event_category: 'order',
+    value: count,
+  })
+
 export default injectIntl(({ intl }) => {
   const [tabletCount, setTabletCount] = useState(10)
 
@@ -16,11 +22,6 @@ export default injectIntl(({ intl }) => {
 
   const tabletCountChanged = count => {
     setTabletCount(count)
-    trackCustomEvent({
-      category: 'Tablet Amount',
-      action: 'Move slider',
-      value: count,
-    })
   }
   return (
     <>
@@ -63,7 +64,10 @@ export default injectIntl(({ intl }) => {
       </div>
       <BackNext>
         <Right>
-          <Link to={`/pricing?step=rent&plan=pro&tablets=${tabletCount}`}>
+          <Link
+            to={`/pricing?step=rent&plan=pro&tablets=${tabletCount}`}
+            onClick={trackEvent(tabletCount)}
+          >
             <Button>{intl.formatMessage({ id: 'pricing.continue' })}</Button>
           </Link>
         </Right>

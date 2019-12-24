@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import styled, { css } from 'styled-components'
 import queryString from 'querystring'
 import { injectIntl } from 'gatsby-plugin-intl'
-import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 import { navigate } from 'gatsby-plugin-intl/link'
 
 import DefaultButton from '../styles/Button'
@@ -72,17 +71,15 @@ const Checkbox = ({ ...props }) => (
   />
 )
 
-const trackEvent = value => {
-  // Lets track that custom click
-  trackCustomEvent({
-    // string - required - The object that was interacted with (e.g.video)
-    category: 'Submit form',
-    // string - required - Type of interaction (e.g. 'play')
-    action: 'Click',
-    // number - optional - Numeric value associated with the event. (e.g. A product ID)
-    value: JSON.stringify(value),
+const trackEvent = value =>
+  typeof window !== 'undefined' &&
+  window.gtag('event', 'conversion', {
+    send_to: 'AW-869564557/OZlVCMz0sLgBEI2B0p4D',
+    value,
+    event_category: 'order',
+    currency: 'CHF',
+    transaction_id: '',
   })
-}
 
 export default injectIntl(({ location, intl }) => {
   const params = queryString.parse(location.search.slice(1))
@@ -99,7 +96,9 @@ export default injectIntl(({ location, intl }) => {
       /* eslint-disable-next-line no-alert */
       alert(intl.formatMessage({ id: 'enrol.failure' }))
     } else if (formValues['bot-field'] === undefined) {
-      trackEvent(formValues)
+      trackEvent(
+        totalProPrice(formValues.tablets, tabletPrice(formValues.rent))
+      )
       const body = encode({
         'form-name': 'enrol',
         subject: 'Gaston Abo-Abschluss',

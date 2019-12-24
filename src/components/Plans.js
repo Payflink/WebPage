@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import { injectIntl, Link } from 'gatsby-plugin-intl'
-import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 
 import '../styles/rc-slider.css'
 import styled from 'styled-components'
@@ -50,17 +49,13 @@ const PlanFeature = styled.p`
 const SelectPlanButton = ({ to, children }) => (
   <Link to={to}>
     <DefaultButton
-      onClick={() => {
-        // Lets track that custom click
-        trackCustomEvent({
-          // string - required - The object that was interacted with (e.g.video)
-          category: 'Plan choose',
-          // string - required - Type of interaction (e.g. 'play')
-          action: 'Click',
-          // number - optional - Numeric value associated with the event. (e.g. A product ID)
-          value: to,
+      onClick={() =>
+        typeof window !== 'undefined' &&
+        window.gtag('event', 'plan_chosen', {
+          event_category: 'order',
+          event_label: to,
         })
-      }}
+      }
       css={`
         margin-bottom: 2em;
       `}
