@@ -16,7 +16,7 @@ const encode = data =>
     .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
     .join('&')
 
-const defaultState = params => ({
+const defaultState = (params, locale) => ({
   email: '',
   name: '',
   restaurant: '',
@@ -25,6 +25,7 @@ const defaultState = params => ({
   rent: params.rent,
   design: '',
   message: '',
+  locale,
 })
 
 const FormLabel = styled.label``
@@ -83,7 +84,9 @@ const trackEvent = value =>
 
 export default injectIntl(({ location, intl }) => {
   const params = queryString.parse(location.search.slice(1))
-  const [formValues, setFormValues] = useState(defaultState(params))
+  const [formValues, setFormValues] = useState(
+    defaultState(params, intl.locale)
+  )
   const makeLink = () =>
     `/pricing?${queryString.stringify({
       ...params,
@@ -155,6 +158,7 @@ export default injectIntl(({ location, intl }) => {
           <input type="text" name="plan" />
           <input type="text" name="rent" />
           <input type="text" name="tablets" />
+          <input type="text" name="locale" />
         </p>
 
         <p>
