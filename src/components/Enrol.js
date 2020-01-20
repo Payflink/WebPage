@@ -10,6 +10,7 @@ import { totalProPrice, tabletPrice } from './prices'
 import BackNext from '../styles/BackNext'
 import Right from '../styles/Right'
 import Left from '../styles/Left'
+import gtagEvent from '../lib/gtagEvent'
 
 const encode = data =>
   Object.keys(data)
@@ -73,8 +74,7 @@ const Checkbox = ({ ...props }) => (
 )
 
 const trackEvent = value =>
-  typeof window !== 'undefined' &&
-  window.gtag('event', 'conversion', {
+  gtagEvent('conversion', {
     send_to: 'AW-869564557/OZlVCMz0sLgBEI2B0p4D',
     value,
     event_category: 'order',

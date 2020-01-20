@@ -7,10 +7,10 @@ import { totalProPrice } from './prices'
 import BackNext from '../styles/BackNext'
 import Right from '../styles/Right'
 import Left from '../styles/Left'
+import gtagEvent from '../lib/gtagEvent'
 
 const trackEvent = count => () =>
-  typeof window !== 'undefined' &&
-  window.gtag('event', 'amount_chosen', {
+  gtagEvent('amount_chosen', {
     event_category: 'order',
     value: count,
   })

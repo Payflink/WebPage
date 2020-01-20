@@ -10,10 +10,10 @@ import { androidRentPrice, iPadRentPrice } from './prices'
 import Right from '../styles/Right'
 import BackNext from '../styles/BackNext'
 import Left from '../styles/Left'
+import gtagEvent from '../lib/gtagEvent'
 
 const trackEvent = tabletType => () =>
-  typeof window !== 'undefined' &&
-  window.gtag('event', 'tablet_chosen', {
+  gtagEvent('tablet_chosen', {
     event_category: 'order',
     event_label: tabletType,
   })
