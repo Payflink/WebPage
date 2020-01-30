@@ -11,7 +11,7 @@ const ContactPage = ({ intl }) => (
     <Container>
       <h2>{intl.formatMessage({ id: 'contact.contact' })}</h2>
       <h3>{intl.formatMessage({ id: 'contact.email' })}</h3>
-      <p>info@apptiva.ch</p>
+      <p>support@gastonsolution.com</p>
       <h3>{intl.formatMessage({ id: 'contact.phone' })}</h3>
       <p>+41 41 322 26 26</p>
       <h3>{intl.formatMessage({ id: 'contact.address' })}</h3>
