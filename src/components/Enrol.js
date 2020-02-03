@@ -21,6 +21,7 @@ const defaultState = (params, locale) => ({
   email: '',
   name: '',
   restaurant: '',
+  website: '',
   plan: params.plan,
   tablets: params.tablets,
   rent: params.rent,
@@ -215,6 +216,17 @@ export default injectIntl(({ location, intl }) => {
               type="restaurant"
               name="restaurant"
               value={formValues.restaurant}
+              onChange={handleTextChange}
+            />
+          </FormLabel>
+        </p>
+        <p>
+          <FormLabel htmlFor="website">
+            {intl.formatMessage({ id: 'enrol.YourWebsite' })}
+            <Input
+              type="website"
+              name="website"
+              value={formValues.website}
               onChange={handleTextChange}
             />
           </FormLabel>
