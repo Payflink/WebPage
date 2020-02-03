@@ -116,7 +116,7 @@
   },
   "thanks": {
     "title": "Herzlichen Dank",
-    "instructions": "Herzlichen Dank für Ihre Bestellung. Wir haben Ihnen eine Bestätigungs-eMail geschickt, bitte überprüfen Sie auch Ihren Spam-Ordner. Wir werden Sie wieder kontaktieren, sobald Ihr Gaston-Account bereit ist."
+    "instructions": "<p>Herzlichen Dank für Ihre Bestellung.</p>Wir haben Ihnen eine Bestätigungs-eMail geschickt, bitte überprüfen Sie auch Ihren Spam-Ordner.<br/>Wir werden Sie wieder kontaktieren, sobald Ihr Gaston-Account bereit ist."
   },
   "blog": {
     "title": "Die fünf nervigsten Dinge beim Essen in einem Restaurant",

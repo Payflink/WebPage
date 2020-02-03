@@ -1,10 +1,12 @@
 import React from 'react'
-import { injectIntl } from 'gatsby-plugin-intl'
+import { injectIntl, FormattedHTMLMessage } from 'gatsby-plugin-intl'
 
 const Thanks = ({ intl }) => (
   <>
     <h2>{intl.formatMessage({ id: 'thanks.title' })}</h2>
-    <p>{intl.formatMessage({ id: 'thanks.instructions' })}</p>
+    <p>
+      <FormattedHTMLMessage id="thanks.instructions" />
+    </p>
   </>
 )
 

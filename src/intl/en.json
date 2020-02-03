@@ -116,7 +116,7 @@
   },
   "thanks": {
     "title": "Thank you",
-    "instructions": "Thank you for your order. We sent you a confirmation eMail, please also check your spam folder. We will contact you again as soon as your Gaston account is ready."
+    "instructions": "<p>Thank you for your order.</p>We sent you a confirmation eMail, please also check your spam folder.<br/>We will contact you again as soon as your Gaston account is ready."
   },
   "blog": {
     "title": "The five most annoying things about eating in a restaurant",
