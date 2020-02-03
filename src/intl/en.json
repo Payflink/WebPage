@@ -108,6 +108,7 @@
     "YourName": "Your name (required)",
     "YourEMail": "Your email address (required)",
     "YourRestaurant": "Your restaurant (required)",
+    "YourWebsite": "Website of your restaurant",
     "YourMessage": "Anything else you want to tell us?",
     "submit": "Order",
     "failure": "Oops, a mandatory field is not filled out yet.",
