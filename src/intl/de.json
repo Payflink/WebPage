@@ -108,6 +108,7 @@
     "YourName": "Ihr Name (Pflichtfeld)",
     "YourEMail": "Ihre Email-Adresse (Pflichtfeld)",
     "YourRestaurant": "Ihr Restaurant (Pflichtfeld)",
+    "YourWebsite": "Website Ihres Restaurants",
     "YourMessage": "Möchten Sie uns noch etwas sagen?",
     "submit": "Bestellen",
     "failure": "Ups, ein zwingendes Feld ist noch nicht ausgefüllt.",
