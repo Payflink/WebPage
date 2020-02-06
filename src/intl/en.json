@@ -53,7 +53,7 @@
         "feature1": "Licenses included: 10",
         "feature2": "Each additional license: {licensePrice}",
         "priceUnit": " per Month",
-        "howManyTablets": "How many tablets do you need?",
+        "howManyTablets": "How many tablet licenses do you need?",
         "totalPrice": "Pro Plan including {tabletCount} tablet licenses."
       },
       "enterprise": {

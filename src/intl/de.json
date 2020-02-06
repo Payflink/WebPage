@@ -53,7 +53,7 @@
         "feature1": "Lizenzen inbegriffen: 10",
         "feature2": "Jede weitere Lizenz: {licensePrice}",
         "priceUnit": " / Mt.",
-        "howManyTablets": "Wieviele Tablets benötigen Sie?",
+        "howManyTablets": "Wieviele Tablet-Lizenzen benötigen Sie?",
         "totalPrice": "Pro-Plan inklusive {tabletCount} Tablet-Lizenzen"
       },
       "enterprise": {
