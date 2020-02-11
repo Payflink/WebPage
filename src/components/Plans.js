@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { injectIntl, Link } from 'gatsby-plugin-intl'
 
 import '../styles/rc-slider.css'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import DefaultButton from '../styles/Button'
 import PriceTag, { Price } from './PriceTag'
 import { licensePrice, proPlanPrice } from './prices'
@@ -19,22 +19,42 @@ const PlanWrapper = styled.div`
 `
 
 const Plan = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   padding: 1em;
-  border-width: 1px;
+  border-width: ${p => (p.recommended ? '3px' : '1px')};
   border-style: solid;
   border-radius: 5px;
   border-color: ${p => p.theme.primary};
 
   h3 {
     font-size: 2em;
+    margin-bottom: 0;
   }
+
+  ${p =>
+    p.recommended &&
+    css`
+      margin: -2px;
+      &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        content: attr(data-rec);
+        color: white;
+        padding: 0.2em;
+        background-color: ${p.theme.primary};
+        text-align: center;
+      }
+    `};
 `
 
 const PlanText = styled.p`
+  text-align: center;
   @media (min-width: 800px) {
     height: 7em;
   }
@@ -42,6 +62,7 @@ const PlanText = styled.p`
 
 const PlanFeature = styled.p`
   flex: 1;
+  font-weight: bold;
   @media (min-width: 800px) {
     height: 3em;
   }
@@ -87,7 +108,10 @@ export default injectIntl(({ intl }) => {
             {intl.formatMessage({ id: `pricing.order` })}
           </SelectPlanButton>
         </Plan>
-        <Plan>
+        <Plan
+          recommended
+          data-rec={intl.formatMessage({ id: 'pricing.plans.recommended' })}
+        >
           <h3>{intl.formatMessage({ id: `pricing.plans.pro.name` })}</h3>
           <PlanText>
             {intl.formatMessage({ id: `pricing.plans.pro.text` })}
