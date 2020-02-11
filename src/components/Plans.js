@@ -25,7 +25,7 @@ const Plan = styled.div`
   align-items: center;
   justify-content: flex-start;
   padding: 1em;
-  border-width: ${p => (p.recommended ? '3px' : '1px')};
+  border-width: ${p => (p['data-recommended'] ? '3px' : '1px')};
   border-style: solid;
   border-radius: 5px;
   border-color: ${p => p.theme.primary};
@@ -36,7 +36,7 @@ const Plan = styled.div`
   }
 
   ${p =>
-    p.recommended &&
+    p['data-recommended'] &&
     css`
       margin: -2px;
       &:after {
@@ -44,7 +44,7 @@ const Plan = styled.div`
         top: 0;
         left: 0;
         width: 100%;
-        content: attr(data-rec);
+        content: attr(data-recommended);
         color: white;
         padding: 0.2em;
         background-color: ${p.theme.primary};
@@ -109,8 +109,9 @@ export default injectIntl(({ intl }) => {
           </SelectPlanButton>
         </Plan>
         <Plan
-          recommended
-          data-rec={intl.formatMessage({ id: 'pricing.plans.recommended' })}
+          data-recommended={intl.formatMessage({
+            id: 'pricing.plans.recommended',
+          })}
         >
           <h3>{intl.formatMessage({ id: `pricing.plans.pro.name` })}</h3>
           <PlanText>
