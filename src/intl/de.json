@@ -40,10 +40,11 @@
     "heading": "Preise",
     "subtitle": "Unsere Preise richten sich nach der Anzahl Tablets, die Sie in Ihrem Betrieb verwenden.",
     "plans": {
+      "recommended": "Empfohlen",
       "heading": "Angebote",
       "trial": {
         "name": "Solo",
-        "text": "Unser Solo-Plan beinhaltet die Lizenz für ein Tablet. Ideal für Kleinstgaststätten oder um Gaston Menu ohne zeitliche Begrenzung zu testen.",
+        "text": "Unser Solo-Plan beinhaltet die Lizenz für ein Tablet. Ideal für Kleinstgaststätten oder um Gaston ohne zeitliche Begrenzung zu testen.",
         "features": "Lizenzen inbegriffen: 1",
         "price": "Kostenlos"
       },
