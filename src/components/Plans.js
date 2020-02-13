@@ -69,14 +69,16 @@ const PlanFeature = styled.p`
 `
 
 const SelectPlanButton = ({ to, children }) => (
-  <Link to={to}>
+  <Link
+    to={to}
+    onClick={() =>
+      gtagEvent('plan_chosen', {
+        event_category: 'order',
+        event_label: to,
+      })
+    }
+  >
     <DefaultButton
-      onClick={() =>
-        gtagEvent('plan_chosen', {
-          event_category: 'order',
-          event_label: to,
-        })
-      }
       css={`
         margin-bottom: 2em;
       `}
