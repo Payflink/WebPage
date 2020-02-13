@@ -42,7 +42,7 @@
     "plans": {
       "heading": "Angebote",
       "recommended": "Empfohlen",
-      "trial": {
+      "solo": {
         "name": "Solo",
         "text": "Unser Solo-Plan beinhaltet die Lizenz für ein Tablet. Ideal für Kleinstgaststätten oder um Gaston ohne zeitliche Begrenzung zu testen.",
         "features": "Lizenzen inbegriffen: 1",
@@ -90,11 +90,11 @@
   "enrol": {
     "title": {
       "pro": "Pro-Plan bestellen",
-      "trial": "Solo-Plan bestellen"
+      "solo": "Solo-Plan bestellen"
     },
     "description": {
       "pro": "Vielen Dank für Ihr Interesse. Bitte ergänzen Sie die folgenden Angaben, damit wir Ihnen eine Offerte zustellen können.",
-      "trial": "Vielen Dank für Ihr Interesse am Solo-Plan. Bitte ergänzen Sie die folgenden Angaben, damit wir Ihnen einen Solo-Plan-Zugang zusenden können."
+      "solo": "Vielen Dank für Ihr Interesse am Solo-Plan. Bitte ergänzen Sie die folgenden Angaben, damit wir Ihnen einen Solo-Plan-Zugang zusenden können."
     },
     "yourDetails": "Ihre Angaben",
     "plan": "Ihr Plan",

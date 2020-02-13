@@ -65,7 +65,7 @@ export default injectIntl(({ intl }) => {
       <BackNext>
         <Right>
           <Link
-            to={`/pricing?step=rent&plan=pro&tablets=${tabletCount}`}
+            to={`/pricing/pro/rent/${tabletCount}`}
             onClick={trackEvent(tabletCount)}
           >
             <Button>{intl.formatMessage({ id: 'pricing.continue' })}</Button>

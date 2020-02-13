@@ -42,7 +42,7 @@
     "plans": {
       "heading": "Plans",
       "recommended": "Recommended",
-      "trial": {
+      "solo": {
         "name": "Solo",
         "text": "Our Solo plan includes the license for one tablet. Ideal for tiny restaurants or to test Gaston without time limit.",
         "features": "Licenses included: 1",
@@ -90,11 +90,11 @@
   "enrol": {
     "title": {
       "pro": "Order Pro Plan",
-      "trial": "Order Solo Plan"
+      "solo": "Order Solo Plan"
     },
     "description": {
       "pro": "Thank you very much for your interest. Please complete the following details so that we can send you an offer.",
-      "trial": "Thank you for your interest in the Solo plan. Please complete the following details so that we can send you the Solo plan access."
+      "solo": "Thank you for your interest in the Solo plan. Please complete the following details so that we can send you the Solo plan access."
     },
     "yourDetails": "Your details",
     "plan": "Your plan",

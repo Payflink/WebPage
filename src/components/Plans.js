@@ -94,17 +94,17 @@ export default injectIntl(({ intl }) => {
       <p>{intl.formatMessage({ id: 'pricing.subtitle' })}</p>
       <PlanWrapper>
         <Plan>
-          <h3>{intl.formatMessage({ id: `pricing.plans.trial.name` })}</h3>
+          <h3>{intl.formatMessage({ id: `pricing.plans.solo.name` })}</h3>
           <PlanText>
-            {intl.formatMessage({ id: `pricing.plans.trial.text` })}
+            {intl.formatMessage({ id: `pricing.plans.solo.text` })}
           </PlanText>
           <PlanFeature>
-            {intl.formatMessage({ id: `pricing.plans.trial.features` })}
+            {intl.formatMessage({ id: `pricing.plans.solo.features` })}
           </PlanFeature>
           <Price>
-            {intl.formatMessage({ id: `pricing.plans.trial.price` })}
+            {intl.formatMessage({ id: `pricing.plans.solo.price` })}
           </Price>
-          <SelectPlanButton to="/pricing?step=enrol&plan=trial">
+          <SelectPlanButton to="/pricing/solo/enrol">
             {intl.formatMessage({ id: `pricing.order` })}
           </SelectPlanButton>
         </Plan>
@@ -135,7 +135,7 @@ export default injectIntl(({ intl }) => {
             )}
           </PlanFeature>
           <PriceTag price={proPlanPrice} />
-          <SelectPlanButton to="/pricing?step=count&plan=pro">
+          <SelectPlanButton to="/pricing/pro/tabletcount">
             {intl.formatMessage({ id: `pricing.order` })}
           </SelectPlanButton>
         </Plan>
