@@ -56,9 +56,9 @@
         "name": "Pro",
         "text": "Abonnieren Sie den Pro-Plan, wenn Sie bis zu 50 Tablets in Ihrem Betrieb einsetzen möchten.",
         "feature1": "Lizenzen inbegriffen: 10",
-        "feature2": "Jede weitere Lizenz: {licensePrice}",
-        "feature3": "Publizieren auf Webseite",
-        "feature4": "Ansicht für Handys der Gäste",
+        "feature1-note": "Jede weitere Lizenz: {licensePrice}",
+        "feature2": "Publizieren auf Webseite",
+        "feature2-note": "Auch für Handys optimiert",
         "priceUnit": " / Mt.",
         "howManyTablets": "Wieviele Tablet-Lizenzen benötigen Sie?",
         "totalPrice": "Pro-Plan inklusive {tabletCount} Tablet-Lizenzen"
@@ -66,7 +66,10 @@
       "enterprise": {
         "name": "Enterprise",
         "text": "Benötigen Sie mehr als 50 Tablets? Wir machen Ihnen gerne ein auf Sie zugeschnittenes Angebot.",
-        "features": "Lizenzen inbegriffen: unbegrenzt",
+        "feature1": "Unbegrenzte Anzahl Lizenzen",
+        "feature2": "Publizieren auf Webseite",
+        "feature2-note": "Auch für Handys optimiert",
+        "price": "Auf Anfrage",
         "contact": "Kontaktieren Sie uns"
       }
     },
