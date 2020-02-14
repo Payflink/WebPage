@@ -9,13 +9,6 @@ import { androidRentPrice, iPadRentPrice } from './prices'
 import Right from '../styles/Right'
 import BackNext from '../styles/BackNext'
 import Left from '../styles/Left'
-import gtagEvent from '../lib/gtagEvent'
-
-const trackEvent = tabletType => () =>
-  gtagEvent('tablet_chosen', {
-    event_category: 'order',
-    event_label: tabletType,
-  })
 
 export default injectIntl(({ intl, tablets }) => {
   return (
@@ -60,7 +53,6 @@ export default injectIntl(({ intl, tablets }) => {
             <Link
               to={`/pricing/pro/enrol/${tablets}/android`}
               activeClassName="active"
-              onClick={trackEvent('android')}
             >
               <Button>
                 {intl.formatMessage({
@@ -83,7 +75,6 @@ export default injectIntl(({ intl, tablets }) => {
             <Link
               to={`/pricing/pro/enrol/${tablets}/ipad`}
               activeClassName="active"
-              onClick={trackEvent('ipad')}
             >
               <Button>
                 {intl.formatMessage({
@@ -96,10 +87,7 @@ export default injectIntl(({ intl, tablets }) => {
       </div>
       <BackNext>
         <Right>
-          <Link
-            to={`/pricing/pro/enrol/${tablets}/none`}
-            onClick={trackEvent('none')}
-          >
+          <Link to={`/pricing/pro/enrol/${tablets}/none`}>
             <Button>
               {intl.formatMessage({ id: 'pricing.rent.noTablets' })}
             </Button>

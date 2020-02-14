@@ -7,7 +7,6 @@ import DefaultButton from '../styles/Button'
 import PriceTag, { Price } from './PriceTag'
 import { licensePrice, proPlanPrice } from './prices'
 import CurrencyContext from '../contexts/CurrencyContext'
-import gtagEvent from '../lib/gtagEvent'
 
 const PlanWrapper = styled.div`
   display: grid;
@@ -71,12 +70,6 @@ const PlanFeature = styled.p`
 const SelectPlanButton = ({ to, children }) => (
   <Link to={to}>
     <DefaultButton
-      onClick={() =>
-        gtagEvent('plan_chosen', {
-          event_category: 'order',
-          event_label: to,
-        })
-      }
       css={`
         margin-bottom: 2em;
       `}
