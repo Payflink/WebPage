@@ -14,6 +14,7 @@ import ipad from '../images/ipad.png'
 import brush from '../images/paint-board-and-brush.svg'
 import menu from '../images/menu.svg'
 import tablet from '../images/tablet.svg'
+import desktopAndMobile from '../images/desktop-and-mobile.svg'
 
 const Hero = ({ children }) => {
   const Wrapper = styled.section`
@@ -246,6 +247,14 @@ const IndexPage = ({ intl }) => {
             title={intl.formatMessage({ id: 'index.rental.title' })}
           >
             {intl.formatMessage({ id: 'index.rental.content' })}
+          </ImageTextSection>
+        </Container>
+        <Container>
+          <ImageTextSection
+            image={desktopAndMobile}
+            title={intl.formatMessage({ id: 'index.desktop-mobile.title' })}
+          >
+            {intl.formatMessage({ id: 'index.desktop-mobile.content' })}
           </ImageTextSection>
         </Container>
         <Container

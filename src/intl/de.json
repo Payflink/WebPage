@@ -27,6 +27,10 @@
     "rental": {
       "title": "Inklusive Tablets",
       "content": "Die Beschaffung von geeigneten Tablets kann zu Beginn ganz schön ins Geld gehen. Noch dazu ist es schwierig zu erahnen wie lange die Tablets halten werden bevor sie kaputt gehen. Wir kennen uns mit Speisekarten-Tablets aus und bieten ihnen deshalb die Möglichkeit diese einfach & ohne Risiko von uns zu Mieten. Kaputte Tablets werden kostenlos ausgetauscht. Bei einer Kündigung geben sie die Tablets einfach zurück."
+    },
+    "desktop-mobile": {
+      "title": "Automatisch auf Ihrer Webseite",
+      "content": "Sparen Sie sich die Zeit, Ihr Menü auf Ihrer Weibseite zu publizieren. Mit Gaston ist es möglich, das Menü automatisch auf Ihre Webseite einzubinden. So sind Ihre Gäste auch in der Lage, das Menü auf Ihren eigenen Geräten in Ruhe zu studieren."
     }
   },
   "contact": {
@@ -53,6 +57,8 @@
         "text": "Abonnieren Sie den Pro-Plan, wenn Sie bis zu 50 Tablets in Ihrem Betrieb einsetzen möchten.",
         "feature1": "Lizenzen inbegriffen: 10",
         "feature2": "Jede weitere Lizenz: {licensePrice}",
+        "feature3": "Publizieren auf Webseite",
+        "feature4": "Ansicht für Handys der Gäste",
         "priceUnit": " / Mt.",
         "howManyTablets": "Wieviele Tablet-Lizenzen benötigen Sie?",
         "totalPrice": "Pro-Plan inklusive {tabletCount} Tablet-Lizenzen"

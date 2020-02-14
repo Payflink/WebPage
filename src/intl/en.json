@@ -27,6 +27,10 @@
     "rental": {
       "title": "Tablets included",
       "content": "The procurement of suitable tablets can be quite expensive at the beginning. Moreover, it is difficult to guess how long the tablets will last before they break. We know our way around menu tablets and therefore offer you the possibility to rent them simply & without any risk from us. Broken tablets are exchanged free of charge. In case of a cancellation you simply return the tablets."
+    },
+    "desktop-mobile": {
+      "title": "Instantly on your website",
+      "content": "Save yourself the time to publish your menu on your website. With Gaston it is possible to integrate the menu automatically into your website. So your guests are also able to study the menu on their own devices in peace."
     }
   },
   "contact": {
@@ -53,6 +57,8 @@
         "text": "Subscribe to the Pro Plan if you want to use up to 50 tablets in your company.",
         "feature1": "Licenses included: 10",
         "feature2": "Each additional license: {licensePrice}",
+        "feature3": "Publishing on website",
+        "feature4": "View for guest mobile phones",
         "priceUnit": " per Month",
         "howManyTablets": "How many tablet licenses do you need?",
         "totalPrice": "Pro Plan including {tabletCount} tablet licenses."

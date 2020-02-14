@@ -126,6 +126,10 @@ export default injectIntl(({ intl }) => {
                 }),
               }
             )}
+            <br />
+            {intl.formatMessage({ id: 'pricing.plans.pro.feature3' })}
+            <br />
+            {intl.formatMessage({ id: 'pricing.plans.pro.feature4' })}
           </PlanFeature>
           <PriceTag price={proPlanPrice} />
           <SelectPlanButton to="/pricing/pro/tabletcount">
