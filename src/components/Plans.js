@@ -59,12 +59,18 @@ const PlanText = styled.p`
   }
 `
 
-const PlanFeature = styled.p`
+const PlanFeature = styled.div`
   flex: 1;
   font-weight: bold;
+  margin-bottom: 1.2em;
   @media (min-width: 800px) {
     height: 3em;
   }
+`
+
+const FeatureNote = styled.span`
+  font-weight: normal;
+  font-size: 0.8em;
 `
 
 const SelectPlanButton = ({ to, children }) => (
@@ -113,22 +119,26 @@ export default injectIntl(({ intl }) => {
           <PlanFeature>
             {intl.formatMessage({ id: 'pricing.plans.pro.feature1' })}
             <br />
-            {intl.formatMessage(
-              {
-                id: 'pricing.plans.pro.feature2',
-              },
-              {
-                licensePrice: intl.formatNumber(licensePrice, {
-                  style: 'currency',
-                  currency,
-                  maximumFractionDigits: 0,
-                  minimumFractionDigits: 0,
-                }),
-              }
-            )}
-            <br />
+            <FeatureNote>
+              {intl.formatMessage(
+                {
+                  id: 'pricing.plans.pro.feature2',
+                },
+                {
+                  licensePrice: intl.formatNumber(licensePrice, {
+                    style: 'currency',
+                    currency,
+                    maximumFractionDigits: 0,
+                    minimumFractionDigits: 0,
+                  }),
+                }
+              )}
+            </FeatureNote>
+          </PlanFeature>
+          <PlanFeature>
             {intl.formatMessage({ id: 'pricing.plans.pro.feature3' })}
-            <br />
+          </PlanFeature>
+          <PlanFeature>
             {intl.formatMessage({ id: 'pricing.plans.pro.feature4' })}
           </PlanFeature>
           <PriceTag price={proPlanPrice} />
