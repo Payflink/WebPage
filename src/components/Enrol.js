@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components'
 import queryString from 'querystring'
 import { injectIntl } from 'gatsby-plugin-intl'
 import { navigate } from 'gatsby-plugin-intl/link'
+import fetch from 'unfetch'
 
 import DefaultButton from '../styles/Button'
 import PriceTag from './PriceTag'
