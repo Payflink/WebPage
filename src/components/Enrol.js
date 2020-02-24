@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import styled, { css } from 'styled-components'
-import queryString from 'querystring'
 import { injectIntl } from 'gatsby-plugin-intl'
 import { navigate } from 'gatsby-plugin-intl/link'
 import fetch from 'unfetch'
@@ -18,14 +17,14 @@ const encode = data =>
     .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
     .join('&')
 
-const defaultState = (params, locale) => ({
+const defaultState = (plan, tablets, rent, locale) => ({
   email: '',
   name: '',
   restaurant: '',
   website: '',
-  plan: params.plan,
-  tablets: params.tablets,
-  rent: params.rent,
+  plan,
+  tablets,
+  rent,
   design: '',
   message: '',
   locale,
@@ -84,196 +83,190 @@ const trackEvent = value =>
     transaction_id: '',
   })
 
-export default injectIntl(({ location, intl }) => {
-  const params = queryString.parse(location.search.slice(1))
-  const [formValues, setFormValues] = useState(
-    defaultState(params, intl.locale)
-  )
-  const makeLink = () =>
-    `/pricing?${queryString.stringify({
-      ...params,
-      step: 'thanks',
-    })}`
+export default injectIntl(
+  ({ plan, tablets = undefined, rent = undefined, intl }) => {
+    const [formValues, setFormValues] = useState(
+      defaultState(plan, tablets, rent, intl.locale)
+    )
 
-  const handleSubmit = e => {
-    const { email, name, restaurant } = formValues
-    if (email === '' || name === '' || restaurant === '') {
-      /* eslint-disable-next-line no-alert */
-      alert(intl.formatMessage({ id: 'enrol.failure' }))
-    } else if (formValues['bot-field'] === undefined) {
-      trackEvent(
-        totalProPrice(formValues.tablets, tabletPrice(formValues.rent))
-      )
-      const body = encode({
-        'form-name': 'enrol',
-        subject: 'Gaston Abo-Abschluss',
-        ...formValues,
-      })
-      fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body,
-      })
-        .then(response => {
-          /* eslint-disable-next-line no-alert */
-          if (response.status === 200) {
-            setFormValues(defaultState(params))
-            navigate(makeLink())
-          } else {
-            throw new Error('Not 200 response')
-          }
+    const handleSubmit = e => {
+      const { email, name, restaurant } = formValues
+      if (email === '' || name === '' || restaurant === '') {
+        /* eslint-disable-next-line no-alert */
+        alert(intl.formatMessage({ id: 'enrol.failure' }))
+      } else if (formValues['bot-field'] === undefined) {
+        trackEvent(
+          totalProPrice(formValues.tablets, tabletPrice(formValues.rent))
+        )
+        const body = encode({
+          'form-name': 'enrol',
+          subject: 'Gaston Abo-Abschluss',
+          ...formValues,
         })
-        .catch(error => {
-          /* eslint-disable-next-line no-console */
-          console.log('Error', error)
-          /* eslint-disable-next-line no-alert */
-          alert(intl.formatMessage({ id: 'enrol.sorry' }))
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body,
         })
+          .then(response => {
+            /* eslint-disable-next-line no-alert */
+            if (response.status === 200) {
+              setFormValues(defaultState(plan, tablets, rent))
+              navigate('/pricing/thanks/')
+            } else {
+              throw new Error('Not 200 response')
+            }
+          })
+          .catch(error => {
+            /* eslint-disable-next-line no-console */
+            console.log('Error', error)
+            /* eslint-disable-next-line no-alert */
+            alert(intl.formatMessage({ id: 'enrol.sorry' }))
+          })
+      }
+      e.preventDefault()
     }
-    e.preventDefault()
-  }
 
-  const handleTextChange = e => {
-    setFormValues({ ...formValues, [e.target.name]: e.target.value })
-  }
+    const handleTextChange = e => {
+      setFormValues({ ...formValues, [e.target.name]: e.target.value })
+    }
 
-  const handleCheckboxChange = e => {
-    setFormValues({ ...formValues, [e.target.name]: e.target.checked })
-  }
+    const handleCheckboxChange = e => {
+      setFormValues({ ...formValues, [e.target.name]: e.target.checked })
+    }
 
-  return (
-    <>
-      <h2>{intl.formatMessage({ id: `enrol.title.${params.plan}` })}</h2>
-      <p>{intl.formatMessage({ id: `enrol.description.${params.plan}` })}</p>
-      <form
-        name="enrol"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-        onSubmit={handleSubmit}
-      >
-        <p hidden>
-          <label htmlFor="bot-field">
-            Nicht ausfüllen:{' '}
-            <input type="text" name="bot-field" onChange={handleTextChange} />
-          </label>
-          <input type="text" name="subject" />
-          <input type="text" name="plan" />
-          <input type="text" name="rent" />
-          <input type="text" name="tablets" />
-          <input type="text" name="locale" />
-        </p>
-
-        <p>
-          {intl.formatMessage({ id: 'enrol.plan' })}:{' '}
-          <strong>
-            {intl.formatMessage({ id: `pricing.plans.${params.plan}.name` })}
-          </strong>
-        </p>
-        {params.plan === 'pro' && (
-          <>
-            <p>
-              {intl.formatMessage({ id: 'enrol.tabletCount' })}:{' '}
-              <strong>{params.tablets}</strong>
-            </p>
-            <p>
-              {intl.formatMessage({ id: 'enrol.rent' })}:{' '}
-              <strong>
-                {intl.formatMessage({ id: `enrol.rentTypes.${params.rent}` })}
-              </strong>
-            </p>
-
-            <PriceTag
-              price={totalProPrice(params.tablets, tabletPrice(params.rent))}
-            />
-          </>
-        )}
-        <h2>{intl.formatMessage({ id: 'enrol.yourDetails' })}</h2>
-        <p>
-          <FormLabel htmlFor="name">
-            {intl.formatMessage({ id: 'enrol.YourName' })}
-            <Input
-              type="text"
-              name="name"
-              value={formValues.name}
-              onChange={handleTextChange}
-            />
-          </FormLabel>
-        </p>
-        <p>
-          <FormLabel htmlFor="email">
-            {intl.formatMessage({ id: 'enrol.YourEMail' })}
-            <Input
-              type="email"
-              name="email"
-              value={formValues.email}
-              onChange={handleTextChange}
-            />
-          </FormLabel>
-        </p>
-        <p>
-          <FormLabel htmlFor="restaurant">
-            {intl.formatMessage({ id: 'enrol.YourRestaurant' })}
-            <Input
-              type="restaurant"
-              name="restaurant"
-              value={formValues.restaurant}
-              onChange={handleTextChange}
-            />
-          </FormLabel>
-        </p>
-        <p>
-          <FormLabel htmlFor="website">
-            {intl.formatMessage({ id: 'enrol.YourWebsite' })}
-            <Input
-              type="website"
-              name="website"
-              value={formValues.website}
-              onChange={handleTextChange}
-            />
-          </FormLabel>
-        </p>
-        <p>
-          <FormLabel htmlFor="message">
-            {intl.formatMessage({ id: 'enrol.YourMessage' })}
-            <Textarea
-              name="message"
-              value={formValues.message}
-              onChange={handleTextChange}
-            />
-          </FormLabel>
-        </p>
-        <p
-          css={`
-            margin: 2.5em 0 4em;
-          `}
+    return (
+      <>
+        <h2>{intl.formatMessage({ id: `enrol.title.${plan}` })}</h2>
+        <p>{intl.formatMessage({ id: `enrol.description.${plan}` })}</p>
+        <form
+          name="enrol"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          onSubmit={handleSubmit}
         >
-          <FormLabel htmlFor="design">
-            <Checkbox
-              name="design"
-              value={formValues.design}
-              onChange={handleCheckboxChange}
-            />
-            {intl.formatMessage({ id: 'enrol.customDesign' })}
-          </FormLabel>
-        </p>
+          <p hidden>
+            <label htmlFor="bot-field">
+              Nicht ausfüllen:{' '}
+              <input type="text" name="bot-field" onChange={handleTextChange} />
+            </label>
+            <input type="text" name="subject" />
+            <input type="text" name="plan" />
+            <input type="text" name="rent" />
+            <input type="text" name="tablets" />
+            <input type="text" name="locale" />
+          </p>
 
-        <BackNext>
-          <Right
+          <p>
+            {intl.formatMessage({ id: 'enrol.plan' })}:{' '}
+            <strong>
+              {intl.formatMessage({ id: `pricing.plans.${plan}.name` })}
+            </strong>
+          </p>
+          {plan === 'pro' && (
+            <>
+              <p>
+                {intl.formatMessage({ id: 'enrol.tabletCount' })}:{' '}
+                <strong>{tablets}</strong>
+              </p>
+              <p>
+                {intl.formatMessage({ id: 'enrol.rent' })}:{' '}
+                <strong>
+                  {intl.formatMessage({ id: `enrol.rentTypes.${rent}` })}
+                </strong>
+              </p>
+
+              <PriceTag price={totalProPrice(tablets, tabletPrice(rent))} />
+            </>
+          )}
+          <h2>{intl.formatMessage({ id: 'enrol.yourDetails' })}</h2>
+          <p>
+            <FormLabel htmlFor="name">
+              {intl.formatMessage({ id: 'enrol.YourName' })}
+              <Input
+                type="text"
+                name="name"
+                value={formValues.name}
+                onChange={handleTextChange}
+              />
+            </FormLabel>
+          </p>
+          <p>
+            <FormLabel htmlFor="email">
+              {intl.formatMessage({ id: 'enrol.YourEMail' })}
+              <Input
+                type="email"
+                name="email"
+                value={formValues.email}
+                onChange={handleTextChange}
+              />
+            </FormLabel>
+          </p>
+          <p>
+            <FormLabel htmlFor="restaurant">
+              {intl.formatMessage({ id: 'enrol.YourRestaurant' })}
+              <Input
+                type="restaurant"
+                name="restaurant"
+                value={formValues.restaurant}
+                onChange={handleTextChange}
+              />
+            </FormLabel>
+          </p>
+          <p>
+            <FormLabel htmlFor="website">
+              {intl.formatMessage({ id: 'enrol.YourWebsite' })}
+              <Input
+                type="website"
+                name="website"
+                value={formValues.website}
+                onChange={handleTextChange}
+              />
+            </FormLabel>
+          </p>
+          <p>
+            <FormLabel htmlFor="message">
+              {intl.formatMessage({ id: 'enrol.YourMessage' })}
+              <Textarea
+                name="message"
+                value={formValues.message}
+                onChange={handleTextChange}
+              />
+            </FormLabel>
+          </p>
+          <p
             css={`
-              flex: 3;
+              margin: 2.5em 0 4em;
             `}
           >
-            <Button type="submit">
-              {intl.formatMessage({ id: 'enrol.submit' })}
-            </Button>
-          </Right>
-          <Left>
-            <Button type="button" onClick={() => window.history.back()}>
-              {intl.formatMessage({ id: 'pricing.back' })}
-            </Button>
-          </Left>
-        </BackNext>
-      </form>
-    </>
-  )
-})
+            <FormLabel htmlFor="design">
+              <Checkbox
+                name="design"
+                value={formValues.design}
+                onChange={handleCheckboxChange}
+              />
+              {intl.formatMessage({ id: 'enrol.customDesign' })}
+            </FormLabel>
+          </p>
+
+          <BackNext>
+            <Right
+              css={`
+                flex: 3;
+              `}
+            >
+              <Button type="submit">
+                {intl.formatMessage({ id: 'enrol.submit' })}
+              </Button>
+            </Right>
+            <Left>
+              <Button type="button" onClick={() => window.history.back()}>
+                {intl.formatMessage({ id: 'pricing.back' })}
+              </Button>
+            </Left>
+          </BackNext>
+        </form>
+      </>
+    )
+  }
+)

@@ -1,6 +1,5 @@
 import React from 'react'
 import { injectIntl, Link } from 'gatsby-plugin-intl'
-import queryString from 'querystring'
 
 import '../styles/rc-slider.css'
 import tablet from '../images/tablet.svg'
@@ -10,18 +9,8 @@ import { androidRentPrice, iPadRentPrice } from './prices'
 import Right from '../styles/Right'
 import BackNext from '../styles/BackNext'
 import Left from '../styles/Left'
-import gtagEvent from '../lib/gtagEvent'
 
-const trackEvent = tabletType => () =>
-  gtagEvent('tablet_chosen', {
-    event_category: 'order',
-    event_label: tabletType,
-  })
-
-export default injectIntl(({ intl, location }) => {
-  const params = queryString.parse(location.search.slice(1))
-  const makeLink = rent =>
-    `/pricing?${queryString.stringify({ ...params, step: 'enrol', rent })}`
+export default injectIntl(({ intl, tablets }) => {
   return (
     <>
       <div
@@ -62,9 +51,8 @@ export default injectIntl(({ intl, location }) => {
           <PriceTag price={androidRentPrice} />
           <Right>
             <Link
-              to={makeLink('android')}
+              to={`/pricing/pro/enrol/${tablets}/android`}
               activeClassName="active"
-              onClick={trackEvent('android')}
             >
               <Button>
                 {intl.formatMessage({
@@ -85,9 +73,8 @@ export default injectIntl(({ intl, location }) => {
 
           <Right>
             <Link
-              to={makeLink('ipad')}
+              to={`/pricing/pro/enrol/${tablets}/ipad`}
               activeClassName="active"
-              onClick={trackEvent('ipad')}
             >
               <Button>
                 {intl.formatMessage({
@@ -100,7 +87,7 @@ export default injectIntl(({ intl, location }) => {
       </div>
       <BackNext>
         <Right>
-          <Link to={makeLink('none')} onClick={trackEvent('none')}>
+          <Link to={`/pricing/pro/enrol/${tablets}/none`}>
             <Button>
               {intl.formatMessage({ id: 'pricing.rent.noTablets' })}
             </Button>

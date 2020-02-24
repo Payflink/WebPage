@@ -7,7 +7,6 @@ import DefaultButton from '../styles/Button'
 import PriceTag, { Price } from './PriceTag'
 import { licensePrice, proPlanPrice } from './prices'
 import CurrencyContext from '../contexts/CurrencyContext'
-import gtagEvent from '../lib/gtagEvent'
 
 const PlanWrapper = styled.div`
   display: grid;
@@ -60,23 +59,28 @@ const PlanText = styled.p`
   }
 `
 
-const PlanFeature = styled.p`
+const PlanFeature = styled.div`
   flex: 1;
   font-weight: bold;
+  margin-top: 1.2em;
   @media (min-width: 800px) {
     height: 3em;
   }
 `
 
+const FeatureNote = styled.div`
+  flex: 1;
+  font-weight: bold;
+  @media (min-width: 800px) {
+    height: 3em;
+  }
+  font-weight: normal;
+  font-size: 0.8em;
+`
+
 const SelectPlanButton = ({ to, children }) => (
   <Link to={to}>
     <DefaultButton
-      onClick={() =>
-        gtagEvent('plan_chosen', {
-          event_category: 'order',
-          event_label: to,
-        })
-      }
       css={`
         margin-bottom: 2em;
       `}
@@ -94,17 +98,17 @@ export default injectIntl(({ intl }) => {
       <p>{intl.formatMessage({ id: 'pricing.subtitle' })}</p>
       <PlanWrapper>
         <Plan>
-          <h3>{intl.formatMessage({ id: `pricing.plans.trial.name` })}</h3>
+          <h3>{intl.formatMessage({ id: `pricing.plans.solo.name` })}</h3>
           <PlanText>
-            {intl.formatMessage({ id: `pricing.plans.trial.text` })}
+            {intl.formatMessage({ id: `pricing.plans.solo.text` })}
           </PlanText>
           <PlanFeature>
-            {intl.formatMessage({ id: `pricing.plans.trial.features` })}
+            {intl.formatMessage({ id: `pricing.plans.solo.features` })}
           </PlanFeature>
           <Price>
-            {intl.formatMessage({ id: `pricing.plans.trial.price` })}
+            {intl.formatMessage({ id: `pricing.plans.solo.price` })}
           </Price>
-          <SelectPlanButton to="/pricing?step=enrol&plan=trial">
+          <SelectPlanButton to="/pricing/solo/enrol">
             {intl.formatMessage({ id: `pricing.order` })}
           </SelectPlanButton>
         </Plan>
@@ -119,10 +123,11 @@ export default injectIntl(({ intl }) => {
           </PlanText>
           <PlanFeature>
             {intl.formatMessage({ id: 'pricing.plans.pro.feature1' })}
-            <br />
+          </PlanFeature>
+          <FeatureNote>
             {intl.formatMessage(
               {
-                id: 'pricing.plans.pro.feature2',
+                id: 'pricing.plans.pro.feature1-note',
               },
               {
                 licensePrice: intl.formatNumber(licensePrice, {
@@ -133,9 +138,15 @@ export default injectIntl(({ intl }) => {
                 }),
               }
             )}
+          </FeatureNote>
+          <PlanFeature>
+            {intl.formatMessage({ id: 'pricing.plans.pro.feature2' })}
           </PlanFeature>
+          <FeatureNote>
+            {intl.formatMessage({ id: 'pricing.plans.pro.feature2-note' })}
+          </FeatureNote>
           <PriceTag price={proPlanPrice} />
-          <SelectPlanButton to="/pricing?step=count&plan=pro">
+          <SelectPlanButton to="/pricing/pro/tabletcount">
             {intl.formatMessage({ id: `pricing.order` })}
           </SelectPlanButton>
         </Plan>
@@ -145,8 +156,20 @@ export default injectIntl(({ intl }) => {
             {intl.formatMessage({ id: `pricing.plans.enterprise.text` })}
           </PlanText>
           <PlanFeature>
-            {intl.formatMessage({ id: `pricing.plans.enterprise.features` })}
+            {intl.formatMessage({ id: `pricing.plans.enterprise.feature1` })}
           </PlanFeature>
+          <FeatureNote> </FeatureNote>
+          <PlanFeature>
+            {intl.formatMessage({ id: 'pricing.plans.enterprise.feature2' })}
+          </PlanFeature>
+          <FeatureNote>
+            {intl.formatMessage({
+              id: 'pricing.plans.enterprise.feature2-note',
+            })}
+          </FeatureNote>
+          <Price>
+            {intl.formatMessage({ id: 'pricing.plans.enterprise.price' })}
+          </Price>
           <SelectPlanButton to="/contact">
             {intl.formatMessage({ id: `pricing.plans.enterprise.contact` })}
           </SelectPlanButton>

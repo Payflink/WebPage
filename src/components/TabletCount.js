@@ -7,13 +7,6 @@ import { totalProPrice } from './prices'
 import BackNext from '../styles/BackNext'
 import Right from '../styles/Right'
 import Left from '../styles/Left'
-import gtagEvent from '../lib/gtagEvent'
-
-const trackEvent = count => () =>
-  gtagEvent('amount_chosen', {
-    event_category: 'order',
-    value: count,
-  })
 
 export default injectIntl(({ intl }) => {
   const [tabletCount, setTabletCount] = useState(10)
@@ -64,10 +57,7 @@ export default injectIntl(({ intl }) => {
       </div>
       <BackNext>
         <Right>
-          <Link
-            to={`/pricing?step=rent&plan=pro&tablets=${tabletCount}`}
-            onClick={trackEvent(tabletCount)}
-          >
+          <Link to={`/pricing/pro/rent/${tabletCount}`}>
             <Button>{intl.formatMessage({ id: 'pricing.continue' })}</Button>
           </Link>
         </Right>

@@ -1,8 +1,8 @@
 import React from 'react'
-import queryString from 'querystring'
-import { FormattedMessage } from 'gatsby-plugin-intl'
+import { FormattedMessage, injectIntl } from 'gatsby-plugin-intl'
 
 import styled from 'styled-components'
+import { Router } from '@reach/router'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 import Container from '../styles/Container'
@@ -12,13 +12,6 @@ import Rent from '../components/Rent'
 import Enrol from '../components/Enrol'
 import Thanks from '../components/Thanks'
 import CurrencyContext from '../contexts/CurrencyContext'
-
-const steps = {
-  count: TabletCount,
-  rent: Rent,
-  enrol: Enrol,
-  thanks: Thanks,
-}
 
 const StyledButton = styled.button`
   background: none;
@@ -43,9 +36,7 @@ const Button = ({ currentCurrency, setCurrency }) => ({
   </StyledButton>
 )
 
-const PricingPage = ({ location }) => {
-  const { step } = queryString.parse(location.search.slice(1))
-  const StepComponent = steps[step] || Plans
+const PricingPage = ({ intl }) => {
   const { setCurrency, currency } = React.useContext(CurrencyContext)
   const CurrencyButton = Button({ currentCurrency: currency, setCurrency })
   return (
@@ -68,10 +59,17 @@ const PricingPage = ({ location }) => {
             <CurrencyButton currency="CHF">CHF</CurrencyButton>
           </div>
         </div>
-        <StepComponent location={location} />
+        <Router basepath={`/${intl.locale}/pricing`}>
+          <Plans default />
+          <Enrol plan="solo" path="/solo/enrol" />
+          <TabletCount path="/pro/tabletcount" />
+          <Rent path="/pro/rent/:tablets" />
+          <Enrol plan="pro" path="/pro/enrol/:tablets/:rent" />
+          <Thanks path="/thanks" />
+        </Router>
       </Container>
     </Layout>
   )
 }
 
-export default PricingPage
+export default injectIntl(PricingPage)
