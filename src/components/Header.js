@@ -5,6 +5,7 @@ import styled, { css } from 'styled-components'
 import React from 'react'
 
 const HeaderStyle = styled.header`
+  position: relative;
   position: sticky;
   grid-area: Header;
   display: flex;

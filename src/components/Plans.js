@@ -60,22 +60,17 @@ const PlanText = styled.p`
 `
 
 const PlanFeature = styled.div`
-  flex: 1;
+  flex: 1 0 auto;
   font-weight: bold;
   margin-top: 1.2em;
-  @media (min-width: 800px) {
-    height: 3em;
-  }
 `
 
 const FeatureNote = styled.div`
-  flex: 1;
-  font-weight: bold;
+  font-size: 0.8em;
+  font-weight: normal;
   @media (min-width: 800px) {
     height: 3em;
   }
-  font-weight: normal;
-  font-size: 0.8em;
 `
 
 const SelectPlanButton = ({ to, children }) => (
