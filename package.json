@@ -1,8 +1,8 @@
 {
   "name": "gaston-webpage",
   "private": true,
-  "description": "he delightful service solution for restaurant hospitality.",
-  "version": "0.1.0",
+  "description": "The delightful service solution for restaurant hospitality.",
+  "version": "1.1.1",
   "author": "Apptiva AG <info@apptiva.ch>",
   "dependencies": {
     "@reach/router": "^1.3.1",
@@ -61,7 +61,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
-    "serve": "serve ./public",    
+    "serve": "serve ./public",
     "preload-fonts": "gatsby-preload-fonts",
     "test": "jest"
   },
