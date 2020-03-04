@@ -60,7 +60,7 @@
         "feature2": "Publizieren auf Webseite",
         "feature2-note": "Auch für Handys optimiert",
         "priceUnit": " / Mt.",
-        "howManyTablets": "Wieviele Tablet-Lizenzen benötigen Sie?",
+        "howManyTablets": "Auf wievielen Tablets möchten sie Gaston nutzen?",
         "totalPrice": "Pro-Plan inklusive {tabletCount} Tablet-Lizenzen"
       },
       "enterprise": {
@@ -75,6 +75,10 @@
     },
     "order": "Bestellen",
     "continue": "Weiter",
+    "tablets": {
+      "ipad": "Apple iPad",
+      "samsung": "Samusung Galaxy A3"
+    },
     "rent": {
       "title": "Tablet Vermietung",
       "description": "Wir lassen Sie bei der Wahl Ihrer Tablets nicht alleine. Sie können die optimalen Modelle für Gaston Menu auch bei uns mieten.",
