@@ -4,11 +4,9 @@ import { injectIntl, Link } from 'gatsby-plugin-intl'
 import '../styles/rc-slider.css'
 import tablet from '../images/tablet.svg'
 import PriceTag from './PriceTag'
-import Button from '../styles/Button'
 import { androidRentPrice, iPadRentPrice } from './prices'
-import Right from '../styles/Right'
-import BackNext from '../styles/BackNext'
-import Left from '../styles/Left'
+import { Right, Button, BackNext, Left } from '../styles'
+
 
 export default injectIntl(({ intl, tablets }) => {
   return (

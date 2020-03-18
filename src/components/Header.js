@@ -3,6 +3,7 @@ import { useScrollYPosition } from 'react-use-scroll-position'
 
 import styled, { css } from 'styled-components'
 import React from 'react'
+import { H1 } from '../styles'
 
 const HeaderStyle = styled.header`
   position: relative;
@@ -58,19 +59,13 @@ const HeaderStyle = styled.header`
     color: ${p => p.theme.primary};
   }
 `
-const H1 = styled.h1`
-  font-size: 1rem;
-  @media (min-width: 600px) {
-    font-size: 1.2rem;
-  }
-`
 
 const Header = ({ intl, dark }) => {
   const scrollY = useScrollYPosition()
 
   return (
     <HeaderStyle dark={dark} scroll={scrollY}>
-      <H1>
+      <H1 small>
         <Link to="/" activeClassName="active">
           Gaston
         </Link>

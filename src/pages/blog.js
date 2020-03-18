@@ -8,7 +8,7 @@ import {
 
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
-import Container from '../styles/Container'
+import { Container } from '../styles'
 
 const BlogPage = () => (
   <Layout>

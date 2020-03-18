@@ -10,8 +10,7 @@ import styled, { ThemeProvider } from 'styled-components'
 
 import Header from './Header'
 import Footer from './Footer'
-import GlobalStyle from '../styles/GlobalStyle'
-import theme from '../styles/theme'
+import { theme, GlobalStyle } from '../styles'
 
 const Grid = styled.div`
   display: grid;
