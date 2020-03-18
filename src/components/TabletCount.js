@@ -192,7 +192,7 @@ export default injectIntl(({ intl }) => {
       <div css="display: grid; gap: 1em; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); margin-bottom: 5em;">
         {tabletRadioButtonWithState({
           id: 'none',
-          name: 'Kein Tablet',
+          name: 'Ich habe eigene Tablets',
           image: undefined,
           price: { oneYear: 0, twoYears: 0 },
           specs: undefined,
