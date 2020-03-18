@@ -8,15 +8,10 @@ export const totalProPrice = (tabletCount, tabletPrice = 0) =>
   tabletCount * tabletPrice +
   proPlanPrice
 
-export const tabletPrice = rent => {
-  switch (rent) {
-    case 'ipad':
-      return iPadRentPrice
+export const tabletLicensePrice = tabletCount =>
+  Math.max(0, tabletCount - 10) * licensePrice
 
-    case 'android':
-      return androidRentPrice
+export const extraLicenses = tabletCount => Math.max(0, tabletCount - 10)
 
-    default:
-      return 0
-  }
-}
+export const tabletTotalPrice = (tabletCount, tabletPrice) =>
+  tabletCount * tabletPrice

@@ -1,11 +1,7 @@
 /* eslint-disable react/style-prop-object */
 import React, { useContext } from 'react'
 import styled from 'styled-components'
-import {
-  FormattedNumber,
-  FormattedMessage,
-  FormattedNumberParts,
-} from 'gatsby-plugin-intl'
+import { FormattedMessage, FormattedNumberParts } from 'gatsby-plugin-intl'
 
 import CurrencyContext from '../contexts/CurrencyContext'
 
@@ -22,8 +18,6 @@ const PriceTag = ({ price, className }) => {
         minimumFractionDigits={0}
       >
         {parts => {
-          console.log('parts', parts)
-
           return parts.map(({ type, value }) => {
             switch (type) {
               case 'currency':
@@ -46,11 +40,12 @@ const PriceTag = ({ price, className }) => {
     </Price>
   )
 }
-export const Price = styled.div`
+export const Price = styled.p`
   color: ${p => p.theme.primary};
   font-size: 1.8em;
   font-weight: bold;
   padding: 1em 0em;
+  margin: 0;
 `
 export const PriceUnit = styled.span`
   font-size: 50%;

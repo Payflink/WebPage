@@ -59,9 +59,7 @@
         "feature1-note": "Each additional license: {licensePrice}",
         "feature2": "Publishing on website",
         "feature2-note": "Also optimized for mobile phones",
-        "priceUnit": " per Month",
-        "howManyTablets": "How many tablet licenses do you need?",
-        "totalPrice": "Pro Plan including {tabletCount} tablet licenses."
+        "priceUnit": " per Month"
       },
       "enterprise": {
         "name": "Enterprise",
@@ -71,6 +69,22 @@
         "feature2-note": "Also optimized for mobile phones",
         "price": "On request",
         "contact": "Contact us"
+      }
+    },
+    "calculation": {
+      "price": "Price",
+      "howManyTablets": "How many tablet licenses do you need?",
+      "whichTablet": "Which tablet would you like to rent?",
+      "ownTablets": "I have my own tablets",
+      "tabletSize": "Size",
+      "tabletResolution": "Resolution",
+      "proPlanWithLicenses": "Pro Plan including 10 tablet licenses",
+      "totalLicensePrice": "{tabletCount} additional tablet licenses",
+      "totalTabletPrice": "Rent for {tabletCount} tablets",
+      "totalPrice": "Total",
+      "termsAndConditions": {
+        "title": "Services and conditions",
+        "content": "<li>Defective devices will be replaced free of charge</li><li>Free installation of the devices</li><li>The minimum term is 1 year</li>"
       }
     },
     "order": "Order",

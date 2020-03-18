@@ -5,10 +5,9 @@ import styled from 'styled-components'
 import { Router } from '@reach/router'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
-import Container from '../styles/Container'
+import { Container } from '../styles'
 import Plans from '../components/Plans'
-import TabletCount from '../components/TabletCount'
-import Rent from '../components/Rent'
+import Configure from '../components/Configure'
 import Enrol from '../components/Enrol'
 import Thanks from '../components/Thanks'
 import CurrencyContext from '../contexts/CurrencyContext'
@@ -62,8 +61,7 @@ const PricingPage = ({ intl }) => {
         <Router basepath={`/${intl.locale}/pricing`}>
           <Plans default />
           <Enrol plan="solo" path="/solo/enrol" />
-          <TabletCount path="/pro/tabletcount" />
-          <Rent path="/pro/rent/:tablets" />
+          <Configure path="/pro/tabletcount" />
           <Enrol plan="pro" path="/pro/enrol/:tablets/:rent" />
           <Thanks path="/thanks" />
         </Router>
