@@ -2,7 +2,7 @@
 id: lenovo8
 sort: 3
 name: Lenovo M8
-image: ./lenovo-8.jpg
+image: ./lenovo-m8.png
 price:
   oneYear: 9.95
   twoYears: 5.95
