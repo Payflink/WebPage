@@ -92,17 +92,6 @@ const query = graphql`
             oneYear
             twoYears
           }
-          specs {
-            size
-            resolution
-          }
-          image {
-            childImageSharp {
-              fluid(maxWidth: 400) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
         }
       }
     }

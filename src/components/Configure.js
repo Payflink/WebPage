@@ -1,6 +1,11 @@
 import React, { useState } from 'react'
 import Slider from 'rc-slider'
-import { Link, injectIntl, FormattedHTMLMessage } from 'gatsby-plugin-intl'
+import {
+  Link,
+  injectIntl,
+  FormattedHTMLMessage,
+  FormattedMessage,
+} from 'gatsby-plugin-intl'
 import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
@@ -131,16 +136,15 @@ const TabletBox = styled.label`
   }
 `
 
-const priceItem = intl => (tabletCount, price, id) => (
-  <PriceItemStyle>
-    <PriceLabel>{intl.formatMessage({ id }, { tabletCount })}</PriceLabel>
-    <PriceTag css="padding: 0;" price={price} />
-  </PriceItemStyle>
+const PriceItem = ({ tabletCount, price, id, className }) => (
+  <div className={className} css="font-size: 0.7em;">
+    <PriceLabel>
+      <FormattedMessage id={id} values={{ tabletCount }} />
+    </PriceLabel>
+    <PriceTag css="padding: 0; text-align: right;" price={price} />
+  </div>
 )
 
-const PriceItemStyle = styled.div`
-  font-size: 0.8em;
-`
 const PriceLabel = styled.p`
   font-weight: bold;
   margin: 2em 0 0;
@@ -197,8 +201,6 @@ export default injectIntl(({ intl }) => {
     intl
   )
 
-  const priceItemIntl = priceItem(intl)
-
   const maxTablets = 50
 
   const selectedTabletPrice = tablets.find(({ id }) => id === tabletType).price
@@ -249,38 +251,31 @@ export default injectIntl(({ intl }) => {
           <H3 large css="margin: 0">
             {intl.formatMessage({ id: 'pricing.calculation.price' })}
           </H3>
-          {priceItemIntl(0, 39, 'pricing.calculation.proPlanWithLicenses')}
-          {priceItemIntl(
-            extraLicenses(tabletCount),
-            tabletLicensePrice(tabletCount),
-            'pricing.calculation.totalLicensePrice'
+          <PriceItem
+            tabletCount="0"
+            price="39"
+            id="pricing.calculation.proPlanWithLicenses"
+          />
+          <PriceItem
+            tabletCount={extraLicenses(tabletCount)}
+            price={tabletLicensePrice(tabletCount)}
+            id="pricing.calculation.totalLicensePrice"
+          />
+
+          {selectedTabletPrice !== 0 && (
+            <PriceItem
+              tabletCount={tabletCount}
+              price={tabletTotalPrice(tabletCount, selectedTabletPrice)}
+              id="pricing.calculation.totalTabletPrice"
+            />
           )}
 
-          {selectedTabletPrice === 0
-            ? null
-            : priceItemIntl(
-                tabletCount,
-                tabletTotalPrice(tabletCount, selectedTabletPrice),
-                'pricing.calculation.totalTabletPrice'
-              )}
-          <div css="margin-top: auto;">
-            <H3 large css="margin: 1em 0 0;">
-              {intl.formatMessage(
-                {
-                  id: 'pricing.calculation.totalPrice',
-                },
-                { tabletCount }
-              )}
-            </H3>
-
-            <PriceTag
-              css="padding: 0 0 0.5em;"
-              price={totalProPrice(
-                tabletCount,
-                tablets.find(({ id }) => id === tabletType).price.oneYear
-              )}
-            />
-          </div>
+          <PriceItem
+            tabletCount={tabletCount}
+            price={totalProPrice(tabletCount, selectedTabletPrice)}
+            id="pricing.calculation.totalPrice"
+            css="font-size: 1em; margin-top: auto;"
+          />
         </Price>
       </Row>
 
