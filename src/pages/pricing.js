@@ -61,10 +61,11 @@ const PricingPage = ({ intl }) => {
         </div>
         <Router basepath={`/${intl.locale}/pricing`}>
           <Plans default />
-          <Enrol plan="solo" path="/solo/enrol" />
-          <TabletCount path="/pro/tabletcount" />
-          <Rent path="/pro/rent/:tablets" />
-          <Enrol plan="pro" path="/pro/enrol/:tablets/:rent" />
+          <Enrol plan="takeaway" path="/takeaway/enrol" />
+          <Enrol plan="test" path="/test/enrol" />
+          <TabletCount path="/gaston-menu/tabletcount" />
+          <Rent path="/gaston-menu/rent/:tablets" />
+          <Enrol plan="gaston-menu" path="/gaston-menu/enrol/:tablets/:rent" />
           <Thanks path="/thanks" />
         </Router>
       </Container>

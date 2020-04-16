@@ -51,7 +51,7 @@ export default injectIntl(({ intl, tablets }) => {
           <PriceTag price={androidRentPrice} />
           <Right>
             <Link
-              to={`/pricing/pro/enrol/${tablets}/android`}
+              to={`/pricing/gaston-menu/enrol/${tablets}/android`}
               activeClassName="active"
             >
               <Button>
@@ -73,7 +73,7 @@ export default injectIntl(({ intl, tablets }) => {
 
           <Right>
             <Link
-              to={`/pricing/pro/enrol/${tablets}/ipad`}
+              to={`/pricing/gaston-menu/enrol/${tablets}/ipad`}
               activeClassName="active"
             >
               <Button>
@@ -87,7 +87,7 @@ export default injectIntl(({ intl, tablets }) => {
       </div>
       <BackNext>
         <Right>
-          <Link to={`/pricing/pro/enrol/${tablets}/none`}>
+          <Link to={`/pricing/gaston-menu/enrol/${tablets}/none`}>
             <Button>
               {intl.formatMessage({ id: 'pricing.rent.noTablets' })}
             </Button>

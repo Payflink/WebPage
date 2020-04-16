@@ -157,13 +157,7 @@ export default injectIntl(
             <input type="text" name="locale" />
           </p>
 
-          <p>
-            {intl.formatMessage({ id: 'enrol.plan' })}:{' '}
-            <strong>
-              {intl.formatMessage({ id: `pricing.plans.${plan}.name` })}
-            </strong>
-          </p>
-          {plan === 'pro' && (
+          {plan === 'gaston-menu' && (
             <>
               <p>
                 {intl.formatMessage({ id: 'enrol.tabletCount' })}:{' '}

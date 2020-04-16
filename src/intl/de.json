@@ -42,37 +42,29 @@
   },
   "pricing": {
     "heading": "Preise",
-    "subtitle": "Unsere Preise richten sich nach der Anzahl Tablets, die Sie in Ihrem Betrieb verwenden.",
+    "subtitle": "Für die aktuelle Situation haben wir ein zusätzliches Angebot für Take Away und Home Delivery geschaffen.",
     "plans": {
       "heading": "Angebote",
       "recommended": "Empfohlen",
-      "solo": {
-        "name": "Solo",
-        "text": "Unser Solo-Plan beinhaltet die Lizenz für ein Tablet. Ideal für Kleinstgaststätten oder um Gaston ohne zeitliche Begrenzung zu testen.",
-        "features": "Lizenzen inbegriffen: 1",
-        "price": "Kostenlos"
+      "takeaway": {
+        "name": "Take Away / Home Delivery",
+        "text": "Bieten Sie auf Ihrer Homepage Take Away und Home Delivery an. Ganz unkompliziert und ohne initiale Kosten.",
+        "text2": "Ideal, um in der aktuellen Lage zusätzlichen Umsatz zu generieren.",
+        "feature1": "Kosten pro Online-Bestellung: {percentage} %",
+        "price": "Keine monatliche Gebühren"
       },
-      "pro": {
-        "name": "Pro",
-        "text": "Abonnieren Sie den Pro-Plan, wenn Sie bis zu 50 Tablets in Ihrem Betrieb einsetzen möchten.",
-        "feature1": "Lizenzen inbegriffen: 10",
+      "gaston-menu": {
+        "name": "Gaston Menu",
+        "text": "Nutzen Sie die Vorteile einer digitalen Speisekarte für Tablets und Handys in Ihrem Betrieb. Die Preise richten sich nach der Anzahl Tablets, die Sie einsetzen.",
+        "text2": "Sie wollen die Tablets nicht selber beschaffen? Wir bieten Ihnen die Geräte auch zur Miete an.",
+        "feature1": "Tablet-Lizenzen inbegriffen: 10",
         "feature1-note": "Jede weitere Lizenz: {licensePrice}",
-        "feature2": "Publizieren auf Webseite",
-        "feature2-note": "Auch für Handys optimiert",
         "priceUnit": " / Mt.",
         "howManyTablets": "Wieviele Tablet-Lizenzen benötigen Sie?",
-        "totalPrice": "Pro-Plan inklusive {tabletCount} Tablet-Lizenzen"
-      },
-      "enterprise": {
-        "name": "Enterprise",
-        "text": "Benötigen Sie mehr als 50 Tablets? Wir machen Ihnen gerne ein auf Sie zugeschnittenes Angebot.",
-        "feature1": "Unbegrenzte Anzahl Lizenzen",
-        "feature2": "Publizieren auf Webseite",
-        "feature2-note": "Auch für Handys optimiert",
-        "price": "Auf Anfrage",
-        "contact": "Kontaktieren Sie uns"
+        "totalPrice": "Gaston Menu inklusive {tabletCount} Tablet-Lizenzen"
       }
     },
+    "test": "Testen",
     "order": "Bestellen",
     "continue": "Weiter",
     "rent": {
@@ -98,12 +90,14 @@
   },
   "enrol": {
     "title": {
-      "pro": "Pro-Plan bestellen",
-      "solo": "Solo-Plan bestellen"
+      "takeaway": "Take Away / Home Delivery bestellen",
+      "test": "Gaston testen",
+      "gaston-menu": "Gaston Menu bestellen"
     },
     "description": {
-      "pro": "Vielen Dank für Ihr Interesse. Bitte ergänzen Sie die folgenden Angaben, damit wir Ihnen eine Offerte zustellen können.",
-      "solo": "Vielen Dank für Ihr Interesse am Solo-Plan. Bitte ergänzen Sie die folgenden Angaben, damit wir Ihnen einen Solo-Plan-Zugang zusenden können."
+      "takeaway": "Vielen Dank für Ihr Interesse am Take Away / Home Delivery. Bitte ergänzen Sie die folgenden Angaben, damit wir Ihnen Ihr Konto erstellen können.",
+      "test": "Vielen Dank für Ihr Interesse, Gaston zu testen. Bitte ergänzen Sie die folgenden Angaben, damit wir Ihnen einen Test-Zugang zusenden können.",
+      "gaston-menu": "Vielen Dank für Ihr Interesse. Bitte ergänzen Sie die folgenden Angaben, damit wir Ihnen eine Offerte zustellen können."
     },
     "yourDetails": "Ihre Angaben",
     "plan": "Ihr Plan",

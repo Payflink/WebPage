@@ -18,14 +18,14 @@ const PriceTag = ({ price }) => {
         minimumFractionDigits={0}
       />
       <PriceUnit>
-        <FormattedMessage id="pricing.plans.pro.priceUnit" />
+        <FormattedMessage id="pricing.plans.gaston-menu.priceUnit" />
       </PriceUnit>
     </Price>
   )
 }
 export const Price = styled.div`
   color: ${p => p.theme.primary};
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-weight: bold;
   padding: 1em 0em;
 `

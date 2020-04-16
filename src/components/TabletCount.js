@@ -18,13 +18,15 @@ export default injectIntl(({ intl }) => {
   }
   return (
     <>
-      <h2>Gaston Menu Pro</h2>
+      <h2>Gaston Menu</h2>
       <h3
         css={`
           font-size: 1.4em;
         `}
       >
-        {intl.formatMessage({ id: 'pricing.plans.pro.howManyTablets' })}
+        {intl.formatMessage({
+          id: 'pricing.plans.gaston-menu.howManyTablets',
+        })}
       </h3>
       <Slider
         min={2}
@@ -48,7 +50,7 @@ export default injectIntl(({ intl }) => {
         <h3 css="margin: 4em 0 0;">
           {intl.formatMessage(
             {
-              id: 'pricing.plans.pro.totalPrice',
+              id: 'pricing.plans.gaston-menu.totalPrice',
             },
             { tabletCount }
           )}
@@ -57,7 +59,7 @@ export default injectIntl(({ intl }) => {
       </div>
       <BackNext>
         <Right>
-          <Link to={`/pricing/pro/rent/${tabletCount}`}>
+          <Link to={`/pricing/gaston-menu/rent/${tabletCount}`}>
             <Button>{intl.formatMessage({ id: 'pricing.continue' })}</Button>
           </Link>
         </Right>
