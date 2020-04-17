@@ -1,8 +1,8 @@
 # Neu: Take Away und Home Delivery
 
-Restaurants wurden mit der Corona-Krise eimpfindlich getroffen. Mit dem Lockdown brach vom einen Moment zum anderen jeglicher Umsatz weg. Auch wenn der Betrieb der Lokale wieder erlaubt sein wird, bleiben sicher empfindliche Einschränkungen für eine längere Zeit bestehen.
+Restaurants wurden mit der Corona-Krise empfindlich getroffen. Mit dem Lockdown brach vom einen Moment zum anderen jeglicher Umsatz weg. Auch wenn der Betrieb der Lokale wieder erlaubt sein wird, bleiben sicher empfindliche Einschränkungen für eine längere Zeit bestehen.
 
-Es braucht also Kreativität und neue Wege um wieder zum Umsatz vor der Krise zu kommen. Wichtig bleibt dabei, die Schutzmassnahmen für die Gäste und das Personal einzuhalten. Wir haben uns überlegt, wie wir die Betriebe dabei unterstützen können.
+Es braucht also Kreativität und neue Wege, um wieder zum Umsatz vor der Krise zu kommen. Wichtig bleibt dabei, die Schutzmassnahmen für die Gäste und das Personal einzuhalten. Wir haben uns überlegt, wie wir die Betriebe dabei unterstützen können.
 
 ## Take Away und Home Delivery
 
@@ -11,7 +11,7 @@ Diese Variante haben schon einige eingeschlagen. Das eröffnet schnell neue Absa
 Das sind schnelle und pragmatische Massnahmen, die auch funktionieren. Doch sie lassen sich in mindestens zwei Punkten noch optimieren:
 
 - Mit einem gut geführten Bestellprozess auf der Homepage lassen sich mehr Kunden erreichen. Das Bestellen wird einfacher.
-- Bei grösseren Volumen, muss der Prozess von der Bestellung, Bezahlung bis zur Lieferung besser organisiert werden.
+- Bei grösserem Volumen muss der Prozess von der Bestellung, Bezahlung bis zur Lieferung besser organisiert werden.
 
 ## Wie sieht die Lösung aus?
 
@@ -24,9 +24,9 @@ Wir legen viel Wert darauf, dass unsere Lösung schnell und kostengünstig einge
 Natürlich können Sie mit einigen Einstellungen Einfluss auf den Bestellungsprozess nehmen:
 
 - Definieren Sie Ihre Öffnungszeiten
-- Sagen Sie uns, wie viel Vorlaufzeit sie benötigen
+- Sagen Sie uns, wie viel Vorlaufzeit Sie benötigen
 - Bestimmen Sie den Lieferzuschlag
 
 ## Was kostet das?
 
-Wir haben bewusst auf Abo-Kosten verzischtet. Falls keine Bestellung über Gaston rein kommt, sollen Sie auch nichts bezahlen müssen. Wir behalten aber 5 % des Umsatzes für die Weiterentwicklung und Wartung von Gaston.
+Wir haben bewusst auf Abo-Kosten verzichtet. Falls keine Bestellung über Gaston rein kommt, sollen Sie auch nichts bezahlen müssen. Wir behalten aber 5 % des Umsatzes für die Weiterentwicklung und Wartung von Gaston.
