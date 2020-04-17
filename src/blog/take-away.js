@@ -75,7 +75,7 @@ const TakeAway = () => (
       aber 5 % des Umsatzes für die Weiterentwicklung und Wartung von Gaston.
     </p>
     <DefaultButton
-      style={{ marginTop: 20 }}
+      css={{ marginTop: 20 }}
       onClick={() => navigate('/pricing/')}
     >
       Unsere Angebote
