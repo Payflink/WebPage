@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link, navigate } from 'gatsby-plugin-intl'
+import DefaultButton from '../styles/Button'
 
 const TakeAway = () => (
   <>
@@ -8,13 +10,13 @@ const TakeAway = () => (
         font-weight: bold;
       `}
     >
-      Restaurants wurden mit der Corona-Krise eimpfindlich getroffen. Mit dem
+      Restaurants wurden mit der Corona-Krise empfindlich getroffen. Mit dem
       Lockdown brach vom einen Moment zum anderen jeglicher Umsatz weg. Auch
       wenn der Betrieb der Lokale wieder erlaubt sein wird, bleiben sicher
       empfindliche Einschränkungen für eine längere Zeit bestehen.
     </p>
     <p>
-      Es braucht also Kreativität und neue Wege um wieder zum Umsatz vor der
+      Es braucht also Kreativität und neue Wege, um wieder zum Umsatz vor der
       Krise zu kommen. Wichtig bleibt dabei, die Schutzmassnahmen für die Gäste
       und das Personal einzuhalten. Wir haben uns überlegt, wie wir die Betriebe
       dabei unterstützen können.
@@ -36,8 +38,8 @@ const TakeAway = () => (
         Kunden erreichen. Das Bestellen wird einfacher.
       </li>
       <li>
-        Bei grösseren Volumen, muss der Prozess von der Bestellung, Bezahlung
-        bis zur Lieferung besser organisiert werden.
+        Bei grösserem Volumen muss der Prozess von der Bestellung, Bezahlung bis
+        zur Lieferung besser organisiert werden.
       </li>
     </ul>
     <h3>Wie sieht die Lösung aus?</h3>
@@ -47,10 +49,14 @@ const TakeAway = () => (
       Schritte zu tun:
     </p>
     <ol>
-      <li>Melden Sie sich kostenlos an. (Link)</li>
+      <li>
+        <Link to="/pricing/takeaway/enrol">Melden Sie sich kostenlos an</Link>
+      </li>
       <li>Erfassen Sie Ihre Speisekarte online</li>
       <li>
-        Binden Sie die Speisekarte auf Ihrer Homepage ein (ein Link genügt)
+        {/* <Link to="/"> */}
+        Binden Sie die Speisekarte auf Ihrer Homepage ein
+        {/* </Link> */}
       </li>
     </ol>
     <p>
@@ -68,6 +74,12 @@ const TakeAway = () => (
       Gaston rein kommt, sollen Sie auch nichts bezahlen müssen. Wir behalten
       aber 5 % des Umsatzes für die Weiterentwicklung und Wartung von Gaston.
     </p>
+    <DefaultButton
+      style={{ marginTop: 20 }}
+      onClick={() => navigate('/pricing/')}
+    >
+      Unsere Angebote
+    </DefaultButton>
   </>
 )
 
