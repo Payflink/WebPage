@@ -15,6 +15,7 @@ import brush from '../images/paint-board-and-brush.svg'
 import menu from '../images/menu.svg'
 import tablet from '../images/tablet.svg'
 import desktopAndMobile from '../images/desktop-and-mobile.svg'
+import takeAway from '../images/take-away.svg'
 
 const Hero = ({ children }) => {
   const Wrapper = styled.section`
@@ -152,6 +153,13 @@ const IndexPage = ({ intl }) => {
                 <li>{intl.formatMessage({ id: 'index.USP.2' })}</li>
                 <li>{intl.formatMessage({ id: 'index.USP.3' })}</li>
                 <li>{intl.formatMessage({ id: 'index.USP.4' })}</li>
+                <li
+                  css={`
+                    text-decoration: underline;
+                  `}
+                >
+                  {intl.formatMessage({ id: 'index.USP.5' })}
+                </li>
               </ul>
               <br />
               <Button
@@ -225,6 +233,14 @@ const IndexPage = ({ intl }) => {
           margin-top: 6em;
         `}
       >
+        <Container>
+          <ImageTextSection
+            image={takeAway}
+            title={intl.formatMessage({ id: 'index.take-away.title' })}
+          >
+            {intl.formatMessage({ id: 'index.take-away.content' })}
+          </ImageTextSection>
+        </Container>
         <Container>
           <ImageTextSection
             image={brush}

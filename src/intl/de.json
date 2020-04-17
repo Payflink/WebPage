@@ -14,7 +14,8 @@
       "1": "Ihr Design",
       "2": "Einfache Menüverwaltung",
       "3": "Mit oder ohne Tablets",
-      "4": "Inklusive Webpage"
+      "4": "Inklusive Webpage",
+      "5": "Take Away & Home Delivery"
     },
     "design": {
       "title": "In Ihrem Design",
@@ -31,6 +32,10 @@
     "desktop-mobile": {
       "title": "Automatisch auf Ihrer Webseite",
       "content": "Sparen Sie sich die Zeit, Ihre Speisekarte manuell auf der Webseite zu publizieren. Mit Gaston geschieht dies automatisch. So können Ihre Gäste die Speisekarte auch in Ruhe auf dem eigenen Gerät studieren."
+    },
+    "take-away": {
+      "title": "Take Away & Home Delivery",
+      "content": "Bieten Sie auf Ihrer Homepage Take Away und Home Delivery an. Ganz unkompliziert und ohne initiale Kosten."
     }
   },
   "contact": {

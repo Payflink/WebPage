@@ -14,7 +14,8 @@
       "1": "Your design",
       "2": "Easy menu customization",
       "3": "With or without tablet devices",
-      "4": "Included Webpage"
+      "4": "Included Webpage",
+      "5": "Take Away & Home Delivery"
     },
     "design": {
       "title": "Your design",
@@ -31,6 +32,10 @@
     "desktop-mobile": {
       "title": "Instantly on your website",
       "content": "Save yourself the time to manually publish your menu on the website. With Gaston this is done automatically. So your guests can study the menu in peace on their own device."
+    },
+    "take-away": {
+      "title": "Take Away & Home Delivery",
+      "content": "Bieten Sie auf Ihrer Homepage Take Away und Home Delivery an. Ganz unkompliziert und ohne initiale Kosten."
     }
   },
   "contact": {
