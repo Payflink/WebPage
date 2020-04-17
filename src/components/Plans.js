@@ -88,6 +88,7 @@ const SelectPlanButton = ({ to, children }) => (
     <DefaultButton
       css={`
         margin-bottom: 2em;
+        margin-left: 1em;
       `}
     >
       {children}
