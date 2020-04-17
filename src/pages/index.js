@@ -239,6 +239,10 @@ const IndexPage = ({ intl }) => {
             title={intl.formatMessage({ id: 'index.take-away.title' })}
           >
             {intl.formatMessage({ id: 'index.take-away.content' })}
+            <br />
+            <Link to="/blog/take-away">
+              {intl.formatMessage({ id: 'index.take-away.link' })}
+            </Link>
           </ImageTextSection>
         </Container>
         <Container>

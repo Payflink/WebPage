@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, navigate } from 'gatsby-plugin-intl'
+import { Link } from 'gatsby-plugin-intl'
 import DefaultButton from '../styles/Button'
 
 const TakeAway = () => (
@@ -74,10 +74,7 @@ const TakeAway = () => (
       Gaston rein kommt, sollen Sie auch nichts bezahlen müssen. Wir behalten
       aber 5 % des Umsatzes für die Weiterentwicklung und Wartung von Gaston.
     </p>
-    <DefaultButton
-      css={{ marginTop: 20 }}
-      onClick={() => navigate('/pricing/')}
-    >
+    <DefaultButton css={{ marginTop: 20 }} to="/pricing/">
       Unsere Angebote
     </DefaultButton>
   </>
