@@ -11,11 +11,11 @@
     "calltoaction": "Kostenlos starten",
     "menutag": "Digitale Speisekarte",
     "USP": {
-      "1": "Ihr Design",
-      "2": "Einfache Menüverwaltung",
-      "3": "Mit oder ohne Tablets",
-      "4": "Inklusive Webpage",
-      "5": "Take Away & Home Delivery"
+      "1": "Take Away & Home Delivery",
+      "2": "Ihr Design",
+      "3": "Einfache Menüverwaltung",
+      "4": "Mit oder ohne Tablets",
+      "5": "Inklusive Webpage"
     },
     "design": {
       "title": "In Ihrem Design",
@@ -36,7 +36,7 @@
     "take-away": {
       "title": "Take Away & Home Delivery",
       "content": "Bieten Sie auf Ihrer Homepage Take Away und Home Delivery an. Ganz unkompliziert und ohne initiale Kosten.",
-      "link": "Blogbeitrag lesen..."
+      "link": "Erfahren Sie mehr auf unseren Blog"
     }
   },
   "contact": {

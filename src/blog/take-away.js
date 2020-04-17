@@ -53,11 +53,7 @@ const TakeAway = () => (
         <Link to="/pricing/takeaway/enrol">Melden Sie sich kostenlos an</Link>
       </li>
       <li>Erfassen Sie Ihre Speisekarte online</li>
-      <li>
-        {/* <Link to="/"> */}
-        Binden Sie die Speisekarte auf Ihrer Homepage ein
-        {/* </Link> */}
-      </li>
+      <li>Binden Sie die Speisekarte auf Ihrer Homepage ein</li>
     </ol>
     <p>
       Natürlich können Sie mit einigen Einstellungen Einfluss auf den

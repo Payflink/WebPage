@@ -11,11 +11,11 @@
     "calltoaction": "Start for free",
     "menutag": "Digital Menu Card",
     "USP": {
-      "1": "Your design",
-      "2": "Easy menu customization",
-      "3": "With or without tablet devices",
-      "4": "Included Webpage",
-      "5": "Take Away & Home Delivery"
+      "1": "Take Away & Home Delivery",
+      "2": "Your design",
+      "3": "Easy menu customization",
+      "4": "With or without tablet devices",
+      "5": "Included Webpage"
     },
     "design": {
       "title": "Your design",
@@ -36,7 +36,7 @@
     "take-away": {
       "title": "Take Away & Home Delivery",
       "content": "Offer Take Away and Home Delivery on your homepage. Easy to setup and without initial costs.",
-      "link": "Read blog post..."
+      "link": "Learn more on our blog"
     }
   },
   "contact": {

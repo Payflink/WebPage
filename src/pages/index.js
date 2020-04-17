@@ -153,13 +153,7 @@ const IndexPage = ({ intl }) => {
                 <li>{intl.formatMessage({ id: 'index.USP.2' })}</li>
                 <li>{intl.formatMessage({ id: 'index.USP.3' })}</li>
                 <li>{intl.formatMessage({ id: 'index.USP.4' })}</li>
-                <li
-                  css={`
-                    text-decoration: underline;
-                  `}
-                >
-                  {intl.formatMessage({ id: 'index.USP.5' })}
-                </li>
+                <li>{intl.formatMessage({ id: 'index.USP.5' })}</li>
               </ul>
               <br />
               <Button
