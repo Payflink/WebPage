@@ -1,10 +1,16 @@
-# Neu: Take Away und Home Delivery
+---
+lang: de
+slug: take-away
+title: Wir reagieren auf die aktuelle Situation
+date: 2020-04-21
+templateKey: blog-post
+---
 
 Restaurants wurden mit der Corona-Krise empfindlich getroffen. Mit dem Lockdown brach vom einen Moment zum anderen jeglicher Umsatz weg. Auch wenn der Betrieb der Lokale wieder erlaubt sein wird, bleiben sicher empfindliche Einschränkungen für eine längere Zeit bestehen.
 
 Es braucht also Kreativität und neue Wege, um wieder zum Umsatz vor der Krise zu kommen. Wichtig bleibt dabei, die Schutzmassnahmen für die Gäste und das Personal einzuhalten. Wir haben uns überlegt, wie wir die Betriebe dabei unterstützen können.
 
-## Take Away und Home Delivery
+### Take Away und Home Delivery
 
 Diese Variante haben schon einige eingeschlagen. Das eröffnet schnell neue Absatzwege. Einige Restaurants aktualisieren ihre Homepage mit dem Angebot und der Telefonnummer. Andere stellen kurzerhand eine Tafel auf die Strasse.
 
@@ -13,7 +19,7 @@ Das sind schnelle und pragmatische Massnahmen, die auch funktionieren. Doch sie 
 - Mit einem gut geführten Bestellprozess auf der Homepage lassen sich mehr Kunden erreichen. Das Bestellen wird einfacher.
 - Bei grösserem Volumen muss der Prozess von der Bestellung, Bezahlung bis zur Lieferung besser organisiert werden.
 
-## Wie sieht die Lösung aus?
+### Wie sieht die Lösung aus?
 
 Wir legen viel Wert darauf, dass unsere Lösung schnell und kostengünstig eingeführt ist. Darum gibt es für Restaurantbetreiber nur die folgenden Schritte zu tun:
 
@@ -27,6 +33,6 @@ Natürlich können Sie mit einigen Einstellungen Einfluss auf den Bestellungspro
 - Sagen Sie uns, wie viel Vorlaufzeit Sie benötigen
 - Bestimmen Sie den Lieferzuschlag
 
-## Was kostet das?
+### Was kostet mich das?
 
 Wir haben bewusst auf Abo-Kosten verzichtet. Falls keine Bestellung über Gaston rein kommt, sollen Sie auch nichts bezahlen müssen. Wir behalten aber 5 % des Umsatzes für die Weiterentwicklung und Wartung von Gaston.
