@@ -204,13 +204,18 @@ export default injectIntl(
                 </p>
                 <p>
                   {intl.formatMessage({ id: 'enrol.rent' })}:{' '}
-                  <strong>{tabletName}</strong>
+                  <strong>
+                    {tabletName ||
+                      intl.formatMessage({ id: 'enrol.rentTypes.none' })}
+                  </strong>
                 </p>
 
-                <PriceTag
-                  css="padding: 0;"
-                  price={totalProPrice(tablets, tabletPrice.oneYear)}
-                />
+                {tabletPrice && (
+                  <PriceTag
+                    css="padding: 0;"
+                    price={totalProPrice(tablets, tabletPrice.oneYear)}
+                  />
+                )}
               </>
             )}
           </div>
