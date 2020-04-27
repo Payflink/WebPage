@@ -7,6 +7,7 @@ import DefaultButton from '../styles/Button'
 import PriceTag, { Price } from './PriceTag'
 import { licensePrice, proPlanPrice, takeawayPercentageFee } from './prices'
 import CurrencyContext from '../contexts/CurrencyContext'
+import Container from '../styles/Container'
 
 const PlanWrapper = styled.div`
   display: grid;
@@ -83,12 +84,25 @@ const SelectPlanButtonWrapper = styled.div`
   gap: 1em;
 `
 
+const AdditionallyPlanWrapper = styled.div`
+  padding-top: 5em;
+`
+
+const AdditionallyPlanHeading = styled.h2`
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+`
+
+const Spacer = styled.p`
+  margin: 0.5em;
+`
+
 const SelectPlanButton = ({ to, children }) => (
   <Link to={to}>
     <DefaultButton
       css={`
         margin-bottom: 2em;
-        margin-left: 1em;
       `}
     >
       {children}
@@ -163,12 +177,28 @@ export default injectIntl(({ intl }) => {
             <SelectPlanButton to="/pricing/test/enrol">
               {intl.formatMessage({ id: `pricing.test` })}
             </SelectPlanButton>
+            <Spacer />
             <SelectPlanButton to="/pricing/gaston-menu/tabletcount">
               {intl.formatMessage({ id: `pricing.order` })}
             </SelectPlanButton>
           </SelectPlanButtonWrapper>
         </Plan>
       </PlanWrapper>
+      <AdditionallyPlanWrapper>
+        <AdditionallyPlanHeading>
+          {intl.formatMessage({ id: `pricing.plans.enterprise.title` })}
+        </AdditionallyPlanHeading>
+        <p
+          css={`
+            padding-bottom: 0.75em;
+          `}
+        >
+          {intl.formatMessage({ id: `pricing.plans.enterprise.text` })}
+        </p>
+        <SelectPlanButton to="/contact">
+          {intl.formatMessage({ id: `pricing.contactUs` })}
+        </SelectPlanButton>
+      </AdditionallyPlanWrapper>
     </>
   )
 })
