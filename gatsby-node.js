@@ -50,3 +50,8 @@ exports.createPages = ({ actions, graphql }) => {
     return null
   })
 }
+
+exports.onCreatePage = ({ page }) => {
+  // eslint-disable-next-line no-param-reassign
+  page.context.lang = page.context.intl.language
+}
