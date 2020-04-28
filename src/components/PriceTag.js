@@ -21,13 +21,21 @@ const PriceTag = ({ price, className }) => {
           return parts.map(({ type, value }) => {
             switch (type) {
               case 'currency':
-                return <small>{value}</small>
+                return <small key={type + value}>{value}</small>
               case 'integer':
-                return <b>{value}</b>
+                return <b key={type + value}>{value}</b>
               case 'decimal':
-                return <small css="font-size: 0.5em">{value}</small>
+                return (
+                  <small key={type + value} css="font-size: 0.5em">
+                    {value}
+                  </small>
+                )
               case 'fraction':
-                return <small css="font-size: 0.5em">{value}</small>
+                return (
+                  <small key={type + value} css="font-size: 0.5em">
+                    {value}
+                  </small>
+                )
               default:
                 return value
             }
