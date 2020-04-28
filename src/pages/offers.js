@@ -35,12 +35,12 @@ const Button = ({ currentCurrency, setCurrency }) => ({
   </StyledButton>
 )
 
-const PricingPage = ({ intl }) => {
+const OffersPage = ({ intl }) => {
   const { setCurrency, currency } = React.useContext(CurrencyContext)
   const CurrencyButton = Button({ currentCurrency: currency, setCurrency })
   return (
     <Layout>
-      <SEO title="Pricing" />
+      <SEO title="Offers" />
       <Container>
         <div
           css={`
@@ -49,16 +49,16 @@ const PricingPage = ({ intl }) => {
             align-items: baseline;
           `}
         >
-          <h1>
-            <FormattedMessage id="pricing.heading" />
-          </h1>
+          <h2>
+            <FormattedMessage id="offers.heading" />
+          </h2>
           <div>
             <CurrencyButton currency="USD">$</CurrencyButton>
             <CurrencyButton currency="EUR">€</CurrencyButton>
             <CurrencyButton currency="CHF">CHF</CurrencyButton>
           </div>
         </div>
-        <Router basepath={`/${intl.locale}/pricing`}>
+        <Router basepath={`/${intl.locale}/offers`}>
           <Plans default />
           <Enrol plan="takeaway" path="/takeaway/enrol" />
           <Enrol plan="test" path="/test/enrol" />
@@ -71,4 +71,4 @@ const PricingPage = ({ intl }) => {
   )
 }
 
-export default injectIntl(PricingPage)
+export default injectIntl(OffersPage)

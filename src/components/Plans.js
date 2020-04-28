@@ -7,7 +7,6 @@ import { Button as DefaultButton } from '../styles'
 import PriceTag, { Price } from './PriceTag'
 import { licensePrice, proPlanPrice, takeawayPercentageFee } from './prices'
 import CurrencyContext from '../contexts/CurrencyContext'
-import Container from '../styles/Container'
 
 const PlanWrapper = styled.div`
   display: grid;
@@ -114,55 +113,52 @@ export default injectIntl(({ intl }) => {
   const { currency } = useContext(CurrencyContext)
   return (
     <>
-      <h2 css="margin-top: 0">
-        {intl.formatMessage({ id: 'pricing.plans.heading' })}
-      </h2>
-      <p>{intl.formatMessage({ id: 'pricing.subtitle' })}</p>
+      <p>{intl.formatMessage({ id: 'offers.subtitle' })}</p>
       <PlanWrapper>
         <Plan
           data-recommended={intl.formatMessage({
-            id: 'pricing.plans.recommended',
+            id: 'offers.plans.recommended',
           })}
         >
           <PlanHeading>
-            {intl.formatMessage({ id: 'pricing.plans.takeaway.name' })}
+            {intl.formatMessage({ id: 'offers.plans.takeaway.name' })}
           </PlanHeading>
           <PlanText>
-            {intl.formatMessage({ id: 'pricing.plans.takeaway.text' })}
+            {intl.formatMessage({ id: 'offers.plans.takeaway.text' })}
           </PlanText>
           <PlanText>
-            {intl.formatMessage({ id: 'pricing.plans.takeaway.text2' })}
+            {intl.formatMessage({ id: 'offers.plans.takeaway.text2' })}
           </PlanText>
           <PlanFeature>
             {intl.formatMessage(
-              { id: `pricing.plans.takeaway.feature1` },
+              { id: `offers.plans.takeaway.feature1` },
               { percentage: takeawayPercentageFee }
             )}
           </PlanFeature>
           <Price>
-            {intl.formatMessage({ id: `pricing.plans.takeaway.price` })}
+            {intl.formatMessage({ id: `offers.plans.takeaway.price` })}
           </Price>
-          <SelectPlanButton to="/pricing/takeaway/enrol">
-            {intl.formatMessage({ id: `pricing.order` })}
+          <SelectPlanButton to="/offers/takeaway/enrol">
+            {intl.formatMessage({ id: `offers.order` })}
           </SelectPlanButton>
         </Plan>
         <Plan>
           <PlanHeading>
-            {intl.formatMessage({ id: `pricing.plans.gaston-menu.name` })}
+            {intl.formatMessage({ id: `offers.plans.gaston-menu.name` })}
           </PlanHeading>
           <PlanText>
-            {intl.formatMessage({ id: `pricing.plans.gaston-menu.text` })}
+            {intl.formatMessage({ id: `offers.plans.gaston-menu.text` })}
           </PlanText>
           <PlanText>
-            {intl.formatMessage({ id: 'pricing.plans.gaston-menu.text2' })}
+            {intl.formatMessage({ id: 'offers.plans.gaston-menu.text2' })}
           </PlanText>
           <PlanFeature>
-            {intl.formatMessage({ id: 'pricing.plans.gaston-menu.feature1' })}
+            {intl.formatMessage({ id: 'offers.plans.gaston-menu.feature1' })}
           </PlanFeature>
           <FeatureNote>
             {intl.formatMessage(
               {
-                id: 'pricing.plans.gaston-menu.feature1-note',
+                id: 'offers.plans.gaston-menu.feature1-note',
               },
               {
                 licensePrice: intl.formatNumber(licensePrice, {
@@ -175,38 +171,38 @@ export default injectIntl(({ intl }) => {
             )}
           </FeatureNote>
           <PlanFeature>
-            {intl.formatMessage({ id: 'pricing.plans.gaston-menu.feature2' })}
+            {intl.formatMessage({ id: 'offers.plans.gaston-menu.feature2' })}
           </PlanFeature>
           <FeatureNote>
             {intl.formatMessage({
-              id: 'pricing.plans.gaston-menu.feature2-note',
+              id: 'offers.plans.gaston-menu.feature2-note',
             })}
           </FeatureNote>
           <PriceTag price={proPlanPrice} />
           <SelectPlanButtonWrapper>
-            <SelectPlanButton to="/pricing/test/enrol">
-              {intl.formatMessage({ id: `pricing.test` })}
+            <SelectPlanButton to="/offers/test/enrol">
+              {intl.formatMessage({ id: `offers.test` })}
             </SelectPlanButton>
             <Spacer />
-            <SelectPlanButton to="/pricing/gaston-menu/tabletcount">
-              {intl.formatMessage({ id: `pricing.order` })}
+            <SelectPlanButton to="/offers/gaston-menu/tabletcount">
+              {intl.formatMessage({ id: `offers.order` })}
             </SelectPlanButton>
           </SelectPlanButtonWrapper>
         </Plan>
       </PlanWrapper>
       <AdditionallyPlanWrapper>
         <AdditionallyPlanHeading>
-          {intl.formatMessage({ id: `pricing.plans.enterprise.title` })}
+          {intl.formatMessage({ id: `offers.plans.enterprise.title` })}
         </AdditionallyPlanHeading>
         <p
           css={`
             padding-bottom: 0.75em;
           `}
         >
-          {intl.formatMessage({ id: `pricing.plans.enterprise.text` })}
+          {intl.formatMessage({ id: `offers.plans.enterprise.text` })}
         </p>
         <SelectPlanButton to="/contact">
-          {intl.formatMessage({ id: `pricing.contactUs` })}
+          {intl.formatMessage({ id: `offers.contactUs` })}
         </SelectPlanButton>
       </AdditionallyPlanWrapper>
     </>

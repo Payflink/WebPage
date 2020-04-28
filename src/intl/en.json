@@ -47,8 +47,8 @@
     "address": "Address",
     "switzerland": "Switzerland"
   },
-  "pricing": {
-    "heading": "Pricing",
+  "offers": {
+    "heading": "Offers",
     "subtitle": "For the current situation we have created an additional offer for Take Away and Home Delivery.",
     "plans": {
       "heading": "Offers",
@@ -167,7 +167,7 @@
   "header": {
     "blog": "Blog",
     "contact": "Contact",
-    "pricing": "Pricing",
+    "offers": "Offers",
     "about": "About\u00a0us"
   },
   "footer": {

@@ -47,8 +47,8 @@
     "address": "Adresse",
     "switzerland": "Schweiz"
   },
-  "pricing": {
-    "heading": "Preise",
+  "offers": {
+    "heading": "Angebote",
     "subtitle": "Für die aktuelle Situation haben wir ein zusätzliches Angebot für Take Away und Home Delivery geschaffen.",
     "plans": {
       "heading": "Angebote",
@@ -168,7 +168,7 @@
     "blog": "Blog",
     "contact": "Kontakt",
     "about": "Über\u00a0uns",
-    "pricing": "Preise"
+    "offers": "Angebote"
   },
   "footer": {
     "by": "Eine Initiative von",
