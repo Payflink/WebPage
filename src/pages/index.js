@@ -149,7 +149,17 @@ const IndexPage = ({ intl }) => {
                 </small>
               </h1>
               <ul>
-                <li>{intl.formatMessage({ id: 'index.USP.1' })}</li>
+                <li>
+                  <span
+                    css={`
+                      color: ${p => p.theme.primary};
+                      padding-right: 0.2em;
+                    `}
+                  >
+                    {intl.formatMessage({ id: 'index.newText' })}:
+                  </span>
+                  {intl.formatMessage({ id: 'index.USP.1' })}
+                </li>
                 <li>{intl.formatMessage({ id: 'index.USP.2' })}</li>
                 <li>{intl.formatMessage({ id: 'index.USP.3' })}</li>
                 <li>{intl.formatMessage({ id: 'index.USP.4' })}</li>

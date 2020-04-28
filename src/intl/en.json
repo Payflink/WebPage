@@ -10,6 +10,7 @@
     "payment": "Payment",
     "calltoaction": "Start for free",
     "menutag": "Digital Menu Card",
+    "newText": "New",
     "USP": {
       "1": "Take Away & Home Delivery",
       "2": "Your design",
@@ -68,11 +69,16 @@
         "priceUnit": " / Mt.",
         "howManyTablets": "How many tablet licenses do you need?",
         "totalPrice": "Gaston Menu including {tabletCount} tablet licenses."
+      },
+      "enterprise": {
+        "title": "Enterprise",
+        "text": "Do you need more than 50 tablets? We will be happy to make you an offer tailored to your needs."
       }
     },
     "test": "Trial",
     "order": "Order",
     "continue": "Continue",
+    "contactUs": "Contact us",
     "rent": {
       "title": "Tablet rental",
       "description": "We do not leave you alone with the choice of your tablets. You can also rent the optimal models for Gaston Menu from us.",

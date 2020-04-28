@@ -10,6 +10,7 @@
     "payment": "Bezahlung",
     "calltoaction": "Kostenlos starten",
     "menutag": "Digitale Speisekarte",
+    "newText": "Neu",
     "USP": {
       "1": "Take Away & Home Delivery",
       "2": "Ihr Design",
@@ -68,11 +69,16 @@
         "priceUnit": " / Mt.",
         "howManyTablets": "Wieviele Tablet-Lizenzen benötigen Sie?",
         "totalPrice": "Gaston Menu inklusive {tabletCount} Tablet-Lizenzen"
+      },
+      "enterprise": {
+        "title": "Enterprise",
+        "text": "Benötigen Sie mehr als 50 Tablets? Wir machen Ihnen gerne ein auf Sie zugeschnittenes Angebot."
       }
     },
     "test": "Testen",
     "order": "Bestellen",
     "continue": "Weiter",
+    "contactUs": "Kontaktieren Sie uns",
     "rent": {
       "title": "Tablet Vermietung",
       "description": "Wir lassen Sie bei der Wahl Ihrer Tablets nicht alleine. Sie können die optimalen Modelle für Gaston Menu auch bei uns mieten.",
