@@ -52,12 +52,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-create-client-paths`,
       options: {
-        prefixes: [
-          `/de/pricing/*`,
-          `/en/pricing/*`,
-          '/de/blog/*',
-          '/en/blog/*',
-        ],
+        prefixes: [`/de/offers/*`, `/en/offers/*`],
       },
     },
     {
