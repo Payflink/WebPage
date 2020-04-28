@@ -154,7 +154,7 @@ export default () => {
         </p>
         <EmployeeList>
           {employees.map(employee => (
-            <Employee employee={employee} />
+            <Employee key={employee.name} employee={employee} />
           ))}
         </EmployeeList>
       </Container>
