@@ -32,11 +32,11 @@ const Footer = ({ intl }) => (
         }
       `}
     >
-      <Link to="en" activeClassName="active" partiallyActive>
+      <Link to="/en" activeClassName="active" partiallyActive>
         en
       </Link>
       &nbsp;
-      <Link to="de" activeClassName="active" partiallyActive>
+      <Link to="/de" activeClassName="active" partiallyActive>
         de
       </Link>
     </p>
