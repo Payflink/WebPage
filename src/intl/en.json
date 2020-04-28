@@ -66,9 +66,9 @@
         "text2": "You don't want to procure the tablets yourself? We also offer you the devices for rent.",
         "feature1": "Tablet licenses included: 10",
         "feature1-note": "Each additional license: {licensePrice}",
-        "priceUnit": " / Mt.",
-        "howManyTablets": "How many tablet licenses do you need?",
-        "totalPrice": "Gaston Menu including {tabletCount} tablet licenses."
+        "feature2": "Publishing on website",
+        "feature2-note": "Also optimized for mobile phones",
+        "priceUnit": " per Month"
       },
       "enterprise": {
         "title": "Enterprise",

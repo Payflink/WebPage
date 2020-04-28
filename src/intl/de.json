@@ -66,9 +66,9 @@
         "text2": "Sie wollen die Tablets nicht selber beschaffen? Wir bieten Ihnen die Geräte auch zur Miete an.",
         "feature1": "Tablet-Lizenzen inbegriffen: 10",
         "feature1-note": "Jede weitere Lizenz: {licensePrice}",
-        "priceUnit": " / Mt.",
-        "howManyTablets": "Wieviele Tablet-Lizenzen benötigen Sie?",
-        "totalPrice": "Gaston Menu inklusive {tabletCount} Tablet-Lizenzen"
+        "feature2": "Publizieren auf Webseite",
+        "feature2-note": "Auch für Handys optimiert",
+        "priceUnit": " / Mt."
       },
       "enterprise": {
         "title": "Enterprise",

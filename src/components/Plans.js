@@ -3,7 +3,7 @@ import { injectIntl, Link } from 'gatsby-plugin-intl'
 
 import '../styles/rc-slider.css'
 import styled, { css } from 'styled-components'
-import {Button as DefaultButton} from '../styles'
+import { Button as DefaultButton } from '../styles'
 import PriceTag, { Price } from './PriceTag'
 import { licensePrice, proPlanPrice, takeawayPercentageFee } from './prices'
 import CurrencyContext from '../contexts/CurrencyContext'
@@ -173,6 +173,14 @@ export default injectIntl(({ intl }) => {
                 }),
               }
             )}
+          </FeatureNote>
+          <PlanFeature>
+            {intl.formatMessage({ id: 'pricing.plans.gaston-menu.feature2' })}
+          </PlanFeature>
+          <FeatureNote>
+            {intl.formatMessage({
+              id: 'pricing.plans.gaston-menu.feature2-note',
+            })}
           </FeatureNote>
           <PriceTag price={proPlanPrice} />
           <SelectPlanButtonWrapper>
