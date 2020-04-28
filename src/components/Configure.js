@@ -26,7 +26,7 @@ const tabletRadioButton = (tabletType, setTabletType, intl) => ({
   specs,
 }) => {
   return (
-    <TabletBox>
+    <TabletBox key={id}>
       <input
         type="radio"
         name="type"
