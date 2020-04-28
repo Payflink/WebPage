@@ -1,4 +1,4 @@
-import { totalProPrice, tabletPrice } from '../prices'
+import { totalProPrice } from '../prices'
 
 describe('Calc pro prices without devices', () => {
   it('Normal case', () => {
@@ -41,17 +41,5 @@ describe('Calc pro prices with devices', () => {
 
   it('50 tablets', () => {
     expect(totalProPrice(50, 19)).toBe(1109)
-  })
-})
-
-describe('Get tablet price', () => {
-  it('iPad', () => {
-    expect(tabletPrice('ipad')).toBe(29)
-  })
-  it('android', () => {
-    expect(tabletPrice('android')).toBe(19)
-  })
-  it('other', () => {
-    expect(tabletPrice('other')).toBe(0)
   })
 })

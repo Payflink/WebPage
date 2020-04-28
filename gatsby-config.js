@@ -15,13 +15,13 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/blog`,
-        name: 'blog',
+        name: `content`,
+        path: `${__dirname}/content`,
       },
     },
-    'gatsby-transformer-remark',
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

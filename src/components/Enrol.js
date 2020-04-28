@@ -4,12 +4,10 @@ import { injectIntl } from 'gatsby-plugin-intl'
 import { navigate } from 'gatsby-plugin-intl/link'
 import fetch from 'unfetch'
 
-import DefaultButton from '../styles/Button'
+import { graphql, useStaticQuery } from 'gatsby'
+import { Button as DefaultButton, BackNext, Right, Left } from '../styles'
 import PriceTag from './PriceTag'
-import { totalProPrice, tabletPrice } from './prices'
-import BackNext from '../styles/BackNext'
-import Right from '../styles/Right'
-import Left from '../styles/Left'
+import { totalProPrice } from './prices'
 import gtagEvent from '../lib/gtagEvent'
 
 const encode = data =>
@@ -83,11 +81,37 @@ const trackEvent = value =>
     transaction_id: '',
   })
 
+const query = graphql`
+  {
+    items: allMarkdownRemark(sort: { fields: frontmatter___sort, order: ASC }) {
+      nodes {
+        frontmatter {
+          id
+          name
+          price {
+            oneYear
+            twoYears
+          }
+        }
+      }
+    }
+  }
+`
+
 export default injectIntl(
   ({ plan, tablets = undefined, rent = undefined, intl }) => {
     const [formValues, setFormValues] = useState(
       defaultState(plan, tablets, rent, intl.locale)
     )
+
+    const tabletsModels = useStaticQuery(query).items.nodes.map(
+      ({ frontmatter }) => frontmatter
+    )
+
+    const { name: tabletName, price: tabletPrice } =
+      rent !== 'none' &&
+      rent !== undefined &&
+      tabletsModels.find(({ id }) => id === rent)
 
     const handleSubmit = e => {
       const { email, name, restaurant } = formValues
@@ -95,9 +119,7 @@ export default injectIntl(
         /* eslint-disable-next-line no-alert */
         alert(intl.formatMessage({ id: 'enrol.failure' }))
       } else if (formValues['bot-field'] === undefined) {
-        trackEvent(
-          totalProPrice(formValues.tablets, tabletPrice(formValues.rent))
-        )
+        trackEvent(totalProPrice(formValues.tablets, formValues.rent))
         const body = encode({
           'form-name': 'enrol',
           subject: 'Gaston Abo-Abschluss',
@@ -137,7 +159,9 @@ export default injectIntl(
 
     return (
       <>
-        <h2>{intl.formatMessage({ id: `enrol.title.${plan}` })}</h2>
+        <h2 css="margin-top: 0">
+          {intl.formatMessage({ id: `enrol.title.${plan}` })}
+        </h2>
         <p>{intl.formatMessage({ id: `enrol.description.${plan}` })}</p>
         <form
           name="enrol"
@@ -156,23 +180,45 @@ export default injectIntl(
             <input type="text" name="tablets" />
             <input type="text" name="locale" />
           </p>
+          <div
+            css={`
+              padding: 2em;
+              background: #eee;
+              border-radius: 0.5em;
+              p {
+                margin: 0.2em 0;
+              }
+            `}
+          >
+            <p>
+              {intl.formatMessage({ id: 'enrol.plan' })}:{' '}
+              <strong>
+                {intl.formatMessage({ id: `pricing.plans.${plan}.name` })}
+              </strong>
+            </p>
+            {plan === 'gaston-menu' && (
+              <>
+                <p>
+                  {intl.formatMessage({ id: 'enrol.tabletCount' })}:{' '}
+                  <strong>{tablets}</strong>
+                </p>
+                <p>
+                  {intl.formatMessage({ id: 'enrol.rent' })}:{' '}
+                  <strong>
+                    {tabletName ||
+                      intl.formatMessage({ id: 'enrol.rentTypes.none' })}
+                  </strong>
+                </p>
 
-          {plan === 'gaston-menu' && (
-            <>
-              <p>
-                {intl.formatMessage({ id: 'enrol.tabletCount' })}:{' '}
-                <strong>{tablets}</strong>
-              </p>
-              <p>
-                {intl.formatMessage({ id: 'enrol.rent' })}:{' '}
-                <strong>
-                  {intl.formatMessage({ id: `enrol.rentTypes.${rent}` })}
-                </strong>
-              </p>
-
-              <PriceTag price={totalProPrice(tablets, tabletPrice(rent))} />
-            </>
-          )}
+                {tabletPrice && (
+                  <PriceTag
+                    css="padding: 0;"
+                    price={totalProPrice(tablets, tabletPrice.oneYear)}
+                  />
+                )}
+              </>
+            )}
+          </div>
           <h2>{intl.formatMessage({ id: 'enrol.yourDetails' })}</h2>
           <p>
             <FormLabel htmlFor="name">

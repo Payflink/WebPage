@@ -6,8 +6,7 @@ import Img from 'gatsby-image'
 
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
-import Container from '../styles/Container'
-import theme from '../styles/theme'
+import { theme, Container } from '../styles'
 
 const EmployeeList = styled.div`
   margin-top: 60px;

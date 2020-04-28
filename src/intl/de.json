@@ -73,9 +73,28 @@
       "enterprise": {
         "title": "Enterprise",
         "text": "Benötigen Sie mehr als 50 Tablets? Wir machen Ihnen gerne ein auf Sie zugeschnittenes Angebot."
+      },
+      "test": {
+        "name": "Testing"
       }
     },
     "test": "Testen",
+    "calculation": {
+      "price": "Preis",
+      "howManyTablets": "Auf wievielen Tablets möchten sie Gaston nutzen?",
+      "whichTablet": "Welches Tablet möchten sie mieten?",
+      "ownTablets": "Ich habe eigene Tablets",
+      "tabletSize": "Grösse",
+      "tabletResolution": "Auflösung",
+      "proPlanWithLicenses": "Pro Plan inklusive 10 Tabletlizenzen",
+      "totalLicensePrice": "{tabletCount} zusätzliche Tablet-Lizenzen",
+      "totalTabletPrice": "Miete von {tabletCount} Tablets",
+      "totalPrice": "Total",
+      "termsAndConditions": {
+        "title": "Leistungen und Bedingungen für Tabletmiete",
+        "content": "<li>Die Mindestlaufzeit beträgt 1 Jahr.</li> <li>Kostenloser Austausch defekter Geräte.</li> <li>Kostenlose Einrichtung der Geräte.</li>"
+      }
+    },
     "order": "Bestellen",
     "continue": "Weiter",
     "contactUs": "Kontaktieren Sie uns",

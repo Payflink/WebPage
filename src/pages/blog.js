@@ -6,7 +6,7 @@ import { graphql } from 'gatsby'
 import Button from '../styles/Button'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
-import Container from '../styles/Container'
+import { Container } from '../styles'
 
 const Lead = styled.div`
   margin-bottom: 2em;
@@ -67,7 +67,10 @@ export default injectIntl(BlogPage)
 
 export const query = graphql`
   query BlogPosts {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+    ) {
       edges {
         node {
           excerpt(pruneLength: 300)

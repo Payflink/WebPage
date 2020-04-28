@@ -5,10 +5,9 @@ import styled from 'styled-components'
 import { Router } from '@reach/router'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
-import Container from '../styles/Container'
+import { Container } from '../styles'
 import Plans from '../components/Plans'
-import TabletCount from '../components/TabletCount'
-import Rent from '../components/Rent'
+import Configure from '../components/Configure'
 import Enrol from '../components/Enrol'
 import Thanks from '../components/Thanks'
 import CurrencyContext from '../contexts/CurrencyContext'
@@ -63,9 +62,8 @@ const PricingPage = ({ intl }) => {
           <Plans default />
           <Enrol plan="takeaway" path="/takeaway/enrol" />
           <Enrol plan="test" path="/test/enrol" />
-          <TabletCount path="/gaston-menu/tabletcount" />
-          <Rent path="/gaston-menu/rent/:tablets" />
           <Enrol plan="gaston-menu" path="/gaston-menu/enrol/:tablets/:rent" />
+          <Configure path="/gaston-menu/tabletcount" />
           <Thanks path="/thanks" />
         </Router>
       </Container>

@@ -73,9 +73,28 @@
       "enterprise": {
         "title": "Enterprise",
         "text": "Do you need more than 50 tablets? We will be happy to make you an offer tailored to your needs."
+      },
+      "test": {
+        "name": "Trial"
       }
     },
     "test": "Trial",
+    "calculation": {
+      "price": "Price",
+      "howManyTablets": "How many tablet licenses do you need?",
+      "whichTablet": "Which tablet would you like to rent?",
+      "ownTablets": "I have my own tablets",
+      "tabletSize": "Size",
+      "tabletResolution": "Resolution",
+      "proPlanWithLicenses": "Pro Plan including 10 tablet licenses",
+      "totalLicensePrice": "{tabletCount} additional tablet licenses",
+      "totalTabletPrice": "Rent for {tabletCount} tablets",
+      "totalPrice": "Total",
+      "termsAndConditions": {
+        "title": "Services and conditions",
+        "content": "<li>Defective devices will be replaced free of charge</li><li>Free installation of the devices</li><li>The minimum term is 1 year</li>"
+      }
+    },
     "order": "Order",
     "continue": "Continue",
     "contactUs": "Contact us",

@@ -3,7 +3,7 @@ import { injectIntl, Link } from 'gatsby-plugin-intl'
 
 import '../styles/rc-slider.css'
 import styled, { css } from 'styled-components'
-import DefaultButton from '../styles/Button'
+import {Button as DefaultButton} from '../styles'
 import PriceTag, { Price } from './PriceTag'
 import { licensePrice, proPlanPrice, takeawayPercentageFee } from './prices'
 import CurrencyContext from '../contexts/CurrencyContext'
@@ -114,7 +114,9 @@ export default injectIntl(({ intl }) => {
   const { currency } = useContext(CurrencyContext)
   return (
     <>
-      <h2>{intl.formatMessage({ id: 'pricing.plans.heading' })}</h2>
+      <h2 css="margin-top: 0">
+        {intl.formatMessage({ id: 'pricing.plans.heading' })}
+      </h2>
       <p>{intl.formatMessage({ id: 'pricing.subtitle' })}</p>
       <PlanWrapper>
         <Plan
