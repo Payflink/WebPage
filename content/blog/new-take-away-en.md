@@ -8,7 +8,7 @@ templateKey: blog-post
 
 Restaurants were hit hard by the Corona crisis. With the lockdown, from one moment to the next, all sales collapsed. Even if the operation of the restaurants will be allowed again, sensitive restrictions will certainly remain for a longer period of time.
 
-So it takes creativity and new ways to get back to the turnover before the crisis. It remains important to observe the protective measures for guests and staff. We have thought about how we can support the businesses in this.
+So, it takes creativity and new ways to get back to the turnover before the crisis. It remains important to observe the protective measures for guests and staff. We have thought about how we can support the businesses in this.
 
 ### Take Away and Home Delivery
 
@@ -27,7 +27,7 @@ We attach great importance to the fact that our solution is implemented quickly 
 2. Enter your menu online
 3. Include the menu on your homepage (a link is sufficient)
 
-Of course you can influence the ordering process with some settings:
+Of course, you can influence the ordering process with some settings:
 
 - Define your opening hours
 - Tell us how much lead time you need
