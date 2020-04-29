@@ -135,6 +135,13 @@ export default injectIntl(({ intl }) => {
               { percentage: takeawayPercentageFee }
             )}
           </PlanFeature>
+          <FeatureNote>
+            {intl.formatMessage({
+              id: 'offers.plans.takeaway.feature1-note',
+            })}
+          </FeatureNote>
+          <PlanFeature>&nbsp;</PlanFeature>
+          <FeatureNote>&nbsp;</FeatureNote>
           <Price>
             {intl.formatMessage({ id: `offers.plans.takeaway.price` })}
           </Price>
@@ -192,14 +199,14 @@ export default injectIntl(({ intl }) => {
       </PlanWrapper>
       <AdditionallyPlanWrapper>
         <AdditionallyPlanHeading>
-          {intl.formatMessage({ id: `offers.plans.enterprise.title` })}
+          {intl.formatMessage({ id: `offers.plans.tailored-offer.title` })}
         </AdditionallyPlanHeading>
         <p
           css={`
             padding-bottom: 0.75em;
           `}
         >
-          {intl.formatMessage({ id: `offers.plans.enterprise.text` })}
+          {intl.formatMessage({ id: `offers.plans.tailored-offer.text` })}
         </p>
         <SelectPlanButton to="/contact">
           {intl.formatMessage({ id: `offers.contactUs` })}

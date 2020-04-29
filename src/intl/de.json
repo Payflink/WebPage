@@ -52,12 +52,13 @@
     "subtitle": "Für die aktuelle Situation haben wir ein zusätzliches Angebot für Take Away und Home Delivery geschaffen.",
     "plans": {
       "heading": "Angebote",
-      "recommended": "Empfohlen",
+      "recommended": "Aktuell",
       "takeaway": {
         "name": "Take Away / Home Delivery",
         "text": "Bieten Sie auf Ihrer Homepage Take Away und Home Delivery an. Ganz unkompliziert und ohne initiale Kosten.",
         "text2": "Ideal, um in der aktuellen Lage zusätzlichen Umsatz zu generieren.",
         "feature1": "Kosten pro Online-Bestellung: {percentage} %",
+        "feature1-note": "keine zusätzlichen Kreditkartengebühren",
         "price": "Keine monatlichen Gebühren"
       },
       "gaston-menu": {
@@ -70,9 +71,9 @@
         "feature2-note": "Auch für Handys optimiert",
         "priceUnit": " / Mt."
       },
-      "enterprise": {
-        "title": "Enterprise",
-        "text": "Benötigen Sie mehr als 50 Tablets? Wir machen Ihnen gerne ein auf Sie zugeschnittenes Angebot."
+      "tailored-offer": {
+        "title": "Massgeschneiderte Offerte",
+        "text": "Haben Sie ein grösseres Volumen oder spezielle Wünsche? Wir machen Ihnen gerne ein auf Sie zugeschnittenes Angebot."
       },
       "test": {
         "name": "Testing"

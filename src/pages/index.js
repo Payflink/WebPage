@@ -16,6 +16,20 @@ import tablet from '../images/tablet.svg'
 import desktopAndMobile from '../images/desktop-and-mobile.svg'
 import takeAway from '../images/take-away.svg'
 
+const pulse = keyframes`
+  0% {
+		transform: rotate(-20deg) translate(1rem, -0.5rem) scale(1);
+	}
+
+	80% {
+		transform: rotate(-20deg) translate(1rem, -0.5rem)  scale(2);
+	}
+
+	100% {
+		transform: rotate(-20deg) translate(1rem, -0.5rem) scale(1);
+	}
+`
+
 const Hero = ({ children }) => {
   const Wrapper = styled.section`
     margin-top: -5rem;
@@ -147,18 +161,20 @@ const IndexPage = ({ intl }) => {
                   {intl.formatMessage({ id: 'index.menutag' })}
                 </small>
               </h1>
-              <ul>
-                <li>
-                  <span
-                    css={`
-                      color: ${p => p.theme.primary};
-                      padding-right: 0.2em;
-                    `}
-                  >
-                    {intl.formatMessage({ id: 'index.newText' })}:
-                  </span>
-                  {intl.formatMessage({ id: 'index.USP.1' })}
-                </li>
+              <div
+                css={`
+                  color: ${p => p.theme.primary};
+                  padding-right: 0.2em;
+                  font-weight: bold;
+                  position: relative;
+                  display: inline-block;
+                  animation: ${pulse} 2s infinite;
+                `}
+              >
+                {intl.formatMessage({ id: 'index.newText' })}
+              </div>
+              <ul css="margin-top: -1rem">
+                <li>{intl.formatMessage({ id: 'index.USP.1' })}</li>
                 <li>{intl.formatMessage({ id: 'index.USP.2' })}</li>
                 <li>{intl.formatMessage({ id: 'index.USP.3' })}</li>
                 <li>{intl.formatMessage({ id: 'index.USP.4' })}</li>

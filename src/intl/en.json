@@ -52,12 +52,13 @@
     "subtitle": "For the current situation we have created an additional offer for Take Away and Home Delivery.",
     "plans": {
       "heading": "Offers",
-      "recommended": "Recommended",
+      "recommended": "Hot",
       "takeaway": {
         "name": "Take Away / Home Delivery",
         "text": "Offer Take Away and Home Delivery on your homepage. Easy to setup and without initial costs.",
         "text2": "Ideal for generating additional sales in the current situation.",
         "feature1": "Cost per online order: {percentage}%",
+        "feature1-note": "no additional credit card fees",
         "price": "No monthly fees"
       },
       "gaston-menu": {
@@ -70,9 +71,9 @@
         "feature2-note": "Also optimized for mobile phones",
         "priceUnit": " per Month"
       },
-      "enterprise": {
-        "title": "Enterprise",
-        "text": "Do you need more than 50 tablets? We will be happy to make you an offer tailored to your needs."
+      "tailored-offer": {
+        "title": "Tailored",
+        "text": "Do you have a larger volume or special wishes? We will be happy to make you an offer tailored to your needs."
       },
       "test": {
         "name": "Trial"
