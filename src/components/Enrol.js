@@ -134,7 +134,7 @@ export default injectIntl(
             /* eslint-disable-next-line no-alert */
             if (response.status === 200) {
               setFormValues(defaultState(plan, tablets, rent))
-              navigate('/pricing/thanks/')
+              navigate('/offers/thanks/')
             } else {
               throw new Error('Not 200 response')
             }
@@ -193,10 +193,10 @@ export default injectIntl(
             <p>
               {intl.formatMessage({ id: 'enrol.plan' })}:{' '}
               <strong>
-                {intl.formatMessage({ id: `pricing.plans.${plan}.name` })}
+                {intl.formatMessage({ id: `offers.plans.${plan}.name` })}
               </strong>
             </p>
-            {plan === 'pro' && (
+            {plan === 'gaston-menu' && (
               <>
                 <p>
                   {intl.formatMessage({ id: 'enrol.tabletCount' })}:{' '}
@@ -301,7 +301,7 @@ export default injectIntl(
             </Right>
             <Left>
               <Button type="button" onClick={() => window.history.back()}>
-                {intl.formatMessage({ id: 'pricing.back' })}
+                {intl.formatMessage({ id: 'offers.back' })}
               </Button>
             </Left>
           </BackNext>

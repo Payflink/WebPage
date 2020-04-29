@@ -1,4 +1,5 @@
 ---
+type: tablet
 id: samsung
 sort: 7
 name: Samsung Tab

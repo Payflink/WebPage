@@ -1,4 +1,5 @@
 ---
+type: tablet
 id: lenovo8
 sort: 3
 name: Lenovo M8

@@ -14,6 +14,21 @@ import brush from '../images/paint-board-and-brush.svg'
 import menu from '../images/menu.svg'
 import tablet from '../images/tablet.svg'
 import desktopAndMobile from '../images/desktop-and-mobile.svg'
+import takeAway from '../images/take-away.svg'
+
+const pulse = keyframes`
+  0% {
+		transform: rotate(-20deg) translate(1rem, -0.5rem) scale(1);
+	}
+
+	80% {
+		transform: rotate(-20deg) translate(1rem, -0.5rem)  scale(2);
+	}
+
+	100% {
+		transform: rotate(-20deg) translate(1rem, -0.5rem) scale(1);
+	}
+`
 
 const Hero = ({ children }) => {
   const Wrapper = styled.section`
@@ -146,11 +161,24 @@ const IndexPage = ({ intl }) => {
                   {intl.formatMessage({ id: 'index.menutag' })}
                 </small>
               </h1>
-              <ul>
+              <div
+                css={`
+                  color: ${p => p.theme.primary};
+                  padding-right: 0.2em;
+                  font-weight: bold;
+                  position: relative;
+                  display: inline-block;
+                  animation: ${pulse} 2s infinite;
+                `}
+              >
+                {intl.formatMessage({ id: 'index.newText' })}
+              </div>
+              <ul css="margin-top: -1rem">
                 <li>{intl.formatMessage({ id: 'index.USP.1' })}</li>
                 <li>{intl.formatMessage({ id: 'index.USP.2' })}</li>
                 <li>{intl.formatMessage({ id: 'index.USP.3' })}</li>
                 <li>{intl.formatMessage({ id: 'index.USP.4' })}</li>
+                <li>{intl.formatMessage({ id: 'index.USP.5' })}</li>
               </ul>
               <br />
               <Button
@@ -159,7 +187,7 @@ const IndexPage = ({ intl }) => {
                   background-color: white;
                 `}
                 as={Link}
-                to="/pricing"
+                to="/offers"
               >
                 {intl.formatMessage({ id: 'index.calltoaction' })}
               </Button>
@@ -226,6 +254,18 @@ const IndexPage = ({ intl }) => {
       >
         <Container>
           <ImageTextSection
+            image={takeAway}
+            title={intl.formatMessage({ id: 'index.take-away.title' })}
+          >
+            {intl.formatMessage({ id: 'index.take-away.content' })}
+            <br />
+            <Link to="/blog/take-away">
+              {intl.formatMessage({ id: 'index.take-away.link' })}
+            </Link>
+          </ImageTextSection>
+        </Container>
+        <Container>
+          <ImageTextSection
             image={brush}
             title={intl.formatMessage({ id: 'index.design.title' })}
           >
@@ -267,7 +307,7 @@ const IndexPage = ({ intl }) => {
               font-size: 1.4em;
             `}
             as={Link}
-            to="/pricing"
+            to="/offers"
           >
             {intl.formatMessage({ id: 'index.calltoaction' })}
           </Button>

@@ -51,7 +51,9 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-create-client-paths`,
-      options: { prefixes: [`/de/pricing/*`, `/en/pricing/*`] },
+      options: {
+        prefixes: [`/de/offers/*`, `/en/offers/*`],
+      },
     },
     {
       resolve: `gatsby-plugin-google-gtag`,

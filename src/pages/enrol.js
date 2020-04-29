@@ -11,7 +11,7 @@ import { Container } from '../styles'
 const EnrolWrapper = ({ location }) => {
   return (
     <Layout>
-      <SEO title="Pricing" />
+      <SEO title="Offers" />
       <Container>
         <Enrol location={location} />
       </Container>

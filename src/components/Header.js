@@ -71,8 +71,8 @@ const Header = ({ intl, dark }) => {
         </Link>
       </H1>
       <nav>
-        <Link to="/pricing" activeClassName="active">
-          {intl.formatMessage({ id: 'header.pricing' })}
+        <Link to="/offers" activeClassName="active">
+          {intl.formatMessage({ id: 'header.offers' })}
         </Link>
         <Link to="/about" activeClassName="active">
           {intl.formatMessage({ id: 'header.about' })}

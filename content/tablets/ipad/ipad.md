@@ -1,4 +1,5 @@
 ---
+type: tablet
 id: ipad
 sort: 10
 name: Apple iPad

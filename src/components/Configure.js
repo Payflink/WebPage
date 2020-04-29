@@ -26,7 +26,7 @@ const tabletRadioButton = (tabletType, setTabletType, intl) => ({
   specs,
 }) => {
   return (
-    <TabletBox>
+    <TabletBox key={id}>
       <input
         type="radio"
         name="type"
@@ -41,12 +41,12 @@ const tabletRadioButton = (tabletType, setTabletType, intl) => ({
         {specs && (
           <ul>
             <li>
-              {intl.formatMessage({ id: 'pricing.calculation.tabletSize' })}{' '}
+              {intl.formatMessage({ id: 'offers.calculation.tabletSize' })}{' '}
               <b>{specs.size}</b>
             </li>
             <li>
               {intl.formatMessage({
-                id: 'pricing.calculation.tabletResolution',
+                id: 'offers.calculation.tabletResolution',
               })}{' '}
               <b css="white-space: nowrap;">{specs.resolution}</b>
             </li>
@@ -152,7 +152,10 @@ const PriceLabel = styled.p`
 
 const query = graphql`
   {
-    items: allMarkdownRemark(sort: { fields: frontmatter___sort, order: ASC }) {
+    items: allMarkdownRemark(
+      sort: { fields: frontmatter___sort, order: ASC }
+      filter: { frontmatter: { type: { eq: "tablet" } } }
+    ) {
       nodes {
         frontmatter {
           id
@@ -185,7 +188,7 @@ export default injectIntl(({ intl }) => {
 
   const noTablet = {
     id: 'none',
-    name: intl.formatMessage({ id: 'pricing.calculation.ownTablets' }),
+    name: intl.formatMessage({ id: 'offers.calculation.ownTablets' }),
     image: undefined,
     price: { oneYear: 0, twoYears: 0 },
     specs: undefined,
@@ -211,12 +214,12 @@ export default injectIntl(({ intl }) => {
   }
   return (
     <>
-      <h2 css="margin-top: 0">Gaston Pro</h2>
+      <h2 css="margin-top: 0">Gaston Menu</h2>
       <Row>
         <Configure>
           <H3 large css="margin-top: 0;">
             {intl.formatMessage({
-              id: 'pricing.calculation.howManyTablets',
+              id: 'offers.calculation.howManyTablets',
             })}
           </H3>
           <Slider
@@ -235,45 +238,45 @@ export default injectIntl(({ intl }) => {
           />
 
           <H3 large css="margin-top: 4em;">
-            {intl.formatMessage({ id: 'pricing.calculation.whichTablet' })}
+            {intl.formatMessage({ id: 'offers.calculation.whichTablet' })}
           </H3>
           <TabletGrid>{tablets.map(tabletRadioButtonWithState)}</TabletGrid>
           <div css="font-size: 0.7em;">
             <h3 css=" margin-top: 1.5em; margin-bottom:0.5em;">
               {intl.formatMessage({
-                id: 'pricing.calculation.termsAndConditions.title',
+                id: 'offers.calculation.termsAndConditions.title',
               })}
             </h3>
-            <FormattedHTMLMessage id="pricing.calculation.termsAndConditions.content" />
+            <FormattedHTMLMessage id="offers.calculation.termsAndConditions.content" />
           </div>
         </Configure>
         <Price>
           <H3 large css="margin: 0">
-            {intl.formatMessage({ id: 'pricing.calculation.price' })}
+            {intl.formatMessage({ id: 'offers.calculation.price' })}
           </H3>
           <PriceItem
             tabletCount="0"
             price="39"
-            id="pricing.calculation.proPlanWithLicenses"
+            id="offers.calculation.proPlanWithLicenses"
           />
           <PriceItem
             tabletCount={extraLicenses(tabletCount)}
             price={tabletLicensePrice(tabletCount)}
-            id="pricing.calculation.totalLicensePrice"
+            id="offers.calculation.totalLicensePrice"
           />
 
           {selectedTabletPrice !== 0 && (
             <PriceItem
               tabletCount={tabletCount}
               price={tabletTotalPrice(tabletCount, selectedTabletPrice)}
-              id="pricing.calculation.totalTabletPrice"
+              id="offers.calculation.totalTabletPrice"
             />
           )}
 
           <PriceItem
             tabletCount={tabletCount}
             price={totalProPrice(tabletCount, selectedTabletPrice)}
-            id="pricing.calculation.totalPrice"
+            id="offers.calculation.totalPrice"
             css="font-size: 1em; margin-top: auto;"
           />
         </Price>
@@ -281,13 +284,13 @@ export default injectIntl(({ intl }) => {
 
       <BackNext>
         <Right>
-          <Link to={`/pricing/pro/enrol/${tabletCount}/${tabletType}`}>
-            <Button>{intl.formatMessage({ id: 'pricing.continue' })}</Button>
+          <Link to={`/offers/gaston-menu/enrol/${tabletCount}/${tabletType}`}>
+            <Button>{intl.formatMessage({ id: 'offers.continue' })}</Button>
           </Link>
         </Right>
         <Left>
           <Button onClick={() => window.history.back()}>
-            {intl.formatMessage({ id: 'pricing.back' })}
+            {intl.formatMessage({ id: 'offers.back' })}
           </Button>
         </Left>
       </BackNext>
