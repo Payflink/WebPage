@@ -54,6 +54,7 @@ export const Price = styled.p`
   font-weight: bold;
   padding: 1em 0em;
   margin: 0;
+  text-align: center;
 `
 export const PriceUnit = styled.span`
   font-size: 50%;
