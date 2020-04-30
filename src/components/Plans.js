@@ -54,6 +54,7 @@ const Plan = styled.div`
 const PlanHeading = styled.p`
   font-size: 1.5em;
   font-weight: bold;
+  text-align: center;
 `
 
 const PlanText = styled.p`
