@@ -77,6 +77,7 @@ const TabletBox = styled.label`
   transition: transform ease-in 50ms;
 
   input {
+    display: none;
     appearance: none;
     position: absolute;
     height: 100%;
