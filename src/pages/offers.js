@@ -49,9 +49,9 @@ const OffersPage = ({ intl }) => {
             align-items: baseline;
           `}
         >
-          <h2>
+          <h1>
             <FormattedMessage id="offers.heading" />
-          </h2>
+          </h1>
           <div>
             <CurrencyButton currency="USD">$</CurrencyButton>
             <CurrencyButton currency="EUR">€</CurrencyButton>

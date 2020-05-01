@@ -30,14 +30,13 @@ const pulse = keyframes`
 	}
 `
 
-const Hero = ({ children }) => {
-  const Wrapper = styled.section`
-    margin-top: -5rem;
-    padding-top: 4rem;
-    position: relative;
-    color: white;
-  `
-  const fadeIn = keyframes`
+const Wrapper = styled.section`
+  margin-top: -5rem;
+  padding-top: 4rem;
+  position: relative;
+  color: white;
+`
+const fadeIn = keyframes`
     0% {
       opacity:1;
     }
@@ -54,21 +53,21 @@ const Hero = ({ children }) => {
       opacity:1;
     }
   `
-  const BgImg = styled.div`
-    display: block;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: url(${p => p.img}) hsl(326.21, 84.43%, 38%) center/cover
-      no-repeat;
-    filter: brightness(40%);
+const BgImg = styled.div`
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(${p => p.img}) hsl(326.21, 84.43%, 38%) center/cover no-repeat;
+  filter: brightness(40%);
 
-    animation: ${fadeIn} ease 15s infinite;
-    animation-delay: ${p => p.delay}s;
-  `
+  animation: ${fadeIn} ease 15s infinite;
+  animation-delay: ${p => p.delay}s;
+`
+const Hero = ({ children }) => {
   return (
     <Wrapper>
       <BgImg img={white} delay="10" />
@@ -91,7 +90,7 @@ const ImageTextSection = ({ image, title, children }) => (
       css={`
         flex: 0 3 8em;
         background-image: url(${image});
-        background-position: center 3.2em;
+        background-position: center 2em;
         background-repeat: no-repeat;
         background-size: contain;
 
@@ -108,6 +107,7 @@ const ImageTextSection = ({ image, title, children }) => (
     >
       <h2
         css={`
+          font-size: 2em;
           @media (max-width: 768px) {
             font-size: 1.5em;
           }
@@ -145,17 +145,12 @@ const IndexPage = ({ intl }) => {
                   line-height: 0.6em;
                 `}
               >
-                <b
-                  css={`
-                    color: ${p => p.theme.primary};
-                  `}
-                >
-                  Gaston
-                </b>
+                <b>Gaston</b>
                 <br />
                 <small
                   css={`
                     font-size: 40%;
+                    color: white;
                   `}
                 >
                   {intl.formatMessage({ id: 'index.menutag' })}

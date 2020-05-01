@@ -65,11 +65,11 @@ const Header = ({ intl, dark }) => {
 
   return (
     <HeaderStyle dark={dark} scroll={scrollY}>
-      <H1 small>
+      <p small>
         <Link to="/" activeClassName="active">
           Gaston
         </Link>
-      </H1>
+      </p>
       <nav>
         <Link to="/offers" activeClassName="active">
           {intl.formatMessage({ id: 'header.offers' })}

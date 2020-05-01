@@ -6,7 +6,7 @@ import Img from 'gatsby-image'
 
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
-import { theme, Container } from '../styles'
+import { theme, Container, H1 } from '../styles'
 
 const EmployeeList = styled.div`
   margin-top: 60px;
@@ -146,9 +146,9 @@ export default () => {
     <Layout>
       <SEO title="about us" />
       <Container>
-        <h2>
+        <H1>
           <FormattedMessage id="header.about" />
-        </h2>
+        </H1>
         <p>
           <FormattedHTMLMessage id="about.content" />
         </p>

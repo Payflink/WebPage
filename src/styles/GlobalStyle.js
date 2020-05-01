@@ -37,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-  h2 {
+  h1 {
     font-size: 2em;
     color: ${p => p.theme.primary};
 

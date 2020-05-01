@@ -9,7 +9,8 @@ const ContactPage = ({ intl }) => (
   <Layout>
     <SEO title="Contact" />
     <Container>
-      <h2>{intl.formatMessage({ id: 'contact.contact' })}</h2>
+      <h1>{intl.formatMessage({ id: 'contact.contact' })}</h1>
+      <h2>Gaston by Apptiva</h2>
       <h3>{intl.formatMessage({ id: 'contact.email' })}</h3>
       <p>support@gastonsolution.com</p>
       <h3>{intl.formatMessage({ id: 'contact.phone' })}</h3>
