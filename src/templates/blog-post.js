@@ -10,6 +10,7 @@ export default ({ data }) => {
       <SEO
         title={data.markdownRemark.frontmatter.title}
         description={data.markdownRemark.frontmatter.description}
+        image={data.markdownRemark.frontmatter.image.childImageSharp}
       />
       <Container
         css={`
@@ -34,6 +35,16 @@ export const query = graphql`
         date(formatString: "DD.MM.YYYY")
         slug
         lang
+        description
+        image {
+          childImageSharp {
+            fixed(width: 512) {
+              src
+              height
+              width
+            }
+          }
+        }
       }
     }
   }

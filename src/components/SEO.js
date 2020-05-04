@@ -10,9 +10,25 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { injectIntl } from 'gatsby-plugin-intl'
 
-function SEO({ intl, description, meta, title }) {
+function SEO({ intl, description, image, meta, title }) {
   const metaDescription =
     description || `${intl.formatMessage({ id: 'description' })}`
+
+  const metaImage = image
+    ? [
+        { property: 'image', content: image.fixed.src },
+        { property: 'og:image', content: image.fixed.src },
+        {
+          property: 'og:image:width',
+          content: image.fixed.src,
+        },
+        {
+          property: 'og:image:height',
+          content: image.fixed.src,
+        },
+        { property: 'twitter:image', content: image.fixed.src },
+      ]
+    : []
 
   return (
     <Helmet
@@ -52,7 +68,9 @@ function SEO({ intl, description, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
+      ]
+        .concat(meta)
+        .concat(metaImage)}
     />
   )
 }
@@ -60,10 +78,13 @@ function SEO({ intl, description, meta, title }) {
 SEO.defaultProps = {
   meta: [],
   description: ``,
+  image: undefined,
 }
 
 SEO.propTypes = {
   description: PropTypes.string,
+  // eslint-disable-next-line react/forbid-prop-types
+  image: PropTypes.object,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
 }

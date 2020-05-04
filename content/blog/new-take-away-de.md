@@ -2,6 +2,8 @@
 lang: de
 slug: take-away
 title: Wir reagieren auf die aktuelle Situation
+description: Gaston fit für Take Away
+image: take-away.png
 date: 2020-04-21
 templateKey: blog-post
 ---

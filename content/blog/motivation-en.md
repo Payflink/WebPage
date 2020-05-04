@@ -2,6 +2,7 @@
 lang: en
 slug: motivation
 title: The five most annoying things about eating in a restaurant
+image: icon.png
 date: 2019-11-15
 templateKey: blog-post
 ---

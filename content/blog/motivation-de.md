@@ -2,6 +2,7 @@
 lang: de
 slug: motivation
 title: Die fünf nervigsten Dinge beim Essen in einem Restaurant
+image: icon.png
 date: 2019-11-15
 templateKey: blog-post
 ---
