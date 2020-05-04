@@ -7,7 +7,10 @@ import Container from '../styles/Container'
 export default ({ data }) => {
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO
+        title={data.markdownRemark.frontmatter.title}
+        description={data.markdownRemark.frontmatter.description}
+      />
       <Container
         css={`
           padding-bottom: 6em;
