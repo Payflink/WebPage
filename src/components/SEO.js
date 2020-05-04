@@ -20,11 +20,11 @@ function SEO({ intl, description, image, meta, title }) {
         { property: 'og:image', content: image.fixed.src },
         {
           property: 'og:image:width',
-          content: image.fixed.src,
+          content: image.fixed.width,
         },
         {
           property: 'og:image:height',
-          content: image.fixed.src,
+          content: image.fixed.height,
         },
         { property: 'twitter:image', content: image.fixed.src },
       ]
