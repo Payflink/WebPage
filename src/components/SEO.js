@@ -10,14 +10,16 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { injectIntl } from 'gatsby-plugin-intl'
 
+const gastonUrl = 'https://gastonsolution.com'
+
 function SEO({ intl, description, image, meta, title }) {
   const metaDescription =
     description || `${intl.formatMessage({ id: 'description' })}`
 
   const metaImage = image
     ? [
-        { property: 'image', content: image.fixed.src },
-        { property: 'og:image', content: image.fixed.src },
+        { property: 'image', content: `${gastonUrl}${image.fixed.src}` },
+        { property: 'og:image', content: `${gastonUrl}${image.fixed.src}` },
         {
           property: 'og:image:width',
           content: image.fixed.width,
@@ -26,7 +28,10 @@ function SEO({ intl, description, image, meta, title }) {
           property: 'og:image:height',
           content: image.fixed.height,
         },
-        { property: 'twitter:image', content: image.fixed.src },
+        {
+          property: 'twitter:image',
+          content: `${gastonUrl}${image.fixed.src}`,
+        },
       ]
     : []
 
