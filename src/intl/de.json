@@ -11,28 +11,46 @@
     "calltoaction": "Kostenlos starten",
     "menutag": "Digitale Speisekarte",
     "newText": "Neu",
+    "coronaTip": "Corona-Tipp",
     "USP": {
-      "1": "Take Away & Home Delivery",
-      "2": "Ihr Design",
-      "3": "Einfache Menüverwaltung",
-      "4": "Mit oder ohne Tablets",
-      "5": "Inklusive Webpage"
+      "1": "Bestellen und Bezahlen",
+      "2": "Ansprechendes Design",
+      "3": "Für Tablets, Webseite und Smartphones",
+      "4": "Einfache Menüverwaltung",
+      "5": "Mehrsprachig",
+      "6": "Optionale Tabletvermietung"
+    },
+    "everywhere": {
+      "title": "Speisekarte überall",
+      "content": "Präsentieren Sie Ihren Kunden die Speisekarte über eine Auswahl folgender Kanäle:",
+      "subtitle1": "Tablet",
+      "subcontent1": "Überreichen Sie den Kunden die Speisekarte in Form eines Tablets, das die klassische Papierspeisekarte komplett ersetzt.",
+      "subtitle2": "Webseite",
+      "subcontent2": "Binden Sie die Speisekarte auf Ihrer Webseite ein, damit Kunden schon vor einem Besuch über Ihr Angebot Bescheid wissen.",
+      "subtitle3": "Smartphone",
+      "subcontent3": "Stellen Sie einen QR-Code auf Ihre Tische, über den Ihre Gäste die Speisekarte auch auf dem eigenen Smartphone betrachten können.",
+      "subtitle4": "PDF",
+      "subcontent4": "Nutzen Sie Gastons intuitive Menüverwaltung und drucken Sie die Speisekarte ganz klassisch aus."
+    },
+    "order": {
+      "title": "Bestellen & Bezahlen",
+      "content": "Nehmen Sie Bestellungen direkt über Gaston entgegen! Sei es nur über Ihre Webseite für Take-Away & Home-Delivery oder direkt in Ihrem Restaurant über die Tablets oder Smartphones. Auch das Einkassieren kann Gaston problemlos für Sie übernehmen."
     },
     "design": {
       "title": "In Ihrem Design",
-      "content": "Ihre Speisekarte sollte in ihrem Restaurant auf keinen Fall wie ein Fremdkörper wirken. Deshalb können Sie bei Gaston komplett massgeschneiderte Designs entwerfen lassen, falls ihnen keines der Standard-Designs gefällt. Dies geht weit über das simple verändern von Farben und Bildern hinaus."
+      "content": "Ihre Speisekarte sollte in Ihrem Restaurant auf keinen Fall wie ein Fremdkörper wirken. Deshalb können Sie bei Gaston komplett massgeschneiderte Designs entwerfen lassen, falls Ihnen keines der Standard-Designs gefällt. Dies geht weit über das simple verändern von Farben und Bildern hinaus."
     },
     "administration": {
       "title": "Einfache Menüverwaltung",
-      "content": "Das Verwalten der Speisen & Getränke auf ihrer Speisekarte war noch nie so bequem! Über unsere intuitive Web-Oberfläche geschieht jede Änderung im Handumdrehen."
+      "content": "Das Verwalten der Speisen & Getränke auf Ihrer Speisekarte war noch nie so bequem! Über unsere intuitive Web-Oberfläche geschieht jede Änderung im Handumdrehen."
     },
     "rental": {
       "title": "Inklusive Tablets",
-      "content": "Die Beschaffung von geeigneten Tablets kann zu Beginn ganz schön ins Geld gehen. Noch dazu ist es schwierig zu erahnen wie lange die Tablets halten werden bevor sie kaputt gehen. Wir kennen uns mit Speisekarten-Tablets aus und bieten ihnen deshalb die Möglichkeit diese einfach & ohne Risiko von uns zu Mieten. Kaputte Tablets werden kostenlos ausgetauscht. Bei einer Kündigung geben sie die Tablets einfach zurück."
+      "content": "Die Beschaffung von geeigneten Tablets kann zu Beginn ganz schön ins Geld gehen. Noch dazu ist es schwierig zu erahnen wie lange die Tablets halten werden bevor sie kaputt gehen. Wir kennen uns mit Speisekarten-Tablets aus und bieten Ihnen deshalb die Möglichkeit diese einfach & ohne Risiko von uns zu Mieten. Kaputte Tablets werden kostenlos ausgetauscht. Bei einer Kündigung geben Sie die Tablets einfach zurück."
     },
-    "desktop-mobile": {
-      "title": "Automatisch auf Ihrer Webseite",
-      "content": "Sparen Sie sich die Zeit, Ihre Speisekarte manuell auf der Webseite zu publizieren. Mit Gaston geschieht dies automatisch. So können Ihre Gäste die Speisekarte auch in Ruhe auf dem eigenen Gerät studieren."
+    "multilingual": {
+      "title": "Mehrsprachig",
+      "content": "Sprechen Ihre Kunden nicht immer Ihre Sprache? Kein Problem, Gaston kann Ihre Speisekarte in verschiedenen Sprachen darstellen."
     },
     "take-away": {
       "title": "Take Away & Home Delivery",

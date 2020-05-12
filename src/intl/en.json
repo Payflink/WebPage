@@ -11,12 +11,30 @@
     "calltoaction": "Start for free",
     "menutag": "Digital Menu Card",
     "newText": "New",
+    "coronaTip": "Corona tip",
     "USP": {
-      "1": "Take Away & Home Delivery",
+      "1": "Pay and order",
       "2": "Your design",
-      "3": "Easy menu customization",
-      "4": "With or without tablet devices",
-      "5": "Included Webpage"
+      "3": "For tablets, website and smart phones",
+      "4": "Easy menu customization",
+      "5": "Multiple languages",
+      "6": "Optional tablet rental"
+    },
+    "everywhere": {
+      "title": "Menu everywhere",
+      "content": "Present your menu to your customers through a selection of following channels:",
+      "subtitle1": "Tablet",
+      "subcontent1": "Hand your customers your menu in form of a tablet, which completely replaces the classic paper menu.",
+      "subtitle2": "Website",
+      "subcontent2": "Include your menu on your website, so customers can know about your offer before their visit.",
+      "subtitle3": "Smartphone",
+      "subcontent3": "Put a QR code on your tables through which your customers can view your menu on their own smartphones.",
+      "subtitle4": "PDF",
+      "subcontent4": "Take advantage of Gaston's intuitive menu management to print a classic menu card."
+    },
+    "order": {
+      "title": "Order & pay",
+      "content": "Accept orders directly through Gaston! Be it on your website for Take Away & Home Delivery or directly in your restaurant via tablets or smartphones. Gaston can handle the payments as well, no problem."
     },
     "design": {
       "title": "Your design",
@@ -30,9 +48,9 @@
       "title": "Tablets included",
       "content": "The procurement of suitable tablets can be quite expensive at the beginning. Moreover, it is difficult to guess how long the tablets will last before they break. We know our way around menu tablets and therefore offer you the possibility to rent them simply & without any risk from us. Broken tablets are exchanged free of charge. In case of a cancellation you simply return the tablets."
     },
-    "desktop-mobile": {
-      "title": "Instantly on your website",
-      "content": "Save yourself the time to manually publish your menu on the website. With Gaston this is done automatically. So your guests can study the menu in peace on their own device."
+    "multilingual": {
+      "title": "Multilingual",
+      "content": "Your customers don't always speak your language? No problem! Gaston can display your menu in different languages."
     },
     "take-away": {
       "title": "Take Away & Home Delivery",

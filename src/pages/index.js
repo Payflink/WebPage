@@ -13,10 +13,12 @@ import ipad from '../images/ipad.png'
 import brush from '../images/paint-board-and-brush.svg'
 import menu from '../images/menu.svg'
 import tablet from '../images/tablet.svg'
-import desktopAndMobile from '../images/desktop-and-mobile.svg'
 import takeAway from '../images/take-away.svg'
+import everywhere from '../images/everywhere.svg'
+import order from '../images/mobile-shopping.svg'
+import languages from '../images/communications.svg'
 
-const pulse = keyframes`
+const pulseLeft = keyframes`
   0% {
 		transform: rotate(-20deg) translate(1rem, -0.5rem) scale(1);
 	}
@@ -29,7 +31,19 @@ const pulse = keyframes`
 		transform: rotate(-20deg) translate(1rem, -0.5rem) scale(1);
 	}
 `
+const pulseRight = keyframes`
+  0% {
+		transform: rotate(20deg) translate(1rem, -0.5rem) scale(1);
+	}
 
+	80% {
+		transform: rotate(20deg) translate(1rem, -0.5rem)  scale(2);
+	}
+
+	100% {
+		transform: rotate(20deg) translate(1rem, -0.5rem) scale(1);
+	}
+`
 const Wrapper = styled.section`
   margin-top: -5rem;
   padding-top: 4rem;
@@ -67,6 +81,10 @@ const BgImg = styled.div`
   animation: ${fadeIn} ease 15s infinite;
   animation-delay: ${p => p.delay}s;
 `
+const SubTitle = styled.h3`
+  margin-bottom: 0.5rem;
+`
+
 const Hero = ({ children }) => {
   return (
     <Wrapper>
@@ -163,7 +181,7 @@ const IndexPage = ({ intl }) => {
                   font-weight: bold;
                   position: relative;
                   display: inline-block;
-                  animation: ${pulse} 2s infinite;
+                  animation: ${pulseLeft} 2s infinite;
                 `}
               >
                 {intl.formatMessage({ id: 'index.newText' })}
@@ -174,6 +192,7 @@ const IndexPage = ({ intl }) => {
                 <li>{intl.formatMessage({ id: 'index.USP.3' })}</li>
                 <li>{intl.formatMessage({ id: 'index.USP.4' })}</li>
                 <li>{intl.formatMessage({ id: 'index.USP.5' })}</li>
+                <li>{intl.formatMessage({ id: 'index.USP.6' })}</li>
               </ul>
               <br />
               <Button
@@ -249,6 +268,54 @@ const IndexPage = ({ intl }) => {
       >
         <Container>
           <ImageTextSection
+            image={everywhere}
+            title={intl.formatMessage({ id: 'index.everywhere.title' })}
+          >
+            {intl.formatMessage({ id: 'index.everywhere.content' })}
+            <SubTitle>
+              {intl.formatMessage({ id: 'index.everywhere.subtitle1' })}
+            </SubTitle>
+            {intl.formatMessage({ id: 'index.everywhere.subcontent1' })}
+            <SubTitle>
+              {intl.formatMessage({ id: 'index.everywhere.subtitle2' })}
+            </SubTitle>
+            {intl.formatMessage({ id: 'index.everywhere.subcontent2' })}
+            <SubTitle
+              style={{ display: 'flex', justifyContent: 'space-between' }}
+            >
+              {intl.formatMessage({ id: 'index.everywhere.subtitle3' })}
+              <div
+                css={`
+                  color: ${p => p.theme.primary};
+                  padding-right: 0.2em;
+                  font-weight: bold;
+                  font-size: 1rem;
+                  position: relative;
+                  display: inline-block;
+                  height: 0;
+                  animation: ${pulseRight} 2s infinite;
+                `}
+              >
+                {intl.formatMessage({ id: 'index.coronaTip' })}
+              </div>
+            </SubTitle>
+            {intl.formatMessage({ id: 'index.everywhere.subcontent3' })}
+            <SubTitle>
+              {intl.formatMessage({ id: 'index.everywhere.subtitle4' })}
+            </SubTitle>
+            {intl.formatMessage({ id: 'index.everywhere.subcontent4' })}
+          </ImageTextSection>
+        </Container>
+        <Container>
+          <ImageTextSection
+            image={order}
+            title={intl.formatMessage({ id: 'index.order.title' })}
+          >
+            {intl.formatMessage({ id: 'index.order.content' })}
+          </ImageTextSection>
+        </Container>
+        <Container>
+          <ImageTextSection
             image={takeAway}
             title={intl.formatMessage({ id: 'index.take-away.title' })}
           >
@@ -277,18 +344,18 @@ const IndexPage = ({ intl }) => {
         </Container>
         <Container>
           <ImageTextSection
-            image={tablet}
-            title={intl.formatMessage({ id: 'index.rental.title' })}
+            image={languages}
+            title={intl.formatMessage({ id: 'index.multilingual.title' })}
           >
-            {intl.formatMessage({ id: 'index.rental.content' })}
+            {intl.formatMessage({ id: 'index.multilingual.content' })}
           </ImageTextSection>
         </Container>
         <Container>
           <ImageTextSection
-            image={desktopAndMobile}
-            title={intl.formatMessage({ id: 'index.desktop-mobile.title' })}
+            image={tablet}
+            title={intl.formatMessage({ id: 'index.rental.title' })}
           >
-            {intl.formatMessage({ id: 'index.desktop-mobile.content' })}
+            {intl.formatMessage({ id: 'index.rental.content' })}
           </ImageTextSection>
         </Container>
         <Container
