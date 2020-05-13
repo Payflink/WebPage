@@ -1,45 +1,45 @@
-import { totalProPrice } from '../prices'
+import { totalPrice } from '../prices'
 
 describe('Calc pro prices without devices', () => {
   it('Normal case', () => {
-    expect(totalProPrice(15)).toBe(54)
+    expect(totalPrice(15)).toBe(54)
   })
 
   it('0 tablets', () => {
-    expect(totalProPrice(0)).toBe(39)
+    expect(totalPrice(0)).toBe(39)
   })
 
   it('1 tablet', () => {
-    expect(totalProPrice(1)).toBe(39)
+    expect(totalPrice(1)).toBe(39)
   })
 
   it('10 tablets', () => {
-    expect(totalProPrice(10)).toBe(39)
+    expect(totalPrice(10)).toBe(39)
   })
 
   it('50 tablets', () => {
-    expect(totalProPrice(50)).toBe(159)
+    expect(totalPrice(50)).toBe(159)
   })
 })
 
 describe('Calc pro prices with devices', () => {
   it('Normal case', () => {
-    expect(totalProPrice(15, 9)).toBe(189)
+    expect(totalPrice(15, 9)).toBe(189)
   })
 
   it('0 tablets', () => {
-    expect(totalProPrice(0, 9)).toBe(39)
+    expect(totalPrice(0, 9)).toBe(39)
   })
 
   it('1 tablet', () => {
-    expect(totalProPrice(1, 19)).toBe(58)
+    expect(totalPrice(1, 19)).toBe(58)
   })
 
   it('10 tablets', () => {
-    expect(totalProPrice(10, 29)).toBe(329)
+    expect(totalPrice(10, 29)).toBe(329)
   })
 
   it('50 tablets', () => {
-    expect(totalProPrice(50, 19)).toBe(1109)
+    expect(totalPrice(50, 19)).toBe(1109)
   })
 })

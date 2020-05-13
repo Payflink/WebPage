@@ -43,7 +43,7 @@ const PriceTag = ({ price, className }) => {
         }}
       </FormattedNumberParts>
       <PriceUnit>
-        <FormattedMessage id="offers.plans.gaston-menu.priceUnit" />
+        <FormattedMessage id="offers.plans.perMonth" />
       </PriceUnit>
     </Price>
   )

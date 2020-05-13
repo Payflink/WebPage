@@ -7,7 +7,7 @@ import fetch from 'unfetch'
 import { graphql, useStaticQuery } from 'gatsby'
 import { Button as DefaultButton, BackNext, Right, Left } from '../styles'
 import PriceTag from './PriceTag'
-import { totalProPrice } from './prices'
+import { totalPrice, tabletTotalPrice } from './prices'
 import gtagEvent from '../lib/gtagEvent'
 
 const encode = data =>
@@ -119,7 +119,7 @@ export default injectIntl(
         /* eslint-disable-next-line no-alert */
         alert(intl.formatMessage({ id: 'enrol.failure' }))
       } else if (formValues['bot-field'] === undefined) {
-        trackEvent(totalProPrice(formValues.tablets, formValues.rent))
+        trackEvent(totalPrice(formValues.tablets, formValues.rent, plan))
         const body = encode({
           'form-name': 'enrol',
           subject: 'Gaston Abo-Abschluss',
@@ -160,9 +160,11 @@ export default injectIntl(
     return (
       <>
         <h2 css="margin-top: 0">
-          {intl.formatMessage({ id: `enrol.title.${plan}` })}
+          {`${intl.formatMessage({
+            id: `offers.plans.${plan}.gastonName`,
+          })} bestellen`}
         </h2>
-        <p>{intl.formatMessage({ id: `enrol.description.${plan}` })}</p>
+        <p>{intl.formatMessage({ id: 'enrol.description.test' })}</p>
         <form
           name="enrol"
           data-netlify="true"
@@ -191,32 +193,30 @@ export default injectIntl(
             `}
           >
             <p>
-              {intl.formatMessage({ id: 'enrol.plan' })}:{' '}
+              {`${intl.formatMessage({ id: 'enrol.plan' })}: `}
               <strong>
                 {intl.formatMessage({ id: `offers.plans.${plan}.name` })}
               </strong>
             </p>
-            {plan === 'gaston-menu' && (
-              <>
-                <p>
-                  {intl.formatMessage({ id: 'enrol.tabletCount' })}:{' '}
-                  <strong>{tablets}</strong>
-                </p>
-                <p>
-                  {intl.formatMessage({ id: 'enrol.rent' })}:{' '}
-                  <strong>
-                    {tabletName ||
-                      intl.formatMessage({ id: 'enrol.rentTypes.none' })}
-                  </strong>
-                </p>
+            {tabletName && (
+              <p>
+                {`${intl.formatMessage({ id: 'enrol.tabletCount' })}: `}
+                <strong>{tablets}</strong>
+              </p>
+            )}
+            <p>
+              {`${intl.formatMessage({ id: 'enrol.rent' })}: `}
+              <strong>
+                {tabletName ||
+                  intl.formatMessage({ id: 'enrol.rentTypes.none' })}
+              </strong>
+            </p>
 
-                {tabletPrice && (
-                  <PriceTag
-                    css="padding: 0;"
-                    price={totalProPrice(tablets, tabletPrice.oneYear)}
-                  />
-                )}
-              </>
+            {tabletPrice && (
+              <PriceTag
+                css="padding: 0;"
+                price={tabletTotalPrice(tablets, tabletPrice.oneYear)}
+              />
             )}
           </div>
           <h2>{intl.formatMessage({ id: 'enrol.yourDetails' })}</h2>
