@@ -28,7 +28,7 @@
       "subtitle2": "Webseite",
       "subcontent2": "Binden Sie die Speisekarte auf Ihrer Webseite ein, damit Kunden schon vor einem Besuch über Ihr Angebot Bescheid wissen.",
       "subtitle3": "Smartphone",
-      "subcontent3": "Stellen Sie einen QR-Code auf Ihre Tische, über den Ihre Gäste die Speisekarte auch auf dem eigenen Smartphone betrachten können.",
+      "subcontent3": "Stellen Sie einen QR-Code auf Ihre Tische, über den Ihre Gäste die Speisekarte auf dem eigenen Smartphone betrachten können.",
       "subtitle4": "PDF",
       "subcontent4": "Nutzen Sie Gastons intuitive Menüverwaltung und drucken Sie die Speisekarte ganz klassisch aus."
     },
@@ -79,7 +79,7 @@
         "text": "Präsentieren Sie den Gästen Ihre Speisekarte über eine Auswahl folgender Kanäle:",
         "feature1": "Auf Ihren Restaurant-Tablets",
         "feature2": "Auf Ihrer Website",
-        "feature3": "Auf dem eigenen Smartphone via QR-Code"
+        "feature3": "Auf den Smartphones Ihrer Gäste"
       },
       "gaston-order": {
         "name": "Order",
