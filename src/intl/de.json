@@ -161,6 +161,8 @@
       "android": "Android Tablets",
       "ipad": "iPads"
     },
+    "priceNow": "Kosten ab sofort",
+    "priceAfterTest": "Kosten nach 2 Monaten",
     "customDesign": "Ich bin interessiert an einem massgeschneiderten Design.",
     "YourName": "Ihr Name (Pflichtfeld)",
     "YourEMail": "Ihre Email-Adresse (Pflichtfeld)",

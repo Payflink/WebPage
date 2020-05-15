@@ -161,6 +161,8 @@
       "android": "Android Tablets",
       "ipad": "iPads"
     },
+    "priceNow": "Price now",
+    "priceAfterTest": "Price after 2 months",
     "customDesign": "I'm interested in a custom design.",
     "YourName": "Your name (required)",
     "YourEMail": "Your email address (required)",

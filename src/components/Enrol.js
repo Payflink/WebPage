@@ -7,7 +7,7 @@ import fetch from 'unfetch'
 import { graphql, useStaticQuery } from 'gatsby'
 import { Button as DefaultButton, BackNext, Right, Left } from '../styles'
 import PriceTag from './PriceTag'
-import { totalPrice, tabletTotalPrice } from './prices'
+import { totalPrice, tabletTotalPrice, planPrice } from './prices'
 import gtagEvent from '../lib/gtagEvent'
 
 const encode = data =>
@@ -211,13 +211,32 @@ export default injectIntl(
                   intl.formatMessage({ id: 'enrol.rentTypes.none' })}
               </strong>
             </p>
-
             {tabletPrice && (
-              <PriceTag
-                css="padding: 0;"
-                price={tabletTotalPrice(tablets, tabletPrice.oneYear)}
-              />
+              <>
+                <p>
+                  {`${intl.formatMessage({
+                    id: 'enrol.priceNow',
+                  })}: `}
+                </p>
+                <PriceTag
+                  css="padding:0; text-align: left;"
+                  price={tabletTotalPrice(tablets, tabletPrice.oneYear)}
+                />
+              </>
             )}
+            <p>
+              {`${intl.formatMessage({
+                id: 'enrol.priceAfterTest',
+              })}: `}
+            </p>
+            <PriceTag
+              css="padding:0; text-align: left;"
+              price={
+                tabletPrice
+                  ? totalPrice(tablets, tabletPrice.oneYear, plan)
+                  : planPrice(plan)
+              }
+            />
           </div>
           <h2>{intl.formatMessage({ id: 'enrol.yourDetails' })}</h2>
           <p>
