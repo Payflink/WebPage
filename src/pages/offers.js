@@ -60,10 +60,10 @@ const OffersPage = ({ intl }) => {
         </div>
         <Router basepath={`/${intl.locale}/offers`}>
           <Plans default />
-          <Enrol plan="takeaway" path="/takeaway/enrol" />
-          <Enrol plan="test" path="/test/enrol" />
           <Enrol plan="gaston-menu" path="/gaston-menu/enrol/:tablets/:rent" />
-          <Configure path="/gaston-menu/tabletcount" />
+          <Enrol plan="gaston-order" path="/gaston-order/enrol/:tablets/:rent" />
+          <Enrol plan="gaston-pay" path="/gaston-pay/enrol/:tablets/:rent" />
+          <Configure path="/configure/:plan" />
           <Thanks path="/thanks" />
         </Router>
       </Container>

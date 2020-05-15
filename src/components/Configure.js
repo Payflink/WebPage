@@ -11,10 +11,9 @@ import Img from 'gatsby-image'
 import styled from 'styled-components'
 import PriceTag from './PriceTag'
 import {
-  totalProPrice,
+  totalPrice,
   tabletTotalPrice,
-  tabletLicensePrice,
-  extraLicenses,
+  planPrice,
 } from './prices'
 import { BackNext, Right, Button, Left, H3 } from '../styles'
 
@@ -182,7 +181,7 @@ const query = graphql`
   }
 `
 
-export default injectIntl(({ intl }) => {
+export default injectIntl(({ intl, plan }) => {
   const models = useStaticQuery(query).items.nodes.map(
     ({ frontmatter }) => frontmatter
   )
@@ -215,30 +214,12 @@ export default injectIntl(({ intl }) => {
   }
   return (
     <>
-      <h2 css="margin-top: 0">Gaston Menu</h2>
+      <h2 css="margin-top: 0">
+        {intl.formatMessage({ id: `offers.plans.${plan}.gastonName` })}
+      </h2>
       <Row>
         <Configure>
           <H3 large css="margin-top: 0;">
-            {intl.formatMessage({
-              id: 'offers.calculation.howManyTablets',
-            })}
-          </H3>
-          <Slider
-            min={2}
-            max={maxTablets}
-            defaultValue={tabletCount}
-            marks={{
-              2: <div>2</div>,
-              10: <div>10</div>,
-              20: <div>20</div>,
-              30: <div>30</div>,
-              40: <div>40</div>,
-              50: <div>50</div>,
-            }}
-            onChange={tabletCountChanged}
-          />
-
-          <H3 large css="margin-top: 4em;">
             {intl.formatMessage({ id: 'offers.calculation.whichTablet' })}
           </H3>
           <TabletGrid>{tablets.map(tabletRadioButtonWithState)}</TabletGrid>
@@ -250,6 +231,30 @@ export default injectIntl(({ intl }) => {
             </h3>
             <FormattedHTMLMessage id="offers.calculation.termsAndConditions.content" />
           </div>
+
+          {tabletType !== 'none' && (
+            <>
+              <H3 large css="margin-top: 3rem;">
+                {intl.formatMessage({
+                  id: 'offers.calculation.howManyTablets',
+                })}
+              </H3>
+              <Slider
+                min={2}
+                max={maxTablets}
+                defaultValue={tabletCount}
+                marks={{
+                  2: <div>2</div>,
+                  10: <div>10</div>,
+                  20: <div>20</div>,
+                  30: <div>30</div>,
+                  40: <div>40</div>,
+                  50: <div>50</div>,
+                }}
+                onChange={tabletCountChanged}
+              />
+            </>
+          )}
         </Configure>
         <Price>
           <H3 large css="margin: 0">
@@ -257,15 +262,9 @@ export default injectIntl(({ intl }) => {
           </H3>
           <PriceItem
             tabletCount="0"
-            price="39"
-            id="offers.calculation.proPlanWithLicenses"
+            price={planPrice(plan)}
+            id={`offers.plans.${plan}.gastonName`}
           />
-          <PriceItem
-            tabletCount={extraLicenses(tabletCount)}
-            price={tabletLicensePrice(tabletCount)}
-            id="offers.calculation.totalLicensePrice"
-          />
-
           {selectedTabletPrice !== 0 && (
             <PriceItem
               tabletCount={tabletCount}
@@ -276,7 +275,7 @@ export default injectIntl(({ intl }) => {
 
           <PriceItem
             tabletCount={tabletCount}
-            price={totalProPrice(tabletCount, selectedTabletPrice)}
+            price={totalPrice(tabletCount, selectedTabletPrice, plan)}
             id="offers.calculation.totalPrice"
             css="font-size: 1em; margin-top: auto;"
           />
@@ -285,7 +284,7 @@ export default injectIntl(({ intl }) => {
 
       <BackNext>
         <Right>
-          <Link to={`/offers/gaston-menu/enrol/${tabletCount}/${tabletType}`}>
+          <Link to={`/offers/${plan}/enrol/${tabletCount}/${tabletType}`}>
             <Button>{intl.formatMessage({ id: 'offers.continue' })}</Button>
           </Link>
         </Right>

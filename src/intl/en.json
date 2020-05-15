@@ -11,12 +11,30 @@
     "calltoaction": "Start for free",
     "menutag": "Digital Menu Card",
     "newText": "New",
+    "coronaTip": "Corona tip",
     "USP": {
-      "1": "Take Away & Home Delivery",
+      "1": "Pay and order",
       "2": "Your design",
-      "3": "Easy menu customization",
-      "4": "With or without tablet devices",
-      "5": "Included Webpage"
+      "3": "For tablets, website and smart phones",
+      "4": "Easy menu customization",
+      "5": "Multiple languages",
+      "6": "Optional tablet rental"
+    },
+    "everywhere": {
+      "title": "Menu everywhere",
+      "content": "Present your menu to your customers through a selection of following channels:",
+      "subtitle1": "Tablet",
+      "subcontent1": "Hand your customers your menu in form of a tablet, which completely replaces the classic paper menu.",
+      "subtitle2": "Website",
+      "subcontent2": "Include your menu on your website, so customers can know about your offer before their visit.",
+      "subtitle3": "Smartphone",
+      "subcontent3": "Put a QR code on your tables through which your customers can view your menu on their own smartphones.",
+      "subtitle4": "PDF",
+      "subcontent4": "Take advantage of Gaston's intuitive menu management to print a classic menu card."
+    },
+    "order": {
+      "title": "Order & pay",
+      "content": "Accept orders directly through Gaston! Be it on your website for Take Away & Home Delivery or directly in your restaurant via tablets or smartphones. Gaston can handle the payments as well, no problem."
     },
     "design": {
       "title": "Your design",
@@ -30,9 +48,9 @@
       "title": "Tablets included",
       "content": "The procurement of suitable tablets can be quite expensive at the beginning. Moreover, it is difficult to guess how long the tablets will last before they break. We know our way around menu tablets and therefore offer you the possibility to rent them simply & without any risk from us. Broken tablets are exchanged free of charge. In case of a cancellation you simply return the tablets."
     },
-    "desktop-mobile": {
-      "title": "Instantly on your website",
-      "content": "Save yourself the time to manually publish your menu on the website. With Gaston this is done automatically. So your guests can study the menu in peace on their own device."
+    "multilingual": {
+      "title": "Multilingual",
+      "content": "Your customers don't always speak your language? No problem! Gaston can display your menu in different languages."
     },
     "take-away": {
       "title": "Take Away & Home Delivery",
@@ -49,46 +67,56 @@
   },
   "offers": {
     "heading": "Offers",
-    "subtitle": "For the current situation we have created an additional offer for Take Away and Home Delivery.",
+    "subtitle": "We have the right offer for every need.",
     "plans": {
       "heading": "Offers",
       "recommended": "Hot",
-      "takeaway": {
-        "name": "Take Away / Home Delivery",
-        "text": "Offer Take Away and Home Delivery on your homepage. Easy to setup and without initial costs.",
-        "text2": "Ideal for generating additional sales in the current situation.",
-        "feature1": "Cost per online order: {percentage}%",
-        "feature1-note": "no additional credit card fees",
-        "price": "No monthly fees"
-      },
+      "perMonth": " / Mth",
+      "perOrder": " / Order",
       "gaston-menu": {
-        "name": "Gaston Menu",
-        "text": "Use the advantages of a digital menu for tablets and smartphones in your company. The prices depend on the number of tablets you use.",
-        "text2": "You don't want to procure the tablets yourself? We also offer you the devices for rent.",
-        "feature1": "Tablet licenses included: 10",
-        "feature1-note": "Each additional license: {licensePrice}",
-        "feature2": "Publishing on website",
-        "feature2-note": "Also optimized for mobile phones",
-        "priceUnit": " per Month"
+        "name": "Menu",
+        "gastonName": "Gaston Menu",
+        "text": "Present your menu to your customers through following channels:",
+        "feature1": "On your restaurant tablets",
+        "feature2": "On your website",
+        "feature3": "On your customers' smartphones"
       },
-      "tailored-offer": {
-        "title": "Tailored",
-        "text": "Do you have a larger volume or special wishes? We will be happy to make you an offer tailored to your needs."
+      "gaston-order": {
+        "name": "Order",
+        "gastonName": "Gaston Order",
+        "text": "Everything from Menu",
+        "text2": "Customers can place orders through selected channels directly via Gaston."
+      },
+      "gaston-pay": {
+        "name": "Pay",
+        "gastonName": "Gaston Pay",
+        "text": "Everything from Order",
+        "text2": "Customers can pay orders through selected channels directly via Gaston."
+      },
+      "gaston-pro": {
+        "name": "Pro",
+        "subtitle1": "Additional features",
+        "feature1": "Your own design",
+        "feature2": "Multiple languages",
+        "feature3": "Multiple branches",
+        "feature4": "PDF / print",
+        "feature5": "Day-dependent dishes",
+        "feature6": "Seasonal layouts",
+        "subtitle2": "Individual offer",
+        "text": "If none of our basic offers matches your restaurant, we will be happy to make you an offer tailored to your needs."
       },
       "test": {
-        "name": "Trial"
+        "name": "Testing"
       }
     },
-    "test": "Trial",
+    "test": "Try 2 months for free",
     "calculation": {
       "price": "Price",
       "howManyTablets": "How many tablet licenses do you need?",
-      "whichTablet": "Which tablet would you like to rent?",
-      "ownTablets": "I have my own tablets",
+      "whichTablet": "Would you like to rent tablets?",
+      "ownTablets": "I don't want to rent tablets.",
       "tabletSize": "Size",
       "tabletResolution": "Resolution",
-      "proPlanWithLicenses": "Pro Plan including 10 tablet licenses",
-      "totalLicensePrice": "{tabletCount} additional tablet licenses",
       "totalTabletPrice": "Rent for {tabletCount} tablets",
       "totalPrice": "Total",
       "termsAndConditions": {
@@ -121,15 +149,8 @@
     "back": "Back"
   },
   "enrol": {
-    "title": {
-      "takeaway": "Order Take Away / Home Delivery",
-      "test": "Try Gaston",
-      "gaston-menu": "Order Gaston Menu"
-    },
     "description": {
-      "takeaway": "Thank you for your interest in Take Away / Home Delivery. Please complete the following information so that we can create your account.",
-      "test": "Thank you for your interest in the Solo plan. Please complete the following details so that we can send you the test access.",
-      "gaston-menu": "Thank you very much for your interest. Please complete the following details so that we can send you an offer."
+      "test": "Thank you for your interest in Gaston. Please complete the following details so that we can send you the test access."
     },
     "yourDetails": "Your details",
     "plan": "Your plan",
@@ -140,6 +161,8 @@
       "android": "Android Tablets",
       "ipad": "iPads"
     },
+    "priceNow": "Price now",
+    "priceAfterTest": "Price after 2 months",
     "customDesign": "I'm interested in a custom design.",
     "YourName": "Your name (required)",
     "YourEMail": "Your email address (required)",
