@@ -33,7 +33,22 @@ function SEO({ intl, description, image, meta, title }) {
           content: `${gastonUrl}${image.fixed.src}`,
         },
       ]
-    : []
+    : [
+        { property: 'image', content: `${gastonUrl}/img/site-image.png` },
+        { property: 'og:image', content: `${gastonUrl}/img/site-image.png` },
+        {
+          property: 'og:image:width',
+          content: 2700,
+        },
+        {
+          property: 'og:image:height',
+          content: 1350,
+        },
+        {
+          property: 'twitter:image',
+          content: `${gastonUrl}/img/site-image.png`,
+        },
+      ]
 
   return (
     <Helmet
