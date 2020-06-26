@@ -18,32 +18,6 @@ import everywhere from '../images/everywhere.svg'
 import order from '../images/mobile-shopping.svg'
 import languages from '../images/communications.svg'
 
-const pulseLeft = keyframes`
-  0% {
-		transform: rotate(-20deg) translate(1rem, -0.5rem) scale(1);
-	}
-
-	80% {
-		transform: rotate(-20deg) translate(1rem, -0.5rem)  scale(2);
-	}
-
-	100% {
-		transform: rotate(-20deg) translate(1rem, -0.5rem) scale(1);
-	}
-`
-const pulseRight = keyframes`
-  0% {
-		transform: rotate(20deg) translate(1rem, -0.5rem) scale(1);
-	}
-
-	80% {
-		transform: rotate(20deg) translate(1rem, -0.5rem)  scale(2);
-	}
-
-	100% {
-		transform: rotate(20deg) translate(1rem, -0.5rem) scale(1);
-	}
-`
 const Wrapper = styled.section`
   margin-top: -5rem;
   padding-top: 4rem;
@@ -83,6 +57,25 @@ const BgImg = styled.div`
 `
 const SubTitle = styled.h3`
   margin-bottom: 0.5rem;
+`
+
+const VideoContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`
+
+const VideoTextColumn = styled.div`
+  flex: 1 1 15em;
+  padding-right: 2em;
+`
+
+const VideoColumn = styled.div`
+  flex: 1 1 20em;
+`
+
+const Video = styled.video`
+  width: 100%;
+  border: 1px solid ${p => p.theme.primary};
 `
 
 const Hero = ({ children }) => {
@@ -174,18 +167,6 @@ const IndexPage = ({ intl }) => {
                   {intl.formatMessage({ id: 'index.menutag' })}
                 </small>
               </h1>
-              <div
-                css={`
-                  color: ${p => p.theme.primary};
-                  padding-right: 0.2em;
-                  font-weight: bold;
-                  position: relative;
-                  display: inline-block;
-                  animation: ${pulseLeft} 2s infinite;
-                `}
-              >
-                {intl.formatMessage({ id: 'index.newText' })}
-              </div>
               <ul css="margin-top: -1rem">
                 <li>{intl.formatMessage({ id: 'index.USP.1' })}</li>
                 <li>{intl.formatMessage({ id: 'index.USP.2' })}</li>
@@ -271,39 +252,51 @@ const IndexPage = ({ intl }) => {
             image={everywhere}
             title={intl.formatMessage({ id: 'index.everywhere.title' })}
           >
-            {intl.formatMessage({ id: 'index.everywhere.content' })}
-            <SubTitle>
-              {intl.formatMessage({ id: 'index.everywhere.subtitle1' })}
-            </SubTitle>
-            {intl.formatMessage({ id: 'index.everywhere.subcontent1' })}
-            <SubTitle>
-              {intl.formatMessage({ id: 'index.everywhere.subtitle2' })}
-            </SubTitle>
-            {intl.formatMessage({ id: 'index.everywhere.subcontent2' })}
-            <SubTitle
-              style={{ display: 'flex', justifyContent: 'space-between' }}
-            >
-              {intl.formatMessage({ id: 'index.everywhere.subtitle3' })}
-              <div
-                css={`
-                  color: ${p => p.theme.primary};
-                  padding-right: 0.2em;
-                  font-weight: bold;
-                  font-size: 1rem;
-                  position: relative;
-                  display: inline-block;
-                  height: 0;
-                  animation: ${pulseRight} 2s infinite;
-                `}
-              >
-                {intl.formatMessage({ id: 'index.coronaTip' })}
-              </div>
-            </SubTitle>
-            {intl.formatMessage({ id: 'index.everywhere.subcontent3' })}
-            <SubTitle>
-              {intl.formatMessage({ id: 'index.everywhere.subtitle4' })}
-            </SubTitle>
-            {intl.formatMessage({ id: 'index.everywhere.subcontent4' })}
+            <VideoContainer>
+              <VideoTextColumn>
+                <p>{intl.formatMessage({ id: 'index.everywhere.content' })}</p>
+                <SubTitle>
+                  {intl.formatMessage({ id: 'index.everywhere.subtitle1' })}
+                </SubTitle>
+                {intl.formatMessage({ id: 'index.everywhere.subcontent1' })}
+                <SubTitle>
+                  {intl.formatMessage({ id: 'index.everywhere.subtitle2' })}
+                </SubTitle>
+                {intl.formatMessage({ id: 'index.everywhere.subcontent2' })}
+                <SubTitle
+                  style={{ display: 'flex', justifyContent: 'space-between' }}
+                >
+                  {intl.formatMessage({ id: 'index.everywhere.subtitle3' })}
+                </SubTitle>
+                {intl.formatMessage({ id: 'index.everywhere.subcontent3' })}
+                <SubTitle>
+                  {intl.formatMessage({ id: 'index.everywhere.subtitle4' })}
+                </SubTitle>
+                {intl.formatMessage({ id: 'index.everywhere.subcontent4' })}
+              </VideoTextColumn>
+              <VideoColumn>
+                <p>
+                  <Video muted autoPlay loop controls>
+                    <source
+                      src="https://res.cloudinary.com/apptiva/video/upload/v1593171844/gaston/gaston-menu.mp4"
+                      type="video/mp4"
+                    />
+                    <track
+                      src="/gaston-menu-en.vtt"
+                      kind="captions"
+                      srcLang="en"
+                      default={intl.locale === 'en'}
+                    />
+                    <track
+                      src="/gaston-menu-de.vtt"
+                      kind="captions"
+                      srcLang="de"
+                      default={intl.locale === 'de'}
+                    />
+                  </Video>
+                </p>
+              </VideoColumn>
+            </VideoContainer>
           </ImageTextSection>
         </Container>
         <Container>
@@ -311,7 +304,33 @@ const IndexPage = ({ intl }) => {
             image={order}
             title={intl.formatMessage({ id: 'index.order.title' })}
           >
-            {intl.formatMessage({ id: 'index.order.content' })}
+            <VideoContainer>
+              <VideoTextColumn>
+                <p>{intl.formatMessage({ id: 'index.order.content' })}</p>
+              </VideoTextColumn>
+              <VideoColumn>
+                <p>
+                  <Video muted autoPlay loop controls>
+                    <source
+                      src="https://res.cloudinary.com/apptiva/video/upload/v1593175414/gaston/gaston-order.mp4"
+                      type="video/mp4"
+                    />
+                    <track
+                      src="/gaston-order-en.vtt"
+                      kind="captions"
+                      srcLang="en"
+                      default={intl.locale === 'en'}
+                    />
+                    <track
+                      src="/gaston-order-de.vtt"
+                      kind="captions"
+                      srcLang="de"
+                      default={intl.locale === 'de'}
+                    />
+                  </Video>
+                </p>
+              </VideoColumn>
+            </VideoContainer>
           </ImageTextSection>
         </Container>
         <Container>
@@ -339,7 +358,27 @@ const IndexPage = ({ intl }) => {
             image={menu}
             title={intl.formatMessage({ id: 'index.administration.title' })}
           >
-            {intl.formatMessage({ id: 'index.administration.content' })}
+            <p>{intl.formatMessage({ id: 'index.administration.content' })}</p>
+            <p>
+              <Video muted autoPlay loop controls>
+                <source
+                  src="https://res.cloudinary.com/apptiva/video/upload/v1593170458/gaston/gaston-cms.mp4"
+                  type="video/mp4"
+                />
+                <track
+                  src="/gaston-cms-en.vtt"
+                  kind="captions"
+                  srcLang="en"
+                  default={intl.locale === 'en'}
+                />
+                <track
+                  src="/gaston-cms-de.vtt"
+                  kind="captions"
+                  srcLang="de"
+                  default={intl.locale === 'de'}
+                />
+              </Video>
+            </p>
           </ImageTextSection>
         </Container>
         <Container>
