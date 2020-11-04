@@ -243,6 +243,7 @@ const IndexPage = ({ intl }) => {
         </Container>
       </Hero>
       <section
+        id="features"
         css={`
           margin-top: 6em;
         `}
