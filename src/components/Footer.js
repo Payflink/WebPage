@@ -21,7 +21,8 @@ const FooterStyle = styled.footer`
 const Footer = ({ intl }) => (
   <FooterStyle>
     <p>
-      © 2019 • Gaston • {`${intl.formatMessage({ id: 'footer.by' })} `}
+      © 2019 - {new Date().getFullYear()} • Gaston •{' '}
+      {`${intl.formatMessage({ id: 'footer.by' })} `}
       <a href="https://apptiva.ch">Apptiva</a> •{' '}
       {intl.formatMessage({ id: 'footer.switzerland' })}
     </p>
