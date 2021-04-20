@@ -72,5 +72,6 @@ module.exports = {
     },
     'gatsby-plugin-netlify-cache',
     `gatsby-plugin-preload-fonts`,
+    `gatsby-plugin-modal-routing`,
   ],
 }

@@ -13,6 +13,7 @@
     "gatsby-plugin-google-gtag": "^1.2.1",
     "gatsby-plugin-intl": "^0.3.3",
     "gatsby-plugin-manifest": "^2.4.0",
+    "gatsby-plugin-modal-routing": "^1.2.0",
     "gatsby-plugin-netlify-cache": "^1.2.0",
     "gatsby-plugin-offline": "^2.2.10",
     "gatsby-plugin-preload-fonts": "^1.2.0",

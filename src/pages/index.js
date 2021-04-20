@@ -186,6 +186,20 @@ const IndexPage = ({ intl }) => {
               >
                 {intl.formatMessage({ id: 'index.calltoaction' })}
               </Button>
+              <Button
+                css={`
+                  font-size: 1.2em;
+                  background-color: white;
+                `}
+                as={Link}
+                to="/demo-modal"
+                state={{
+                  noScroll: true,
+                  modal: true,
+                }}
+              >
+                {intl.formatMessage({ id: 'index.demo-calltoaction' })}
+              </Button>
             </div>
             <div>
               <div
