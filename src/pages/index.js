@@ -130,7 +130,6 @@ const ImageTextSection = ({ image, title, children }) => (
     </div>
   </div>
 )
-
 const IndexPage = ({ intl }) => {
   return (
     <Layout dark>
@@ -178,7 +177,6 @@ const IndexPage = ({ intl }) => {
               <br />
               <Button
                 css={`
-                  font-size: 1.2em;
                   background-color: white;
                 `}
                 as={Link}
@@ -188,14 +186,13 @@ const IndexPage = ({ intl }) => {
               </Button>
               <Button
                 css={`
-                  font-size: 1.2em;
                   background-color: white;
+                  margin-left: 0.5em;
                 `}
                 as={Link}
-                to="/demo-modal"
+                to="/qr-code-demo"
                 state={{
-                  noScroll: true,
-                  modal: true,
+                  modal: window.innerWidth > 448,
                 }}
               >
                 {intl.formatMessage({ id: 'index.demo-calltoaction' })}

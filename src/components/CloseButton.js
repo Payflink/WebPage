@@ -13,27 +13,16 @@ const CloseButton = () => {
 
 export default CloseButton
 
-const CloseButtonDiv = styled.button`
-  z-index: 1000;
+const CloseButtonDiv = styled.div`
   height: 2rem;
   width: 2rem;
   align-self: center;
-  border: solid 1px grey;
-  border-radius: 3px;
-  background: grey;
-  color: ${p => p.theme.primary};
-  outline: none;
-  opacity: 0.8;
+  margin-left: auto;
 
   svg {
     height: 1.5em;
     width: 1.5em;
     stroke: currentColor;
     stroke-width: 1px;
-  }
-
-  &:active {
-    color: grey;
-    background: ${p => p.theme.primary};
   }
 `

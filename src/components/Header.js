@@ -3,7 +3,6 @@ import { useScrollYPosition } from 'react-use-scroll-position'
 
 import styled, { css } from 'styled-components'
 import React from 'react'
-import { H1 } from '../styles'
 
 const HeaderStyle = styled.header`
   position: relative;
@@ -71,6 +70,15 @@ const Header = ({ intl, dark }) => {
         </Link>
       </p>
       <nav>
+        <Link
+          to="/qr-code-demo"
+          activeClassName="active"
+          state={{
+            modal: window.innerWidth > 448,
+          }}
+        >
+          Demo
+        </Link>
         <Link to="/offers" activeClassName="active">
           {intl.formatMessage({ id: 'header.offers' })}
         </Link>

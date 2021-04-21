@@ -72,6 +72,37 @@ module.exports = {
     },
     'gatsby-plugin-netlify-cache',
     `gatsby-plugin-preload-fonts`,
-    `gatsby-plugin-modal-routing`,
+    {
+      resolve: `gatsby-plugin-modal-routing`,
+      options: {
+        appElement: '#___gatsby',
+        modalProps: {
+          style: {
+            overlay: {
+              position: `fixed`,
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              backgroundColor: `rgba(103, 99, 99, 0.75)`,
+              display: `flex`,
+              justifyContent: `center`,
+            },
+            content: {
+              position: `absolute`,
+              border: `solid 1px #E11387`,
+              background: `#EEEEEE`,
+              overflow: `auto`,
+              WebkitOverflowScrolling: `touch`,
+              zIndex: 1000,
+              maxWidth: `600px`,
+              margin: `2em auto`,
+              bottom: 0,
+            },
+          },
+          contentLabel: `Modal`,
+        },
+      },
+    },
   ],
 }
