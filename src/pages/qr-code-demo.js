@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing'
 import Layout from '../components/Layout'
-
+import SEO from '../components/SEO'
 import CloseButton from '../components/CloseButton'
 import qrCodeTable7 from '../images/qr-code-table-7.jpg'
 import { Button, Container } from '../styles'
@@ -22,6 +22,7 @@ const Text = styled.p`
 
 const renderContent = () => (
   <>
+    <SEO title="QR-Code Demo" />
     <h1>Gaston Demo</h1>
     <h2>Erleben Sie den Besuch bei Ihnen aus Sicht Ihrer Gäste!</h2>
     <Text>
