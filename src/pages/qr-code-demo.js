@@ -24,6 +24,13 @@ const Text = styled.p`
   padding-bottom: 1.5em;
 `
 
+const WithoutQrCodeLink = styled.a`
+  display: flex;
+  justify-content: center;
+  padding-top: 4em;
+  text-decoration: none;
+`
+
 const renderContent = intl => (
   <>
     <SEO title="QR-Code Demo" />
@@ -31,8 +38,7 @@ const renderContent = intl => (
     <h2>{intl.formatMessage({ id: 'index.qr-code-demo.subtitle' })}</h2>
     <Text>{intl.formatMessage({ id: 'index.qr-code-demo.content' })}</Text>
     <QRCode src={qrCodeTable7} alt="qr-code scan me" />
-    <Text>{intl.formatMessage({ id: 'index.qr-code-demo.content2' })}</Text>
-    <a
+    <WithoutQrCodeLink
       href="https://demo.gastonsolution.com/?table=7"
       target="_blank"
       rel="noopener noreferrer"
@@ -40,7 +46,7 @@ const renderContent = intl => (
       <Button>
         {intl.formatMessage({ id: 'index.qr-code-demo.calltoaction' })}
       </Button>
-    </a>
+    </WithoutQrCodeLink>
   </>
 )
 

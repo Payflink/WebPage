@@ -9,7 +9,7 @@
     "service": "Service",
     "payment": "Payment",
     "calltoaction": "Order now",
-    "demo-calltoaction": "Start Demo",
+    "demo-calltoaction": "Start demo",
     "menutag": "Digital Menu Card",
     "newText": "New",
     "coronaTip": "Corona tip",
@@ -60,9 +60,8 @@
     },
     "qr-code-demo": {
       "title": "Gaston Demo",
-      "subtitle": "Go trough the customer experience and test the app for your restaurant",
-      "content": "Just follow these three easy steps and try Gaston",
-      "content2": "In the demo version you can play through the payment process, no fees will be charged!",
+      "subtitle": "Go through the customer experience and test the app for your restaurant",
+      "content": "In the demo version you can play through the payment process, no Transactions will be charged!",
       "calltoaction": "Test without QR code"
     }
   },
