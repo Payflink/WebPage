@@ -70,15 +70,6 @@ const Header = ({ intl, dark }) => {
         </Link>
       </p>
       <nav>
-        <Link
-          to="/qr-code-demo"
-          activeClassName="active"
-          state={{
-            modal: window.innerWidth > 448,
-          }}
-        >
-          Demo
-        </Link>
         <Link to="/offers" activeClassName="active">
           {intl.formatMessage({ id: 'header.offers' })}
         </Link>

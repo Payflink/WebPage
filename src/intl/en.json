@@ -8,7 +8,7 @@
     "ordering": "Ordering",
     "service": "Service",
     "payment": "Payment",
-    "calltoaction": "Start for free",
+    "calltoaction": "Order now",
     "demo-calltoaction": "Start Demo",
     "menutag": "Digital Menu Card",
     "newText": "New",
@@ -57,6 +57,13 @@
       "title": "Take Away & Home Delivery",
       "content": "Offer Take Away and Home Delivery on your homepage. Easy to setup and without initial costs.",
       "link": "Learn more on our blog"
+    },
+    "qr-code-demo": {
+      "title": "Gaston Demo",
+      "subtitle": "Go trough the customer experience and test the app for your restaurant",
+      "content": "Just follow these three easy steps and try Gaston",
+      "content2": "In the demo version you can play through the payment process, no fees will be charged!",
+      "calltoaction": "Test without QR code"
     }
   },
   "contact": {

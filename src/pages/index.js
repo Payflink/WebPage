@@ -178,16 +178,18 @@ const IndexPage = ({ intl }) => {
               <Button
                 css={`
                   background-color: white;
+                  margin: 0.2em;
                 `}
                 as={Link}
                 to="/offers"
               >
                 {intl.formatMessage({ id: 'index.calltoaction' })}
               </Button>
+
               <Button
                 css={`
                   background-color: white;
-                  margin-left: 0.5em;
+                  margin: 0.2em;
                 `}
                 as={Link}
                 to="/qr-code-demo"
@@ -418,11 +420,26 @@ const IndexPage = ({ intl }) => {
           <Button
             css={`
               font-size: 1.4em;
+              margin: 0.2em;
             `}
             as={Link}
             to="/offers"
           >
             {intl.formatMessage({ id: 'index.calltoaction' })}
+          </Button>
+
+          <Button
+            css={`
+              font-size: 1.4em;
+              margin: 0.2em;
+            `}
+            as={Link}
+            to="/qr-code-demo"
+            state={{
+              modal: window.innerWidth > 448,
+            }}
+          >
+            {intl.formatMessage({ id: 'index.demo-calltoaction' })}
           </Button>
         </Container>
       </section>

@@ -98,6 +98,7 @@ module.exports = {
               maxWidth: `600px`,
               margin: `2em auto`,
               bottom: 0,
+              maxHeight: `100vh`,
             },
           },
           contentLabel: `Modal`,

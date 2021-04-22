@@ -8,7 +8,7 @@
     "ordering": "Bestellung",
     "service": "Dienstleistung",
     "payment": "Bezahlung",
-    "calltoaction": "Kostenlos starten",
+    "calltoaction": "Jetzt Bestellen",
     "demo-calltoaction": "Demo starten",
     "menutag": "Digitale Speisekarte",
     "USP": {
@@ -55,6 +55,13 @@
       "title": "Take Away & Home Delivery",
       "content": "Bieten Sie auf Ihrer Homepage Take Away und Home Delivery an. Ganz unkompliziert und ohne initiale Kosten.",
       "link": "Erfahren Sie mehr auf unseren Blog"
+    },
+    "qr-code-demo": {
+      "title": "Gaston Demo",
+      "subtitle": "Erleben Sie den Besuch bei Ihnen aus Sicht Ihrer Gäste!",
+      "content": "Testen Sie Gaston jetzt in drei einfachen Schritten auf Ihrem Smartphone",
+      "content2": "In der Demoversion können Sie den Bezahlablauf durchspielen, es werden keine Gebühren verrechnet!",
+      "calltoaction": "Ohne QR-Code testen"
     }
   },
   "contact": {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { injectIntl, Link } from 'gatsby-plugin-intl'
 import styled from 'styled-components'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing'
 import Layout from '../components/Layout'
@@ -8,8 +8,12 @@ import CloseButton from '../components/CloseButton'
 import qrCodeTable7 from '../images/qr-code-table-7.jpg'
 import { Button, Container } from '../styles'
 
+const Title = styled.h1`
+  margin: 0;
+`
+
 const QRCode = styled.img`
-  max-width: 320px;
+  max-width: 280px;
   margin: auto;
 `
 
@@ -20,47 +24,40 @@ const Text = styled.p`
   padding-bottom: 1.5em;
 `
 
-const renderContent = () => (
+const renderContent = intl => (
   <>
     <SEO title="QR-Code Demo" />
-    <h1>Gaston Demo</h1>
-    <h2>Erleben Sie den Besuch bei Ihnen aus Sicht Ihrer Gäste!</h2>
-    <Text>
-      Testen Sie Gaston jetzt in drei einfachen Schritten auf Ihrem Smartphone
-    </Text>
-
+    <Title>{intl.formatMessage({ id: 'index.qr-code-demo.title' })}</Title>
+    <h2>{intl.formatMessage({ id: 'index.qr-code-demo.subtitle' })}</h2>
+    <Text>{intl.formatMessage({ id: 'index.qr-code-demo.content' })}</Text>
     <QRCode src={qrCodeTable7} alt="qr-code scan me" />
-
-    <Text>
-      In der Demoversion können Sie den Bezahlablauf durchspielen, es werden
-      keine Gebühren verrechnet!
-    </Text>
-
+    <Text>{intl.formatMessage({ id: 'index.qr-code-demo.content2' })}</Text>
     <a
       href="https://demo.gastonsolution.com/?table=7"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <Button>Ohne QR-Code testen </Button>
+      <Button>
+        {intl.formatMessage({ id: 'index.qr-code-demo.calltoaction' })}
+      </Button>
     </a>
   </>
 )
 
-const DemoModalPage = () => (
+const DemoModalPage = ({ intl }) => (
   <ModalRoutingContext.Consumer>
-    {({ modal, closeTo }) => (
+    {({ modal, close }) => (
       <>
         {modal ? (
           <>
-            <Link to={closeTo}>
+            <Link to={close}>
               <CloseButton />
             </Link>
-
-            <Container>{renderContent()}</Container>
+            <Container>{renderContent(intl)}</Container>
           </>
         ) : (
           <Layout>
-            <Container>{renderContent()}</Container>
+            <Container>{renderContent(intl)}</Container>
           </Layout>
         )}
       </>
@@ -68,4 +65,4 @@ const DemoModalPage = () => (
   </ModalRoutingContext.Consumer>
 )
 
-export default DemoModalPage
+export default injectIntl(DemoModalPage)
