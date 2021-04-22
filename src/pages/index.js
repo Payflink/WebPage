@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
 import { injectIntl, Link } from 'gatsby-plugin-intl'
-
+import useWindowWidth from '../lib/useWindowWith'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 import { Container, Button } from '../styles'
@@ -131,6 +131,7 @@ const ImageTextSection = ({ image, title, children }) => (
   </div>
 )
 const IndexPage = ({ intl }) => {
+  const windowWidth = useWindowWidth()
   return (
     <Layout dark>
       <SEO title="Home" />
@@ -194,7 +195,7 @@ const IndexPage = ({ intl }) => {
                 as={Link}
                 to="/qr-code-demo"
                 state={{
-                  modal: window.innerWidth > 448,
+                  modal: windowWidth > 448,
                 }}
               >
                 {intl.formatMessage({ id: 'index.demo-calltoaction' })}
@@ -436,7 +437,7 @@ const IndexPage = ({ intl }) => {
             as={Link}
             to="/qr-code-demo"
             state={{
-              modal: window.innerWidth > 448,
+              modal: windowWidth > 448,
             }}
           >
             {intl.formatMessage({ id: 'index.demo-calltoaction' })}
