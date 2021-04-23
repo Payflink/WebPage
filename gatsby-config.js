@@ -97,8 +97,6 @@ module.exports = {
               zIndex: 1000,
               maxWidth: `600px`,
               margin: `2em auto`,
-              bottom: 0,
-              maxHeight: `100vh`,
             },
           },
           contentLabel: `Modal`,

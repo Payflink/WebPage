@@ -24,11 +24,22 @@ const Text = styled.p`
   padding-bottom: 1.5em;
 `
 
-const WithoutQrCodeLink = styled.a`
+const GastonDemoLink = styled.a`
   display: flex;
   justify-content: center;
   padding-top: 4em;
   text-decoration: none;
+`
+
+const ModalContainer = styled(Container)`
+  display: flex;
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
+  padding: 0;
 `
 
 const renderContent = intl => (
@@ -38,7 +49,7 @@ const renderContent = intl => (
     <h2>{intl.formatMessage({ id: 'index.qr-code-demo.subtitle' })}</h2>
     <Text>{intl.formatMessage({ id: 'index.qr-code-demo.content' })}</Text>
     <QRCode src={qrCodeTable7} alt="qr-code scan me" />
-    <WithoutQrCodeLink
+    <GastonDemoLink
       href="https://demo.gastonsolution.com/?table=7"
       target="_blank"
       rel="noopener noreferrer"
@@ -46,7 +57,7 @@ const renderContent = intl => (
       <Button>
         {intl.formatMessage({ id: 'index.qr-code-demo.calltoaction' })}
       </Button>
-    </WithoutQrCodeLink>
+    </GastonDemoLink>
   </>
 )
 
@@ -55,12 +66,12 @@ const DemoModalPage = ({ intl }) => (
     {({ modal, close }) => (
       <>
         {modal ? (
-          <>
+          <ModalContainer>
             <Link to={close}>
               <CloseButton />
             </Link>
             <Container>{renderContent(intl)}</Container>
-          </>
+          </ModalContainer>
         ) : (
           <Layout>
             <Container>{renderContent(intl)}</Container>
