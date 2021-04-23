@@ -59,7 +59,8 @@
     "qr-code-demo": {
       "title": "Gaston Demo",
       "subtitle": "Erleben Sie den Besuch bei Ihnen aus Sicht Ihrer Gäste!",
-      "content": "In der Demoversion können Sie den Bezahlablauf durchspielen, es werden keine Transaktionen verrechnet!",
+      "content": "In der Demoversion können Sie den Bezahlablauf durchspielen.",
+      "content2": "Wählen Sie für die Demo einfach ein beliebiges Zahlungsmittel aus. Es findet dabei keine Zahlung statt.",
       "calltoaction": "Ohne QR-Code testen"
     }
   },

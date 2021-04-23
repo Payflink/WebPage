@@ -61,7 +61,8 @@
     "qr-code-demo": {
       "title": "Gaston Demo",
       "subtitle": "Go through the customer experience and test the app for your restaurant",
-      "content": "In the demo version you can play through the payment process, no Transactions will be charged!",
+      "content": "In the demo version you can play through the payment process.",
+      "content2": "Simply select any payment method for the demo. No payment takes place in the process.",
       "calltoaction": "Test without QR code"
     }
   },

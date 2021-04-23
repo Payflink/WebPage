@@ -13,15 +13,14 @@ const Title = styled.h1`
 `
 
 const QRCode = styled.img`
-  max-width: 280px;
+  max-width: 220px;
   margin: auto;
 `
 
 const Text = styled.p`
   padding: 1em 0;
   font-weight: 700;
-  font-size: 1.1em;
-  padding-bottom: 1.5em;
+  padding-bottom: 0;
 `
 
 const GastonDemoLink = styled.a`
@@ -48,6 +47,7 @@ const renderContent = intl => (
     <Title>{intl.formatMessage({ id: 'index.qr-code-demo.title' })}</Title>
     <h2>{intl.formatMessage({ id: 'index.qr-code-demo.subtitle' })}</h2>
     <Text>{intl.formatMessage({ id: 'index.qr-code-demo.content' })}</Text>
+    <Text>{intl.formatMessage({ id: 'index.qr-code-demo.content2' })}</Text>
     <QRCode src={qrCodeTable7} alt="qr-code scan me" />
     <GastonDemoLink
       href="https://demo.gastonsolution.com/?table=7"
