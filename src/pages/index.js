@@ -126,7 +126,7 @@ const ImageTextSection = ({ image, title, children }) => (
       >
         {title}
       </h2>
-      <p>{children}</p>
+      <div>{children}</div>
     </div>
   </div>
 )

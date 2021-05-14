@@ -1,7 +1,19 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/ssr-apis/
- */
+const React = require('react')
 
-// You can delete this file if you're not using it
+exports.onRenderBody = ({ pathname, setPostBodyComponents }) => {
+  const langPath = /^\/(..)\//
+  const match = pathname.match(langPath)
+  const lang = match && match.length > 1 && match[1]
+
+  if (lang === 'de') {
+    setPostBodyComponents([
+      <script
+        key="chatbot"
+        id="chatbot"
+        data-server="https://pierre.gastonsolution.com/webclient"
+        defer
+        src="https://pierre.gastonsolution.com/webclient/embed/bundle.js"
+      />,
+    ])
+  }
+}
