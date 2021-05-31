@@ -7,7 +7,6 @@ import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 import { Container } from '../styles'
 import Plans from '../components/Plans'
-import Configure from '../components/Configure'
 import Enrol from '../components/Enrol'
 import Thanks from '../components/Thanks'
 import CurrencyContext from '../contexts/CurrencyContext'
@@ -60,10 +59,9 @@ const OffersPage = ({ intl }) => {
         </div>
         <Router basepath={`/${intl.locale}/offers`}>
           <Plans default />
-          <Enrol plan="gaston-menu" path="/gaston-menu/enrol/:tablets/:rent" />
-          <Enrol plan="gaston-order" path="/gaston-order/enrol/:tablets/:rent" />
-          <Enrol plan="gaston-pay" path="/gaston-pay/enrol/:tablets/:rent" />
-          <Configure path="/configure/:plan" />
+          <Enrol plan="gaston-menu" path="/gaston-menu/enrol/" />
+          <Enrol plan="gaston-order" path="/gaston-order/enrol/" />
+          <Enrol plan="gaston-pay" path="/gaston-pay/enrol/" />
           <Thanks path="/thanks" />
         </Router>
       </Container>

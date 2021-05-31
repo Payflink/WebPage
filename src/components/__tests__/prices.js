@@ -1,45 +1,29 @@
-import { totalPrice } from '../prices'
+import { totalPrice, planPrice } from '../prices'
 
-describe('Calc pro prices without devices', () => {
+describe('Calc total prices', () => {
   it('Normal case', () => {
-    expect(totalPrice(15)).toBe(54)
+    expect(totalPrice('gaston-menu')).toBe(49)
   })
 
   it('0 tablets', () => {
-    expect(totalPrice(0)).toBe(39)
+    expect(totalPrice('gaston-order')).toBe(89)
   })
 
   it('1 tablet', () => {
-    expect(totalPrice(1)).toBe(39)
-  })
-
-  it('10 tablets', () => {
-    expect(totalPrice(10)).toBe(39)
-  })
-
-  it('50 tablets', () => {
-    expect(totalPrice(50)).toBe(159)
+    expect(totalPrice('gaston-pay')).toBe(89)
   })
 })
 
-describe('Calc pro prices with devices', () => {
+describe('Calc plan prices', () => {
   it('Normal case', () => {
-    expect(totalPrice(15, 9)).toBe(189)
+    expect(planPrice('gaston-menu')).toBe(49)
   })
 
   it('0 tablets', () => {
-    expect(totalPrice(0, 9)).toBe(39)
+    expect(planPrice('gaston-order')).toBe(89)
   })
 
   it('1 tablet', () => {
-    expect(totalPrice(1, 19)).toBe(58)
-  })
-
-  it('10 tablets', () => {
-    expect(totalPrice(10, 29)).toBe(329)
-  })
-
-  it('50 tablets', () => {
-    expect(totalPrice(50, 19)).toBe(1109)
+    expect(planPrice('gaston-pay')).toBe(89)
   })
 })

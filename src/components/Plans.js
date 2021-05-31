@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { injectIntl, Link } from 'gatsby-plugin-intl'
 
 import '../styles/rc-slider.css'
@@ -6,7 +6,6 @@ import styled, { css } from 'styled-components'
 import { Button as DefaultButton } from '../styles'
 import PriceTag, { Price, PriceUnit } from './PriceTag'
 import { takeawayPercentageFee, menuPrice, orderPrice } from './prices'
-import CurrencyContext from '../contexts/CurrencyContext'
 
 const PlanWrapper = styled.div`
   display: grid;
@@ -146,7 +145,7 @@ export default injectIntl(({ intl }) => {
           <PriceWrapper>
             <PriceTag price={menuPrice} />
             <SelectPlanButtonWrapper>
-              <SelectPlanButton to="/offers/configure/gaston-menu">
+              <SelectPlanButton to="/offers/gaston-menu/enrol/">
                 {intl.formatMessage({ id: `offers.test` })}
               </SelectPlanButton>
             </SelectPlanButtonWrapper>
@@ -167,7 +166,7 @@ export default injectIntl(({ intl }) => {
           <PriceWrapper>
             <PriceTag price={orderPrice} />
             <SelectPlanButtonWrapper>
-              <SelectPlanButton to="/offers/configure/gaston-order">
+              <SelectPlanButton to="/offers/gaston-order/enrol/">
                 {intl.formatMessage({ id: `offers.test` })}
               </SelectPlanButton>
             </SelectPlanButtonWrapper>
@@ -196,7 +195,7 @@ export default injectIntl(({ intl }) => {
               </PriceUnit>
             </Price>
             <SelectPlanButtonWrapper>
-              <SelectPlanButton to="/offers/configure/gaston-pay">
+              <SelectPlanButton to="/offers/gaston-pay/enrol/">
                 {intl.formatMessage({ id: `offers.test` })}
               </SelectPlanButton>
             </SelectPlanButtonWrapper>
