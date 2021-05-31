@@ -17,7 +17,7 @@ export default ({ data }) => {
           padding-bottom: 6em;
         `}
       >
-        <h2>{data.markdownRemark.frontmatter.title}</h2>
+        <h1>{data.markdownRemark.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
       </Container>
     </Layout>

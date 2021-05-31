@@ -37,4 +37,4 @@ Natürlich können Sie mit einigen Einstellungen Einfluss auf den Bestellungspro
 
 ### Was kostet mich das?
 
-Wir haben bewusst auf Abo-Kosten verzichtet. Falls keine Bestellung über Gaston rein kommt, sollen Sie auch nichts bezahlen müssen. Wir behalten aber 5 % des Umsatzes für die Weiterentwicklung und Wartung von Gaston.
+Mehr über die Kosten von Gaston finden Sie auf der [Angebots](/offers/)-Seite.

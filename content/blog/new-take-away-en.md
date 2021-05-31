@@ -12,7 +12,7 @@ Restaurants were hit hard by the Corona crisis. With the lockdown, from one mome
 
 So, it takes creativity and new ways to get back to the turnover before the crisis. It remains important to observe the protective measures for guests and staff. We have thought about how we can support the businesses in this.
 
-### Take Away and Home Delivery
+## Take Away and Home Delivery
 
 Some have already adopted this variant. This quickly opens up new sales channels. Some restaurants update their homepage with the offer and the telephone number. Others simply put a notice board on the street.
 
@@ -21,7 +21,7 @@ These are quick and pragmatic measures that also work. But they can still be opt
 - With a well-managed order process on the homepage, more customers can be reached. Ordering becomes easier.
 - For larger volumes, the process from ordering, payment to delivery must be better organized.
 
-### What is the solution?
+## What is the solution?
 
 We attach great importance to the fact that our solution is implemented quickly and cost-effectively. Therefore, there are only the following steps for restaurant operators to take:
 
@@ -35,6 +35,6 @@ Of course, you can influence the ordering process with some settings:
 - Tell us how much lead time you need
 - Determine the delivery surcharge
 
-### What's it gonna cost me?
+## What's it gonna cost me?
 
-We have deliberately avoided subscription costs. If no order comes in via Gaston, you should not have to pay anything. However, we retain 5% of the turnover for the further development and maintenance of Gaston.
+More about the costs of Gaston you can find on the [offer](/offers/) page.
