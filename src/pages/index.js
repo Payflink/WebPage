@@ -12,11 +12,11 @@ import menus from '../images/menus.png'
 import ipad from '../images/ipad.png'
 import brush from '../images/paint-board-and-brush.svg'
 import menu from '../images/menu.svg'
-import tablet from '../images/tablet.svg'
 import takeAway from '../images/take-away.svg'
 import everywhere from '../images/everywhere.svg'
 import order from '../images/mobile-shopping.svg'
 import languages from '../images/communications.svg'
+import roadmap from '../images/roadmap.svg'
 
 const Wrapper = styled.section`
   margin-top: -5rem;
@@ -401,6 +401,21 @@ const IndexPage = ({ intl }) => {
             title={intl.formatMessage({ id: 'index.multilingual.title' })}
           >
             {intl.formatMessage({ id: 'index.multilingual.content' })}
+          </ImageTextSection>
+        </Container>
+        <Container>
+          <ImageTextSection
+            image={roadmap}
+            title={intl.formatMessage({ id: 'index.roadmap.title' })}
+          >
+            <p>{intl.formatMessage({ id: 'index.roadmap.content' })}</p>
+
+            <Button
+              as="a"
+              href="https://www.notion.so/gastonsolution/Roadmap-von-Gaston-6644875d1fba4fe58cacfbf15e1ace7e"
+            >
+              Roadmap
+            </Button>
           </ImageTextSection>
         </Container>
         <Container

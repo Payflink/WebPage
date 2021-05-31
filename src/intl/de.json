@@ -57,6 +57,10 @@
       "content": "In der Demoversion können Sie den Bezahlablauf durchspielen.",
       "content2": "Wählen Sie für die Demo einfach ein beliebiges Zahlungsmittel aus. Es findet dabei keine Zahlung statt.",
       "calltoaction": "Ohne QR-Code testen"
+    },
+    "roadmap": {
+      "title": "Kommende Features",
+      "content": "Gaston wird ständig weiter entwickelt. Entsprechend können Sie sich auf die folgenden Features freuen."
     }
   },
   "contact": {

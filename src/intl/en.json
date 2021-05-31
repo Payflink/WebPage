@@ -59,6 +59,10 @@
       "content": "In the demo version you can play through the payment process.",
       "content2": "Simply select any payment method for the demo. No payment takes place in the process.",
       "calltoaction": "Test without QR code"
+    },
+    "roadmap": {
+      "title": "Coming Features",
+      "content": "Gaston is under constant development. Accordingly, you can look forward to the following features."
     }
   },
   "contact": {
