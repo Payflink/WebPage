@@ -173,7 +173,6 @@ const IndexPage = ({ intl }) => {
                 <li>{intl.formatMessage({ id: 'index.USP.3' })}</li>
                 <li>{intl.formatMessage({ id: 'index.USP.4' })}</li>
                 <li>{intl.formatMessage({ id: 'index.USP.5' })}</li>
-                <li>{intl.formatMessage({ id: 'index.USP.6' })}</li>
               </ul>
               <br />
               <Button
@@ -402,14 +401,6 @@ const IndexPage = ({ intl }) => {
             title={intl.formatMessage({ id: 'index.multilingual.title' })}
           >
             {intl.formatMessage({ id: 'index.multilingual.content' })}
-          </ImageTextSection>
-        </Container>
-        <Container>
-          <ImageTextSection
-            image={tablet}
-            title={intl.formatMessage({ id: 'index.rental.title' })}
-          >
-            {intl.formatMessage({ id: 'index.rental.content' })}
           </ImageTextSection>
         </Container>
         <Container

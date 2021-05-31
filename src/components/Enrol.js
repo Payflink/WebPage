@@ -87,7 +87,7 @@ export default injectIntl(({ plan, intl }) => {
       /* eslint-disable-next-line no-alert */
       alert(intl.formatMessage({ id: 'enrol.failure' }))
     } else if (formValues['bot-field'] === undefined) {
-      trackEvent(totalPrice(formValues.tablets, formValues.rent, plan))
+      trackEvent(totalPrice(plan))
       const body = encode({
         'form-name': 'enrol',
         subject: 'Gaston Abo-Abschluss',

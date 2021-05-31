@@ -16,8 +16,7 @@
       "2": "Ansprechendes Design",
       "3": "Für Tablets, Webseite und Smartphones",
       "4": "Einfache Menüverwaltung",
-      "5": "Mehrsprachig",
-      "6": "Optionale Tabletvermietung"
+      "5": "Mehrsprachig"
     },
     "everywhere": {
       "title": "Speisekarte überall",
@@ -42,10 +41,6 @@
     "administration": {
       "title": "Einfache Menüverwaltung",
       "content": "Das Verwalten der Speisen & Getränke auf Ihrer Speisekarte war noch nie so bequem! Über unsere intuitive Web-Oberfläche geschieht jede Änderung im Handumdrehen."
-    },
-    "rental": {
-      "title": "Inklusive Tablets",
-      "content": "Die Beschaffung von geeigneten Tablets kann zu Beginn ganz schön ins Geld gehen. Noch dazu ist es schwierig zu erahnen wie lange die Tablets halten werden bevor sie kaputt gehen. Wir kennen uns mit Speisekarten-Tablets aus und bieten Ihnen deshalb die Möglichkeit diese einfach & ohne Risiko von uns zu Mieten. Kaputte Tablets werden kostenlos ausgetauscht. Bei einer Kündigung geben Sie die Tablets einfach zurück."
     },
     "multilingual": {
       "title": "Mehrsprachig",
@@ -133,25 +128,6 @@
     "order": "Bestellen",
     "continue": "Weiter",
     "contactUs": "Kontaktieren Sie uns",
-    "rent": {
-      "title": "Tablet Vermietung",
-      "description": "Wir lassen Sie bei der Wahl Ihrer Tablets nicht alleine. Sie können die optimalen Modelle für Gaston Menu auch bei uns mieten.",
-      "priceUnit": " / Mt. / Tablet",
-      "android": {
-        "title": "Android-Tablets mieten",
-        "description": "Unsere Android-Tablets bieten Ihnen das beste Preis-Leistungs-Verhältnis. Sie Mieten die Tablets von uns.",
-        "minimalRental": "Mindestmietdauer: 1 Jahr",
-        "continue": "Inkl. Android-Tablets mieten"
-      },
-      "iPad": {
-        "title": "iPads mieten",
-        "description": "Beste Qualität liegt Ihnen am Herzen? Dann mieten Sie Apple iPads von uns.",
-        "minimalRental": "Mindestmietdauer: 1 Jahr",
-        "continue": "Inkl. iPads mieten"
-      },
-      "select": "Auswählen",
-      "noTablets": "Ich habe eigene Tablets"
-    },
     "back": "Zurück"
   },
   "enrol": {

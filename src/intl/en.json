@@ -18,8 +18,7 @@
       "2": "Your design",
       "3": "For tablets, website and smart phones",
       "4": "Easy menu customization",
-      "5": "Multiple languages",
-      "6": "Optional tablet rental"
+      "5": "Multiple languages"
     },
     "everywhere": {
       "title": "Menu everywhere",
@@ -44,10 +43,6 @@
     "administration": {
       "title": "Easy menu customization",
       "content": "Managing the food & drinks on your menu has never been so convenient! With our intuitive web interface, every change can be made in no time at all."
-    },
-    "rental": {
-      "title": "Tablets included",
-      "content": "The procurement of suitable tablets can be quite expensive at the beginning. Moreover, it is difficult to guess how long the tablets will last before they break. We know our way around menu tablets and therefore offer you the possibility to rent them simply & without any risk from us. Broken tablets are exchanged free of charge. In case of a cancellation you simply return the tablets."
     },
     "multilingual": {
       "title": "Multilingual",
@@ -135,25 +130,6 @@
     "order": "Order",
     "continue": "Continue",
     "contactUs": "Contact us",
-    "rent": {
-      "title": "Tablet rental",
-      "description": "We do not leave you alone with the choice of your tablets. You can also rent the optimal models for Gaston Menu from us.",
-      "priceUnit": " per month and tablet",
-      "android": {
-        "title": "Android tablets for rent",
-        "description": "Our Android tablets offer you the best price-performance ratio. You rent the tablets from us.",
-        "minimalRental": "Minimum rental period: 1 year",
-        "continue": "Continue with Android-Tablets"
-      },
-      "iPad": {
-        "title": "Rent iPads",
-        "description": "Best quality is close to your heart? Then rent Apple iPads from us.",
-        "minimalRental": "Minimum rental period: 1 year",
-        "continue": "Continue with iPads"
-      },
-      "select": "Select",
-      "noTablets": "Continue without Tablets"
-    },
     "back": "Back"
   },
   "enrol": {
