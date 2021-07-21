@@ -68,7 +68,8 @@
   "contact": {
     "contact": "Contact",
     "email": "Email",
-    "phone": "Phone",
+    "sales": "Sales",
+    "support": "Support (24h)",
     "address": "Address",
     "switzerland": "Switzerland"
   },

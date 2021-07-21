@@ -13,8 +13,10 @@ const ContactPage = ({ intl }) => (
       <h2>Gaston by Apptiva</h2>
       <h3>{intl.formatMessage({ id: 'contact.email' })}</h3>
       <p>support@gastonsolution.com</p>
-      <h3>{intl.formatMessage({ id: 'contact.phone' })}</h3>
+      <h3>{intl.formatMessage({ id: 'contact.sales' })}</h3>
       <p>+41 41 322 26 26</p>
+      <h3>{intl.formatMessage({ id: 'contact.support' })}</h3>
+      <p>+41 41 562 01 11</p>
       <h3>{intl.formatMessage({ id: 'contact.address' })}</h3>
       <address>
         Neuenkirchstrasse 19 <br />
