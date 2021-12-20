@@ -49,11 +49,6 @@ const About = () => {
       image: <StaticImage src="../images/team/roman-schaller-prev.jpg" />,
     },
     {
-      name: 'Renato Wasescha',
-      position: 'consultant',
-      image: <StaticImage src="../images/team/renato-wasescha-prev.jpg" />,
-    },
-    {
       name: 'Linus Huesler',
       position: 'consultant',
       image: <StaticImage src="../images/team/linus-huesler-prev.jpg" />,
