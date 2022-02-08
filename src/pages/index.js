@@ -81,108 +81,7 @@ const IndexPage = ({ intl }) => {
         >
           {intl.formatMessage({ id: 'index.claim' })}
         </p>
-        <div
-          css={`
-            position: relative;
-            margin: 0 max(-4em, -4vw) 4em;
-            z-index: -1;
-            div {
-              position: absolute;
-              inset: 0;
-              animation-name: fade;
-              animation-iteration-count: infinite;
-              animation-duration: ${motion.length / 2}s;
-              opacity: 0;
-              img {
-                height: 100%;
-                width: 100%;
-              }
-            }
-            p {
-              position: absolute;
-              font-size: 2.2em;
-              font-weight: bold;
-              line-height: 1em;
-              inset: 65% 0% 0%;
-              margin: 0;
-              padding-top: 0.4em;
-              color: #333;
-              text-shadow: 0 0 18px white;
-              text-align: center;
-              z-index: 2;
-              opacity: 0;
-              animation-name: showit;
-              animation-iteration-count: infinite;
-              animation-duration: ${motion.length / 2}s;
-              background: linear-gradient(
-                180deg,
-                rgba(255, 255, 255, 0) 0%,
-                rgba(255, 255, 255, 0.5) 30%,
-                rgba(255, 255, 255, 0.5) 50%,
-                rgba(255, 255, 255, 0.5) 70%,
-                rgba(255, 255, 255, 0) 100%
-              );
-              @media (min-width: 700px) {
-                font-size: 4em;
-                background: linear-gradient(
-                  180deg,
-                  rgba(255, 255, 255, 0) 0%,
-                  rgba(255, 255, 255, 0.4) 30%,
-                  rgba(255, 255, 255, 0.4) 30%,
-                  rgba(255, 255, 255, 0.4) 70%,
-                  rgba(255, 255, 255, 0) 100%
-                );
-              }
-            }
-            @keyframes fade {
-              0% {
-                opacity: 0;
-              }
-              2% {
-                opacity: 1;
-              }
-              5.5% {
-                opacity: 1;
-              }
-              7.5% {
-                opacity: 0;
-              }
-              100% {
-                opacity: 0;
-              }
-            }
-            @keyframes showit {
-              0% {
-                opacity: 0;
-              }
-              2% {
-                opacity: 1;
-              }
-              5% {
-                opacity: 1;
-              }
-              28% {
-                opacity: 1;
-              }
-              30% {
-                opacity: 0;
-              }
-              100% {
-                opacity: 0;
-              }
-            }
-
-            #s2 {
-              animation-delay: 4.5s;
-            }
-
-            ${motion.map(
-              (_, i) => `.f${i} {
-                animation-delay: ${i / 2}s;
-              }`
-            )}
-          `}
-        >
+        <Animation>
           {motion.map(({ src }, i) => (
             <>
               <div
@@ -193,9 +92,11 @@ const IndexPage = ({ intl }) => {
               </div>
             </>
           ))}
+        </Animation>
+        <AnimationDescription>
           <p id="s1">{intl.formatMessage({ id: 'index.problem' })} 😡</p>
           <p id="s2">Gaston App 😊</p>
-        </div>
+        </AnimationDescription>
         <USPs>
           <li>{intl.formatMessage({ id: 'index.USP.1' })}</li>
           <li>{intl.formatMessage({ id: 'index.USP.2' })}</li>
@@ -429,6 +330,92 @@ const IndexPage = ({ intl }) => {
   )
 }
 
+const Animation = styled.div`
+  position: relative;
+  margin: 0 max(-4em, -4vw) 0.2em;
+  z-index: -1;
+  div {
+    position: absolute;
+    inset: 0;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: ${motion.length / 2}s;
+    opacity: 0;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    2% {
+      opacity: 1;
+    }
+    5.5% {
+      opacity: 1;
+    }
+    7.5% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  ${motion.map(
+    (_, i) => `.f${i} {
+                animation-delay: ${i / 2}s;
+              }`
+  )}
+`
+
+const AnimationDescription = styled.div`
+  position: relative;
+  p {
+    font-size: 2.2em;
+    font-weight: bold;
+    line-height: 1em;
+    inset: 0% 0% 0%;
+    margin: 0 0 1.2em;
+    color: #333;
+    text-align: center;
+    opacity: 0;
+    animation-name: showit;
+    animation-iteration-count: infinite;
+    animation-duration: ${motion.length / 2}s;
+    @media (min-width: 700px) {
+      font-size: 4em;
+    }
+  }
+  @keyframes showit {
+    0% {
+      opacity: 0;
+    }
+    2% {
+      opacity: 1;
+    }
+    5% {
+      opacity: 1;
+    }
+    28% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  #s2 {
+    position: absolute;
+    animation-delay: 4.5s;
+  }
+`
+
 const ImageTextSection = ({ image, title, children }) => (
   <div
     css={`
@@ -479,9 +466,9 @@ const USPs = styled.ul`
   padding-left: 1em;
   li {
     padding-left: 1em;
-    padding-bottom: 0.8em;
+    padding-bottom: 0.6em;
     &::before {
-      content: '# ';
+      content: '● ';
       position: absolute;
       font-size: 1.6em;
       transform: translate(-1em, -0.3em);
