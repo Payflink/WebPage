@@ -13,40 +13,8 @@ import order from '../images/mobile-shopping.svg'
 import languages from '../images/communications.svg'
 import roadmap from '../images/roadmap.svg'
 
-import ani0 from '../images/illustration/Ani_0.svg'
-import ani1 from '../images/illustration/Ani_1.svg'
-import ani2 from '../images/illustration/Ani_2.svg'
-import ani3 from '../images/illustration/Ani_3.svg'
-import ani4 from '../images/illustration/Ani_4.svg'
-import ani5 from '../images/illustration/Ani_5.svg'
-import ani6 from '../images/illustration/Ani_6.svg'
 import ani7 from '../images/illustration/Ani_7.svg'
 
-const motion = [
-  { src: ani1 },
-  { src: ani2 },
-  { src: ani1 },
-  { src: ani2 },
-  { src: ani1 },
-  { src: ani2 },
-  { src: ani0 },
-  { src: ani0 },
-  { src: ani0 },
-  { src: ani3 },
-  { src: ani4 },
-  { src: ani3 },
-  { src: ani4 },
-  { src: ani3 },
-  { src: ani5 },
-  { src: ani6 },
-  { src: ani7 },
-  { src: ani7 },
-  { src: ani7 },
-  { src: ani7 },
-  { src: ani0 },
-  { src: ani0 },
-  { src: ani0 },
-]
 const IndexPage = ({ intl }) => {
   const windowWidth = useWindowWidth()
   return (
@@ -82,21 +50,13 @@ const IndexPage = ({ intl }) => {
           {intl.formatMessage({ id: 'index.claim' })}
         </p>
         <Animation>
-          {motion.map(({ src }, i) => (
-            <>
-              <div
-                className={`f${i}`}
-                css={i === 0 && 'position: relative !important;'}
-              >
-                <img src={src} alt="" height="223" width="373" />
-              </div>
-            </>
-          ))}
+          <img
+            src={ani7}
+            alt="Bestellen mit Speisekarte mühsam, mit Gaston App schnell und einfach"
+            height="150"
+            width="204"
+          />
         </Animation>
-        <AnimationDescription>
-          <p id="s1">{intl.formatMessage({ id: 'index.problem' })} 😡</p>
-          <p id="s2">Gaston App 😊</p>
-        </AnimationDescription>
         <USPs>
           <li>{intl.formatMessage({ id: 'index.USP.1' })}</li>
           <li>{intl.formatMessage({ id: 'index.USP.2' })}</li>
@@ -333,86 +293,9 @@ const IndexPage = ({ intl }) => {
 const Animation = styled.div`
   position: relative;
   margin: 0 max(-4em, -4vw) 0.2em;
-  z-index: -1;
-  div {
-    position: absolute;
-    inset: 0;
-    animation-name: fade;
-    animation-iteration-count: infinite;
-    animation-duration: ${motion.length / 2}s;
-    opacity: 0;
-    img {
-      height: 100%;
-      width: 100%;
-    }
-  }
-  @keyframes fade {
-    0% {
-      opacity: 0;
-    }
-    2% {
-      opacity: 1;
-    }
-    5.5% {
-      opacity: 1;
-    }
-    7.5% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-
-  ${motion.map(
-    (_, i) => `.f${i} {
-                animation-delay: ${i / 2}s;
-              }`
-  )}
-`
-
-const AnimationDescription = styled.div`
-  position: relative;
-  p {
-    font-size: 2.2em;
-    font-weight: bold;
-    line-height: 1em;
-    inset: 0% 0% 0%;
-    margin: 0 0 1.2em;
-    color: #333;
-    text-align: center;
-    opacity: 0;
-    animation-name: showit;
-    animation-iteration-count: infinite;
-    animation-duration: ${motion.length / 2}s;
-    @media (min-width: 700px) {
-      font-size: 4em;
-    }
-  }
-  @keyframes showit {
-    0% {
-      opacity: 0;
-    }
-    2% {
-      opacity: 1;
-    }
-    5% {
-      opacity: 1;
-    }
-    28% {
-      opacity: 1;
-    }
-    30% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-
-  #s2 {
-    position: absolute;
-    animation-delay: 4.5s;
+  img {
+    height: 100%;
+    width: 100%;
   }
 `
 
