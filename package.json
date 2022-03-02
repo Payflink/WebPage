@@ -1,78 +1,15 @@
 {
-  "name": "gaston-webpage",
+  "name": "@example/framework-solid",
+  "version": "0.0.1",
   "private": true,
-  "description": "The delightful service solution for restaurant hospitality.",
-  "version": "1.1.1",
-  "author": "Apptiva AG <info@apptiva.ch>",
-  "dependencies": {
-    "@reach/router": "^1.3.4",
-    "babel-plugin-styled-components": "^1.13.2",
-    "gatsby": "^3.12.1",
-    "gatsby-image": "^3.11.0",
-    "gatsby-plugin-create-client-paths": "^3.12.0",
-    "gatsby-plugin-google-gtag": "^3.12.0",
-    "gatsby-plugin-image": "^1.12.0",
-    "gatsby-plugin-intl": "^0.3.3",
-    "gatsby-plugin-manifest": "^3.12.0",
-    "gatsby-plugin-modal-routing": "^1.2.0",
-    "gatsby-plugin-netlify-cache": "^1.2.0",
-    "gatsby-plugin-offline": "^4.12.0",
-    "gatsby-plugin-preload-fonts": "^2.12.0",
-    "gatsby-plugin-react-helmet": "^4.12.0",
-    "gatsby-plugin-sharp": "^3.12.0",
-    "gatsby-plugin-styled-components": "^4.12.0",
-    "gatsby-remark-images": "^5.9.0",
-    "gatsby-source-filesystem": "^3.12.0",
-    "gatsby-transformer-remark": "^4.9.0",
-    "gatsby-transformer-sharp": "^3.12.0",
-    "prop-types": "^15.7.2",
-    "rc-slider": "^9.7.2",
-    "react": "^17.0.2",
-    "react-cookie-consent": "^6.3.0",
-    "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0",
-    "react-use-scroll-position": "^2.0.0",
-    "styled-components": "^5.3.1",
-    "styled-normalize": "^8.0.7",
-    "typeface-merriweather-sans": "1.1.13",
-    "unfetch": "^4.2.0",
-    "universal-cookie": "^4.0.4"
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "babel-jest": "^27.1.0",
-    "babel-preset-gatsby": "^1.12.0",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.24.2",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.4.1",
-    "eslint-plugin-react": "^7.25.1",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^27.1.0",
-    "prettier": "^2.3.2",
-    "react-test-renderer": "^17.0.2",
-    "serve": "^12.0.0"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "UNLICENSED",
-  "scripts": {
-    "build": "gatsby build",
-    "clean": "gatsby clean",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "serve ./public",
-    "preload-fonts": "gatsby-preload-fonts",
-    "update": "npx npm-check-updates -u",
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ApptivaAG/gaston-webpage"
+    "@astrojs/renderer-solid": "^0.4.0",
+    "astro": "^0.23.3"
   }
 }

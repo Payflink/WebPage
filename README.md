@@ -1,5 +1,11 @@
-# Gaston Webpage
+# Astro + Solid.js Example
 
-## Improvments
+```
+npm init astro -- --template framework-solid
+```
 
-- [Multilingual blog](https://hiddentao.com/archives/2019/05/07/building-a-multilingual-static-site-with-gatsby)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/framework-solid)
+
+This example showcases Astro working with [Solid](https://www.solidjs.com/).
+
+Write your Solid components as `.jsx` or `.tsx` files in your project.
