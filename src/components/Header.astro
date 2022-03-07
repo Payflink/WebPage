@@ -1,8 +1,9 @@
 ---
-const { pathname } = Astro.request.url
+import { mkIsCurrentPage } from '../utils.ts'
 
-const isCurrentPage = (path: string) =>
-  pathname.includes(path) ? 'page' : undefined
+const { pathname } = Astro.request.url
+const isCurrentPage = mkIsCurrentPage(pathname)
+const isDe = isCurrentPage('/de/')
 ---
 
 <script>
@@ -20,13 +21,19 @@ const isCurrentPage = (path: string) =>
 
 <header>
   <p small>
-    <a href="/de" activeClassName="active"> Gaston </a>
+    <a href="/" activeClassName="active"> Gaston </a>
   </p>
   <nav>
-    <a href="/de/offers" aria-current={isCurrentPage('/offers')}>Angebot</a>
-    <a href="/de/about" aria-current={isCurrentPage('/about')}>Über&nbsp;uns</a>
-    <a href="/de/blog" aria-current={isCurrentPage('/blog')}>Blog</a>
-    <a href="/de/contact" aria-current={isCurrentPage('/contact')}>Kontakt</a>
+    <a href="offers" aria-current={isCurrentPage('/offers')}
+      >{isDe ? 'Angebot' : 'Offer'}</a
+    >
+    <a href="about" aria-current={isCurrentPage('/about')}
+      >{isDe ? 'Über&nbsp;uns' : 'About&nbsp;us'}</a
+    >
+    <a href="blog" aria-current={isCurrentPage('/blog')}>Blog</a>
+    <a href="contact" aria-current={isCurrentPage('/contact')}
+      >{isDe ? 'Kontakt' : 'Contact'}</a
+    >
   </nav>
 </header>
 <div id="top-of-site-pixel-anchor"></div>

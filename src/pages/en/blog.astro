@@ -2,9 +2,9 @@
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 
-const data = Astro.fetchContent('./blog/*.md').sort(
-  (a, b) => Date.parse(b.date) - Date.parse(a.date)
-).filter(blog => blog.lang === 'de')
+const data = Astro.fetchContent('./blog/*.md')
+  .sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
+  .filter((blog) => blog.lang === 'en')
 ---
 
 <Main title="Blog • Gaston">

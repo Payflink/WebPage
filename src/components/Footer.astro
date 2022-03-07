@@ -1,18 +1,31 @@
+---
+import { mkIsCurrentPage } from '../utils.ts'
+
+const { pathname } = Astro.request.url
+const isCurrentPage = mkIsCurrentPage(pathname)
+const isDe = isCurrentPage('/de/')
+---
+
 <footer>
   <p>
     © 2019 - {new Date().getFullYear()} Gaston
     <br />
-    Eine Initiative von
+    {isDe ? 'Eine Initiative von' : 'An initiative of'}
     <a href="https://apptiva.ch">Apptiva</a>
     <br />
     Luzern • Schweiz
   </p>
   <p>
-    Anfragen &ensp;
+    {isDe ? 'Anfragen' : 'Inquiries'}&ensp;
     <a href="+41413222626">+41 41 322 26 26</a>
     <br />
     Support (24h)&ensp;
     <a href="+41415620111">+41 41 562 01 11</a>
+  </p>
+  <p>
+    <a href="/en/" aria-current={isCurrentPage('/en/')}> en </a>
+    &emsp;
+    <a href="/de/" aria-current={isCurrentPage('/de/')}> de </a>
   </p>
 </footer>
 
@@ -29,6 +42,10 @@
       align-items: flex-end;
       gap: 2rem;
       padding: 0 2rem;
+    }
+
+    a[aria-current] {
+      font-weight: bold;
     }
   }
 </style>
