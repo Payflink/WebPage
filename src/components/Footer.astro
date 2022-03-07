@@ -1,0 +1,34 @@
+<footer>
+  <p>
+    © 2019 - {new Date().getFullYear()} Gaston
+    <br />
+    Eine Initiative von
+    <a href="https://apptiva.ch">Apptiva</a>
+    <br />
+    Luzern • Schweiz
+  </p>
+  <p>
+    Anfragen &ensp;
+    <a href="+41413222626">+41 41 322 26 26</a>
+    <br />
+    Support (24h)&ensp;
+    <a href="+41415620111">+41 41 562 01 11</a>
+  </p>
+</footer>
+
+<style lang="scss">
+  footer {
+    grid-area: Footer;
+    padding: 0 1rem;
+    color: var(--primary-color);
+
+    @media (min-width: 600px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 2rem;
+      padding: 0 2rem;
+    }
+  }
+</style>

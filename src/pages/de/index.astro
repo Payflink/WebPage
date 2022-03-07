@@ -1,0 +1,115 @@
+---
+import { SEO } from 'astro-seo'
+import MainLayout from '@layouts/Main.astro'
+import Container from '@components/Container.astro'
+import ButtonLink from '@components/ButtonLink.astro'
+
+const description =
+  'Gaston die digitale Speisekarte erlaubt es den Gästen schnell und einfach zu bestell und bezahlen. Dabei spielt es keine Rolle, ob die Gäste in ihrem Betrieb, unterwegs oder Zuhause sind. Gaston unterstützt die Bestellung in Ihrem Betrieb, Take-Away und Delivery.'
+const title =
+  'Gaston • Digitale Speisekarte • Mehr Gäste mit weniger Personal schneller bedienen.'
+---
+
+<MainLayout>
+  <SEO {title} {description} />
+  <Container>
+    <h1>
+      <b>Gaston</b>
+      <br />
+      <small> Digitale Speisekarte </small>
+    </h1>
+    <p class="claim">Mehr Gäste mit weniger Personal schneller bedienen.</p>
+    <div class="animation">
+      <img
+        src="/assets/hero-gaston-vs-menu.svg"
+        alt="Bestellen mit Speisekarte mühsam, mit Gaston App schnell und einfach"
+        height="150"
+        width="204"
+      />
+    </div>
+    <ul>
+      <li>Aussuchen, Bestellen, Bezahlen ohne Personal.</li>
+      <li>Alle Kanäle bedienen: Inhouse, Takeaway, Delivery.</li>
+      <li>Überall verfügbar: Auf dem Handy, Tablet und Ihrer Webseite.</li>
+      <li>Mit oder ohne Kasse, flexible auf Ihre Bedürfnisse.</li>
+      <li>Ihr Betrieb, Ihr Style; auch in der der App.</li>
+    </ul>
+
+    <div class="button-list">
+      <ButtonLink href="/de/offers">Jetzt bestellen</ButtonLink>
+      <ButtonLink href="/de/qr-code-demo">Demo starten</ButtonLink>
+    </div>
+  </Container>
+  <section id="features">
+    <Container>
+      <div style="text-align:center">
+        <h2>Roadmap</h2>
+        <ButtonLink
+          href="https://www.notion.so/gastonsolution/Roadmap-von-Gaston-6644875d1fba4fe58cacfbf15e1ace7e"
+        >
+          Roadmap
+        </ButtonLink>
+      </div>
+    </Container>
+  </section>
+  <Container>
+    <div class="button-list">
+      <ButtonLink href="/de/offers">Jetzt bestellen</ButtonLink>
+      <ButtonLink href="/de/qr-code-demo">Demo starten</ButtonLink>
+    </div>
+  </Container>
+</MainLayout>
+
+<style lang="scss">
+  h1 {
+    text-align: center;
+    font-size: 4em;
+    margin: 0.5em 0;
+    line-height: 0.6em;
+    small {
+      font-size: 40%;
+      color: var(--text-color);
+    }
+  }
+  .claim {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .animation {
+    position: relative;
+    margin: 0 max(-4em, -4vw) 0.2em;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  ul {
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+    list-style: none;
+    padding-left: 1em;
+    li {
+      padding-left: 1em;
+      padding-bottom: 0.6em;
+      &::before {
+        content: '● ';
+        position: absolute;
+        font-size: 1.6em;
+        transform: translate(-1em, -0.3em);
+        color: var(--primary-color);
+      }
+    }
+  }
+  .button-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em 1em;
+    font-size: 1.3em;
+    margin-top: 4em;
+    margin-bottom: 1em;
+  }
+</style>

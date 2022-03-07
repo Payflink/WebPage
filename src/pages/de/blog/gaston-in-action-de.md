@@ -1,12 +1,13 @@
 ---
 lang: de
-slug: gaston-in-action
 title: Gaston im Einsatz
-description: Unsere Referenz-Restaurants wo Gaston im Einsatz ist
+description: Seit einiger Zeit ist Gaston nun in unterschiedlichen Restaurants im täglichen Einsatz. Zu unserer grossen Freude sind die Gäste wie auch die Gastgeber sehr zufrieden mit Gaston.
 image: icon.png
 date: 2021-06-28
-templateKey: blog-post
+layout: '@layouts/Blog.astro'
 ---
+
+# Gaston im Einsatz
 
 Seit einiger Zeit ist Gaston nun in unterschiedlichen Restaurants im täglichen Einsatz. Zu unserer grossen Freude sind die Gäste wie auch die Gastgeber sehr zufrieden mit Gaston.
 
@@ -33,15 +34,15 @@ Die Gastgeber sind sehr froh um Gaston, weil es ihnen erlaubt, die Gäste schnel
 In den folgenden Restaurants können Sie die vielfältigen Einsatzmöglichkeiten von Gaston live erleben:
 
 - **Habsburg Bar Restaurant Widnau**  
-  ![Habsburg Bar Logo](habsburg.png)
+  ![Habsburg Bar Logo](/assets/blog/gaston-in-action/habsburg.png)
   Hier erleben Sie, wie Gaston im ganzen Betrieb eingesetzt wird. Alle Speisen können drinnen wie auch draussen über Gaston bestellt und bezahlt werden. Mit einem Klick kommt das Essen direkt an den Tisch.
 
 - **Seehaus Grill**  
-  ![Seehaus Grill Logo](seehaus-grill.png)
+  ![Seehaus Grill Logo](/assets/blog/gaston-in-action/seehaus-grill.png)
   Beim Seehaus in Luzern kann im Aussenbereich über Gaston bestellt werden. Die Gaston Speisekarte wird entsprechend der Tageszeit jeweils angepasst. Auch hier kann der Gast über Gaston bestellen und bezahlen.
 
 - **Sugoi Sushi**  
-  ![Sugoi Sushi Logo](sugoi-sushi.png)
+  ![Sugoi Sushi Logo](/assets/blog/gaston-in-action/sugoi-sushi.png)
   Das Sugoi Sushi in Neuhausen am Rheinfall erlaubt das Bestellen nicht bloss im Restaurant, sondern auch von Zuhause aus für Takeaway und Delivery. Beim Sugoi Sushi ist das Bestellen über Gaston mit Bezahlung vor Ort möglich.
 
 ## Die Vorteile von Gaston selber erfahren

@@ -1,0 +1,28 @@
+---
+import Main from '@layouts/Main.astro'
+import Container from '@components/Container.astro'
+
+const data = Astro.fetchContent('./blog/*.md').sort(
+  (a, b) => Date.parse(b.date) - Date.parse(a.date)
+)
+---
+
+<Main title="Blog • Gaston">
+  <Container size="small">
+    <h1>Blog</h1>
+    {data.map((post) => (
+      <article>
+        <a href={post.url}>
+          <h2>{post.title}</h2>
+        </a>
+        <p>{post.description}</p>
+      </article>
+    ))}
+  </Container>
+</Main>
+
+<style lang="scss">
+  article {
+    margin: 4em 0;
+  }
+</style>

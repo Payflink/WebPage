@@ -10,6 +10,10 @@
   },
   "devDependencies": {
     "@astrojs/renderer-solid": "^0.4.0",
-    "astro": "^0.23.3"
+    "astro": "^0.23.3",
+    "astro-seo": "^0.4.2",
+    "prettier-plugin-astro": "^0.0.12",
+    "sass": "^1.49.9",
+    "typeface-merriweather-sans": "^1.1.13"
   }
 }

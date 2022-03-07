@@ -1,0 +1,31 @@
+---
+import { SEO } from 'astro-seo'
+import Main from '@layouts/Main.astro'
+import Container from '@components/Container.astro'
+import ButtonLink from '@components/ButtonLink.astro'
+
+const description =
+  'Gaston die digitale Speisekarte erlaubt es den Gästen schnell und einfach zu bestell und bezahlen. Dabei spielt es keine Rolle, ob die Gäste in ihrem Betrieb, unterwegs oder Zuhause sind. Gaston unterstützt die Bestellung in Ihrem Betrieb, Take-Away und Delivery.'
+const title =
+  'Gaston • Digitale Speisekarte • Mehr Gäste mit weniger Personal schneller bedienen.'
+---
+
+<Main>
+  <SEO {title} {description} />
+  <Container>
+    <h1>Kontakt</h1>
+    <h2>Gaston by Apptiva</h2>
+    <h3>Email</h3>
+    <p>support@gastonsolution.com</p>
+    <h3>Anfragen</h3>
+    <p>+41 41 322 26 26</p>
+    <h3>Support</h3>
+    <p>+41 41 562 01 11</p>
+    <h3>Adresse</h3>
+    <address>
+      Neuenkirchstrasse 19 <br />
+      6203 Sempach Station <br />
+      Schweiz
+    </address>
+  </Container>
+</Main>
