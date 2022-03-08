@@ -27,9 +27,10 @@ const isDe = isCurrentPage('/de/')
     <a href="offers" aria-current={isCurrentPage('/offers')}
       >{isDe ? 'Angebot' : 'Offer'}</a
     >
-    <a href="about" aria-current={isCurrentPage('/about')}
-      >{isDe ? 'Über&nbsp;uns' : 'About&nbsp;us'}</a
-    >
+    <a
+      set:html={isDe ? 'Über&nbsp;uns' : 'About&nbsp;us'}
+      href="about"
+      aria-current={isCurrentPage('/about')}></a>
     <a href="blog" aria-current={isCurrentPage('/blog')}>Blog</a>
     <a href="contact" aria-current={isCurrentPage('/contact')}
       >{isDe ? 'Kontakt' : 'Contact'}</a

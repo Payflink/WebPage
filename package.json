@@ -1,6 +1,6 @@
 {
-  "name": "@example/framework-solid",
-  "version": "0.0.1",
+  "name": "gaston-website",
+  "version": "1.2.0",
   "private": true,
   "scripts": {
     "dev": "astro dev",

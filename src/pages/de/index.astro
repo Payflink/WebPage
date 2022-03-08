@@ -27,7 +27,7 @@ const title =
         width="204"
       />
     </div>
-    <ul>
+    <ul class="usps">
       <li>Aussuchen, Bestellen, Bezahlen ohne Personal.</li>
       <li>Alle Kanäle bedienen: Inhouse, Takeaway, Delivery.</li>
       <li>Überall verfügbar: Auf dem Handy, Tablet und Ihrer Webseite.</li>
@@ -42,14 +42,238 @@ const title =
   </Container>
   <section id="features">
     <Container>
-      <div style="text-align:center">
-        <h2>Roadmap</h2>
-        <ButtonLink
-          href="https://www.notion.so/gastonsolution/Roadmap-von-Gaston-6644875d1fba4fe58cacfbf15e1ace7e"
-        >
-          Roadmap
-        </ButtonLink>
-      </div>
+      <h2>So funktionierts</h2>
+      <ol class="horizontal-list">
+        <li>
+          <div>
+            <img src="/assets/index/handy.svg" alt="Handy zücken" />
+            <p>Persönliches Handy zücken</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/assets/index/scannen.svg" alt="QR-Code scannen" />
+            <p>QR-Code scannen</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/assets/index/bestellen.svg" alt="Bestellen" /><p>
+              Bestellen
+            </p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/assets/index/bezahlen.svg" alt="Bezahlen" /><p>
+              Bezahlen
+            </p>
+          </div>
+        </li>
+      </ol>
+      <ButtonLink href="offers"
+        >Kann Gaston Ihren Anwendungsfall abdecken?</ButtonLink
+      >
+    </Container>
+  </section>
+  <section id="features">
+    <Container>
+      <h2>Verkaufskanäle</h2>
+      <p>
+        Gaston kann in ganz unterschiedlichen Situation eingesetzt werden. Gäste
+        können direkt in ihrem Restaurant vom Tisch aus bestellen, von Zuhause
+        mit Delivery oder unterwegs mit Takeaway. Sind Sie nicht sicher, ob
+        Gaston ihr Szenario abdeckt? Nehmen Sie mit uns <a href="contact"
+          >Kontakt</a
+        > auf.
+      </p>
+      <ul class="horizontal-list">
+        <li>
+          <div>
+            <img src="/assets/index/im-betrieb.svg" alt="Im Betrieb" />
+            <p>Im Betrieb (Inhouse)</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/assets/index/take-away.svg" alt="Take Away" />
+            <p>Take Away</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/assets/index/delivery.svg" alt="Delivery" />
+            <p>Delivery</p>
+          </div>
+        </li>
+      </ul>
+    </Container>
+  </section>
+  <section id="features">
+    <Container>
+      <h2>Bezahlung</h2>
+      <p>
+        Falls Sie Ihren Gästen die Möglichkeit geben wollen direkt in der App zu
+        bezahlen, so unterstützen wir mehrere Zahlungsmittel und
+        Zahlungsprovider (PSP). Wenn Sie nicht wollen, müssen Ihre Gäste nicht
+        in der App bezahlen.
+      </p>
+      <h3>Zahlungsmittel</h3>
+      <p>
+        Gaston unterstützt die gängisten Zahlungsmittel in der Schweiz. Welche
+        Zahlungsmittel verfügbar sind, ist von Ihrem Zahlungsprovider und den
+        entsprechenden Verträgen abhängig.
+      </p>
+      <ul class="horizontal-list">
+        <li>
+          <div>
+            <img src="/assets/index/twint.svg" alt="Twint" />
+            <p>Twint</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/assets/index/mastercard.svg" alt="Mastercard" />
+            <p>Mastercard</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/assets/index/visa.svg" alt="Visa" />
+            <p>Visa</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/assets/index/weitere.svg" alt="Weitere Zahlungsmittel" />
+            <p>Weitere Zahlungsmittel</p>
+          </div>
+        </li>
+      </ul>
+      <h3>Zahlungsprovider</h3>
+      <p>
+        Zur Zeit untersützt Gaston die zwei grössten Zahlungsprovider der
+        Schweiz. Falls Sie einen anderen Zahlungsprovider wünschen, schauen wir
+        dies gerne an.
+      </p>
+      <ul class="horizontal-list">
+        <li>
+          <div>
+            <img src="/assets/index/datatrans.svg" alt="Datatrans" />
+            <p>Datatrans</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/assets/index/worldline.svg" alt="Worldline" />
+            <p>Worldline (ehemals Saferpay)</p>
+          </div>
+        </li>
+      </ul>
+    </Container>
+  </section>
+  <section id="features">
+    <Container>
+      <h2>Mit oder ohne Kasse</h2>
+      <p>Gaston funktioniert mit oder ohne Kasse.</p>
+      <h3>Mit Kasse</h3>
+      <p>
+        Gaston kann die Bestellungen an Ihre Kasse übermitteln. Nehmen Sie mit
+        uns <a href="contact">Kontakt</a> auf, um ihre Kasseanbindung zu besprechen.
+      </p>
+      <ol class="horizontal-list">
+        <li>
+          <div>
+            <img src="/assets/index/versenden.svg" alt="Gast bestellt" />
+            <p>Gast bestellt</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/assets/index/zahlung.svg" alt="Gast bezahlt" />
+            <p>
+              Gast bezahlt. <small>Kann auch erst am Schluss stattfinden.</small
+              >
+            </p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/assets/index/kasse.svg" alt="Kasse" />
+            <p>Bestellung kommt an der Kasse an und wird verbucht</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/assets/index/kueche.svg" alt="Bondrucker in der Kuche" />
+            <p>Kasse schickt Bestellung in die Küche</p>
+          </div>
+        </li>
+      </ol>
+
+      <h3>Ohne Kasse</h3>
+      <p>
+        Gaston funktioniert hervorragend auch ohne Kasse. Alle Ihre Bestellungen
+        sind bei uns im Dashboard ersichtlich und können an einen Bondrucker in
+        der Küche oder Bar ausgedruckt werden.
+      </p>
+      <ol class="horizontal-list">
+        <li>
+          <div>
+            <img src="/assets/index/versenden.svg" alt="Gast bestellt" />
+            <p>Gast bestellt</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/assets/index/zahlung.svg" alt="Gast bezahlt" />
+            <p>
+              Gast bezahlt. <small>Kann auch erst am Schluss stattfinden.</small
+              >
+            </p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/assets/index/kueche.svg" alt="Bondrucker in der Kuche" />
+            <p>Gaston schickt die Bestellung direkt in die Küche</p>
+          </div>
+        </li>
+      </ol></Container
+    >
+  </section>
+  <section id="features">
+    <Container>
+      <h2>Ihr Style</h2>
+      <p>
+        Ihr Betrieb hat einen einzigartigen Style. Ihr Speisekarte-/Bestell-App
+        sollte dies reflektieren.
+      </p>
+      <ul class="horizontal-list">
+        <li>
+          <img src="/assets/index/el-mosquito.png" alt="El-Mosquito" />
+        </li>
+        <li><img src="/assets/index/habsburg.png" alt="Habsburg-Bar" /></li>
+        <li><img src="/assets/index/sugoisushi.png" alt="Sugoi Sushi" /></li>
+      </ul>
+    </Container>
+  </section>
+  <section id="features">
+    <Container>
+      <h2>Roadmap</h2>
+      <p>
+        Gaston wird ständig weiterentwickelt. Auf unserer Roadmap sieht man
+        welche Features nächstens verfügbar sind.
+      </p>
+      <p>
+        Haben Sie einen speziellen Wunsch? Wir nehmen dies gerne in die Roadmap
+        auf.
+      </p>
+      <ButtonLink
+        href="https://www.notion.so/gastonsolution/Roadmap-von-Gaston-6644875d1fba4fe58cacfbf15e1ace7e"
+      >
+        Roadmap
+      </ButtonLink>
     </Container>
   </section>
   <Container>
@@ -84,7 +308,7 @@ const title =
       width: 100%;
     }
   }
-  ul {
+  .usps {
     font-size: 1em;
     margin-left: auto;
     margin-right: auto;
@@ -111,5 +335,37 @@ const title =
     font-size: 1.3em;
     margin-top: 4em;
     margin-bottom: 1em;
+  }
+  ul.horizontal-list {
+    list-style: none;
+  }
+  ol.horizontal-list {
+    margin-left: 1em;
+  }
+  .horizontal-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    gap: 4em;
+
+    li {
+      flex: 1 0 150px;
+      text-align: center;
+      list-style-position: inside;
+      max-width: 300px;
+
+      &::marker {
+        font-size: 2em;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      max-width: 250px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 </style>
