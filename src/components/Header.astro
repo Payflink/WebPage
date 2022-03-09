@@ -24,16 +24,21 @@ const isDe = isCurrentPage('/de/')
     <a href="/" activeClassName="active"> Gaston </a>
   </p>
   <nav>
-    <a href="offers" aria-current={isCurrentPage('/offers')}
-      >{isDe ? 'Angebot' : 'Offer'}</a
+    <a
+      href={isDe ? '/de/offers/' : '/en/offers/'}
+      aria-current={isCurrentPage('/offers')}>{isDe ? 'Angebot' : 'Offer'}</a
     >
     <a
       set:html={isDe ? 'Über&nbsp;uns' : 'About&nbsp;us'}
-      href="about"
+      href={isDe ? '/de/about/' : '/en/about/'}
       aria-current={isCurrentPage('/about')}></a>
-    <a href="blog" aria-current={isCurrentPage('/blog')}>Blog</a>
-    <a href="contact" aria-current={isCurrentPage('/contact')}
-      >{isDe ? 'Kontakt' : 'Contact'}</a
+    <a
+      href={isDe ? '/de/blog/' : '/en/blog/'}
+      aria-current={isCurrentPage('/blog')}>Blog</a
+    >
+    <a
+      href={isDe ? '/de/contact/' : '/en/contact/'}
+      aria-current={isCurrentPage('/contact')}>{isDe ? 'Kontakt' : 'Contact'}</a
     >
   </nav>
 </header>

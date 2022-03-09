@@ -1,10 +1,136 @@
 ---
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
+import ButtonLink from '@components/ButtonLink.astro'
+import Center from '@components/Center.astro'
 ---
 
 <Main title="Angebot • Gaston">
   <Container>
     <h1>Angebot</h1>
+    <div class="plan-wrapper">
+      <div class="plan">
+        <div class="text-wrapper">
+          <div class="plan-heading">Apéritif</div>
+          <p>Ideal für den Start.</p>
+          <ul>
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+          </ul>
+          <p class="price">3.9% / Bestellung</p>
+          <Center>
+            <ButtonLink href="aperitif">Bestellen</ButtonLink>
+          </Center>
+        </div>
+      </div>
+      <div class="plan" data-recommended="Empfohlen">
+        <div class="text-wrapper">
+          <div class="plan-heading">Hauptgang</div>
+          <p>Sie planen grössere Umsätze mit Gaston.</p>
+          <ul>
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+          </ul>
+          <p class="price">CHF 279.- / Monat <br /><small>/ Betrieb</small></p>
+          <Center>
+            <ButtonLink href="main-course">Bestellen</ButtonLink>
+          </Center>
+        </div>
+      </div>
+      <div class="plan">
+        <div class="text-wrapper">
+          <div class="plan-heading">Mit Kasse</div>
+          <p>Gaston im Packet mit einer Kasse.</p>
+          <ul>
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+          </ul>
+          <p class="price">Auf Anfrage</p>
+          <Center>
+            <ButtonLink href="pos">Anfragen</ButtonLink>
+          </Center>
+        </div>
+      </div>
+    </div>
   </Container>
 </Main>
+
+<style lang="scss">
+  .plan-wrapper {
+    display: grid;
+    gap: 2em 1em;
+
+    @media (min-width: 800px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  .plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: var(--primary-color);
+
+    h3 {
+      font-size: 2em;
+      margin-bottom: 0;
+    }
+
+    &[data-recommended] {
+      border-width: 3px;
+      margin: -2px;
+      &:before {
+        box-sizing: border-box;
+        width: 100%;
+        content: attr(data-recommended);
+        color: white;
+        background-color: var(--primary-color);
+        padding: 0.2em;
+        border: 3px solid var(--primary-color);
+        text-align: center;
+        margin-bottom: -2em;
+      }
+    }
+  }
+
+  .text-wrapper {
+    padding: 1rem;
+  }
+
+  .plan-heading {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1.5em;
+  }
+
+  .plan-subtitle {
+    flex: 1 0 auto;
+    font-weight: bold;
+    margin-top: 1.2em;
+  }
+
+  .price {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-align: center;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  .selection-button {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+</style>
