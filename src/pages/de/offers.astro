@@ -70,7 +70,14 @@ import Center from '@components/Center.astro'
 
       <div class="plan pos">
         <h2>Dessert</h2>
-        <p class="plan-subtitle">Gaston im Packet mit einer Kasse.</p>
+        <p class="plan-subtitle">
+          Gaston im Packet mit einer klassischen Kasse.
+        </p>
+        <p>
+          <i
+            >Gaston funktioniert sehr gut <b>mit aber auch ohne</b> klassische Kasse.</i
+          >
+        </p>
         <ul>
           <li>Alle Leistungen von Apéritif</li>
           <li>Kasse mit Schublade</li>
@@ -178,6 +185,10 @@ import Center from '@components/Center.astro'
 </Main>
 
 <style lang="scss">
+  i {
+    color: var(--primary-color);
+  }
+
   .plans-container {
     display: grid;
     gap: 2em 1em;
@@ -201,6 +212,7 @@ import Center from '@components/Center.astro'
 
     &.pos {
       border-color: var(--text-color);
+      background-color: var(--light-background-color);
     }
 
     h2 {
@@ -283,10 +295,6 @@ import Center from '@components/Center.astro'
     }
     p {
       margin-block: 0 0.5em;
-    }
-
-    i {
-      color: var(--primary-color);
     }
 
     .heading {
