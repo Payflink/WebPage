@@ -7,8 +7,6 @@ date: 2019-11-15
 
 ---
 
-# Die fünf nervigsten Dinge beim Essen in einem Restaurant
-
 Praktisch in jedem Restaurant gibt es ähnliche Dinge, die ärgerlich sind. In diesem Beitrag wollen wir untersuchen, was diese Dinge sind und warum sie ein Problem darstellen.
 
 Essen im Restaurant ist ja eigentlich eine ganz schöne Sache. Sie müssen nicht kochen, werden bedient und aufräumen müssen Sie auch nicht. Zudem ist das Essen meistens ganz lecker. Was gibt es da schon zu meckern?

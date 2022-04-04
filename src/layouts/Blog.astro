@@ -1,10 +1,32 @@
 ---
 import Main from './Main.astro'
 import Container from '@components/Container.astro'
+
+const { content } = Astro.props
 ---
 
 <Main>
   <Container size="small">
+    <h1>{content.title}</h1>
+    <p class="publish-date">
+      {content.lang === 'de' ? 'Veröffentlicht am' : 'Published on'}
+      <b>{new Date(content.date).toLocaleDateString('de-CH')}</b>
+    </p>
     <slot />
   </Container>
 </Main>
+
+<style lang="scss" global>
+  li {
+    margin-bottom: 1em;
+  }
+</style><style lang="scss">
+  h1 {
+    margin-bottom: 0;
+    line-height: 1em;
+  }
+  .publish-date {
+    font-size: 0.8em;
+    margin-bottom: 3em;
+  }
+</style>

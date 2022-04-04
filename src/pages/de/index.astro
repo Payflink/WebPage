@@ -1,5 +1,7 @@
 ---
+import Image from 'astro-imagetools'
 import { SEO } from 'astro-seo'
+
 import MainLayout from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 import ButtonLink from '@components/ButtonLink.astro'
@@ -11,7 +13,7 @@ const title =
 ---
 
 <MainLayout>
-  <SEO {title} {description} />
+  <!-- <SEO {title} {description} /> -->
   <Container>
     <h1>
       <b>Gaston</b>
@@ -251,10 +253,14 @@ const title =
       </p>
       <ul class="horizontal-list">
         <li>
-          <img src="/assets/index/el-mosquito.png" alt="El-Mosquito" />
+          <Image src="/src/images/el-mosquito.png" alt="El-Mosquito" />
         </li>
-        <li><img src="/assets/index/habsburg.png" alt="Habsburg-Bar" /></li>
-        <li><img src="/assets/index/sugoisushi.png" alt="Sugoi Sushi" /></li>
+        <li>
+          <Image src="/src/images/habsburg.png" alt="Habsburg-Bar" />
+        </li>
+        <li>
+          <Image src="/src/images/sugoisushi.png" alt="Sugoi Sushi" />
+        </li>
       </ul>
     </Container>
   </section>

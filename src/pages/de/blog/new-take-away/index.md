@@ -7,8 +7,6 @@ date: 2020-04-21
 layout: '@layouts/Blog.astro'
 ---
 
-# Wir reagieren auf die aktuelle Situation
-
 Restaurants wurden mit der Corona-Krise empfindlich getroffen. Mit dem Lockdown brach vom einen Moment zum anderen jeglicher Umsatz weg. Auch wenn der Betrieb der Lokale wieder erlaubt sein wird, bleiben sicher empfindliche Einschränkungen für eine längere Zeit bestehen.
 
 Es braucht also Kreativität und neue Wege, um wieder zum Umsatz vor der Krise zu kommen. Wichtig bleibt dabei, die Schutzmassnahmen für die Gäste und das Personal einzuhalten. Wir haben uns überlegt, wie wir die Betriebe dabei unterstützen können.

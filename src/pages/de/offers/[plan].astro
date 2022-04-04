@@ -19,9 +19,9 @@ export const getStaticPaths = async () => [
   },
 ]
 
-const { plan } = Astro.request.params
+const { plan } = Astro.params
 const { title, price } = Astro.props
-const { pathname } = Astro.request.url
+const { pathname } = new URL(Astro.request.url)
 
 const isCurrentPage = mkIsCurrentPage(pathname)
 const isDe = isCurrentPage('/de/')
@@ -43,7 +43,7 @@ const isDe = isCurrentPage('/de/')
       data-netlify-honeypot="bot-field"
     >
       <p hidden>
-        <label htmlFor="bot-field">
+        <label htmlfor="bot-field">
           Nicht ausfüllen:{' '}
           <input type="text" name="bot-field" />
         </label>
@@ -52,7 +52,7 @@ const isDe = isCurrentPage('/de/')
         <input type="text" name="locale" value={isDe ? 'de' : 'en'} />
       </p>
       <p>
-        <label htmlFor="name">
+        <label htmlfor="name">
           Vorname / Name
           <input
             type="text"
@@ -64,7 +64,7 @@ const isDe = isCurrentPage('/de/')
         </label>
       </p>
       <p>
-        <label htmlFor="email">
+        <label htmlfor="email">
           Email-Adresse
           <input
             type="email"
@@ -76,7 +76,7 @@ const isDe = isCurrentPage('/de/')
         </label>
       </p>
       <p>
-        <label htmlFor="phone">
+        <label htmlfor="phone">
           Telefonnummer
           <input
             type="tel"
@@ -88,26 +88,26 @@ const isDe = isCurrentPage('/de/')
         </label>
       </p>
       <p>
-        <label htmlFor="restaurant">
+        <label htmlfor="restaurant">
           Name des Betriebs
           <input type="text" inputmode="text" name="restaurant" required />
         </label>
       </p>
       <p>
-        <label htmlFor="website">
+        <label htmlfor="website">
           URL ihrer Webseite <small>(optional)</small>
           <input type="text" inputmode="text" autocomplete="url" name="website"
           />
         </label>
       </p>
       <p>
-        <label htmlFor="message">
+        <label htmlfor="message">
           Bemerkung <small>(optional)</small>
           <textarea name="message"></textarea>
         </label>
       </p>
       <p>
-        <label htmlFor="design">
+        <label htmlfor="design">
           <input type="checkbox" name="design" />
           Eigenes Design
         </label>

@@ -43,7 +43,7 @@ const employees = [
 ---
 
 <Main>
-  <SEO {title} {description} />
+  <!-- <SEO {title} {description} /> -->
   <Container>
     <h1>About us</h1>
     <p>
@@ -54,8 +54,14 @@ const employees = [
       <h2>Our team</h2>
       <div class="employee-list">
         {employees.map(({ name, image, position }) => (
-          <div class="employee" key={name}>
-            <img src={image} alt={name} />
+          <div class="employee">
+            <img
+              loading="lazy"
+              src={image}
+              alt={name}
+              width="192"
+              height="192"
+            />
             <p>
               <span class="employee-name">{name}</span>
               <br />
