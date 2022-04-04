@@ -1,10 +1,11 @@
 ---
 export interface Props {
-  size?: 'small' | 'normal'
+  size?: 'small' | 'normal' | 'large'
 }
 
 const { size = 'normal' } = Astro.props
-const maxWidth = size === 'normal' ? '960px' : '600px'
+const maxWidth =
+  size === 'large' ? '1240px' : size === 'normal' ? '960px' : '600px'
 ---
 
 <div><slot /></div>

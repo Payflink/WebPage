@@ -6,87 +6,221 @@ import Center from '@components/Center.astro'
 ---
 
 <Main title="Angebot • Gaston">
-  <Container>
+  <Container size="large">
     <h1>Angebot</h1>
-    <div class="plan-wrapper">
+    <div class="plans-container">
       <div class="plan">
-        <div class="text-wrapper">
-          <div class="plan-heading">Apéritif</div>
-          <p>Ideal für den Start.</p>
-          <ul>
-            <li>Feature 1</li>
-            <li>Feature 2</li>
-            <li>Feature 3</li>
-          </ul>
-          <p class="price">3.9% / Bestellung</p>
-          <Center>
-            <ButtonLink href="aperitif">Bestellen</ButtonLink>
-          </Center>
-        </div>
+        <h2>Apéritif</h2>
+        <p class="plan-subtitle">Ideal für den Start.</p>
+        <ul>
+          <li>Speisekarte auf dem Handy, Tablet und Ihrer Webseite</li>
+          <li>
+            Für Inhouse, Take-Away und Delivery Bestellungen entgegennehmen
+          </li>
+          <li>Zahlung über Gaston möglich</li>
+          <li>Dashboard mit Bestell- und Zahlungsübersicht</li>
+          <li>Support 7 Tage die Woche von 08:00 bis 20:00</li>
+        </ul>
+        <p class="price">3.9% <small>/ Bestellung *</small></p>
+        <Center>
+          <ButtonLink href="aperitif">Apéritif bestellen</ButtonLink>
+        </Center>
       </div>
       <div class="plan" data-recommended="Empfohlen">
-        <div class="text-wrapper">
-          <div class="plan-heading">Hauptgang</div>
-          <p>Sie planen grössere Umsätze mit Gaston.</p>
-          <ul>
-            <li>Feature 1</li>
-            <li>Feature 2</li>
-            <li>Feature 3</li>
-          </ul>
-          <p class="price">CHF 279.- / Monat <br /><small>/ Betrieb</small></p>
-          <Center>
-            <ButtonLink href="main-course">Bestellen</ButtonLink>
-          </Center>
-        </div>
+        <h2>Hauptgang</h2>
+        <p class="plan-subtitle">Sie planen regelmässige Umsätze mit Gaston.</p>
+        <ul>
+          <li>Alle Leistungen von Apéritif</li>
+          <li>Bon-Drucker, um Bestellungen auszudrucken</li>
+          <li>
+            <p><b>Flatrate</b>: Keine Gaston-Kosten pro Bestellung *</p>
+          </li>
+        </ul>
+        <p class="price">CHF 179.- <small>/ Monat / Betrieb *</small></p>
+        <Center>
+          <ButtonLink href="main-course">Hauptgang bestellen</ButtonLink>
+        </Center>
       </div>
+
       <div class="plan">
-        <div class="text-wrapper">
-          <div class="plan-heading">Mit Kasse</div>
-          <p>Gaston im Packet mit einer Kasse.</p>
-          <ul>
-            <li>Feature 1</li>
-            <li>Feature 2</li>
-            <li>Feature 3</li>
-          </ul>
-          <p class="price">Auf Anfrage</p>
-          <Center>
-            <ButtonLink href="pos">Anfragen</ButtonLink>
-          </Center>
-        </div>
+        <h2>6-Gang Menu</h2>
+        <p class="plan-subtitle">Alle funktionen von Gaston inbegriffen.</p>
+        <ul>
+          <li>Alle Leistungen von Hauptgang</li>
+          <li>Bestellungen werden an die Kasse weitergeleitet</li>
+          <li>Unbegrenzt Sprachen</li>
+          <li>
+            <p>Unbegrenzt Speisekarten</p>
+            <p class="small">
+              Zeit- und ortsabhänig unterschiedliche Angebote und Preise; ab
+              Sommer 2022 erhältlich
+            </p>
+          </li>
+          <li>
+            <p>Bis zu 6 Betriebe</p>
+            <p class="small">Mehr auf Anfrage</p>
+          </li>
+          <li>24h Support</li>
+        </ul>
+        <p class="price">CHF 790.- <small>/ Monat *</small></p>
+        <Center>
+          <ButtonLink href="pos">6-Gänger bestellen</ButtonLink>
+        </Center>
       </div>
+
+      <div class="plan pos">
+        <h2>Dessert</h2>
+        <p class="plan-subtitle">Gaston im Packet mit einer Kasse.</p>
+        <ul>
+          <li>Alle Leistungen von Apéritif</li>
+          <li>Kasse mit Schublade</li>
+          <li>Bestellungen werden an die Kasse weitergeleitet</li>
+          <li>Artikel-Daten werden autom. aus der Kasse ausgelesen</li>
+        </ul>
+        <p class="price pos">Auf Anfrage</p>
+        <Center>
+          <ButtonLink href="pos">Dessert anfragen</ButtonLink>
+        </Center>
+      </div>
+    </div>
+    <p>
+      * Transaktionskosten des Zahlungsproviders (beispielsweise Worldline oder
+      Datatrans) fallen zusätzlich an.
+    </p>
+
+    <h2 style="margin-top: 3em;">Leistungen einzeln dazubuchbar</h2>
+
+    <div class="feature">
+      <div class="heading">
+        <h3>Mehrere Sprachen</h3>
+        <p>Bereits inkl. bei <i>6-Gang-Menu</i></p>
+      </div>
+      <p>Ihre Speisekarte ist in mehreren Sprachen verfügbar.</p>
+      <p class="price">CHF 19.- <small>/ Monat / Betrieb</small></p>
+    </div>
+
+    <div class="feature">
+      <div class="heading">
+        <h3>Bon Drucker</h3>
+        <p>Bereits inkl. bei <i>Hauptgang</i> und <i>6-Gang-Menu</i></p>
+      </div>
+      <p>Bon-Drucker, um die Bestellungen auszudrucken.</p>
+      <p class="price">
+        CHF 29.- <small>/ Monat / Ducker</small>
+      </p>
+    </div>
+
+    <div class="feature">
+      <div class="heading">
+        <h3>Mehrere Speisekarten</h3>
+        <p>Bereits inkl. bei <i>6-Gang-Menu</i></p>
+      </div>
+      <p>
+        Ja nach Bestellzeit und -ort können das Angebot oder die Preise
+        unterschiedlich sein.
+      </p><p>
+        Die ist ideal für Happy-Hour oder um das Angebot auf die Küche
+        abzustimmen. Damit ist es auch möglich für Inhouse, Take-Away und
+        Delivery ein unterschiedliches Angebot oder auch andere Preise
+        anzubieten.
+      </p>
+      <small>Ab Sommer 2022 erhältlich.</small>
+
+      <p class="price">CHF 39.- <small>/ Monat / Betrieb</small></p>
+    </div>
+
+    <div class="feature">
+      <div class="heading">
+        <h3>Kassenanbindung</h3>
+        <p>Bereits inkl. bei <i>Dessert</i> und <i>6-Gang-Menu</i></p>
+      </div>
+
+      <p>Die Gaston-Bestellungen werden direkt an Ihre Kasse übermittelt.</p>
+      <p class="price">CHF 129.- <small>/ Monat / Betrieb</small></p>
+    </div>
+
+    <div class="feature">
+      <div class="heading">
+        <h3>24h Support</h3>
+        <p>Bereits inkl. bei <i>6-Gang-Menu</i></p>
+      </div>
+      <p>Wir sind bei Störungen täglich 24h für Sie verfügbar.</p>
+      <p class="price">CHF 190.- <small>/ Monat / Betrieb</small></p>
+    </div>
+
+    <div class="feature">
+      <div class="heading">
+        <h3>Unterstützung beim Einrichten</h3>
+        <p>Bereits inkl. bei <i>6-Gang-Menu</i></p>
+      </div>
+      <p>
+        Wir unterstützen Sie vier Wochen beim Einrichten der Speisekarte und der
+        Zahlungsfunktionen per Telefon oder je nach Distanz auch vor Ort.
+      </p>
+      <p class="price">
+        CHF 390.- <small>einmalig</small>
+      </p>
+    </div>
+
+    <div class="feature">
+      <div class="heading">
+        <h3>Individuelles Design</h3>
+      </div>
+      <p>
+        Sie haben spezielle Ansprüche an das Design der Speisekarte. Wir können
+        fast alle Wünsche erfüllen.
+      </p>
+      <p class="price">
+        ab CHF 590.- <small>einmalig</small>
+      </p>
     </div>
   </Container>
 </Main>
 
 <style lang="scss">
-  .plan-wrapper {
+  .plans-container {
     display: grid;
     gap: 2em 1em;
 
     @media (min-width: 800px) {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
 
   .plan {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     border-width: 1px;
     border-style: solid;
     border-radius: 5px;
     border-color: var(--primary-color);
+    padding: 3rem 1rem 1rem;
+    text-align: center;
 
-    h3 {
+    &.pos {
+      border-color: var(--text-color);
+    }
+
+    h2 {
       font-size: 2em;
-      margin-bottom: 0;
+      margin-block: 0.3em 0;
+    }
+
+    .plan-subtitle {
+      flex: 0 0 3rem;
+      font-weight: bold;
+      margin-block: 1.2em;
     }
 
     &[data-recommended] {
       border-width: 3px;
       margin: -2px;
+
       &:before {
+        position: absolute;
+        inset: 0 0 auto 0;
         box-sizing: border-box;
         width: 100%;
         content: attr(data-recommended);
@@ -100,37 +234,79 @@ import Center from '@components/Center.astro'
     }
   }
 
-  .text-wrapper {
-    padding: 1rem;
-  }
-
-  .plan-heading {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 1.5em;
-  }
-
-  .plan-subtitle {
-    flex: 1 0 auto;
-    font-weight: bold;
-    margin-top: 1.2em;
-  }
-
   .price {
     font-size: 1.3em;
     font-weight: 600;
     color: var(--primary-color);
-    text-align: center;
+
+    &.pos {
+      color: var(--text-color);
+    }
   }
 
   ul {
+    flex: 1;
+    width: 100%;
     margin: 0;
+    text-align: left;
+    padding-left: 1.5em;
+  }
+
+  li {
+    margin-block: 1em;
+    p {
+      margin: 0;
+
+      &.small {
+        font-size: 0.7em;
+      }
+    }
   }
 
   .selection-button {
     display: flex;
     flex-direction: row;
     gap: 1em;
+  }
+
+  .feature {
+    padding: 1.5em 2em;
+    margin-bottom: 2em;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: var(--primary-color);
+
+    h3 {
+      margin-block: 0 0.3rem;
+      color: var(--primary-color);
+    }
+    p {
+      margin-block: 0 0.5em;
+    }
+
+    i {
+      color: var(--primary-color);
+    }
+
+    .heading {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0.5em 2em;
+
+      p {
+        font-size: 0.9em;
+        margin-left: auto;
+      }
+    }
+
+    .price {
+      text-align: right;
+      margin: 0;
+      i {
+        color: var(--text-color);
+      }
+    }
   }
 </style>
