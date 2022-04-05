@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build && npm run fix-assets",
+    "build": "astro build && ps auxw; false && npm run fix-assets",
     "preview": "astro preview",
     "netlify": "netlify dev",
     "fix-assets": "node fix-assets.mjs"
