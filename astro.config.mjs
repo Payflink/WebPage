@@ -12,7 +12,7 @@ import solid from '@astrojs/solid-js'
 import turbolinks from '@astrojs/turbolinks'
 import partytown from '@astrojs/partytown'
 import sitemap from '@astrojs/sitemap'
-import astroImagePlugin from 'astro-imagetools/plugin'
+// import astroImagePlugin from 'astro-imagetools/plugin'
 
 export default defineConfig(
   /** @type {import('astro').AstroUserConfig} */
@@ -20,8 +20,8 @@ export default defineConfig(
     // Enable the Solid renderer to support Solid JSX components.
     site: 'https://gastonsolution.com',
     integrations: [solid(), /* turbolinks(), partytown(),*/ sitemap()],
-    vite: {
-      plugins: [astroImagePlugin],
-    },
+    // vite: {
+    //   plugins: [astroImagePlugin],
+    // },
   }
 )

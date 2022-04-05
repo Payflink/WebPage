@@ -19,7 +19,7 @@ Zudem ist es in Gaston nun möglich den "Notstopp" zu drücken, falls die Küche
 
 Falls das Restaurant will, können die Gäste gleich mehrere "Gänge" bestellen. Dabei weisen die Gäste jeder Bestellposition einem Gang zu, damit das Personal versteht, wann welche Speise gewünscht ist.
 
-![Bestellpositionen einem Gang zuweisen](courses.png)
+![Bestellpositionen einem Gang zuweisen](/src/pages/de/blog/update-2022-q1/courses.png)
 
 ## Bestellungen zusammenfassen
 
