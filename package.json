@@ -16,7 +16,7 @@
     "@astrojs/solid-js": "^0.0.3",
     "@astrojs/turbolinks": "^0.0.2",
     "@fontsource/merriweather-sans": "^4.5.5",
-    "astro": "^0.26.0",
+    "astro": "^0.26.1",
     "astro-imagetools": "^0.4.1",
     "astro-seo": "^0.4.4",
     "netlify-cli": "^9.13.0",
