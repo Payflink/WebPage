@@ -1,7 +1,7 @@
 ---
 import { mkIsCurrentPage } from '../utils.ts'
 
-const { pathname } = new URL(Astro.request.url)
+const { pathname } = Astro.canonicalURL
 const isCurrentPage = mkIsCurrentPage(pathname)
 const isDe = isCurrentPage('/de/')
 ---
@@ -21,7 +21,9 @@ const isDe = isCurrentPage('/de/')
 
 <header>
   <p>
-    <a href="/"> Gaston </a>
+    <a href="/" aria-current={isCurrentPage('/de/', { exact: true })}>
+      Gaston
+    </a>
   </p>
   <nav>
     <a

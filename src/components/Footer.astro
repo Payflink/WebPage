@@ -1,7 +1,7 @@
 ---
 import { mkIsCurrentPage } from '../utils.ts'
 
-const { pathname } = new URL(Astro.request.url)
+const { pathname } = Astro.canonicalURL
 
 const isCurrentPage = mkIsCurrentPage(pathname)
 const isDe = isCurrentPage('/de/')

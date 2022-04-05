@@ -18,7 +18,7 @@ export default defineConfig(
   /** @type {import('astro').AstroUserConfig} */
   {
     // Enable the Solid renderer to support Solid JSX components.
-    site: 'https://gastonapp.com',
+    site: 'https://gastonsolution.com',
     integrations: [solid(), /* turbolinks(), */ partytown(), sitemap()],
     vite: {
       plugins: [astroImagePlugin],
