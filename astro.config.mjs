@@ -19,7 +19,7 @@ export default defineConfig(
   {
     // Enable the Solid renderer to support Solid JSX components.
     site: 'https://gastonsolution.com',
-    integrations: [solid(), /* turbolinks(), partytown(),*/ sitemap()],
+    integrations: [solid(), turbolinks(), /* partytown(),*/ sitemap()],
     vite: {
       plugins: [astroImagePlugin],
     },
