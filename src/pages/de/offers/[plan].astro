@@ -33,22 +33,12 @@ const isDe = isCurrentPage('/de/')
 
 <Main>
   <Container size="small">
-    <h1>Unverbindlich Anfrage</h1>
+    <h1>Gaston bestellen</h1>
+    <h2>Plan <b>{title}</b></h2>
     <p>
       Vielen Dank für Ihr Interesse an Gaston. Bitte ergänzen Sie die folgenden
       Angaben, damit wir Ihnen einen Test-Zugang zusenden können.
     </p>
-    <div class="card">
-      <p>
-        Gewählter Plan:
-        <b>
-          <a href=".">{title}</a>
-        </b>
-      </p>
-      <p>
-        Basis-Kosten: <b>{price}</b>
-      </p>
-    </div>
     <form
       name="enrol"
       action={isDe ? '/de/offers/success' : '/en/offers/success'}
@@ -120,8 +110,25 @@ const isDe = isCurrentPage('/de/')
           <textarea name="message"></textarea>
         </label>
       </p>
+      <p>
+        <label htmlfor="design">
+          <input type="checkbox" name="design" />
+          Eigenes Design
+        </label>
+      </p>
+      <div class="card">
+        <p>
+          Gewählter Plan:
+          <b>
+            <a href=".">{title}</a>
+          </b>
+        </p>
+        <p>
+          Kosten nach zwei Monaten: <b>{price}</b>
+        </p>
+      </div>
       <p style="text-align: right;">
-        <Button type="submit">Anfrage versenden</Button>
+        <Button type="submit">Bestellen</Button>
       </p>
     </form>
   </Container>
