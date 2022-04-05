@@ -11,11 +11,15 @@ export const getStaticPaths = async () => [
   },
   {
     params: { plan: 'main-course' },
-    props: { title: 'Hauptgang', price: 'CHF 279.- / Betreib / Monat' },
+    props: { title: 'Hauptgang', price: 'CHF 179.- / Betreib / Monat' },
   },
   {
-    params: { plan: 'pos' },
-    props: { title: 'Mit Kasse', price: 'Auf Anfrage' },
+    params: { plan: '6-course-menu' },
+    props: { title: '6-Gang Menu', price: 'CHF 790.- / Monat' },
+  },
+  {
+    params: { plan: 'dessert' },
+    props: { title: 'Mit klassischer Kasse', price: 'Auf Anfrage' },
   },
 ]
 

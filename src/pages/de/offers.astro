@@ -3,6 +3,8 @@ import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 import ButtonLink from '@components/ButtonLink.astro'
 import Center from '@components/Center.astro'
+
+import Counter from '@components/Counter.jsx'
 ---
 
 <Main title="Angebot • Gaston">
@@ -64,7 +66,7 @@ import Center from '@components/Center.astro'
         </ul>
         <p class="price">CHF 790.- <small>/ Monat *</small></p>
         <Center>
-          <ButtonLink href="pos">6-Gänger bestellen</ButtonLink>
+          <ButtonLink href="6-course-menu">6-Gänger bestellen</ButtonLink>
         </Center>
       </div>
 
@@ -86,7 +88,7 @@ import Center from '@components/Center.astro'
         </ul>
         <p class="price pos">Auf Anfrage</p>
         <Center>
-          <ButtonLink href="pos">Dessert anfragen</ButtonLink>
+          <ButtonLink href="dessert">Dessert anfragen</ButtonLink>
         </Center>
       </div>
     </div>
@@ -181,6 +183,8 @@ import Center from '@components/Center.astro'
         ab CHF 590.- <small>einmalig</small>
       </p>
     </div>
+
+    <!-- <Counter>Hallo</Counter> -->
   </Container>
 </Main>
 
