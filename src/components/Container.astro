@@ -4,16 +4,20 @@ export interface Props {
 }
 
 const { size = 'normal' } = Astro.props
-const maxWidth =
-  size === 'large' ? '1240px' : size === 'normal' ? '960px' : '600px'
 ---
 
-<div><slot /></div>
+<div class={size}><slot /></div>
 
-<style lang="scss" define:vars={{ maxWidth }}>
+<style lang="scss">
+  .small {
+    --max-width: 640px;
+  }
+  .large {
+    --max-width: 1240px;
+  }
   div {
     margin: 0 auto;
-    max-width: var(--maxWidth);
+    max-width: var(--max-width, 960px);
     padding: 1em;
 
     @media (min-width: 600px) {
