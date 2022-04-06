@@ -1,11 +1,20 @@
 ---
+import { SEO } from 'astro-seo'
+
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 import ButtonLink from '@components/ButtonLink.astro'
 import Center from '@components/Center.astro'
 
-import Counter from '@components/Counter.jsx'
+const description =
+  'Wählen Sie das passende Angebot für Ihre Bedürfnisse. Gaston die digitale Speisekarte erlaubt es den Gästen schnell und einfach zu bestell und bezahlen. Dabei spielt es keine Rolle, ob die Gäste in ihrem Betrieb, unterwegs oder Zuhause sind. Gaston unterstützt die Bestellung in Ihrem Betrieb, Take-Away und Delivery.'
+const title =
+  'Angebot • Gaston • Digitale Speisekarte • Mehr Gäste mit weniger Personal schneller bedienen.'
 ---
+
+<head>
+  <SEO {title} {description} />
+</head>
 
 <Main title="Angebot • Gaston">
   <Container size="large">
@@ -46,7 +55,7 @@ import Counter from '@components/Counter.jsx'
 
       <div class="plan">
         <h2>6-Gang Menu</h2>
-        <p class="plan-subtitle">Alle funktionen von Gaston inbegriffen.</p>
+        <p class="plan-subtitle">Alle Funktionen von Gaston inbegriffen.</p>
         <ul>
           <li>Alle Leistungen von Hauptgang</li>
           <li>Bestellungen werden an die Kasse weitergeleitet</li>
@@ -54,7 +63,7 @@ import Counter from '@components/Counter.jsx'
           <li>
             <p>Unbegrenzt Speisekarten</p>
             <p class="small">
-              Zeit- und ortsabhänig unterschiedliche Angebote und Preise; ab
+              Zeit- und ortsabhängig unterschiedliche Angebote und Preise; ab
               Sommer 2022 erhältlich
             </p>
           </li>
@@ -184,8 +193,6 @@ import Counter from '@components/Counter.jsx'
         ab CHF 590.- <small>einmalig</small>
       </p>
     </div>
-
-    <!-- <Counter>Hallo</Counter> -->
   </Container>
 </Main>
 

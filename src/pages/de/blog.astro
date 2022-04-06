@@ -1,4 +1,6 @@
 ---
+import { SEO } from 'astro-seo'
+
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 
@@ -8,7 +10,16 @@ const data = blogs
     (a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date)
   )
   .filter((blog) => blog.frontmatter.lang === 'de')
+
+const description =
+  'Wählen Sie das passende Angebot für Ihre Bedürfnisse. Gaston die digitale Speisekarte erlaubt es den Gästen schnell und einfach zu bestell und bezahlen. Dabei spielt es keine Rolle, ob die Gäste in ihrem Betrieb, unterwegs oder Zuhause sind. Gaston unterstützt die Bestellung in Ihrem Betrieb, Take-Away und Delivery.'
+const title =
+  'Angebot • Gaston • Digitale Speisekarte • Mehr Gäste mit weniger Personal schneller bedienen.'
 ---
+
+<head>
+  <SEO {title} {description} />
+</head>
 
 <Main title="Blog • Gaston">
   <Container size="small">
