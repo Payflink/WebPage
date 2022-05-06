@@ -94,14 +94,14 @@ const title =
       </ul>
     </Container>
   </section>
-  <section id="features">
+  <section id="features" class="background">
     <Container>
       <h2>So funktioniert's</h2>
       <ol class="horizontal-list">
         <li>
           <div>
             <img
-              src="/assets/index/qr-code.svg"
+              src="/assets/index/scan.svg"
               alt="QR-Code scannen"
               loading="lazy"
             />
@@ -141,10 +141,7 @@ const title =
       <ul class="horizontal-list">
         <li>
           <div>
-            <img
-              src="/assets/index/in-house.svg"
-              alt="Im Betrieb"
-              loading="lazy"
+            <img src="/assets/index/inhouse.svg" alt="Im Betrieb" loading="lazy"
             />
             <p>Im Betrieb (Inhouse)</p>
           </div>
@@ -169,7 +166,7 @@ const title =
       </ul>
     </Container>
   </section>
-  <section id="features">
+  <section id="payment" class="background">
     <Container>
       <h2>Bezahlung</h2>
       <p>
@@ -194,23 +191,17 @@ const title =
         <li>
           <div>
             <img
-              src="/assets/index/mastercard.svg"
-              alt="Mastercard"
+              src="/assets/index/card.svg"
+              alt="Kredit- & Debitkarten"
               loading="lazy"
             />
-            <p>Mastercard</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img src="/assets/index/visa.svg" alt="Visa" loading="lazy" />
-            <p>Visa</p>
+            <p>Kredit- und Debitkarten</p>
           </div>
         </li>
         <li>
           <div>
             <img
-              src="/assets/index/weitere.svg"
+              src="/assets/index/more.svg"
               alt="Weitere Zahlungsmittel"
               loading="lazy"
             />
@@ -260,37 +251,21 @@ const title =
       <ol class="horizontal-list">
         <li>
           <div>
-            <img
-              src="/assets/index/versenden.svg"
-              alt="Gast bestellt"
-              loading="lazy"
+            <img src="/assets/index/scan.svg" alt="Gast bestellt" loading="lazy"
             />
             <p>Gast bestellt</p>
           </div>
         </li>
         <li>
           <div>
-            <img
-              src="/assets/index/zahlung.svg"
-              alt="Gast bezahlt"
-              loading="lazy"
-            />
-            <p>
-              Gast bezahlt. <small>Kann auch erst am Schluss stattfinden.</small
-              >
-            </p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img src="/assets/index/kasse.svg" alt="Kasse" loading="lazy" />
-            <p>Bestellung kommt an der Kasse an und wird verbucht</p>
+            <img src="/assets/index/pos.svg" alt="Kasse" loading="lazy" />
+            <p>Bestellung kommt an der Kasse an</p>
           </div>
         </li>
         <li>
           <div>
             <img
-              src="/assets/index/kueche.svg"
+              src="/assets/index/kitchen.svg"
               alt="Bondrucker in der Küche"
               loading="lazy"
             />
@@ -308,10 +283,7 @@ const title =
       <ol class="horizontal-list">
         <li>
           <div>
-            <img
-              src="/assets/index/versenden.svg"
-              alt="Gast bestellt"
-              loading="lazy"
+            <img src="/assets/index/scan.svg" alt="Gast bestellt" loading="lazy"
             />
             <p>Gast bestellt</p>
           </div>
@@ -319,20 +291,7 @@ const title =
         <li>
           <div>
             <img
-              src="/assets/index/zahlung.svg"
-              alt="Gast bezahlt"
-              loading="lazy"
-            />
-            <p>
-              Gast bezahlt. <small>Kann auch erst am Schluss stattfinden.</small
-              >
-            </p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img
-              src="/assets/index/kueche.svg"
+              src="/assets/index/kitchen.svg"
               alt="Bondrucker in der Küche"
               loading="lazy"
             />
@@ -342,7 +301,7 @@ const title =
       </ol></Container
     >
   </section>
-  <section id="features">
+  <section id="features" class="background">
     <Container>
       <h2>Ihr Style</h2>
       <p>
@@ -516,6 +475,26 @@ const title =
       max-height: 200px;
       margin-inline: auto;
       padding-block-start: 1em;
+    }
+  }
+
+  .background {
+    position: relative;
+    color: white;
+    z-index: 5;
+    &::before {
+      content: ' ';
+      position: absolute;
+      inset: -3em 0;
+      background-image: linear-gradient(
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 0)
+        ),
+        url(/assets/curve.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      z-index: -1;
     }
   }
 </style>
