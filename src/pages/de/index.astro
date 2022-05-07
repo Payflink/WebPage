@@ -96,35 +96,43 @@ const title =
   </section>
   <section id="features" class="background">
     <Container>
-      <h2>So funktioniert's</h2>
-      <ol class="horizontal-list">
-        <li>
-          <div>
-            <img
-              src="/assets/index/scan.svg"
-              alt="QR-Code scannen"
-              loading="lazy"
-            />
-            <p>QR-Code scannen</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img src="/assets/index/order.svg" alt="Bestellen" loading="lazy"
-            /><p>Bestellen</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img src="/assets/index/pay.svg" alt="Bezahlen" loading="lazy" /><p>
-              Bezahlen
-            </p>
-          </div>
-        </li>
-      </ol>
-      <ButtonLink href="contact/"
-        >Kann Gaston Ihren Anwendungsfall abdecken?</ButtonLink
-      >
+      <div class="columns">
+        <div style="flex: 1">
+          <h2>Drei Schritte zum Genuss</h2>
+          <p>
+            Mit Gaston bestellen und bezahlen Gäste schnell und einfach. Kein
+            Anmeldung, keine App herunterladen.
+          </p>
+          <ButtonLink href="contact/"
+            >Kann Gaston Ihren Anwendungsfall abdecken?</ButtonLink
+          >
+        </div>
+        <ol class="description-list ordered-list" style="flex: 1">
+          <li>
+            <p class="description-wrapper">QR-Code scannen</p>
+            <div class="image-wrapper">
+              <img
+                src="/assets/index/scan.svg"
+                alt="QR-Code scannen"
+                loading="lazy"
+              />
+            </div>
+          </li>
+          <li>
+            <p class="description-wrapper">Bestellen</p>
+            <div class="image-wrapper">
+              <img src="/assets/index/order.svg" alt="Bestellen" loading="lazy"
+              />
+            </div>
+          </li>
+          <li>
+            <p class="description-wrapper">Bezahlen</p>
+            <div class="image-wrapper">
+              <img src="/assets/index/pay.svg" alt="Bezahlen" loading="lazy" />
+            </div>
+          </li>
+        </ol>
+      </div>
     </Container>
   </section>
   <section id="features">
@@ -168,145 +176,161 @@ const title =
   </section>
   <section id="payment" class="background">
     <Container>
-      <h2>Bezahlung</h2>
+      <h2>So bezahlen Gäste</h2>
       <p>
         Falls Sie Ihren Gästen die Möglichkeit geben wollen direkt in der App zu
         bezahlen, so unterstützen wir mehrere Zahlungsmittel und
         Zahlungsprovider (PSP). Wenn Sie nicht wollen, müssen Ihre Gäste nicht
         in der App bezahlen.
       </p>
-      <h3>Zahlungsmittel</h3>
-      <p>
-        Gaston unterstützt die gängigsten Zahlungsmittel in der Schweiz. Welche
-        Zahlungsmittel verfügbar sind, ist von Ihrem Zahlungsprovider und den
-        entsprechenden Verträgen abhängig.
-      </p>
-      <ul class="horizontal-list">
-        <li>
-          <div>
+      <div class="columns">
+        <div style="flex: 1">
+          <h3>Zahlungsmittel</h3>
+          <p>
+            Gaston unterstützt die gängigsten Zahlungsmittel in der Schweiz.
+            Welche Zahlungsmittel verfügbar sind, ist von Ihrem Zahlungsprovider
+            und den entsprechenden Verträgen abhängig.
+          </p>
+        </div>
+        <ul class="horizontal-list small" style="flex: 1; margin-top: 4em;">
+          <li>
             <img src="/assets/index/twint.svg" alt="Twint" loading="lazy" />
             <p>Twint</p>
-          </div>
-        </li>
-        <li>
-          <div>
+          </li>
+          <li>
             <img
               src="/assets/index/card.svg"
               alt="Kredit- & Debitkarten"
               loading="lazy"
             />
             <p>Kredit- und Debitkarten</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img
-              src="/assets/index/more.svg"
-              alt="Weitere Zahlungsmittel"
-              loading="lazy"
-            />
-            <p>Weitere Zahlungsmittel</p>
-          </div>
-        </li>
-      </ul>
-      <h3>Zahlungsprovider</h3>
-      <p>
-        Zur Zeit unterstützt Gaston die zwei grössten Zahlungsprovider der
-        Schweiz. Falls Sie einen anderen Zahlungsprovider wünschen, schauen wir
-        dies gerne an.
-      </p>
-      <ul class="horizontal-list">
-        <li>
-          <div>
+          </li>
+        </ul>
+      </div>
+
+      <hr />
+
+      <div class="columns">
+        <div style="flex: 1">
+          <h3>Zahlungsprovider</h3>
+          <p>
+            Zur Zeit unterstützt Gaston die zwei grössten Zahlungsprovider der
+            Schweiz. Falls Sie einen anderen Zahlungsprovider wünschen, schauen
+            wir dies gerne an.
+          </p>
+        </div>
+        <ul class="horizontal-list small" style="flex: 1; margin-top: 4em;">
+          <li>
             <img
               src="/assets/index/datatrans.svg"
               alt="Datatrans"
               loading="lazy"
             />
             <p>Datatrans</p>
-          </div>
-        </li>
-        <li>
-          <div>
+          </li>
+          <li>
             <img
               src="/assets/index/worldline.svg"
               alt="Worldline"
               loading="lazy"
             />
             <p>Worldline (ehemals Saferpay)</p>
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </Container>
   </section>
-  <section id="features">
+  <section id="how-it-works">
     <Container>
-      <h2>Mit oder ohne Kasse</h2>
+      <h2>So funktioniert Gaston</h2>
       <p>Gaston funktioniert mit oder ohne Kasse.</p>
-      <h3>Mit Kasse</h3>
-      <p>
-        Gaston kann die Bestellungen an Ihre Kasse übermitteln. Nehmen Sie mit
-        uns <a href="contact">Kontakt</a> auf, um ihre Kassenanbindung zu besprechen.
-      </p>
-      <ol class="horizontal-list">
-        <li>
-          <div>
-            <img src="/assets/index/scan.svg" alt="Gast bestellt" loading="lazy"
-            />
-            <p>Gast bestellt</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img src="/assets/index/pos.svg" alt="Kasse" loading="lazy" />
-            <p>Bestellung kommt an der Kasse an</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img
-              src="/assets/index/kitchen.svg"
-              alt="Bondrucker in der Küche"
-              loading="lazy"
-            />
-            <p>Kasse schickt Bestellung in die Küche</p>
-          </div>
-        </li>
-      </ol>
+      <div class="columns">
+        <div style="flex: 1">
+          <h3>Mit Kasse</h3>
+          <p>
+            Gaston kann die Bestellungen an Ihre Kasse übermitteln. Nehmen Sie
+            mit uns <a href="contact">Kontakt</a> auf, um ihre Kassenanbindung zu
+            besprechen.
+          </p>
+        </div>
+        <ol class="description-list ordered-list" style="flex: 2">
+          <li>
+            <p class="description-wrapper">Gast bestellt</p>
+            <div class="image-wrapper">
+              <img
+                src="/assets/index/scan.svg"
+                alt="Gast bestellt"
+                loading="lazy"
+              />
+            </div>
+          </li>
+          <li>
+            <p class="description-wrapper">Kasse registriert Bestellung</p>
+            <div class="image-wrapper">
+              <img src="/assets/index/pos.svg" alt="Kasse" loading="lazy" />
+            </div>
+          </li>
+          <li>
+            <p class="description-wrapper">
+              Kasse schickt Bestellung in die Küche
+            </p>
+            <div class="image-wrapper">
+              <img
+                src="/assets/index/kitchen.svg"
+                alt="Bondrucker in der Küche"
+                loading="lazy"
+              />
+            </div>
+          </li>
+        </ol>
+      </div>
 
-      <h3>Ohne Kasse</h3>
-      <p>
-        Gaston funktioniert hervorragend auch ohne Kasse. Alle Ihre Bestellungen
-        sind bei uns im Dashboard ersichtlich und können an einen Bondrucker in
-        der Küche oder Bar ausgedruckt werden.
-      </p>
-      <ol class="horizontal-list">
-        <li>
-          <div>
-            <img src="/assets/index/scan.svg" alt="Gast bestellt" loading="lazy"
-            />
-            <p>Gast bestellt</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img
-              src="/assets/index/kitchen.svg"
-              alt="Bondrucker in der Küche"
-              loading="lazy"
-            />
-            <p>Gaston schickt die Bestellung direkt in die Küche</p>
-          </div>
-        </li>
-      </ol></Container
-    >
+      <hr />
+
+      <div class="columns">
+        <div style="flex: 1">
+          <h3>Ohne Kasse</h3>
+          <p>
+            Gaston funktioniert hervorragend auch ohne Kasse. Alle Ihre
+            Bestellungen sind bei uns im Dashboard ersichtlich und können an
+            einen Bondrucker in der Küche oder Bar ausgedruckt werden.
+          </p>
+        </div>
+        <ol class="description-list ordered-list" style="flex: 2">
+          <li>
+            <p class="description-wrapper">Gast bestellt</p>
+            <div class="image-wrapper">
+              <img
+                src="/assets/index/scan.svg"
+                alt="Gast bestellt"
+                loading="lazy"
+              />
+            </div>
+          </li>
+          <li>
+            <p class="description-wrapper">
+              Gaston schickt die Bestellung direkt in die Küche
+            </p>
+            <div class="image-wrapper">
+              <img
+                src="/assets/index/kitchen.svg"
+                alt="Bondrucker in der Küche"
+                loading="lazy"
+              />
+            </div>
+          </li>
+        </ol>
+      </div>
+    </Container>
   </section>
   <section id="features" class="background">
     <Container>
       <h2>Ihr Style</h2>
       <p>
         Ihr Betrieb hat einen einzigartigen Style. Ihr Speisekarte-/Bestell-App
-        sollte dies reflektieren.
+        sollte dies reflektieren. Sie können das Aussehen jederzeit selber
+        anpassen und auch die Bilder und Grafiken für Kategorien und Artikel
+        selber einfügen.
       </p>
       <ul class="horizontal-list">
         <li>
@@ -347,11 +371,8 @@ const title =
       <h2>Roadmap</h2>
       <p>
         Gaston wird ständig weiterentwickelt. Auf unserer Roadmap sieht man
-        welche Features nächstens verfügbar sind.
-      </p>
-      <p>
-        Haben Sie einen speziellen Wunsch? Wir nehmen dies gerne in die Roadmap
-        auf.
+        welche Features nächstens verfügbar sind. Haben Sie einen speziellen
+        Wunsch? Wir nehmen dies gerne in die Roadmap auf.
       </p>
       <ButtonLink
         href="https://www.notion.so/gastonsolution/Roadmap-von-Gaston-6644875d1fba4fe58cacfbf15e1ace7e"
@@ -377,6 +398,24 @@ const title =
     small {
       font-size: 40%;
       color: var(--text-color);
+    }
+  }
+  ul,
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  hr {
+    margin-block: 3em;
+    border: none;
+    @media (min-width: 40rem) {
+      border-top-width: 1px;
+      border-top-style: solid;
+      border-top-color: var(--primary-color);
+      .background & {
+        border-top-color: white;
+      }
     }
   }
   .claim {
@@ -411,6 +450,48 @@ const title =
       }
     }
   }
+
+  .ordered-list {
+    counter-reset: ordered-list-counter;
+    .description-wrapper {
+      padding-left: 1em;
+      counter-increment: ordered-list-counter;
+      &::before {
+        content: counter(ordered-list-counter) '. ';
+        margin-left: -1em;
+      }
+    }
+  }
+
+  .description-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    li {
+      display: flex;
+      flex-direction: row;
+      font-size: 1.4em;
+      gap: 2rem;
+
+      .image-wrapper {
+        flex: 0 1 8rem;
+        max-width: 12rem;
+        margin-inline: auto;
+      }
+      .description-wrapper {
+        flex: 1 1 0%;
+        font-weight: 600;
+        padding-left: 1em;
+        &::before {
+          margin-left: -1em;
+        }
+      }
+      @media (min-width: 40rem) {
+        font-size: 1.8em;
+      }
+    }
+  }
   .button-list {
     display: flex;
     flex-wrap: wrap;
@@ -438,12 +519,6 @@ const title =
     }
   }
 
-  ul.horizontal-list {
-    list-style: none;
-  }
-  ol.horizontal-list {
-    margin-left: 1em;
-  }
   .horizontal-list {
     display: flex;
     flex-wrap: wrap;
@@ -452,9 +527,8 @@ const title =
     gap: 4em;
 
     li {
-      flex: 1 0 150px;
+      flex: 1 0 10rem;
       text-align: center;
-      list-style-position: inside;
       max-width: 300px;
 
       &::marker {
@@ -462,10 +536,8 @@ const title =
       }
     }
 
-    div {
-      display: flex;
-      flex-direction: column;
-      min-height: calc(100% - 3em);
+    &.small li {
+      flex: 0 1 10rem;
     }
 
     img {
@@ -475,6 +547,13 @@ const title =
       max-height: 200px;
       margin-inline: auto;
       padding-block-start: 1em;
+    }
+    &.small img {
+      height: 5rem;
+    }
+
+    p {
+      font-weight: 600;
     }
   }
 
@@ -495,6 +574,25 @@ const title =
       background-repeat: no-repeat;
       background-size: auto 100%;
       z-index: -1;
+    }
+  }
+
+  h3 {
+    font-size: 1.5em;
+    color: var(--primary-color);
+
+    .background & {
+      color: white;
+    }
+
+    @media (min-width: 40rem) {
+      font-size: 2em;
+    }
+  }
+
+  #payment {
+    .description-wrapper {
+      font-size: 0.7em;
     }
   }
 </style>
