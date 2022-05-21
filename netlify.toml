@@ -1,6 +1,12 @@
 [build]
-  command = "pnpm build"
+  command = "npx pnpm build"
   publish = "dist"
+
+[build.environment]
+  NPM_FLAGS="--prefix=/dev/null"
+
+[[plugins]]
+  package = "./plugins/pnpm-preinstaller"
 
 [[redirects]]
   from = "/"
@@ -14,9 +20,3 @@
   to = "/en/"
   force = true
   status = 302
-
-[[plugins]]
-  package = "./plugins/pnpm-preinstaller"
-
-[build.environment]
-  NPM_FLAGS="--prefix=/dev/null"
