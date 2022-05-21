@@ -1,15 +1,15 @@
 ---
-import Image from 'astro-imagetools'
-import { SEO } from 'astro-seo'
+  import { Picture } from 'astro-imagetools/components'
+  import { SEO } from 'astro-seo'
 
-import MainLayout from '@layouts/Main.astro'
-import Container from '@components/Container.astro'
-import ButtonLink from '@components/ButtonLink.astro'
+  import MainLayout from '@layouts/Main.astro'
+  import Container from '@components/Container.astro'
+  import ButtonLink from '@components/ButtonLink.astro'
 
-const description =
-  "Gaston the digital menu allows guests to order and pay quickly and easily. It doesn't matter if the guests are in their establishment, on the road or at home. Gaston supports ordering in your business, take-away and delivery."
-const title =
-  'Gaston • Digital Menu • Serve more guests faster with fewer staff.'
+  const description =
+    "Gaston the digital menu allows guests to order and pay quickly and easily. It doesn't matter if the guests are in their establishment, on the road or at home. Gaston supports ordering in your business, take-away and delivery."
+  const title =
+    'Gaston • Digital Menu • Serve more guests faster with fewer staff.'
 ---
 
 <MainLayout>
@@ -22,12 +22,8 @@ const title =
     </h1>
     <p class="claim">Serve more guests faster with fewer staff.</p>
     <div class="animation">
-      <img
-        src="/assets/hero-gaston-vs-menu-en.svg"
-        alt="Ordering with menu tedious, with Gaston app quick and easy"
-        height="150"
-        width="204"
-      />
+      <img src="/assets/hero-gaston-vs-menu-en.svg" alt="Ordering with menu tedious, with Gaston app quick and easy"
+        height="150" width="204" />
     </div>
     <ul class="usps">
       <li>Select, order, pay without staff.</li>
@@ -47,46 +43,28 @@ const title =
       <h2>Some of our customers</h2>
       <ul class="image-list">
         <li>
-          <Image
-            src="/src/images/customers/el-mosquito.png"
-            alt="El-Mosquito"
-            height={60}
-          />
+          <Picture src="/src/images/customers/el-mosquito.png" alt="El-Mosquito" layout="fixed"
+            placeholder={'tracedSVG'} height={120} />
         </li>
         <li>
-          <Image
-            src="/src/images/customers/gspan.jpg"
-            alt="Hotel Gspan"
-            height={60}
-          />
+          <Picture src="/src/images/customers/gspan.jpg" alt="Hotel Gspan" placeholder={'tracedSVG'} layout="fixed"
+            height={120} />
         </li>
         <li>
-          <Image
-            src="/src/images/customers/seehaus-grill.png"
-            alt="Seehaus-Grill"
-            height={60}
-          />
+          <Picture src="/src/images/customers/seehaus-grill.png" alt="Seehaus-Grill" placeholder={'tracedSVG'}
+            layout="fixed" height={120} />
         </li>
         <li>
-          <Image
-            src="/src/images/customers/sugoi-sushi-300.png"
-            alt="Sugoi Sushi"
-            height={60}
-          />
+          <Picture src="/src/images/customers/sugoi-sushi-300.png" alt="Sugoi Sushi" placeholder={'tracedSVG'}
+            layout="fixed" height={120} />
         </li>
         <li>
-          <Image
-            src="/src/images/customers/lamassu.png"
-            alt="Restaurant Lamassu"
-            height={60}
-          />
+          <Picture src="/src/images/customers/lamassu.png" alt="Restaurant Lamassu" placeholder={'tracedSVG'}
+            layout="fixed" height={120} />
         </li>
         <li>
-          <Image
-            src="/src/images/customers/habsburg-bar.png"
-            alt="Habsburg-Bar"
-            height={60}
-          />
+          <Picture src="/src/images/customers/habsburg-bar.png" alt="Habsburg-Bar" placeholder={'tracedSVG'}
+            layout="fixed" height={120} />
         </li>
       </ul>
     </Container>
@@ -96,9 +74,7 @@ const title =
     <Container>
       <div style="text-align:center">
         <h2>Roadmap</h2>
-        <ButtonLink
-          href="https://www.notion.so/gastonsolution/Roadmap-von-Gaston-6644875d1fba4fe58cacfbf15e1ace7e"
-        >
+        <ButtonLink href="https://www.notion.so/gastonsolution/Roadmap-von-Gaston-6644875d1fba4fe58cacfbf15e1ace7e">
           Roadmap
         </ButtonLink>
       </div>
@@ -118,24 +94,29 @@ const title =
     font-size: 4em;
     margin: 0.5em 0;
     line-height: 0.6em;
+
     small {
       font-size: 40%;
       color: var(--text-color);
     }
   }
+
   .claim {
     font-style: italic;
     text-align: center;
     margin-bottom: 2em;
   }
+
   .animation {
     position: relative;
     margin: 0 max(-4em, -4vw) 0.2em;
+
     img {
       height: 100%;
       width: 100%;
     }
   }
+
   .usps {
     font-size: 1em;
     margin-left: auto;
@@ -143,9 +124,11 @@ const title =
     max-width: fit-content;
     list-style: none;
     padding-left: 1em;
+
     li {
       padding-left: 1em;
       padding-bottom: 0.6em;
+
       &::before {
         content: '● ';
         position: absolute;
@@ -155,6 +138,7 @@ const title =
       }
     }
   }
+
   .button-list {
     display: flex;
     flex-wrap: wrap;
@@ -175,6 +159,12 @@ const title =
     li {
       list-style: none;
       margin-inline: auto;
+
+      ::global(img) {
+        height: 60px;
+        width: 100%;
+      }
+
     }
   }
 </style>

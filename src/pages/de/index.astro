@@ -1,15 +1,17 @@
 ---
-import Image from 'astro-imagetools'
-import { SEO } from 'astro-seo'
+  import { Picture } from 'astro-imagetools/components'
+  import { SEO } from 'astro-seo'
 
-import MainLayout from '@layouts/Main.astro'
-import Container from '@components/Container.astro'
-import ButtonLink from '@components/ButtonLink.astro'
+  import MainLayout from '@layouts/Main.astro'
+  import Container from '@components/Container.astro'
+  import ButtonLink from '@components/ButtonLink.astro'
 
-const description =
-  'Gaston die digitale Speisekarte erlaubt es den Gästen schnell und einfach zu bestell und bezahlen. Dabei spielt es keine Rolle, ob die Gäste in ihrem Betrieb, unterwegs oder Zuhause sind. Gaston unterstützt die Bestellung in Ihrem Betrieb, Take-Away und Delivery.'
-const title =
-  'Gaston • Digitale Speisekarte • Mehr Gäste mit weniger Personal schneller bedienen.'
+  const formatOptions = { tracedSVG: { options: { background: "#fff", color: "#aaa" }, }, }
+
+  const description =
+    'Gaston die digitale Speisekarte erlaubt es den Gästen schnell und einfach zu bestell und bezahlen. Dabei spielt es keine Rolle, ob die Gäste in ihrem Betrieb, unterwegs oder Zuhause sind. Gaston unterstützt die Bestellung in Ihrem Betrieb, Take-Away und Delivery.'
+  const title =
+    'Gaston • Digitale Speisekarte • Mehr Gäste mit weniger Personal schneller bedienen.'
 ---
 
 <head>
@@ -25,12 +27,8 @@ const title =
     </h1>
     <p class="claim">Mehr Gäste mit weniger Personal schneller bedienen.</p>
     <div class="animation">
-      <img
-        src="/assets/hero-gaston-vs-menu.svg"
-        alt="Bestellen mit Speisekarte mühsam, mit Gaston App schnell und einfach"
-        height="150"
-        width="204"
-      />
+      <img src="/assets/hero-gaston-vs-menu.svg"
+        alt="Bestellen mit Speisekarte mühsam, mit Gaston App schnell und einfach" height="150" width="204" />
     </div>
     <ul class="usps">
       <li>Aussuchen, Bestellen, Bezahlen ohne Personal.</li>
@@ -50,46 +48,28 @@ const title =
       <h2>Auswahl unserer Kunden</h2>
       <ul class="image-list">
         <li>
-          <Image
-            src="/src/images/customers/el-mosquito.png"
-            alt="El-Mosquito"
-            height={60}
-          />
+          <Picture src="/src/images/customers/el-mosquito.png" alt="El-Mosquito" layout="fixed"
+            placeholder={'tracedSVG'} height={120} />
         </li>
         <li>
-          <Image
-            src="/src/images/customers/gspan.jpg"
-            alt="Hotel Gspan"
-            height={60}
-          />
+          <Picture src="/src/images/customers/gspan.jpg" alt="Hotel Gspan" placeholder={'tracedSVG'} layout="fixed"
+            height={120} />
         </li>
         <li>
-          <Image
-            src="/src/images/customers/seehaus-grill.png"
-            alt="Seehaus-Grill"
-            height={60}
-          />
+          <Picture src="/src/images/customers/seehaus-grill.png" alt="Seehaus-Grill" placeholder={'tracedSVG'}
+            layout="fixed" height={120} />
         </li>
         <li>
-          <Image
-            src="/src/images/customers/sugoi-sushi-300.png"
-            alt="Sugoi Sushi"
-            height={60}
-          />
+          <Picture src="/src/images/customers/sugoi-sushi-300.png" alt="Sugoi Sushi" placeholder={'tracedSVG'}
+            layout="fixed" height={120} />
         </li>
         <li>
-          <Image
-            src="/src/images/customers/lamassu.png"
-            alt="Restaurant Lamassu"
-            height={60}
-          />
+          <Picture src="/src/images/customers/lamassu.png" alt="Restaurant Lamassu" placeholder={'tracedSVG'}
+            layout="fixed" height={120} />
         </li>
         <li>
-          <Image
-            src="/src/images/customers/habsburg-bar.png"
-            alt="Habsburg-Bar"
-            height={60}
-          />
+          <Picture src="/src/images/customers/habsburg-bar.png" alt="Habsburg-Bar" placeholder={'tracedSVG'}
+            layout="fixed" height={120} />
         </li>
       </ul>
     </Container>
@@ -103,45 +83,25 @@ const title =
             Mit Gaston bestellen und bezahlen Gäste schnell und einfach. Kein
             Anmeldung, keine App herunterladen.
           </p>
-          <ButtonLink href="contact/"
-            >Kann Gaston Ihren Anwendungsfall abdecken?</ButtonLink
-          >
+          <ButtonLink href="contact/">Kann Gaston Ihren Anwendungsfall abdecken?</ButtonLink>
         </div>
         <ol class="description-list ordered-list" style="flex: 1">
           <li>
             <p class="description-wrapper">QR-Code scannen</p>
             <div class="image-wrapper">
-              <img
-                src="/assets/index/scan.svg"
-                alt="QR-Code scannen"
-                loading="lazy"
-                height="150"
-                width="130"
-              />
+              <img src="/assets/index/scan.svg" alt="QR-Code scannen" loading="lazy" height="150" width="130" />
             </div>
           </li>
           <li>
             <p class="description-wrapper">Bestellen</p>
             <div class="image-wrapper">
-              <img
-                src="/assets/index/order.svg"
-                alt="Bestellen"
-                loading="lazy"
-                height="150"
-                width="133"
-              />
+              <img src="/assets/index/order.svg" alt="Bestellen" loading="lazy" height="150" width="133" />
             </div>
           </li>
           <li>
             <p class="description-wrapper">Bezahlen</p>
             <div class="image-wrapper">
-              <img
-                src="/assets/index/pay.svg"
-                alt="Bezahlen"
-                loading="lazy"
-                height="150"
-                width="110"
-              />
+              <img src="/assets/index/pay.svg" alt="Bezahlen" loading="lazy" height="150" width="110" />
             </div>
           </li>
         </ol>
@@ -155,44 +115,24 @@ const title =
         Gaston kann in ganz unterschiedlichen Situation eingesetzt werden. Gäste
         können direkt in ihrem Restaurant vom Tisch aus bestellen, von Zuhause
         mit Delivery oder unterwegs mit Takeaway. Sind Sie nicht sicher, ob
-        Gaston ihr Szenario abdeckt? Nehmen Sie mit uns <a href="contact/"
-          >Kontakt</a
-        > auf.
+        Gaston ihr Szenario abdeckt? Nehmen Sie mit uns <a href="contact/">Kontakt</a> auf.
       </p>
       <ul class="horizontal-list">
         <li>
           <div>
-            <img
-              src="/assets/index/inhouse.svg"
-              alt="Im Betrieb"
-              loading="lazy"
-              height="150"
-              width="154"
-            />
+            <img src="/assets/index/inhouse.svg" alt="Im Betrieb" loading="lazy" height="150" width="154" />
             <p>Im Betrieb (Inhouse)</p>
           </div>
         </li>
         <li>
           <div>
-            <img
-              src="/assets/index/take-away.svg"
-              alt="Take Away"
-              loading="lazy"
-              height="150"
-              width="182"
-            />
+            <img src="/assets/index/take-away.svg" alt="Take Away" loading="lazy" height="150" width="182" />
             <p>Take Away</p>
           </div>
         </li>
         <li>
           <div>
-            <img
-              src="/assets/index/delivery.svg"
-              alt="Delivery"
-              loading="lazy"
-              height="150"
-              width="134"
-            />
+            <img src="/assets/index/delivery.svg" alt="Delivery" loading="lazy" height="150" width="134" />
             <p>Delivery</p>
           </div>
         </li>
@@ -223,11 +163,7 @@ const title =
             <p>Twint</p>
           </li>
           <li>
-            <img
-              src="/assets/index/card.svg"
-              alt="Kredit- & Debitkarten"
-              loading="lazy"
-            />
+            <img src="/assets/index/card.svg" alt="Kredit- & Debitkarten" loading="lazy" />
             <p>Kredit- und Debitkarten</p>
           </li>
         </ul>
@@ -246,19 +182,11 @@ const title =
         </div>
         <ul class="horizontal-list small" style="flex: 1; margin-top: 4em;">
           <li>
-            <img
-              src="/assets/index/datatrans.svg"
-              alt="Datatrans"
-              loading="lazy"
-            />
+            <img src="/assets/index/datatrans.svg" alt="Datatrans" loading="lazy" />
             <p>Datatrans</p>
           </li>
           <li>
-            <img
-              src="/assets/index/worldline.svg"
-              alt="Worldline"
-              loading="lazy"
-            />
+            <img src="/assets/index/worldline.svg" alt="Worldline" loading="lazy" />
             <p>Worldline (ehemals Saferpay)</p>
           </li>
         </ul>
@@ -282,11 +210,7 @@ const title =
           <li>
             <p class="description-wrapper">Gast bestellt</p>
             <div class="image-wrapper">
-              <img
-                src="/assets/index/scan.svg"
-                alt="Gast bestellt"
-                loading="lazy"
-              />
+              <img src="/assets/index/scan.svg" alt="Gast bestellt" loading="lazy" />
             </div>
           </li>
           <li>
@@ -300,11 +224,7 @@ const title =
               Kasse schickt Bestellung in die Küche
             </p>
             <div class="image-wrapper">
-              <img
-                src="/assets/index/kitchen.svg"
-                alt="Bondrucker in der Küche"
-                loading="lazy"
-              />
+              <img src="/assets/index/kitchen.svg" alt="Bondrucker in der Küche" loading="lazy" />
             </div>
           </li>
         </ol>
@@ -325,11 +245,7 @@ const title =
           <li>
             <p class="description-wrapper">Gast bestellt</p>
             <div class="image-wrapper">
-              <img
-                src="/assets/index/scan.svg"
-                alt="Gast bestellt"
-                loading="lazy"
-              />
+              <img src="/assets/index/scan.svg" alt="Gast bestellt" loading="lazy" />
             </div>
           </li>
           <li>
@@ -337,11 +253,7 @@ const title =
               Gaston schickt die Bestellung direkt in die Küche
             </p>
             <div class="image-wrapper">
-              <img
-                src="/assets/index/kitchen.svg"
-                alt="Bondrucker in der Küche"
-                loading="lazy"
-              />
+              <img src="/assets/index/kitchen.svg" alt="Bondrucker in der Küche" loading="lazy" />
             </div>
           </li>
         </ol>
@@ -359,16 +271,13 @@ const title =
       </p>
       <ul class="horizontal-list">
         <li>
-          <Image src="/src/images/el-mosquito.png" alt="El-Mosquito" width={600}
-          />
+          <Picture src="/src/images/el-mosquito.png" alt="El-Mosquito" width={600} />
         </li>
         <li>
-          <Image src="/src/images/habsburg.png" alt="Habsburg-Bar" width={600}
-          />
+          <Picture src="/src/images/habsburg.png" alt="Habsburg-Bar" width={600} />
         </li>
         <li>
-          <Image src="/src/images/sugoisushi.png" alt="Sugoi Sushi" width={600}
-          />
+          <Picture src="/src/images/sugoisushi.png" alt="Sugoi Sushi" width={600} />
         </li>
       </ul>
     </Container>
@@ -376,14 +285,10 @@ const title =
   <section id="partners">
     <Container>
       <h2>Unsere Partner</h2>
-      <ul class="image-list">
+      <ul class="image-list high">
         <li>
           <a href="https://www.flm.ch/">
-            <Image
-              src="/src/images/partners/flm.png"
-              alt="FLM Kassensysteme"
-              height={180}
-            />
+            <Picture src="/src/images/partners/flm.png" alt="FLM Kassensysteme" height={360} layout={'fixed'} />
             <p>FLM Kassensysteme</p>
           </a>
         </li>
@@ -399,9 +304,7 @@ const title =
         welche Features nächstens verfügbar sind. Haben Sie einen speziellen
         Wunsch? Wir nehmen dies gerne in die Roadmap auf.
       </p>
-      <ButtonLink
-        href="https://www.notion.so/gastonsolution/Roadmap-von-Gaston-6644875d1fba4fe58cacfbf15e1ace7e"
-      >
+      <ButtonLink href="https://www.notion.so/gastonsolution/Roadmap-von-Gaston-6644875d1fba4fe58cacfbf15e1ace7e">
         Roadmap
       </ButtonLink>
     </Container>
@@ -420,42 +323,51 @@ const title =
     font-size: 4em;
     margin: 0.5em 0;
     line-height: 0.6em;
+
     small {
       font-size: 40%;
       color: var(--text-color);
     }
   }
+
   ul,
   ol {
     list-style: none;
     margin: 0;
     padding: 0;
   }
+
   hr {
     margin-block: 3em;
     border: none;
+
     @media (min-width: 40rem) {
       border-top-width: 1px;
       border-top-style: solid;
       border-top-color: var(--primary-color);
+
       .background & {
         border-top-color: white;
       }
     }
   }
+
   .claim {
     font-style: italic;
     text-align: center;
     margin-bottom: 2em;
   }
+
   .animation {
     margin: 0 max(-4em, -4vw) 0.2em;
+
     img {
       height: 100%;
       width: 100%;
       max-height: calc(90vh - 4rem);
     }
   }
+
   .usps {
     font-size: 1em;
     margin-left: auto;
@@ -463,9 +375,11 @@ const title =
     max-width: fit-content;
     list-style: none;
     padding-left: 1em;
+
     li {
       padding-left: 1em;
       padding-bottom: 0.6em;
+
       &::before {
         content: '● ';
         position: absolute;
@@ -478,9 +392,11 @@ const title =
 
   .ordered-list {
     counter-reset: ordered-list-counter;
+
     .description-wrapper {
       padding-left: 1em;
       counter-increment: ordered-list-counter;
+
       &::before {
         content: counter(ordered-list-counter) '. ';
         margin-left: -1em;
@@ -504,19 +420,23 @@ const title =
         max-width: 12rem;
         margin-inline: auto;
       }
+
       .description-wrapper {
         flex: 1 1 0%;
         font-weight: 600;
         padding-left: 1em;
+
         &::before {
           margin-left: -1em;
         }
       }
+
       @media (min-width: 40rem) {
         font-size: 1.8em;
       }
     }
   }
+
   .button-list {
     display: flex;
     flex-wrap: wrap;
@@ -538,8 +458,20 @@ const title =
       list-style: none;
       margin-inline: auto;
 
+      ::global(img) {
+        height: 60px;
+        width: 100%;
+      }
+
       p {
         margin-top: 0.2em;
+      }
+    }
+
+    &.high {
+      li ::global(img) {
+        height: 180px;
+        width: 100%;
       }
     }
   }
@@ -573,6 +505,7 @@ const title =
       margin-inline: auto;
       padding-block-start: 1em;
     }
+
     &.small img {
       height: 5rem;
     }
@@ -586,14 +519,13 @@ const title =
     position: relative;
     color: white;
     z-index: 5;
+
     &::before {
       content: ' ';
       position: absolute;
       inset: -1em 0;
-      background-image: linear-gradient(
-          rgba(255, 255, 255, 0),
-          rgba(255, 255, 255, 0)
-        ),
+      background-image: linear-gradient(rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 0)),
         url(/assets/curve.svg);
       background-position: center;
       background-repeat: no-repeat;
