@@ -9,7 +9,6 @@
 // https://astro.build/config
 import { defineConfig } from 'astro/config'
 import solid from '@astrojs/solid-js'
-import turbolinks from '@astrojs/turbolinks'
 import partytown from '@astrojs/partytown'
 import sitemap from '@astrojs/sitemap'
 import { astroImageTools } from 'astro-imagetools'
@@ -19,11 +18,6 @@ export default defineConfig(
   {
     // Enable the Solid renderer to support Solid JSX components.
     site: 'https://gastonsolution.com',
-    integrations: [
-      astroImageTools,
-      solid(),
-      turbolinks(),
-      /* partytown(),*/ sitemap(),
-    ],
+    integrations: [astroImageTools, solid(), /* partytown(),*/ sitemap()],
   }
 )

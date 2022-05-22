@@ -1,13 +1,14 @@
 ---
-import { mkIsCurrentPage } from '../utils.ts'
+  import { mkIsCurrentPage } from '../utils.ts'
 
-const { pathname } = Astro.canonicalURL
-const isCurrentPage = mkIsCurrentPage(pathname)
-const isDe = isCurrentPage('/de/')
+  const { pathname } = Astro.canonicalURL
+  const isCurrentPage = mkIsCurrentPage(pathname)
+  const isDe = isCurrentPage('/de/')
 ---
 
 <script>
-  window.addEventListener('turbolinks:load', function (event) {
+  window.addEventListener('load', function (event) {
+    console.log('load event');
     let observer = new IntersectionObserver((entries) => {
       if (entries[0].boundingClientRect.y < -1) {
         document.body.classList.add('scrolled-down')
@@ -19,29 +20,20 @@ const isDe = isCurrentPage('/de/')
   })
 </script>
 
-<header>
+<header id="root-header">
   <p>
     <a href="/" aria-current={isCurrentPage('/de/', { exact: true })}>
       Gaston
     </a>
   </p>
   <nav>
-    <a
-      href={isDe ? '/de/offers/' : '/en/offers/'}
-      aria-current={isCurrentPage('/offers')}>{isDe ? 'Angebot' : 'Offer'}</a
-    >
-    <a
-      set:html={isDe ? 'Über&nbsp;uns' : 'About&nbsp;us'}
-      href={isDe ? '/de/about/' : '/en/about/'}
+    <a href={isDe ? '/de/offers/' : '/en/offers/' } aria-current={isCurrentPage('/offers')}>{isDe ? 'Angebot' :
+      'Offer'}</a>
+    <a set:html={isDe ? 'Über&nbsp;uns' : 'About&nbsp;us' } href={isDe ? '/de/about/' : '/en/about/' }
       aria-current={isCurrentPage('/about')}></a>
-    <a
-      href={isDe ? '/de/blog/' : '/en/blog/'}
-      aria-current={isCurrentPage('/blog')}>Blog</a
-    >
-    <a
-      href={isDe ? '/de/contact/' : '/en/contact/'}
-      aria-current={isCurrentPage('/contact')}>{isDe ? 'Kontakt' : 'Contact'}</a
-    >
+    <a href={isDe ? '/de/blog/' : '/en/blog/' } aria-current={isCurrentPage('/blog')}>Blog</a>
+    <a href={isDe ? '/de/contact/' : '/en/contact/' } aria-current={isCurrentPage('/contact')}>{isDe ? 'Kontakt' :
+      'Contact'}</a>
   </nav>
 </header>
 <div id="top-of-site-pixel-anchor"></div>
@@ -73,6 +65,7 @@ const isDe = isCurrentPage('/de/')
     }
 
     font-size: 1rem;
+
     @media (min-width: 40rem) {
       font-size: 1.2rem;
       padding: 0 0.8rem;
@@ -81,6 +74,7 @@ const isDe = isCurrentPage('/de/')
     nav {
       display: flex;
     }
+
     a {
       display: flex;
       align-items: center;
@@ -89,6 +83,7 @@ const isDe = isCurrentPage('/de/')
       padding-right: 0.5em;
       color: inherit;
       text-decoration: none;
+
       @media (min-width: 40rem) {
         padding-left: 1.2em;
         padding-right: 1.2em;
@@ -98,6 +93,7 @@ const isDe = isCurrentPage('/de/')
         color: var(--primary-color);
       }
     }
+
     .active {
       color: var(--primary-color);
     }
