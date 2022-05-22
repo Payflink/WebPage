@@ -1,10 +1,14 @@
 ---
-import Main from '@layouts/Main.astro'
-import Container from '@components/Container.astro'
-import ButtonLink from '@components/ButtonLink.astro'
+  import MainLayout from '@layouts/Main.astro'
+  import Container from '@components/Container.astro'
+  import ButtonLink from '@components/ButtonLink.astro'
+  import { SEO } from 'astro-seo'
+
 ---
 
-<Main>
+<MainLayout>
+  <SEO title="Gaston" description="Sprache wählen / Choose language" />
+
   <Container>
     <h1>Gaston</h1>
   </Container>
@@ -12,7 +16,7 @@ import ButtonLink from '@components/ButtonLink.astro'
     <ButtonLink href="/de/">Deutsch</ButtonLink>
     <ButtonLink href="/en/">English</ButtonLink>
   </div>
-</Main>
+</MainLayout>
 
 <style lang="scss">
   .button-list {

@@ -1,25 +1,36 @@
 ---
-import Main from '@layouts/Main.astro'
-import Container from '@components/Container.astro'
+  import { SEO } from 'astro-seo'
 
-const blogs = await Astro.glob('./blog/**/*.md')
-const data = blogs
-  .sort(
-    (a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date)
-  )
-  .filter((blog) => blog.frontmatter.lang === 'en')
+  import Main from '@layouts/Main.astro'
+  import Container from '@components/Container.astro'
+
+  const blogs = await Astro.glob('./blog/**/*.md')
+  const data = blogs
+    .sort(
+      (a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date)
+    )
+    .filter((blog) => blog.frontmatter.lang === 'en')
+
+  const description =
+    'News from Gaston'
+  const title =
+    'Blog • Gaston • Digitale Speisekarte • Mehr Gäste mit weniger Personal schneller bedienen.'
 ---
+
+<head>
+  <SEO {title} {description} />
+</head>
 
 <Main title="Blog • Gaston">
   <Container size="small">
     <h1>Blog</h1>
     {data.map((post) => (
-      <article>
-        <a href={post.url}>
-          <h2>{post.frontmatter.title}</h2>
-        </a>
-        <p>{post.frontmatter.description}</p>
-      </article>
+    <article>
+      <a href={post.url}>
+        <h2>{post.frontmatter.title}</h2>
+      </a>
+      <p>{post.frontmatter.description}</p>
+    </article>
     ))}
   </Container>
 </Main>
