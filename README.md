@@ -1,11 +1,23 @@
-# Astro + Solid.js Example
+# Gaston Website
 
+## Stack
+
+### Web framework
+
+Uses [Astro](https://astro.build/) to static build the site.
+
+```sh
+npm start # start dev env
+npm run build # build site
+npm run preview # serve the built site
+npm run netlify # dev env with netlify (rerouting for language)
 ```
-npm init astro -- --template framework-solid
+
+### Dependency Managment
+
+Use [pnpm](https://pnpm.io/) to manage dependencies.
+```sh
+pnpm add -D {my-new-dependency} # add
+pnpm rm {dependency-i-want-to-remove} # remove
+pnpm up --latest # update all deps to the latest version 
 ```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/framework-solid)
-
-This example showcases Astro working with [Solid](https://www.solidjs.com/).
-
-Write your Solid components as `.jsx` or `.tsx` files in your project.
