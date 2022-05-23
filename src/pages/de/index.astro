@@ -1,12 +1,11 @@
 ---
-  import { Picture } from 'astro-imagetools/components'
   import { SEO } from 'astro-seo'
 
   import MainLayout from '@layouts/Main.astro'
   import Container from '@components/Container.astro'
   import ButtonLink from '@components/ButtonLink.astro'
 
-  const formatOptions = { tracedSVG: { options: { background: "#fff", color: "#aaa" }, }, }
+  import FixedPicture from '@components/FixedPicture.astro'
 
   const description =
     'Gaston die digitale Speisekarte erlaubt es den Gästen schnell und einfach zu bestell und bezahlen. Dabei spielt es keine Rolle, ob die Gäste in ihrem Betrieb, unterwegs oder Zuhause sind. Gaston unterstützt die Bestellung in Ihrem Betrieb, Take-Away und Delivery.'
@@ -48,28 +47,27 @@
       <h2>Auswahl unserer Kunden</h2>
       <ul class="image-list">
         <li>
-          <Picture src="/src/images/customers/el-mosquito.png" alt="El-Mosquito" layout="fixed"
-            placeholder={'tracedSVG'} height={120} />
+          <FixedPicture src="/src/images/customers/el-mosquito.png" alt="El-Mosquito" placeholder={'tracedSVG'}
+            height={60} />
         </li>
         <li>
-          <Picture src="/src/images/customers/gspan.jpg" alt="Hotel Gspan" placeholder={'tracedSVG'} layout="fixed"
-            height={120} />
+          <FixedPicture src="/src/images/customers/gspan.jpg" alt="Hotel Gspan" placeholder={'tracedSVG'} height={60} />
         </li>
         <li>
-          <Picture src="/src/images/customers/seehaus-grill.png" alt="Seehaus-Grill" placeholder={'tracedSVG'}
-            layout="fixed" height={120} />
+          <FixedPicture src="/src/images/customers/seehaus-grill.png" alt="Seehaus-Grill" placeholder={'tracedSVG'}
+            height={60} />
         </li>
         <li>
-          <Picture src="/src/images/customers/sugoi-sushi-300.png" alt="Sugoi Sushi" placeholder={'tracedSVG'}
-            layout="fixed" height={120} />
+          <FixedPicture src="/src/images/customers/sugoi-sushi-300.png" alt="Sugoi Sushi" placeholder={'tracedSVG'}
+            height={60} />
         </li>
         <li>
-          <Picture src="/src/images/customers/lamassu.png" alt="Restaurant Lamassu" placeholder={'tracedSVG'}
-            layout="fixed" height={120} />
+          <FixedPicture src="/src/images/customers/lamassu.png" alt="Restaurant Lamassu" placeholder={'tracedSVG'}
+            height={60} />
         </li>
         <li>
-          <Picture src="/src/images/customers/habsburg-bar.png" alt="Habsburg-Bar" placeholder={'tracedSVG'}
-            layout="fixed" height={120} />
+          <FixedPicture src="/src/images/customers/habsburg-bar.png" alt="Habsburg-Bar" placeholder={'tracedSVG'}
+            height={60} />
         </li>
       </ul>
     </Container>
@@ -271,13 +269,13 @@
       </p>
       <ul class="horizontal-list">
         <li>
-          <Picture src="/src/images/el-mosquito.png" alt="El-Mosquito" width={600} />
+          <FixedPicture src="/src/images/el-mosquito.png" alt="El-Mosquito" width={300} />
         </li>
         <li>
-          <Picture src="/src/images/habsburg.png" alt="Habsburg-Bar" width={600} />
+          <FixedPicture src="/src/images/habsburg.png" alt="Habsburg-Bar" width={300} />
         </li>
         <li>
-          <Picture src="/src/images/sugoisushi.png" alt="Sugoi Sushi" width={600} />
+          <FixedPicture src="/src/images/sugoisushi.png" alt="Sugoi Sushi" width={300} />
         </li>
       </ul>
     </Container>
@@ -288,7 +286,7 @@
       <ul class="image-list high">
         <li>
           <a href="https://www.flm.ch/">
-            <Picture src="/src/images/partners/flm.png" alt="FLM Kassensysteme" height={360} layout={'fixed'} />
+            <FixedPicture src="/src/images/partners/flm.png" alt="FLM Kassensysteme" height={180} layout={'fixed'} />
             <p>FLM Kassensysteme</p>
           </a>
         </li>
@@ -459,7 +457,6 @@
       margin-inline: auto;
 
       ::global(img) {
-        height: 60px;
         width: 100%;
       }
 
