@@ -1,0 +1,138 @@
+---
+export interface Props {
+  title?: string;
+  items: {
+    title: string;
+    href: string;
+    description?: string;
+  }[];
+}
+const { title, items } = Astro.props as Props;
+const hasDescriptions = items.some(({ description }) => !!description);
+---
+
+<details class='flyout'>
+  <summary>
+    {title}
+    <svg viewBox="0 0 24 24">
+      <path d="M 4,8 L 12,16 L 20,8" />
+    </svg>
+  </summary>
+
+  <div>
+    <nav class={hasDescriptions ? 'descriptions' : '' }>
+      {items.map(({ title, href, description }) => (
+      <a href={href} alt={title} class="subtle">
+        <h4>{title}</h4>
+        {description && (
+        <p>{description}</p>
+        )}
+      </a>
+      ))}
+    </nav>
+  </div>
+</details>
+
+<script>
+  function flyout(elem: HTMLDetailsElement) {
+    elem.onmouseenter = () => {
+      elem.setAttribute('open', 'open')
+    }
+    elem.onmouseleave = () => {
+      elem.removeAttribute('open')
+    }
+  }
+
+  Array.from(document.querySelectorAll < HTMLDetailsElement > ('details.flyout')).map(
+    flyout
+  )
+</script>
+
+<style>
+  details {
+    position: relative;
+  }
+
+  summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: default;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  summary :global(svg) {
+    opacity: 0.4;
+    margin-left: 0.2rem;
+    height: 1em;
+    stroke: currentColor;
+    stroke-width: 3px;
+    fill: none;
+  }
+
+  div {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-block-start: 0.2em;
+    opacity: 0;
+    transition: opacity 150ms ease;
+    will-change: opacity;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: min(25rem, 50vw);
+    color: var(--background-color);
+    background: var(--primary-color);
+    text-align: center;
+    white-space: nowrap;
+    box-shadow: 0px 5px 40px -1px rgb(0 0 0 / 36%);
+    border-radius: 0.5rem;
+  }
+
+  details[open] div {
+    opacity: 1;
+  }
+
+  nav.descriptions {
+    width: 100vw;
+    text-align: start;
+    white-space: normal;
+  }
+
+  a {
+    color: var(--background-color);
+    text-decoration: none;
+  }
+
+  a h4 {
+    margin-block: 0 0.5em;
+  }
+
+  a p {
+    font-size: 0.8em;
+    margin-block: 0;
+    opacity: 0.75;
+  }
+
+  details[open] summary,
+  summary:hover,
+  a.subtle:hover {
+    opacity: 0.8;
+  }
+
+  @media (max-width: 40rem) {
+    nav {
+      max-width: min(25rem, 60vw);
+    }
+  }
+</style>

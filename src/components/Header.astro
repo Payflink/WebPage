@@ -1,5 +1,7 @@
 ---
+import { globalNavigation } from 'src/config';
 import { mkIsCurrentPage } from '../utils.ts'
+import FlyoutMenu from './FlyoutMenu.astro';
 
 const { pathname } = Astro.canonicalURL
 const isCurrentPage = mkIsCurrentPage(pathname)
@@ -25,68 +27,49 @@ const isDe = isCurrentPage('/de/')
     Gaston
   </a>
   <nav>
-    <a href='/de/funktion/' aria-current={isCurrentPage('/funktion')}>Produkt</a>
-    <a href={isDe ? '/de/offers/' : '/en/offers/' } aria-current={isCurrentPage('/offers')}>{isDe ? 'Angebot' :
-      'Offer'}</a>
-    <a set:html={isDe ? 'Über&nbsp;uns' : 'About&nbsp;us' } href={isDe ? '/de/about/' : '/en/about/' }
-      aria-current={isCurrentPage('/about')}></a>
-    <a href={isDe ? '/de/blog/' : '/en/blog/' } aria-current={isCurrentPage('/blog')}>Blog</a>
-    <a href={isDe ? '/de/contact/' : '/en/contact/' } aria-current={isCurrentPage('/contact')}>{isDe ? 'Kontakt' :
-      'Contact'}</a>
+    {globalNavigation.map((item, i) => 'items' in item ?
+    <FlyoutMenu {...item} /> : <a href={item.href}>{item.title}</a>)}
   </nav>
 </header>
 <div id="top-of-site-pixel-anchor"></div>
 
 <style lang="scss">
   header {
-    position: relative;
-    position: sticky;
     grid-area: Header;
+    position: sticky;
     display: flex;
     justify-content: space-between;
-    top: 0;
-    z-index: 99;
-    border-bottom: 1px solid transparent;
-
+    font-size: 1rem;
     font-weight: bold;
+    top: 0;
     height: 3.6em;
-
-    overflow-x: auto;
-
+    padding-inline: 1rem;
     color: var(--text-color);
-
-    transition: border 200ms;
-
     background-color: white;
+    border-bottom: 1px solid transparent;
+    transition: border 200ms;
+    z-index: 99;
 
     :global(.scrolled-down) & {
       border-bottom: 1px solid var(--primary-color);
     }
 
-    font-size: 1rem;
-
     @media (min-width: 40rem) {
       font-size: 1.2rem;
-      padding: 0 0.8rem;
+      padding-inline: 2rem;
     }
 
     nav {
       display: flex;
+      gap: 2em;
     }
 
     a {
       display: flex;
       align-items: center;
       height: 100%;
-      padding-left: 0.5em;
-      padding-right: 0.5em;
       color: inherit;
       text-decoration: none;
-
-      @media (min-width: 40rem) {
-        padding-left: 1.2em;
-        padding-right: 1.2em;
-      }
 
       &[aria-current] {
         color: var(--primary-color);
