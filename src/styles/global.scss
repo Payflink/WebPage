@@ -65,9 +65,23 @@ small {
   font-size: 0.7em;
 }
 
+dialog {
+  margin: 1em;
+  block-size: calc(100% - 2em);
+  inline-size: calc(100% - 2em);
+  border: 2px solid #555;
+  background-color: #333;
+  border-radius: 0.9em;
+}
+
 .columns {
   @media (min-width: 40rem) {
     display: flex;
+    align-items: baseline;
     gap: 5vw;
   }
+}
+
+.right {
+  text-align: right;
 }

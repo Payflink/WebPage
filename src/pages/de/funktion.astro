@@ -1,0 +1,149 @@
+---
+import { SEO } from 'astro-seo'
+
+import Main from '@layouts/Main.astro'
+import Container from '@components/Container.astro'
+import ButtonLink from '@components/ButtonLink.astro'
+
+import FixedPicture from '@components/FixedPicture.astro'
+
+const description =
+  'Gaston die digitale Speisekarte erlaubt es den Gästen schnell und einfach zu bestell und bezahlen. Dabei spielt es keine Rolle, ob die Gäste in ihrem Betrieb, unterwegs oder Zuhause sind. Gaston unterstützt die Bestellung in Ihrem Betrieb, Take-Away und Delivery.'
+const title =
+  'Gaston • Bestell- & Zahlungslösung für Gastro-Betriebe • Mehr Gäste mit weniger Personal schneller bedienen.'
+---
+
+<head>
+  <SEO {title} {description} />
+</head>
+
+<Main>
+  <Container>
+    <h1>So funktioniert Gaston</h1>
+
+  </Container>
+  <section id="so-bezahlen-gäste">
+    <Container>
+      <h2>So bezahlen Gäste mit Gaston</h2>
+      <p>
+        Falls Sie Ihren Gästen die Möglichkeit geben wollen direkt in der App zu
+        bezahlen, so unterstützen wir mehrere Zahlungsmittel und
+        Zahlungsprovider (PSP). Wenn Sie nicht wollen, müssen Ihre Gäste nicht
+        in der App bezahlen.
+      </p>
+      <div class="columns">
+        <div style="flex: 1">
+          <h3>Zahlungsmittel</h3>
+          <p>
+            Gaston unterstützt die gängigsten Zahlungsmittel in der Schweiz.
+            Welche Zahlungsmittel verfügbar sind, ist von Ihrem Zahlungsprovider
+            und den entsprechenden Verträgen abhängig.
+          </p>
+        </div>
+        <ul class="horizontal-list small" style="flex: 1; margin-top: 4em;">
+          <li>
+            <img src="/assets/index/twint.svg" alt="Twint" loading="lazy" />
+            <p>Twint</p>
+          </li>
+          <li>
+            <img src="/assets/index/card.svg" alt="Kredit- & Debitkarten" loading="lazy" />
+            <p>Kredit- und Debitkarten</p>
+          </li>
+        </ul>
+      </div>
+
+      <hr />
+
+      <div class="columns">
+        <div style="flex: 1">
+          <h3>Zahlungsprovider</h3>
+          <p>
+            Zur Zeit unterstützt Gaston die zwei grössten Zahlungsprovider der
+            Schweiz. Falls Sie einen anderen Zahlungsprovider wünschen, schauen
+            wir dies gerne an.
+          </p>
+        </div>
+        <ul class="horizontal-list small" style="flex: 1; margin-top: 4em;">
+          <li>
+            <img src="/assets/index/datatrans.svg" alt="Datatrans" loading="lazy" />
+            <p>Datatrans</p>
+          </li>
+          <li>
+            <img src="/assets/index/worldline.svg" alt="Worldline" loading="lazy" />
+            <p>Worldline (ehemals Saferpay)</p>
+          </li>
+        </ul>
+      </div>
+    </Container>
+  </section>
+
+  <section id="so-funktioniert-gaston">
+    <Container>
+      <h2>So funktioniert Gaston für Betriebe</h2>
+      <p>Gaston funktioniert mit oder ohne Kasse.</p>
+      <div class="columns">
+        <div style="flex: 1">
+          <h3>Mit Kasse</h3>
+          <p>
+            Gaston kann die Bestellungen an Ihre Kasse übermitteln. Nehmen Sie
+            mit uns <a href="contact">Kontakt</a> auf, um ihre Kassenanbindung zu
+            besprechen.
+          </p>
+        </div>
+        <ol class="description-list ordered-list" style="flex: 2">
+          <li>
+            <p class="description-wrapper">Gast bestellt</p>
+            <div class="image-wrapper">
+              <img src="/assets/index/scan.svg" alt="Gast bestellt" loading="lazy" />
+            </div>
+          </li>
+          <li>
+            <p class="description-wrapper">Kasse registriert Bestellung</p>
+            <div class="image-wrapper">
+              <img src="/assets/index/pos.svg" alt="Kasse" loading="lazy" />
+            </div>
+          </li>
+          <li>
+            <p class="description-wrapper">
+              Kasse schickt Bestellung in die Küche
+            </p>
+            <div class="image-wrapper">
+              <img src="/assets/index/kitchen.svg" alt="Bondrucker in der Küche" loading="lazy" />
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <hr />
+
+      <div class="columns">
+        <div style="flex: 1">
+          <h3>Ohne Kasse</h3>
+          <p>
+            Gaston funktioniert hervorragend auch ohne Kasse. Alle Ihre
+            Bestellungen sind bei uns im Dashboard ersichtlich und können an
+            einen Bondrucker in der Küche oder Bar ausgedruckt werden.
+          </p>
+        </div>
+        <ol class="description-list ordered-list" style="flex: 2">
+          <li>
+            <p class="description-wrapper">Gast bestellt</p>
+            <div class="image-wrapper">
+              <img src="/assets/index/scan.svg" alt="Gast bestellt" loading="lazy" />
+            </div>
+          </li>
+          <li>
+            <p class="description-wrapper">
+              Gaston schickt die Bestellung direkt in die Küche
+            </p>
+            <div class="image-wrapper">
+              <img src="/assets/index/kitchen.svg" alt="Bondrucker in der Küche" loading="lazy" />
+            </div>
+          </li>
+        </ol>
+      </div>
+    </Container>
+  </section>
+
+
+</Main>
