@@ -21,13 +21,11 @@ const isDe = isCurrentPage('/de/')
 </script>
 
 <header id="root-header">
-  <p>
-    <a href="/" aria-current={isCurrentPage('/de/', { exact: true })}>
-      Gaston
-    </a>
-  </p>
+  <a href="/" aria-current={isCurrentPage('/de/', { exact: true })}>
+    Gaston
+  </a>
   <nav>
-    <a href='/de/funktion/' aria-current={isCurrentPage('/offers')}>Produkt</a>
+    <a href='/de/funktion/' aria-current={isCurrentPage('/funktion')}>Produkt</a>
     <a href={isDe ? '/de/offers/' : '/en/offers/' } aria-current={isCurrentPage('/offers')}>{isDe ? 'Angebot' :
       'Offer'}</a>
     <a set:html={isDe ? 'Über&nbsp;uns' : 'About&nbsp;us' } href={isDe ? '/de/about/' : '/en/about/' }
