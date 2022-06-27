@@ -19,11 +19,75 @@ const title =
 
 <Main>
   <Container>
-    <h1>So funktioniert Gaston</h1>
+    <h1>Bestell- und Zahlungsablauf aus der Sicht von Gastrobetrieben</h1>
 
-  </Container>
-  <section id="so-bezahlen-gäste">
-    <Container>
+    <section id="so-funktioniert-gaston">
+      <h2>So funktioniert Gaston für Betriebe</h2>
+      <p>Gaston funktioniert mit oder ohne Kasse.</p>
+      <div class="columns">
+        <div style="flex: 1">
+          <h3>Mit Kasse</h3>
+          <p>
+            Gaston kann die Bestellungen an Ihre Kasse übermitteln. Nehmen Sie
+            mit uns <a href="contact">Kontakt</a> auf, um ihre Kassenanbindung zu
+            besprechen.
+          </p>
+        </div>
+        <ol class="description-list ordered-list" style="flex: 2">
+          <li>
+            <h4 class="description-wrapper">Gast bestellt</h4>
+            <div class="image-wrapper">
+              <img src="/assets/index/scan.svg" alt="Gast bestellt" loading="lazy" />
+            </div>
+          </li>
+          <li>
+            <h4 class="description-wrapper">Kasse registriert Bestellung</h4>
+            <div class="image-wrapper">
+              <img src="/assets/index/pos.svg" alt="Kasse" loading="lazy" />
+            </div>
+          </li>
+          <li>
+            <h4 class="description-wrapper">
+              Kasse schickt Bestellung in die Küche
+            </h4>
+            <div class="image-wrapper">
+              <img src="/assets/index/kitchen.svg" alt="Bondrucker in der Küche" loading="lazy" />
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <hr />
+
+      <div class="columns">
+        <div style="flex: 1">
+          <h3>Ohne Kasse</h3>
+          <p>
+            Gaston funktioniert hervorragend auch ohne Kasse. Alle Ihre
+            Bestellungen sind bei uns im Dashboard ersichtlich und können an
+            einen Bondrucker in der Küche oder Bar ausgedruckt werden.
+          </p>
+        </div>
+        <ol class="description-list ordered-list" style="flex: 2">
+          <li>
+            <h4 class="description-wrapper">Gast bestellt</h4>
+            <div class="image-wrapper">
+              <img src="/assets/index/scan.svg" alt="Gast bestellt" loading="lazy" />
+            </div>
+          </li>
+          <li>
+            <h4 class="description-wrapper">
+              Gaston schickt die Bestellung direkt in die Küche
+            </h4>
+            <div class="image-wrapper">
+              <img src="/assets/index/kitchen.svg" alt="Bondrucker in der Küche" loading="lazy" />
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="so-bezahlen-gäste">
       <h2>So bezahlen Gäste mit Gaston</h2>
       <p>
         Falls Sie Ihren Gästen die Möglichkeit geben wollen direkt in der App zu
@@ -74,76 +138,9 @@ const title =
           </li>
         </ul>
       </div>
-    </Container>
-  </section>
+    </section>
 
-  <section id="so-funktioniert-gaston">
-    <Container>
-      <h2>So funktioniert Gaston für Betriebe</h2>
-      <p>Gaston funktioniert mit oder ohne Kasse.</p>
-      <div class="columns">
-        <div style="flex: 1">
-          <h3>Mit Kasse</h3>
-          <p>
-            Gaston kann die Bestellungen an Ihre Kasse übermitteln. Nehmen Sie
-            mit uns <a href="contact">Kontakt</a> auf, um ihre Kassenanbindung zu
-            besprechen.
-          </p>
-        </div>
-        <ol class="description-list ordered-list" style="flex: 2">
-          <li>
-            <p class="description-wrapper">Gast bestellt</p>
-            <div class="image-wrapper">
-              <img src="/assets/index/scan.svg" alt="Gast bestellt" loading="lazy" />
-            </div>
-          </li>
-          <li>
-            <p class="description-wrapper">Kasse registriert Bestellung</p>
-            <div class="image-wrapper">
-              <img src="/assets/index/pos.svg" alt="Kasse" loading="lazy" />
-            </div>
-          </li>
-          <li>
-            <p class="description-wrapper">
-              Kasse schickt Bestellung in die Küche
-            </p>
-            <div class="image-wrapper">
-              <img src="/assets/index/kitchen.svg" alt="Bondrucker in der Küche" loading="lazy" />
-            </div>
-          </li>
-        </ol>
-      </div>
-
-      <hr />
-
-      <div class="columns">
-        <div style="flex: 1">
-          <h3>Ohne Kasse</h3>
-          <p>
-            Gaston funktioniert hervorragend auch ohne Kasse. Alle Ihre
-            Bestellungen sind bei uns im Dashboard ersichtlich und können an
-            einen Bondrucker in der Küche oder Bar ausgedruckt werden.
-          </p>
-        </div>
-        <ol class="description-list ordered-list" style="flex: 2">
-          <li>
-            <p class="description-wrapper">Gast bestellt</p>
-            <div class="image-wrapper">
-              <img src="/assets/index/scan.svg" alt="Gast bestellt" loading="lazy" />
-            </div>
-          </li>
-          <li>
-            <p class="description-wrapper">
-              Gaston schickt die Bestellung direkt in die Küche
-            </p>
-            <div class="image-wrapper">
-              <img src="/assets/index/kitchen.svg" alt="Bondrucker in der Küche" loading="lazy" />
-            </div>
-          </li>
-        </ol>
-      </div>
-    </Container>
-  </section>
+  </Container>
 
 
 </Main>

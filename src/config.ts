@@ -16,10 +16,10 @@ export const globalNavigation: GlobalNavigation = [
     title: 'Produkt',
     items: [
       {
-        href: '/de/funktion/',
-        title: "So funktioniert's",
+        href: '/de/bestell-und-zahlungs-ablauf-gastro-betriebe/',
+        title: 'Bestell- und Zahlungsablauf',
         description:
-          'Beschreibung, wie das Bestellen und Bezahlen mit Gaston funktioniert.',
+          'Beschreibung, wie das Bestellen und Bezahlen aus der Sicht eines Gastrobetriebs mit Gaston funktioniert.',
       },
       {
         href: '/de/offers/',
