@@ -196,7 +196,7 @@ const title =
       <p>
         Gaston läuft auf ganz unterschiedlichen Geräte ohne Installation. So erreichen Sie Ihre Gäste dort wo sie sind.
       </p>
-      <ul class="horizontal-list">
+      <ul class="horizontal-list same-height">
         <li>
           <div>
             <img src="/assets/illustrations/smartphone.svg" alt="Handy" loading="lazy" height="150" width="154" />
@@ -409,6 +409,15 @@ const title =
         width: 100%;
       }
     }
+  }
+
+  .same-height img {
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    max-height: 200px;
+    margin-inline: auto;
+    padding-block-start: 1em;
   }
 
   .background {
