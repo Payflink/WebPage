@@ -19,15 +19,11 @@ export default function Counter({ children, buttonText = 'Anzeigen' }) {
 
   return (
     <>
-      <div>
-        <button class="button" onClick={open}>
-          {buttonText}
-        </button>
-      </div>
+      <button class="button" onClick={open}></button>
       <dialog ref={dialogRef}>
         <div className="dialog-layout">
           <div className="content">{children}</div>
-          <div class="right">
+          <div class="close">
             <button onClick={close} class="close-button">
               <svg viewBox="0 0 64 64" height="1em">
                 <path

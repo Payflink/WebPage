@@ -3,8 +3,17 @@
 }
 
 .dialog-layout {
-  display: flex;
+  display: grid;
+  grid:
+    '. close' auto
+    'content content' 1fr / 1fr auto;
   height: 100%;
+}
+
+.close {
+  grid-area: close;
+  padding: 0.2em;
+  margin-bottom: -0.8em;
 }
 
 .close-button {
@@ -16,22 +25,15 @@
 }
 
 .content {
-  flex: 1;
+  grid-area: content;
+  /* height: calc(100% - 5em); */
 }
 
 .button {
-  display: inline-block;
-  font-size: 1em;
-  padding: 0.6em 2em;
-  margin-bottom: 2em;
-  border: 0.16em solid var(--button-color);
-  border-radius: 0.4em;
-  font-weight: bold;
-  color: var(--button-color);
+  height: 100%;
+  width: 100%;
+  border: none;
   background: transparent;
-  transition: transform 30ms ease-out;
-  transform: translate3d(0, 0, 0);
-  box-sizing: border-box;
   cursor: pointer;
   text-decoration: none;
 }
@@ -48,5 +50,11 @@
   .button {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media (min-width: 600px) {
+  .dialog-layout {
+    grid: 'content close' / 1fr auto;
   }
 }

@@ -66,12 +66,18 @@ small {
 }
 
 dialog {
-  margin: 1em;
-  block-size: calc(100% - 2em);
-  inline-size: calc(100% - 2em);
+  block-size: 100%;
+  inline-size: 100%;
   border: 2px solid #555;
   background-color: #333;
   border-radius: 0.9em;
+  margin: auto;
+
+  @media (max-width: 599px) {
+    max-inline-size: 100%;
+    max-block-size: 100%;
+    padding: 0.2em;
+  }
 }
 
 .columns {
@@ -84,4 +90,16 @@ dialog {
 
 .right {
   text-align: right;
+}
+
+.desktop {
+  @media (max-width: 599px) {
+    display: none;
+  }
+}
+
+.mobile {
+  @media (min-width: 600px) {
+    display: none;
+  }
 }

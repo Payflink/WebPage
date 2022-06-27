@@ -232,27 +232,42 @@ const title =
             Sie gestalten Ihre Speisekarte nach ihrem
             Gusto, farbenfroh und mit Bilder oder einfach nur mit Text.</p>
           <p>Alles ohne Installation einer App und ohne Registrierung.</p>
-          <img alt="" src="/assets/arrow.svg" />
+          <img alt="" src="/assets/arrow.svg" class="arrow" />
           <p style="font-size: 2em;">Hier ausprobieren!</p>
         </div>
         <div style="flex: 1">
           <div class="mobile-wrapper">
             <iframe src="https://demo.gastonsolution.com/811f84b2-15f8-440d-8074-58ce5cce13f8/?table=7"
               frameborder="0"></iframe>
-          </div>
-          <div style="padding-top: 1em;text-align: center;">
-            <Dialog buttonText="Vollbild" client:visible>
-              <div class="columns" style="align-items: start; height: 100%">
-                <div>
-                  <h3>Gaston Demo</h3>
-                  <p>Content in the dialog.</p>
+            <div class="overlay">
+              <Dialog buttonText="Vollbild" client:visible>
+                <div class="full-screen-demo">
+                  <div class="description">
+                    <div class="desktop">
+                      <h3>Gaston Demo</h3>
+                      <p>Bei dieser Gaston-Demo handelt es sich um ein Testsystem, wo <b>keine echten Bestellungen oder
+                          Zahlungen</b> stattfinden. Testen Sie Gaston entsprechend nach Lust und Laune.</p>
+                      <ol>
+                        <li>Fügen Sie etwas zur Bestellung hinzu.</li>
+                        <li>Senden Sie die Bestellung ab.</li>
+                        <li>Klicken Sie bei der Zahlung bsw. auf Twint. Keine Angst, es findet keine echte Transaktion
+                          statt und
+                          entsprechend <b>wird kein Geld abgebucht.</b>
+                        </li>
+                      </ol>
+                    </div>
+                    <div class="mobile">
+                      <h3>Gaston Demo</h3>
+                      <p>Wählen Sie bei der Zahlung z.B. Twint. Es wird kein Geld abgebucht.</p>
+                    </div>
+                  </div>
+                  <div class="gaston-wrapper">
+                    <iframe src="https://demo.gastonsolution.com/811f84b2-15f8-440d-8074-58ce5cce13f8/?table=7"
+                      frameborder="0"></iframe>
+                  </div>
                 </div>
-                <div class="gaston-wrapper">
-                  <iframe src="https://demo.gastonsolution.com/811f84b2-15f8-440d-8074-58ce5cce13f8/?table=7"
-                    frameborder="0"></iframe>
-                </div>
-              </div>
-            </Dialog>
+              </Dialog>
+            </div>
           </div>
         </div>
       </div>
@@ -570,6 +585,23 @@ const title =
     }
   }
 
+  .arrow {
+    z-index: 5;
+    position: relative;
+    filter: drop-shadow(2px 4px 10px #0008);
+
+    @media (min-width: 640px) {
+      transform: translateX(min(20vw, 16rem));
+    }
+
+    @media (max-width:639px) {
+      transform: rotate(90deg) translateX(100%) scaleY(-1.4);
+      max-width: 70%;
+      transform-origin: right;
+      right: -15px;
+    }
+  }
+
   .mobile-wrapper {
     position: relative;
     max-block-size: 80vh;
@@ -591,11 +623,66 @@ const title =
       block-size: 100%;
       inline-size: 100%;
     }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+    }
+  }
+
+  .full-screen-demo {
+    display: flex;
+    flex-direction: column;
+    gap: 1em 2em;
+    height: 100%;
+    text-align: left;
+
+    h3 {
+      margin-block: 0;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 600px) {
+      flex-direction: row;
+    }
+
+  }
+
+  .description {
+    color: var(--light-background-color);
+
+    .desktop {
+      padding-inline: 0.8em;
+    }
+
+    .mobile {
+
+      padding-inline: 0.8em;
+
+      h3,
+      p {
+        display: inline;
+      }
+
+      p {
+        font-size: 0.8em;
+        margin-left: 0.5em;
+      }
+    }
+
+    @media (min-width:600px) {
+      flex: 0 5 20rem;
+
+    }
   }
 
   .gaston-wrapper {
     position: relative;
-    block-size: 100%;
+    flex: 1;
+    max-inline-size: 100%;
     aspect-ratio: 0.60;
     margin-inline: auto;
     border-inline-width: 0.6em;
@@ -606,6 +693,12 @@ const title =
     overflow: hidden;
     background-color: #363636;
     box-shadow: 0px 10px 30px -9px #0008;
+
+    @media (min-width: 600px) {
+      block-size: 100%;
+      inline-size: auto;
+      flex: 0 1 auto;
+    }
 
     iframe {
       display: block;
