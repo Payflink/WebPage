@@ -53,13 +53,13 @@
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .dialog-layout {
     grid: 'content close' / 1fr auto;
   }
 }
 
-@media (min-height: 700px) and (min-width: 600px) {
+@media (min-height: 700px) and (min-width: 768px) {
   dialog {
     padding: 2em;
   }

@@ -4,6 +4,7 @@ import { SEO } from 'astro-seo'
 import MainLayout from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 import Demo from '@components/Demo.astro'
+import FixedPicture from '@components/FixedPicture.astro'
 
 const description =
   'Die Gaston-Demo vermittelt wie die Speisekarte dargestellt wird, der Bestellvorgang funktioniert und die Zahlungsabwicklung stattfindet.'
@@ -28,6 +29,11 @@ const title =
     </section>
     <section>
       <Demo />
+    </section>
+    <section>
+      <h2>Mit dem Handy testen</h2>
+      <p>Scannen Sie den QR-Code im direkt auf Ihrem Handy Gaston zu erleben, als wären Sie im Restaurant.</p>
+      <FixedPicture alt="QR-Code" src="/src/images/qr-code-table-7.jpg" height={120} />
     </section>
   </Container>
 </MainLayout>
