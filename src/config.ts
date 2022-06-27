@@ -26,6 +26,12 @@ export const globalNavigation: GlobalNavigation = [
         title: 'Funktionsumfang',
         description: 'Detaillierte Auflistung aller Funktionen von Gaston.',
       },
+      {
+        href: '/de/demo/',
+        title: 'Demo',
+        description:
+          'Machen Sie eine Bestellung und erfahren dabei den Zahlungsablauf.',
+      },
     ],
   },
   {

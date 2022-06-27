@@ -1,0 +1,33 @@
+---
+import { SEO } from 'astro-seo'
+
+import MainLayout from '@layouts/Main.astro'
+import Container from '@components/Container.astro'
+import Demo from '@components/Demo.astro'
+
+const description =
+  'Die Gaston-Demo vermittelt wie die Speisekarte dargestellt wird, der Bestellvorgang funktioniert und die Zahlungsabwicklung stattfindet.'
+const title =
+  'Demo • Gaston • Bestell- & Zahlungslösung für Gastro-Betriebe • Mehr Gäste mit weniger Personal schneller bedienen.'
+---
+
+<head>
+  <SEO {title} {description} />
+</head>
+
+<MainLayout>
+  <Container>
+    <section>
+      <h1>Demo</h1>
+      <p>Die Gaston-Demo vermittelt wie die Speisekarte dargestellt wird, der Bestellvorgang funktioniert und die
+        Zahlungsabwicklung stattfindet.</p>
+      <p>Da Gaston sehr viele Einstellungsmöglichkeiten hat, sehen Sie bloss eine mögliche Konfiguration. Falls Sie
+        etwas
+        gerne anders haben möchten, besteht eine grosse Chance, dass dies heute bereits möglich ist. Nehmen Sie in dem
+        Fall <a href="/de/contact">Kontakt</a> mit uns auf.</p>
+    </section>
+    <section>
+      <Demo />
+    </section>
+  </Container>
+</MainLayout>
