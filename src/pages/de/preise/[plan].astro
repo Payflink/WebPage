@@ -3,25 +3,25 @@ import { SEO } from 'astro-seo'
 
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
-import { mkIsCurrentPage } from '../../../utils.ts'
+import { mkIsCurrentPage } from '../../../utils'
 import Button from '@components/Button.astro'
 
 export const getStaticPaths = async () => [
   {
-    params: { plan: 'aperitif' },
-    props: { title: 'Apéritif', price: '3,9% / Bestellung' },
+    params: { plan: 'starter' },
+    props: { title: 'Starter', price: 'Keine. <small>5,9% / Bestellung oder Zahlung</small>' },
   },
   {
-    params: { plan: 'main-course' },
-    props: { title: 'Hauptgang', price: 'CHF 179.- / Betrieb / Monat' },
+    params: { plan: 'pro' },
+    props: { title: 'Pro', price: 'CHF 179.- / Betrieb / Monat' },
   },
   {
-    params: { plan: '6-course-menu' },
-    props: { title: '6-Gang Menu', price: 'CHF 790.- / Monat' },
+    params: { plan: 'delux' },
+    props: { title: 'Delux', price: 'CHF 699.- / Monat / Betrieb' },
   },
   {
-    params: { plan: 'dessert' },
-    props: { title: 'Mit klassischer Kasse', price: 'Auf Anfrage' },
+    params: { plan: 'enterprise' },
+    props: { title: 'Enterprise', price: 'Auf Anfrage' },
   },
 ]
 
@@ -37,8 +37,7 @@ const description =
 ---
 
 <head>
-  <SEO title={`Unverbindliche Anfrage • Plan ${title} • Gaston`} {description}
-  />
+  <SEO title={`Unverbindliche Anfrage • Plan ${title} • Gaston`} {description} />
 </head>
 
 <Main>
@@ -56,16 +55,11 @@ const description =
         </b>
       </p>
       <p>
-        Basis-Kosten: <b>{price}</b>
+        Basis-Kosten: <b set:html={price} />
       </p>
     </div>
-    <form
-      name="enrol"
-      action={isDe ? '/de/offers/success' : '/en/offers/success'}
-      method="POST"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-    >
+    <form name="enrol" action={isDe ? '/de/preise/success' : '/en/prices/success' } method="POST" data-netlify="true"
+      data-netlify-honeypot="bot-field">
       <p hidden>
         <label htmlfor="bot-field">
           Nicht ausfüllen:{' '}
@@ -73,42 +67,24 @@ const description =
         </label>
         <input type="text" name="subject" value="Neue Gaston-Anmeldung" />
         <input type="text" name="plan" value={plan} />
-        <input type="text" name="locale" value={isDe ? 'de' : 'en'} />
+        <input type="text" name="locale" value={isDe ? 'de' : 'en' } />
       </p>
       <p>
         <label htmlfor="name">
           Vorname / Name
-          <input
-            type="text"
-            inputmode="text"
-            autocomplete="name"
-            name="name"
-            required
-          />
+          <input type="text" inputmode="text" autocomplete="name" name="name" required />
         </label>
       </p>
       <p>
         <label htmlfor="email">
           Email-Adresse
-          <input
-            type="email"
-            inputmode="email"
-            autocomplete="email"
-            name="email"
-            required
-          />
+          <input type="email" inputmode="email" autocomplete="email" name="email" required />
         </label>
       </p>
       <p>
         <label htmlfor="phone">
           Telefonnummer
-          <input
-            type="tel"
-            inputmode="tel"
-            autocomplete="tel"
-            name="phone"
-            required
-          />
+          <input type="tel" inputmode="tel" autocomplete="tel" name="phone" required />
         </label>
       </p>
       <p>
@@ -120,8 +96,7 @@ const description =
       <p>
         <label htmlfor="website">
           URL ihrer Webseite <small>(optional)</small>
-          <input type="text" inputmode="text" autocomplete="url" name="website"
-          />
+          <input type="text" inputmode="text" autocomplete="url" name="website" />
         </label>
       </p>
       <p>
@@ -141,6 +116,7 @@ const description =
   h1 {
     line-height: 1em;
   }
+
   input,
   textarea {
     display: block;
@@ -164,6 +140,7 @@ const description =
     padding: 1em 2em;
     background: #eee;
     border-radius: 0.5em;
+
     p {
       margin: 0.2em 0;
     }
