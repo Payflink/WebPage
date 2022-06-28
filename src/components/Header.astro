@@ -30,7 +30,7 @@ const navigation = isDe ? globalNavigation.de : globalNavigation.en
   </a>
   <nav>
     {navigation.map((item, i) => 'items' in item ?
-    <FlyoutMenu {...item} /> : <a href={item.href}>{item.title}</a>)}
+    <FlyoutMenu {...item} /> : <a href={item.href} aria-current={isCurrentPage(item.href)}>{item.title}</a>)}
   </nav>
 </header>
 <div id="top-of-site-pixel-anchor"></div>
@@ -64,6 +64,11 @@ const navigation = isDe ? globalNavigation.de : globalNavigation.en
     nav {
       display: flex;
       gap: 2em;
+
+      :global([aria-current]) {
+        color: var(--primary-color);
+      }
+
     }
 
     a {
@@ -73,9 +78,6 @@ const navigation = isDe ? globalNavigation.de : globalNavigation.en
       color: inherit;
       text-decoration: none;
 
-      &[aria-current] {
-        color: var(--primary-color);
-      }
     }
 
     .active {

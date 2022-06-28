@@ -1,4 +1,6 @@
 ---
+import { mkIsCurrentPage } from "src/utils";
+
 export interface Props {
   title?: string;
   items: {
@@ -9,10 +11,15 @@ export interface Props {
 }
 const { title, items } = Astro.props as Props;
 const hasDescriptions = items.some(({ description }) => !!description);
+const { pathname } = Astro.canonicalURL
+const isCurrentPage = mkIsCurrentPage(pathname)
+
+const anySubItems = items.some(({ href }) => isCurrentPage(href))
+
 ---
 
 <details class='flyout'>
-  <summary>
+  <summary aria-current={anySubItems}>
     {title}
     <svg viewBox="0 0 24 24">
       <path d="M 4,8 L 12,16 L 20,8" />
@@ -43,7 +50,7 @@ const hasDescriptions = items.some(({ description }) => !!description);
     }
   }
 
-  Array.from(document.querySelectorAll < HTMLDetailsElement > ('details.flyout')).map(
+  Array.from(document.querySelectorAll<HTMLDetailsElement>('details.flyout')).map(
     flyout
   )
 </script>

@@ -44,7 +44,7 @@ const navigationDe: NavigationTree = [
     title: 'Über',
     items: [
       {
-        href: '/de/about/',
+        href: '/de/team/',
         title: 'Team',
         description: 'Wer versteckt sich hinter der Persona?',
       },
@@ -55,7 +55,7 @@ const navigationDe: NavigationTree = [
       },
       {
         title: 'Mission',
-        href: '/en/mission/',
+        href: '/de/mission/',
         description: 'Was ist unsere Mission? Was treibt uns?',
       },
     ],
