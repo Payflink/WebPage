@@ -26,7 +26,7 @@ export const globalNavigation: GlobalNavigation = [
           'Beschreibung, wie das Bestellen und Bezahlen aus der Sicht eines Gastrobetriebs mit Gaston funktioniert.',
       },
       {
-        href: '/de/features/',
+        href: '/de/funktionsumfang/',
         title: 'Funktionsumfang',
         description: 'Detaillierte Auflistung aller Funktionen von Gaston.',
       },
