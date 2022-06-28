@@ -65,7 +65,7 @@ const navigationDe: NavigationTree = [
     href: '/de/preise/',
   },
   {
-    href: '/de/contact/',
+    href: '/de/kontakt/',
     title: 'Kontakt',
   },
 ]
