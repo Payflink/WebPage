@@ -1,0 +1,39 @@
+---
+import { SEO } from 'astro-seo'
+
+import MainLayout from '@layouts/Main.astro'
+import Container from '@components/Container.astro'
+import Demo from '@components/Demo.astro'
+import FixedPicture from '@components/FixedPicture.astro'
+import { titlePart } from 'src/config'
+
+const description =
+  'The Gaston demo shows how the menu is displayed, how the ordering process works and how payments are processed.'
+const title =
+  `Demo • ${titlePart}`
+---
+
+<head>
+  <SEO {title} {description} />
+</head>
+
+<MainLayout>
+  <Container>
+    <section>
+      <h1>Demo</h1>
+      <p>The Gaston demo shows how the menu is displayed, how the ordering process works and how the payment processing
+        takes place.</p>
+      <p>Since Gaston has a lot of configuration options, you can see only one possible configuration. If you need
+        something to be different, there is a big chance that this is already possible today. <a
+          href="/en/contact">Contact</a> us in that case.</p>
+    </section>
+    <section>
+      <Demo />
+    </section>
+    <section>
+      <h2>Test on your cell phone</h2>
+      <p>Scan the QR code in the directly on your phone to experience Gaston as if you were in the restaurant.</p>
+      <FixedPicture alt="QR-Code" src="/src/images/qr-code-table-7.jpg" height={120} />
+    </section>
+  </Container>
+</MainLayout>

@@ -13,9 +13,11 @@ export interface NavigationGroup {
   items: NavigationItem[]
 }
 
-export type GlobalNavigation = (NavigationItem | NavigationGroup)[]
+type NavigationTree = (NavigationItem | NavigationGroup)[]
 
-export const globalNavigation: GlobalNavigation = [
+export type GlobalNavigation = Record<'de' | 'en', NavigationTree>
+
+const navigationDe: NavigationTree = [
   {
     title: 'Produkt',
     items: [
@@ -51,16 +53,64 @@ export const globalNavigation: GlobalNavigation = [
         title: 'Blog',
         description: 'Der neuste Gossip, der gerade die Runden macht.',
       },
+      {
+        title: 'Mission',
+        href: '/en/mission/',
+        description: 'Was ist unsere Mission? Was treibt uns?',
+      },
     ],
   },
   {
-    title: 'Angebot',
-    href: '/de/offers/',
+    title: 'Preise',
+    href: '/de/preise/',
   },
   {
     href: '/de/contact/',
     title: 'Kontakt',
-    description:
-      'Looking for inspiration? Explore these awesome sites built with Astro.',
   },
 ]
+
+const navigationEn: NavigationTree = [
+  {
+    title: 'Product',
+    items: [
+      {
+        title: 'Demo',
+        href: '/en/demo/',
+        description: 'Make an order and learn about the payment process.',
+      },
+      {
+        title: 'Prices',
+        href: '/en/prices/',
+        description: 'Choose your plan.',
+      },
+    ],
+  },
+  {
+    title: 'About',
+    items: [
+      {
+        title: 'Team',
+        href: '/en/team/',
+        description: 'Who is hiding behind the persona?',
+      },
+      {
+        title: 'Blog',
+        href: '/en/blog/',
+        description: 'The latest gossip doing the rounds.',
+      },
+
+      {
+        title: 'Mission',
+        href: '/en/mission/',
+        description: 'What is our mission? What drives us?',
+      },
+    ],
+  },
+  { title: 'Contact', href: '/en/contact/' },
+]
+
+export const globalNavigation: GlobalNavigation = {
+  de: navigationDe,
+  en: navigationEn,
+}

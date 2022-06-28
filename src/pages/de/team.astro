@@ -6,8 +6,8 @@ import Container from '@components/Container.astro'
 import { titlePart } from 'src/config'
 
 const description =
-  'Gaston wurde 2019 mit der Vision gegründet, den Bestellungs- und Bezahlungsprozess in Restaurants, Cafés und Bars zu revolutionieren.'
-const title = `Über uns • ${titlePart}`
+  'Das Team von Gaston wird täglich in den Restaurants motiviert... endlich bestellen und bezahlen zu dürfen.'
+const title = `Team • ${titlePart}`
 
 const employees = [
   {
@@ -49,26 +49,21 @@ const employees = [
 
 <Main>
   <Container>
-    <h1>Über uns</h1>
-    <p>
-      <b>Gaston</b> wurde 2019 mit der Vision gegründet, den Bestellungs- und Bezahlungsprozess
-      in Restaurants, Cafés und Bars zu revolutionieren.
-    </p>
-    <section>
-      <h2>Unser Team</h2>
-      <div class="employee-list">
-        {employees.map(({ name, image, position }) => (
-        <div class="employee">
-          <img loading="lazy" src={image} alt={name} width="192" height="192" />
-          <p>
-            <span class="employee-name">{name}</span>
-            <br />
-            {position}
-          </p>
-        </div>
-        ))}
+
+    <h1>Unser Team</h1>
+    <p>Das Team von Gaston wird täglich in den Restaurants motiviert... endlich bestellen und bezahlen zu dürfen.</p>
+    <div class="employee-list">
+      {employees.map(({ name, image, position }) => (
+      <div class="employee">
+        <img loading="lazy" src={image} alt={name} width="192" height="192" />
+        <p>
+          <span class="employee-name">{name}</span>
+          <br />
+          {position}
+        </p>
       </div>
-    </section>
+      ))}
+    </div>
   </Container>
 </Main>
 

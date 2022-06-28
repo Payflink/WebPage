@@ -6,6 +6,8 @@ import FlyoutMenu from './FlyoutMenu.astro';
 const { pathname } = Astro.canonicalURL
 const isCurrentPage = mkIsCurrentPage(pathname)
 const isDe = isCurrentPage('/de/')
+
+const navigation = isDe ? globalNavigation.de : globalNavigation.en
 ---
 
 <script>
@@ -27,7 +29,7 @@ const isDe = isCurrentPage('/de/')
     Gaston
   </a>
   <nav>
-    {globalNavigation.map((item, i) => 'items' in item ?
+    {navigation.map((item, i) => 'items' in item ?
     <FlyoutMenu {...item} /> : <a href={item.href}>{item.title}</a>)}
   </nav>
 </header>
