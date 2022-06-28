@@ -28,7 +28,7 @@ const navigation = isDe ? globalNavigation.de : globalNavigation.en
 
 <header id="root-header">
   <nav>
-    <a class="logo" href="/" aria-current={isCurrentPage('/de/', { exact: true })}>
+    <a class="logo" href={isDe ?"/de/" : '/en/' } aria-current={isCurrentPage('/de/', { exact: true })}>
       Gaston
     </a>
     {navigation.map((item, i) => 'items' in item ?
