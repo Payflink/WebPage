@@ -26,31 +26,6 @@
 
 .content {
   grid-area: content;
-  /* height: calc(100% - 5em); */
-}
-
-.button {
-  height: 100%;
-  width: 100%;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.button:hover {
-  transform: translate3d(0, -1px, 0);
-}
-
-.button:active {
-  transform: translateY(1px);
-}
-
-@media (max-width: 380px) {
-  .button {
-    width: 100%;
-    text-align: center;
-  }
 }
 
 @media (min-width: 768px) {

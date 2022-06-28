@@ -1,6 +1,5 @@
 ---
 import Dialog from '@components/Dialog.tsx'
-import { Picture } from 'astro-imagetools/components';
 import FixedPicture from './FixedPicture.astro';
 
 ---
@@ -28,6 +27,9 @@ import FixedPicture from './FixedPicture.astro';
         frameborder="0"></iframe>
       <div class="overlay">
         <Dialog buttonText="Vollbild" client:visible>
+          <button aria-label="Demo Starten"
+            style="position: absolute; height: 100%; width: 100%; border: none; background: transparent; cursor: pointer; text-decoration: none;"
+            slot="openElement" />
           <div class="full-screen-demo">
             <div class="description">
               <div class="desktop">

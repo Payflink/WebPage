@@ -1,6 +1,6 @@
 import './Dialog.css'
 
-export default function Counter({ children, buttonText = 'Anzeigen' }) {
+export default function Counter({ children, openElement }) {
   let dialogRef
 
   const open = () => {
@@ -19,7 +19,7 @@ export default function Counter({ children, buttonText = 'Anzeigen' }) {
 
   return (
     <>
-      <button class="button" onClick={open}></button>
+      <div onClick={open}>{openElement}</div>
       <dialog ref={dialogRef}>
         <div className="dialog-layout">
           <div className="content">{children}</div>
