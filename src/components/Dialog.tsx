@@ -1,6 +1,6 @@
 import './Dialog.css'
 
-export default function Counter({ children, openElement }) {
+export default function Dialog({ children, openElement }) {
   let dialogRef
 
   const open = () => {
@@ -26,6 +26,7 @@ export default function Counter({ children, openElement }) {
           <div class="close">
             <button onClick={close} class="close-button">
               <svg viewBox="0 0 64 64" height="1em">
+                <title>Schliessen</title>
                 <path
                   stroke-width="10"
                   stroke="currentColor"

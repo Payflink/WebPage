@@ -13,7 +13,7 @@ export interface NavigationGroup {
   items: NavigationItem[]
 }
 
-type NavigationTree = (NavigationItem | NavigationGroup)[]
+export type NavigationTree = (NavigationItem | NavigationGroup)[]
 
 export type GlobalNavigation = Record<'de' | 'en', NavigationTree>
 

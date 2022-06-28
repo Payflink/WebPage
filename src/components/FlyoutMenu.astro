@@ -66,6 +66,11 @@ const anySubItems = items.some(({ href }) => isCurrentPage(href))
     align-items: center;
     height: 100%;
     cursor: default;
+
+  }
+
+  summary[aria-current] {
+    color: var(--primary-color);
   }
 
   summary::-webkit-details-marker {
@@ -140,6 +145,13 @@ const anySubItems = items.some(({ href }) => isCurrentPage(href))
   @media (max-width: 40rem) {
     nav {
       max-width: min(25rem, 60vw);
+    }
+  }
+
+  @media (max-width: 767px) {
+
+    details {
+      display: none;
     }
   }
 </style>
