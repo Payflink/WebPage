@@ -33,17 +33,16 @@ const navigation = isDe ? globalNavigation.de : globalNavigation.en
     </a>
     {navigation.map((item, i) => 'items' in item ?
     <FlyoutMenu {...item} /> : <a href={item.href} aria-current={isCurrentPage(item.href)}>{item.title}</a>)}
-    <Dialog client:load>
-      <button slot="openElement">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <title>Menu</title>
-          <path d="M 2,6 L 22,6 M 2,12 L 22,12 M 2,18 L 22,18" />
-        </svg>
-      </button>
-      <MobileMenu {navigation} />
-
-    </Dialog>
   </nav>
+  <Dialog client:load>
+    <button slot="openElement">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <title>Menu</title>
+        <path d="M 2,6 L 22,6 M 2,12 L 22,12 M 2,18 L 22,18" />
+      </svg>
+    </button>
+    <MobileMenu {navigation} />
+  </Dialog>
 </header>
 <div id="top-of-site-pixel-anchor"></div>
 
