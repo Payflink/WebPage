@@ -1,9 +1,9 @@
 ---
-import { globalNavigation } from 'src/config';
+import { globalNavigation } from 'src/config'
 import { mkIsCurrentPage } from '../utils'
-import Dialog from './Dialog';
-import FlyoutMenu from './FlyoutMenu.astro';
-import MobileMenu from './MobileMenu.astro';
+import Dialog from '@components/Dialog.tsx'
+import FlyoutMenu from './FlyoutMenu.astro'
+import MobileMenu from './MobileMenu.astro'
 
 const { pathname } = Astro.canonicalURL
 const isCurrentPage = mkIsCurrentPage(pathname)
