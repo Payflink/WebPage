@@ -3,6 +3,7 @@ import { SEO } from 'astro-seo'
 
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
+import { titlePart } from 'src/config'
 
 const blogs = await Astro.glob('./blog/**/*.md')
 const data = blogs
@@ -12,9 +13,9 @@ const data = blogs
   .filter((blog) => blog.frontmatter.lang === 'de')
 
 const description =
-  'Der neuste Gossip, der gerade die Runden macht.'
+  'Der neuste Klatsch und Tratsch, den Gaston aufgeschnappt hat.'
 const title =
-  'Blog • Gaston • Bestell- & Zahlungslösung für Gastro-Betriebe • Mehr Gäste mit weniger Personal schneller bedienen.'
+  `Blog • ${titlePart}`
 ---
 
 <head>

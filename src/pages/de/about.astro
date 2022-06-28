@@ -3,10 +3,11 @@ import { SEO } from 'astro-seo'
 
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
+import { titlePart } from 'src/config'
 
 const description =
   'Gaston wurde 2019 mit der Vision gegründet, den Bestellungs- und Bezahlungsprozess in Restaurants, Cafés und Bars zu revolutionieren.'
-const title = 'Über uns • Gaston'
+const title = `Über uns • ${titlePart}`
 
 const employees = [
   {
@@ -57,20 +58,14 @@ const employees = [
       <h2>Unser Team</h2>
       <div class="employee-list">
         {employees.map(({ name, image, position }) => (
-          <div class="employee">
-            <img
-              loading="lazy"
-              src={image}
-              alt={name}
-              width="192"
-              height="192"
-            />
-            <p>
-              <span class="employee-name">{name}</span>
-              <br />
-              {position}
-            </p>
-          </div>
+        <div class="employee">
+          <img loading="lazy" src={image} alt={name} width="192" height="192" />
+          <p>
+            <span class="employee-name">{name}</span>
+            <br />
+            {position}
+          </p>
+        </div>
         ))}
       </div>
     </section>
@@ -84,6 +79,7 @@ const employees = [
     justify-content: space-around;
     gap: 2em;
   }
+
   .employee {
     width: 16rem;
     text-align: center;
@@ -93,6 +89,7 @@ const employees = [
       box-shadow: 0 0 60px 0px #ccc6;
     }
   }
+
   .employee-name {
     font-size: 1.2em;
     font-weight: 600;

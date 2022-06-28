@@ -1,3 +1,7 @@
+export const productDescription = 'Bestellerlebnis für Gastro-Betriebe'
+export const claim = 'Mehr Gäste mit weniger Personal schneller bedienen.'
+export const titlePart = `Gaston • ${productDescription} • ${claim}`
+
 export interface NavigationItem {
   href: string
   title: string

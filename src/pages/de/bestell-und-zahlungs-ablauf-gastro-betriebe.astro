@@ -6,11 +6,12 @@ import Container from '@components/Container.astro'
 import ButtonLink from '@components/ButtonLink.astro'
 
 import FixedPicture from '@components/FixedPicture.astro'
+import { titlePart } from 'src/config'
 
 const description =
-  'Gaston die digitale Speisekarte erlaubt es den Gästen schnell und einfach zu bestell und bezahlen. Dabei spielt es keine Rolle, ob die Gäste in ihrem Betrieb, unterwegs oder Zuhause sind. Gaston unterstützt die Bestellung in Ihrem Betrieb, Take-Away und Delivery.'
+  'Gaston unterstützt Ihren Betrieb bei der Bestellung und Bezahlung. Dabei ist er äussert flexible und passt sich Ihren Wünschen und Bedürfnisse an.'
 const title =
-  'Gaston • Bestell- & Zahlungslösung für Gastro-Betriebe • Mehr Gäste mit weniger Personal schneller bedienen.'
+  `Bestell- und Zahlungsablauf aus der Sicht von Gastro-Betrieben • ${titlePart}`
 ---
 
 <head>
@@ -19,7 +20,7 @@ const title =
 
 <Main>
   <Container>
-    <h1>Bestell- und Zahlungsablauf <small><br>aus der Sicht von Gastrobetrieben</small></h1>
+    <h1>Bestell- und Zahlungsablauf <small><br>aus der Sicht von Gastro-Betrieben</small></h1>
 
     <section id="so-funktioniert-gaston">
       <h2>So funktioniert Gaston für Betriebe</h2>

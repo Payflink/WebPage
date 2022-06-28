@@ -5,11 +5,12 @@ import MainLayout from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 import Demo from '@components/Demo.astro'
 import FixedPicture from '@components/FixedPicture.astro'
+import { titlePart } from 'src/config'
 
 const description =
   'Die Gaston-Demo vermittelt wie die Speisekarte dargestellt wird, der Bestellvorgang funktioniert und die Zahlungsabwicklung stattfindet.'
 const title =
-  'Demo • Gaston • Bestell- & Zahlungslösung für Gastro-Betriebe • Mehr Gäste mit weniger Personal schneller bedienen.'
+  `Demo • ${titlePart}`
 ---
 
 <head>

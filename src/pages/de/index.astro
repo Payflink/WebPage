@@ -7,11 +7,11 @@ import ButtonLink from '@components/ButtonLink.astro'
 
 import FixedPicture from '@components/FixedPicture.astro'
 import Demo from '@components/Demo.astro'
+import { claim, productDescription, titlePart } from 'src/config'
 
 const description =
   'Gaston die digitale Speisekarte erlaubt es den Gästen schnell und einfach zu bestell und bezahlen. Dabei spielt es keine Rolle, ob die Gäste in ihrem Betrieb, unterwegs oder Zuhause sind. Gaston unterstützt die Bestellung in Ihrem Betrieb, Take-Away und Delivery.'
-const title =
-  'Gaston • Bestell- & Zahlungslösung für Gastro-Betriebe • Mehr Gäste mit weniger Personal schneller bedienen.'
+const title = titlePart
 ---
 
 <head>
@@ -23,9 +23,9 @@ const title =
     <h1>
       <b>Gaston</b>
       <br />
-      <small>Bestell- & Zahlungslösung für Gastro-Betriebe</small>
+      <small>{productDescription}</small>
     </h1>
-    <p class="claim">Mehr Gäste mit weniger Personal schneller bedienen.</p>
+    <p class="claim">{claim}</p>
     <div class="animation">
       <img src="/assets/hero-gaston-vs-menu.svg"
         alt="Bestellen mit Speisekarte mühsam, mit Gaston App schnell und einfach" height="150" width="204" />

@@ -2,10 +2,11 @@
 import { SEO } from 'astro-seo'
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
+import { titlePart } from 'src/config'
 
 const description =
   'Haben Sie ein Frage zu Gaston, der digitalen Speisekarte? Wir helfen Ihnen gerne.'
-const title = 'Kontakt • Gaston • Digitale Speisekarte'
+const title = `Kontakt • ${titlePart}`
 ---
 
 <head>

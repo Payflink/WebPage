@@ -5,20 +5,21 @@ import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 import ButtonLink from '@components/ButtonLink.astro'
 import Center from '@components/Center.astro'
+import { titlePart } from 'src/config'
 
 const description =
-  'Wählen Sie das passende Angebot für Ihre Bedürfnisse. Gaston die digitale Speisekarte erlaubt es den Gästen schnell und einfach zu bestell und bezahlen. Dabei spielt es keine Rolle, ob die Gäste in ihrem Betrieb, unterwegs oder Zuhause sind. Gaston unterstützt die Bestellung in Ihrem Betrieb, Take-Away und Delivery.'
+  'Wählen Sie das passende Angebot für Ihre Bedürfnisse.'
 const title =
-  'Angebot • Gaston • Digitale Speisekarte • Mehr Gäste mit weniger Personal schneller bedienen.'
+  `Preise • ${titlePart}`
 ---
 
 <head>
   <SEO {title} {description} />
 </head>
 
-<Main title="Angebot • Gaston">
+<Main>
   <Container size="large">
-    <h1>Angebot</h1>
+    <h1>Preise</h1>
     <div class="plans-container">
       <div class="plan">
         <h2>Apéritif</h2>
@@ -85,9 +86,7 @@ const title =
           Gaston im Packet mit einer klassischen Kasse.
         </p>
         <p>
-          <i
-            >Gaston funktioniert sehr gut <b>mit, aber auch ohne</b> klassische Kasse.</i
-          >
+          <i>Gaston funktioniert sehr gut <b>mit, aber auch ohne</b> klassische Kasse.</i>
         </p>
         <ul>
           <li>Alle Leistungen von Apéritif</li>
@@ -137,7 +136,8 @@ const title =
       <p>
         Ja nach Bestellzeit und -ort können das Angebot oder die Preise
         unterschiedlich sein.
-      </p><p>
+      </p>
+      <p>
         Die ist ideal für Happy-Hour oder um das Angebot auf die Küche
         abzustimmen. Damit ist es auch möglich für Inhouse, Take-Away und
         Delivery ein unterschiedliches Angebot oder auch andere Preise
@@ -278,6 +278,7 @@ const title =
 
   li {
     margin-block: 1em;
+
     p {
       margin: 0;
 
@@ -305,6 +306,7 @@ const title =
       margin-block: 0 0.3rem;
       color: var(--primary-color);
     }
+
     p {
       margin-block: 0 0.5em;
     }
@@ -324,6 +326,7 @@ const title =
     .price {
       text-align: right;
       margin: 0;
+
       i {
         color: var(--text-color);
       }
