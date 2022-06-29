@@ -1,5 +1,5 @@
-export const productDescription = 'Gäste-Bestellsystem für Gastro-Betriebe'
-export const claim = 'Mehr Gäste mit weniger Personal schneller bedienen.'
+export const productDescription = 'Self-Order für Gastro'
+export const claim = 'Das magische Bestellerlebnis der nächsten Generation.'
 export const titlePart = `Gaston • ${productDescription} • ${claim}`
 
 export interface NavigationItem {
