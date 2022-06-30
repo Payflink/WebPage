@@ -3,6 +3,7 @@ lang: en
 layout: '@layouts/Blog.astro'
 title: 'The five most annoying things about eating in a restaurant'
 description: 'Virtually every restaurant has similar things that are annoying. In this post we will explore what these things are and why they are a problem.'
+author: Philip Schönholzer
 date: 2019-11-15
 ---
 

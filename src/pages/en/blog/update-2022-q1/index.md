@@ -4,6 +4,7 @@ title: 'Gaston Update: Ordering clearer for Guests and Restaurant Staff (22-01)'
 description: In the last few months, we delivered important functionality to make guest orders clearer for operators. In addition, it is now possible to inform the guests at Take Away via SMS when the order is ready.
 image: icon.png
 date: 2022-02-22
+author: Philip Schönholzer
 layout: '@layouts/Blog.astro'
 ---
 
@@ -17,7 +18,7 @@ For a long time we planned to be able to store opening hours in Gaston and to al
 
 If the restaurant wants, guests can order multiple "courses" at once. In this case, guests assign each order item to a course so that the staff understands when which dish is desired.
 
-![Assign order items to a course](courses.png)
+![Assign order items to a course](courses.png?width=350)
 
 ## Combine orders
 
