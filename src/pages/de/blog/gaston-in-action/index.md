@@ -42,7 +42,7 @@ In den folgenden Restaurants können Sie die vielfältigen Einsatzmöglichkeiten
 
 - **Sugoi Sushi**  
   ![Sugoi Sushi Logo](./sugoi-sushi.png)  
-  Das Sugoi Sushi in Neuhausen am Rheinfall erlaubt das Bestellen nicht bloss im Restaurant, sondern auch von Zuhause aus für Takeaway und Delivery. Beim Sugoi Sushi ist das Bestellen über Gaston mit Bezahlung vor Ort möglich.
+  Das Sugoi Sushi in Neuhausen am Rheinfall erlaubt das Bestellen nicht bloss im Restaurant, sondern auch von Zuhause aus für Take Away und Delivery. Beim Sugoi Sushi ist das Bestellen über Gaston mit Bezahlung vor Ort möglich.
 
 ## Die Vorteile von Gaston selber erfahren
 
