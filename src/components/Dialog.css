@@ -1,0 +1,41 @@
+:root {
+  --button-color: var(--background-color);
+}
+
+.dialog-layout {
+  display: grid;
+  grid:
+    '. close' auto
+    'content content' 1fr / 1fr auto;
+  height: 100%;
+}
+
+.close {
+  grid-area: close;
+  padding: 0.2em;
+  margin-bottom: -0.8em;
+}
+
+.close-button {
+  font-size: 2em;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.content {
+  grid-area: content;
+}
+
+@media (min-width: 768px) {
+  .dialog-layout {
+    grid: 'content close' / 1fr auto;
+  }
+}
+
+@media (min-height: 700px) and (min-width: 768px) {
+  dialog {
+    padding: 2em;
+  }
+}

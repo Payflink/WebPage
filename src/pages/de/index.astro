@@ -1,0 +1,452 @@
+---
+import { SEO } from 'astro-seo'
+
+import MainLayout from '@layouts/Main.astro'
+import Container from '@components/Container.astro'
+import ButtonLink from '@components/ButtonLink.astro'
+
+import FixedPicture from '@components/FixedPicture.astro'
+import Demo from '@components/Demo.astro'
+import { generalTitle, metaData } from 'src/config'
+
+const { de } = metaData
+
+const description =
+  'Gaston die digitale Speisekarte erlaubt es den Gästen schnell und einfach zu bestell und bezahlen. Dabei spielt es keine Rolle, ob die Gäste in ihrem Betrieb, unterwegs oder Zuhause sind. Gaston unterstützt die Bestellung in Ihrem Betrieb, Take Away und Delivery.'
+const title = generalTitle(metaData.de)
+---
+
+<head>
+  <SEO {title} {description} />
+</head>
+
+<MainLayout>
+  <Container>
+    <h1>
+      <b>{de.name}</b>
+      <br />
+      <small set:html={de.description} />
+    </h1>
+    <p class="claim">{de.claim}</p>
+    <div class="animation">
+      <img src="/assets/hero-gaston-vs-menu.svg"
+        alt="Bestellen mit Speisekarte mühsam, mit Gaston App schnell und einfach" height="150" width="204" />
+    </div>
+    <ul class="usps">
+      <li>Aussuchen, Bestellen, Bezahlen, ohne Personal.</li>
+      <li>Alle Kanäle bedienen: Inhouse, Take Away, Delivery.</li>
+      <li>Überall verfügbar: Auf dem Handy, Tablet und Ihrer Webseite.</li>
+      <li>Mit oder ohne Kasse, flexibel auf Ihre Bedürfnisse.</li>
+      <li>Ihr Betrieb, Ihr Style, auch in der App.</li>
+    </ul>
+
+    <div class="button-list">
+      <ButtonLink href="preise/">Gaston engagieren</ButtonLink>
+      <ButtonLink href="demo/">Demo starten</ButtonLink>
+    </div>
+  </Container>
+  <section id="customers">
+    <Container>
+      <h2>Auswahl unserer Kunden</h2>
+      <ul class="image-list">
+        <li>
+          <FixedPicture src="/src/images/customers/brauwerk-st-gallen.png" alt="Restaurant Brauwerk"
+            placeholder={'tracedSVG'} height={60} />
+        </li>
+        <li>
+          <FixedPicture src="/src/images/customers/el-mosquito.png" alt="El-Mosquito" placeholder={'tracedSVG'}
+            height={60} />
+        </li>
+        <li>
+          <FixedPicture src="/src/images/customers/gspan.jpg" alt="Hotel Gspan" placeholder={'tracedSVG'} height={60} />
+        </li>
+        <li>
+          <FixedPicture src="/src/images/customers/habsburg-bar.png" alt="Habsburg-Bar" placeholder={'tracedSVG'}
+            height={60} />
+        </li>
+        <li>
+          <FixedPicture src="/src/images/customers/lamassu.png" alt="Restaurant Lamassu" placeholder={'tracedSVG'}
+            height={60} />
+        </li>
+        <li>
+          <FixedPicture src="/src/images/customers/franz.png" alt="Restaurant Franz" placeholder={'tracedSVG'}
+            height={60} />
+        </li>
+        <li>
+          <FixedPicture src="/src/images/customers/seehaus-grill.png" alt="Seehaus-Grill" placeholder={'tracedSVG'}
+            height={60} />
+        </li>
+        <li>
+          <FixedPicture src="/src/images/customers/seehotel-kastanienbaum.png" alt="Seehotel Kastanienbaum"
+            placeholder={'tracedSVG'} height={60} />
+        </li>
+        <li>
+          <FixedPicture src="/src/images/customers/sugoi-sushi-300.png" alt="Sugoi Sushi" placeholder={'tracedSVG'}
+            height={60} />
+        </li>
+        <li>
+          <FixedPicture src="/src/images/customers/zurwerkstatt-sg.png" alt="Zur Werkstatt St. Gallen"
+            placeholder={'tracedSVG'} height={60} />
+        </li>
+      </ul>
+    </Container>
+  </section>
+
+  <section id="bestellen-mit-gaston" class="background">
+    <Container>
+      <div class="columns">
+        <div style="flex: 1">
+          <h2>In drei Schritten zum Genuss</h2>
+          <p>
+            Mit Gaston bestellen und bezahlen Gäste schnell und einfach. Keine
+            Anmeldung, kein Download.
+          </p>
+          <ButtonLink href="bestell-und-zahlungs-ablauf-gastro-betriebe">Mehr Infos
+          </ButtonLink>
+          <img src="/assets/illustrations/gaston-delivers.svg" class="gaston-image" alt="Gaston liefert">
+        </div>
+        <ol class="description-list ordered-list" style="flex: 1">
+          <li>
+            <h3 class="description-wrapper">QR-Code scannen</h3>
+            <div class="image-wrapper">
+              <img src="/assets/index/scan.svg" alt="QR-Code scannen" loading="lazy" height="150" width="130" />
+            </div>
+          </li>
+          <li>
+            <h3 class="description-wrapper">Bestellen</h3>
+            <div class="image-wrapper">
+              <img src="/assets/illustrations/order.svg" alt="Bestellen" loading="lazy" height="150" width="133" />
+            </div>
+          </li>
+          <li>
+            <h3 class="description-wrapper">Bezahlen</h3>
+            <div class="image-wrapper">
+              <img src="/assets/illustrations/pay.svg" alt="Bezahlen" loading="lazy" height="150" width="110" />
+            </div>
+          </li>
+        </ol>
+      </div>
+    </Container>
+  </section>
+
+  <section id="so-hilft-gaston">
+    <Container>
+      <div class="columns">
+        <div>
+          <h2>So hilft Gaston</h2>
+          <p>Gaston sorgt nicht nur für glückliche Gäste, sondern auch für zufriedenes Personal.</p>
+          <img src="/assets/illustrations/gaston-hilft.svg" alt="Gaston liefert" class="gaston-image">
+
+        </div>
+        <ul>
+          <li style="list-style: '🙅‍♂️  ';">
+            <h3>Personalmangel bewältigen</h3>
+            <p>Personal zu finden ist eine sehr grosse Herausforderung. Gaston übernimmt einen Teil der Service-Arbeit,
+              damit Ihr
+              Betrieb auch mit weniger Personal funktioniert.</p>
+          </li>
+          <li style="list-style: '😍  ';">
+            <h3>Gäste glücklich machen</h3>
+            <p>Ihre Gäste warten ungern. Mit Gaston können sie ohne
+              Wartezeit bestellen und bezahlen.</p>
+          </li>
+          <li style="list-style: '💁‍♀️  ';">
+            <h3>Mehr Zeit für Ihre Gäste</h3>
+            <p>Sie sind Gastgeber:in. Sie würden gerne so viel wie möglich "gastgeben". Gaston
+              nimmt einen Teil der Arbeit ab, damit Sie und Ihr Personal mehr Zeit haben, um auf die Bedürfnisse Ihrer
+              Gäste einzugehen.</p>
+          </li>
+        </ul>
+      </div>
+    </Container>
+  </section>
+
+  <section id="das-ist-gaston" class="background">
+    <Container>
+      <Demo />
+    </Container>
+  </section>
+
+  <section id="stylen-mit-gaston">
+    <Container>
+      <h2>Ihr Style </h2>
+      <p>
+        Ihr Betrieb hat einen einzigartigen Stil. Ihre Speisekarte
+        sollte dies reflektieren. Sie können das Aussehen jederzeit selber
+        anpassen und auch die Bilder und Grafiken für Kategorien und Artikel
+        selber pflegen.
+      </p>
+      <ul class="horizontal-list">
+        <li>
+          <FixedPicture src="/src/images/el-mosquito.png" alt="El-Mosquito" width={300} />
+        </li>
+        <li>
+          <FixedPicture src="/src/images/habsburg.png" alt="Habsburg-Bar" width={300} />
+        </li>
+        <li>
+          <FixedPicture src="/src/images/sugoisushi.png" alt="Sugoi Sushi" width={300} />
+        </li>
+      </ul>
+    </Container>
+  </section>
+
+  <section id="verkaufskanäle" class="background">
+    <Container>
+      <h2>Verkaufskanäle</h2>
+      <p>
+        Gaston kann in ganz unterschiedlichen Situationen eingesetzt werden. Gäste
+        können direkt in Ihrem Restaurant vom Tisch aus, von Zuhause oder unterwegs bestellen für:
+      </p>
+      <ul class="horizontal-list">
+        <li>
+          <div>
+            <img src="/assets/index/inhouse.svg" alt="Im Betrieb" loading="lazy" height="150" width="154" />
+            <p>Inhouse <small>Im Betrieb am Tisch</small></p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/assets/index/take-away.svg" alt="Take Away" loading="lazy" height="150" width="182" />
+            <p>Take Away</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/assets/index/delivery.svg" alt="Delivery" loading="lazy" height="150" width="134" />
+            <p>Delivery</p>
+          </div>
+        </li>
+      </ul>
+      <p>Sind Sie nicht sicher, ob Gaston Ihr Szenario abdeckt? Nehmen Sie mit uns <a href="contact/">Kontakt</a> auf.
+      </p>
+    </Container>
+  </section>
+
+  <section id="geräte">
+    <Container>
+      <h2>Läuft überall</h2>
+      <p>
+        Gaston läuft auf fast allen Geräten, ohne Installation für Ihre Gäste.
+      </p>
+      <ul class="horizontal-list same-height">
+        <li>
+          <div>
+            <img src="/assets/illustrations/smartphone.svg" alt="Handy" loading="lazy" height="150" width="154" />
+            <p>Handys Ihrer Gäste</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/assets/illustrations/webpage.svg" alt="Take Away" loading="lazy" height="150" width="182" />
+            <p>Ihre Webseite</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/assets/illustrations/tablet.svg" alt="Delivery" loading="lazy" height="150" width="134" />
+            <p>Tablets</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/assets/illustrations/display.svg" alt="Delivery" loading="lazy" height="150" width="134" />
+            <p>Kiosk Displays</p>
+          </div>
+        </li>
+      </ul>
+    </Container>
+  </section>
+
+  <section id="roadmap-von-gaston" class="background">
+    <Container>
+      <h2>Roadmap</h2>
+      <p>
+        Gaston wird ständig weiterentwickelt. Auf unserer Roadmap sehen Sie,
+        welche Features als Nächstes verfügbar werden. Haben Sie einen speziellen
+        Wunsch? Wir nehmen diesen gerne in die Roadmap auf.
+      </p>
+      <ButtonLink href="https://www.notion.so/gastonsolution/Roadmap-von-Gaston-6644875d1fba4fe58cacfbf15e1ace7e">
+        Zur Roadmap
+      </ButtonLink>
+    </Container>
+  </section>
+
+  <section id="partner-von-gaston">
+    <Container>
+      <h2>Unsere Partner</h2>
+      <ul class="image-list high">
+        <li>
+          <a href="https://www.flm.ch/">
+            <FixedPicture src="/src/images/partners/flm.png" alt="FLM Kassensysteme" height={180} layout={'fixed'} />
+            <p>FLM Kassensysteme</p>
+          </a>
+        </li>
+      </ul>
+    </Container>
+  </section>
+
+  <section class="background">
+    <Container>
+      <div class="button-list">
+        <ButtonLink href="preise/">Gaston engagieren</ButtonLink>
+        <ButtonLink href="demo/">Demo starten</ButtonLink>
+      </div>
+    </Container>
+  </section>
+</MainLayout>
+
+<style lang="scss">
+  section {
+    padding-block: 0 4em;
+
+    &.background {
+      padding-block: 2em 4em;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 4em;
+    margin: 0.5em 0;
+    line-height: 0.6em;
+
+    small {
+      font-size: 40%;
+      color: var(--text-color);
+    }
+  }
+
+  hr {
+    margin-block: 3em;
+    border: none;
+
+    @media (min-width: 40rem) {
+      border-top-width: 1px;
+      border-top-style: solid;
+      border-top-color: var(--primary-color);
+
+      .background & {
+        border-top-color: white;
+      }
+    }
+  }
+
+  .claim {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .animation {
+    margin: 0 max(-4em, -4vw) 0.2em;
+
+    img {
+      height: 100%;
+      width: 100%;
+      max-height: calc(90vh - 4rem);
+    }
+  }
+
+  .usps {
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+    list-style: none;
+    padding-left: 1em;
+
+    li {
+      padding-left: 1em;
+      padding-bottom: 0.6em;
+
+      &::before {
+        content: '● ';
+        position: absolute;
+        font-size: 1.6em;
+        transform: translate(-1em, -0.3em);
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  .gaston-image {
+    display: block;
+    max-height: 16rem;
+    margin-inline: auto;
+    margin-block: 2em;
+  }
+
+  .button-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em 1em;
+    font-size: 1.3em;
+    margin-top: 4em;
+    margin-bottom: 1em;
+  }
+
+  ul.image-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em 4em;
+    padding: 0;
+    margin-top: 4em;
+
+    li {
+      list-style: none;
+      margin-inline: auto;
+
+      ::global(img) {
+        width: 100%;
+      }
+
+      p {
+        margin-top: 0.2em;
+        text-align: center;
+      }
+    }
+
+    &.high {
+      li ::global(img) {
+        height: 180px;
+        width: 100%;
+      }
+    }
+  }
+
+  .same-height img {
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    max-height: 200px;
+    margin-inline: auto;
+    padding-block-start: 1em;
+  }
+
+  .background {
+    --primary-color: white;
+    position: relative;
+    color: white;
+    z-index: 5;
+
+    &::before {
+      content: ' ';
+      position: absolute;
+      inset: -1em 0;
+      background-image: linear-gradient(rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 0)),
+        url(/assets/curve.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      z-index: -1;
+    }
+  }
+
+  #payment {
+    .description-wrapper {
+      font-size: 0.7em;
+    }
+  }
+</style>

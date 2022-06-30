@@ -1,0 +1,49 @@
+---
+import { SEO } from 'astro-seo'
+
+import Main from './Main.astro'
+import Container from '@components/Container.astro'
+import { generalTitle, metaData } from 'src/config'
+
+const { content } = Astro.props
+const { title: blogTitle, description, lang, date, author } = content
+const title = `${blogTitle} • Blog • ${generalTitle(metaData[lang])}`
+---
+
+<head>
+  <SEO {title} {description} />
+</head>
+
+<Main>
+  <Container size="small">
+    <h1>{blogTitle}</h1>
+    <p class="publish-date">
+      {lang === 'de' ? 'Veröffentlicht am' : 'Published on'}
+      <b>{new Date(date).toLocaleDateString('de-CH')}</b>
+      {lang === 'de' ? 'von' : 'by'}
+      <b>{author}</b>
+    </p>
+    <slot />
+  </Container>
+</Main>
+
+<style lang="scss" is:global>
+  li {
+    margin-bottom: 0.8em;
+
+    &::marker {
+      font-size: 1em !important;
+    }
+  }
+</style>
+<style lang="scss">
+  h1 {
+    margin-bottom: 0;
+    line-height: 1em;
+  }
+
+  .publish-date {
+    font-size: 0.8em;
+    margin-bottom: 3em;
+  }
+</style>

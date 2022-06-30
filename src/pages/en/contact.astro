@@ -1,0 +1,32 @@
+---
+import { SEO } from 'astro-seo'
+import Main from '@layouts/Main.astro'
+import Container from '@components/Container.astro'
+import { generalTitle, metaData } from 'src/config'
+
+const { en } = metaData
+
+const description =
+  'Do you have a question about Gaston, the digital menu? We are happy to help you.'
+const title = `Contact • ${generalTitle(en)}`
+---
+
+<Main>
+  <SEO {title} {description} />
+  <Container>
+    <h1>Contact</h1>
+    <h2>Gaston by Apptiva</h2>
+    <h3>Email</h3>
+    <p>support@gastonsolution.com</p>
+    <h3>Inquiries</h3>
+    <p>+41 41 322 26 26</p>
+    <h3>Support</h3>
+    <p>+41 41 562 01 11</p>
+    <h3>Address</h3>
+    <address>
+      Neuenkirchstrasse 19 <br />
+      6203 Sempach Station <br />
+      Switzerland
+    </address>
+  </Container>
+</Main>

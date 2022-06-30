@@ -1,0 +1,45 @@
+---
+import { SEO } from 'astro-seo'
+
+import Main from '@layouts/Main.astro'
+import Container from '@components/Container.astro'
+import { generalTitle, metaData } from 'src/config'
+
+const { en } = metaData
+
+const blogs = await Astro.glob('./blog/**/*.md')
+const data = blogs
+  .sort(
+    (a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date)
+  )
+  .filter((blog) => blog.frontmatter.lang === 'en')
+
+const description =
+  'News from Gaston'
+const title =
+  `Blog • ${generalTitle(en)}`
+---
+
+<head>
+  <SEO {title} {description} />
+</head>
+
+<Main>
+  <Container size="small">
+    <h1>Blog</h1>
+    {data.map((post) => (
+    <article>
+      <a href={post.url}>
+        <h2>{post.frontmatter.title}</h2>
+      </a>
+      <p>{post.frontmatter.description}</p>
+    </article>
+    ))}
+  </Container>
+</Main>
+
+<style lang="scss">
+  article {
+    margin: 4em 0;
+  }
+</style>

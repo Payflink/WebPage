@@ -2,6 +2,7 @@ with import <nixpkgs> {};
 
 mkShell {
     buildInputs = [
-        nodejs-14_x
+        nodejs-16_x
+        nodePackages.pnpm
     ];
 }

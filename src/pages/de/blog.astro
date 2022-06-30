@@ -1,0 +1,70 @@
+---
+import { SEO } from 'astro-seo'
+
+import Main from '@layouts/Main.astro'
+import Container from '@components/Container.astro'
+import { generalTitle, metaData } from 'src/config'
+
+const { de } = metaData
+
+type FrontMatter = {
+  lang: 'de' | 'en',
+  title: string,
+  description: string,
+  image: string,
+  date: string,
+  author: string,
+}
+const blogs = await Astro.glob<FrontMatter>('./blog/**/*.md')
+const data = blogs
+  .sort(
+    (a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date)
+  )
+  .filter((blog) => blog.frontmatter.lang === 'de')
+
+const description =
+  'Der neuste Klatsch und Tratsch, den Gaston aufgeschnappt hat.'
+const title =
+  `Blog • ${generalTitle(de)}`
+---
+
+<head>
+  <SEO {title} {description} />
+</head>
+
+<Main title="Blog • Gaston">
+  <Container size="small">
+    <h1>Blog</h1>
+    {data.map((post) => (
+    <article>
+      <a href={post.url}>
+        <h2>{post.frontmatter.title}</h2>
+      </a>
+      <p>{post.frontmatter.description}</p>
+      <p class="meta">{new Date(post.frontmatter.date).toLocaleDateString('de')} - {post.frontmatter.author}</p>
+    </article>
+    ))}
+  </Container>
+</Main>
+
+<style lang="scss">
+  article {
+    margin: 4em 0;
+  }
+
+  h2 {
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+  }
+
+  p {
+    margin-block: 0.5em;
+  }
+
+  .meta {
+    color: gray;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+</style>

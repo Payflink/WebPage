@@ -1,0 +1,27 @@
+---
+export interface Props {
+  size?: 'small' | 'normal' | 'large'
+}
+
+const { size = 'normal' } = Astro.props
+---
+
+<div class={size}><slot /></div>
+
+<style lang="scss">
+  .small {
+    --max-width: 640px;
+  }
+  .large {
+    --max-width: 1240px;
+  }
+  div {
+    margin: 0 auto;
+    max-width: var(--max-width, 60rem);
+    padding: 1em;
+
+    @media (min-width: 40rem) {
+      padding: 2em;
+    }
+  }
+</style>

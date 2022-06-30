@@ -1,0 +1,227 @@
+---
+import Dialog from '@components/Dialog.tsx'
+import FixedPicture from './FixedPicture.astro'
+
+---
+
+<div class="columns" style="align-items: start;">
+  <div style=" flex: 1;">
+    <h2>Das ist Gaston</h2>
+    <p>So sehen Ihre Gäste Gaston, direkt auf dem Handy oder auf Ihrer Webseite. Schlicht, einfach, zuvorkommend. Alles
+      ohne Installation einer App und ohne Registrierung.
+    </p>
+    <p>Sie gestalten Ihre Speisekarte nach Ihrem Gusto, farbenfroh und mit Bilder oder einfach nur mit Text.</p>
+
+    <div class="arrow">
+      <svg viewBox="0 0 600 105" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+        style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5">
+        <path
+          d="M21.844 50.749c82.357 54.851 426.418 45.827 552.664-9.381 14.013-6.128-41.45-29.969-31.811-39.348 9.232-8.983 55.867 36.164 55.867 36.164s-6.209 71.094-20.957 62.459c-8.764-5.131 15.936-53.172 1.542-47.934C364.09 130.973 75.189 103.962 10.588 69.6-9.091 59.133 3.419 38.478 21.844 50.749Z"
+          style="stroke-width:0" />
+      </svg>
+    </div>
+    <p style="font-size: 2em;">Hier ausprobieren!</p>
+  </div>
+  <div style="flex: 1; margin-block: 2em;">
+    <div class="mobile-wrapper">
+      <iframe src="https://demo.gastonsolution.com/811f84b2-15f8-440d-8074-58ce5cce13f8/?table=7"
+        frameborder="0"></iframe>
+      <div class="overlay">
+        <Dialog client:visible>
+          <button aria-label="Demo Starten"
+            style="position: absolute; height: 100%; width: 100%; border: none; background: transparent; cursor: pointer; text-decoration: none;"
+            slot="openElement" />
+          <div class="full-screen-demo">
+            <div class="description">
+              <div class="desktop">
+                <h3>Gaston Demo</h3>
+                <p>Bei dieser Demo handelt es sich um ein Testsystem. Hier finden <b>keine echten Bestellungen
+                    oder
+                    Zahlungen</b> statt. Testen Sie Gaston entsprechend nach Lust und Laune.</p>
+                <ol>
+                  <li>Fügen Sie etwas zur Bestellung hinzu.</li>
+                  <li>Senden Sie die Bestellung ab.</li>
+                  <li>Klicken Sie bei der Zahlung z.B. auf Twint. Keine Angst, es findet keine echte Transaktion
+                    statt und
+                    entsprechend <b>wird kein Geld abgebucht.</b>
+                  </li>
+                </ol>
+                <div class="large">
+                  <h3>Auf Ihrem Handy testen</h3>
+                  <FixedPicture alt="QR-Code" src="/src/images/qr-code-table-7.jpg" height={100} />
+                </div>
+              </div>
+              <div class="mobile">
+                <h3>Gaston Demo</h3>
+                <p>Wählen Sie bei der Zahlung z.B. Twint. Es wird kein Geld abgebucht.</p>
+              </div>
+            </div>
+            <div class="gaston-wrapper">
+              <iframe src="https://demo.gastonsolution.com/811f84b2-15f8-440d-8074-58ce5cce13f8/?table=7"
+                frameborder="0"></iframe>
+            </div>
+          </div>
+        </Dialog>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style lang="scss">
+  h3 {
+    font-size: 1.5em;
+    color: var(--primary-color);
+
+    .background & {
+      color: white;
+    }
+
+    @media (min-width: 40rem) {
+      font-size: 2em;
+    }
+  }
+
+  ol {
+    li::marker {
+      font-size: 2em;
+    }
+  }
+
+  .arrow {
+    z-index: 5;
+    position: relative;
+    filter: drop-shadow(2px 4px 10px #0008);
+    pointer-events: none;
+    fill: var(--primary-color);
+
+    @media (min-width: 768px) {
+      transform: translateX(min(20vw, 16rem));
+    }
+
+    @media (max-width: 767px) {
+      transform: rotate(90deg) translateX(100%) scaleY(-1.4);
+      max-width: 70%;
+      transform-origin: right;
+      right: -15px;
+    }
+  }
+
+  .mobile-wrapper {
+    position: relative;
+    max-block-size: 80vh;
+    margin-inline: auto;
+    aspect-ratio: 0.60;
+    border-inline-width: 0.6em;
+    border-block-width: 1em;
+    border-style: solid;
+    border-color: #222;
+    border-radius: 2em;
+    overflow: hidden;
+    background-color: #222;
+    box-shadow: 0px 10px 30px -9px #0008;
+
+    iframe {
+      display: block;
+      position: absolute;
+      inset: 0;
+      block-size: 100%;
+      inline-size: 100%;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+    }
+  }
+
+  .full-screen-demo {
+    display: flex;
+    flex-direction: column;
+    gap: 1em 2em;
+    height: 100%;
+    text-align: left;
+
+    h3 {
+      margin-block-start: 0;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+
+  }
+
+  .large {
+
+    h3 {
+      margin-block: 2em 1em;
+    }
+
+    @media (max-width: 1080px),
+    (max-height: 800px) {
+      display: none;
+    }
+  }
+
+  .description {
+    color: var(--light-background-color);
+
+    .desktop {
+      padding-inline: 0.8em;
+    }
+
+    .mobile {
+
+      padding-inline: 0.8em;
+
+      h3,
+      p {
+        display: inline;
+      }
+
+      p {
+        font-size: 0.8em;
+        margin-left: 0.5em;
+      }
+    }
+
+    @media (min-width: 768px) {
+      flex: 0 5 30rem;
+
+    }
+  }
+
+  .gaston-wrapper {
+    position: relative;
+    flex: 1;
+    max-inline-size: 100%;
+    aspect-ratio: 0.60;
+    margin-inline: auto;
+    border-inline-width: 0.6em;
+    border-block-width: 1em;
+    border-style: solid;
+    border-color: black;
+    border-radius: 2em;
+    overflow: hidden;
+    background-color: #363636;
+    box-shadow: 0px 10px 30px -9px #0008;
+
+    @media (min-width: 768px) {
+      block-size: 100%;
+      inline-size: auto;
+      flex: 0 1 auto;
+    }
+
+    iframe {
+      display: block;
+      position: absolute;
+      inset: 0;
+      block-size: 100%;
+      inline-size: 100%;
+    }
+  }
+</style>

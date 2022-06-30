@@ -1,0 +1,177 @@
+---
+import { SEO } from 'astro-seo'
+
+import MainLayout from '@layouts/Main.astro'
+import Container from '@components/Container.astro'
+import ButtonLink from '@components/ButtonLink.astro'
+import FixedPicture from '@components/FixedPicture.astro'
+import { generalTitle, metaData } from 'src/config'
+
+const { en } = metaData
+
+const description =
+  "Gaston the digital menu allows guests to order and pay quickly and easily. It doesn't matter if the guests are in their establishment, on the road or at home. Gaston supports ordering in your business, Take Away and delivery."
+const title = generalTitle(en)
+---
+
+<MainLayout>
+  <SEO {title} {description} />
+  <Container>
+    <h1>
+      <b>Gaston</b>
+      <br />
+      <small>Self-Order|Pay for Gastronomy</small>
+    </h1>
+    <p class="claim">Welcome to the next level of hospitality.</p>
+    <div class="animation">
+      <img src="/assets/hero-gaston-vs-menu-en.svg" alt="Ordering with menu tedious, with Gaston app quick and easy"
+        height="150" width="204" />
+    </div>
+    <ul class="usps">
+      <li>Select, order, pay without staff.</li>
+      <li>Serve all channels: In-house, Take Away, Delivery.</li>
+      <li>Available everywhere: On mobile, tablet and your website.</li>
+      <li>With or without cash register, flexible to your needs.</li>
+      <li>Your company, your style; also in the app.</li>
+    </ul>
+
+    <div class="button-list">
+      <ButtonLink href="contact/">Order now</ButtonLink>
+      <ButtonLink href="demo/">Start demo</ButtonLink>
+    </div>
+  </Container>
+  <section id="customers">
+    <Container>
+      <h2>Some of our customers</h2>
+      <ul class="image-list">
+        <li>
+          <FixedPicture src="/src/images/customers/brauwerk-st-gallen.png" alt="Restaurant Brauwerk"
+            placeholder={'tracedSVG'} height={60} />
+        </li>
+        <li>
+          <FixedPicture src="/src/images/customers/el-mosquito.png" alt="El-Mosquito" placeholder={'tracedSVG'}
+            height={60} />
+        </li>
+        <li>
+          <FixedPicture src="/src/images/customers/gspan.jpg" alt="Hotel Gspan" placeholder={'tracedSVG'} height={60} />
+        </li>
+        <li>
+          <FixedPicture src="/src/images/customers/habsburg-bar.png" alt="Habsburg-Bar" placeholder={'tracedSVG'}
+            height={60} />
+        </li>
+        <li>
+          <FixedPicture src="/src/images/customers/lamassu.png" alt="Restaurant Lamassu" placeholder={'tracedSVG'}
+            height={60} />
+        </li>
+        <li>
+          <FixedPicture src="/src/images/customers/franz.png" alt="Restaurant Franz" placeholder={'tracedSVG'}
+            height={60} />
+        </li>
+        <li>
+          <FixedPicture src="/src/images/customers/seehaus-grill.png" alt="Seehaus-Grill" placeholder={'tracedSVG'}
+            height={60} />
+        </li>
+        <li>
+          <FixedPicture src="/src/images/customers/seehotel-kastanienbaum.png" alt="Seehotel Kastanienbaum"
+            placeholder={'tracedSVG'} height={60} />
+        </li>
+        <li>
+          <FixedPicture src="/src/images/customers/sugoi-sushi-300.png" alt="Sugoi Sushi" placeholder={'tracedSVG'}
+            height={60} />
+        </li>
+        <li>
+          <FixedPicture src="/src/images/customers/zurwerkstatt-sg.png" alt="Zur Werkstatt St. Gallen"
+            placeholder={'tracedSVG'} height={60} />
+        </li>
+      </ul>
+    </Container>
+  </section>
+
+  <Container>
+    <div class="button-list">
+      <ButtonLink href="contact/">Order now</ButtonLink>
+      <ButtonLink href="demo/">Start demo</ButtonLink>
+    </div>
+  </Container>
+</MainLayout>
+
+<style lang="scss">
+  h1 {
+    text-align: center;
+    font-size: 4em;
+    margin: 0.5em 0;
+    line-height: 0.6em;
+
+    small {
+      font-size: 40%;
+      color: var(--text-color);
+    }
+  }
+
+  .claim {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .animation {
+    position: relative;
+    margin: 0 max(-4em, -4vw) 0.2em;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .usps {
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+    list-style: none;
+    padding-left: 1em;
+
+    li {
+      padding-left: 1em;
+      padding-bottom: 0.6em;
+
+      &::before {
+        content: '● ';
+        position: absolute;
+        font-size: 1.6em;
+        transform: translate(-1em, -0.3em);
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  .button-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em 1em;
+    font-size: 1.3em;
+    margin-top: 4em;
+    margin-bottom: 1em;
+  }
+
+  ul.image-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em 4em;
+    padding: 0;
+    margin-top: 4em;
+
+    li {
+      list-style: none;
+      margin-inline: auto;
+
+      ::global(img) {
+        height: 60px;
+        width: 100%;
+      }
+
+    }
+  }
+</style>

@@ -1,0 +1,96 @@
+---
+import { SEO } from 'astro-seo'
+
+import Main from '@layouts/Main.astro'
+import Container from '@components/Container.astro'
+import { generalTitle, metaData } from 'src/config'
+
+const { de } = metaData
+
+const description =
+  'Das Team von Gaston wird täglich in den Restaurants motiviert... endlich bestellen und bezahlen zu dürfen.'
+const title = `Team • ${generalTitle(de)}`
+
+const employees = [
+  {
+    name: 'Patrik Stutz',
+    position: 'Software-Entwickler',
+    image: '/assets/team/patrik-stutz-prev.jpg',
+  },
+  {
+    name: 'Philip Schönholzer',
+    position: 'Produkt-Entwickler',
+    image: '/assets/team/philip-schoenholzer-prev.jpg',
+  },
+  {
+    name: 'Roman Schaller',
+    position: 'Software-Entwickler',
+    image: '/assets/team/roman-schaller-prev.jpg',
+  },
+  {
+    name: 'Linus Hüsler',
+    position: 'Beratung',
+    image: '/assets/team/linus-huesler-prev.jpg',
+  },
+  {
+    name: 'Markus Tanner',
+    position: 'Beratung',
+    image: '/assets/team/markus-tanner-prev.jpg',
+  },
+  {
+    name: 'David Decker',
+    position: 'Praktikant',
+    image: '/assets/team/david-decker-prev.jpg',
+  },
+]
+---
+
+<head>
+  <SEO {title} {description} />
+</head>
+
+<Main>
+  <Container>
+
+    <h1>Unser Team</h1>
+    <p>Das Team von Gaston wird täglich in den Restaurants motiviert... endlich bestellen und bezahlen zu dürfen.</p>
+    <div class="employee-list">
+      {employees.map(({ name, image, position }) => (
+      <div class="employee">
+        <img loading="lazy" src={image} alt={name} width="192" height="192" />
+        <p>
+          <span class="employee-name">{name}</span>
+          <br />
+          {position}
+        </p>
+      </div>
+      ))}
+    </div>
+  </Container>
+</Main>
+
+<style lang="scss">
+  .employee-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2em;
+  }
+
+  .employee {
+    width: 16rem;
+    text-align: center;
+
+    img {
+      border-radius: 1000px;
+      box-shadow: 0 0 60px 0px #ccc6;
+    }
+  }
+
+  .employee-name {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0px;
+  }
+</style>
