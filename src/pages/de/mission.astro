@@ -3,11 +3,13 @@ import { SEO } from 'astro-seo'
 
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
-import { titlePart } from 'src/config'
+import { generalTitle, metaData } from 'src/config'
+
+const { de } = metaData
 
 const description =
   'Gaston wurde 2019 mit der Vision gegründet, den Bestellungs- und Bezahlungsprozess in Restaurants, Cafés und Bars zu revolutionieren.'
-const title = `Unsere Mission • ${titlePart}`
+const title = `Unsere Mission • ${generalTitle(de)}`
 
 ---
 

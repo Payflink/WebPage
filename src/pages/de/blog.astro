@@ -3,7 +3,9 @@ import { SEO } from 'astro-seo'
 
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
-import { titlePart } from 'src/config'
+import { generalTitle, metaData } from 'src/config'
+
+const { de } = metaData
 
 type FrontMatter = {
   lang: 'de' | 'en',
@@ -23,7 +25,7 @@ const data = blogs
 const description =
   'Der neuste Klatsch und Tratsch, den Gaston aufgeschnappt hat.'
 const title =
-  `Blog • ${titlePart}`
+  `Blog • ${generalTitle(de)}`
 ---
 
 <head>

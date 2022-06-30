@@ -7,11 +7,13 @@ import ButtonLink from '@components/ButtonLink.astro'
 
 import FixedPicture from '@components/FixedPicture.astro'
 import Demo from '@components/Demo.astro'
-import { claim, productDescription, titlePart } from 'src/config'
+import { generalTitle, metaData } from 'src/config'
+
+const { de } = metaData
 
 const description =
   'Gaston die digitale Speisekarte erlaubt es den Gästen schnell und einfach zu bestell und bezahlen. Dabei spielt es keine Rolle, ob die Gäste in ihrem Betrieb, unterwegs oder Zuhause sind. Gaston unterstützt die Bestellung in Ihrem Betrieb, Take-Away und Delivery.'
-const title = titlePart
+const title = generalTitle(metaData.de)
 ---
 
 <head>
@@ -21,11 +23,11 @@ const title = titlePart
 <MainLayout>
   <Container>
     <h1>
-      <b>Gaston</b>
+      <b>{de.name}</b>
       <br />
-      <small set:html={productDescription} />
+      <small set:html={de.description} />
     </h1>
-    <p class="claim">{claim}</p>
+    <p class="claim">{de.claim}</p>
     <div class="animation">
       <img src="/assets/hero-gaston-vs-menu.svg"
         alt="Bestellen mit Speisekarte mühsam, mit Gaston App schnell und einfach" height="150" width="204" />

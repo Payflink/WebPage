@@ -3,10 +3,12 @@ import { SEO } from 'astro-seo'
 
 import Container from "@components/Container.astro";
 import Main from "@layouts/Main.astro"
-import { titlePart } from 'src/config';
 import { Picture } from 'astro-imagetools/components';
+import { generalTitle, metaData } from 'src/config'
 
-const title = `Funktionsumfang • ${titlePart}`
+const { de } = metaData
+
+const title = `Funktionsumfang • ${generalTitle(de)}`
 const description = 'Gaston bietet einen sehr grossen Leistungsumfang und ist äussert flexible. So stellen wir sicher, dass Gaston auf unterschiedliche Betrieb optimal ausgerichtet ist.'
 ---
 
