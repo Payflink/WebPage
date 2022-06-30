@@ -26,9 +26,10 @@
       animation: appear 10s ease-out infinite;
     }
     .description {
-      font-family: "Merriweather Sans", open-sans, sans-serif; 
+      font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif; 
       font-size: 60px;
       font-weight: 800;
+      fill: #4c4c4c;
     }
     @keyframes waving {
       2% {
