@@ -4,6 +4,7 @@ title: Gaston im Einsatz
 description: Seit einiger Zeit ist Gaston nun in unterschiedlichen Restaurants im täglichen Einsatz. Zu unserer grossen Freude sind die Gäste wie auch die Gastgeber sehr zufrieden mit Gaston.
 image: icon.png
 date: 2021-06-28
+author: Philip Schönholzer
 layout: '@layouts/Blog.astro'
 ---
 

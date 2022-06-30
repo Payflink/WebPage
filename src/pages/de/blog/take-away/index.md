@@ -4,6 +4,7 @@ title: Wir reagieren auf die aktuelle Situation
 description: Restaurants wurden mit der Corona-Krise empfindlich getroffen. Mit dem Lockdown brach vom einen Moment zum anderen jeglicher Umsatz weg. Gaston hilft mit Take Away und oder Delivery die Gäste trotzdem zu bedienen.
 image: /assets/blog/new-take-away/take-away.png
 date: 2020-04-21
+author: Roman Schaller & Patrik Stutz
 layout: '@layouts/Blog.astro'
 ---
 

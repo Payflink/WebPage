@@ -3,6 +3,7 @@ lang: de
 layout: '@layouts/Blog.astro'
 title: 'Die fünf nervigsten Dinge beim Essen in einem Restaurant'
 description: 'Praktisch in jedem Restaurant gibt es ähnliche Dinge, die ärgerlich sind. In diesem Beitrag wollen wir untersuchen, was diese Dinge sind und warum sie ein Problem darstellen.'
+author: Philip Schönholzer
 date: 2019-11-15
 
 ---
