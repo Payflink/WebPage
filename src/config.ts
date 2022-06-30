@@ -1,5 +1,5 @@
-export const productDescription = 'Self-Order für Gastro'
-export const claim = 'Das magische Bestellerlebnis der nächsten Generation.'
+export const productDescription = 'Self‒Order|Pay für Gastro'
+export const claim = 'Willkommen auf dem nächsten Level des Gastgebens.'
 export const titlePart = `Gaston • ${productDescription} • ${claim}`
 
 export interface NavigationItem {
@@ -72,19 +72,8 @@ const navigationDe: NavigationTree = [
 
 const navigationEn: NavigationTree = [
   {
-    title: 'Product',
-    items: [
-      {
-        title: 'Demo',
-        href: '/en/demo/',
-        description: 'Make an order and learn about the payment process.',
-      },
-      {
-        title: 'Prices',
-        href: '/en/prices/',
-        description: 'Choose your plan.',
-      },
-    ],
+    title: 'Demo',
+    href: '/en/demo/',
   },
   {
     title: 'About',
