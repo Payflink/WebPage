@@ -1,4 +1,4 @@
-export const productDescription = 'Self‒Order|Pay für Gastro'
+export const productDescription = 'Self-Order|Pay für Gastro'
 export const claim = 'Willkommen auf dem nächsten Level des Gastgebens.'
 export const titlePart = `Gaston • ${productDescription} • ${claim}`
 
