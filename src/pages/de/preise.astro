@@ -22,7 +22,7 @@ const title =
     <h1>Preise</h1>
     <div class="plans-container">
       <div class="plan">
-        <h2>Starter</h2>
+        <h2>Basic</h2>
         <p class="plan-subtitle">Sie wollen Gaston vor allem als Speisekarte einsetzen.</p>
         <ul>
           <li>
@@ -30,13 +30,11 @@ const title =
           </li>
           <li>
             <p>
-              Für Inhouse, Take-Away und Delivery Bestellungen entgegennehmen
+              Für Inhouse, Take Away und Delivery Bestellungen entgegennehmen
             </p>
-            <p class="small price">5,9% / Bestellung *</p>
           </li>
           <li>
             <p>Zahlung über Gaston möglich</p>
-            <p class="small price">5,9% / Zahlung, falls die Bestellung nicht über Gaston stattgefunden hat *</p>
           </li>
           <li>
             <p>1 Sprache</p>
@@ -57,9 +55,10 @@ const title =
             <p>Telefonischer Support zu Bürozeiten</p>
           </li>
         </ul>
-        <p class="price">Keine monatlichen Gebühren</p>
+        <p><span class="price">5,9% *</span> <br><small>/ Bestellung & Zahlung</small></p>
+        <p class="price">Keine Grundgebühren</p>
         <Center>
-          <ButtonLink href="starter">Starter anfragen</ButtonLink>
+          <ButtonLink href="starter">Basic anfragen</ButtonLink>
         </Center>
       </div>
       <div class="plan" data-recommended="Häufig gewählt">
@@ -67,7 +66,7 @@ const title =
         <p class="plan-subtitle">Sie planen regelmässige Umsätze mit Gaston.</p>
         <ul>
           <li>
-            <p>Alle Leistungen von Starter</p>
+            <p>Alle Leistungen von Basic</p>
           </li>
           <li>
             <p>Bon-Drucker, um Bestellungen auszudrucken</p>
@@ -99,8 +98,8 @@ const title =
       </div>
 
       <div class="plan">
-        <h2>Delux</h2>
-        <p class="plan-subtitle">Alle Funktionen von Gaston inbegriffen.</p>
+        <h2>Deluxe</h2>
+        <p class="plan-subtitle">Alle Funktionen von Gaston.</p>
         <ul>
           <li>
             <p>Alle Leistungen von Pro</p>
@@ -121,9 +120,9 @@ const title =
             <p>Erreichbar auf Ihrer Domäne/URL</p>
           </li>
           <li>
-            <p>Whitelabel</p>
+            <p>White Label</p>
             <p class="small">
-              Gaston Produktmarke ist nicht sichtbar.
+              Gaston Label ist nicht sichtbar.
             </p>
           </li>
           <li>
@@ -132,14 +131,14 @@ const title =
         </ul>
         <p><span class="price">CHF 699.- *</span> <br><small>/ Monat / Betrieb</small></p>
         <Center>
-          <ButtonLink href="delux">Delux anfragen</ButtonLink>
+          <ButtonLink href="delux">Deluxe anfragen</ButtonLink>
         </Center>
       </div>
 
       <div class="plan pos">
         <h2>Enterprise</h2>
         <p class="plan-subtitle">
-          Sie wollen Gaston in mehreren Betrieben zum Einsatz bringen.
+          Sie wollen Gaston in mehreren Betrieben einsetzen.
         </p>
         <ul>
           <li>
@@ -164,13 +163,23 @@ const title =
     </p>
   </Container>
   <Container size="small">
-    <h2>Leistungen einzeln dazubuchbar</h2>
+    <h2>Einzeln dazu erhältliche Leistungen</h2>
+
+    <div class="feature">
+      <div class="heading">
+        <h3>Ihre Domäne/URL</h3>
+      </div>
+      <p>
+        Gaston ist auf Ihrer Domäne/URL erreichbar.
+      </p>
+      <p class="price">+ CHF 29.- <small>/ Monat / Betrieb</small></p>
+    </div>
 
     <div class="feature">
       <div class="heading">
         <h3>Weitere Bon-Drucker</h3>
       </div>
-      <p>Bon-Drucker, um die Bestellungen auszudrucken.</p>
+      <p>Bon-Drucker um die Bestellungen auszudrucken.</p>
       <p class="price">
         + CHF 39.- <small>/ Monat / Ducker</small>
       </p>
@@ -193,9 +202,9 @@ const title =
         unterschiedlich sein.
       </p>
       <p>
-        Die ist ideal für Happy-Hour oder um das Angebot auf die Küche
-        abzustimmen. Damit ist es auch möglich für Inhouse, Take-Away und
-        Delivery ein unterschiedliches Angebot oder auch andere Preise
+        Die ist ideal, um die Preise zur Happy-Hour anzupassen, oder um das Angebot auf die Küchenöffnungszeiten
+        abzustimmen. Damit ist es auch möglich für Inhouse, Take Away und
+        Delivery ein unterschiedliches Angebot oder auch unterschiedliche Preise
         anzubieten.
       </p>
 
@@ -204,20 +213,10 @@ const title =
 
     <div class="feature">
       <div class="heading">
-        <h3>Ihre Domäne/URL</h3>
+        <h3>White Label</h3>
       </div>
       <p>
-        Gaston ist auf Ihrer Domäne/URL erreichbar.
-      </p>
-      <p class="price">+ CHF 99.- <small>/ Monat / Betrieb</small></p>
-    </div>
-
-    <div class="feature">
-      <div class="heading">
-        <h3>Whitelabel</h3>
-      </div>
-      <p>
-        Es sind keine Hinweise auf die Produktherkunft vorhanden.
+        Es sind keine Hinweise auf das Gaston Label vorhanden.
       </p>
       <p class="price">+ CHF 99.- <small>/ Monat / Betrieb</small></p>
     </div>
@@ -233,9 +232,9 @@ const title =
 
     <div class="feature">
       <div class="heading">
-        <h3>24h Support</h3>
+        <h3>24h Support </h3>
       </div>
-      <p>Wir sind bei Störungen täglich 24h für Sie verfügbar.</p>
+      <p>Wir sind bei Störungen täglich 24h für Sie erreichbar.</p>
       <p class="price">+ CHF 199.- <small>/ Monat / Betrieb</small></p>
     </div>
 
@@ -244,8 +243,8 @@ const title =
         <h3>Unterstützung beim Einrichten und Einpflegen der Daten</h3>
       </div>
       <p>
-        Wir unterstützen Sie vier Wochen beim Einrichten der Speisekarte und der
-        Zahlungsfunktionen per Telefon oder je nach Distanz auch vor Ort.
+        Wir unterstützen Sie bis zu vier Wochen beim Einrichten von Gaston telefonisch oder je nach Distanz auch vor
+        Ort.
       </p>
       <p class="price">
         CHF 390.- <small>einmalig</small>
@@ -270,8 +269,8 @@ const title =
         <h3>Klassische Kasse</h3>
       </div>
       <p>
-        Haben Sie zusätzlich bedarf an einer klassischen Kasse? Mit unseren Partnern können wir Ihnen ein attraktives
-        Packet unterbreiten.
+        Haben Sie zusätzlich Bedarf an einer klassischen Kasse? Mit unseren Partnern können wir Ihnen ein attraktives
+        Paket anbieten.
       </p>
       <p class="price">
         Nehmen Sie mit uns <a href="/de/kontakt">Kontakt</a> auf

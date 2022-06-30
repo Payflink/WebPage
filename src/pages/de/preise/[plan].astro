@@ -8,16 +8,16 @@ import Button from '@components/Button.astro'
 
 export const getStaticPaths = async () => [
   {
-    params: { plan: 'starter' },
-    props: { title: 'Starter', price: 'Keine. <small>5,9% / Bestellung oder Zahlung</small>' },
+    params: { plan: 'basic' },
+    props: { title: 'Basic', price: 'Keine. <small>5,9% / Bestellung oder Zahlung</small>' },
   },
   {
     params: { plan: 'pro' },
     props: { title: 'Pro', price: 'CHF 179.- / Betrieb / Monat' },
   },
   {
-    params: { plan: 'delux' },
-    props: { title: 'Delux', price: 'CHF 699.- / Monat / Betrieb' },
+    params: { plan: 'deluxe' },
+    props: { title: 'Deluxe', price: 'CHF 699.- / Monat / Betrieb' },
   },
   {
     params: { plan: 'enterprise' },
