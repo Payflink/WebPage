@@ -37,26 +37,6 @@ const lang = isCurrentPage('/de/') ? 'de' : 'en'
 </html>
 
 <style>
-  html,
-  body {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas:
-      'Header'
-      'Content'
-      'Footer';
-    min-height: 100vh;
-    background: var(--background-color);
-    color: var(--text-color);
-    font-family: 'Merriweather Sans', Helvetica, Roboto, Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-  }
-
   main {
     grid-area: Content;
   }
