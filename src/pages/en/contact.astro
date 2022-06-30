@@ -2,11 +2,13 @@
 import { SEO } from 'astro-seo'
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
-import ButtonLink from '@components/ButtonLink.astro'
+import { generalTitle, metaData } from 'src/config'
+
+const { en } = metaData
 
 const description =
   'Do you have a question about Gaston, the digital menu? We are happy to help you.'
-const title = 'Contact • Gaston • Digital Menu'
+const title = `Contact • ${generalTitle(en)}`
 ---
 
 <Main>

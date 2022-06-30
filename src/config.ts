@@ -1,6 +1,28 @@
-export const productDescription = 'Self-Order|Pay für Gastro'
-export const claim = 'Willkommen auf dem nächsten Level des Gastgebens.'
-export const titlePart = `Gaston • ${productDescription} • ${claim}`
+type Language = 'de' | 'en'
+type Product = {
+  name: string
+  description: string
+  claim: string
+}
+type MetaData = Record<Language, Product>
+
+const productDe: Product = {
+  description: 'Self-Order|Pay für Gastro',
+  claim: 'Willkommen auf dem nächsten Level des Gastgebens.',
+  name: 'Gaston',
+}
+const productEn: Product = {
+  description: 'Self-Order|Pay for Gastronomy',
+  claim: 'Welcome to the next level of hospitality.',
+  name: 'Gaston',
+}
+export const metaData: MetaData = {
+  de: productDe,
+  en: productEn,
+}
+
+export const generalTitle = ({ name, description, claim }: Product) =>
+  `${name} • ${description} • ${claim}`
 
 export interface NavigationItem {
   href: string
@@ -15,7 +37,7 @@ export interface NavigationGroup {
 
 export type NavigationTree = (NavigationItem | NavigationGroup)[]
 
-export type GlobalNavigation = Record<'de' | 'en', NavigationTree>
+export type GlobalNavigation = Record<Language, NavigationTree>
 
 const navigationDe: NavigationTree = [
   {

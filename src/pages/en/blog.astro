@@ -3,6 +3,9 @@ import { SEO } from 'astro-seo'
 
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
+import { generalTitle, metaData } from 'src/config'
+
+const { en } = metaData
 
 const blogs = await Astro.glob('./blog/**/*.md')
 const data = blogs
@@ -14,7 +17,7 @@ const data = blogs
 const description =
   'News from Gaston'
 const title =
-  'Blog • Gaston • Digitale Speisekarte • Mehr Gäste mit weniger Personal schneller bedienen.'
+  `Blog • ${generalTitle(en)}`
 ---
 
 <head>

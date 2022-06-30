@@ -5,12 +5,14 @@ import MainLayout from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 import Demo from '@components/Demo.astro'
 import FixedPicture from '@components/FixedPicture.astro'
-import { titlePart } from 'src/config'
+import { generalTitle, metaData } from 'src/config'
+
+const { en } = metaData
 
 const description =
   'The Gaston demo shows how the menu is displayed, how the ordering process works and how payments are processed.'
 const title =
-  `Demo • ${titlePart}`
+  `Demo • ${generalTitle(en)}`
 ---
 
 <head>

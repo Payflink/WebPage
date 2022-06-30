@@ -3,10 +3,13 @@ import { SEO } from 'astro-seo'
 
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
+import { generalTitle, metaData } from 'src/config'
+
+const { en } = metaData
 
 const description =
   'The team at Gaston is driven each day by waiting... to order and pay in restaurants.'
-const title = 'About us • Gaston'
+const title = `About us • ${generalTitle(en)}`
 
 const employees = [
   {

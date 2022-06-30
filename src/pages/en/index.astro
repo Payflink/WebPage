@@ -5,11 +5,13 @@ import MainLayout from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 import ButtonLink from '@components/ButtonLink.astro'
 import FixedPicture from '@components/FixedPicture.astro'
+import { generalTitle, metaData } from 'src/config'
+
+const { en } = metaData
 
 const description =
-  "Gaston the digital menu allows guests to order and pay quickly and easily. It doesn't matter if the guests are in their establishment, on the road or at home. Gaston supports ordering in your business, take-away and delivery."
-const title =
-  'Gaston • Digital Menu • Welcome to the next level of hospitality.'
+  "Gaston the digital menu allows guests to order and pay quickly and easily. It doesn't matter if the guests are in their establishment, on the road or at home. Gaston supports ordering in your business, Take Away and delivery."
+const title = generalTitle(en)
 ---
 
 <MainLayout>
@@ -27,7 +29,7 @@ const title =
     </div>
     <ul class="usps">
       <li>Select, order, pay without staff.</li>
-      <li>Serve all channels: In-house, Takeaway, Delivery.</li>
+      <li>Serve all channels: In-house, Take Away, Delivery.</li>
       <li>Available everywhere: On mobile, tablet and your website.</li>
       <li>With or without cash register, flexible to your needs.</li>
       <li>Your company, your style; also in the app.</li>

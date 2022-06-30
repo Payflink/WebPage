@@ -3,18 +3,20 @@ import { SEO } from 'astro-seo'
 
 import Main from './Main.astro'
 import Container from '@components/Container.astro'
+import { generalTitle, metaData } from 'src/config'
 
 const { content } = Astro.props
-const { title, description, lang, date, author } = content
+const { title: blogTitle, description, lang, date, author } = content
+const title = `${blogTitle} • Blog • ${generalTitle(metaData[lang])}`
 ---
 
 <head>
-  <SEO title={`${title} • Blog • Gaston `} {description} />
+  <SEO {title} {description} />
 </head>
 
 <Main>
   <Container size="small">
-    <h1>{title}</h1>
+    <h1>{blogTitle}</h1>
     <p class="publish-date">
       {lang === 'de' ? 'Veröffentlicht am' : 'Published on'}
       <b>{new Date(date).toLocaleDateString('de-CH')}</b>

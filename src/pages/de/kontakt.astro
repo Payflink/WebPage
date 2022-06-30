@@ -2,11 +2,13 @@
 import { SEO } from 'astro-seo'
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
-import { titlePart } from 'src/config'
+import { generalTitle, metaData } from 'src/config'
+
+const { de } = metaData
 
 const description =
   'Haben Sie ein Frage zu Gaston, der digitalen Speisekarte? Wir helfen Ihnen gerne.'
-const title = `Kontakt • ${titlePart}`
+const title = `Kontakt • ${generalTitle(de)}`
 ---
 
 <head>
