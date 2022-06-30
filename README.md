@@ -17,6 +17,7 @@ npm run netlify # dev env with netlify (rerouting for language)
 
 Use [pnpm](https://pnpm.io/) to manage dependencies.
 ```sh
+pnpm i # install deps
 pnpm add -D {my-new-dependency} # add
 pnpm rm {dependency-i-want-to-remove} # remove
 pnpm up --latest # update all deps to the latest version 
