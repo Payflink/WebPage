@@ -37,7 +37,7 @@ const title =
     <h1>Blog</h1>
     {data.map((post) => (
     <article>
-      <a href={post.url}>
+      <a href={post.url + "/" }>
         <h2>{post.frontmatter.title}</h2>
       </a>
       <p>{post.frontmatter.description}</p>
