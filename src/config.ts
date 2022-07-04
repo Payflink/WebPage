@@ -21,8 +21,7 @@ export const metaData: MetaData = {
   en: productEn,
 }
 
-export const generalTitle = ({ name, description, claim }: Product) =>
-  `${name} • ${description} • ${claim}`
+export const generalTitle = ({ name }: Product) => `${name}`
 
 export interface NavigationItem {
   href: string
