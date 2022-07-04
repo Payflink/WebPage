@@ -1,6 +1,6 @@
 ---
 lang: de
-title: 'Update 22/Q2: Dynamisches Angebot und Preise'
+title: 'Update 22/Q2: Dynamische Angebote und Preise'
 description: Mit Gaston ist es nun möglich, je nach Bestellzeitpunkt und -ort das Angebot und die Preise unterschiedlich zu gestalten.
 image: icon.png
 date: 2022-06-30
