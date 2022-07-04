@@ -54,6 +54,11 @@ const navigationDe: NavigationTree = [
         description: 'Detaillierte Auflistung aller Funktionen von Gaston.',
       },
       {
+        title: 'Bestell-App',
+        href: '/de/restaurant-bestell-app/',
+        description: 'Entdecken Sie unsere Restaurant Bestell App.',
+      },
+      {
         href: '/de/demo/',
         title: 'Demo',
         description:
