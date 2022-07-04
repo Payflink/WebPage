@@ -1,6 +1,6 @@
 ---
 lang: en
-title: 'Gaston Update: Ordering clearer for Guests and Restaurant Staff (22-01)'
+title: 'Update 22/Q1: Ordering clearer for Guests and Restaurant Staff'
 description: In the last few months, we delivered important functionality to make guest orders clearer for operators. In addition, it is now possible to inform the guests at Take Away via SMS when the order is ready.
 image: icon.png
 date: 2022-02-22
