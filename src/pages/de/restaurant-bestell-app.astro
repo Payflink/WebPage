@@ -1,17 +1,32 @@
 ---
+import { SEO } from 'astro-seo'
+
 import ButtonLink from "@components/ButtonLink.astro";
 import Container from "@components/Container.astro";
 import FixedPicture from "@components/FixedPicture.astro";
 import Main from "@layouts/Main.astro";
+import { generalTitle, metaData } from 'src/config'
+
+const { de } = metaData
+
+const description =
+  'Unsere Restaurant Bestell App hat ein Ziel: Die Bestellung und Zahlung für die Gäste Ihres Restaurants so einfach wie möglich zu gestalten.'
+const title =
+  `Restaurant Bestell App • ${generalTitle(de)}`
 
 
 ---
+
+<head>
+  <SEO {title} {description} />
+</head>
 
 <Main>
   <Container>
     <article>
       <h1>Restaurant Bestell App</h1>
-      <p class="subtitle">Unsere Restaurant Bestell App hat ein Ziel: Die Bestellung und Zahlung für die Gäste so
+      <p class="subtitle">Unsere Restaurant Bestell App hat ein Ziel: Die Bestellung und Zahlung für die Gäste Ihres
+        Restaurants so
         einfach wie möglich zu gestalten.</p>
       <div class="columns">
         <div style="flex: 1" class="right-align">
