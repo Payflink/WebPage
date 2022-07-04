@@ -25,7 +25,7 @@ These are quick and pragmatic measures that also work. But they can still be opt
 
 We attach great importance to the fact that our solution is implemented quickly and cost-effectively. Therefore, there are only the following steps for restaurant operators to take:
 
-1. [Register free of charge.](/en/offers/takeaway/enrol)
+1. [Register free of charge.](/en/prices/)
 2. Enter your menu online
 3. Include the menu on your homepage (a link is sufficient)
 
@@ -37,4 +37,4 @@ Of course, you can influence the ordering process with some settings:
 
 ## What's it gonna cost me?
 
-More about the costs of Gaston you can find on the [offer](/offers/) page.
+More about the costs of Gaston you can find on the [offer](/en/prices/) page.

@@ -25,7 +25,7 @@ Das sind schnelle und pragmatische Massnahmen, die auch funktionieren. Doch sie 
 
 Wir legen viel Wert darauf, dass unsere Lösung schnell und kostengünstig eingeführt ist. Darum gibt es für Restaurantbetreiber nur die folgenden Schritte zu tun:
 
-1. [Melden Sie sich kostenlos an.](/de/offers/takeaway/enrol)
+1. [Melden Sie sich kostenlos an.](/de/preise/)
 2. Erfassen Sie Ihre Speisekarte online
 3. Binden Sie die Speisekarte auf Ihrer Homepage ein (ein Link genügt)
 
@@ -37,4 +37,4 @@ Natürlich können Sie mit einigen Einstellungen Einfluss auf den Bestellungspro
 
 ## Was kostet mich das?
 
-Mehr über die Kosten von Gaston finden Sie auf der [Angebots](/offers/)-Seite.
+Mehr über die Kosten von Gaston finden Sie auf der [Angebots](/de/preise/)-Seite.
