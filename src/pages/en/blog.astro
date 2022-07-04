@@ -17,7 +17,7 @@ const data = blogs
 const description =
   'News from Gaston'
 const title =
-  `Blog • ${generalTitle(en)}`
+  `Blog: News from Gaston • ${generalTitle(en)}`
 ---
 
 <head>
@@ -26,7 +26,7 @@ const title =
 
 <Main>
   <Container size="small">
-    <h1>Blog</h1>
+    <h1>News from Gaston</h1>
     {data.map((post) => (
     <article>
       <a href={post.url + "/" }>

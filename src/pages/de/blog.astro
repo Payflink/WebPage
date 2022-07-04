@@ -25,16 +25,16 @@ const data = blogs
 const description =
   'Der neuste Klatsch und Tratsch, den Gaston aufgeschnappt hat.'
 const title =
-  `Blog • ${generalTitle(de)}`
+  `Blog: Neuigkeit zu Gaston • ${generalTitle(de)}`
 ---
 
 <head>
   <SEO {title} {description} />
 </head>
 
-<Main title="Blog • Gaston">
+<Main>
   <Container size="small">
-    <h1>Blog</h1>
+    <h1>Blog: Neuigkeit zu Gaston</h1>
     {data.map((post) => (
     <article>
       <a href={post.url + "/" }>
