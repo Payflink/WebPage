@@ -18,7 +18,8 @@ const isDe = isCurrentPage('/de/')
   </p>
   <p>
     {isDe ? 'Anfragen' : 'Inquiries'}&ensp;
-    <a href="tel:+41413222626">+41 41 322 26 26</a>
+    <a href="tel:+41413222626">+41 41 322 26 26</a> {isDe ? 'oder' : 'or'} <a href={isDe ? "/de/termin/"
+      : '/en/appointment/' }>{isDe ? 'Termin buchen' : 'book an appointment'}</a>
     <br />
     Support (24h)&ensp;
     <a href="tel:+41415620111">+41 41 562 01 11</a>

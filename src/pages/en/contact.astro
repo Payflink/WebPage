@@ -3,6 +3,7 @@ import { SEO } from 'astro-seo'
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 import { generalTitle, metaData } from 'src/config'
+import ButtonLink from '@components/ButtonLink.astro'
 
 const { en } = metaData
 
@@ -15,18 +16,27 @@ const title = `Contact • ${generalTitle(en)}`
   <SEO {title} {description} />
   <Container>
     <h1>Contact</h1>
-    <h2>Gaston by Apptiva</h2>
-    <h3>Email</h3>
-    <p>support@gastonsolution.com</p>
-    <h3>Inquiries</h3>
-    <p>+41 41 322 26 26</p>
-    <h3>Support</h3>
-    <p>+41 41 562 01 11</p>
-    <h3>Address</h3>
-    <address>
-      Neuenkirchstrasse 19 <br />
-      6203 Sempach Station <br />
-      Switzerland
-    </address>
+    <div class="columns">
+      <div style="flex: 1">
+        <h2>Gaston by Apptiva</h2>
+        <h3>Email</h3>
+        <p>support@gastonsolution.com</p>
+        <h3>Inquiries</h3>
+        <p>+41 41 322 26 26</p>
+        <h3>Support</h3>
+        <p>+41 41 562 01 11</p>
+        <h3>Address</h3>
+        <address>
+          Neuenkirchstrasse 19 <br />
+          6203 Sempach Station <br />
+          Switzerland
+        </address>
+      </div>
+      <div style="flex: 1">
+        <h2>Make an appointment</h2>
+        <p>Do you have questions about Gaston or our offer? Make an appointment in three clicks!</p>
+        <ButtonLink href="/en/appointment/">Make appointment</ButtonLink>
+      </div>
+    </div>
   </Container>
 </Main>
