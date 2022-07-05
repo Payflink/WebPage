@@ -1,13 +1,8 @@
 ---
-import { SEO } from 'astro-seo'
-
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 import { mkIsCurrentPage } from '../../../utils'
 import Button from '@components/Button.astro'
-import { generalTitle, metaData } from 'src/config'
-
-const { de } = metaData
 
 export const getStaticPaths = async () => [
   {
@@ -35,16 +30,12 @@ const { pathname } = Astro.canonicalURL
 const isCurrentPage = mkIsCurrentPage(pathname)
 const isDe = isCurrentPage('/de/')
 
-const title = `Unverbindliche Anfrage • Plan ${planTitle} • ${generalTitle(de)}`
+const title = `Unverbindliche Anfrage • Plan ${planTitle}`
 const description =
   'Im Rahmen Ihrer Anfrage, senden wir Ihnen einen Testzugang, um Gaston ausgiebig zu testen.'
 ---
 
-<head>
-  <SEO {title} {description} />
-</head>
-
-<Main>
+<Main title={title} description={description}>
   <Container size="small">
     <h1>Unverbindlich Anfrage <small>Plan {planTitle}</small></h1>
     <p>

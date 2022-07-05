@@ -1,25 +1,14 @@
 ---
-import { SEO } from 'astro-seo'
-
 import MainLayout from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 import Demo from '@components/Demo.astro'
 import FixedPicture from '@components/FixedPicture.astro'
-import { generalTitle, metaData } from 'src/config'
-
-const { de } = metaData
 
 const description =
   'Die Gaston-Demo vermittelt wie die Speisekarte dargestellt wird, der Bestellvorgang funktioniert und die Zahlungsabwicklung stattfindet.'
-const title =
-  `Demo der Bestell-App • ${generalTitle(de)}`
 ---
 
-<head>
-  <SEO {title} {description} />
-</head>
-
-<MainLayout>
+<MainLayout title="Demo der Bestell-App" description={description}>
   <Container>
     <section>
       <h1>Demo der Bestell-App</h1>

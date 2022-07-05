@@ -1,26 +1,12 @@
 ---
-import { SEO } from 'astro-seo'
-
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
-import ButtonLink from '@components/ButtonLink.astro'
-
-import FixedPicture from '@components/FixedPicture.astro'
-import { generalTitle, metaData } from 'src/config'
-
-const { de } = metaData
 
 const description =
   'Gaston unterstützt Ihren Betrieb bei der Bestellung und Bezahlung. Dabei ist er äussert flexible und passt sich Ihren Wünschen und Bedürfnisse an.'
-const title =
-  `Bestell- und Zahlungsablauf aus der Sicht von Gastro-Betrieben • ${generalTitle(de)}`
 ---
 
-<head>
-  <SEO {title} {description} />
-</head>
-
-<Main>
+<Main title="Bestell- und Zahlungsablauf aus der Sicht von Gastro-Betrieben" description={description}>
   <Container>
     <h1>Bestell- und Zahlungsablauf <small><br>aus der Sicht Ihres Betriebes</small></h1>
 

@@ -1,22 +1,12 @@
 ---
-import { SEO } from 'astro-seo'
-
 import Container from "@components/Container.astro";
 import Main from "@layouts/Main.astro"
 import { Picture } from 'astro-imagetools/components';
-import { generalTitle, metaData } from 'src/config'
 
-const { de } = metaData
-
-const title = `Funktionsumfang • ${generalTitle(de)}`
 const description = 'Gaston bietet einen sehr grossen Leistungsumfang und ist äussert flexible. So stellen wir sicher, dass Gaston auf unterschiedliche Betrieb optimal ausgerichtet ist.'
 ---
 
-<head>
-  <SEO {title} {description} />
-</head>
-
-<Main>
+<Main title="Funktionsumfang" description={description}>
   <Container>
     <h1>Funktionsumfang</h1>
     <p>Gaston bietet einen sehr grossen Leistungsumfang und ist äusserst flexibel. So stellen wir sicher, dass Gaston

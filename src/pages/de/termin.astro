@@ -2,12 +2,13 @@
 import Container from "@components/Container.astro";
 import Main from "@layouts/Main.astro"
 
+const description = "Haben Sie Fragen zu Gaston oder unserem Angebot? Vereinbaren Sie ein Termin in vier Klicks!"
 ---
 
-<Main>
+<Main title="Termin vereinbaren" description={description}>
   <Container>
     <h1>Termin vereinbaren</h1>
-    <p>Haben Sie Fragen zu Gaston oder unserem Angebot? Vereinbaren Sie ein Termin in vier Klicks!</p>
+    <p>{description}</p>
     <div class="calendly-inline-widget"
       data-url="https://calendly.com/philip-schoenholzer/30min?hide_event_type_details=1&hide_gdpr_banner=1">
       <div class="placeholder">Lade Kalender...</div>

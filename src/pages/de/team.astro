@@ -1,15 +1,9 @@
 ---
-import { SEO } from 'astro-seo'
-
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
-import { generalTitle, metaData } from 'src/config'
-
-const { de } = metaData
 
 const description =
   'Das Team von Gaston wird täglich in den Restaurants motiviert... endlich bestellen und bezahlen zu dürfen.'
-const title = `Unser Team • ${generalTitle(de)}`
 
 const employees = [
   {
@@ -45,11 +39,7 @@ const employees = [
 ]
 ---
 
-<head>
-  <SEO {title} {description} />
-</head>
-
-<Main>
+<Main title="Unser Team" description={description}>
   <Container>
 
     <h1>Unser Team</h1>

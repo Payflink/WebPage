@@ -1,25 +1,14 @@
 ---
-import { SEO } from 'astro-seo'
-
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 import ButtonLink from '@components/ButtonLink.astro'
 import Center from '@components/Center.astro'
-import { generalTitle, metaData } from 'src/config'
-
-const { de } = metaData
 
 const description =
   'Wählen Sie das passende Angebot für Ihre Bedürfnisse.'
-const title =
-  `Preise und Leistungen • ${generalTitle(de)}`
 ---
 
-<head>
-  <SEO {title} {description} />
-</head>
-
-<Main>
+<Main title="Preise und Leistungen" description={description}>
   <Container size="large">
     <h1>Preise und Leistungen</h1>
     <div class="plans-container">

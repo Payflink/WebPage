@@ -1,20 +1,13 @@
 ---
-import { SEO } from 'astro-seo'
-
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
-import { generalTitle, metaData } from 'src/config'
-
-const { en } = metaData
 
 const description =
   'Gaston was founded in 2019 with a vision to revolutionize the ordering and payment process in restaurants, cafes and bars.'
-const title = `About us • ${generalTitle(en)}`
 
 ---
 
-<Main>
-  <SEO {title} {description} />
+<Main title="About us" description={description}>
   <Container>
     <h1>Our Mission</h1>
     <p>

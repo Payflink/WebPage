@@ -2,12 +2,14 @@
 import Container from "@components/Container.astro";
 import Main from "@layouts/Main.astro"
 
+const title = "Arrange appointment"
+const description = "Do you have questions about Gaston or our offer? Make an appointment in four clicks!"
 ---
 
-<Main>
+<Main title={title} description={description}>
   <Container>
-    <h1>Arrange appointment</h1>
-    <p>Do you have questions about Gaston or our offer? Make an appointment in four clicks!</p>
+    <h1>{title}</h1>
+    <p>{description}</p>
     <div class="calendly-inline-widget"
       data-url="https://calendly.com/philip-schoenholzer/30min?hide_event_type_details=1&hide_gdpr_banner=1">
       <div class="placeholder">Loading calendar...</div>

@@ -1,13 +1,39 @@
 ---
+import { SEO } from 'astro-seo'
+
 import Header from '@components/Header.astro'
 import Footer from '@components/Footer.astro'
 import '../styles/global.scss'
 
+import { metaData, generalTitle } from 'src/config'
 import { mkIsCurrentPage } from 'src/utils'
+
+export type Props = {
+  title: string,
+  description: string,
+}
+
+const { title, description } = Astro.props as Props
+
 const { pathname } = Astro.canonicalURL
 const isCurrentPage = mkIsCurrentPage(pathname)
 const lang = isCurrentPage('/de/') ? 'de' : 'en'
 
+const translatedMetaData = metaData[lang]
+
+const openGraph = {
+  basic: {
+    title: `${title} • ${translatedMetaData.name} • ${translatedMetaData.description}`,
+    type: 'webpage',
+    image: 'https://gastonsolution.com/gaston-bestell-app.png'
+  },
+  image: {
+    type: 'image/png',
+    width: 1200,
+    height: 630,
+    alt: `${translatedMetaData.name}, ${translatedMetaData.description}`
+  }
+}
 ---
 
 <html lang={lang}>
@@ -28,6 +54,9 @@ const lang = isCurrentPage('/de/') ? 'de' : 'en'
   <script id="chatbot" data-server="https://pierre.gastonsolution.com/webclient" defer
     src="https://pierre.gastonsolution.com/webclient/embed/bundle.js" />}
   <script defer data-domain="gastonsolution.com" src="https://plausible.io/js/plausible.js"></script>
+
+  <SEO title={`${title} • ${generalTitle(translatedMetaData)}`} description={description} openGraph={openGraph}
+    twitter={{card: "summary_large_image" }} />
 
 </head>
 

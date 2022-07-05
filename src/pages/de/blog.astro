@@ -1,28 +1,17 @@
 ---
-import { SEO } from 'astro-seo'
-
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
-import { generalTitle, metaData } from 'src/config'
 import { takeSortedBlogPosts } from 'src/utils'
 import { BlogPostFrontMatter } from 'src/types'
-
-const { de } = metaData
 
 const blogs = await Astro.glob<BlogPostFrontMatter>('./blog/**/*.md')
 const sortedBlogs = takeSortedBlogPosts(blogs, 'de')
 
 const description =
   'Der neuste Klatsch und Tratsch, den Gaston aufgeschnappt hat.'
-const title =
-  `Blog: Neuigkeit zu Gaston • ${generalTitle(de)}`
 ---
 
-<head>
-  <SEO {title} {description} />
-</head>
-
-<Main>
+<Main title="Blog: Neuigkeit zu Gaston" description={description}>
   <Container size="small">
     <h1>Blog: Neuigkeit zu Gaston</h1>
     {sortedBlogs.map((post) => (

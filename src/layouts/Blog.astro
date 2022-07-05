@@ -1,20 +1,19 @@
 ---
-import { SEO } from 'astro-seo'
-
 import Main from './Main.astro'
 import Container from '@components/Container.astro'
 import { generalTitle, metaData } from 'src/config'
+import { BlogPostFrontMatter } from 'src/types'
 
-const { content } = Astro.props
+export type Props = {
+  content: BlogPostFrontMatter
+}
+
+const { content } = Astro.props as Props
 const { title: blogTitle, description, lang, date, author } = content
 const title = `${blogTitle} • Blog • ${generalTitle(metaData[lang])}`
 ---
 
-<head>
-  <SEO {title} {description} />
-</head>
-
-<Main>
+<Main title={title} description={description}>
   <Container size="small">
     <article class="blog-post">
       <h1>{blogTitle}</h1>

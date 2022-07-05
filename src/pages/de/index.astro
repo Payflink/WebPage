@@ -1,27 +1,21 @@
 ---
-import { SEO } from 'astro-seo'
-
 import MainLayout from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 import ButtonLink from '@components/ButtonLink.astro'
 
 import FixedPicture from '@components/FixedPicture.astro'
 import Demo from '@components/Demo.astro'
-import { generalTitle, metaData } from 'src/config'
+import { metaData } from 'src/config'
 import BlogTeaser from '@components/BlogTeaser.astro'
 
 const { de } = metaData
 
 const description =
   'Gaston die digitale Speisekarte erlaubt es den Gästen schnell und einfach zu bestell und bezahlen. Dabei spielt es keine Rolle, ob die Gäste in ihrem Betrieb, unterwegs oder Zuhause sind. Gaston unterstützt die Bestellung in Ihrem Betrieb, Take Away und Delivery.'
-const title = `${generalTitle(de)} • ${de.description}`
+
 ---
 
-<head>
-  <SEO {title} {description} />
-</head>
-
-<MainLayout>
+<MainLayout title={de.claim} description={description}>
   <Container>
     <h1>
       <b>{de.name}</b>

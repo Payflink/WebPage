@@ -1,29 +1,25 @@
 ---
-import { SEO } from 'astro-seo'
-
 import MainLayout from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 import ButtonLink from '@components/ButtonLink.astro'
 import FixedPicture from '@components/FixedPicture.astro'
-import { generalTitle, metaData } from 'src/config'
+import { metaData } from 'src/config'
 import BlogTeaser from '@components/BlogTeaser.astro'
 
 const { en } = metaData
 
 const description =
   "Gaston the digital menu allows guests to order and pay quickly and easily. It doesn't matter if the guests are in their establishment, on the road or at home. Gaston supports ordering in your business, Take Away and delivery."
-const title = `${generalTitle(en)} • ${en.description}`
 ---
 
-<MainLayout>
-  <SEO {title} {description} />
+<MainLayout title={en.claim} description={description}>
   <Container>
     <h1>
-      <b>Gaston</b>
+      <b>{en.name}</b>
       <br />
-      <small>Self-Order|Pay for Gastronomy</small>
+      <small>{en.description}</small>
     </h1>
-    <p class="claim">Welcome to the next level of hospitality.</p>
+    <p class="claim">{en.claim}</p>
     <div class="animation">
       <img src="/assets/hero-gaston-vs-menu-en.svg" alt="Ordering with menu tedious, with Gaston app quick and easy"
         height="150" width="204" />

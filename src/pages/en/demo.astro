@@ -1,28 +1,17 @@
 ---
-import { SEO } from 'astro-seo'
-
 import MainLayout from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 import Demo from '@components/Demo.astro'
 import FixedPicture from '@components/FixedPicture.astro'
-import { generalTitle, metaData } from 'src/config'
-
-const { en } = metaData
 
 const description =
   'The Gaston demo shows how the menu is displayed, how the ordering process works and how payments are processed.'
-const title =
-  `Demo • ${generalTitle(en)}`
 ---
 
-<head>
-  <SEO {title} {description} />
-</head>
-
-<MainLayout>
+<MainLayout title="Demo of the order app" description={description}>
   <Container>
     <section>
-      <h1>Demo</h1>
+      <h1>Demo of the order app</h1>
       <p>The Gaston demo shows how the menu is displayed, how the ordering process works and how the payment processing
         takes place.</p>
       <p>Since Gaston has a lot of configuration options, you can see only one possible configuration. If you need
