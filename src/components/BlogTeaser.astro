@@ -1,7 +1,6 @@
 ---
 import { BlogPostFrontMatter, Language } from "src/types";
 import { takeSortedBlogPosts } from "src/utils";
-import ButtonLink from "./ButtonLink.astro";
 
 export interface Props {
   language: Language
@@ -24,5 +23,10 @@ const sortedBlogs = takeSortedBlogPosts(blogs, language, 5)
 
   li {
     font-weight: bold;
+    margin-bottom: 0.8em;
+  }
+
+  li::marker {
+    font-size: 1em;
   }
 </style>
