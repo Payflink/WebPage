@@ -1,10 +1,4 @@
-type Language = 'de' | 'en'
-type Product = {
-  name: string
-  description: string
-  claim: string
-}
-type MetaData = Record<Language, Product>
+import { Language, MetaData, Product } from './types'
 
 const productDe: Product = {
   description: 'Self-Order|Pay für Gastro',

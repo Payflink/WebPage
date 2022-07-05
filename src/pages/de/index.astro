@@ -8,6 +8,7 @@ import ButtonLink from '@components/ButtonLink.astro'
 import FixedPicture from '@components/FixedPicture.astro'
 import Demo from '@components/Demo.astro'
 import { generalTitle, metaData } from 'src/config'
+import BlogTeaser from '@components/BlogTeaser.astro'
 
 const { de } = metaData
 
@@ -286,6 +287,14 @@ const title = `${generalTitle(de)} • ${de.description}`
   </section>
 
   <section class="background">
+    <Container>
+      <h2>Neuigkeiten</h2>
+      <BlogTeaser language="de" />
+      <ButtonLink href="/de/blog/">Weitere Neuigkeiten</ButtonLink>
+    </Container>
+  </section>
+
+  <section>
     <Container>
       <div class="button-list">
         <ButtonLink href="preise/">Gaston engagieren</ButtonLink>

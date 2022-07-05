@@ -4,23 +4,13 @@ import { SEO } from 'astro-seo'
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 import { generalTitle, metaData } from 'src/config'
+import { takeSortedBlogPosts } from 'src/utils'
+import { BlogPostFrontMatter } from 'src/types'
 
 const { de } = metaData
 
-type FrontMatter = {
-  lang: 'de' | 'en',
-  title: string,
-  description: string,
-  image: string,
-  date: string,
-  author: string,
-}
-const blogs = await Astro.glob<FrontMatter>('./blog/**/*.md')
-const data = blogs
-  .sort(
-    (a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date)
-  )
-  .filter((blog) => blog.frontmatter.lang === 'de')
+const blogs = await Astro.glob<BlogPostFrontMatter>('./blog/**/*.md')
+const sortedBlogs = takeSortedBlogPosts(blogs, 'de')
 
 const description =
   'Der neuste Klatsch und Tratsch, den Gaston aufgeschnappt hat.'
@@ -35,7 +25,7 @@ const title =
 <Main>
   <Container size="small">
     <h1>Blog: Neuigkeit zu Gaston</h1>
-    {data.map((post) => (
+    {sortedBlogs.map((post) => (
     <article>
       <a href={post.url + "/" }>
         <h2>{post.frontmatter.title}</h2>

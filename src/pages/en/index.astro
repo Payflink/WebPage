@@ -6,6 +6,7 @@ import Container from '@components/Container.astro'
 import ButtonLink from '@components/ButtonLink.astro'
 import FixedPicture from '@components/FixedPicture.astro'
 import { generalTitle, metaData } from 'src/config'
+import BlogTeaser from '@components/BlogTeaser.astro'
 
 const { en } = metaData
 
@@ -87,12 +88,22 @@ const title = `${generalTitle(en)} • ${en.description}`
     </Container>
   </section>
 
-  <Container>
-    <div class="button-list">
-      <ButtonLink href="contact/">Order now</ButtonLink>
-      <ButtonLink href="demo/">Start demo</ButtonLink>
-    </div>
-  </Container>
+  <section class="background">
+    <Container>
+      <h2>News</h2>
+      <BlogTeaser language="en" />
+      <ButtonLink href="/en/blog/">More news</ButtonLink>
+    </Container>
+  </section>
+
+  <section>
+    <Container>
+      <div class="button-list">
+        <ButtonLink href="contact/">Order now</ButtonLink>
+        <ButtonLink href="demo/">Start demo</ButtonLink>
+      </div>
+    </Container>
+  </section>
 </MainLayout>
 
 <style lang="scss">
@@ -172,6 +183,35 @@ const title = `${generalTitle(en)} • ${en.description}`
         width: 100%;
       }
 
+    }
+  }
+
+  section {
+    padding-block: 0 4em;
+    min-height: 28rem;
+
+    &.background {
+      padding-block: 2em 4em;
+    }
+  }
+
+  .background {
+    --primary-color: white;
+    position: relative;
+    color: white;
+    z-index: 5;
+
+    &::before {
+      content: ' ';
+      position: absolute;
+      inset: -1em 0;
+      background-image: linear-gradient(rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 0)),
+        url(/assets/curve.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      z-index: -1;
     }
   }
 </style>

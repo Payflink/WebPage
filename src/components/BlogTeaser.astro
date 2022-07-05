@@ -1,0 +1,28 @@
+---
+import { BlogPostFrontMatter, Language } from "src/types";
+import { takeSortedBlogPosts } from "src/utils";
+import ButtonLink from "./ButtonLink.astro";
+
+export interface Props {
+  language: Language
+}
+
+const { language } = Astro.props as Props
+
+const blogs = await Astro.glob<BlogPostFrontMatter>("../pages/*/blog/**/*.md")
+const sortedBlogs = takeSortedBlogPosts(blogs, language, 5)
+---
+
+<ul>{sortedBlogs.map((post) => (<li><a href={post.url + "/" }>{post.frontmatter.title}</a></li>))}</ul>
+
+
+<style>
+  ul {
+    margin: 1em 0 3em;
+    padding-left: 1em;
+  }
+
+  li {
+    font-weight: bold;
+  }
+</style>
