@@ -8,12 +8,12 @@ type MetaData = Record<Language, Product>
 
 const productDe: Product = {
   description: 'Self-Order|Pay für Gastro',
-  claim: 'Willkommen auf dem nächsten Level des Gastgebens.',
+  claim: 'Gastgeben auf dem nächsten Level.',
   name: 'Gaston',
 }
 const productEn: Product = {
   description: 'Self-Order|Pay for Gastronomy',
-  claim: 'Welcome to the next level of hospitality.',
+  claim: 'Hospitality on the next level.',
   name: 'Gaston',
 }
 export const metaData: MetaData = {
