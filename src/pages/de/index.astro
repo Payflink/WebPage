@@ -7,6 +7,7 @@ import FixedPicture from '@components/FixedPicture.astro'
 import Demo from '@components/Demo.astro'
 import { metaData } from 'src/config'
 import BlogTeaser from '@components/BlogTeaser.astro'
+import Testimonials from '@components/Testimonials.astro'
 
 const { de } = metaData
 
@@ -162,26 +163,10 @@ const description =
     </Container>
   </section>
 
-  <section id="stylen-mit-gaston">
+  <section>
     <Container>
-      <h2>Ihre Speisekarte, Ihr Style</h2>
-      <p>
-        Ihr Betrieb hat einen einzigartigen Stil. Ihre Speisekarte
-        sollte dies reflektieren. Sie können das Aussehen jederzeit selber
-        anpassen und auch die Bilder und Grafiken für Kategorien und Artikel
-        selber pflegen.
-      </p>
-      <ul class="horizontal-list">
-        <li>
-          <FixedPicture src="/src/images/el-mosquito.png" alt="El-Mosquito" width={300} />
-        </li>
-        <li>
-          <FixedPicture src="/src/images/habsburg.png" alt="Habsburg-Bar" width={300} />
-        </li>
-        <li>
-          <FixedPicture src="/src/images/sugoisushi.png" alt="Sugoi Sushi" width={300} />
-        </li>
-      </ul>
+      <h2>Das sagen die Gäste</h2>
+      <Testimonials />
     </Container>
   </section>
 
@@ -217,7 +202,30 @@ const description =
     </Container>
   </section>
 
-  <section id="geräte">
+  <section id="stylen-mit-gaston">
+    <Container>
+      <h2>Ihre Speisekarte, Ihr Style</h2>
+      <p>
+        Ihr Betrieb hat einen einzigartigen Stil. Ihre Speisekarte
+        sollte dies reflektieren. Sie können das Aussehen jederzeit selber
+        anpassen und auch die Bilder und Grafiken für Kategorien und Artikel
+        selber pflegen.
+      </p>
+      <ul class="horizontal-list">
+        <li>
+          <FixedPicture src="/src/images/el-mosquito.png" alt="El-Mosquito" width={300} />
+        </li>
+        <li>
+          <FixedPicture src="/src/images/habsburg.png" alt="Habsburg-Bar" width={300} />
+        </li>
+        <li>
+          <FixedPicture src="/src/images/sugoisushi.png" alt="Sugoi Sushi" width={300} />
+        </li>
+      </ul>
+    </Container>
+  </section>
+
+  <section id="geräte" class="background">
     <Container>
       <h2>Läuft überall</h2>
       <p>
@@ -252,7 +260,7 @@ const description =
     </Container>
   </section>
 
-  <section id="roadmap-von-gaston" class="background">
+  <section id="roadmap-von-gaston">
     <Container>
       <h2>Roadmap</h2>
       <p>
@@ -263,6 +271,14 @@ const description =
       <ButtonLink href="https://www.notion.so/gastonsolution/Roadmap-von-Gaston-6644875d1fba4fe58cacfbf15e1ace7e">
         Zur Roadmap
       </ButtonLink>
+    </Container>
+  </section>
+
+  <section class="background">
+    <Container>
+      <h2>Neuigkeiten</h2>
+      <BlogTeaser language="de" />
+      <ButtonLink href="/de/blog/">Weitere Neuigkeiten</ButtonLink>
     </Container>
   </section>
 
@@ -281,14 +297,6 @@ const description =
   </section>
 
   <section class="background">
-    <Container>
-      <h2>Neuigkeiten</h2>
-      <BlogTeaser language="de" />
-      <ButtonLink href="/de/blog/">Weitere Neuigkeiten</ButtonLink>
-    </Container>
-  </section>
-
-  <section>
     <Container>
       <div class="button-list">
         <ButtonLink href="preise/">Gaston engagieren</ButtonLink>
