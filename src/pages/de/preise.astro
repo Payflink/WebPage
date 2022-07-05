@@ -57,8 +57,12 @@ const title =
             <p>Telefonischer Support zu Bürozeiten</p>
           </li>
         </ul>
-        <p><span class="price">5,9% *</span> <br><small>/ Bestellung & Zahlung</small></p>
-        <p class="price">Keine Grundgebühren</p>
+        <dl>
+          <dt>Transaktionskosten</dt>
+          <dd class="price">5,9% ٭</dd>
+          <dt>Monatliche Grundgebühr / Betrieb</dt>
+          <dd class="price">Kostenlos</dd>
+        </dl>
         <Center>
           <ButtonLink href="basic/">Basic anfragen</ButtonLink>
         </Center>
@@ -74,7 +78,7 @@ const title =
             <p>Bon-Drucker, um Bestellungen auszudrucken</p>
           </li>
           <li>
-            <p><b>Flatrate</b>: Keine Gaston-Kosten pro Bestellung *</p>
+            <p><b>Flatrate</b>: Keine Gaston-Kosten pro Bestellung ٭</p>
           </li>
           <li>
             <p>2 Sprachen</p>
@@ -93,7 +97,12 @@ const title =
             <p>Telefonischer Support 7 Tage die Woche von 08:00 bis 20:00</p>
           </li>
         </ul>
-        <p><span class="price">CHF 179.- *</span> <br><small>/ Monat / Betrieb</small></p>
+        <dl>
+          <dt>Transaktionskosten</dt>
+          <dd class="price">Kostenlos ٭</dd>
+          <dt>Monatliche Grundgebühr / Betrieb</dt>
+          <dd class="price">CHF 179.-</dd>
+        </dl>
         <Center>
           <ButtonLink href="pro/">Pro anfragen</ButtonLink>
         </Center>
@@ -131,7 +140,12 @@ const title =
             <p>24/7 Support</p>
           </li>
         </ul>
-        <p><span class="price">CHF 699.- *</span> <br><small>/ Monat / Betrieb</small></p>
+        <dl>
+          <dt>Transaktionskosten</dt>
+          <dd class="price">Kostenlos ٭</dd>
+          <dt>Monatliche Grundgebühr / Betrieb</dt>
+          <dd class="price">CHF 699.-</dd>
+        </dl>
         <Center>
           <ButtonLink href="deluxe/">Deluxe anfragen</ButtonLink>
         </Center>
@@ -159,10 +173,13 @@ const title =
         </Center>
       </div>
     </div>
-    <p>
-      * Transaktionskosten des Zahlungsproviders (beispielsweise Worldline oder
-      Datatrans) fallen zusätzlich an.
-    </p>
+    <ul>
+      <li style="list-style-type: '٭ ';">
+        Die Transaktionskosten des Zahlungsproviders (beispielsweise Worldline oder
+        Datatrans) fallen in jedem Plan an. Im Basic-Plan erheben wir zusätzliche Transaktionskosten pro Bestellung oder
+        Bezahlung.
+      </li>
+    </ul>
   </Container>
   <Container size="small">
     <h2>Einzeln dazu erhältliche Leistungen</h2>
@@ -282,6 +299,18 @@ const title =
 </Main>
 
 <style lang="scss">
+  dl {
+    margin-block: 0.5em;
+
+    dt {
+      font-size: 0.6em;
+    }
+
+    dd {
+      margin: 0 0 0.5em;
+    }
+  }
+
   i {
     color: var(--primary-color);
   }
