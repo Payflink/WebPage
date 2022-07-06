@@ -8,6 +8,7 @@ import Demo from '@components/Demo.astro'
 import { metaData } from 'src/config'
 import BlogTeaser from '@components/BlogTeaser.astro'
 import Testimonials from '@components/Testimonials.astro'
+import KindOfEstablishments from '@components/KindOfEstablishments.astro'
 
 const { de } = metaData
 
@@ -202,26 +203,15 @@ const description =
     </Container>
   </section>
 
-  <section id="stylen-mit-gaston">
+  <section>
     <Container>
-      <h2>Ihre Speisekarte, Ihr Style</h2>
-      <p>
-        Ihr Betrieb hat einen einzigartigen Stil. Ihre Speisekarte
-        sollte dies reflektieren. Sie können das Aussehen jederzeit selber
-        anpassen und auch die Bilder und Grafiken für Kategorien und Artikel
-        selber pflegen.
-      </p>
-      <ul class="horizontal-list">
-        <li>
-          <FixedPicture src="/src/images/el-mosquito.png" alt="El-Mosquito" width={300} />
-        </li>
-        <li>
-          <FixedPicture src="/src/images/habsburg.png" alt="Habsburg-Bar" width={300} />
-        </li>
-        <li>
-          <FixedPicture src="/src/images/sugoisushi.png" alt="Sugoi Sushi" width={300} />
-        </li>
-      </ul>
+      <h2>Passt für viele Gastrokonzepte</h2>
+      <p style="margin-bottom: 2em;">Egal ob Speiserestaurant, Bar oder Imbiss, Gaston passt für die meisten
+        Gastrokonzepte. Wir werden häufig
+        gefragt, für welche Betriebe Gaston am besten passt. Unserer bisherige Erkenntnis ist folgende: Gaston passt,
+        wenn Gäste Bestellungen aufgeben und bezahlen. Dabei spielt es nicht so eine grosse Rolle, was Ihr Angebot oder
+        Bedienkonzept ist.</p>
+      <KindOfEstablishments />
     </Container>
   </section>
 
@@ -260,25 +250,50 @@ const description =
     </Container>
   </section>
 
-  <section id="roadmap-von-gaston">
+  <section id="stylen-mit-gaston">
     <Container>
-      <h2>Roadmap</h2>
+      <h2>Ihre Speisekarte, Ihr Style</h2>
       <p>
-        Gaston wird ständig weiterentwickelt. Auf unserer Roadmap sehen Sie,
-        welche Features als Nächstes verfügbar werden. Haben Sie einen speziellen
-        Wunsch? Wir nehmen diesen gerne in die Roadmap auf.
+        Ihr Betrieb hat einen einzigartigen Stil. Ihre Speisekarte
+        sollte dies reflektieren. Sie können das Aussehen jederzeit selber
+        anpassen und auch die Bilder und Grafiken für Kategorien und Artikel
+        selber pflegen.
       </p>
-      <ButtonLink href="https://www.notion.so/gastonsolution/Roadmap-von-Gaston-6644875d1fba4fe58cacfbf15e1ace7e">
-        Zur Roadmap
-      </ButtonLink>
+      <ul class="horizontal-list">
+        <li>
+          <FixedPicture src="/src/images/el-mosquito.png" alt="El-Mosquito" width={300} />
+        </li>
+        <li>
+          <FixedPicture src="/src/images/habsburg.png" alt="Habsburg-Bar" width={300} />
+        </li>
+        <li>
+          <FixedPicture src="/src/images/sugoisushi.png" alt="Sugoi Sushi" width={300} />
+        </li>
+      </ul>
     </Container>
   </section>
 
   <section class="background">
     <Container>
-      <h2>Neuigkeiten</h2>
-      <BlogTeaser language="de" />
-      <ButtonLink href="/de/blog/">Weitere Neuigkeiten</ButtonLink>
+      <div class="columns">
+        <div style="flex: 1;">
+          <h2>Neuigkeiten</h2>
+          <BlogTeaser language="de" />
+          <ButtonLink href="/de/blog/">Weitere Neuigkeiten</ButtonLink>
+        </div>
+        <div style="flex: 1;">
+          <h2>Roadmap</h2>
+          <p style="margin-bottom: 2em;">
+            Gaston wird ständig weiterentwickelt. Auf unserer Roadmap sehen Sie,
+            welche Features als Nächstes verfügbar werden. Haben Sie einen speziellen
+            Wunsch? Wir nehmen diesen gerne in die Roadmap auf.
+          </p>
+          <ButtonLink href="https://www.notion.so/gastonsolution/Roadmap-von-Gaston-6644875d1fba4fe58cacfbf15e1ace7e">
+            Zur Roadmap
+          </ButtonLink>
+        </div>
+      </div>
+
     </Container>
   </section>
 
