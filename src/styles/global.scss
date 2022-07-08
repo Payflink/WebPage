@@ -130,6 +130,14 @@ dialog {
   text-align: right;
 }
 
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
 .desktop {
   @media (max-width: 599px) {
     display: none;
