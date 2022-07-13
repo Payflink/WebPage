@@ -9,6 +9,7 @@ import { metaData } from 'src/config'
 import BlogTeaser from '@components/BlogTeaser.astro'
 import Testimonials from '@components/Testimonials.astro'
 import KindOfEstablishments from '@components/KindOfEstablishments.astro'
+import CanReplace from '@components/CanReplace.astro'
 
 const { de } = metaData
 
@@ -250,6 +251,30 @@ const description =
     </Container>
   </section>
 
+  <section>
+    <Container>
+      <h2>Kann vieles ersetzen</h2>
+      <div class="columns">
+        <div style="flex: 1;">
+          <p>Gaston ist ein revolutionäres Konzept und kann entsprechend viele Geräte ersetzen. Geräte, die Jahrzehnte
+            lang Bestand hatten, können nun hinterfragt werden. Wofür braucht es eine Kasse, wenn die Gäste direkt über
+            eine App bezahlen? Wieso hat man ein KK-Terminal, wenn die Gäste in Gaston mit Kreditkarte und Twint
+            bezahlen?
+          </p>
+          <p>Sehen Sie wohin die Reise geht?</p>
+          <div class="center" style="margin-top: 3em;">
+            <img src="/assets/illustrations/trash.svg" alt="Geräte in den Abfall geworfen." width="250">
+            <p style="font-size: 0.8em;;">Symbolbild. Bitte werfen Sie nichts weg! Es gibt genügend Gastro-Betriebe, die
+              Ihnen Ihre Geräte abnehmen. 😉</p>
+          </div>
+        </div>
+        <div style="flex: 1;">
+          <CanReplace />
+        </div>
+      </div>
+    </Container>
+  </section>
+
   <section id="stylen-mit-gaston">
     <Container>
       <h2>Ihre Speisekarte, Ihr Style</h2>
@@ -304,13 +329,11 @@ const description =
         <li>
           <a href="https://www.flm.ch/">
             <FixedPicture src="/src/images/partners/flm.png" alt="FLM Kassensysteme" height={160} layout={'fixed'} />
-            <p>FLM Kassensysteme</p>
           </a>
         </li>
         <li>
           <FixedPicture src="/src/images/partners/digital-enterprise.png" alt="Digital Enterprise" height={60}
             layout={'fixed'} />
-          <p>Digital Enterprise</p>
         </li>
       </ul>
     </Container>
