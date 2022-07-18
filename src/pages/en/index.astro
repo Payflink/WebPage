@@ -3,86 +3,72 @@ import MainLayout from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 import ButtonLink from '@components/ButtonLink.astro'
 import FixedPicture from '@components/FixedPicture.astro'
-import { metaData } from 'src/config'
+import { callToActionLinksEn, metaData } from 'src/config'
 import BlogTeaser from '@components/BlogTeaser.astro'
+import Hero from '@components/Hero.astro'
 
 const { en } = metaData
 
 const description =
   "Gaston the digital menu allows guests to order and pay quickly and easily. It doesn't matter if the guests are in their establishment, on the road or at home. Gaston supports ordering in your business, Take Away and delivery."
+
+const USPs = [
+  "<b>Select, order, pay</b>, with the app.",
+  "Serve all channels: <b>In-house, Take Away, Delivery</b>.",
+  "Available everywhere: On <b>mobile, tablet and your website</b>.",
+  "<b>With or without cash register</b>, flexible to your needs.",
+]
+
 ---
 
 <MainLayout title={en.claim} description={description}>
   <Container>
-    <h1>
-      <b>{en.name}</b>
-      <br />
-      <small>{en.description}</small>
-    </h1>
-    <p class="claim">{en.claim}</p>
-    <div class="animation">
-      <img src="/assets/hero-gaston-vs-menu-en.svg" alt="Ordering with menu tedious, with Gaston app quick and easy"
-        height="150" width="204" />
-    </div>
-    <ul class="usps">
-      <li>Select, order, pay without staff.</li>
-      <li>Serve all channels: In-house, Take Away, Delivery.</li>
-      <li>Available everywhere: On mobile, tablet and your website.</li>
-      <li>With or without cash register, flexible to your needs.</li>
-      <li>Your company, your style; also in the app.</li>
+    <Hero name={en.name} description={en.description} claim={en.claim}
+      animation={{src: '/assets/hero-gaston-vs-menu-en.svg' ,
+      alt: 'Ordering with menu tedious, with Gaston app quick and easy' }} usp={USPs} links={callToActionLinksEn} />
+    <h2><small>Some of our customers</small></h2>
+    <ul class="image-list">
+      <li>
+        <FixedPicture src="/src/images/customers/brauwerk-st-gallen.png" alt="Restaurant Brauwerk"
+          placeholder={'tracedSVG'} height={60} />
+      </li>
+      <li>
+        <FixedPicture src="/src/images/customers/el-mosquito.png" alt="El-Mosquito" placeholder={'tracedSVG'}
+          height={60} />
+      </li>
+      <li>
+        <FixedPicture src="/src/images/customers/gspan.jpg" alt="Hotel Gspan" placeholder={'tracedSVG'} height={60} />
+      </li>
+      <li>
+        <FixedPicture src="/src/images/customers/habsburg-bar.png" alt="Habsburg-Bar" placeholder={'tracedSVG'}
+          height={60} />
+      </li>
+      <li>
+        <FixedPicture src="/src/images/customers/lamassu.png" alt="Restaurant Lamassu" placeholder={'tracedSVG'}
+          height={60} />
+      </li>
+      <li>
+        <FixedPicture src="/src/images/customers/franz.png" alt="Restaurant Franz" placeholder={'tracedSVG'}
+          height={60} />
+      </li>
+      <li>
+        <FixedPicture src="/src/images/customers/seehaus-grill.png" alt="Seehaus-Grill" placeholder={'tracedSVG'}
+          height={60} />
+      </li>
+      <li>
+        <FixedPicture src="/src/images/customers/seehotel-kastanienbaum.png" alt="Seehotel Kastanienbaum"
+          placeholder={'tracedSVG'} height={60} />
+      </li>
+      <li>
+        <FixedPicture src="/src/images/customers/sugoi-sushi-300.png" alt="Sugoi Sushi" placeholder={'tracedSVG'}
+          height={60} />
+      </li>
+      <li>
+        <FixedPicture src="/src/images/customers/zurwerkstatt-sg.png" alt="Zur Werkstatt St. Gallen"
+          placeholder={'tracedSVG'} height={60} />
+      </li>
     </ul>
-
-    <div class="button-list">
-      <ButtonLink href="contact/">Order now</ButtonLink>
-      <ButtonLink href="demo/">Start demo</ButtonLink>
-    </div>
   </Container>
-  <section id="customers">
-    <Container>
-      <h2>Some of our customers</h2>
-      <ul class="image-list">
-        <li>
-          <FixedPicture src="/src/images/customers/brauwerk-st-gallen.png" alt="Restaurant Brauwerk"
-            placeholder={'tracedSVG'} height={60} />
-        </li>
-        <li>
-          <FixedPicture src="/src/images/customers/el-mosquito.png" alt="El-Mosquito" placeholder={'tracedSVG'}
-            height={60} />
-        </li>
-        <li>
-          <FixedPicture src="/src/images/customers/gspan.jpg" alt="Hotel Gspan" placeholder={'tracedSVG'} height={60} />
-        </li>
-        <li>
-          <FixedPicture src="/src/images/customers/habsburg-bar.png" alt="Habsburg-Bar" placeholder={'tracedSVG'}
-            height={60} />
-        </li>
-        <li>
-          <FixedPicture src="/src/images/customers/lamassu.png" alt="Restaurant Lamassu" placeholder={'tracedSVG'}
-            height={60} />
-        </li>
-        <li>
-          <FixedPicture src="/src/images/customers/franz.png" alt="Restaurant Franz" placeholder={'tracedSVG'}
-            height={60} />
-        </li>
-        <li>
-          <FixedPicture src="/src/images/customers/seehaus-grill.png" alt="Seehaus-Grill" placeholder={'tracedSVG'}
-            height={60} />
-        </li>
-        <li>
-          <FixedPicture src="/src/images/customers/seehotel-kastanienbaum.png" alt="Seehotel Kastanienbaum"
-            placeholder={'tracedSVG'} height={60} />
-        </li>
-        <li>
-          <FixedPicture src="/src/images/customers/sugoi-sushi-300.png" alt="Sugoi Sushi" placeholder={'tracedSVG'}
-            height={60} />
-        </li>
-        <li>
-          <FixedPicture src="/src/images/customers/zurwerkstatt-sg.png" alt="Zur Werkstatt St. Gallen"
-            placeholder={'tracedSVG'} height={60} />
-        </li>
-      </ul>
-    </Container>
-  </section>
 
   <section class="background">
     <Container>
@@ -92,14 +78,24 @@ const description =
     </Container>
   </section>
 
-  <section>
+
+  <section id="partner-von-gaston">
     <Container>
-      <div class="button-list">
-        <ButtonLink href="contact/">Order now</ButtonLink>
-        <ButtonLink href="demo/">Start demo</ButtonLink>
-      </div>
+      <h2>Our Partners</h2>
+      <ul class="image-list high">
+        <li>
+          <a href="https://www.flm.ch/">
+            <FixedPicture src="/src/images/partners/flm.png" alt="FLM Kassensysteme" height={160} layout={'fixed'} />
+          </a>
+        </li>
+        <li>
+          <FixedPicture src="/src/images/partners/digital-enterprise.png" alt="Digital Enterprise" height={60}
+            layout={'fixed'} />
+        </li>
+      </ul>
     </Container>
   </section>
+
 </MainLayout>
 
 <style lang="scss">

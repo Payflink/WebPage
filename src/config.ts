@@ -1,4 +1,4 @@
-import { Language, MetaData, Product } from './types'
+import { CallToAction, Language, MetaData, Product } from './types'
 
 const productDe: Product = {
   description: 'Self-Order|Pay für Gastro',
@@ -14,6 +14,15 @@ export const metaData: MetaData = {
   de: productDe,
   en: productEn,
 }
+
+export const callToActionLinksDe: CallToAction[] = [
+  { href: 'preise/', text: 'Gaston engagieren' },
+  { href: 'demo/', text: 'Demo starten' },
+]
+export const callToActionLinksEn: CallToAction[] = [
+  { href: 'contact/', text: 'Order now' },
+  { href: 'demo/', text: 'Start demo' },
+]
 
 export const generalTitle = ({ name }: Product) => `${name}`
 

@@ -5,7 +5,7 @@ import ButtonLink from '@components/ButtonLink.astro'
 
 import FixedPicture from '@components/FixedPicture.astro'
 import Demo from '@components/Demo.astro'
-import { metaData } from 'src/config'
+import { callToActionLinksDe, metaData } from 'src/config'
 import BlogTeaser from '@components/BlogTeaser.astro'
 import Testimonials from '@components/Testimonials.astro'
 import KindOfEstablishments from '@components/KindOfEstablishments.astro'
@@ -23,13 +23,14 @@ const USPs = [
   "Überall verfügbar: Auf dem <b>Handy, Tablet und Ihrer Webseite</b>, ohne Download.",
   "<b>Mit oder ohne Kasse</b>, flexibel auf Ihre Bedürfnisse zugeschnitten.",
 ]
+
 ---
 
 <MainLayout title={de.claim} description={description}>
   <Container>
     <Hero name={de.name} description={de.description} claim={de.claim} usp={USPs}
       animation={{src: '/assets/hero-gaston-vs-menu.svg' ,
-      alt: 'Bestellen mit Speisekarte mühsam, mit Gaston App schnell und einfach' }} />
+      alt: 'Bestellen mit Speisekarte mühsam, mit Gaston App schnell und einfach' }} links={callToActionLinksDe} />
     <h2><small>Auswahl unserer Kunden</small></h2>
     <ul class="image-list">
       <li>

@@ -1,20 +1,20 @@
 ---
+import { callToActionLinksDe, callToActionLinksEn } from 'src/config';
 import { mkIsCurrentPage } from '../utils.ts'
-import ButtonLink from './ButtonLink.astro';
+import CallToAction from './CallToAction.astro';
 import Container from './Container.astro';
 
 const { pathname } = Astro.canonicalURL
 
 const isCurrentPage = mkIsCurrentPage(pathname)
 const isDe = isCurrentPage('/de/')
+
+const links = isDe ? callToActionLinksDe : callToActionLinksEn
 ---
 
 <footer>
   <Container>
-    <div class="button-list">
-      <ButtonLink href="preise/">Gaston engagieren</ButtonLink>
-      <ButtonLink href="demo/">Demo starten</ButtonLink>
-    </div>
+    <CallToAction links={links} />
   </Container>
 
   <div class="columns">
@@ -65,16 +65,6 @@ const isDe = isCurrentPage('/de/')
       background-repeat: no-repeat;
       background-size: auto 100%;
       z-index: -1;
-    }
-
-
-    .button-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.5em 1em;
-      font-size: 1em;
-      margin-top: 1em;
     }
 
     .columns {

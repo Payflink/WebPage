@@ -8,6 +8,11 @@ export type Product = {
 }
 export type MetaData = Record<Language, Product>
 
+export type CallToAction = {
+  href: string
+  text: string
+}
+
 export type BlogPostFrontMatter = {
   lang: 'de' | 'en'
   title: string
