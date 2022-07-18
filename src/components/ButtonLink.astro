@@ -6,7 +6,9 @@ export interface Props {
 const { href, target } = Astro.props
 ---
 
-<a {href} {target}><slot /></a>
+<a {href} {target}>
+  <slot />
+</a>
 
 <style lang="scss">
   a {
@@ -32,7 +34,7 @@ const { href, target } = Astro.props
       transform: translateY(1px);
     }
 
-    @media (max-width: 380px) {
+    @media (max-width: 425px) {
       width: 100%;
       text-align: center;
     }
