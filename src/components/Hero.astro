@@ -1,0 +1,118 @@
+---
+import ButtonLink from "./ButtonLink.astro";
+
+export interface Props {
+  name: string,
+  description: string,
+  claim: string,
+  usp: Array<string>,
+  animation: {
+    src: string,
+    alt: string,
+  }
+}
+const props = Astro.props as Props
+---
+
+<div class="wrapper">
+  <div style="info">
+    <h1>
+      <b>{props.name}</b>
+      <br />
+      <small set:html={props.description} />
+    </h1>
+    <p class="claim">{props.claim}</p>
+    <ul class="usps">
+      {props.usp.map((usp) => <li set:html={usp}></li>) }
+    </ul>
+  </div>
+  <div class="wrapper-right">
+    <div class="animation">
+      <img src={props.animation.src} alt={props.animation.alt} height="150" width="204" />
+    </div>
+    <div class="button-list">
+      <ButtonLink href="preise/">Gaston engagieren</ButtonLink>
+      <ButtonLink href="demo/">Demo starten</ButtonLink>
+    </div>
+
+  </div>
+</div>
+
+<style lang="scss">
+  .wrapper {
+    margin-bottom: 4rem;
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      gap: 6em;
+    }
+  }
+
+  .info {
+    z-index: 0;
+  }
+
+  h1 {
+    font-size: 4em;
+    margin: 0.5em 0 0;
+    line-height: 0.6em;
+
+    small {
+      font-size: 40%;
+      color: var(--text-color);
+      line-height: 0;
+    }
+  }
+
+
+  .claim {
+    font-style: italic;
+    margin-bottom: 2em;
+    color: var(--primary-color);
+  }
+
+  .wrapper-right {
+    flex: 1;
+  }
+
+  .animation {
+    margin: 0 max(-4em, -4vw) 0.2em;
+
+    img {
+      height: 100%;
+      width: 100%;
+      max-height: calc(90vh - 4rem);
+    }
+  }
+
+  .usps {
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+    list-style: none;
+    padding-left: 1em;
+
+    li {
+      padding-left: 1em;
+      padding-bottom: 0.6em;
+
+      &::before {
+        content: '● ';
+        position: absolute;
+        font-size: 1.6em;
+        transform: translate(-1em, -0.3em);
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  .button-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em 1em;
+    font-size: 1em;
+  }
+</style>
