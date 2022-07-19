@@ -22,3 +22,12 @@ export type BlogPostFrontMatter = {
   author: string
 }
 export type BlogPost = MarkdownInstance<BlogPostFrontMatter>[]
+
+export type LandingPageFrontMatter = {
+  lang: 'de' | 'en'
+  title: string
+  description: string
+  image: string
+  keyword: string
+}
+export type LandingPage = MarkdownInstance<LandingPageFrontMatter>[]
