@@ -10,6 +10,8 @@ layout: '@layouts/Blog.astro'
 
 Die digitale Speisekarten haben in den letzten Jahren immer mehr an Bedeutung gewonnen. In erster Linie ging es für viele Restaurants, Bars und Cafés darum eine gute Hygiene zu gewährleisten. Dies ist aber bloss ein Aspekt, welcher für digitales Speisekarten spricht.
 
+## Was ist eine digitale Speisekarte
+
 ## Vorteile von digitalen Speisekarten
 
 ## Nachteile von digitalen Speisekarten

@@ -9,6 +9,10 @@ layout: '@layouts/LandingPage.astro'
 
 Digitale Speisekarten sind eine perfekte Ergänzung oder ein sehr guter Ersatz Ihrer klassischen Speisekarte (link zum Blog "Vorteile von digitalen Speisekarten"). Mit der digitalen Speisekarte von Gaston, haben Sie ein sehr flexibles und mächtiges Tool, um Ihr Angebot optimal abzubilden.
 
+## Digitale Speisekarte in Kürze
+
+Kurz digitale Speisekarte erklären
+
 ## Vorteil von Gaston als digitale Speisekarte
 
 - Ihr Angebot wird auf Google gefunden
