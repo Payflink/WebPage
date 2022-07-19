@@ -16,12 +16,12 @@ export const metaData: MetaData = {
 }
 
 export const callToActionLinksDe: CallToAction[] = [
-  { href: 'preise/', text: 'Gaston engagieren' },
-  { href: 'demo/', text: 'Demo starten' },
+  { href: '/de/preise/', text: 'Gaston engagieren' },
+  { href: '/de/demo/', text: 'Demo starten' },
 ]
 export const callToActionLinksEn: CallToAction[] = [
-  { href: 'contact/', text: 'Order now' },
-  { href: 'demo/', text: 'Start demo' },
+  { href: '/en/contact/', text: 'Order now' },
+  { href: '/en/demo/', text: 'Start demo' },
 ]
 
 export const generalTitle = ({ name }: Product) => `${name}`
