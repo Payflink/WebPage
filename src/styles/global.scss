@@ -158,7 +158,6 @@ dialog {
     counter-increment: ordered-list-counter;
 
     &::before {
-      color: #00435f;
       content: counter(ordered-list-counter) '. ';
       margin-left: -1em;
     }

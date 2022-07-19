@@ -32,7 +32,7 @@ const USPs = [
       animation={{src: '/assets/hero-gaston-vs-menu.svg' ,
       alt: 'Bestellen mit Speisekarte mühsam, mit Gaston App schnell und einfach' }} links={callToActionLinksDe} />
     <h2><small>Auswahl unserer Kunden</small></h2>
-    <ul class="image-list">
+    <ul class="image-list" style="margin-bottom: 6em;">
       <li>
         <FixedPicture src="/src/images/customers/brauwerk-st-gallen.png" alt="Restaurant Brauwerk"
           placeholder={'tracedSVG'} height={60} />
@@ -122,7 +122,7 @@ const USPs = [
           <img src="/assets/illustrations/gaston-hilft.svg" alt="Gaston liefert" class="gaston-image">
 
         </div>
-        <ul>
+        <ul class="emoji-list">
           <li style="list-style: '🙅‍♂️  ';">
             <h3>Personalmangel bewältigen</h3>
             <p>Personal zu finden ist eine sehr grosse Herausforderung. Gaston übernimmt einen Teil der Service-Arbeit,
@@ -306,12 +306,9 @@ const USPs = [
       </div>
 
     </Container>
-  </section>
-
-  <section id="partner-von-gaston">
     <Container>
       <h2>Unsere Partner</h2>
-      <ul class="image-list high">
+      <ul class="image-list" style="justify-content: flex-start;">
         <li>
           <a href="https://www.flm.ch/">
             <FixedPicture src="/src/images/partners/flm.png" alt="FLM Kassensysteme" height={160} layout={'fixed'} />
@@ -352,11 +349,16 @@ const USPs = [
     }
   }
 
+
   .gaston-image {
     display: block;
     max-height: 16rem;
     margin-inline: auto;
     margin-block: 2em;
+  }
+
+  ul.emoji-list {
+    padding-left: 3em;
   }
 
   ul.image-list {
@@ -366,10 +368,11 @@ const USPs = [
     padding: 0;
     margin-top: 2em;
     align-items: center;
+    justify-content: center;
 
     li {
       list-style: none;
-      margin-inline: auto;
+      margin-inline: 0;
 
       ::global(img) {
         width: 100%;
