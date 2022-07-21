@@ -18,7 +18,6 @@ For a long time we planned to be able to store opening hours in Gaston and to al
 
 If the restaurant wants, guests can order multiple "courses" at once. In this case, guests assign each order item to a course so that the staff understands when which dish is desired.
 
-![Assign order items to a course](courses.png?width=350)
 
 ## Combine orders
 
