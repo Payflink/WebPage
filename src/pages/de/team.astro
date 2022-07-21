@@ -6,15 +6,20 @@ const description =
   'Das Team von Gaston wird täglich in den Restaurants motiviert... endlich bestellen und bezahlen zu dürfen.'
 
 const employees = [
+{
+    name: 'Philip Schönholzer',
+    position: 'Produkt-Entwickler',
+    image: '/assets/team/philip-schoenholzer-prev.jpg',
+  },
+  {
+    name: 'Mariana Barbosa',
+    position: 'Marketing',
+    image: '/assets/female-avatar.svg',
+  },
   {
     name: 'Patrik Stutz',
     position: 'Software-Entwickler',
     image: '/assets/team/patrik-stutz-prev.jpg',
-  },
-  {
-    name: 'Philip Schönholzer',
-    position: 'Produkt-Entwickler',
-    image: '/assets/team/philip-schoenholzer-prev.jpg',
   },
   {
     name: 'Roman Schaller',
@@ -74,6 +79,12 @@ const employees = [
     img {
       border-radius: 1000px;
       box-shadow: 0 0 60px 0px #ccc6;
+      background-color: lavender;
+      aspect-ratio: 1;
+
+      &[src$=".svg"] {
+        padding-top: 1em;
+      }
     }
   }
 
