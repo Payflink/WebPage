@@ -18,8 +18,6 @@ For a long time we planned to be able to store opening hours in Gaston and to al
 
 If the restaurant wants, guests can order multiple "courses" at once. In this case, guests assign each order item to a course so that the staff understands when which dish is desired.
 
-![Assign order items to a course](courses.png?width=350)
-
 ## Combine orders
 
 If the restaurant wants, we combine orders of one table. This means that if several guests at the same table order at the same time via Gaston, we send a combined order to the restaurant, with the positions of all guests at the table. This way the staff understands better which orders have to be prepared together.
