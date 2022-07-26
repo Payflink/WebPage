@@ -1,7 +1,6 @@
 ---
 import Main from './Main.astro'
 import Container from '@components/Container.astro'
-import { generalTitle, metaData } from 'src/config'
 import { LandingPageFrontMatter } from 'src/types'
 
 export type Props = {
@@ -9,15 +8,14 @@ export type Props = {
 }
 
 const { content } = Astro.props as Props
-const { title: documentationTitle, description, lang } = content
-const title = `${documentationTitle} • ${generalTitle(metaData[lang])}`
+const { title, description } = content
 ---
 
 <Main title={title} description={description}>
   <Container size="small">
-    <nav><a href="/de/dokumentation/">Dokumentation</a> &gt; {documentationTitle}</nav>
+    <nav><a href="/de/dokumentation/">Dokumentation</a> &gt; {title}</nav>
     <article class="landing-page">
-      <h1>{documentationTitle}</h1>
+      <h1>{title}</h1>
       <p class="description">
         {description}
       </p>
