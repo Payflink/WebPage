@@ -22,3 +22,9 @@ export type BlogPostFrontMatter = {
   author: string
 }
 export type BlogPost = MarkdownInstance<BlogPostFrontMatter>[]
+
+export type TeamMember = {
+  name: string
+  role: Record<Language, string>
+  image: string
+}
