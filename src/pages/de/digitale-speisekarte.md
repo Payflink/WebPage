@@ -24,7 +24,7 @@ Sobald eine Bestellung aufgegeben wurde, wird die Speisekarte von den Tischen de
 
 Gaston App bietet sowohl eine einfache und intuitive Navigation als auch die Integration eines Bestell-und Bezahlsystems, zusätlich zur digitalen Speisekarte.
 
-Eines der Markmale, in denen sich Gaston auszeichnet, ist auch die Suchlupe bzw. die Filter. Durch die Filter ist es möglich, eine umfassende und gründliche Suche nach Präferenzen durchzuführen. Bei der Entwicklung der Filter wurde darauf geachtet, dass sie den Lebensstil jedes Ihrer Gäste berücksichtigen. Es handelt sich also um eine einfache Funktion, die von grossem Wert ist: vegetarische Gerichte, vegane Gerichte oder Zutaten, die Allergien auslösen können, weil sie Nüsse, Gluten, Laktose usw. enthalten. Gaston schätzt und respektiert jeden Ihrer Gäste, und deshalb werden die spezifischen Merkmale der Filtern an die an die Besonderheiten jedes Kunden angepasst. 
+Eines der Merkmale, in denen sich Gaston auszeichnet, ist auch die Suchlupe bzw. die Filter. Durch die Filter ist es möglich, eine umfassende und gründliche Suche nach Präferenzen durchzuführen. Bei der Entwicklung der Filter wurde darauf geachtet, dass sie den Lebensstil jedes Ihrer Gäste berücksichtigen. Es handelt sich also um eine einfache Funktion, die von grossem Wert ist: vegetarische Gerichte, vegane Gerichte oder Zutaten, die Allergien auslösen können, weil sie Nüsse, Gluten, Laktose usw. enthalten. Gaston schätzt und respektiert jeden Ihrer Gäste, und deshalb werden die spezifischen Merkmale der Filtern an die an die Besonderheiten jedes Kunden angepasst. 
 
 ## Gaston als digitale Speisekarte
 
