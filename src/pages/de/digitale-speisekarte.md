@@ -11,19 +11,17 @@ Digitale Speisekarten sind eine perfekte Ergänzung oder ein sehr guter Ersatz I
 
 ## Digitale Speisekarte in Kürze
 
-Kurz digitale Speisekarte erklären
+Insgesamt ist unsere Speisekarte dynamisch und bietet einen allgemeinen Überblick über alles, was in einer klassischen gedruckten Speisekarte angeboten wird. Die Gäste können Speisen und Getränke bestellen sowie Informationen über Zutaten und sogar Vorlieben (beispieleweise für Veganer:innen oder Vegetarier:innen) abrufen. 
+
+Ganz wichtig: Produkte, die Allergien auslösen können, wie beispieleweise mit Laktose oder mit Gluten, sind entsprechend aufgeführt. Jeder Gast, der über ein Handy verfügt, kann auf unser QR-Menu zugreifen. 
+
 
 ## Vorteil von Gaston als digitale Speisekarte
 
 - Ihr Angebot wird auf Google gefunden
-- Möglichkeit (in einer späteren Phase auch) Bestellen über die App
-- Bezahlen über die App
-- Je nach Ort und Zeit ein andere Angebot
+- Je nach Ort und Zeit ein anderes Angebot
 - Je nach Ort und Zeit unterschiedliche Preise
-
-## Digitale Speisekarte als Ergänzung oder Ersatz
-
-Kann eine klassische Speisekarte ergänzen oder gleich ersetzen. Keine iPads nötig.
+- Filtern
 
 ## Gaston als digitale Speisekarte
 
@@ -32,8 +30,7 @@ Kann eine klassische Speisekarte ergänzen oder gleich ersetzen. Keine iPads nö
 - Informationen auf einer Speise oder Getränk
 - Optionen auf Speisen und Getränke
 - Variationen auf Speisen und Getränke
-- Beschreiben, wie man als Gast die Speisekarte erhält
-- Orte wo die Speisekarte erscheinen kann
+- Beschreiben, wie man als Gast die Speisekarte erhält | Orte, wo die Speisekarte erscheinen kann
 - Bearbeiten des Angebots beschreiben
 - Anpassen des Aussehens/Designs
 
@@ -48,4 +45,6 @@ Kann eine klassische Speisekarte ergänzen oder gleich ersetzen. Keine iPads nö
 
 ## Starten Sie kostenlos
 
-Die Speisekarte können Sie unbegrenzt kostenlos nutzen und später auf das Bestellen / Bezahlen upgraden.
+Sind Sie immer noch nicht sicher, ob Gaston wirksam ist? Wir bieten Ihnen ein unschlagbares Angebot: Nutzen Sie unsere digitale Speisekarte kostenlos! 
+
+Entdecken Sie zunächst die Vorteile unseres Produkts und upgraden Sie später auf das Bestellen/Bezahlen. Schritt für Schritt, damit Sie sich selbst von den Vorteilen überzeugen können.
