@@ -15,6 +15,7 @@ const title = `${documentationTitle} • ${generalTitle(metaData[lang])}`
 
 <Main title={title} description={description}>
   <Container size="small">
+    <nav><a href="/de/dokumentation/">Dokumentation</a> &gt; {documentationTitle}</nav>
     <article class="landing-page">
       <h1>{documentationTitle}</h1>
       <p class="description">
@@ -38,7 +39,7 @@ const title = `${documentationTitle} • ${generalTitle(metaData[lang])}`
 </style>
 <style lang="scss">
   h1 {
-    margin-bottom: 0;
+    margin-top: 0.5em;
     line-height: 1em;
   }
 
