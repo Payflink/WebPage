@@ -10,7 +10,7 @@ export type Props = {
 
 const { content } = Astro.props as Props
 const { title: blogTitle, description, lang, date, author } = content
-const title = `${blogTitle} • Blog • ${generalTitle(metaData[lang])}`
+const title = `${blogTitle} • Blog`
 ---
 
 <Main title={title} description={description}>
