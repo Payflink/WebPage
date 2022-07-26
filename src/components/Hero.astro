@@ -34,14 +34,14 @@ const props = Astro.props as Props
     <div class="animation">
       <img src={props.animation.src} alt={props.animation.alt} height="150" width="204" />
     </div>
-    <CallToAction links={props.links} />
   </div>
+</div>
+<div class="c2a-wrapper">
+  <CallToAction links={props.links} />
 </div>
 
 <style lang="scss">
   .wrapper {
-    margin-bottom: 6rem;
-
     @media (min-width: 768px) {
       display: flex;
       justify-content: center;
@@ -115,5 +115,9 @@ const props = Astro.props as Props
         vertical-align: middle;
       }
     }
+  }
+
+  .c2a-wrapper {
+    margin-bottom: 6rem;
   }
 </style>
