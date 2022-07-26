@@ -15,7 +15,7 @@ import Hero from '@components/Hero.astro'
 const { de } = metaData
 
 const description =
-  'Gaston die digitale Speisekarte erlaubt es den Gästen schnell und einfach zu bestell und bezahlen. Dabei spielt es keine Rolle, ob die Gäste in ihrem Betrieb, unterwegs oder Zuhause sind. Gaston unterstützt die Bestellung in Ihrem Betrieb, Take Away und Delivery.'
+  'Gaston erlaubt es den Gästen schnell und einfach zu bestell und bezahlen. Dabei spielt es keine Rolle, ob die Gäste in ihrem Betrieb, unterwegs oder Zuhause sind.'
 
 const USPs = [
   "Ihre Gäste bestellen und bezahlen ohne Wartezeit",
@@ -26,7 +26,8 @@ const USPs = [
 
 ---
 
-<MainLayout title={de.claim} description={description}>
+<MainLayout title={`${de.name} ${de.description} • QR-Code Speisekarte • Scannen, bestellen, bezahlen`}
+  description={description}>
   <Container>
     <Hero name={de.name} description={de.description} claim={de.claim} usp={USPs}
       animation={{src: '/assets/hero-gaston-vs-menu.svg' ,
