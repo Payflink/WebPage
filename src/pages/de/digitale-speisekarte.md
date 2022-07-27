@@ -35,7 +35,7 @@ Durch Anklicken des Speise- oder Getränkemenus öffnet sich eine Reihe von Opti
 
 Lediglich ist nur das Scannen eines QR Codes erforderlich, um die Speisekarte zu erhalten. Die digitale Speisekarte ist für Handys, Tablets, Websites und auch Displays geeignet.
 
-- Bearbeiten des Angebots beschreiben
+Wenn Sie an den gesamten Einstellungsprozess denken, denken Sie vielleicht, dass er kompliziert sein wird. Unser "Content Manager System" ist in vier verschiedene Bereiche aufgeteilt, was die Erstellung eines digitalen Menus sehr einfach macht. Sie können die Beschreibung der Produkte, Bilder, Preise, Kategorien, Rubricken, den Namen des Restaurants, eine kleine Einführung in das Restaurant und vieles mehr auswählen. Für unser System müssen Sie nur Ihren Benutzer und Ihr Passwort eingeben.
 
 Unsere digitale Speisekarte wird an das Design und Fotos des Betriebs angepasst. Das bedeutet, dass Sie besser wissen, wie die kleinsten Details in Ihrer digitalen Speisekarte umgesetzt werden sollten. Denn die Identität Ihres Betriebs ist eine unserer Prioritäten.
 
