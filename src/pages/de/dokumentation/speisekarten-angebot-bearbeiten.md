@@ -67,7 +67,7 @@ Auf den Speisekarten haben Sie folgende Einstellungsmöglichkeiten:
   - Take Away
   - Delivery
   - Im Betrieb (z. B. Restaurant)
-- Zeite, wo die Speisekarte aktive ist definieren
+- Zeiten, wo die Speisekarte aktive ist definieren
   - Zeitbereich eines Wochentages
   - Datum von/bis
 
