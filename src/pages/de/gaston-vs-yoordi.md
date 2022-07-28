@@ -1,56 +1,47 @@
 ---
 lang: de
-title: Gaston vs Yoordi
-description: Mit der digitalen Speisekarte von Gaston haben Sie ein flexibles und mächtiges Tool, um das Angebot Ihres Restaurants, Ihrer Bar oder Cafés optimal abzubilden.
+title: Gaston vs Yoordi - Vergleich von zwei digitalen Speisekarten Apps 
+description: Ein Vergleich zwischen unserem Produkt und Funktionen vs denen eines unserer Konkurrenten wird hier durchgeführt
 image: icon.png
-keyword: digitale speisekarte
+keyword: yoordi, gaston speisekarte, gaston, delivery app
 layout: '@layouts/LandingPage.astro'
 ---
 
-Digitale Speisekarten sind eine perfekte Ergänzung oder ein sehr guter Ersatz Ihrer klassischen Speisekarte (link zum Blog "Vorteile von digitalen Speisekarten"). Mit der digitalen Speisekarte von Gaston, haben Sie ein sehr flexibles und mächtiges Tool, um Ihren Betrieb auf dem heutigen Gastronomiemarkt hervorzuheben.
+Seit der technologischen Entwicklung gibt es immer wieder neue Produkte, Leistungen oder Verfahren, die auf eine Art von Fortschritt abzielen. Heutzutage sind die Informationen sehr dynamisch und sie werden fast jede Sekude aktualisiert. Diese Vorteile haben zur Entwicklung von Produkten geführt, die eine grössere Interaktivität mit der Öffenlichkeit aufweisen, wie Apps und QR-Codes.
 
-## Digitale Speisekarte in Kürze
+Es gab ein allgemeines Update in der Konsumform. Durch die Kombination von QR-Codes und Apps sind grosse Softwaresfirmen entstanden. Diese Updates könnten im Bereich der Gastronomie auch nicht anders sein. Aus diesem Grund wird hier eine Analyse zwischen zwei grossen Produkten in diesem Bereich durchgeführt: Gaston und Yoordi. Wir prüfen die wichtigsten Funktionen, vergleichen sie und zeigen, wie die Kunden von ihnen profitieren können.
 
-Die digitale Speisekarte handelt sich um eine App. Um auf diese App zuzugreifen, wird beispieleweise ein Handy oder ein Tablet benötigt, um einen QR Code zu scannen. Die digitale Speisekarte bietet individuelle Vorlagen, Fotos von Speisen und Geträken mit Namen und Preisen, Übersetzungsmöglichkeiten in andere Sprachen und teilweise auch die Möglichkeit, Bestellungen aufzugeben und verschiedene Zahlunsoptionen.
+## Yoordi
 
-## Vorteil von Gaston als digitale Speisekarte
+Yoordi ist ein Softwareunternehmen, das im Hospitality-Sektor tätig ist. Sein Produkt besteht darin, einen QR Code anzubieten, der gescannt werden kann, um die digitale Speisekarte anzusehen und dann über einen Bildschirm bestellen und zu bezahlen. Die Firma definiert ihr Produkt nicht als App, da man tatsächlich eine App herunterladen muss. Mit Yoordi ist das aber nicht der Fall.
 
-Google ist die meistgenutzte Suchmaschine der Welt. Seit seiner Entstehung hat es sogar Verben wie "googeln" inspiriert. Natürlich ist es ein grosser Vorteil, wenn Ihr Unternehmen bei Google vertreten ist, da Menschen aus der ganzen Welt Zugang zu Ihrer Seite haben. Die Sichtbarkeit, die Ihr Unternehmen gewinnt, ist für das Wachstum sehr wichtig. Wenn Sie sich für Gaston als digitale Speisekarte entscheiden, finden Sie Ihr Angebot bei Google und Sie können eine grosse Anzahl von potenziellen Gästen erreichen.
+Das Softwareunternehmen wurde 2018 gegründet, hat es sich seither nicht weiterentwickelt und bietet nun genau die gleiche Funktionen als anderen Firmen: digitale Speisekarte, Bestellung und Bezahlung. Die App ist zwar nicht das vollständigste, wenn es um fortgeschrittene Funktionen geht, aber sie bietet Einfachheit, Benutzerfreundlichkeit und Bequemlichkeit. 
 
-Die Speisekarte wechselt je nach Saison, Wochentag und Tageszeit. "Das Mittagsmenu ist nicht dasselbe wie das Abendmenu. Am Wochenende bieten wir neben der Speisekarte auch eine Cocktailkarte."
-Das klingt schon etwas unpraktisch, wenn Sie Ihre Angebote und Ihre Preise ständig ändern müssen. Der Druck ist mit zusätzlichen Kosten verbunden, es wird mehr Papier verbraucht, und der häufige Wechsel bedeutet zusätzlichen Zeitaufwand. Gaston hat dieses System optimiert, denn unsere Kunden können die digitale Speisekarte mit unterschiedlichen Preisen und anderen Angeboten je nach Ort und Zeit anpassen.
+Yoordi wird als ein einfaches Fenster pränsentiert aber hebt sich mit ihren Leistungen nicht vollständig von der Konkurrenz ab, da es kein Alleinstellungsmerkmal bietet. Andererseits, bietet Yoordi eine einfache und intuitive Navigation auf ihrer Website, da sie sich auf das Visuelle und weniger auf Texte konzentriert.
 
-Sobald eine Bestellung aufgegeben wurde, wird die Speisekarte von den Tischen der Gäste genommen. Wenn die Tische voll sind, ist die Wahrscheinlichkeit gross, dass es keine Speisekarte mehr zu vorhanden gibt. Mit Gaston ist Ihre Speisekarte digital und kann von den Gästen jederzeit abgerufen werden, um eine neue Bestellung aufzugeben oder um sich daran zu erinnern, was genau bestellt wurde und wie die Zutaten des Gerichts lauten. 
+Allerdings hat Yoordi zwar eine sehr starke Funktion, wenn es um Sprachen geht, da sie die verfügbaren Sprachen erweitert haben. Wenn Ihr Betrieb in einem touristischen Gebiet liegt, ist dies ein zusätzlicher Punkt, den Sie berücksichtigen sollten. Eine weitere interessante Funktion bezieht sich auf das Stempelkartensystem, bei dem die Gäste Stempel sammeln und davon profitieren können. Es wurden jedoch keine weiteren Informationen über die Funktionsweise gefunden.
 
-Gaston App bietet sowohl eine einfache und intuitive Navigation als auch die Integration eines Bestell-und Bezahlsystems, zusätlich zur digitalen Speisekarte.
+## Gaston
 
-Eines der Merkmale, in denen sich Gaston auszeichnet, ist auch die Suchlupe bzw. die Filter. Durch die Filter ist es möglich, eine umfassende und gründliche Suche nach Präferenzen durchzuführen. Bei der Entwicklung der Filter wurde darauf geachtet, dass sie den Lebensstil jedes Ihrer Gäste berücksichtigen. Es handelt sich also um eine einfache Funktion, die von grossem Wert ist: vegetarische Gerichte, vegane Gerichte oder Zutaten, die Allergien auslösen können, weil sie Nüsse, Gluten, Laktose usw. enthalten. Gaston schätzt und respektiert jeden Ihrer Gäste, und deshalb werden die spezifischen Merkmale der Filtern an die an die Besonderheiten jedes Kunden angepasst. 
+Gaston App hingegen wurde 2019 in der Stadt Luzern mit dem Ziel gegründet, die Wartezeiten beim Bestell- und Bezahlvorgang zu verkürzen. Aus diesem Grund wollte unser Unternehmen noch weiter gehen.
 
-## Gaston als digitale Speisekarte
+Unsere App ist ähnlich wie die von Yoordi. Der Gast scannt einen QR-Code und hat dann Zugriff auf die Gaston Speisekarte und kann seine Bestellung gleich aufgeben. Der Gast kann wählen, ob er direkt über die App oder beim Personal bezahlen möchte.
 
-Nach dem Scannen des QR Codes werden die Gäste auf die Startseite unserer digitalen Speisekarte weitergeleitet. Auf dieser Startseite wird eine Übersicht über die App angezeit.
-Die Gäste haben Zugang zu verschiedenen Kategorien, die Restaurant Empfehlungen oder direkt die Speise- und Getränkekarte anzeigen. Auf intuitive Weise können die Gäste auf die einzelnen Kategorien klicken und mehr über sie erfahren.
+Sowohl unsere Website als auch unsere sozialen Medien werden ständig aktualisiert, um den Bedürfnissen unserer Kunden gerecht zu werden. Das bedeutet, dass wir derzeit daran arbeiten, die Visualisierung unserer Produkte für unseren Kunden dynamischer und einfacher zu gestalten.
 
-Durch Anklicken des Speise- oder Getränkemenus öffnet sich eine Reihe von Optionen mit Informationen darüber, ob das Menu vegan bzw. vegetarisch ist oder Produkte enthält, die Allergien auslösen. Des Weiteren ist bei den angebotenen Optionen möglich, einen zusätzlichen Wunsch zu äussern, beispieleweise mehr Besteck. Unsere digitale Speisekarte bietet auch Variationsmöglichkeiten, bei denen die Gäste wählen können, ob sie ein 3 dl oder 5 dl Getränk möchten, oder ob sie eine grössere oder kleinere Portion Essen wünschen.
+Die Ähnlichkeiten mit Yoordi zeigen aber nicht viel, denn Gaston App wurde mit Filtern entwickelt, die die Suche nach bestimmten Informationen erleichtern. Gaston hat eine emotionelle Bindung zu jedem ihrer Kunden und versteht, dass seine Kunden ihren Gästen das Beste bieten wollen. Wenn ein Gast nach veganen Produkten suchen möchte, ist nur fair, ihm diese Möglichkeit anzubieten.
 
-Lediglich ist nur das Scannen eines QR Codes erforderlich, um die Speisekarte zu erhalten. Die digitale Speisekarte ist für Handys, Tablets, Websites und auch Displays geeignet.
+Im Hinblick auf Dynamik und Effizienz kann die digitale Speisekarte von Gaston je nach Saison, Tag, Uhrzeit und Ort geändert werden. Das Menu und die Änderungen können über unser System leicht abgerufen werden. Hier finden Sie mehr dazu: (Link CMS / Speisekarte bearbeiten). Gaston ist nicht nur eine App, mit der man ein Restaurant Menu erstellen kann. Wir sind so konzipiert, dass wir auch Bars, Cafés, Imbisse, Pizzerien usw. versorgen. 
 
-Wenn Sie an den gesamten Einstellungsprozess denken, denken Sie vielleicht, dass er kompliziert sein wird. Unser "Content Manager System" ist in vier verschiedene Bereiche aufgeteilt, was die Erstellung eines digitalen Menus sehr einfach macht. Sie können die Beschreibung der Produkte, Bilder, Preise, Kategorien, Rubricken, den Namen des Restaurants, eine kleine Einführung in das Restaurant und vieles mehr auswählen. Für unser System müssen Sie nur Ihren Benutzer und Ihr Passwort eingeben.
+Sobald Sie unseren QR Code scannen, werden Sie sehen, dass Sie zwischen Abholung oder Lieferung wählen können. Um ein Betrieb auszuweiten, kann Gaston auch als Take Away oder Delivery app dienen.
 
-Unsere digitale Speisekarte wird an das Design und Fotos des Betriebs angepasst. Das bedeutet, dass Sie besser wissen, wie die kleinsten Details in Ihrer digitalen Speisekarte umgesetzt werden sollten. Denn die Identität Ihres Betriebs ist eine unserer Prioritäten.
+## Vergleich zwischen Yoordi und Gaston
 
-## Gaston kann auch mehr
+Yoordi ist länger auf dem Markt, hat sich aber mehr auf visuelle Inhalte als auf die Weiterentwicklung von Funktionen konzentriert. Zumindest bis zu diesem gegebenen Zeitpunkt.
+Das ist keine negative Kritik, denn mit der Modernisierung wollen immer mehr Menschen Inhalte, die einfach und schnell zu konsumieren sind. Mit anderen Worten: Eine App, die sich auf das Visuelle konzentriert, ist praktisch.
 
-Ihre Gäste haben Zugriff auf die Online Speisekarte und wählen ihre Gerichte aus. Aber nachdem sie mit dem Essen begonnen haben, möchten sie gleich noch mehr Beilagen bestellen, und das können sie bequem von ihrem Tisch aus tun.
+Andererseits ist Gaston auf lange Sicht rentabler, da die App Ihren Betrieb in verschiedenen Branchen abdecken kann. Unsere App hat Funktionen, wie die Filter, die zeigen, wie sorgfältig das Produkt entwickelt wurde. Des Weiteren spricht unsere App eine breitere Zielgruppe an.
 
-Die Gaston App bietet auch eine integrierte Zahlungsmöglichkeit. Das heisst, die Gäste können schnell über die App bezahlen und auch Trinkgeld mit einbeziehen. Die Gäste können wählen, ob sie direkt über die App oder beim Personal bezahlen möchten.
+Was die Preise betrifft, ist es nicht möglich, einen fairen Vergleich anzustellen, da Yoordi keine Tarife auf ihrer Seite veröffentlicht.
 
-Gaston funktioniert auch als Take Away App oder als Delivery App, je nach Ihren Bedürfnissen. Zum Take Away bietet die App den Gästen die Möglichkeit, online zu bestellen und zu bezahlen. Sobald die Bestellung bereit ist, muss der Gast sie nur noch am vereinbarten Ort abholen. Bei der Lieferoption gibt der Gast die Daten für die Lieferung der Bestellung ein, die Bestellung wird an die Küche des Betriebs geschickt, dann bezahlt der Gast durch die App und seine Bestellung wird an die angegebene Adresse geliefert.
-
-Ein noch bemerkenswerteres Unterscheidungsmerkmal der Gaston App ist, dass sie als Gästerufsystem mit SMS Funktion arbeitet. Der Bestellprozess ist einfach: Gaston muss nicht heruntergeladen oder installiert werden, und bei dem Gästerufsystem sind nur der Name und die Telefonnummer des Gastes erforderlich.
-
-## Starten Sie kostenlos
-
-Sind Sie immer noch nicht sicher, ob Gaston App wirksam ist? Wir bieten Ihnen ein unschlagbares Angebot: Nutzen Sie unsere digitale Speisekarte kostenlos! 
-
-Entdecken Sie zunächst die Vorteile unseres Produkts und upgraden Sie später auf das Bestellen/Bezahlen. Schritt für Schritt, damit Sie sich selbst von den Vorteilen überzeugen können.
+Zusammenfassend lässt sich sagen, dass die zwei hervorragende Apps im Bereich Gastronomie und Hospitality jeweils ihre unterschiedlichen Funktionen haben. Es kommt dann ganz darauf an, welche Funktionen Sie am meisten schätzen und wie viel Sie bereit sind, für das Produkt auszugeben.
