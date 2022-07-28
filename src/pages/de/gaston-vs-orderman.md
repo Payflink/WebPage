@@ -48,7 +48,7 @@ Orderman wird oft als schnell, freundlich, kompetent und ertragreich bezeichnet.
 
 ## Komfort durch Design
 
-Einer der stäksten Punkte von Orderman ist die Displays. Das Produkt wird häufig beschrieben als robust, da es Sonnenlichttauglichkeit bietet. Die Arbeit des Personals wird durch das Designkonzept der Bildschirme erleichtert und effektiver gestaltet.
+Einer der stärksten Punkte von Orderman ist die Displays. Das Produkt wird häufig beschrieben als robust, da es Sonnenlichttauglichkeit bietet. Die Arbeit des Personals wird durch das Designkonzept der Bildschirme erleichtert und effektiver gestaltet.
 
 ## Vergleich zwischen Gaston und Orderman
 
