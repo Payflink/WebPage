@@ -1,6 +1,6 @@
 ---
 lang: de
-title: Wir reagieren auf die aktuelle Situation
+title: Wie Ihr Betrieb mit einer Delivery oder Take Away App auf die Pandemie reagieren kann
 description: Restaurants wurden mit der Corona-Krise empfindlich getroffen. Mit dem Lockdown brach vom einen Moment zum anderen jeglicher Umsatz weg. Gaston hilft mit Take Away und oder Delivery die Gäste trotzdem zu bedienen.
 image: /assets/blog/new-take-away/take-away.png
 date: 2020-04-21
@@ -12,7 +12,7 @@ Restaurants wurden mit der Corona-Krise empfindlich getroffen. Mit dem Lockdown 
 
 Es braucht also Kreativität und neue Wege, um wieder zum Umsatz vor der Krise zu kommen. Wichtig bleibt dabei, die Schutzmassnahmen für die Gäste und das Personal einzuhalten. Wir haben uns überlegt, wie wir die Betriebe dabei unterstützen können.
 
-## Take Away und Home Delivery
+## Take Away App und Home Delivery App?
 
 Diese Variante haben schon einige eingeschlagen. Das eröffnet schnell neue Absatzwege. Einige Restaurants aktualisieren ihre Homepage mit dem Angebot und der Telefonnummer. Andere stellen kurzerhand eine Tafel auf die Strasse.
 
@@ -35,6 +35,14 @@ Natürlich können Sie mit einigen Einstellungen Einfluss auf den Bestellungspro
 - Sagen Sie uns, wie viel Vorlaufzeit Sie benötigen
 - Bestimmen Sie den Lieferzuschlag
 
+Eine Pandemie wirkt sich auf das Leben vieler Menschen aus, daher möchten wir sicherstellen, dass unsere Gaston App eine langfristige Lösung für den Fall eines erneuten Lockdowns sein können. Eine vorausschauende Planung vermeidet hohe Einkommensverluste.
+
 ## Was kostet mich das?
 
+Wir garantieren angemessene Preise und Qualitätsprodukte, die dem Budget jedes Betriebs entschprechen. In der aktuellen Situation stehen unsere Kunden im Fokus, und wir arbeiten hart daran, dass unsere Kunden die Auswirkungen der Pandemie so wenig wie möglich spüren.
+
+Gaston ist eine Restaurant App und bietet 24h Support, ein individuelles Design, eine digitale Speisekarte in mehreren Sprachen und kostenlose* Grundgebühr für Ihren Betrieb in unserem "Basic" Paket.
+
 Mehr über die Kosten von Gaston finden Sie auf der [Angebots](/de/preise/)-Seite.
+
+*Die Transaktionskosten des Zahlungsproviders (5,9%) fallen in jedem Plan an. 
