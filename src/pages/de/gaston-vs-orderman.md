@@ -1,6 +1,6 @@
 ---
 lang: de
-title: Gaston vs Orderman - Vergleich von zwei verschiedenen Produkten
+title: Können Gaston und Orderman koexistiren?
 description: Ein Vergleich zwischen unserem Produkt und Funktionen vs Orderman
 image: icon.png
 keyword: orderman, gaston app, gaston
@@ -53,6 +53,8 @@ Einer der stärksten Punkte von Orderman ist die Displays. Das Produkt wird häu
 
 Orderman ist ein Produkt mit jahrelanger Erfahrung in der Gastronomie. Es steht für Tradition. Das Produkt hat grosse und beneidenswerte Vorteile, aber auch negative Seiten, nämlich die Kosten, die für die Betriebe entstehen, die das System einsetzen.
 
-Gaston hingegen bietet ein innovatives Produkt an, das, obwohl neue auf dem Markt, ein hohes Potenzial aufweist. Neben den monatlichen Plänen, die unsere App anbietet, fallen für Ihren Betrieb keine zusätzlichen Kosten an. Die Einfachheit unseres Produkts zieht die Aufmerksamkeit auf sich: Die Gäste kommen fast immer schon mit dem Handy in der Hand an und sie sollen nur das Menu in QR Code scannen, zudem noch bestellen und bezahlen. 
+Gaston bietet ein innovatives Produkt an, das, obwohl neue auf dem Markt, ein hohes Potenzial aufweist. Neben den monatlichen Plänen, die unsere App anbietet, fallen für Ihren Betrieb keine zusätzlichen Kosten an. Die Einfachheit unseres Produkts zieht die Aufmerksamkeit auf sich: Die Gäste kommen fast immer schon mit dem Handy in der Hand an und sie sollen nur das Menu in QR Code scannen, zudem noch bestellen und bezahlen. 
 
 Gaston App passt sich den Bedürfnissen der Kunden an und hat ausserdem eine Take Away App und eine Delivery App. Unsere App ist offensichtlich modern und ist Zukunftssicher.
+
+Dies heisst nicht, dass es keine Koexistenz mit Orderman geben kann, da beide Produkte gleichzeitig eingesetzt werden können.
