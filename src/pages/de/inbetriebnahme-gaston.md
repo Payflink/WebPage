@@ -15,13 +15,17 @@ Haben Sie, bevor Sie mit der ganzen Installation beginnen, die Zahlungsdienstlei
 
 Wir empfehlen Datatrans oder Worldline als Zahlungsproviders, aber wir können natürlich andere Angebote anschauen.
 
-## Mit oder ohne Kasse?
+## Gaston App mit oder ohne Kasse?
 
-Unser Prozess mit Kasse ist ziemlich schneller, da weniger Konfiguration benötigt wird. 
+Unser CMS ist in vier Bereiche unterteilt: Artikel, Kategorien, Speisekarte, Einstellungen.
 
-Wenn Gaston mit Ihrer Kasse verbunden ist, können alle Artikel gleich importiert werden. Der Prozess dauert etwa 10 Minuten und schon bald werden alle Änderungen im digitalen Menu angezeigt. Fotos und Kategorienbeschreibungen können jedoch nicht importiert werden und müssen später in Gaston-CMS bearbeitet werden.
+Wenn Gaston mit Ihrer Kasse verbunden ist, können alle Artikel und Kategorien gleich importiert werden. Der Prozess dauert etwa 10 Minuten und schon bald werden alle Änderungen im digitalen Menu angezeigt. Fotos und Kategorienbeschreibungen können jedoch nicht importiert werden und müssen später in Gaston-CMS bearbeitet werden. Unser Prozess mit Kasse ist ziemlich schneller, da weniger Konfiguration benötigt wird. 
 
-Ohne Kasse 
+Sobald Gaston im Einsatz ist, werden alle Bestellungen direkt an Ihre Kasse übermittelt.
+
+Ohne Kasse ist es ein eher langsamerer Prozess, da die gesamte Aktualisierungsarbeit für Artikel und Kategorien manuell erfolgen muss. Wenn es um die Speisekarte und Einstellungen geht, ist der Arbeitsaufwand derselbe.
+
+Wenn Gaston im Einsatz ist, bedeutet einfach, dass alle Bestellungen entweder mit einem Bondrucker ausgedruckt werden oder auf einem Bildschirm angezeigt werden sollen.
 
 ## Designstil
 
