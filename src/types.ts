@@ -1,6 +1,17 @@
 import { MarkdownInstance } from 'astro'
 
 export type Language = 'de' | 'en'
+
+export interface FooterItem {
+  href: string
+  title: string
+}
+export interface FooterGroup {
+  title: string
+  items: FooterItem[]
+}
+export type I18nFooter = Record<Language, FooterGroup[]>
+
 export type Product = {
   name: string
   description: string
@@ -28,3 +39,12 @@ export type TeamMember = {
   role: Record<Language, string>
   image: string
 }
+
+export type LandingPageFrontMatter = {
+  lang: 'de' | 'en'
+  title: string
+  description: string
+  image: string
+  keyword: string
+}
+export type LandingPage = MarkdownInstance<LandingPageFrontMatter>[]
