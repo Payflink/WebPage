@@ -7,7 +7,7 @@ keyword: gäste-rufsystem, gaston app, gäste-pager, digital menu, QR Code
 layout: '@layouts/LandingPage.astro'
 ---
 
-Angesichts der Vielzahl von Produkten, die ständig für den gastronomischen Bereich entwickelt werden, ist es schwer zu beurteilen, welches Produkt für Ihren Betrieb wirklich geeignet ist. Oder? Hier werden wir in nur vier Punkten argumentieren, warum Sie Gaston App gegenüber einem Gäste-Rufsystem in Betracht ziehen sollten.
+Das Gäste-Rufsystem existiert seit Jahren und ist daher vielleicht die erste Idee, die einem in den Sinn kommt, wenn man an eine Erhöhung der Qualität im Service denkt. Aber wie kann man wissen, dass doch noch andere Alternative existieren, wenn man gar nicht von denen weiss? Aus diesem Grund werden wir hier in nur vier Punkten argumentieren, warum Sie Gaston App gegenüber einem Gäste-Rufsystem in Betracht ziehen sollten.
 
 ## 1. Kosten
 
