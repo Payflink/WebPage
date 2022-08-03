@@ -1,6 +1,6 @@
 ---
 lang: de
-title: Warum kann Gaston ein Gäste-Rufsystem ersetzen?
+title: Wie kann Gaston ein Gäste-Rufsystem ersetzen?
 description: Hier werden vier Gründe genannt, warum ein Kunde sich für Gaston und nicht für das Gäste-Rufsystem entscheiden sollte.
 image: icon.png
 keyword: gäste-rufsystem, gaston app, gäste-pager, digital menu, QR Code
