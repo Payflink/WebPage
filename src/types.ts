@@ -48,3 +48,10 @@ export type LandingPageFrontMatter = {
   keyword: string
 }
 export type LandingPage = MarkdownInstance<LandingPageFrontMatter>[]
+
+export type DocumentationFrontMatter = {
+  lang: 'de' | 'en'
+  title: string
+  description: string
+}
+export type Documentation = MarkdownInstance<DocumentationFrontMatter>[]

@@ -190,9 +190,14 @@ const footerDe: FooterGroup[] = [
         title: 'Restaurant Bestell App',
         href: '/de/restaurant-bestell-app/',
       },
+    ],
+  },
+  {
+    title: 'Dokumentation',
+    items: [
       {
-        title: 'Digitale Speisekarte',
-        href: '/de/digitale-speisekarte/',
+        title: 'Speisekarte bearbeiten',
+        href: '/de/dokumentation/speisekarten-angebot-bearbeiten/',
       },
     ],
   },
