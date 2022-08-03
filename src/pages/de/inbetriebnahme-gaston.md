@@ -1,13 +1,11 @@
 ---
 lang: de
-title: Wie funktioniert die Inbetriebnahme von Gaston App
-description: Was ist erforderlich, um Gaston App in einem Betrieb einzusetzen? Alles, was in den Behind the Scenes bevor der Aktivierung des QR Menus passiert, wird hier beschrieben.
+title: Was ist erforderlich, um Gaston in einem Betrieb einzusetzen?
+description: Wenn wir ein neues Projekt in Angriff nehmen, haben wir schon dieses witzige Adrenalingefühl im Bauch. Es gibt so viele Punkte, an die wir denken müssen, dass wir manchmal das eine oder andere Detail vergessen. Aus diesem Grund haben wir quasi eine Checklist erstellt, in der Sie Schritt für Schritt alles überprüfen können, was Sie brauchen, bevor Sie unser digitales Menu in Ihrem Betrieb einsetzen.
 image: icon.png
 keyword: gaston app, Speisekarte QR Code, speisekarte als QR Code, digital menu, take away app, delivery app
 layout: '@layouts/LandingPage.astro'
 ---
-
-Wenn wir ein neues Projekt in Angriff nehmen, haben wir schon dieses witzige Adrenalingefühl im Bauch. Es gibt so viele Punkte, an die wir denken müssen, dass wir manchmal das eine oder andere Detail vergessen. Aus diesem Grund haben wir quasi eine Checklist erstellt, in der Sie Schritt für Schritt alles überprüfen können, was Sie brauchen, bevor Sie unser digitales Menu in Ihrem Betrieb einsetzen.
 
 ## Zahlungsprovider
 
