@@ -1,6 +1,6 @@
 ---
 lang: de
-title: Wie Ihr Betrieb mit einer Delivery oder Take Away App auf die Pandemie reagieren kann
+title: Wie Ihr Betrieb mit Take Away auf die Pandemie reagieren kann
 description: Restaurants wurden mit der Corona-Krise empfindlich getroffen. Mit dem Lockdown brach vom einen Moment zum anderen jeglicher Umsatz weg. Gaston hilft mit Take Away und oder Delivery die Gäste trotzdem zu bedienen.
 image: /assets/blog/new-take-away/take-away.png
 date: 2020-04-21
