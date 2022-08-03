@@ -1,16 +1,16 @@
 ---
 lang: de
 title: Speisekarte bearbeiten
-description: Gaston erlaubt es Ihnen jederzeit innerhalb Minuten das Angebot auf Ihrer Speisekarte selber anzupassen. So können Sie Speisen und Getränke erfassen, anpassen oder auch entfernen. Wie dies im Detail geht, erfahre Sie hier.
+description: Gaston erlaubt es Ihnen jederzeit innerhalb Minuten das Angebot auf Ihrer Speisekarte selber anzupassen. So können Sie Speisen und Getränke erfassen, anpassen oder auch entfernen. Wie dies im Detail geht, erfahren Sie hier.
 image: icon.png
 layout: '@layouts/Documentation.astro'
 ---
 
-In Gaston stehen Ihnen zwei Möglichkeiten zur Verfügung, um Ihre Speisekarte anzupassen. Sie können in jedem Fall die Artikel in unserem CMS (Content Management System) bearbeiten. Falls Gaston mit Ihrer Kasse verbunden ist, können wir die Artikel direkt auch importieren.
+In Gaston stehen Ihnen zwei Möglichkeiten zur Verfügung, um Ihre Speisekarte anzupassen. Sie können in jedem Fall die Artikel in unserem CMS (Content Management System) bearbeiten. Falls Gaston mit Ihrer Kasse verbunden ist, können wir die Artikel auch direkt importieren.
 
 ## Artikel im CMS bearbeiten
 
-Loggen Sie sich mit Ihrem persönlichen Benutzer und Passwort auf dem Gaston-CMS ein. Dort sehen Sie vier Hauptbereiche.
+Loggen Sie sich mit Ihrem persönlichen Benutzernamen und Passwort auf dem Gaston-CMS ein. Dort sehen Sie vier Hauptbereiche.
 
 1. Artikel
 2. Kategorien
@@ -25,9 +25,9 @@ In den Artikeln sehen Sie alle Artikel gruppiert nach Kategorie. Hier können Si
 - Name des Artikels für die Gäste (falls der Name ansonsten eher für den internen Gebrauch verwendet wird)
 - Artikel aktivieren, deaktivieren
 - Artikel auf allen Speisekarten anzeigen oder nur auf ausgewählten Speisekarten anzeigen
-- Kategorie, in welcher der Artikel erscheinen soll
+- Kategorie, zu welcher der Artikel gehört
 - Beschreibung des Artikels
-- Optionen des Artikels (zusätzliche Zutaten, Garstufen, weitere Geschirr, Varianten usw.)
+- Optionen des Artikels (zusätzliche Zutaten, Garstufen, weiteres Geschirr, Varianten usw.)
 - Vegan/vegetarisch
 - Allergien
 - Fleischherkunft
@@ -35,21 +35,21 @@ In den Artikeln sehen Sie alle Artikel gruppiert nach Kategorie. Hier können Si
 - Preis
 - Zeit- und ortsabhängige Preise
 - Bild/Foto des Artikels
-- Reihenfolge in der Kategorie
+- Reihenfolge innerhalb der Kategorie
 
 ### Kategorie
 
-In den Kategorien bestimmen Sie, welche Kategorien Ihre Speisekarte hat. Haben Sie eine Kategorie erfasst, so können Sie danach Artikel dieser Kategorie zuweisen. 
+In den Kategorien bestimmen Sie, welche Kategorien Ihre Speisekarte hat. Haben Sie eine Kategorie erfasst, so können Sie danach Artikel dieser Kategorie zuweisen.
 
-In den Kategorien können Sie folgenden Daten eingeben:
+In den Kategorien können Sie folgende Daten eingeben:
 
 - Name der Kategorie
 - Name der Kategorie für die Gäste (falls der Name ansonsten eher für den internen Gebrauch verwendet wird)
 - Einführung in die Kategorie, wo sie etwas über die Kategorie und das Angebot in Prosa vermitteln können
-- Weitere Informationen zur Kategorie, welche unter den Speisen und Getränken erscheint (z. B. über die Herkunft der Zutaten oder etwas zu den Beilagen)
+- Weitere Informationen zur Kategorie, welche unter den Speisen und Getränken erscheint (z.B. über die Herkunft der Zutaten oder Informationen über die Beilagen)
 - Speisen, Getränke oder "Anderem" zuweisen
-- Kategorie aktivieren, deaktivieren
-- Kategorie auf allen Speisekarten anzeigen oder nur auf ausgewählten Speisekarten anzeigen
+- Gesamte Kategorie aktivieren, deaktivieren
+- Gesamte Kategorie auf allen Speisekarten anzeigen oder nur auf ausgewählten Speisekarten anzeigen
 - Bild oben in der Kategorie
 - Bild unten in der Kategorie
 - Bilder zwischen den Artikeln
@@ -57,17 +57,17 @@ In den Kategorien können Sie folgenden Daten eingeben:
 
 ### Speisekarten
 
-In Gaston haben Sie immer eine Speisekarte, auch wenn unter "Menu cards" nicht erfasst ist. Zeit- oder -ortsabhängig Ihr Angebot oder die Preise anpassen, so müssen sie unter "Menu cards" weitere Speisekarten erfassen. Nachdem Sie eine Speisekarte fasst haben, können Sie bestimmte Artikel oder Kategorien dieser Speisekarte zuweisen und entsprechend steuern.
+In Gaston haben Sie immer eine Speisekarte, auch wenn unter "Menu cards" nicht erfasst ist. Möchten Sie zeit- oder ortsabhängig Ihr Angebot oder die Preise anpassen, so müssen Sie unter "Menu cards" weitere Speisekarten erfassen. Nachdem Sie eine Speisekarte erfasst haben, können Sie Artikel oder Kategorien dieser Speisekarte zuweisen und Ihr Angebot so steuern.
 
 Auf den Speisekarten haben Sie folgende Einstellungsmöglichkeiten:
 
 - Name der Speisekarte
 - Speisekarte aktivieren, deaktivieren
-- Orte wo die Speisekarte aktive ist definieren
+- Orte, wo die Speisekarte aktiv ist definieren
   - Take Away
   - Delivery
-  - Im Betrieb (z. B. Restaurant)
-- Zeiten, wo die Speisekarte aktive ist definieren
+  - Im Betrieb (z.B. Restaurant)
+- Zeiten, wann die Speisekarte aktiv ist definieren
   - Zeitbereich eines Wochentages
   - Datum von/bis
 
@@ -76,14 +76,14 @@ Auf den Speisekarten haben Sie folgende Einstellungsmöglichkeiten:
 - Name des Restaurants
 - Logo des Restaurants
 - Beschreibung des Restaurants
-- Navigation ein-/ausblenden.
-- "Speisen", "Getränke" und "Anderes" Umbenennen (gefällt Ihnen z. B. "Essen" statt "Speisen" besser, so können Sie dies hier einstellen)
+- Navigation ein-/ausblenden
+- "Speisen", "Getränke" und "Anderes" umbenennen (gefällt Ihnen z.B. "Essen" statt "Speisen" besser, so können Sie dies hier einstellen)
 - Sprachwahl anzeigen
 - Filter anzeigen (Vorlieben, Allergien)
 - Währung
 - Titel der Speisekarte
 - Einführung in die Speisekarte (Prosa)
-- Informationen zum Betrieb (z. B. Öffnungszeiten usw.)
+- Informationen zum Betrieb (z.B. Öffnungszeiten usw.)
 - AGBs (Allgemeine Geschäftsbedingungen)
 - Schriftart anpassen
 - Farben anpassen
@@ -98,12 +98,12 @@ Auf den Speisekarten haben Sie folgende Einstellungsmöglichkeiten:
 
 ## Import der Artikel von der Kasse
 
-Ist Gaston mit Ihrer Kasse verbunden, so können Sie die Artikel der Kasse direkt importieren. Dies geschieht automatisch mit jeder Änderung. Nachdem Sie eine Änderung an der Kasse vorgenommen haben, dauert es in der Regel 10 min bis die Änderungen in der Speisekarte erscheinen.
+Ist Gaston mit Ihrer Kasse verbunden, so können Sie die Artikel der Kasse direkt importieren. Dies geschieht automatisch mit jeder Änderung an der Kasse. Nachdem Sie eine Änderung an der Kasse vorgenommen haben, dauert es in der Regel 10 min bis die Änderungen in der Speisekarte erscheinen.
 
-Nachdem die Artikel importiert wurden, sind fasst alle Daten vorhanden, damit Gaston funktioniert. Es gibt dabei aber einige Dinge, die wir nicht von der Kasse importieren können: Bilder, Kategoriebeschreibungen und generelle Einstellungen. Diese Daten müssen Sie in jedem Fall im Gaston-CMS bearbeiten.
+Nachdem die Artikel importiert wurden, sind fast alle Daten vorhanden, damit Gaston funktioniert. Es gibt aber einige Dinge, die wir nicht von der Kasse importieren können: Bilder, Kategoriebeschreibungen und generelle Einstellungen. Diese Daten müssen Sie in jedem Fall im Gaston-CMS bearbeiten.
 
 ## Publizieren einer neuen Speisekarte
 
-Um Ihre Änderungen im CMS auf der Speisekarte zu sehen, müssen Sie eine neue Speisekarte veröffentlichen. Dies tun Sie, indem Sie den Knopf "Deploy new Menu" drücken. Nach ca. 5 min, ist die neue Speisekarte dann verfügbar.
+Um die Änderungen, die Sie im CMS vorgenommen haben, auf der Speisekarte zu sehen, müssen Sie eine neue Speisekarte veröffentlichen. Dies tun Sie, indem Sie den Knopf "Deploy new Menu" drücken. Nach ca. 5 min ist die neue Speisekarte dann verfügbar.
 
 Haben Sie Fragen zum Bearbeiten der Speisekarte, so stehen wir Ihnen gerne zur Verfügung.
