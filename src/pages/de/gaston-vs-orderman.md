@@ -1,19 +1,17 @@
 ---
 lang: de
 title: Können Gaston und Orderman koexistiren?
-description: Ein Vergleich zwischen unserem Produkt und Funktionen vs Orderman
+description: Gaston hat starke Konkurrenten in der Gastronomiebranche und einer davon ist das Orderman System, das in der Hotellerie und Gastronomie weit verbreitet ist. Daher werden in diesem Beitrag die wichtigsten Punkte, die beide Produkte bieten, definiert und verglichen. Die Differenzen und Gemeinsamkeiten werden ebenfalls zu analysieren sein.
 image: icon.png
-keyword: orderman, gaston app, gaston
+keyword: orderman, gaston
 layout: '@layouts/LandingPage.astro'
 ---
-
-Gaston hat starke Konkurrenten in der Gastronomiebranche und einer davon ist das Orderman System, das in der Hotellerie und Gastronomie weit verbreitet ist. Daher werden in diesem Beitrag die wichtigsten Punkte, die beide Produkte bieten, definiert und verglichen. Die Differenzen werden ebenfalls zu analysieren sein.
 
 ## Gaston
 
 ### Gezielt entwickelt
 
-Gaston wurde 2019 mit dem Ziel gegründet, den Bestell- und Bezahlvorgang in Restaurants, Cafés, Bars und anderen Betriebe zu optimieren. Wir haben uns mit dieser Frage sehr oft beschätigt: "Warum soll man so lange warten, um zu bestellen und bezahlen, wenn man schnell über unsere App erledigen kann?" Gaston App wurde gezielt für die Gastronomie entwickelt mit Fokus auf Schnelligkeit und Komfort.
+Gaston wurde schon im Jahr 2017 mit dem Ziel entwickelt, den Bestell- und Bezahlvorgang in Restaurants, Cafés, Bars und anderen Betriebe zu optimieren. Wir haben uns mit dieser Frage sehr oft beschätigt: "Warum soll man so lange warten, um zu bestellen und bezahlen, wenn man schnell über unsere App erledigen kann?" Gaston wurde gezielt für die Gastronomie entwickelt mit Fokus auf Schnelligkeit und Komfort.
 
 ### Servicequalität führt zu Erfolg
 
@@ -55,6 +53,6 @@ Orderman ist ein Produkt mit jahrelanger Erfahrung in der Gastronomie. Es steht 
 
 Gaston bietet ein innovatives Produkt an, das, obwohl neue auf dem Markt, ein hohes Potenzial aufweist. Neben den monatlichen Plänen, die unsere App anbietet, fallen für Ihren Betrieb keine zusätzlichen Kosten an. Die Einfachheit unseres Produkts zieht die Aufmerksamkeit auf sich: Die Gäste kommen fast immer schon mit dem Handy in der Hand an und sie sollen nur das Menu in QR Code scannen, zudem noch bestellen und bezahlen. 
 
-Gaston App passt sich den Bedürfnissen der Kunden an und hat ausserdem eine Take Away App und eine Delivery App. Unsere App ist offensichtlich modern und ist Zukunftssicher.
+Gaston App passt sich den Bedürfnissen der Kunden an und hat ausserdem eine Take Away App und eine Delivery App. Unsere App ist offensichtlich modern und Zukunftssicher.
 
-Dies heisst nicht, dass es keine Koexistenz mit Orderman geben kann, da beide Produkte gleichzeitig eingesetzt werden können.
+Dies heisst nicht, dass es keine Koexistenz mit dem Orderman System geben kann, da beide Produkte gleichzeitig eingesetzt werden können.
