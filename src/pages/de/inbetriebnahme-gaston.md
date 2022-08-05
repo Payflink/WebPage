@@ -3,9 +3,10 @@ lang: de
 title: Was ist erforderlich, um Gaston App in einem Betrieb einzusetzen?
 description: Wenn wir ein neues Projekt in Angriff nehmen, haben wir schon dieses witzige Adrenalingefühl im Bauch. Es gibt so viele Punkte, an die wir denken müssen, dass wir manchmal das eine oder andere Detail vergessen.
 image: icon.png
-keyword: gaston app, gaston speisekarte
+keyword: gaston app
 layout: '@layouts/LandingPage.astro'
 ---
+
 Wir haben quasi eine Checklist erstellt, in der Sie Schritt für Schritt alles überprüfen können, was Sie brauchen, bevor Sie unsere Gaston App in Ihrem Betrieb einsetzen.
 
 ## Zahlungsprovider
@@ -28,7 +29,7 @@ Wenn Gaston App im Einsatz ist, bedeutet einfach, dass alle Bestellungen entwede
 
 ## Designstil
 
-Diesem Punkt muss wahrscheinlich viel Aufmerksamkeit gewidmet werden. Hier zeigen Sie Ihr Branding und Ihre visuelle Identität. Wir wissen, ganz genau, dass jeder Betrieb einzigartig ist.
+Diesem Punkt muss wahrscheinlich viel Aufmerksamkeit gewidmet werden. Hier zeigen Sie Ihr Branding und Ihre visuelle Identität. Wir wissen ganz genau, dass jeder Betrieb einzigartig ist.
 
 Wie möchten Sie Ihre Marke und ihr Wesen darstellen?
 
@@ -42,7 +43,7 @@ Haben Sie noch eine andere Idee? Erzählen Sie uns davon!
 
 ## Fotos
 
-Je nachdem, wie Sie Ihre Gaston App gestalten wollen, brauchen Sie Fotos, die zeigen, wie appetitlich Ihre Speise sind. Das Foto kann auch eine zusätzliche visuelle Erklärung für Ihre Gäste sein, damit sie sehen wie die Speise aussehen und nicht nur die Namen der Speisen.
+Je nachdem, wie Sie Ihre Gaston App gestalten wollen, brauchen Sie Fotos, die zeigen, wie appetitlich Ihre Speise sind. Das Foto kann auch eine zusätzliche visuelle Erklärung für Ihre Gäste sein, damit sie sehen, wie die Speise aussehen und nicht nur die Namen der Speisen.
 
 ## Take Away oder Delivery?
 
