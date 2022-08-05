@@ -1,15 +1,13 @@
 ---
 lang: de
 title: Ist Gaston besser als Yoordi?
-description: Ein Vergleich zwischen unserem Produkt und Funktionen vs denen eines unserer Konkurrenten wird hier durchgeführt
+description: In einem Meer von Optionen ist verständlich, dass man sich fragt, welches Produkt besser ist. Wenn Sie gerade dabei sind, eine digitale Speisekarte zu implementieren, wird einen Überblick über Gaston und Yoordi sicher helfen. 
 image: icon.png
-keyword: yoordi, gaston speisekarte, gaston, delivery app
+keyword: yoordi
 layout: '@layouts/LandingPage.astro'
 ---
 
-In einem Meer von Optionen ist verständlich, dass man sich fragt, welches Produkt besser ist. Wenn Sie gerade dabei sind, ein Speisekarte System zu wechseln oder ganz am Anfang eines einzusetzen, wird einen Überblick über Gaston und Yoordi sicher helfen. Beide Produkte umfassen sowohl eine digitale Speisekarte als auch Bestellung und Zahlungsmöglichkeiten durch das Scannen eines QR Codes. 
-
-Wir prüfen die wichtigsten Funktionen von beiden Produkten, vergleichen sie und zeigen, wie Sie von ihnen profitieren können.
+Gaston und Yoordi umfassen sowohl eine digitale Speisekarte als auch Bestellung und Zahlungsmöglichkeiten durch das Scannen eines QR Codes. Wir prüfen die wichtigsten Funktionen von beiden Produkten, vergleichen sie und zeigen, wie Sie von ihnen profitieren können.
 
 ## Yoordi
 
@@ -21,7 +19,7 @@ Eine weitere interessante Funktion bezieht sich auf das Stempelkartensystem, bei
 
 ## Gaston
 
-Gaston App hingegen wurde 2017 in der Stadt Luzern konzipiert. Der erste Prototyp wurde dann im Sommer 2018 mit dem Ziel entwickelt, die Wartezeiten beim Bestell- und Bezahlvorgang zu verkürzen. Unser Produkt wird ständig weiterentwickelt: wir erkennen Potenzial und ergreifen die Chance, uns zu erweitern und zu verbessern.
+Gaston App hingegen wurde 2017 in der Stadt Luzern konzipiert. Der erste Prototyp wurde dann im Sommer 2018 mit dem Ziel entwickelt, die Wartezeiten beim Bestell- und Bezahlvorgang zu verkürzen. Unser Produkt wird ständig weiterentwickelt: Wir erkennen Potenzial und ergreifen die Chance, uns zu erweitern und zu verbessern.
 
 Unsere App ist ähnlich wie die von Yoordi. Der Gast scannt einen QR-Code und hat dann Zugriff auf die Gaston Speisekarte und kann seine Bestellung gleich aufgeben. Unsere Kunden können auswählen, ob sie Gaston als Zahlungssystem noch möchten oder nur die Speisekarte und Bestellung.
 
@@ -33,7 +31,7 @@ Sobald Sie unseren QR Code scannen, werden Sie sehen, dass Sie zwischen Abholung
 
 ## Vergleich zwischen Yoordi und Gaston
 
-Bei der Navegation der beiden Websites fallen zwei Besonderheiten auf.
+Bei der Navigation der beiden Websites fallen zwei Besonderheiten auf.
 
 Trotz der visuell orientierten Navigation bei Yoordi, benötigt der Gast mehr Klicks auf ein Bild, um zur Bestellung zu gelangen. Auch der Zugriff auf die digitale Speisekarte nimmt etwa mehr Zeit in Anspruch, während der Gast von Gaston direkt Zugang zur digitalen Speisekarte hat. 
 
