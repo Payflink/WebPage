@@ -153,6 +153,10 @@ const footerDe: FooterGroup[] = [
         href: '/de/funktionsumfang/',
       },
       {
+        title: 'Inbetriebnahme von Gaston',
+        href: '/de/inbetriebnahme-gaston',
+      },
+      {
         title: 'Preise',
         href: '/de/preise/',
       },
@@ -193,6 +197,18 @@ const footerDe: FooterGroup[] = [
       {
         title: 'Digitale Speisekarte',
         href: '/de/digitale-speisekarte/',
+      },
+      {
+        title: 'Gästerufsystem',
+        href: '/de/gaston-vs-gäste-rufsystem/',
+      },
+      {
+        title: 'Orderman',
+        href: '/de/gaston-vs-orderman',
+      },
+      {
+        title: 'Gaston oder Yoordi',
+        href: '/de/gaston-vs-yoordi/',
       },
     ],
   },
