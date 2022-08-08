@@ -1,10 +1,12 @@
-import { BlogPost, Language } from './types'
+import { join } from 'node:path'
+import type { BlogPost, Language } from './types'
 
 export const mkIsCurrentPage =
   (currentPathname: string) =>
   (path: string, { exact = false } = {}) => {
-    if (exact) return currentPathname === path
-    return currentPathname.includes(path) ? 'page' : undefined
+    const pathname = join(currentPathname, '/')
+    if (exact) return pathname === path
+    return pathname.includes(path) ? 'page' : undefined
   }
 
 export const takeSortedBlogPosts = (
