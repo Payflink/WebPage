@@ -1,7 +1,7 @@
 ---
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
-import { DocumentationFrontMatter } from 'src/types'
+import type { DocumentationFrontMatter } from 'src/types'
 
 const docs = await Astro.glob<DocumentationFrontMatter>('./*.md')
 

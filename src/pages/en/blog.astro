@@ -1,7 +1,7 @@
 ---
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
-import { BlogPostFrontMatter } from 'src/types'
+import type { BlogPostFrontMatter } from 'src/types'
 import { takeSortedBlogPosts } from 'src/utils'
 
 const blogs = await Astro.glob<BlogPostFrontMatter>('./blog/**/*.md')
