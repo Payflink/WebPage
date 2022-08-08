@@ -112,8 +112,8 @@ dialog {
   margin: auto;
 
   @media (max-width: 599px) {
-    max-inline-size: 100%;
-    max-block-size: 100%;
+    max-inline-size: calc(100% - 1em);
+    max-block-size: calc(100% - 1em);
     padding: 0.2em;
   }
 }

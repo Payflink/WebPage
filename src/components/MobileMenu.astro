@@ -8,9 +8,7 @@ export type Props = {
 }
 
 const { navigation } = Astro.props as Props;
-const { pathname } = Astro.canonicalURL
-const isCurrentPage = mkIsCurrentPage(pathname)
-
+const isCurrentPage = mkIsCurrentPage(Astro.url.pathname)
 ---
 
 <nav>

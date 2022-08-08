@@ -25,9 +25,8 @@ export const getStaticPaths = async () => [
 
 const { plan } = Astro.params
 const { title: planTitle, price } = Astro.props
-const { pathname } = Astro.canonicalURL
 
-const isCurrentPage = mkIsCurrentPage(pathname)
+const isCurrentPage = mkIsCurrentPage(Astro.url.pathname)
 const isDe = isCurrentPage('/de/')
 
 const title = `Unverbindliche Anfrage • Plan ${planTitle}`

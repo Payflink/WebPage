@@ -5,8 +5,7 @@ import Dialog from '@components/Dialog.tsx'
 import FlyoutMenu from './FlyoutMenu.astro'
 import MobileMenu from './MobileMenu.astro'
 
-const { pathname } = Astro.canonicalURL
-const isCurrentPage = mkIsCurrentPage(pathname)
+const isCurrentPage = mkIsCurrentPage(Astro.url.pathname)
 const isDe = isCurrentPage('/de/')
 
 const navigation = isDe ? globalNavigation.de : globalNavigation.en
