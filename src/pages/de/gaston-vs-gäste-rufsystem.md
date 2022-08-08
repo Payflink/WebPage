@@ -11,26 +11,24 @@ Das Konzept des Gäste-Rufsystems existiert seit Jahren und ist daher vielleicht
 
 ## 1. Initialkosten
 
-Die Kosten für ein Gäste-Rufsystem belaufen sich auf bis zu 800 CHF. Gaston bietet hingegen die Möglichkeit eine kostenlose* Speisekarte mit dem "Basic" Paket und gilt auch als Gäste-Rufsystem, denn in unserem Angebot auch eine inklusive SMS Funktion geschieht.
+Die Kosten für ein Gäste-Rufsystem belaufen sich auf bis zu 800 CHF.
+
+Gaston bietet hingegen die Möglichkeit einer kostenlosen Speisekarte mit dem "Basic" Paket, in welchem ein Gäste-Rufsystem in Form von SMS-Benachrichtigung inklusive ist.
 
 ## 2. Laufende Kosten
 
-Wenn die Geräte zufällig beschädigt sind oder sich nach einiger Zeit als fehlerhaft beweisen, fallen neben den Anfangsinvestitionen auch zusätzliche Investitionen an.
+Wenn die Geräte beschädigt werden oder sich nach einiger Zeit als fehlerhaft erweisen fallen zusätzliche Kosten an.
 
-Von Störungen und Defekten im Allgemeinen zu sprechen ist auch sehr abstrakt, aber wie wäre es, wenn die LEDs an Ihrem Gäste-Pager nicht mehr funktionIeren oder Ihr Gäste-Rufsystem irgendwann nicht mehr vibriert?
-
-Im Gegensatz zu einem Gäste-Rufsystem, mit Gaston muss der Betrieb keine hohen Investitionen vornehmen, denn das gesamte System ist so konzipiert, dass die Gäste ihre eigenen Handys zum Scannen des QR Codes verwenden.
+Da Gaston mit SMS-Benachrichtigungen die Handys der Gäste direkt ansteuert, sind keine zusätzlichen Geräte nötig. Ohne zusätzliche Geräte können diese auch keine zusätzlichen Kosten verursachen.
 
 ## 3. Hygiene
 
-Nach einigen Jahren der Covid-19 Pandemie wissen wir noch besser, wie wichtig die Hygiene in Alltagssituationen ist. Dazu gehört auch Geräte, die von Hand zu Hand gehen, wie das Gäste-Rufsystem.
+Die Covid-19 Pandemie hat aufgezeigt, wie wichtig die Hygiene in Alltagssituationen ist. Dabei stellen Geräte, die von Hand zu Hand gehen, einen unnötigen Risikofaktor dar.
 
-Wo immer es möglich ist, auch als vorbeugende Massnahme, wissen wir, dass die Hygiene in der heutigen Zeit noch stärker im Vordergrund steht. Bei Gaston benutzen die Gäste ihr eigenes Handy, um einen QR Code zu scannen und die Speisekarte öffnen zu können. Auf diese Weise bieten Sie Ihren Gästen mehr Sicherheit.
+Dieser Risikofaktor besteht bei Gaston nicht, da die Gäste nur ihr eigenes Handy anfassen.
 
 ## 4. Aufwand
 
-Ein Gäste-Rufsystem und sind mit einem zusätzlichen Zeitaufwand zu rechnen. Nach dem Feierabend soll das Personal immer dafür sorgen, dass die Geräte aufgeladen sind, sonst funktionieren sie am nächsten Tag nicht mehr. 
+Bei einem Gäste-Rufsystem entsteht ein zusätzlicher Aufwand für das Personal. Die Geräte müssen aufgeladen, desinfiziert und sortiert werden. Die Sicherstellung der Funktionsfähigkeit des Gäste-Rufsystems ist eine zeitaufwendige Aufgabe.
 
-Die Sicherstellung der Funktionsfähigkeit des Gäste-Rufsystems ist eine zeitaufwendige Aufgabe, die vermieden werden kann, und das Personal kann diese Zeit für andere Aufgaben im Betrieb nutzen.
-
-Gaston ist eine einfache digitale Speisekarte, das über einen QR Code funktioniert. Die Gäste brauchen ihr eigenes Handy, um es zu scannen, und das war's. Des Weiteren arbeitet Gaston auch mit einer SMS Funktion, bei deinen das Personal null aufwand hat und damit die Zeit der Personalen besser in andere Aufgaben aufgeteilt werden kann.
+Bei Gaston muss lediglich die Verfügbarkeit der QR Codes, welche die Gäste zum Öffnen der Speisekarte brauchen, sichergestellt werden. Dies benötigt sehr wenig bis gar keinen Aufwand. Die Benachrichtigung via SMS braucht überhaupt keinen Unterhaltsaufwand.
