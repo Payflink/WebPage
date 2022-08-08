@@ -11,7 +11,7 @@
     "isolatedModules": true,
     // Add type definitions for our Astro runtime.
     "importsNotUsedAsValues": "error",
-    "types": ["astro/client"],
+    "types": ["@astrojs/image/client"],
     "baseUrl": ".",
     "paths": {
       "@components/*": ["src/components/*"],
