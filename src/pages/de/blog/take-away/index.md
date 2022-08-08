@@ -35,14 +35,8 @@ Natürlich können Sie mit einigen Einstellungen Einfluss auf den Bestellungspro
 - Sagen Sie uns, wie viel Vorlaufzeit Sie benötigen
 - Bestimmen Sie den Lieferzuschlag
 
-Eine Pandemie wirkt sich auf das Leben vieler Menschen aus, daher möchten wir sicherstellen, dass unsere Gaston App eine langfristige Lösung für den Fall eines erneuten Lockdowns sein können. Eine vorausschauende Planung vermeidet hohe Einkommensverluste.
-
 ## Was kostet mich das?
 
-Wir garantieren angemessene Preise und Qualitätsprodukte, die dem Budget jedes Betriebs entschprechen. In der aktuellen Situation stehen unsere Kunden im Fokus, und wir arbeiten hart daran, dass unsere Kunden die Auswirkungen der Pandemie so wenig wie möglich spüren.
-
-Gaston ist eine Restaurant App und bietet 24h Support, ein individuelles Design, eine digitale Speisekarte in mehreren Sprachen und kostenlose* Grundgebühr für Ihren Betrieb in unserem "Basic" Paket.
+Wir garantieren angemessene Preise und Qualitätsprodukte, deshalb ist Gaston in unserem "Basic" Paket ohne Grundgebühren erhältlich. In der aktuellen Situation stehen unsere Kunden im Fokus und wir arbeiten hart daran, dass Sie die Pandemie so gut wie möglich überstehen.
 
 Mehr über die Kosten von Gaston finden Sie auf der [Angebots](/de/preise/)-Seite.
-
-*Die Transaktionskosten des Zahlungsproviders (5,9%) fallen in jedem Plan an. 
