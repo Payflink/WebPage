@@ -1,10 +1,10 @@
-import { join } from 'node:path'
+import { join,normalize } from 'node:path'
 import type { BlogPost, Language } from './types'
 
 export const mkIsCurrentPage =
   (currentPathname: string) =>
   (path: string, { exact = false } = {}) => {
-    const pathname = join(currentPathname, '/')
+    const pathname = currentPathname.endsWith('/') ? currentPathname : currentPathname + '/'
     if (exact) return pathname === path
     return pathname.includes(path) ? 'page' : undefined
   }
