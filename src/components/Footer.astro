@@ -1,12 +1,10 @@
 ---
 import { callToActionLinksDe, callToActionLinksEn, footer } from 'src/config';
-import { mkIsCurrentPage } from '../utils.ts'
+import { mkIsCurrentPage } from '../utils.js'
 import CallToAction from './CallToAction.astro';
 import Container from './Container.astro';
 
-const { pathname } = Astro.canonicalURL
-
-const isCurrentPage = mkIsCurrentPage(pathname)
+const isCurrentPage = mkIsCurrentPage(Astro.url.pathname)
 const isDe = isCurrentPage('/de/')
 
 const links = isDe ? callToActionLinksDe : callToActionLinksEn
