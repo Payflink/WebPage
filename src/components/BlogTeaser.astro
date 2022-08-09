@@ -1,5 +1,5 @@
 ---
-import { BlogPostFrontMatter, Language } from "src/types";
+import type { BlogPostFrontMatter, Language } from "src/types";
 import { takeSortedBlogPosts } from "src/utils";
 
 export interface Props {
@@ -8,7 +8,7 @@ export interface Props {
 
 const { language } = Astro.props as Props
 
-const blogs = await Astro.glob<BlogPostFrontMatter>("../pages/*/blog/**/*.md")
+const blogs = await Astro.glob<BlogPostFrontMatter>("../pages/*/blog/**/*.mdx")
 const sortedBlogs = takeSortedBlogPosts(blogs, language, 5)
 ---
 
@@ -26,7 +26,7 @@ const sortedBlogs = takeSortedBlogPosts(blogs, language, 5)
     margin-bottom: 0.8em;
   }
 
-  li::marker {
+  ul li::marker {
     font-size: 1em;
   }
 </style>

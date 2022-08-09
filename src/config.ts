@@ -188,7 +188,7 @@ const footerDe: FooterGroup[] = [
     ],
   },
   {
-    title: 'Artikel',
+    title: 'Highlights',
     items: [
       {
         title: 'Restaurant Bestell App',
@@ -209,6 +209,15 @@ const footerDe: FooterGroup[] = [
       {
         title: 'Gaston oder Yoordi',
         href: '/de/gaston-vs-yoordi/',
+      },
+    ],
+  },
+  {
+    title: 'Dokumentation',
+    items: [
+      {
+        title: 'Speisekarte bearbeiten',
+        href: '/de/dokumentation/speisekarten-angebot-bearbeiten/',
       },
     ],
   },
