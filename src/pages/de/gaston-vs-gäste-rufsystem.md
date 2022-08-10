@@ -19,16 +19,18 @@ Gaston bietet hingegen die Möglichkeit einer kostenlosen Speisekarte mit dem "B
 
 Wenn die Geräte beschädigt werden oder sich nach einiger Zeit als fehlerhaft erweisen fallen zusätzliche Kosten an.
 
-Da Gaston mit SMS-Benachrichtigungen die Handys der Gäste direkt ansteuert, sind keine zusätzlichen Geräte nötig. Ohne zusätzliche Geräte können diese auch keine zusätzlichen Kosten verursachen.
+Ein Beispiel für einen Defekt wäre, wenn die LEDs oder die Vibration Ihrer Gäste-Pager nicht mehr funktionieren.
+
+Im Gegensatz zu einem Gäste-Rufsystem benötigt Gaston keine zusätzlichen Geräte, da die Gäste ihre eigenen Handys zum Öffnen der Speisekarte verwenden.
 
 ## 3. Hygiene
 
-Die Covid-19 Pandemie hat aufgezeigt, wie wichtig die Hygiene in Alltagssituationen ist. Dabei stellen Geräte, die von Hand zu Hand gehen, einen unnötigen Risikofaktor dar.
+Nach einigen Jahren der Covid-19 Pandemie wissen wir, wie wichtig die Hygiene in Alltagssituationen ist. Dabei stellen Geräte wie Gäste-Rufsysteme, die von Hand zu Hand gehen, einen unnötigen Risikofaktor dar.
 
-Dieser Risikofaktor besteht bei Gaston nicht, da die Gäste nur ihr eigenes Handy anfassen.
+Bei Gaston benutzen die Gäste ihr eigenes Handy. Auf diese Weise umgehen wir diesen Risikofaktor.
 
 ## 4. Aufwand
 
-Bei einem Gäste-Rufsystem entsteht ein zusätzlicher Aufwand für das Personal. Die Geräte müssen aufgeladen, desinfiziert und sortiert werden. Die Sicherstellung der Funktionsfähigkeit des Gäste-Rufsystems ist eine zeitaufwendige Aufgabe.
+Bei einem Gäste-Rufsystem ist mit einem zusätzlichen Zeitaufwand zu rechnen. Das Personal muss dafür sorgen, dass die Geräte aufgeladen sind, damit sie am nächsten Tag funktionsfähig sind. Die Sicherstellung der Funktionsfähigkeit des Gäste-Rufsystems ist eine zeitaufwendige Aufgabe.
 
-Bei Gaston muss lediglich die Verfügbarkeit der QR Codes, welche die Gäste zum Öffnen der Speisekarte brauchen, sichergestellt werden. Dies benötigt sehr wenig bis gar keinen Aufwand. Die Benachrichtigung via SMS braucht überhaupt keinen Unterhaltsaufwand.
+Gaston informiert Ihre Gäste per SMS, so hat Ihr Personal keinen Aufwand.
