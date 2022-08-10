@@ -41,16 +41,12 @@ In der Gaston App können Sie auch Fotos von Ihren Speisen integrieren. Ein Foto
 
 ## Take Away oder Delivery?
 
-Eine Speisekarte als QR Code macht das Leben viel einfacher. Wie?
+Unter Einstellungsmöglichkeiten im unserem CMS definieren Sie, ob die Gaston Speisekarte für Take Away, Delivery oder nur im Betrieb aktiv ist. Zudem noch, definieren Sie genau die Start- und Endzeiten Ihrer Angeboten und Datum.
 
-Ihr Betrieb bietet eine Speisekarte für das Mittagsessen und eine andere für das Abendessen an. Von 17 Uhr bis 19 Uhr findet auch noch die Happy Hour statt. Mit unserer Gaston App können Sie genau auswählen und konfigurieren, welche Speise und Getränke zu der von Ihnen gewüschten Zeit und am gewünschten Ort verfügbar sind.
-
-Unter Einstellungsmöglichkeiten definieren Sie, ob die Gaston Speisekarte für Take Away, Delivery oder nur im Betrieb aktiv ist. Zudem noch, definieren Sie genau die Zeiten und Datum. Wann soll das Angebot beginnen und enden?
-
-Das bedeutet, dass Sie sich schon ein bisschen überlegen können, welche Speisen und Getränke zu den verschiedenen Anlässen angeboten werden sollen.
+Sie können sich überlegen, welche Speisen und Getränke zu den verschiedenen Anlässen angeboten werden sollen und auch den Namen Ihrer digitalen Speisekarte festlegen. Nach Bedarf können Sie jederzeit die digitale Speisekarte für Take Away, Delivery und Im Betrieb aktivieren oder deaktivieren.
 
 ## Sind Sie bereit für unsere Gaston App?
 
-Natürlich gibt es noch viele weitere Punkte in dieser Liste, aber wir wollten nur die Highlights nennen. Selbstverständlich stehen wir Ihnen jederzeit zur Verfügung, wenn Sie Fragen zu unserem Produkt haben.
+Damit Sie darauf vorbereitet sind, haben wir diese Liste mit einigen Punkten zusammengestellt, die Ihnen die Installation noch leichter macht. Zur Vertiefung dieses Themas empfehlen wir auch, dass Sie den Artikel über [Speisekarte bearbeiten](./speisekarten-angebot-bearbeiten.md) in unserem Highlight anschauen. Selbstverständlich stehen wir Ihnen jederzeit zur Verfügung, wenn Sie Fragen zu unserem Produkt haben.
 
 Wir freuen uns sehr, dass Sie sich für Gaston App entschieden haben.
