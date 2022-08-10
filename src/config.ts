@@ -1,4 +1,4 @@
-import {
+import type {
   CallToAction,
   FooterGroup,
   I18nFooter,
