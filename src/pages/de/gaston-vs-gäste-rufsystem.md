@@ -13,7 +13,7 @@ Das Konzept des Gäste-Rufsystems existiert seit Jahren und ist daher vielleicht
 
 Die Kosten für ein Gäste-Rufsystem belaufen sich auf bis zu 800 CHF.
 
-Gaston bietet hingegen die Möglichkeit einer kostenlosen Speisekarte mit dem "Basic" Paket, in welchem ein Gäste-Rufsystem in Form von SMS-Benachrichtigung inklusive ist.
+Gaston bietet hingegen die Möglichkeit einer kostenlosen Speisekarte mit dem "Basic" Paket, und bietet zusätzlich ein Gäste-Rufsystem Paket in Form von SMS-Benachrichtigung (0,09 CHF pro SMS).
 
 ## 2. Laufende Kosten
 
