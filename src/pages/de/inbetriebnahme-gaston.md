@@ -47,13 +47,9 @@ Je nachdem, wie Sie Ihre Gaston App gestalten wollen, brauchen Sie Fotos, die ze
 
 ## Take Away oder Delivery?
 
-Eine Speisekarte als QR Code macht das Leben viel einfacher. Wie?
+Unter Einstellungsmöglichkeiten im unserem CMS definieren Sie, ob die Gaston Speisekarte für Take Away, Delivery oder nur im Betrieb aktiv ist. Zudem noch, definieren Sie genau die Start- und Endzeiten Ihrer Angeboten und Datum.
 
-Ihr Betrieb bietet eine Speisekarte für das Mittagsessen und eine andere für das Abendessen an. Von 17 Uhr bis 19 Uhr findet auch noch die Happy Hour statt. Mit unserer Gaston App können Sie genau auswählen und konfigurieren, welche Speise und Getränke zu der von Ihnen gewüschten Zeit und am gewünschten Ort verfügbar sind.
-
-Unter Einstellungsmöglichkeiten definieren Sie, ob die Gaston Speisekarte für Take Away, Delivery oder nur im Betrieb aktiv ist. Zudem noch, definieren Sie genau die Zeiten und Datum. Wann soll das Angebot beginnen und enden?
-
-Das bedeutet, dass Sie sich schon ein bisschen überlegen können, welche Speisen und Getränke zu den verschiedenen Anlässen angeboten werden sollen.
+Sie können sich überlegen, welche Speisen und Getränke zu den verschiedenen Anlässen angeboten werden sollen und auch den Namen Ihrer digitalen Speisekarte festlegen. Nach Bedarf können Sie jederzeit die digitale Speisekarte für Take Away, Delivery und Im Betrieb aktivieren oder deaktivieren.
 
 ## Checkliste: Sind Sie bereit für unsere Gaston App? 
 
