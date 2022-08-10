@@ -4,7 +4,7 @@ title: Was ist erforderlich, um Gaston App in einem Betrieb einzusetzen?
 description: Wenn wir ein neues Projekt in Angriff nehmen, haben wir schon dieses witzige Adrenalingefühl im Bauch. Es gibt so viele Punkte, an die wir denken müssen, dass wir manchmal das eine oder andere Detail vergessen.
 image: icon.png
 keyword: gaston app
-layout: '@layouts/LandingPage.astro'
+layout: '@layouts/Documentation.astro'
 ---
 
 Wir haben quasi eine Checklist erstellt, in der Sie Schritt für Schritt alles überprüfen können, was Sie brauchen, bevor Sie unsere Gaston App in Ihrem Betrieb einsetzen.

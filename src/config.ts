@@ -153,10 +153,6 @@ const footerDe: FooterGroup[] = [
         href: '/de/funktionsumfang/',
       },
       {
-        title: 'Inbetriebnahme von Gaston',
-        href: '/de/inbetriebnahme-gaston',
-      },
-      {
         title: 'Preise',
         href: '/de/preise/',
       },
@@ -215,6 +211,10 @@ const footerDe: FooterGroup[] = [
   {
     title: 'Dokumentation',
     items: [
+      {
+        title: 'Inbetriebnahme von Gaston',
+        href: '/de/dokumentation/inbetriebnahme-gaston',
+      },
       {
         title: 'Speisekarte bearbeiten',
         href: '/de/dokumentation/speisekarten-angebot-bearbeiten/',
