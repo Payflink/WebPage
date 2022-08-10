@@ -1,46 +1,44 @@
 ---
 lang: de
-title: Können Gaston und Orderman koexistiren?
-description: Orderman ist ein in der Gastronomie weit verbreitetes Kassensystem. Gaston macht sich auf den Weg. Ist es möglich, die Vorteile beider Produkte in derselben Betrieb zu nutzen? In diesem Beitrag werden die wichtigsten Punkte, die beide Produkte bieten, definiert und verglichen.
+title: Können Gaston und Orderman koexistieren?
+description: Orderman ist ein in der Gastronomie weit verbreitetes Kassensystem. Gaston ist eine digitale Speisekarte. Ist es möglich, die Vorteile beider Produkte im selben Betrieb zu nutzen?
 image: icon.png
 keyword: orderman
 layout: '@layouts/LandingPage.astro'
 ---
 
-Gaston ist eine Speisekarte, die im Jahr 2017 mit dem Ziel entwickelt wurde, den Bestell- und Bezahlvorgang in Restaurants, Cafés, Bars und in anderen Betrieben zu minimieren. Gaston ist sowohl für Gäste als auch für das Personal im Betrieb geeignet, denn die digitale Speisekarte mit Bestell-und Bezahlfunktionen ist mit der Kasse gekoppelt und daher können die Gäste auswählen, ob sie beim Personal oder via App bezahlen möchten.
+Gaston ist eine Speisekarte, die im Jahr 2017 mit dem Ziel entwickelt wurde, die Wartezeit in Restaurants, Cafés, Bars und anderen Gastro-Betrieben zu minimieren. Gaston kann mit der Kasse gekoppelt werden, daher können die Gäste auswählen, ob sie beim Personal oder direkt in Gaston bezahlen möchten.
 
-Orderman ist ein Kassensystem, bei dem derjenige, der einen Blick auf das Gerät hat, ist das Personal. Aber es ist zweifellos der Marktführer im Bereich der Gastronomie, da es 1993 entwickelt wurde.
-
-Die Unterschiede und Gemeinsamkeiten von Gaston und Orderman werden ebenfalls zu analysieren sein.
+Orderman ist ein Kassensystem, das es dem Personal ermöglicht, Bestellungen über ein mobiles Gerät direkt in die Kasse einzugeben. Orderman wurde 1993 entwickelt und ist zweifellos der Marktführer im Bereich der Gastronomie.
 
 ## Servicequalität führt zu Erfolg
 
-Stellen Sie sich vor: Die Bar ist voll und es ist fast 00 Uhr. Sie machen gleich zu, aber sie haben noch einen grossen Tisch, den die Kasse noch als offen rechnet. Die Summe von ein paar nicht bezahlten Drinks kann schon zu hohen Einnahmeverlusten führen. Mit der Gaston ist es praktisch, schnell und sicher, die Kosten zu kontrollieren, da die Gäste bestellen und gleich bezahlen können.
+Bei Gaston bestellen und bezahlen die Gäste direkt in der App. Das ist praktisch, schnell und sicher, da so keine Bestellungen, aber auch keine Bezahlungen vergessen werden können.
 
-Orderman wird oft als schnell, freundlich, kompetent und ertragreich bezeichnet. Aber bei einem Kassensystem wie Orderman muss das Personal immer noch von Tisch zu Tisch gehen, um die Bestellung abzuschliessen. Mit Gaston kann das Personal direkt an der Kasse überprüfen, ob der Tisch geschlossen bzw. bezahlt wurde.
+Da bei Orderman das Personal die Bestellungen direkt am Tisch erfassen kann, minimiert sich auch hier die Wahrscheinlichkeit, dass eine Bestellung vergessen wird. Da die Bestellungen digital erfasst werden, ist auch der zusammengefasste Betrag eines Tisches konsistent.
 
 ## Schnelligkeit mit Effizienz
 
-Unabhängig von Ort hat man in der Gastronomie ein Grundproblem: Zu viel zu tun, zu wenig Zeit. Die Eile, alle Tische zur Mittagszeit zu bedienen, weil man weiss, dass die Gäste in der Regel in der Mittagspause sind und der Service daher schnell sein muss. Und noch die Hektik des Abends, wo alles so schnell passiert, dass die Zeit vergeht, ohne dass man es merkt.
+Unabhängig von Ort hat man in der Gastronomie ein Grundproblem: Zu viel zu tun, zu wenig Zeit. Die Folgen davon sind Wartezeiten für die Gäste.
 
-Gaston sah ein Problem und brachte eine Lösung. How cliché. Es war aber noch nie so einfach: das Handy in die Hand zu nehmen, einen QR Code zu scannen, ein digitales menu zu öffnen, schnell bestellen und gleich bezahlen. Ausserdem sind die Gäste in der Zeit, in der sie das Handy in der Hand halten, abgelenkt und das Warten wird angenehmer.
+Genau diese Wartezeiten sind die Motivation für Gaston. Es war noch nie so einfach: das Handy in die Hand zu nehmen, einen QR Code zu scannen, eine digitale Speisekarte zu öffnen, direkt zu bestellen und  zu bezahlen.
 
-Mit Orderman kann sich das Personal schnellder bewegen, um die Bestellungen aufzunehmen, aber es ist nach wie vor sehr zeitaufwendig, alle Tische zu bedienen.
+Mit Orderman spart sich das Personal den Weg vom Gast zur Kasse, um die Bestellungen einzutippen. Allerdings muss das Personal immer noch von Tisch zu Tisch gehen, um die Bestellung persönlich aufzunehmen. Und dann noch einmal, um die Bezahlung anzunehmen.
 
-## Komfort durch Designkonzept der Bildschirme
+## Komfort durch Designkonzept
 
-Einer der stärksten Punkte von Orderman ist die Displays. Das Produkt wird häufig beschrieben als robust, da es Sonnenlichttauglichkeit bietet. Die Arbeit des Personals wird durch das Designkonzept der Bildschirme erleichtert und effektiver gestaltet.
+Einer der stärksten Punkte von Orderman sind die Displays. Die mobilen Geräte sind robust und sonnenlichttauglich. Die Arbeit des Personals wird durch das Designkonzept der Bildschirme erleichtert und effektiver gestaltet.
 
-Gaston wird auf Handys, Tablets, Websites oder Kiosk Displays verwendet. Das Gerät, mit dem der QR Code gescannt wird, soll das der Gäste sein.
+Gaston ist intuitiv und unkompliziert gestaltet. Das Designkonzept ist einfach und verständlich, was den Gästen die Bedienung erleichtert.
 
 ## Vergleich zwischen Gaston und Orderman
 
-Orderman ist ein Produkt mit jahrelanger Erfahrung in der Gastronomie. Es steht für Tradition. Das Produkt hat grosse und beneidenswerte Vorteile, aber auch negative Seiten, nämlich die Kosten, die für die Betriebe entstehen, die das System einsetzen.
+Orderman ist ein Produkt mit jahrelanger Erfahrung in der Gastronomie. Es erleichtert die Arbeit des Servicepersonals, ohne dass Nachteile für die Gäste entstehen.
 
-Gaston bietet ein innovatives Produkt an, das, obwohl neue auf dem gastronomischen Markt ein hohes Potenzial aufweist. Die Einfachheit unseres Produkts zieht die Aufmerksamkeit auf sich: Die Gäste kommen fast immer schon mit dem Handy in der Hand an und sie sollen nur das Menu in QR Code scannen.
+Gaston ist ein innovatives Produkt, das ein hohes Potenzial aufweist. Im Gegensatz zu Orderman fokussiert sich Gaston auf die Bequemlichkeit der Gäste, während das Personal im gleichen Zug entlastet wird. Zur weiteren Verbesserung des Bedienkomforts bietet Gaston noch [weitere Funktionen](./funktionsumfang/). Gaston kann ausserdem auch für Take Away und Delivery Angebote eingesetzt werden.
 
-Anders als das Ordermansystem wurde unsere App mit Blick auf die Bequemlichkeit der Gäste unserer Kunden entwickelt. Aus dieser Überlegungen heraus haben wir zusätzliche Funktionen eingerichtet: Filter und ein einfaches System, das sich an Zeit und Ort anpasst. Gaston passt sich den Bedürfnissen der Kunden an und hat ausserdem eine Take Away und eine Delivery Funktion. Die App ist offensichtlich modern und zukunftssicher.
+Mit Gaston können Sie wählen, ob Sie nur die digitale Speisekarte oder die zusätzlichen Bestell- und Bezahlfunktionen nutzen möchten. Also, wenn Sie bereits ein Ordermansystem in Ihrem Betrieb haben, können Sie Gaston nur als digitale Speisekarte einbinden.
 
-Mit Gaston können Sie wählen, ob sie nur die digitale Speisekarte oder die zusätzlichen Bestell- und Bezahlfunktionen nutzen möchten. Also, wenn Sie bereits ein Ordermansystem in Ihrem Betrieb haben, können Sie Gaston nur als digitale Speisekarte einbinden.
+Zusammenfassend kann man sagen, dass Gaston und Orderman beide die Arbeit in Gastrobetrieben vereinfachen. Die Herangehensweise ist allerdings unterschiedlich. Orderman konzentriert sich auf die Arbeit des Servicepersonals, Gaston konzentriert sich grundsätzlich auf das Erlebnis der Gäste.
 
-Im Grossen und Ganzen könnte man sagen, dass Gaston und Orderman sich auf dieselben Ziele konzetrieren, nun ist die Anwendung von beiden unterschiedlich. Aus diesem Grund können Gaston und Orderman gleichzeitig eingesetzt werden und somit koexistieren.
+Sie können also Ihren Gästen problemlos beide Optionen bieten: Über das Personal zu bestellen, welches Orderman einsetzt, oder direkt selbst über Gaston zu bestellen. Die Gäste können sogar auf dem einen Weg bestellen und auf dem anderen bezahlen. Mit der optionalen Kassenanbindung kann Gaston ohne zusätzlichen Aufwand mit Orderman zusammenarbeiten.
