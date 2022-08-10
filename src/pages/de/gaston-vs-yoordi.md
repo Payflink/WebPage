@@ -30,12 +30,13 @@ Gaston wurde 2017 in der Stadt Luzern entworfen. Der erste Prototyp wurde dann i
 Gaston ist in folgenden Kombinationen verwendbar:
 
 - Speisekarte
+- Bezahlungssystem
 - Speisekarte + Bestellungssystem
 - Speisekarte + Bestell- und Bezahlungssystem
 
 All diese Kombinationen sind sowohl In House, wie auch für Take Away und Delivery verwendbar.
 
-Gaston hat für die App Filter entwickelt, um die Auswahl nach Vorlieben, wie vegane oder vegetarische Speisen, oder Allergenen zu filtern.
+Gaston bietet Filter, um die Auswahl nach Vorlieben, wie vegane oder vegetarische Speisen, oder Allergenen zu filtern.
 
 Das digitale Angebot kann entweder vom Kunden selbst erfasst werden oder bei einer Kassenanbindung auch direkt importiert werden. Der Kunde kann jederzeit Änderungen vornehmen.
 
@@ -43,10 +44,20 @@ Das digitale Angebot kann entweder vom Kunden selbst erfasst werden oder bei ein
 
 Beide Apps bieten eine digitale Speisekarte mit Bestell- und Bezahlfunktion. Allerdings ist Gaston viel flexibler im Angebot. Sie können selbst wählen, welche Funktionen Ihre Speisekarte haben soll und bezahlen entsprechend auch nur, was Sie brauchen.
 
-Trotz der visuell orientierten Navigation bei Yoordi benötigt der Gast mehr Klicks, um zu bestellen. Auch der Weg zur digitalen Speisekarte nimmt etwas mehr Zeit in Anspruch, während der Gast bei Gaston direkt auf der digitalen Speisekarte landet.
+Trotz der visuell orientierten Navigation bei Yoordi, ist Gaston einfacher in der Bedienung. Häufige Tätigkeiten brauchen weniger Klicks und sind verständlicher bei Gaston. Zudem ist das Anzeigen der digitalen Speisekarte bei Yoordi mit etwas mehr Aufwand verbunden, während die Gäste bei Gaston direkt auf Ihrem Angebot landen.
 
 Ein weiterer Unterschied, der sich direkt auf der Homepage von Gaston und Yoordi zeigt, ist die Transparenz im Preis. Mit Gaston wissen Sie genau, was Sie bezahlen und für welche Leistungen.
 
-Gaston wird ständig weiterentwickelt: Wenn Sie bei den [Funktionen](./funktionsumfang/) von Gaston einen Punkt vermissen, melden Sie sich gerne bei uns. Es könnte sein, dass sich die gewünschte Funktion bereits in der Entwicklung befindet.
+Bei den Funktionen bieten beide Lösungen einen ähnlichen Umfang.
 
-Überhaupt, wenn Sie Fragen zu Gaston haben, [kontaktieren](./kontakt/) Sie uns!
+Zusammengefasst spricht für Gaston:
+
+- Flexibles Angebot
+- Einfachere Bedienung
+- Transparente Preise
+
+## Starten Sie heute mit Gaston
+
+Wie Sie sehen, spricht vieles für Gaston. Falls Sie bei den [Funktionen](./funktionsumfang/) von Gaston einen Punkt vermissen, melden Sie sich unverbindliche bei uns. Ev. kann Gaston Ihren Wünsch bereits erfüllen oder wir finden sehr gerne einen Weg, damit Gaston optimal für Sie funktioniert.
+
+Starten Sie heute mit uns! Zusammen erreichen wir das nächste Level des Gastgebens.
