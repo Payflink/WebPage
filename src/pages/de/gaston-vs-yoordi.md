@@ -56,6 +56,6 @@ Zusammengefasst spricht für Gaston:
 
 ## Starten Sie heute mit Gaston
 
-Wie Sie sehen, spricht vieles für Gaston. Falls Sie bei den [Funktionen](./funktionsumfang/) von Gaston einen Punkt vermissen, melden Sie sich unverbindlich bei uns. Möglicherweise kann Gaston Ihren Wunsch bereits erfüllen oder wir finden sehr gerne einen Weg, damit Gaston optimal für Sie funktioniert.
+Wie Sie sehen, spricht vieles für Gaston. Falls Sie bei den [Funktionen](../funktionsumfang/) von Gaston einen Punkt vermissen, melden Sie sich unverbindlich bei uns. Möglicherweise kann Gaston Ihren Wunsch bereits erfüllen oder wir finden sehr gerne einen Weg, damit Gaston optimal für Sie funktioniert.
 
 Starten Sie heute mit uns! Zusammen erreichen wir das nächste Level des Gastgebens.

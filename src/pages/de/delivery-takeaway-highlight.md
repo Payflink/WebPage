@@ -43,4 +43,4 @@ Wie geht es weiter?
 
 Alle unsere Pakete beinhalten Take Away und Delivery. 
 
-Unser “Basic” Paket ist ohne Grundgebühren erhältlich und alle anderen Pakete finden Sie auf unserer Seite mit den [Preisen](../de/preise.astro). Wir garantieren Ihnen faire Preise.
+Unser “Basic” Paket ist ohne Grundgebühren erhältlich und alle anderen Pakete finden Sie auf unserer Seite mit den [Preisen](../preise/). Wir garantieren Ihnen faire Preise.

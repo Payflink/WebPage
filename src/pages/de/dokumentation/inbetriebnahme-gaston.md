@@ -41,12 +41,12 @@ In der Gaston App können Sie auch Fotos von Ihren Speisen integrieren. Ein Foto
 
 ## Take Away oder Delivery?
 
-Unter Einstellungsmöglichkeiten im unserem CMS definieren Sie, ob die Gaston Speisekarte für Take Away, Delivery oder nur im Betrieb aktiv ist. Zudem noch, definieren Sie genau die Start- und Endzeiten Ihrer Angeboten und Datum.
+In den Einstellungen im unserem CMS können Sie selbst festlegen, ob Sie Take Away und Delivery anbieten möchten, oder ob Ihre Gäste Gaston nur im Betrieb verwenden können. Sie können auch nur einen Teil Ihres Angebots für Take Away oder Delivery anbieten oder sogar ein komplett eigenes Angebot.
 
-Sie können sich überlegen, welche Speisen und Getränke zu den verschiedenen Anlässen angeboten werden sollen und auch den Namen Ihrer digitalen Speisekarte festlegen. Nach Bedarf können Sie jederzeit die digitale Speisekarte für Take Away, Delivery und Im Betrieb aktivieren oder deaktivieren.
+Nach Bedarf können Sie die digitale Speisekarte jederzeit für Take Away und Delivery aktivieren oder deaktivieren. Es ist auch möglich, Gaston ausschliesslich für Take Away und Delivery zu nutzen, falls Sie die Gaston App nicht im Betrieb nutzen möchten.
 
-## Sind Sie bereit für unsere Gaston App?
+## Los geht's
 
-Damit Sie darauf vorbereitet sind, haben wir diese Liste mit einigen Punkten zusammengestellt, die Ihnen die Installation noch leichter macht. Zur Vertiefung dieses Themas empfehlen wir auch, dass Sie den Artikel über [Speisekarte bearbeiten](./speisekarten-angebot-bearbeiten.md) in unserem Highlight anschauen. Selbstverständlich stehen wir Ihnen jederzeit zur Verfügung, wenn Sie Fragen zu unserem Produkt haben.
+Diese Liste soll Ihnen die Installation erleichtern. Die [Bearbeitung der Speisekarte](./speisekarten-angebot-bearbeiten/) haben wir separat auch noch detaillierter beschrieben. Selbstverständlich stehen wir Ihnen jederzeit zur Verfügung, wenn Sie Fragen zu unserem Produkt haben.
 
-Wir freuen uns sehr, dass Sie sich für Gaston App entschieden haben.
+Jetzt können Sie mit Gaston durchstarten!
