@@ -37,6 +37,6 @@ Wie geht es weiter?
 
 ## Welche Kosten kommen auf mich zu?
 
-Alle unsere Pakete beinhalten Take Away App und Delivery App. 
+Alle unsere Pakete beinhalten Take Away App und Delivery App.
 
-Unser “Basic” Paket ist ohne Grundgebühren erhältlich und alle anderen Pakete finden Sie auf unserer Seite mit den [Preisen](../de/preise.astro). Wir garantieren Ihnen faire Preise.
+Unser “Basic” Paket ist ohne Grundgebühren erhältlich und alle anderen Pakete finden Sie auf unserer Seite mit den [Preisen](../preise/). Wir garantieren Ihnen faire Preise.
