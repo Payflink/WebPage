@@ -1,46 +1,47 @@
 ---
 lang: de
-title: Ist Gaston für Delivery und Take away geeignet?
-description: Die erste Food Delivery wurde 1768 in Korea verzeichnet. Die ersten Anzeigen für Food Delivery erschienen 1906. Das Wort Delivery selbst hat die Bedeutung, etwas zu jemandem zu transportieren. Heutzutage wird das Wort Delivery fast automatisch mit der Lieferung von Speisen gleichgesetzt. Das Konzept von Take Away besteht seit der Artike und hat sich in der Form, wie wir heute kennen, in der ganzen Welt verbreitet. 
+title: Ist Gaston für Take Away und Delivery geeignet?
+description: Die erste Food Delivery wurde 1768 in Korea verzeichnet. Die ersten Anzeigen für Food Delivery erschienen 1906. Das Wort Delivery selbst hat die Bedeutung, etwas zu jemandem zu transportieren. Heutzutage wird der Ausdruck Delivery fast mit der Lieferung von Speisen gleichgesetzt. Das Konzept von Take Away besteht seit der Artike und hat sich in der Form, wie wir heute kennen, in der ganzen Welt verbreitet. 
 image: icon.png
-keyword: delivery und take away
+keyword: take away und delivery
 layout: '@layouts/LandingPage.astro'
 ---
 
-## Gaston als Delivery und Take Away
+## Gaston als Take Away und Delivery
 
-Gaston ist eine vielseitige digitale Speisekarte, die neben integrierten Bestell- und Bezahlmöglichkeiten auch Take Away und Delivery bietet.
+Gaston ist eine vielseitige digitale Speisekarte, die die integrierten Bestell- und Bezahlmöglichkeiten auch für Take Away und Delivery bietet.
 
-Gaston ist nicht nur vielseitig, sondern auch praktisch. Nach der Covid-19 Pandemie wurde deutlich, dass man vorausschauend denken muss, um unvorhergesehene Ereignisse zu bewältigen. Mit dem Fokus auf eine schnelle und kostengünstige Lösung hat Gaston Funktionen wie Take Away und Delivery entwickelt und im Produkt hinzugefügt.
+Gaston ist nicht nur vielseitig, sondern auch praktisch. Nach der Covid-19 Pandemie wurde deutlich, dass man vorausschauend denken muss, um unvorhergesehene Ereignisse zu bewältigen. Mit dem Fokus auf eine schnelle und kostengünstige Lösung hat Gaston die Möglichkeiten für Take Away und Delivery direkt in die App integriert.
 
-Welche Art von Delivery und Take Away wird von Gaston angebotet? Unten sind die zwei Möglichkeiten aufgelistet:
-
-## Meal Delivery
-
-Dies ist die häufigste und bekannteste Art Delivery. Der Lieferservice, der Speisen an die Kunden liefert.
-
-Diese Modalität von Delivery hat auch eine Unterkategorie, nämlich die Meal kits. Diese Form besteht darin, dem Kunden Zutaten und Rezepte zu liefern, die er zu Hause selbst zubereiten kann.
+Folgende Möglichkeiten bietet Gaston an:
 
 ## Take Away
 
-Diese Art Take-out besteht aus die Interaktion zwischen Gäste und Restaurant per Telefon oder online. Die Gäste schauen sich die digitale Speisekarte an, bestellen und gehen die Bestellungen dann persönlich abholen.
+Die Gäste schauen sich die digitale Speisekarte zu Hause oder auch vor Ort an, bestellen elektronisch und holen die Bestellungen dann persönlich ab.
 
-## Wie kann ich diese Leistung von Delivery und Take Away für meinen Betrieb erwerben?
+## Meal Delivery
 
-Der Schrittweise Prozess ist einfach:
+Dies ist die häufigste und bekannteste Art Delivery. Nach der Bestellung werden den Kunden die fertigen Speisen geliefert.
 
-1. Melden Sie sich kostenlos
-2. Erfassen Sie Ihre Speisekarte online
-3. Binden Sie die Speisekarte auf Ihrer Homepage ein
+Eine Variation von Meal Delivery sind Meal Kits. Hierbei werden den Kunden Zutaten und Rezepte zugeliefert, die sie dann zu Hause selbst zubereiten können.
+
+## Wie kann ich Take Away und Delivery in meinem Betrieb anbieten?
+
+Der schrittweise Prozess ist einfach:
+
+1. Entscheiden Sie, in welchem Umfang Sie Gaston einsetzen wollen
+2. Engagieren Sie Gaston
+3. Erfassen Sie Ihre Speisekarte online
+4. Binden Sie die Speisekarte auf Ihrer Homepage ein
 
 Wie geht es weiter?
 
-4. Definieren Sie Ihre Öffnungszeiten
-5. Definieren Sie Ihre Angebote
-6. Bestimmen Sie Ihren Lieferzuschlag und Ihre Logistik für Take Away
+5. Definieren Sie Ihre Öffnungszeiten
+6. Definieren Sie Ihre Angebote
+7. Bestimmen Sie Ihren Lieferzuschlag und Ihre Logistik für Take Away
 
 ## Welche Kosten kommen auf mich zu?
 
-Alle unsere Pakete beinhalten Take Away und Delivery.
+Bei all unseren Paketen sind Take Away und Delivery inklusive. Unser “Basic” Paket ist ohne Grundgebühren erhältlich, weitere Angebote finden Sie auf unserer Seite mit den [Preisen](../preise/).
 
-Unser “Basic” Paket ist ohne Grundgebühren erhältlich und alle anderen Pakete finden Sie auf unserer Seite mit den [Preisen](../preise/). Wir garantieren Ihnen faire Preise.
+Wir freuen uns darauf, gemeinsam mit Ihnen das nächste Level im Gastgeben zu erreichen!
