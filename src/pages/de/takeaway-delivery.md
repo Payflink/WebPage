@@ -21,7 +21,7 @@ Dies ist die häufigste und bekannteste Art Delivery. Der Lieferservice, der Spe
 
 Diese Modalität von Delivery hat auch eine Unterkategorie, nämlich die Meal kits. Diese Form besteht darin, dem Kunden Zutaten und Rezepte zu liefern, die er zu Hause selbst zubereiten kann.
 
-## Take Away 
+## Take Away
 
 Diese Art Take-out besteht aus die Interaktion zwischen Gäste und Restaurant per Telefon oder online. Die Gäste schauen sich die digitale Speisekarte an, bestellen und gehen die Bestellungen dann persönlich abholen.
 
@@ -41,6 +41,6 @@ Wie geht es weiter?
 
 ## Welche Kosten kommen auf mich zu?
 
-Alle unsere Pakete beinhalten Take Away und Delivery. 
+Alle unsere Pakete beinhalten Take Away und Delivery.
 
 Unser “Basic” Paket ist ohne Grundgebühren erhältlich und alle anderen Pakete finden Sie auf unserer Seite mit den [Preisen](../preise/). Wir garantieren Ihnen faire Preise.
