@@ -21,19 +21,19 @@ Sobald die Gaston App im Einsatz ist, werden alle Bestellungen bei direkt an Ihr
 
 __Ohne Kasse:__ Ohne Kasse müssen alle Artikel und Kategorien manuell erfasst werden. Für die anderen Einstellungen ist der Arbeitsaufwand derselbe wie mit Kasse.
 
-Wenn Gaston App im Einsatz ist, werden alle Bestellungen entweder mit einem Bondrucker ausgedruckt  oder auf einem Bildschirm angezeigt.
+Wenn Gaston App im Einsatz ist, werden alle Bestellungen entweder mit einem Bondrucker ausgedruckt oder auf einem Bildschirm angezeigt.
 
 ## Design
 
 Dieser Punkt verdient viel Aufmerksamkeit. Hier zeigen Sie Ihr Branding und Ihre visuelle Identität. Wir wissen, dass jeder Betrieb einzigartig ist.
 
-Wie möchten Sie sich darstellen?
+Wie möchten Sie sich präsentieren?
 
 ## QR Code
 
-Dieser Punkt sagt auch viel über die Identität Ihres Betriebs aus. Es gibt mehrere Varianten, Ihren QR Code zu präsentieren: Als Kleber auf dem Tisch, auf Holz, als Würfel, als Flyer und viele mehr.
+Dieser Punkt sagt auch viel über die Identität Ihres Betriebs aus. Es gibt mehrere Varianten, Ihren QR-Code zu präsentieren: als Kleber auf dem Tisch, auf Holz, als Würfel, als Flyer und viele mehr.
 
-Tipp: Ein QR Code als Kleber bleibt immer am Tisch befestigt, während ein QR Code auf Holz, als Würfel oder als Flyer nach Bedarf verschoben oder entfernt werden kann.
+Tipp: Ein QR-Code als Kleber bleibt immer am Tisch befestigt, während ein QR-Code auf Holz, als Würfel oder als Flyer nach Bedarf verschoben oder entfernt werden kann.
 
 ## Fotos
 
@@ -41,7 +41,7 @@ In der Gaston App können Sie auch Fotos von Ihren Speisen integrieren. Ein Foto
 
 ## Take Away oder Delivery?
 
-In den Einstellungen im unserem CMS können Sie selbst festlegen, ob Sie Take Away und Delivery anbieten möchten, oder ob Ihre Gäste Gaston nur im Betrieb verwenden können. Sie können auch nur einen Teil Ihres Angebots für Take Away oder Delivery anbieten oder sogar ein komplett eigenes Angebot.
+In den Einstellungen in unserem CMS können Sie selbst festlegen, ob Sie Take Away und Delivery anbieten möchten, oder ob Ihre Gäste Gaston nur im Betrieb verwenden können. Sie können auch nur einen Teil Ihres Angebots für Take Away oder Delivery anbieten oder sogar ein komplett eigenes Angebot.
 
 Nach Bedarf können Sie die digitale Speisekarte jederzeit für Take Away und Delivery aktivieren oder deaktivieren. Es ist auch möglich, Gaston ausschliesslich für Take Away und Delivery zu nutzen, falls Sie die Gaston App nicht im Betrieb nutzen möchten.
 
