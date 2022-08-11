@@ -199,7 +199,7 @@ const footerDe: FooterGroup[] = [
         href: '/de/gaston-vs-gäste-rufsystem/',
       },
       {
-        title: 'Orderman',
+        title: 'Gaston oder Orderman',
         href: '/de/gaston-vs-orderman',
       },
       {
