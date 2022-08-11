@@ -42,22 +42,20 @@ Das digitale Angebot kann entweder vom Kunden selbst erfasst werden oder bei ein
 
 ## Deshalb ist Gaston besser als Yoordi
 
-Beide Apps bieten eine digitale Speisekarte mit Bestell- und Bezahlfunktion. Allerdings ist Gaston viel flexibler im Angebot. Sie können selbst wählen, welche Funktionen Ihre Speisekarte haben soll und bezahlen entsprechend auch nur, was Sie brauchen.
+Bei den Funktionen bieten beide Lösungen einen ähnlichen Umfang. Beide Apps bieten eine digitale Speisekarte mit Bestell- und Bezahlfunktion. Allerdings ist Gaston viel flexibler im Angebot. Sie können selbst wählen, welche Funktionen Ihre Speisekarte haben soll und bezahlen entsprechend auch nur, was Sie brauchen.
 
-Trotz der visuell orientierten Navigation bei Yoordi, ist Gaston einfacher in der Bedienung. Häufige Tätigkeiten brauchen weniger Klicks und sind verständlicher bei Gaston. Zudem ist das Anzeigen der digitalen Speisekarte bei Yoordi mit etwas mehr Aufwand verbunden, während die Gäste bei Gaston direkt auf Ihrem Angebot landen.
+Trotz der visuell orientierten Navigation bei Yoordi ist Gaston einfacher in der Bedienung. Häufige Tätigkeiten brauchen weniger Klicks und sind verständlicher bei Gaston. Zudem ist das Anzeigen der digitalen Speisekarte bei Yoordi mit etwas mehr Aufwand verbunden, während die Gäste bei Gaston direkt bei Ihrem Angebot landen.
 
 Ein weiterer Unterschied, der sich direkt auf der Homepage von Gaston und Yoordi zeigt, ist die Transparenz im Preis. Mit Gaston wissen Sie genau, was Sie bezahlen und für welche Leistungen.
-
-Bei den Funktionen bieten beide Lösungen einen ähnlichen Umfang.
 
 Zusammengefasst spricht für Gaston:
 
 - Flexibles Angebot
-- Einfachere Bedienung
+- Einfache Bedienung
 - Transparente Preise
 
 ## Starten Sie heute mit Gaston
 
-Wie Sie sehen, spricht vieles für Gaston. Falls Sie bei den [Funktionen](./funktionsumfang/) von Gaston einen Punkt vermissen, melden Sie sich unverbindliche bei uns. Ev. kann Gaston Ihren Wünsch bereits erfüllen oder wir finden sehr gerne einen Weg, damit Gaston optimal für Sie funktioniert.
+Wie Sie sehen, spricht vieles für Gaston. Falls Sie bei den [Funktionen](./funktionsumfang/) von Gaston einen Punkt vermissen, melden Sie sich unverbindlich bei uns. Möglicherweise kann Gaston Ihren Wunsch bereits erfüllen oder wir finden sehr gerne einen Weg, damit Gaston optimal für Sie funktioniert.
 
 Starten Sie heute mit uns! Zusammen erreichen wir das nächste Level des Gastgebens.
