@@ -1,7 +1,7 @@
 ---
 lang: de
 title: Ist Gaston für Take Away und Delivery geeignet?
-description: Die erste Food Delivery wurde 1768 in Korea verzeichnet. Die ersten Anzeigen für Food Delivery erschienen 1906. Das Wort Delivery selbst hat die Bedeutung, etwas zu jemandem zu transportieren. Heutzutage wird der Ausdruck Delivery fast mit der Lieferung von Speisen gleichgesetzt. Das Konzept von Take Away besteht seit der Artike und hat sich in der Form, wie wir heute kennen, in der ganzen Welt verbreitet. 
+description: Gaston ist eine vielseitige digitale Speisekarte, die die integrierten Bestell- und Bezahlmöglichkeiten auch für Take Away und Delivery bietet.
 image: icon.png
 keyword: take away und delivery
 layout: '@layouts/LandingPage.astro'
@@ -9,17 +9,15 @@ layout: '@layouts/LandingPage.astro'
 
 ## Gaston als Take Away und Delivery
 
-Gaston ist eine vielseitige digitale Speisekarte, die die integrierten Bestell- und Bezahlmöglichkeiten auch für Take Away und Delivery bietet.
-
 Gaston ist nicht nur vielseitig, sondern auch praktisch. Nach der Covid-19 Pandemie wurde deutlich, dass man vorausschauend denken muss, um unvorhergesehene Ereignisse zu bewältigen. Mit dem Fokus auf eine schnelle und kostengünstige Lösung hat Gaston die Möglichkeiten für Take Away und Delivery direkt in die App integriert.
 
 Folgende Möglichkeiten bietet Gaston an:
 
-## Take Away
+### Take Away
 
 Die Gäste schauen sich die digitale Speisekarte zu Hause oder auch vor Ort an, bestellen elektronisch und holen die Bestellungen dann persönlich ab.
 
-## Meal Delivery
+### Meal Delivery
 
 Dies ist die häufigste und bekannteste Art Delivery. Nach der Bestellung werden den Kunden die fertigen Speisen geliefert.
 
