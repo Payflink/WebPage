@@ -9,7 +9,7 @@ layout: '@layouts/LandingPage.astro'
 
 ## Gaston als Take Away und Delivery
 
-Gaston ist nicht nur vielseitig, sondern auch praktisch. Nach der Covid-19 Pandemie wurde deutlich, dass man vorausschauend denken muss, um unvorhergesehene Ereignisse zu bewältigen. Mit dem Fokus auf eine schnelle und kostengünstige Lösung hat Gaston die Möglichkeiten für Take Away und Delivery direkt in die App integriert.
+Gaston ist nicht nur vielseitig, sondern auch praktisch. Während der Covid-19 Pandemie wurde deutlich, dass man vorausschauend denken muss, um unvorhergesehene Ereignisse zu bewältigen. Mit dem Fokus auf eine schnelle und kostengünstige Lösung hat Gaston die Möglichkeiten für Take Away und Delivery direkt in die App integriert.
 
 Folgende Möglichkeiten bietet Gaston an:
 
@@ -36,7 +36,7 @@ Wie geht es weiter?
 
 5. Definieren Sie Ihre Öffnungszeiten
 6. Definieren Sie Ihre Angebote
-7. Bestimmen Sie Ihren Lieferzuschlag und Ihre Logistik für Take Away
+7. Bestimmen Sie Ihren Lieferzuschlag und Ihre Logistik für Delivery
 
 ## Welche Kosten kommen auf mich zu?
 
