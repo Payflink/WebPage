@@ -45,7 +45,7 @@ Eine dieser Funktionen ist die Möglichkeit, direkt aus der Speisekarte zu beste
 
 Mit Gaston können Sie auch Take Away und Delivery Bestellungen annehmen. Erfahren Sie mehr darüber in unserem Artikel über [Take Away und Delivery](../blog/take-away/).
 
-Eine weitere Funktion der Gaston App ist ein Gästerufsystem per SMS. Erfahren Sie mehr darüber in unserem Artikel über das [Gästerufsystem](../gaston-vs-gäste-rufsystem/) von Gaston.
+Eine weitere Funktion der Gaston App ist ein Gäste-Rufsystem per SMS. Erfahren Sie mehr darüber in unserem Artikel über das [Gäste-Rufsystem](../gäste-rufsystem/) von Gaston.
 
 ## Starten Sie kostenlos
 

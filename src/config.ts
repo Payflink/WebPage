@@ -199,8 +199,8 @@ const footerDe: FooterGroup[] = [
         href: '/de/takeaway-delivery/',
       },
       {
-        title: 'Gästerufsystem',
-        href: '/de/gaston-vs-gäste-rufsystem/',
+        title: 'Gäste-Rufsystem',
+        href: '/de/gäste-rufsystem/',
       },
       {
         title: 'Gaston oder Orderman',
