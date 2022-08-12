@@ -204,7 +204,7 @@ const footerDe: FooterGroup[] = [
       },
       {
         title: 'Gaston oder Orderman',
-        href: '/de/gaston-vs-orderman',
+        href: '/de/orderman/',
       },
       {
         title: 'Gaston oder Yoordi',
@@ -217,7 +217,7 @@ const footerDe: FooterGroup[] = [
     items: [
       {
         title: 'Inbetriebnahme von Gaston',
-        href: '/de/dokumentation/inbetriebnahme-gaston',
+        href: '/de/dokumentation/inbetriebnahme-gaston/',
       },
       {
         title: 'Speisekarte bearbeiten',
