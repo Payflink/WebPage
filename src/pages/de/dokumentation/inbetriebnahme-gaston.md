@@ -47,6 +47,6 @@ Nach Bedarf können Sie die digitale Speisekarte jederzeit für Take Away und De
 
 ## Los geht's
 
-Diese Liste soll Ihnen die Installation erleichtern. Die [Bearbeitung der Speisekarte](./speisekarten-angebot-bearbeiten/) haben wir separat auch noch detaillierter beschrieben. Selbstverständlich stehen wir Ihnen jederzeit zur Verfügung, wenn Sie Fragen zu unserem Produkt haben.
+Diese Liste soll Ihnen die Installation erleichtern. Die [Bearbeitung der Speisekarte](../speisekarten-angebot-bearbeiten/) haben wir separat auch noch detaillierter beschrieben. Selbstverständlich stehen wir Ihnen jederzeit zur Verfügung, wenn Sie Fragen zu unserem Produkt haben.
 
 Jetzt können Sie mit Gaston durchstarten!
