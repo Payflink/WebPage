@@ -11,17 +11,17 @@ layout: '@layouts/Documentation.astro'
 
 Haben Sie, bevor Sie mit der Installation beginnen, eine Zahlungsdienstleistung organisiert? Wir empfehlen, diesen Punkt so früh wie möglich in Angriff zu nehmen, da Sie ohne Zahlungsprovider die Zahlungsfunktion der Gaston App nicht nutzen können.
 
-Wir von Gaston App empfehlen Datatrans oder Worldline, andere Zahlungsprovider funktionieren aber auch.
+Wir von Gaston empfehlen Datatrans oder Worldline, andere Zahlungsprovider funktionieren aber auch.
 
 ## Mit oder ohne Kasse?
 
-__Mit Kasse:__ Wenn Gaston App mit Ihrer Kasse verbunden ist, können alle Artikel und Kategorien direkt importiert werden. Der Prozess dauert etwa 10 Minuten und schon wird Ihr Angebot im digitalen Menu angezeigt. Fotos und Kategorienbeschreibungen können nicht importiert werden und müssen später in Gaston-CMS bearbeitet werden.
+__Mit Kasse:__ Wenn die Gaston App mit Ihrer Kasse verbunden ist, können alle Artikel und Kategorien direkt importiert werden. Der Prozess dauert etwa 10 Minuten und schon wird Ihr Angebot im digitalen Menu angezeigt. Fotos und Kategorienbeschreibungen können nicht importiert werden und müssen später im Gaston-CMS (Content Management System) bearbeitet werden.
 
-Sobald die Gaston App im Einsatz ist, werden alle Bestellungen bei direkt an Ihre Kasse übermittelt.
+Sobald die Gaston App im Einsatz ist, werden alle Bestellungen direkt an Ihre Kasse übermittelt.
 
-__Ohne Kasse:__ Ohne Kasse müssen alle Artikel und Kategorien manuell erfasst werden. Für die anderen Einstellungen ist der Arbeitsaufwand derselbe wie mit Kasse.
+__Ohne Kasse:__ Ohne Kasse müssen alle Artikel und Kategorien manuell erfasst werden. Für andere Einstellungen ist der Arbeitsaufwand derselbe wie mit Kasse.
 
-Wenn Gaston App im Einsatz ist, werden alle Bestellungen entweder mit einem Bondrucker ausgedruckt oder auf einem Bildschirm angezeigt.
+Wenn die Gaston App im Einsatz ist, werden alle Bestellungen entweder mit einem Bondrucker ausgedruckt oder auf einem Bildschirm angezeigt.
 
 ## Design
 
@@ -37,11 +37,11 @@ Tipp: Ein QR-Code als Kleber bleibt immer am Tisch befestigt, während ein QR-Co
 
 ## Fotos
 
-In der Gaston App können Sie auch Fotos von Ihren Speisen integrieren. Ein Foto kann auch eine zusätzliche visuelle Erklärung für Ihre Gäste sein, damit sie sehen, wie Ihre Speisen aussehen.
+In der Gaston App können Sie auch Fotos von Ihren Speisen integrieren. Ein Foto kann auch eine zusätzliche visuelle Erklärung für Ihre Gäste sein, damit diese sehen, wie Ihre Speisen aussehen.
 
 ## Take Away oder Delivery?
 
-In den Einstellungen in unserem CMS können Sie selbst festlegen, ob Sie Take Away und Delivery anbieten möchten, oder ob Ihre Gäste Gaston nur im Betrieb verwenden können. Sie können auch nur einen Teil Ihres Angebots für Take Away oder Delivery anbieten oder sogar ein komplett eigenes Angebot.
+In den Einstellungen in unserem CMS können Sie selbst festlegen, ob Sie Take Away und Delivery anbieten möchten oder ob Ihre Gäste Gaston nur im Betrieb verwenden können. Sie können auch nur einen Teil Ihres Angebots für Take Away oder Delivery anbieten oder sogar ein komplett eigenes Angebot.
 
 Nach Bedarf können Sie die digitale Speisekarte jederzeit für Take Away und Delivery aktivieren oder deaktivieren. Es ist auch möglich, Gaston ausschliesslich für Take Away und Delivery zu nutzen, falls Sie die Gaston App nicht im Betrieb nutzen möchten.
 
