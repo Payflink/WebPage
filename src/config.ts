@@ -208,7 +208,7 @@ const footerDe: FooterGroup[] = [
       },
       {
         title: 'Gaston oder Yoordi',
-        href: '/de/gaston-vs-yoordi/',
+        href: '/de/yoordi/',
       },
     ],
   },
