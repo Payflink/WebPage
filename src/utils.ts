@@ -1,10 +1,9 @@
-import { join,normalize } from 'node:path'
 import type { BlogPost, Language } from './types'
 
 export const mkIsCurrentPage =
   (currentPathname: string) =>
   (path: string, { exact = false } = {}) => {
-    const pathname = currentPathname.endsWith('/') ? currentPathname : currentPathname + '/'
+    const pathname = addSlashToEndIfMissing(currentPathname)
     if (exact) return pathname === path
     return pathname.includes(path) ? 'page' : undefined
   }
@@ -20,3 +19,6 @@ export const takeSortedBlogPosts = (
     )
     .filter((post) => post.frontmatter.lang === language)
     .slice(0, take)
+
+export const addSlashToEndIfMissing = (url: string) =>
+  url.endsWith('/') ? url : `${url}/`
