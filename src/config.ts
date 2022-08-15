@@ -1,4 +1,4 @@
-import {
+import type {
   CallToAction,
   FooterGroup,
   I18nFooter,
@@ -194,11 +194,31 @@ const footerDe: FooterGroup[] = [
         title: 'Digitale Speisekarte',
         href: '/de/digitale-speisekarte/',
       },
+      {
+        title: 'Take Away und Delivery',
+        href: '/de/takeaway-delivery/',
+      },
+      {
+        title: 'Gäste-Rufsystem',
+        href: '/de/gäste-rufsystem/',
+      },
+      {
+        title: 'Gaston oder Orderman',
+        href: '/de/orderman/',
+      },
+      {
+        title: 'Gaston oder Yoordi',
+        href: '/de/yoordi/',
+      },
     ],
   },
   {
     title: 'Dokumentation',
     items: [
+      {
+        title: 'Inbetriebnahme von Gaston',
+        href: '/de/dokumentation/inbetriebnahme-gaston/',
+      },
       {
         title: 'Speisekarte bearbeiten',
         href: '/de/dokumentation/speisekarten-angebot-bearbeiten/',
