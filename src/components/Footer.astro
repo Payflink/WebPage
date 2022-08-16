@@ -3,6 +3,7 @@ import { callToActionLinksDe, callToActionLinksEn, footer } from 'src/config';
 import { mkIsCurrentPage } from '../utils.js'
 import CallToAction from './CallToAction.astro';
 import Container from './Container.astro';
+import Instagram from '@icons/Instagram.astro'
 
 const isCurrentPage = mkIsCurrentPage(Astro.url.pathname)
 const isDe = isCurrentPage('/de/')
@@ -23,14 +24,20 @@ const footerInCurrentLanguage = isDe ? footer.de : footer.en
   </Container>
 
   <div class="columns">
-    <p>
-      © 2019 - {new Date().getFullYear()} Gaston
-      <br />
-      {isDe ? 'Eine Initiative von' : 'An initiative of'}
-      <a href="https://apptiva.ch">Apptiva</a>
-      <br />
-      Luzern • Schweiz
-    </p>
+    <div>
+      <p>
+        <a href="https://www.instagram.com/gastonsolution/"><Instagram /></a>
+      </p>
+
+      <p>
+        © 2019 - {new Date().getFullYear()} Gaston
+        <br />
+        {isDe ? 'Eine Initiative von' : 'An initiative of'}
+        <a href="https://apptiva.ch">Apptiva</a>
+        <br />
+        Luzern • Schweiz
+      </p>
+    </div>
     <p>
       {isDe ? 'Anfragen' : 'Inquiries'}&ensp;
       <a href="tel:+41413222626">+41 41 322 26 26</a> {isDe ? 'oder' : 'or'} <a href={isDe ? "/de/termin/"
