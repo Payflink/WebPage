@@ -56,7 +56,7 @@ const navigationDe: NavigationTree = [
         title: 'Digitale Speisekarte',
         href: '/de/digitale-speisekarte/',
         description:
-          'Präsentieren Sie mit der digitalen Speisekarte von Gaston Ihr Angebot im besten Licht.',
+          'Präsentieren Sie mit unserer digitalen Speisekarte Ihr Angebot im besten Licht.',
       },
       {
         title: 'Bestell-App',
