@@ -9,12 +9,12 @@ import type {
 
 const productDe: Product = {
   description: 'Self-Order|Pay für Gastro',
-  claim: 'Gastgeben auf dem nächsten Level.',
+  claim: 'Ihre Gäste bestellen und bezahlen ohne Wartezeit.',
   name: 'Gaston',
 }
 const productEn: Product = {
   description: 'Self-Order|Pay for Gastronomy',
-  claim: 'Hospitality on the next level.',
+  claim: 'Your guests order and pay without waiting.',
   name: 'Gaston',
 }
 export const metaData: MetaData = {
