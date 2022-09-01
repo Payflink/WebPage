@@ -68,7 +68,7 @@ const openGraph = {
 
 <body>
   <Header />
-  <main>
+  <main contenteditable={import.meta.env.CONTEXT !== 'production'}>
     <slot />
   </main>
   <Footer />
