@@ -35,7 +35,7 @@ Mit Gaston haben Sie viele Vorteile:
 
 - Die Gaston App bietet eine einfache und intuitive Navigation, sodass sich Ihre Gäste problemlos in Ihrer digitalen Speisekarte zurechtfinden.
 
-- Eines der Merkmale, in denen sich Gaston auszeichnet, sind die Filter, die Ihr Angebot dynamisch and die Vorlieben Ihrer Gäste anpasst. So ist es möglich, nur vegetarische Speisen anzuzeigen oder Speisen mit gewissen Allergiestoffen auszublenden.
+- Eines der Merkmale, in denen sich Gaston auszeichnet, sind die Filter, die Ihr Angebot dynamisch und die Vorlieben Ihrer Gäste anpasst. So ist es möglich, nur vegetarische Speisen anzuzeigen oder Speisen mit gewissen Allergiestoffen auszublenden.
 
 ## Gaston kann noch mehr
 
