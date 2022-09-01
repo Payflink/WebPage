@@ -196,7 +196,7 @@ const footerDe: FooterGroup[] = [
       },
       {
         title: 'Gäste-Rufsystem',
-        href: '/de/gäste-rufsystem/',
+        href: '/de/gaeste-rufsystem/',
       },
       {
         title: 'Gaston oder Orderman',
