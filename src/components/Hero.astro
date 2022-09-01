@@ -4,6 +4,7 @@ import CallToAction from "./CallToAction.astro";
 export interface Props {
   name: string,
   claim: string,
+  from: string
   animation: {
     src: string,
     alt: string,
@@ -19,7 +20,9 @@ const props = Astro.props as Props
 <div class="wrapper">
   <div class="wrapper-left">
     <h1>{props.name}</h1>
-    <p>{props.claim}</p>
+    <p style="margin-bottom: 1rem;">{props.claim}</p>
+    <p style="font-size: 1rem; font-weight: 400; margin-bottom: 2em;"><img src="/assets/wappen.svg" alt="In Luzern (Schweiz) entwickelt" width="18px" /> {props.from}</p>
+    
   </div>
   <div class="wrapper-right">
     <div class="animation">
