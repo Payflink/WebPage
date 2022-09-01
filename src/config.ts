@@ -80,6 +80,11 @@ const navigationDe: NavigationTree = [
     title: 'Über',
     items: [
       {
+        title: 'Uns',
+        href: '/de/ueber-uns/',
+        description: 'Was treibt uns an? Worauf legen wir wert?',
+      },
+      {
         href: '/de/team/',
         title: 'Team',
         description: 'Wer versteckt sich hinter der Persona?',
@@ -88,11 +93,6 @@ const navigationDe: NavigationTree = [
         href: '/de/blog/',
         title: 'Blog',
         description: 'Der neuste Gossip, der gerade die Runden macht.',
-      },
-      {
-        title: 'Mission',
-        href: '/de/mission/',
-        description: 'Was ist unsere Mission? Was treibt uns?',
       },
     ],
   },
@@ -170,16 +170,16 @@ const footerDe: FooterGroup[] = [
     title: 'Über',
     items: [
       {
+        title: 'Uns',
+        href: '/de/ueber-uns/',
+      },
+      {
         href: '/de/team/',
         title: 'Team',
       },
       {
         href: '/de/blog/',
         title: 'Blog',
-      },
-      {
-        title: 'Mission',
-        href: '/de/mission/',
       },
       {
         href: '/de/kontakt/',
