@@ -44,6 +44,6 @@ Wie geht es weiter?
 
 Bei all unseren Paketen sind Take Away und Delivery inklusive. Unser “Basic” Paket ist ohne Grundgebühren erhältlich, weitere Angebote finden Sie auf unserer Seite mit den [Preisen](../preise/).
 
-Nun fragen Sie sich wahrscheinlich, wie Sie mehr darüber erfahren können: Was ist eine WebApp? Warum benötige ich eine digitale Speisekarte für den Zugang zu Take Away und Delivery? Aus diesem Grund empfehlen wir Ihnen den Artikel: [Digitale Speise](../digitale-speisekarte/).
+Nun fragen Sie sich wahrscheinlich, wie Sie mehr darüber erfahren können: Was ist eine WebApp? Warum benötige ich eine digitale Speisekarte für den Zugang zu Take Away und Delivery? Aus diesem Grund empfehlen wir Ihnen den Artikel: [Digitale Speisekarte](../digitale-speisekarte/).
 
 Wir freuen uns darauf, gemeinsam mit Ihnen das nächste Level im Gastgeben zu erreichen!
