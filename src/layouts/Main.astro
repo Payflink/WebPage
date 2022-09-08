@@ -10,13 +10,15 @@ import { metaData, generalTitle } from 'src/config'
 import { addSlashToEndIfMissing, mkIsCurrentPage } from 'src/utils'
 
 export type Props = {
-  title: string,
-  description: string,
+  title: string
+  description: string
 }
 
 const { title, description } = Astro.props as Props
 
-const canonicalURL = addSlashToEndIfMissing(new URL(Astro.url.pathname, Astro.site).toString());
+const canonicalURL = addSlashToEndIfMissing(
+  new URL(Astro.url.pathname, Astro.site).toString()
+)
 
 const isCurrentPage = mkIsCurrentPage(Astro.url.pathname)
 const lang = isCurrentPage('/de/') ? 'de' : 'en'
@@ -28,57 +30,99 @@ const openGraph = {
     title: `${title} • ${translatedMetaData.name} • ${translatedMetaData.description}`,
     type: 'webpage',
     url: canonicalURL,
-    image: 'https://gastonsolution.com/gaston-bestell-app.png'
+    image: 'https://gastonsolution.com/gaston-bestell-app.png',
   },
   optional: { description },
   image: {
     type: 'image/png',
     width: 1200,
     height: 630,
-    alt: `${translatedMetaData.name}, ${translatedMetaData.description}`
-  }
+    alt: `${translatedMetaData.name}, ${translatedMetaData.description}`,
+  },
 }
+
+const production = import.meta.env.CONTEXT === 'production'
 ---
 
-<html lang={lang}>
+<html {lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/assets/fonts/font.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-touch-icon.png?v=2"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon-32x32.png?v=2"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon-16x16.png?v=2"
+    />
+    <link rel="manifest" href="/site.webmanifest?v=2" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=2" color="#e11387" />
+    <link rel="shortcut icon" href="/favicon.ico?v=2" />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta name="theme-color" content="#e11387" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    {lang === 'de' && (
+      <script
+        id="chatbot"
+        data-server="https://pierre.gastonsolution.com/webclient"
+        defer
+        src="https://pierre.gastonsolution.com/webclient/embed/bundle.js"
+      />
+    )}
+    {import.meta.env.CONTEXT === 'production' && (
+      <script
+        defer
+        data-domain="gastonsolution.com"
+        src="https://plausible.io/js/plausible.js"
+      />
+    )}
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <link rel="stylesheet" href="/assets/fonts/font.css" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2">
-  <link rel="manifest" href="/site.webmanifest?v=2">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg?v=2" color="#e11387">
-  <link rel="shortcut icon" href="/favicon.ico?v=2">
-  <meta name="msapplication-TileColor" content="#ffc40d">
-  <meta name="theme-color" content="#e11387" />
-  <link rel="sitemap" href="/sitemap-index.xml">
-  {lang === 'de' &&
-  <script id="chatbot" data-server="https://pierre.gastonsolution.com/webclient" defer
-    src="https://pierre.gastonsolution.com/webclient/embed/bundle.js" />}
-  {import.meta.env.CONTEXT === 'production' ?
-  <script defer data-domain="gastonsolution.com" src="https://plausible.io/js/plausible.js"></script> : ''}
+    <SEO
+      title={`${title} • ${generalTitle(translatedMetaData)}`}
+      {description}
+      canonical={canonicalURL}
+      {openGraph}
+      twitter={{ card: 'summary_large_image' }}
+    />
+  </head>
 
-  <SEO title={`${title} • ${generalTitle(translatedMetaData)}`} description={description} canonical={canonicalURL}
-    openGraph={openGraph} twitter={{card: "summary_large_image" }} />
+  <body>
+    <Header />
+    <main>
+      <slot />
+      {!production && (
+        <div class="center">
+          <button id="editButton">Editable</button>
+        </div>
+      )}
+    </main>
+    <Footer />
 
-</head>
+    <script>
+      const editButton = document.querySelector('#editButton')
+      if (editButton) {
+        editButton.addEventListener('click', () => {
+          document.querySelector('main').contentEditable = 'true'
+        })
+      }
+    </script>
 
-<body>
-  <Header />
-  <main contenteditable={import.meta.env.CONTEXT !== 'production'}>
-    <slot />
-  </main>
-  <Footer />
-</body>
-
+    <style>
+      main {
+        grid-area: Content;
+        overflow: hidden;
+      }
+    </style>
+  </body>
 </html>
-
-<style>
-  main {
-    grid-area: Content;
-    overflow: hidden;
-  }
-</style>
