@@ -96,7 +96,7 @@ const production = import.meta.env.CONTEXT === 'production'
       title={`${title} • ${generalTitle(translatedMetaData)}`}
       description={description}
       canonical={canonicalURL}
-      {openGraph}
+      openGraph={openGraph}
       twitter={{ card: 'summary_large_image' }}
     />
   </head>
