@@ -3,27 +3,18 @@ import type { JSX } from 'preact'
 import { useEffect, useState } from 'preact/hooks'
 import { currency } from 'src/utils'
 
-type PricePerTurnover = {
-  turnover: number
-  price: number
-}
 type Input = 0 | 1 | 2 | 3 | 4
-type InputToPrice = [
-  PricePerTurnover,
-  PricePerTurnover,
-  PricePerTurnover,
-  PricePerTurnover,
-  'more'
-]
-export const inputToPricePerTurnover: InputToPrice = [
+
+const inputToPricePerTurnover = [
   { turnover: 1_000, price: 39 },
   { turnover: 5_000, price: 89 },
   { turnover: 20_000, price: 179 },
   { turnover: 100_000, price: 359 },
   'more',
-]
+] as const
 
 const moreValue = 4
+const lastTurnover = 3
 
 const Plan = ({ children }: { children: JSX.Element }) => {
   const init = globalThis.location
@@ -47,8 +38,7 @@ const Plan = ({ children }: { children: JSX.Element }) => {
           <dd>
             {value == moreValue
               ? `grösser als ${currency.format(
-                  (inputToPricePerTurnover[moreValue - 1] as PricePerTurnover)
-                    .turnover
+                  inputToPricePerTurnover[lastTurnover].turnover
                 )}.-`
               : `${currency.format(inputToPricePerTurnover[value].turnover)}.-`}
           </dd>
