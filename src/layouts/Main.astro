@@ -44,7 +44,7 @@ const openGraph = {
 const production = import.meta.env.CONTEXT === 'production'
 ---
 
-<html {lang}>
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -72,27 +72,31 @@ const production = import.meta.env.CONTEXT === 'production'
     <meta name="msapplication-TileColor" content="#ffc40d" />
     <meta name="theme-color" content="#e11387" />
     <link rel="sitemap" href="/sitemap-index.xml" />
-    {lang === 'de' && (
-      <script
-        id="chatbot"
-        data-server="https://pierre.gastonsolution.com/webclient"
-        defer
-        src="https://pierre.gastonsolution.com/webclient/embed/bundle.js"
-      />
-    )}
-    {import.meta.env.CONTEXT === 'production' && (
-      <script
-        defer
-        data-domain="gastonsolution.com"
-        src="https://plausible.io/js/plausible.js"
-      />
-    )}
+    {
+      lang === 'de' && production && (
+        <script
+          id="chatbot"
+          data-server="https://pierre.gastonsolution.com/webclient"
+          defer
+          src="https://pierre.gastonsolution.com/webclient/embed/bundle.js"
+        />
+      )
+    }
+    {
+      production && (
+        <script
+          defer
+          data-domain="gastonsolution.com"
+          src="https://plausible.io/js/plausible.js"
+        />
+      )
+    }
 
     <SEO
       title={`${title} • ${generalTitle(translatedMetaData)}`}
-      {description}
+      description={description}
       canonical={canonicalURL}
-      {openGraph}
+      openGraph={openGraph}
       twitter={{ card: 'summary_large_image' }}
     />
   </head>
@@ -101,22 +105,24 @@ const production = import.meta.env.CONTEXT === 'production'
     <Header />
     <main>
       <slot />
-      {!production && (
-        <div class="center">
-          <button id="editButton">Editable</button>
-        </div>
-      )}
+      {
+        !production && (
+          <div class="center">
+            <button id="editButton">Editable</button>
+            {/* prettier-ignore */}
+            <script is:inline>
+              const editButton = document.querySelector('#editButton') 
+              if (editButton) {
+                editButton.addEventListener('click', () => {
+                  document.querySelector('main').contentEditable = 'true'
+                })
+              }
+            </script>
+          </div>
+        )
+      }
     </main>
     <Footer />
-
-    <script>
-      const editButton = document.querySelector('#editButton')
-      if (editButton) {
-        editButton.addEventListener('click', () => {
-          document.querySelector('main').contentEditable = 'true'
-        })
-      }
-    </script>
 
     <style>
       main {
