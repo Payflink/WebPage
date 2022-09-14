@@ -58,35 +58,37 @@ const customers: Customer[] = [
 ]
 ---
 
-<div class="marquee">
-  <ul>
-    {
-      customers.map((customer) => (
-        <li>
-          <FixedPicture
-            src={import(`../images/customers/${customer.image}.png`)}
-            alt={customer.alt}
-            placeholder={'tracedSVG'}
-            height={50}
-          />
-        </li>
-      ))
-    }
-  </ul>
-  <ul style="translate: 100%; position: absolute; inset: 0;">
-    {
-      customers.map((customer) => (
-        <li>
-          <FixedPicture
-            src={import(`../images/customers/${customer.image}.png`)}
-            alt={customer.alt}
-            placeholder={'tracedSVG'}
-            height={50}
-          />
-        </li>
-      ))
-    }
-  </ul>
+<div class="wrapper">
+  <div class="marquee">
+    <ul>
+      {
+        customers.map((customer) => (
+          <li>
+            <FixedPicture
+              src={import(`../images/customers/${customer.image}.png`)}
+              alt={customer.alt}
+              placeholder={'tracedSVG'}
+              height={50}
+            />
+          </li>
+        ))
+      }
+    </ul>
+    <ul style="translate: 100%; position: absolute; inset: 0;">
+      {
+        customers.map((customer) => (
+          <li>
+            <FixedPicture
+              src={import(`../images/customers/${customer.image}.png`)}
+              alt={customer.alt}
+              placeholder={'tracedSVG'}
+              height={50}
+            />
+          </li>
+        ))
+      }
+    </ul>
+  </div>
 </div>
 
 <style>
@@ -94,10 +96,16 @@ const customers: Customer[] = [
     filter: grayscale(20%);
   }
 
+  .wrapper {
+    overflow: hidden;
+    width: 100vw;
+    margin: -1rem;
+    padding: 0rem;
+  }
+
   .marquee {
     width: clamp(140rem, 250%, 220rem);
     margin-bottom: 4rem;
-    overflow: hidden;
     position: relative;
   }
   ul {

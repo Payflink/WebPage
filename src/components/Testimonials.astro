@@ -98,54 +98,63 @@ const testimonials: Testimonial[] = [
 ]
 ---
 
-<div class="marquee">
-  <ul>
-    {
-      testimonials.map(({ name, avatar, statement, restaurant }) => (
-        <li>
-          <img
-            src={`/assets/${avatar}-avatar.svg`}
-            alt={avatar === 'female' ? 'Frau' : 'Mann'}
-          />
-          <p class="statement">{statement}</p>
-          <p class="details">
-            <b>{name}</b> im Restaurant <b>{restaurant}</b>
-          </p>
-        </li>
-      ))
-    }
-  </ul>
-  <ul style="translate: 100%; position: absolute; inset: 0;">
-    {
-      testimonials.map(({ name, avatar, statement, restaurant }) => (
-        <li>
-          <img
-            src={`/assets/${avatar}-avatar.svg`}
-            alt={avatar === 'female' ? 'Frau' : 'Mann'}
-          />
-          <p class="statement">{statement}</p>
-          <p class="details">
-            <b>{name}</b> im Restaurant <b>{restaurant}</b>
-          </p>
-        </li>
-      ))
-    }
-  </ul>
+<div class="wrapper">
+  <div class="marquee">
+    <ul>
+      {
+        testimonials.map(({ name, avatar, statement, restaurant }) => (
+          <li>
+            <img
+              src={`/assets/${avatar}-avatar.svg`}
+              alt={avatar === 'female' ? 'Frau' : 'Mann'}
+            />
+            <p class="statement">{statement}</p>
+            <p class="details">
+              <b>{name}</b> im Restaurant <b>{restaurant}</b>
+            </p>
+          </li>
+        ))
+      }
+    </ul>
+    <ul style="translate: 100%; position: absolute; inset: 0;">
+      {
+        testimonials.map(({ name, avatar, statement, restaurant }) => (
+          <li>
+            <img
+              src={`/assets/${avatar}-avatar.svg`}
+              alt={avatar === 'female' ? 'Frau' : 'Mann'}
+            />
+            <p class="statement">{statement}</p>
+            <p class="details">
+              <b>{name}</b> im Restaurant <b>{restaurant}</b>
+            </p>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
 </div>
 
 <style>
-  .marquee {
-    width: 260rem;
-    margin-bottom: 4rem;
+  .wrapper {
     overflow: hidden;
+    width: 100vw;
+    margin: -1rem;
+    padding: 0rem;
+  }
+  .marquee {
+    width: 270rem;
+    margin-bottom: 4rem;
     position: relative;
   }
 
   ul {
     display: flex;
     justify-content: space-around;
-    padding: 0;
+    padding: 0 0 0 1em;
+    margin: 0;
     list-style: none;
+    gap: 1em;
     animation: slide 50s linear infinite;
   }
 
