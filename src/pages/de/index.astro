@@ -169,8 +169,24 @@ const description =
   <section>
     <Container>
       <h2>Das sagen die Gäste</h2>
-      <Testimonials />
+      <div class="columns">
+        <p class="introduction">
+          Bei den Gästen kommt Gaston insgesamt sehr gut an. Bei einer Umfrage
+          mit <b>über 600 Personen</b> haben <b>85.1%</b> gesagt, dass sie <b
+            >wieder mit Gaston bestellen</b
+          > würden!
+        </p>
+        <div class="rating">
+          <img
+            style="max-width: 300px;"
+            src="/assets/stars.svg"
+            alt="4.25 Sterne"
+          />
+          <p>85.1%</p>
+        </div>
+      </div>
     </Container>
+    <Testimonials />
   </section>
 
   <section id="verkaufskanäle" class="background">
@@ -508,6 +524,27 @@ const description =
 
   .shadow :global(picture) {
     filter: drop-shadow(0 14px 20px #0004);
+  }
+
+  .columns {
+    align-items: center;
+    gap: 5em;
+  }
+
+  .introduction {
+    flex: 2;
+    margin-block: 1em;
+  }
+
+  .rating {
+    flex: 1;
+    text-align: center;
+  }
+
+  .rating p {
+    font-size: 2em;
+    font-weight: bold;
+    margin-block: 0;
   }
 
   #payment {
