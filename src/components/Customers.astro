@@ -1,0 +1,127 @@
+---
+import FixedPicture from './FixedPicture.astro'
+---
+
+<div class="marquee">
+  <ul>
+    <li>
+      <FixedPicture
+        src={import('../images/customers/brauwerk-st-gallen.png')}
+        alt="Restaurant Brauwerk"
+        placeholder={'tracedSVG'}
+        height={50}
+      />
+    </li>
+    <li>
+      <FixedPicture
+        src={import('../images/customers/el-mosquito.png')}
+        alt="El-Mosquito"
+        placeholder={'tracedSVG'}
+        height={50}
+      />
+    </li>
+    <li>
+      <FixedPicture
+        src={import('../images/customers/gspan.jpg')}
+        alt="Hotel Gspan"
+        placeholder={'tracedSVG'}
+        height={50}
+      />
+    </li>
+    <li>
+      <FixedPicture
+        src={import('../images/customers/habsburg-bar.png')}
+        alt="Habsburg-Bar"
+        placeholder={'tracedSVG'}
+        height={50}
+      />
+    </li>
+    <li>
+      <FixedPicture
+        src={import('../images/customers/lamassu.png')}
+        alt="Restaurant Lamassu"
+        placeholder={'tracedSVG'}
+        height={50}
+      />
+    </li>
+    <li>
+      <FixedPicture
+        src={import('../images/customers/franz.png')}
+        alt="Restaurant Franz"
+        placeholder={'tracedSVG'}
+        height={50}
+      />
+    </li>
+    <li>
+      <FixedPicture
+        src={import('../images/customers/seehaus-grill.png')}
+        alt="Seehaus-Grill"
+        placeholder={'tracedSVG'}
+        height={50}
+      />
+    </li>
+    <li>
+      <FixedPicture
+        src={import('../images/customers/seehotel-kastanienbaum.png')}
+        alt="Seehotel Kastanienbaum"
+        placeholder={'tracedSVG'}
+        height={50}
+      />
+    </li>
+    <li>
+      <FixedPicture
+        src={import('../images/customers/sugoi-sushi-300.png')}
+        alt="Sugoi Sushi"
+        placeholder={'tracedSVG'}
+        height={50}
+      />
+    </li>
+    <li>
+      <FixedPicture
+        src={import('../images/customers/zurwerkstatt-sg.png')}
+        alt="Zur Werkstatt St. Gallen"
+        placeholder={'tracedSVG'}
+        height={50}
+      />
+    </li>
+  </ul>
+</div>
+
+<style>
+  .marquee {
+    margin-bottom: 4rem;
+    overflow: hidden;
+  }
+  ul {
+    width: max(200%, 140rem);
+    display: flex;
+    justify-content: space-around;
+    animation: slide 60s linear infinite;
+    opacity: 0;
+    translate: 20vw;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translate(0%);
+      opacity: 0;
+    }
+
+    1% {
+      opacity: 1;
+    }
+
+    99% {
+      opacity: 1;
+    }
+
+    100% {
+      transform: translate(calc(-100% + 60vw));
+      opacity: 0;
+    }
+  }
+</style>
