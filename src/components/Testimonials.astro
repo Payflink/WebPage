@@ -115,43 +115,48 @@ const testimonials: Testimonial[] = [
       ))
     }
   </ul>
+  <ul style="translate: 100%; position: absolute; inset: 0;">
+    {
+      testimonials.map(({ name, avatar, statement, restaurant }) => (
+        <li>
+          <img
+            src={`/assets/${avatar}-avatar.svg`}
+            alt={avatar === 'female' ? 'Frau' : 'Mann'}
+          />
+          <p class="statement">{statement}</p>
+          <p class="details">
+            <b>{name}</b> im Restaurant <b>{restaurant}</b>
+          </p>
+        </li>
+      ))
+    }
+  </ul>
 </div>
 
 <style>
   .marquee {
     margin-bottom: 4rem;
     overflow: hidden;
+    position: relative;
   }
 
   ul {
     display: flex;
-    width: 270rem;
+    width: 260rem;
     justify-content: space-around;
-    padding: 0;
+    padding: 0 0 0 1em;
     list-style: none;
     gap: 1em;
-    animation: slide 70s linear infinite;
-    opacity: 0;
-    translate: 20vw;
+    animation: slide 50s linear infinite;
   }
 
   @keyframes slide {
     0% {
       transform: translate(0%);
-      opacity: 0;
-    }
-
-    1% {
-      opacity: 1;
-    }
-
-    99% {
-      opacity: 1;
     }
 
     100% {
       transform: translate(calc(-100% + 60vw));
-      opacity: 0;
     }
   }
 
