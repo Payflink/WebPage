@@ -101,18 +101,20 @@ const customers: Customer[] = [
     width: 100vw;
     margin: -1rem;
     padding: 0rem;
+    transform: translate(1em);
   }
 
   .marquee {
     width: clamp(140rem, 250%, 220rem);
-    margin-bottom: 4rem;
+    margin-block: 1rem 4rem;
     position: relative;
   }
   ul {
     display: flex;
     justify-content: space-around;
     animation: slide 50s linear infinite;
-    padding: 0;
+    margin: 0;
+    padding: 1em 0;
   }
 
   li {
