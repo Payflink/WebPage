@@ -95,12 +95,12 @@ const customers: Customer[] = [
   }
 
   .marquee {
+    width: clamp(140rem, 250%, 220rem);
     margin-bottom: 4rem;
     overflow: hidden;
     position: relative;
   }
   ul {
-    width: clamp(140rem, 250%, 220rem);
     display: flex;
     justify-content: space-around;
     animation: slide 50s linear infinite;

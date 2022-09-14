@@ -135,6 +135,7 @@ const testimonials: Testimonial[] = [
 
 <style>
   .marquee {
+    width: 260rem;
     margin-bottom: 4rem;
     overflow: hidden;
     position: relative;
@@ -142,11 +143,9 @@ const testimonials: Testimonial[] = [
 
   ul {
     display: flex;
-    width: 260rem;
     justify-content: space-around;
-    padding: 0 0 0 1em;
+    padding: 0;
     list-style: none;
-    gap: 1em;
     animation: slide 50s linear infinite;
   }
 
@@ -156,7 +155,7 @@ const testimonials: Testimonial[] = [
     }
 
     100% {
-      transform: translate(calc(-100% + 60vw));
+      transform: translate(-100%);
     }
   }
 
