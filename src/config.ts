@@ -202,10 +202,6 @@ const footerDe: FooterGroup[] = [
         title: 'Gaston oder Orderman',
         href: '/de/orderman/',
       },
-      {
-        title: 'Gaston oder Yoordi',
-        href: '/de/yoordi/',
-      },
     ],
   },
   {
