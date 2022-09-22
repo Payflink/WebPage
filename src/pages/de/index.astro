@@ -5,15 +5,22 @@ import ButtonLink from '@components/ButtonLink.astro'
 
 import FixedPicture from '@components/FixedPicture.astro'
 import Demo from '@components/Demo.astro'
-import { callToActionLinksDe, metaData } from 'src/config'
+import { metaData } from 'src/config'
 import BlogTeaser from '@components/BlogTeaser.astro'
 import Testimonials from '@components/Testimonials.astro'
 import KindOfEstablishments from '@components/KindOfEstablishments.astro'
 import CanReplace from '@components/CanReplace.astro'
 import Hero from '@components/Hero.astro'
 import Customers from '@components/Customers.astro'
+import ButtonList from '@components/ButtonList.astro'
+import type { CallToAction } from 'src/types'
 
 const { de } = metaData
+
+const callToActionLinks: CallToAction[] = [
+  { text: 'Bestell App Demo', href: '#das-ist-gaston' },
+  { text: 'Angebot anfordern', href: '/de/preise/' },
+]
 
 const description =
   'Gaston erlaubt es den Gästen schnell und einfach zu bestell und bezahlen. Dabei spielt es keine Rolle, ob die Gäste in ihrem Betrieb, unterwegs oder Zuhause sind.'
@@ -29,7 +36,7 @@ const description =
         src: '/assets/hero-gaston-vs-menu.svg',
         alt: 'Bestellen mit Speisekarte mühsam, mit Gaston App schnell und einfach',
       }}
-      links={callToActionLinksDe}
+      links={callToActionLinks}
     />
   </Container>
   <Customers />
@@ -44,9 +51,12 @@ const description =
             Browser. Gaston läuft auf den Handys Ihrer Gäste, ohne App-Download
             oder Installation
           </p>
-          <ButtonLink href="bestell-und-zahlungs-ablauf-gastro-betriebe/"
-            >Mehr Infos
-          </ButtonLink>
+          <ButtonList>
+            <ButtonLink href="bestell-und-zahlungs-ablauf-gastro-betriebe/"
+              >Mehr Infos
+            </ButtonLink>
+            <ButtonLink href="#das-ist-gaston">Zur Demo</ButtonLink>
+          </ButtonList>
           <img
             src="/assets/illustrations/gaston-delivers.svg"
             class="gaston-image"
@@ -189,7 +199,7 @@ const description =
     <Testimonials />
   </section>
 
-  <section id="verkaufskanäle" class="background">
+  <section id="verkaufskanaele" class="background">
     <Container>
       <h2>Verkaufskanäle</h2>
       <p>
