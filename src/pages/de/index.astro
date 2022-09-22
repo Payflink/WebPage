@@ -27,18 +27,20 @@ const description =
 ---
 
 <MainLayout title={`${de.name} • ${de.claim}`} description={description}>
-  <Container>
-    <Hero
-      name={de.name}
-      claim={de.claim}
-      from="In Luzern entwickelt."
-      animation={{
-        src: '/assets/hero-gaston-vs-menu.svg',
-        alt: 'Bestellen mit Speisekarte mühsam, mit Gaston App schnell und einfach',
-      }}
-      links={callToActionLinks}
-    />
-  </Container>
+  <div style="max-width: 100%;overflow-x: hidden;">
+    <Container>
+      <Hero
+        name={de.name}
+        claim={de.claim}
+        from="In Luzern entwickelt."
+        animation={{
+          src: '/assets/hero-gaston-vs-menu.svg',
+          alt: 'Bestellen mit Speisekarte mühsam, mit Gaston App schnell und einfach',
+        }}
+        links={callToActionLinks}
+      />
+    </Container>
+  </div>
   <Customers />
 
   <section id="bestellen-mit-gaston" class="background">
