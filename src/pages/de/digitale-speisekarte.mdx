@@ -2,12 +2,20 @@
 lang: de
 title: Digitale Speisekarte
 description: Mit der digitalen Speisekarte von Gaston haben Sie ein flexibles und mächtiges Tool, um das Angebot Ihres Restaurants, Ihrer Bar oder Ihres Cafés optimal abzubilden.
-image: icon.png
 keyword: digitale speisekarte
 layout: '@layouts/LandingPage.astro'
 ---
 
+import Figure from '@components/Figure.astro'
+import ButtonLink from '@components/ButtonLink.astro'
+import ButtonList from '@components/ButtonList.astro'
+
 Digitale Speisekarten sind ein perfekter Ersatz oder auch Ergänzung für Ihre klassische Speisekarte. Mit der digitalen Speisekarte von Gaston haben Sie das perfekte Tool, um als Gastgeber:in das nächste Level zu erreichen.
+
+<Figure
+  caption="Digitale Speisekarte"
+  src={import('../../images/restaurant-bestell-app.png')}
+/>
 
 ## Digitale Speisekarte in Kürze
 
@@ -35,7 +43,7 @@ Mit Gaston haben Sie viele Vorteile:
 
 - Die Gaston App bietet eine einfache und intuitive Navigation, sodass sich Ihre Gäste problemlos in Ihrer digitalen Speisekarte zurechtfinden.
 
-- Eines der Merkmale, in denen sich Gaston auszeichnet, sind die Filter, die Ihr Angebot dynamisch and die Vorlieben Ihrer Gäste anpasst. So ist es möglich, nur vegetarische Speisen anzuzeigen oder Speisen mit gewissen Allergiestoffen auszublenden.
+- Eines der Merkmale, in denen sich Gaston auszeichnet, sind die Filter, die Ihr Angebot dynamisch und die Vorlieben Ihrer Gäste anpasst. So ist es möglich, nur vegetarische Speisen anzuzeigen oder Speisen mit gewissen Allergiestoffen auszublenden.
 
 ## Gaston kann noch mehr
 
@@ -45,10 +53,21 @@ Eine dieser Funktionen ist die Möglichkeit, direkt aus der Speisekarte zu beste
 
 Mit Gaston können Sie auch Take Away und Delivery Bestellungen annehmen. Erfahren Sie mehr darüber in unserem Artikel über [Take Away und Delivery](../blog/take-away/).
 
-Eine weitere Funktion der Gaston App ist ein Gäste-Rufsystem per SMS. Erfahren Sie mehr darüber in unserem Artikel über das [Gäste-Rufsystem](../gäste-rufsystem/) von Gaston.
+Eine weitere Funktion der Gaston App ist ein Gäste-Rufsystem per SMS. Erfahren Sie mehr darüber in unserem Artikel über das [Gäste-Rufsystem](../gaeste-rufsystem/) von Gaston.
+
+<ButtonList>
+  <ButtonLink href="/de/restaurant-bestell-app/">Bestell App</ButtonLink>
+  <ButtonLink href="/de/funktionsumfang/">Funktionsumfang</ButtonLink>
+  <ButtonLink href="/de/demo/">Demo</ButtonLink>
+</ButtonList>
 
 ## Starten Sie kostenlos
 
 Gaston als digitale Speisekarte ist komplett kostenlos!
 
 So entdecken Sie die Vorteile unseres Produkts ganz ohne Risiko und können Bestellen, Bezahlen und alle weiteren Funktionen jederzeit in Ihre digitale Speisekarte aufnehmen. Schritt für Schritt, damit Sie sich selbst von den Vorteilen überzeugen können.
+
+<ButtonList>
+  <ButtonLink href="/de/preise/">Kostenlos starten</ButtonLink>
+  <ButtonLink href="/de/kontakt/">Kontakt</ButtonLink>
+</ButtonList>

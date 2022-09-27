@@ -1,30 +1,57 @@
 ---
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
-import { mkIsCurrentPage } from '../../../utils'
+import { currency, mkIsCurrentPage } from '../../../utils'
 import Button from '@components/Button.astro'
 
 export const getStaticPaths = async () => [
   {
-    params: { plan: 'basic' },
-    props: { title: 'Basic', price: 'Keine. <small>5,9% / Bestellung oder Zahlung</small>' },
+    params: { plan: 'menucard' },
+    props: {
+      title: 'Speisekarte',
+      price: 'Kostenlos',
+    },
   },
   {
-    params: { plan: 'pro' },
-    props: { title: 'Pro', price: 'CHF 179.- / Betrieb / Monat' },
+    params: { plan: 'order-pay/0' },
+    props: {
+      title: 'Bestellen, Bezahlen + Speisekarte',
+      price: 'CHF 39.- / Betrieb / Monat',
+      turnover: 1000,
+    },
   },
   {
-    params: { plan: 'deluxe' },
-    props: { title: 'Deluxe', price: 'CHF 699.- / Monat / Betrieb' },
+    params: { plan: 'order-pay/1' },
+    props: {
+      title: 'Bestellen, Bezahlen + Speisekarte',
+      price: 'CHF 89.- / Betrieb / Monat',
+      turnover: 5000,
+    },
   },
   {
-    params: { plan: 'enterprise' },
-    props: { title: 'Enterprise', price: 'Auf Anfrage' },
+    params: { plan: 'order-pay/2' },
+    props: {
+      title: 'Bestellen, Bezahlen + Speisekarte',
+      price: 'CHF 179.- / Betrieb / Monat',
+      turnover: 20000,
+    },
+  },
+  {
+    params: { plan: 'order-pay/3' },
+    props: {
+      title: 'Bestellen, Bezahlen + Speisekarte',
+      price: 'CHF 359.- / Betrieb / Monat',
+      turnover: 100000,
+    },
+  },
+  {
+    params: { plan: 'individuell' },
+    props: { title: 'Individuell', price: 'Auf Anfrage' },
   },
 ]
 
-const { plan } = Astro.params
-const { title: planTitle, price } = Astro.props
+const { plan } = Astro.params as { plan: string }
+const { title: planTitle, price, turnover } = Astro.props
 
 const isCurrentPage = mkIsCurrentPage(Astro.url.pathname)
 const isDe = isCurrentPage('/de/')
@@ -45,15 +72,30 @@ const description =
       <p>
         Gewählter Plan:
         <b>
-          <a href="..">{planTitle}</a>
+          <a
+            href={turnover ? `../../?turnover=${plan.split('/').at(-1)}` : '..'}
+            >{planTitle}
+          </a>
         </b>
       </p>
+      {
+        turnover && (
+          <p>
+            Gaston-Umsatz bis: <b>{currency.format(turnover)}.-</b>
+          </p>
+        )
+      }
       <p>
-        Basis-Kosten: <b set:html={price} />
+        Basis-Kosten: <b set:html={price}></b>
       </p>
     </div>
-    <form name="enrol" action={isDe ? '/de/preise/success' : '/en/prices/success' } method="POST" data-netlify="true"
-      data-netlify-honeypot="bot-field">
+    <form
+      name="enrol"
+      action={isDe ? '/de/preise/success' : '/en/prices/success'}
+      method="POST"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+    >
       <p hidden>
         <label for="bot-field">
           Nicht ausfüllen:{' '}
@@ -61,24 +103,42 @@ const description =
         </label>
         <input type="text" name="subject" value="Neue Gaston-Anmeldung" />
         <input type="text" name="plan" value={plan} />
-        <input type="text" name="locale" value={isDe ? 'de' : 'en' } />
+        <input type="text" name="locale" value={isDe ? 'de' : 'en'} />
       </p>
       <p>
         <label for="name">
           Vorname / Name
-          <input type="text" inputmode="text" autocomplete="name" name="name" required />
+          <input
+            type="text"
+            inputmode="text"
+            autocomplete="name"
+            name="name"
+            required
+          />
         </label>
       </p>
       <p>
         <label for="email">
           Email-Adresse
-          <input type="email" inputmode="email" autocomplete="email" name="email" required />
+          <input
+            type="email"
+            inputmode="email"
+            autocomplete="email"
+            name="email"
+            required
+          />
         </label>
       </p>
       <p>
         <label for="phone">
           Telefonnummer
-          <input type="tel" inputmode="tel" autocomplete="tel" name="phone" required />
+          <input
+            type="tel"
+            inputmode="tel"
+            autocomplete="tel"
+            name="phone"
+            required
+          />
         </label>
       </p>
       <p>
@@ -90,7 +150,12 @@ const description =
       <p>
         <label for="website">
           URL ihrer Webseite <small>(optional)</small>
-          <input type="text" inputmode="text" autocomplete="url" name="website" />
+          <input
+            type="text"
+            inputmode="text"
+            autocomplete="url"
+            name="website"
+          />
         </label>
       </p>
       <p>
