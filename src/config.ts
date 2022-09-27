@@ -23,12 +23,12 @@ export const metaData: MetaData = {
 }
 
 export const callToActionLinksDe: CallToAction[] = [
-  { href: '/de/preise/', text: 'Gaston engagieren' },
-  { href: '/de/demo/', text: 'Demo starten' },
+  { href: '/de/demo/', text: 'Demo ausprobieren' },
+  { href: '/de/preise/', text: 'Unverbindliches Angebot' },
 ]
 export const callToActionLinksEn: CallToAction[] = [
-  { href: '/en/contact/', text: 'Order now' },
-  { href: '/en/demo/', text: 'Start demo' },
+  { href: '/en/demo/', text: 'Try demo' },
+  { href: '/en/contact/', text: 'Request a quote' },
 ]
 
 export const generalTitle = ({ name }: Product) => `${name}`
@@ -80,6 +80,11 @@ const navigationDe: NavigationTree = [
     title: 'Über',
     items: [
       {
+        title: 'Uns',
+        href: '/de/ueber-uns/',
+        description: 'Was treibt uns an? Worauf legen wir wert?',
+      },
+      {
         href: '/de/team/',
         title: 'Team',
         description: 'Wer versteckt sich hinter der Persona?',
@@ -88,11 +93,6 @@ const navigationDe: NavigationTree = [
         href: '/de/blog/',
         title: 'Blog',
         description: 'Der neuste Gossip, der gerade die Runden macht.',
-      },
-      {
-        title: 'Mission',
-        href: '/de/mission/',
-        description: 'Was ist unsere Mission? Was treibt uns?',
       },
     ],
   },
@@ -170,16 +170,16 @@ const footerDe: FooterGroup[] = [
     title: 'Über',
     items: [
       {
+        title: 'Uns',
+        href: '/de/ueber-uns/',
+      },
+      {
         href: '/de/team/',
         title: 'Team',
       },
       {
         href: '/de/blog/',
         title: 'Blog',
-      },
-      {
-        title: 'Mission',
-        href: '/de/mission/',
       },
       {
         href: '/de/kontakt/',
@@ -196,15 +196,11 @@ const footerDe: FooterGroup[] = [
       },
       {
         title: 'Gäste-Rufsystem',
-        href: '/de/gäste-rufsystem/',
+        href: '/de/gaeste-rufsystem/',
       },
       {
         title: 'Gaston oder Orderman',
         href: '/de/orderman/',
-      },
-      {
-        title: 'Gaston oder Yoordi',
-        href: '/de/yoordi/',
       },
     ],
   },
