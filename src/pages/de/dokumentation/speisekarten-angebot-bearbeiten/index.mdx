@@ -5,6 +5,8 @@ description: Gaston erlaubt es Ihnen jederzeit innerhalb Minuten das Angebot auf
 layout: '@layouts/Documentation.astro'
 ---
 
+import Figure from '@components/Figure.astro'
+
 In Gaston stehen Ihnen zwei Möglichkeiten zur Verfügung, um Ihre Speisekarte anzupassen. Sie können in jedem Fall die Artikel in unserem CMS (Content Management System) bearbeiten. Falls Gaston mit Ihrer Kasse verbunden ist, können wir die Artikel auch direkt importieren.
 
 ## Artikel im CMS bearbeiten
@@ -18,7 +20,15 @@ Loggen Sie sich mit Ihrem persönlichen Benutzernamen und Passwort auf dem Gasto
 
 ### Artikel
 
-In den Artikeln sehen Sie alle Artikel gruppiert nach Kategorie. Hier können Sie neue Artikel erfassen, bestehende bearbeiten oder auch löschen. In den Artikeln selber haben Sie folgende Daten, die Sie eingeben können:
+In den Artikeln sehen Sie alle Artikel gruppiert nach Kategorie. Hier können Sie neue Artikel erfassen, bestehende bearbeiten oder auch löschen.
+
+<Figure
+  src={import('./cms-articles.png')}
+  caption="In unserem CMS können Sie Ihre Artikel selber pflegen."
+  size="article"
+/>
+
+In den Artikeln selber haben Sie folgende Daten, die Sie eingeben können:
 
 - Name des Artikels
 - Name des Artikels für die Gäste (falls der Name ansonsten eher für den internen Gebrauch verwendet wird)
@@ -71,6 +81,12 @@ Auf den Speisekarten haben Sie folgende Einstellungsmöglichkeiten:
   - Datum von/bis
 
 ### Einstellungen
+
+<Figure
+  src={import('./cms-settings.png')}
+  caption="Mit Gaston haben Sie eine grosse Auswahl an Einstellungsmöglichkeiten."
+  size="article"
+/>
 
 - Name des Restaurants
 - Logo des Restaurants

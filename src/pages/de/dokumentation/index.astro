@@ -3,7 +3,7 @@ import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 import type { DocumentationFrontMatter } from 'src/types'
 
-const docs = await Astro.glob<DocumentationFrontMatter>('./*.md')
+const docs = await Astro.glob<DocumentationFrontMatter>('./**/*.mdx')
 
 const description =
   'Dokumentation von Gaston, der Bestell- und Zahlungsspeisekarte.'
