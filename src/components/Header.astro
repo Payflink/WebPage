@@ -7,7 +7,7 @@ import MobileMenu from './MobileMenu.astro'
 
 const isCurrentPage = mkIsCurrentPage(Astro.url.pathname)
 const isDe = isCurrentPage('/de/')
-const langPage = isDe ? "/de/" : '/en/'
+const langPage = isDe ? '/de/' : '/en/'
 
 const navigation = isDe ? globalNavigation.de : globalNavigation.en
 const data = isDe ? metaData.de : metaData.en
@@ -28,17 +28,30 @@ const data = isDe ? metaData.de : metaData.en
 
 <header id="root-header">
   <nav>
-    <a class="logo" href={langPage} aria-current={isCurrentPage(langPage, { exact: true })}>
-      {data.name}<br/><small>{data.description}</small>
+    <a
+      class="logo"
+      href={langPage}
+      aria-current={isCurrentPage(langPage, { exact: true })}
+    >
+      {data.name}<br /><small>{data.description}</small>
     </a>
-    {navigation.map((item) => 'items' in item ?
-    <FlyoutMenu {...item} /> : <a href={item.href} aria-current={isCurrentPage(item.href)}>{item.title}</a>)}
+    {
+      navigation.map((item) =>
+        'items' in item ? (
+          <FlyoutMenu {...item} />
+        ) : (
+          <a href={item.href} aria-current={isCurrentPage(item.href)}>
+            {item.title}
+          </a>
+        )
+      )
+    }
   </nav>
   <Dialog client:load>
     <button slot="openElement">
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <title>Menu</title>
-        <path d="M 2,6 L 22,6 M 2,12 L 22,12 M 2,18 L 22,18" />
+        <path d="M 2,6 L 22,6 M 2,12 L 22,12 M 2,18 L 22,18"></path>
       </svg>
     </button>
     <MobileMenu navigation={navigation} />
@@ -80,7 +93,6 @@ const data = isDe ? metaData.de : metaData.en
       [aria-current] {
         color: var(--primary-color);
       }
-
     }
 
     a {
@@ -98,11 +110,11 @@ const data = isDe ? metaData.de : metaData.en
         justify-content: center;
         line-height: 1.1em;
         color: var(--primary-color);
-        
+
         small {
           line-height: 1em;
           font-size: 28%;
-          color: gray;
+          color: hsl(0 0% 46%);
         }
       }
     }
