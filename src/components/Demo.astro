@@ -38,10 +38,14 @@ import Button from './Button.astro'
                 <li>Fügen Sie etwas zur Bestellung hinzu.</li>
                 <li>Senden Sie die Bestellung ab.</li>
                 <li>
-                  Klicken Sie bei der Zahlung z.B. auf Twint. Keine Angst, es
-                  findet keine echte Transaktion statt und entsprechend <b
-                    >wird kein Geld abgebucht.</b
-                  >
+                  Klicken Sie bei der Zahlung auf <b>VISA</b>.
+                  <ul>
+                    <li>Test-Karte <b>4900 0000 0000 0094</b></li>
+                    <li>Verfalldatum <b>06/25</b></li>
+                    <li>Prüfziffer (CVV) <b>123</b></li>
+                  </ul>
+                  Keine Angst, es findet keine echte Transaktion statt und entsprechend
+                  <b>wird kein Geld abgebucht.</b>
                 </li>
               </ol>
             </slot>
@@ -50,8 +54,8 @@ import Button from './Button.astro'
             <slot name="mobile">
               <h3>Gaston Demo</h3>
               <p>
-                Wählen Sie bei der Zahlung z.B. Twint. Es wird kein Geld
-                abgebucht.
+                Zahlung mit VISA Nr. 4900&nbsp;0000&nbsp;0000&nbsp;0094, Verfall
+                06/25, CVV 123
               </p>
             </slot>
           </div>
@@ -152,6 +156,17 @@ import Button from './Button.astro'
   ol {
     li::marker {
       font-size: 2em;
+    }
+  }
+
+  ul {
+    padding-inline-start: 1em;
+    margin-block: 0.5em;
+    li {
+      margin-bottom: 0.4em;
+      &::marker {
+        font-size: 1em;
+      }
     }
   }
 

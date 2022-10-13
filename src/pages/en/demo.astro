@@ -46,8 +46,14 @@ const description =
             <li>Add something to the order.</li>
             <li>Submit the order.</li>
             <li>
-              Click on Twint when making a payment. Do not worry, no real
-              transaction takes place and therefore <b
+              Choose <b>VISA</b> during payment.
+              <ul>
+                <li>Number <b>4900 0000 0000 0094</b></li>
+                <li>Expiration date <b>06/25</b></li>
+                <li>Verification (CVV) <b>123</b></li>
+              </ul>
+
+              Do not worry, no real transaction takes place and therefore <b
                 >no money will be transfererd.</b
               >
             </li>
@@ -55,8 +61,13 @@ const description =
         </Fragment>
         <Fragment slot="test-with-qr-code">Test on your mobile</Fragment>
         <Fragment slot="mobile">
-          <h3>Gaston Demo</h3>
-          <p>Choose Twint as payment. No money will be debited.</p>
+          <div class="mobile">
+            <h3>Gaston Demo</h3>
+            <p>
+              Pay with VISA No. 4900&nbsp;0000&nbsp;0000&nbsp;0094, Expir.
+              06/25, CVV 123
+            </p>
+          </div>
         </Fragment>
       </Demo>
     </section>
@@ -71,3 +82,19 @@ const description =
     </section>
   </Container>
 </MainLayout>
+
+<style lang="scss">
+  .mobile {
+    padding-inline: 0.8em;
+
+    h3,
+    p {
+      display: inline;
+    }
+
+    p {
+      font-size: 0.8em;
+      margin-left: 0.5em;
+    }
+  }
+</style>
