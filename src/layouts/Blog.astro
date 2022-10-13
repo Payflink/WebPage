@@ -25,6 +25,7 @@ const images = await heroImages(url, image, Astro.site.origin)
         widths={[350, 720, 1440]}
         aspectRatio={2}
         class="hero"
+        loading="eager"
       />
     )
   }
