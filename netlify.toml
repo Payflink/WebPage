@@ -1,5 +1,6 @@
 [build]
   command = "npx pnpm build"
+  functions = "netlify/functions"
   publish = "dist"
 
 [build.environment]
