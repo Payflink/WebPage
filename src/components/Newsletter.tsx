@@ -42,8 +42,8 @@ const Newsletter = () => {
         <form onSubmit={onSubmit}>
           <h2>Newsletter</h2>
           <p style="margin-bottom: 2em;">
-            Mit dem Newsletter erhalten Sie ca. 4 x Jahr aktuelle News rund um
-            Gaston.
+            Möchten Sie über die neuesten Updates and Highlights von Gaston
+            informiert werden? Dann abonnieren Sie unseren Newsletter!
           </p>
           <div>
             <label for="mce-EMAIL">
