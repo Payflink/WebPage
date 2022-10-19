@@ -1,13 +1,13 @@
 <button><slot /></button>
 
-<style lang="scss">
+<style lang="scss" is:global>
   button {
     display: inline-block;
     font-size: 1em;
     padding: 0.6em 2em;
     margin-bottom: 2em;
     border: 0.16em solid var(--primary-color);
-    border-radius: 0.4em;
+    border-radius: 2em;
     font-weight: bold;
     color: var(--primary-color);
     background: transparent;
@@ -23,6 +23,12 @@
 
     &:active {
       transform: translateY(1px);
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      transform: none;
+      cursor: progress;
     }
 
     @media (max-width: 380px) {
