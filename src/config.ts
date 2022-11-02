@@ -24,11 +24,11 @@ export const metaData: MetaData = {
 
 export const callToActionLinksDe: CallToAction[] = [
   { href: '/de/demo/', text: 'Demo ausprobieren' },
-  { href: '/de/preise/', text: 'Unverbindliches Angebot' },
+  //#region{ href: '/de/preise/', text: 'Unverbindliches Angebot' },
 ]
 export const callToActionLinksEn: CallToAction[] = [
   { href: '/en/demo/', text: 'Try demo' },
-  { href: '/en/contact/', text: 'Request a quote' },
+  //#region { href: '/en/contact/', text: 'Request a quote' },
 ]
 
 export const generalTitle = ({ name }: Product) => `${name}`
@@ -76,30 +76,30 @@ const navigationDe: NavigationTree = [
       },
     ],
   },
-  {
-    title: 'Über',
-    items: [
-      {
-        title: 'Uns',
-        href: '/de/ueber-uns/',
-        description: 'Was treibt uns an? Worauf legen wir wert?',
-      },
-      {
-        href: '/de/team/',
-        title: 'Team',
-        description: 'Wer versteckt sich hinter der Persona?',
-      },
-      {
-        href: '/de/blog/',
-        title: 'Blog',
-        description: 'Der neuste Gossip, der gerade die Runden macht.',
-      },
-    ],
-  },
-  {
-    title: 'Preise',
-    href: '/de/preise/',
-  },
+  // {
+  //   title: 'Über',
+  //   items: [
+  //     {
+  //       title: 'Uns',
+  //       href: '/de/ueber-uns/',
+  //       description: 'Was treibt uns an? Worauf legen wir wert?',
+  //     },
+  //     {
+  //       href: '/de/team/',
+  //       title: 'Team',
+  //       description: 'Wer versteckt sich hinter der Persona?',
+  //     },
+  //     {
+  //       href: '/de/blog/',
+  //       title: 'Blog',
+  //       description: 'Der neuste Gossip, der gerade die Runden macht.',
+  //     },
+  //   ],
+  // },
+  //{
+    //title: 'Preise',
+    //href: '/de/preise/',
+  //},
   {
     href: '/de/kontakt/',
     title: 'Kontakt',
@@ -156,37 +156,37 @@ const footerDe: FooterGroup[] = [
         title: 'Funktionsumfang',
         href: '/de/funktionsumfang/',
       },
-      {
-        title: 'Preise',
-        href: '/de/preise/',
-      },
+      //{
+        //title: 'Preise',
+        //href: '/de/preise/',
+      //},
       {
         href: '/de/demo/',
         title: 'Demo',
       },
     ],
   },
-  {
-    title: 'Über',
-    items: [
-      {
-        title: 'Uns',
-        href: '/de/ueber-uns/',
-      },
-      {
-        href: '/de/team/',
-        title: 'Team',
-      },
-      {
-        href: '/de/blog/',
-        title: 'Blog',
-      },
-      {
-        href: '/de/kontakt/',
-        title: 'Kontakt',
-      },
-    ],
-  },
+  // {
+  //   title: 'Über',
+  //   items: [
+  //     {
+  //       title: 'Uns',
+  //       href: '/de/ueber-uns/',
+  //     },
+  //     {
+  //       href: '/de/team/',
+  //       title: 'Team',
+  //     },
+  //     {
+  //       href: '/de/blog/',
+  //       title: 'Blog',
+  //     },
+  //     {
+  //       href: '/de/kontakt/',
+  //       title: 'Kontakt',
+  //     },
+  //   ],
+  // },
   {
     title: 'Highlights',
     items: [
