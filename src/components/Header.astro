@@ -1,0 +1,163 @@
+---
+import { globalNavigation, metaData } from 'src/config'
+import { mkIsCurrentPage } from '../utils'
+import Dialog from '@components/Dialog'
+import FlyoutMenu from './FlyoutMenu.astro'
+import MobileMenu from './MobileMenu.astro'
+
+const isCurrentPage = mkIsCurrentPage(Astro.url.pathname)
+const isDe = isCurrentPage('/de/')
+const langPage = isDe ? '/de/' : '/en/'
+
+const navigation = isDe ? globalNavigation.de : globalNavigation.en
+const data = isDe ? metaData.de : metaData.en
+---
+
+<script>
+  window.addEventListener('load', function () {
+    let observer = new IntersectionObserver((entries) => {
+      if (entries[0].boundingClientRect.y < -1) {
+        document.body.classList.add('scrolled-down')
+      } else {
+        document.body.classList.remove('scrolled-down')
+      }
+    })
+    observer.observe(document.querySelector('#top-of-site-pixel-anchor'))
+  })
+</script>
+
+<header id="root-header">
+  <nav>
+    <a
+      class="logo"
+      href={langPage}
+      aria-current={isCurrentPage(langPage, { exact: true })}
+    >
+      {data.name}<br /><small>{data.description}</small>
+    </a>
+    {
+      navigation.map((item) =>
+        'items' in item ? (
+          <FlyoutMenu {...item} />
+        ) : (
+          <a href={item.href} aria-current={isCurrentPage(item.href)}>
+            {item.title}
+          </a>
+        )
+      )
+    }
+  </nav>
+  <Dialog client:load>
+    <button slot="openElement">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <title>Menu</title>
+        <path d="M 2,6 L 22,6 M 2,12 L 22,12 M 2,18 L 22,18"></path>
+      </svg>
+    </button>
+    <MobileMenu navigation={navigation} />
+  </Dialog>
+</header>
+<div id="top-of-site-pixel-anchor"></div>
+
+<style lang="scss">
+  header {
+    grid-area: Header;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: bold;
+    top: 0;
+    height: 3.6em;
+    padding-inline: 1rem;
+    color: var(--text-color);
+    background-color: white;
+    border-bottom: 1px solid transparent;
+    transition: border 200ms;
+    z-index: 99;
+
+    :global(.scrolled-down) & {
+      border-bottom: 1px solid var(--primary-color);
+    }
+
+    @media (min-width: 40rem) {
+      font-size: 1.2rem;
+      padding-inline: 2rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 2em;
+      width: 100%;
+
+      [aria-current] {
+        color: var(--primary-color);
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      color: inherit;
+      text-decoration: none;
+
+      &.logo {
+        margin-right: auto;
+        font-size: 1.5em;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.1em;
+        color: var(--primary-color);
+
+        small {
+          line-height: 1em;
+          font-size: 28%;
+          color: hsl(0 0% 46%);
+        }
+      }
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      padding-inline: 1em;
+      background: transparent;
+      border: none;
+      color: inherit;
+      cursor: pointer;
+
+      svg {
+        width: 2em;
+        stroke: currentColor;
+        stroke-width: 2;
+      }
+    }
+
+    .active {
+      color: var(--primary-color);
+    }
+
+    @media (max-width: 767px) {
+      a:not(.logo) {
+        display: none;
+      }
+    }
+
+    @media (min-width: 768px) {
+      button {
+        display: none;
+      }
+    }
+  }
+
+  #top-of-site-pixel-anchor {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    top: 0;
+    left: 0;
+  }
+</style>

@@ -1,0 +1,70 @@
+---
+type CanReplace = {
+  title: string
+  description: string
+  image: string
+}
+const canReplace: CanReplace[] = [
+  {
+    title: 'Webseite',
+    description:
+      'Wollen Sie auf Ihrer Webseite Ihren Betrieb beschreiben und Ihre Speisekarte anzeigen? Das können Sie mit Payflink!',
+    image: '🌐',
+  },
+  {
+    title: 'Klassische Speisekarte',
+    description:
+      'Betriebe mit einer digitalen Speisekarte haben oft keine gedruckte Speisekarte mehr. Für Gäste die kein Handy zur Hand haben, können Sie gegebenenfalls Tablets zur Verfügung stellen.',
+    image: '📜',
+  },
+  {
+    title: 'Kasse',
+    description:
+      'Payflink kann Ihre klassische Kasse ersetzen. Nehmen Sie Kontakt mit uns auf und wir schauen, ob Ihr Betrieb nur mit Payflink funktionieren kann.',
+    image: '💶',
+  },
+  {
+    title: 'Kreditkarten-Terminal',
+    description:
+      'Mit Payflink können Ihre Gäste mit Twint und Kreditkarte bezahlen. Ein Terminal ist überflüssig.',
+    image: '💳',
+  },
+  {
+    title: 'Orderman',
+    description:
+      'Dank Payflink übermitteln die Gäste Ihre Bestellung selber. Auch Ihr Personal kann die Bestellung direkt in Payflink erfassen.',
+    image: '✏️',
+  },
+  {
+    title: 'Gäste-Rufsystem',
+    description:
+      'Mit Payflink senden Sie Ihren Gästen ein SMS, sobald die Bestellung bereit ist. Somit sind Geräte wie Gäste-Pager nicht mehr nötig.',
+    image: '🔔',
+  },
+]
+---
+
+<ul>
+  {
+    canReplace.map(({ title, description, image }) => (
+      <li data-image={image}>
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  ul {
+    padding-left: 4em;
+  }
+
+  li:first-of-type h3 {
+    margin-top: 0;
+  }
+
+  li::marker {
+    content: attr(data-image) '   ';
+  }
+</style>

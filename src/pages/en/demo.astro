@@ -1,0 +1,100 @@
+---
+import MainLayout from '@layouts/Main.astro'
+import Container from '@components/Container.astro'
+import Demo from '@components/Demo.astro'
+import FixedPicture from '@components/FixedPicture.astro'
+import ButtonLink from '@components/ButtonLink.astro'
+
+const description =
+  'The Payflink demo shows how the menu is displayed, how the ordering process works and how payments are processed.'
+---
+
+<MainLayout title="Demo of the order app" description={description}>
+  <Container>
+    <section>
+      <h1>Demo of the order app</h1>
+      <p>
+        The Payflink demo shows how the menu is displayed, how the ordering
+        process works and how the payment processing takes place.
+      </p>
+    </section>
+    <section>
+      <Demo>
+        <Fragment slot="intro">
+          <h2>Payflink Order App</h2>
+          <p>
+            This is how your guests will see our ordering app, directly on their
+            cell phone or on your website. Simple, easy, courteous. All without
+            installation of an app and without registration.
+          </p>
+          <p>
+            You design your menu according to your taste, colorful and with
+            pictures or simply with text.
+          </p>
+        </Fragment>
+        <Fragment slot="try">Try now!</Fragment>
+        <Fragment slot="qr-code"
+          >... or scan the QR code with your mobile phone.</Fragment
+        >
+        <Fragment slot="desktop">
+          <h3>Payflink Demo</h3>
+          <p>
+            This demo is on a test system. <b>No real orders or payments</b> take
+            place. Test Payflink without hesitation.
+          </p>
+          <ol>
+            <li>Add something to the order.</li>
+            <li>Submit the order.</li>
+            <li>
+              Choose <b>VISA</b> during payment.
+              <ul>
+                <li>Number <b>4900 0000 0000 0094</b></li>
+                <li>Expiration date <b>06/25</b></li>
+                <li>Verification (CVV) <b>123</b></li>
+              </ul>
+
+              Do not worry, no real transaction takes place and therefore <b
+                >no money will be transfererd.</b
+              >
+            </li>
+          </ol>
+        </Fragment>
+        <Fragment slot="test-with-qr-code">Test on your mobile</Fragment>
+        <Fragment slot="mobile">
+          <div class="mobile">
+            <h3>Payflink Demo</h3>
+            <p>
+              Pay with VISA No. 4900&nbsp;0000&nbsp;0000&nbsp;0094, Expir.
+              06/25, CVV 123
+            </p>
+          </div>
+        </Fragment>
+      </Demo>
+    </section>
+    <section>
+      <p>
+        Since Payflink has a lot of configuration options, you can see only one
+        possible configuration. If you need something to be different, there is
+        a big chance that this is already possible today. Contact us in that
+        case.
+      </p>
+      <ButtonLink href="/de/contact/">Contact us</ButtonLink>
+    </section>
+  </Container>
+</MainLayout>
+
+<style lang="scss">
+  .mobile {
+    padding-inline: 0.8em;
+
+    h3,
+    p {
+      display: inline;
+    }
+
+    p {
+      font-size: 0.8em;
+      margin-left: 0.5em;
+    }
+  }
+</style>

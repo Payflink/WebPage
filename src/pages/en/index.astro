@@ -1,0 +1,177 @@
+---
+import MainLayout from '@layouts/Main.astro'
+import Container from '@components/Container.astro'
+import ButtonLink from '@components/ButtonLink.astro'
+import FixedPicture from '@components/FixedPicture.astro'
+import { callToActionLinksEn, metaData } from 'src/config'
+import BlogTeaser from '@components/BlogTeaser.astro'
+import Hero from '@components/Hero.astro'
+import Customers from '@components/Customers.astro'
+
+const { en } = metaData
+
+const description =
+  "Payflink the digital menu allows guests to order and pay quickly and easily. It doesn't matter if the guests are in their establishment, on the road or at home. Payflink supports ordering in your business, Take Away and delivery."
+---
+
+<MainLayout title={en.claim} description={description}>
+  <Container>
+    <Hero
+      name={en.name}
+      claim={en.claim}
+      from="Developed in Lucerne"
+      animation={{
+        src: '/assets/hero-gaston-vs-menu-en.svg',
+        alt: 'Ordering with menu tedious, with Payflink app quick and easy',
+      }}
+      links={callToActionLinksEn}
+    />
+  </Container>
+
+  <Customers />
+
+  <section class="background">
+    <Container>
+      <h2>News</h2>
+      <BlogTeaser language="en" />
+      <ButtonLink href="/en/blog/">More news</ButtonLink>
+    </Container>
+  </section>
+
+  <section id="partner-von-gaston">
+    <Container>
+      <h2>Our Partners</h2>
+      <ul class="image-list high">
+        <li>
+          <a href="https://www.flm.ch/">
+            <FixedPicture
+              src={import('../../images/partners/flm.png')}
+              alt="FLM Kassensysteme"
+              height={160}
+              layout={'fixed'}
+            />
+          </a>
+        </li>
+        <li>
+          <FixedPicture
+            src={import('../../images/partners/digital-enterprise.png')}
+            alt="Digital Enterprise"
+            height={60}
+            layout={'fixed'}
+          />
+        </li>
+      </ul>
+    </Container>
+  </section>
+</MainLayout>
+
+<style lang="scss">
+  h1 {
+    text-align: center;
+    font-size: 4em;
+    margin: 0.5em 0;
+    line-height: 0.6em;
+
+    small {
+      font-size: 40%;
+      color: var(--text-color);
+    }
+  }
+
+  .claim {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .animation {
+    position: relative;
+    margin: 0 max(-4em, -4vw) 0.2em;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .usps {
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+    list-style: none;
+    padding-left: 1em;
+
+    li {
+      padding-left: 1em;
+      padding-bottom: 0.6em;
+
+      &::before {
+        content: '● ';
+        position: absolute;
+        font-size: 1.6em;
+        transform: translate(-1em, -0.3em);
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  .button-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em 1em;
+    font-size: 1.3em;
+    margin-top: 4em;
+    margin-bottom: 1em;
+  }
+
+  ul.image-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em 4em;
+    padding: 0;
+    margin-top: 4em;
+
+    li {
+      list-style: none;
+      margin-inline: auto;
+
+      ::global(img) {
+        height: 60px;
+        width: 100%;
+      }
+    }
+  }
+
+  section {
+    padding-block: 0 4em;
+    min-height: 28rem;
+
+    &.background {
+      padding-block: 2em 4em;
+    }
+  }
+
+  .background {
+    --primary-color: white;
+    position: relative;
+    color: white;
+    z-index: 5;
+
+    &::before {
+      content: ' ';
+      position: absolute;
+      inset: -1em 0;
+      background-image: linear-gradient(
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 0)
+        ),
+        url(/assets/curve.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      z-index: -1;
+    }
+  }
+</style>

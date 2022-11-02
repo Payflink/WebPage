@@ -1,0 +1,158 @@
+---
+import { mkIsCurrentPage } from "src/utils";
+
+export interface Props {
+  title?: string;
+  items: {
+    title: string;
+    href: string;
+    description?: string;
+  }[];
+}
+const { title, items } = Astro.props as Props;
+
+const hasDescriptions = items.some(({ description }) => !!description);
+const isCurrentPage = mkIsCurrentPage(Astro.url.pathname)
+
+const anySubItems = items.some(({ href }) => isCurrentPage(href))
+
+---
+
+<details class='flyout'>
+  <summary aria-current={anySubItems}>
+    {title}
+    <svg viewBox="0 0 24 24">
+      <path d="M 4,8 L 12,16 L 20,8" />
+    </svg>
+  </summary>
+
+  <div class="popup">
+    <nav class={hasDescriptions ? 'descriptions' : '' }>
+      {items.map(({ title, href, description }) => (
+      <a href={href} title={title} class="subtle">
+        <div class="heading">{title}</div>
+        {description && (
+        <p>{description}</p>
+        )}
+      </a>
+      ))}
+    </nav>
+  </div>
+</details>
+
+<script>
+  function flyout(elem: HTMLDetailsElement) {
+    elem.onmouseenter = () => {
+      elem.setAttribute('open', 'open')
+    }
+    elem.onmouseleave = () => {
+      elem.removeAttribute('open')
+    }
+  }
+
+  Array.from(document.querySelectorAll<HTMLDetailsElement>('details.flyout')).map(
+    flyout
+  )
+</script>
+
+<style>
+  details {
+    position: relative;
+  }
+
+  summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: default;
+
+  }
+
+  summary[aria-current] {
+    color: var(--primary-color);
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  summary :global(svg) {
+    opacity: 0.4;
+    margin-left: 0.2rem;
+    height: 1em;
+    stroke: currentColor;
+    stroke-width: 3px;
+    fill: none;
+  }
+
+  .popup {
+    position: absolute;
+    font-size: 0.9em;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-block-start: 0.2em;
+    opacity: 0;
+    transition: opacity 150ms ease;
+    will-change: opacity;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1.6em 2.4em;
+    max-width: min(25em, 50vw);
+    color: var(--background-color);
+    background: var(--primary-color);
+    text-align: center;
+    white-space: nowrap;
+    box-shadow: 0px 5px 40px -1px rgb(0 0 0 / 36%);
+    border-radius: 0.5em;
+  }
+
+  details[open] div {
+    opacity: 1;
+  }
+
+  nav.descriptions {
+    width: 100vw;
+    text-align: start;
+    white-space: normal;
+  }
+
+  a {
+    color: var(--background-color);
+    text-decoration: none;
+  }
+
+  a .heading {
+    margin-block: 0 0.3em;
+  }
+
+  a p {
+    font-size: 0.8em;
+    margin-block: 0;
+    opacity: 0.75;
+  }
+
+  details[open] summary,
+  summary:hover,
+  a.subtle:hover {
+    opacity: 0.8;
+  }
+
+  @media (max-width: 40rem) {
+    nav {
+      max-width: min(25rem, 60vw);
+    }
+  }
+
+  @media (max-width: 767px) {
+
+    details {
+      display: none;
+    }
+  }
+</style>

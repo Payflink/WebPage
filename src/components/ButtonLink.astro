@@ -1,0 +1,61 @@
+---
+export interface Props {
+  href: string
+  target?: string
+  shape?: 'square'
+}
+
+const { href, target, shape } = Astro.props
+const url = new URL(href, 'https://gastonsolution.com')
+---
+
+<a
+  class={`button-link ${shape}`}
+  href={href}
+  target={target}
+  onclick={url.hash &&
+    `document.querySelector('${url.hash}').scrollIntoView({ behavior: 'smooth' });return false;`}
+>
+  <slot />
+</a>
+
+<style lang="scss" is:global>
+  a.button-link {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.6em 1.2em;
+    border-width: 0.16em;
+    border-style: solid;
+    border-radius: 2em;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background: transparent;
+    transition: transform 30ms ease-out;
+    transform: translate3d(0, 0, 0);
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: none;
+
+    &.square {
+      padding: 0.6em 2em;
+      border-radius: 0.4em;
+      border-color: var(--primary-color);
+      color: var(--primary-color);
+      background: transparent;
+    }
+
+    &:hover {
+      transform: translate3d(0, -1px, 0);
+    }
+
+    &:active {
+      transform: translateY(1px);
+    }
+
+    @media (max-width: 425px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+</style>

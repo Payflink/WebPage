@@ -1,0 +1,38 @@
+---
+import Container from "@components/Container.astro";
+import Main from "@layouts/Main.astro"
+
+const title = "Arrange appointment"
+const description = "Do you have questions about Payflink or our offer? Make an appointment in four clicks!"
+---
+
+<Main title={title} description={description}>
+  <Container>
+    <h1>{title}</h1>
+    <p>{description}</p>
+    <div class="calendly-inline-widget"
+      data-url="https://calendly.com/philip-schoenholzer/30min?hide_event_type_details=1&hide_gdpr_banner=1">
+      <div class="placeholder">Loading calendar...</div>
+    </div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+  </Container>
+</Main>
+
+<style>
+  .calendly-inline-widget {
+    position: relative;
+    min-width: 320px;
+    height: 730px;
+    z-index: 1;
+  }
+
+  .placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+  }
+</style>

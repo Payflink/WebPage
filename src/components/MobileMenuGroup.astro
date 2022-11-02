@@ -1,0 +1,58 @@
+---
+import { mkIsCurrentPage } from "src/utils";
+
+export interface Props {
+  title?: string;
+  items: {
+    title: string;
+    href: string;
+    description?: string;
+  }[];
+}
+const { title, items } = Astro.props as Props;
+const hasDescriptions = items.some(({ description }) => !!description);
+const isCurrentPage = mkIsCurrentPage(Astro.url.pathname)
+
+const anySubItems = items.some(({ href }) => isCurrentPage(href))
+
+---
+
+<details>
+  <summary aria-current={anySubItems}>
+    {title}
+  </summary>
+
+  <div>
+    <nav class={hasDescriptions ? 'descriptions' : '' }>
+      {items.map(({ title, href }) => (
+      <a href={href} title={title} aria-current={isCurrentPage(href)}>{title}</a>
+      ))}
+    </nav>
+  </div>
+</details>
+
+<style>
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  a,
+  summary {
+    text-decoration: none;
+  }
+
+  a {
+    font-size: 0.8em;
+  }
+
+  a[aria-current] {
+    color: var(--background-color);
+  }
+
+  summary {
+    color: var(--light-primary-color);
+  }
+</style>

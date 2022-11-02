@@ -1,0 +1,55 @@
+---
+import Main from '@layouts/Main.astro'
+import Container from '@components/Container.astro'
+import { teamMembers } from 'src/data';
+
+const description =
+  'The team at Payflink is driven each day by waiting... to order and pay in restaurants.'
+
+---
+
+<Main title="Our Team" description={description}>
+  <Container>
+    <h1>Our Team</h1>
+    <p>The team at Payflink is driven each day by waiting... to order and pay in restaurants.</p>
+    <div class="employee-list">
+      {teamMembers.map(({ name, image, role }) => (
+      <div class="employee">
+        <img loading="lazy" src={image} alt={name} width="192" height="192" />
+        <p>
+          <span class="employee-name">{name}</span>
+          <br />
+          {role.en}
+        </p>
+      </div>
+      ))}
+    </div>
+  </Container>
+</Main>
+
+<style lang="scss">
+  .employee-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .employee {
+    width: 12rem;
+    margin: 20px;
+    text-align: center;
+
+    img {
+      width: 100%;
+      border-radius: 1000px;
+      box-shadow: 0 0 60px 0px #ccc6;
+    }
+  }
+
+  .employee-name {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0px;
+  }
+</style>

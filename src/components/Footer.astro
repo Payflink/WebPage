@@ -1,0 +1,140 @@
+---
+import { callToActionLinksDe, callToActionLinksEn, footer } from 'src/config'
+import { mkIsCurrentPage } from '../utils.js'
+import CallToAction from './CallToAction.astro'
+import Container from './Container.astro'
+import Instagram from '@icons/Instagram.astro'
+import LinkedIn from '@icons/LinkedIn.astro'
+import Twitter from '@icons/Twitter.astro'
+import Facebook from '@icons/Facebook.astro'
+import Sitemap from './Sitemap.astro'
+import Dialog from '@components/Dialog'
+import Newsletter from '@components/Newsletter'
+import Button from './Button.astro'
+
+const isCurrentPage = mkIsCurrentPage(Astro.url.pathname)
+const isDe = isCurrentPage('/de/')
+
+const links = isDe ? callToActionLinksDe : callToActionLinksEn
+---
+
+<footer>
+  <div class="footer-container">
+    <CallToAction links={links} />
+  </div>
+  <Container>
+    <Sitemap lang={isDe ? 'de' : 'en'} />
+  </Container>
+
+  <div class="columns footer-container">
+    <div>
+      <p class="social">
+        <a href="https://www.instagram.com/gastonsolution/"
+          ><Instagram />
+        </a>&nbsp;
+        <a href="https://www.linkedin.com/company/gastonsolution/"
+          ><LinkedIn />
+        </a>&nbsp;
+        <a href="https://twitter.com/gastonsolution"><Twitter /></a>&nbsp;
+        <a href="https://www.facebook.com/gastonsolution/"><Facebook /></a>
+      </p>
+
+      <p>
+        © 2019 - {new Date().getFullYear()} Gaston
+        <br />
+        {isDe ? 'Ein Produkt von' : 'A product of'}
+        <a href="https://apptiva.ch">Apptiva</a>
+        <br />
+        Luzern • Schweiz
+      </p>
+    </div>
+    <div>
+      <Dialog client:load>
+        <Button slot="openElement">Newsletter abonnieren</Button>
+        <div class="newsletter-wrapper">
+          <Newsletter client:visible />
+        </div>
+      </Dialog>
+      <p>
+        {isDe ? 'Anfragen' : 'Inquiries'}&ensp;
+        <a href="tel:+41413222626">+41 41 322 26 26</a>
+        {isDe ? 'oder' : 'or'}
+        <a href={isDe ? '/de/termin/' : '/en/appointment/'}
+          >{isDe ? 'Termin buchen' : 'book an appointment'}
+        </a>
+        <br />
+        Support (24h)&ensp;
+        <a href="tel:+41415620111">+41 41 562 01 11</a>
+        <br />
+      </p>
+    </div>
+    <p>
+      <a href="/en/" aria-current={isCurrentPage('/en/')}> en</a>
+      &emsp;
+      <a href="/de/" aria-current={isCurrentPage('/de/')}> de</a>
+    </p>
+  </div>
+</footer>
+
+<style lang="scss">
+  footer {
+    --primary-color: white;
+    position: relative;
+    grid-area: Footer;
+    margin-top: 4rem;
+    padding-top: 6rem;
+    color: var(--primary-color);
+
+    color: white;
+    z-index: 5;
+    overflow: hidden;
+
+    &::before {
+      content: ' ';
+      position: absolute;
+      inset: 0 0 -12rem 0;
+      background-image: linear-gradient(
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 0)
+        ),
+        url(/assets/curve.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      z-index: -1;
+    }
+
+    .footer-container {
+      padding: 1rem;
+    }
+
+    .columns {
+      a[aria-current] {
+        font-weight: bold;
+      }
+    }
+
+    .social a {
+      display: inline-block;
+      padding: 0.2em;
+    }
+
+    .newsletter-wrapper {
+      padding-inline: calc(0.5em + 3vw);
+      color: white;
+      display: flex;
+      justify-content: center;
+    }
+
+    @media (min-width: 40rem) {
+      .columns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 2rem;
+        padding: 0 2rem;
+      }
+    }
+  }
+</style>

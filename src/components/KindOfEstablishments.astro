@@ -1,0 +1,54 @@
+---
+type KindOfEstablishment = {
+  title: string
+  description: string
+  image: string
+  url?: string
+}
+const kindOfEstablishments: KindOfEstablishment[] = [
+  { title: 'Restaurant', description: 'Gäste bestellen und bezahlen Speisen und Getränke.', image: '' },
+  { title: 'Bar', description: 'Gäste sitzen am Tisch und bestellen das nächste Bier.', image: '' },
+  { title: 'Café', description: 'Die Gäste bestellen Kaffee, Kuchen und Torten.', image: '' },
+  { title: 'Pizzeria', description: 'Es werden frische Pizzas aus dem (Holz-)Ofen bestellt.', image: '' },
+  { title: 'Bäckerei', description: 'Hier bestellen Gäste aus einer grossen Auswahl an gebackenen Esswaren.', image: '' },
+  { title: 'Imbiss', description: 'Gäste bestellen Kebab und Burger und holen diese ab, sobald sie zubereitet sind.', image: '' },
+]
+---
+
+<ul>
+  {kindOfEstablishments.map(({title, description}) => <li>
+    <h3>{title}</h3>
+    <p>{description}</p>
+  </li>)}
+</ul>
+
+<style>
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+    gap: 1em 2em;
+  }
+
+  li {
+    width: 100%;
+    padding: 1em 2em;
+    /* border: 2px solid var(--primary-color); */
+    border-radius: 0.5em;
+    background-color: var(--light-background-color);
+  }
+
+  @media (min-width: 768px) {
+    li {
+      max-width: 17em;
+    }
+  }
+
+
+  h3,
+  p {
+    margin-block: 0;
+  }
+</style>
