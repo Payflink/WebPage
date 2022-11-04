@@ -11,11 +11,13 @@ const productDe: Product = {
   description: 'Self-Order|Pay für Gastro',
   claim: 'Ihre Gäste bestellen und bezahlen ohne Wartezeit.',
   name: 'Payflink',
+  //image: 'public/assets/logo/Payflink_framed.png',
 }
 const productEn: Product = {
   description: 'Self-Order|Pay for Gastronomy',
   claim: 'Your guests order and pay without waiting.',
   name: 'Payflink',
+  //image: 'public/assets/logo/Payflink_framed.png',
 }
 export const metaData: MetaData = {
   de: productDe,

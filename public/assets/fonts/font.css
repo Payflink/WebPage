@@ -7,11 +7,27 @@
 }
 
 @font-face {
+  font-family: Quicksand;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url("/assets/fonts/quicksand-300.woff2") format("woff2")
+}
+
+@font-face {
   font-family: Merriweather Sans;
   font-style: normal;
   font-display: swap;
   font-weight: 400;
   src: url("/assets/fonts/merriweather-sans-latin-400-normal.woff2") format("woff2")
+}
+
+@font-face {
+  font-family: Quicksand;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("/assets/fonts/quicksand-400.woff2") format("woff2")
 }
 
 @font-face {
@@ -23,6 +39,14 @@
 }
 
 @font-face {
+  font-family: Quicksand;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url("/assets/fonts/quicksand-500.woff2") format("woff2")
+}
+
+@font-face {
   font-family: Merriweather Sans;
   font-style: normal;
   font-display: swap;
@@ -31,11 +55,27 @@
 }
 
 @font-face {
+  font-family: Quicksand;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url("/assets/fonts/quicksand-600.woff2") format("woff2")
+}
+
+@font-face {
   font-family: Merriweather Sans;
   font-style: normal;
   font-display: swap;
   font-weight: 700;
   src: url("/assets/fonts/merriweather-sans-latin-700-normal.woff2") format("woff2")
+}
+
+@font-face {
+  font-family: Quicksand;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url("/assets/fonts/quicksand-700.woff2") format("woff2")
 }
 
 @font-face {
