@@ -8,6 +8,9 @@ keyword: gaston app
 layout: '@layouts/Blog.astro'
 ---
 
+import ButtonLink from '@components/ButtonLink.astro' 
+import ButtonList from '@components/ButtonList.astro' 
+
 Apps speichern oft Benutzerdaten, wenn sie auf dem Handy installiert sind. Einige dieser Daten beziehen sich auf den Standort, das Mikrofon, die Gesundheit oder die Konsumgewohnheiten des Nutzers oder sogar den Zugriff auf die Kamera des Handys.
 
 Daher ist es mehr als normal, dass man wissen möchte, welche Art von Apps heruntergeladen wird. Oder, wenn sie bereits heruntergeladen wurde, die von dieser App gesammelten Daten zu berücksichtigen. 
@@ -53,3 +56,5 @@ Wenn es um Zahlung geht, hängt es davon ab, ob der Gast bei der Bestellung auf 
 Datensicherheit bei Apps ist ein Thema, das immer wieder Fragen aufwirft. Wenn Sie also grosses Interesse an unserer Gaston App haben, aber Fragen zur Einsetzung und zum täglichen Gebrauch der App haben, zögern Sie bitte nicht, uns zu kontaktieren.
 
 Unser Team steht Ihnen zur Verfügung und führt Sie durch den Prozess der Implementierung der Gaston App in Ihrem Betrieb.
+
+<ButtonList> <ButtonLink href="/de/kontakt/">Kontakt</ButtonLink> {/* prettier-ignore */} <ButtonLink href="/de/restaurant-bestell-app/">Mehr über die Bestell App</ButtonLink> <ButtonLink href="/de/demo/">Demo</ButtonLink> </ButtonList>
