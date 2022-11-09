@@ -41,13 +41,23 @@ const description =
   <section id="partner-von-gaston">
     <Container>
       <h2>Our Partners</h2>
-      <ul class="image-list high">
+      <ul class="image-list" style="justify-content: flex-start;">
         <li>
           <a href="https://www.flm.ch/">
             <FixedPicture
               src={import('../../images/partners/flm.png')}
               alt="FLM Kassensysteme"
-              height={160}
+              height={120}
+              layout={'fixed'}
+            />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.bkpos.ch/hiopos-kassensystem">
+            <FixedPicture
+              src={import('../../images/partners/hiopos.png')}
+              alt="HIOPOS Kassensysteme"
+              height={40}
               layout={'fixed'}
             />
           </a>
@@ -56,7 +66,7 @@ const description =
           <FixedPicture
             src={import('../../images/partners/digital-enterprise.png')}
             alt="Digital Enterprise"
-            height={60}
+            height={40}
             layout={'fixed'}
           />
         </li>
