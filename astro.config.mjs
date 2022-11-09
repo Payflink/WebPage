@@ -19,7 +19,7 @@ export default defineConfig(
   /** @type {import('astro').AstroUserConfig} */
   {
     // Enable the Solid renderer to support Solid JSX components.
-    site: 'https://gastonsolution.com',
+    site: 'https://payflink.com',
     trailingSlash: 'always',
     integrations: [
       solid(),
