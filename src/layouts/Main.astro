@@ -73,7 +73,8 @@ const production = import.meta.env.CONTEXT === 'production'
     <meta name="msapplication-TileColor" content="#ffc40d" />
     <meta name="theme-color" content="#00ABBE" />
     <link rel="sitemap" href="/sitemap-index.xml" />
-    {
+  <!--
+  {
       lang === 'de' && production && (
         <script
           id="chatbot"
@@ -92,7 +93,7 @@ const production = import.meta.env.CONTEXT === 'production'
         />
       )
     }
-
+  -->
     <SEO
       title={`${title} • ${generalTitle(translatedMetaData)}`}
       description={description}
