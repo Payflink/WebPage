@@ -16,7 +16,7 @@ export type Product = {
   name: string
   description: string
   claim: string
-  //image: string
+  image: string
 }
 export type MetaData = Record<Language, Product>
 

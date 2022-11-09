@@ -4,6 +4,7 @@ import ButtonList from './ButtonList.astro'
 
 export interface Props {
   name: string
+  image: string
   claim: string
   from: string
   animation: {
@@ -20,7 +21,7 @@ const props = Astro.props as Props
 
 <div class="layout">
   <div class="value-proposition">
-    <h1>{props.name}</h1>
+    <img src={props.image}>
     <p style="margin-bottom: 1rem;">{props.claim}</p>
     <p style="font-size: 1rem; font-weight: 400;">
       {props.from}

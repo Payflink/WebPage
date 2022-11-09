@@ -33,7 +33,7 @@ const data = isDe ? metaData.de : metaData.en
       href={langPage}
       aria-current={isCurrentPage(langPage, { exact: true })}
     >
-      {data.name}<br /><small>{data.description}</small>
+      <img src={data.image}/>
     </a>
     {
       navigation.map((item) =>
