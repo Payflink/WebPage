@@ -9,6 +9,9 @@ author: Mariana Barbosa
 layout: '@layouts/Blog.astro'
 ---
 
+import ButtonLink from '@components/ButtonLink.astro'
+import ButtonList from '@components/ButtonList.astro'
+
 Meal Delivery gibt es überall. Dabei spielt es keine Rolle, in welchem Land, in welcher Sprache oder in welcher Gegend. Es gibt sie einfach, egal welche Art von Küche.
 
 Und natürlich ist es eine so berühmte praktische Sache. Manchmal bin ich sogar überfordert mit der riesigen Menge an Optionen, die mir angeboten werden, wenn ich auf Google nach möglichen Optionen suche.
@@ -55,6 +58,13 @@ Jetzt wissen Sie mehr über die Geschichte der Meal Delivery und warum Meal Deli
 
 Das Verstädnis für die Bedeutung einer Meal Delivery ist ein Punkt. Die Wahl der richtigen Leistung für Ihren Betrieb ist eine andere.
 
-Deshalb ist Gaston die [perfekte Lösung](/de/takeaway-delivery/) für Ihren Betrieb. Gaston passt sich an Ihre Bedürfnisse an. 
+Deshalb ist Gaston die perfekte Lösung für Ihren Betrieb. Gaston passt sich an Ihre Bedürfnisse an. 
 
 Setzen Sie sich mit unserem Team in Verbidung, um diesen Plan in die Tat umzusetzen und viele weitere Gäste zu erreichen!
+
+<ButtonList>
+  <ButtonLink href="/de/kontakt/">Kontakt</ButtonLink>
+  {/* prettier-ignore */}
+  <ButtonLink href="/de/takeaway-delivery/">Mehr über Take Away und Delivery</ButtonLink>
+  <ButtonLink href="/de/demo/">Demo</ButtonLink>
+</ButtonList>
