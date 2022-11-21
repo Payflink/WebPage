@@ -8,7 +8,7 @@ layout: '@layouts/LandingPage.astro'
 
 Das Konzept des Gäste-Rufsystems existiert seit Jahren und ist eine mögliche Lösung, um die Qualität im Service zu erhöhen. Aber mittlerweile existieren bessere Alternativen. Aus diesem Grund werden wir hier in nur 5 Punkten argumentieren, warum Sie Gaston App anstatt eines Gäste-Rufsystems in Betracht ziehen sollten.
 
-## Was ist ein Gäste-RufSystem?
+## Was ist ein Gäste-Rufsystem?
 
 Ein Gäste-Rufsystem ist ein Pager, der durch Vibration oder LED Leuchten funktioniert, und so werden die Gäste informiert, dass ihre Bestellung abholbereit ist. Ein Rufsystem ist in der Tat praktisch und führt zu einer gewissen Entspannung, da es keine Warteschlange gibt und die Gäste bequem am Tisch warten.
 
