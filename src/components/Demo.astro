@@ -40,7 +40,9 @@ import Button from './Button.astro'
                 <li>
                   Klicken Sie bei der Zahlung auf <b>VISA</b>.
                   <ul>
-                    <li>Test-Karte <b>4900 0000 0000 0094</b></li>
+                    <li>
+                      Test-Karte <b>4000&nbsp;0010&nbsp;0000&nbsp;0018</b>
+                    </li>
                     <li>Verfalldatum <b>06/25</b></li>
                     <li>Prüfziffer (CVV) <b>123</b></li>
                   </ul>
@@ -54,7 +56,7 @@ import Button from './Button.astro'
             <slot name="mobile">
               <h3>Gaston Demo</h3>
               <p>
-                Zahlung mit VISA Nr. 4900&nbsp;0000&nbsp;0000&nbsp;0094, Verfall
+                Zahlung mit VISA Nr. 4000&nbsp;0010&nbsp;0000&nbsp;0018, Verfall
                 06/25, CVV 123
               </p>
             </slot>
@@ -84,52 +86,10 @@ import Button from './Button.astro'
         src="https://demo.gastonsolution.com/811f84b2-15f8-440d-8074-58ce5cce13f8/?table=7"
         frameborder="0"></iframe>
       <div class="overlay">
-        <Dialog client:visible>
-          <button
-            aria-label="Demo Starten"
-            style="position: absolute; height: 100%; width: 100%; border: none; background: transparent; cursor: pointer; text-decoration: none;"
-            slot="openElement"></button>
-          <div class="full-screen-demo">
-            <div class="description">
-              <div class="desktop">
-                <slot name="desktop">
-                  <h3>Gaston Demo</h3>
-                  <p>
-                    Bei dieser Demo handelt es sich um ein Testsystem. Hier
-                    finden <b>keine echten Bestellungen oder Zahlungen</b> statt.
-                    Testen Sie Gaston entsprechend nach Lust und Laune.
-                  </p>
-                  <ol>
-                    <li>Fügen Sie etwas zur Bestellung hinzu.</li>
-                    <li>Senden Sie die Bestellung ab.</li>
-                    <li>
-                      Klicken Sie bei der Zahlung z.B. auf Twint. Keine Angst,
-                      es findet keine echte Transaktion statt und entsprechend <b
-                        >wird kein Geld abgebucht.</b
-                      >
-                    </li>
-                  </ol>
-                </slot>
-              </div>
-              <div class="mobile">
-                <slot name="mobile">
-                  <h3>Gaston Demo</h3>
-                  <p>
-                    Wählen Sie bei der Zahlung z.B. Twint. Es wird kein Geld
-                    abgebucht.
-                  </p>
-                </slot>
-              </div>
-            </div>
-            <div class="gaston-wrapper">
-              <iframe
-                title="Gaston App Demo"
-                loading="lazy"
-                src="https://demo.gastonsolution.com/811f84b2-15f8-440d-8074-58ce5cce13f8/?table=7"
-                frameborder="0"></iframe>
-            </div>
-          </div>
-        </Dialog>
+        <div
+          style="position: absolute; height: 100%; width: 100%; border: none; background: transparent; text-decoration: none;"
+        >
+        </div>
       </div>
     </div>
     <img
