@@ -206,6 +206,10 @@ const footerDe: FooterGroup[] = [
         title: 'Gaston oder Orderman',
         href: '/de/orderman/',
       },
+      {
+        title: 'QR-Codes in Restaurants',
+        href: '/de/qr-codes-im-restaurant/',
+      },
     ],
   },
   {
