@@ -223,6 +223,10 @@ const footerDe: FooterGroup[] = [
         title: 'Speisekarte bearbeiten',
         href: '/de/dokumentation/speisekarten-angebot-bearbeiten/',
       },
+      {
+        title: 'Online Speisekarte gestalten',
+        href: '/de/dokumentation/online-speisekarte-gestalten/',
+      },
     ],
   },
 ]
