@@ -102,6 +102,25 @@ import Button from './Button.astro'
   </div>
 </div>
 
+<script is:inline>
+  function gtag_report_conversion(url) {
+    console.log('called demo event function')
+    if (typeof gtag == 'undefined')
+      return console.log('gtag is not defined. Not production?')
+    var callback = function () {
+      if (typeof url != 'undefined') {
+        window.location = url
+      }
+    }
+    gtag('event', 'conversion', {
+      send_to: 'AW-11025374292/xy0MCM_-gIMYENS4p4kp',
+      event_callback: callback,
+    })
+    console.log('sent event')
+    return false
+  }
+</script>
+
 <style lang="scss">
   h3 {
     font-size: 1.5em;
