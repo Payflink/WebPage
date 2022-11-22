@@ -90,6 +90,14 @@ const production = import.meta.env.CONTEXT === 'production'
           data-domain="gastonsolution.com"
           src="https://plausible.io/js/plausible.js"
         />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11025374292"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'AW-11025374292');
+        </script>
       )
     }
 
