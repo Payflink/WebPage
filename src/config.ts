@@ -205,7 +205,7 @@ const footerDe: FooterGroup[] = [
         href: '/de/gaeste-rufsystem/',
       },
       {
-        title: 'Gaston oder Orderman',
+        title: 'Payflink oder Orderman',
         href: '/de/orderman/',
       },
     ],
