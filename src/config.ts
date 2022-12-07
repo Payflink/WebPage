@@ -70,12 +70,12 @@ const navigationDe: NavigationTree = [
         title: 'Funktionsumfang',
         description: 'Detaillierte Auflistung aller Funktionen von Payflink.',
       },
-      {
-        href: '/de/demo/',
-        title: 'Demo',
-        description:
-          'Machen Sie eine Bestellung und erfahren dabei den Zahlungsablauf.',
-      },
+      // {
+      //   href: '/de/demo/',
+      //   title: 'Demo',
+      //   description:
+      //     'Machen Sie eine Bestellung und erfahren dabei den Zahlungsablauf.',
+      // },
     ],
   },
   // {
@@ -103,8 +103,12 @@ const navigationDe: NavigationTree = [
     //href: '/de/preise/',
   //},
   {
-    href: '/de/kontakt/',
-    title: 'Kontakt',
+    href: '/de/demo/', 
+    title: 'Demo ausprobieren',
+  },
+  {
+    href: '/de/termin/',
+    title: 'Termin vereinbaren',
   },
 ]
 
