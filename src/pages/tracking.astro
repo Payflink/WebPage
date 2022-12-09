@@ -29,7 +29,14 @@ import Main from "@layouts/Main.astro";
   }
 </style>
 
-<script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R4QT9R47LR">
+
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R4QT9R47LR');
+  
   window.addEventListener('load', function () {
     var exclusionState = window.localStorage.plausible_ignore == "true"
 
