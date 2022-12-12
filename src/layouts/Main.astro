@@ -15,17 +15,6 @@ export type Props = {
   image?: string
 }
 
-// <!-- Google tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-R4QT9R47LR">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-R4QT9R47LR');
-</script>
-
 const { title, description, image } = Astro.props as Props
 
 const canonicalURL = addSlashToEndIfMissing(

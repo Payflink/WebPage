@@ -70,6 +70,11 @@ const navigationDe: NavigationTree = [
         title: 'Funktionsumfang',
         description: 'Detaillierte Auflistung aller Funktionen von Payflink.',
       },
+      {
+        href: '/de/blog/',
+        title: 'Blog',
+        description: 'Der neuste Gossip, der gerade die Runden macht.',
+      },
       // {
       //   href: '/de/demo/',
       //   title: 'Demo',
@@ -109,6 +114,10 @@ const navigationDe: NavigationTree = [
   {
     href: '/de/termin/',
     title: 'Termin vereinbaren',
+  },
+  {
+    href: '/de/kontakt/',
+    title: 'Kontakt',
   },
 ]
 
