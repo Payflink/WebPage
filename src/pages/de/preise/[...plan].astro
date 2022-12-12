@@ -9,40 +9,12 @@ export const getStaticPaths = async () => [
     params: { plan: 'menucard' },
     props: {
       title: 'Speisekarte',
-      price: 'Kostenlos',
+      price: 'Auf Anfrage',
     },
   },
   {
-    params: { plan: 'order-pay/0' },
-    props: {
-      title: 'Bestellen, Bezahlen + Speisekarte',
-      price: 'CHF 39.- / Betrieb / Monat',
-      turnover: 1000,
-    },
-  },
-  {
-    params: { plan: 'order-pay/1' },
-    props: {
-      title: 'Bestellen, Bezahlen + Speisekarte',
-      price: 'CHF 89.- / Betrieb / Monat',
-      turnover: 5000,
-    },
-  },
-  {
-    params: { plan: 'order-pay/2' },
-    props: {
-      title: 'Bestellen, Bezahlen + Speisekarte',
-      price: 'CHF 179.- / Betrieb / Monat',
-      turnover: 20000,
-    },
-  },
-  {
-    params: { plan: 'order-pay/3' },
-    props: {
-      title: 'Bestellen, Bezahlen + Speisekarte',
-      price: 'CHF 359.- / Betrieb / Monat',
-      turnover: 100000,
-    },
+    params: { plan: 'order-pay' },
+    props: { title: 'Bestellen, Bezahlen + Speisekarte', price: 'Auf Anfrage' },
   },
   {
     params: { plan: 'individuell' },
