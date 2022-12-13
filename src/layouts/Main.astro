@@ -73,19 +73,8 @@ const production = import.meta.env.CONTEXT === 'production'
     <meta name="msapplication-TileColor" content="#ffc40d" />
     <meta name="theme-color" content="#00ABBE" />
     <link rel="sitemap" href="/sitemap-index.xml" />
-  <!--
-  {
-      lang === 'de' && production && (
-        <script
-          id="chatbot"
-          data-server="https://pierre.gastonsolution.com/webclient"
-          defer
-          src="https://pierre.gastonsolution.com/webclient/embed/bundle.js"
-        />
-      )
-    } -->
     
-      production && {
+     { production && (
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-R4QT9R47LR">
         </script>
         <script is:inline>
@@ -95,8 +84,8 @@ const production = import.meta.env.CONTEXT === 'production'
 
           gtag('config', 'G-R4QT9R47LR');
         </script>
-      }
- 
+      )
+    }
     <SEO
       title={`${title} • ${generalTitle(translatedMetaData)}`}
       description={description}
