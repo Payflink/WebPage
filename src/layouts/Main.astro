@@ -83,17 +83,20 @@ const production = import.meta.env.CONTEXT === 'production'
           src="https://pierre.gastonsolution.com/webclient/embed/bundle.js"
         />
       )
-    }
-    {
-      production && (
-        <script
-          defer
-          data-domain="gastonsolution.com"
-          src="https://plausible.io/js/plausible.js"
-        />
-      )
-    }
-  -->
+    } -->
+    
+      production && {
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-R4QT9R47LR">
+        </script>
+        <script is:inline>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-R4QT9R47LR');
+        </script>
+      }
+ 
     <SEO
       title={`${title} • ${generalTitle(translatedMetaData)}`}
       description={description}

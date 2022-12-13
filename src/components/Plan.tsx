@@ -6,10 +6,10 @@ import { currency } from 'src/utils'
 type Input = 0 | 1 | 2 | 3 | 4
 
 const inputToPricePerTurnover = [
-  { turnover: 1_000, price: 39 },
-  { turnover: 5_000, price: 89 },
-  { turnover: 20_000, price: 179 },
-  { turnover: 100_000, price: 359 },
+  { turnover: 1_000, price: 39, transactionprice: 0.28 },
+  { turnover: 5_000, price: 89, transactionprice: 0.26 },
+  { turnover: 20_000, price: 179, transactionprice: 0.24 },
+  { turnover: 100_000, price: 359, transactionprice: 0.22 },
   'more',
 ] as const
 
@@ -71,6 +71,8 @@ const Plan = ({ children }: { children: JSX.Element }) => {
           <dl>
             <dt>Monatliche Grundgebühr / Betrieb ٭ </dt>
             <dd class="price">CHF {inputToPricePerTurnover[value].price}.-</dd>
+            <dt>Kosten / Transaktion</dt>
+            <dd class="price">CHF {inputToPricePerTurnover[value].transactionprice}</dd>
           </dl>
           <div>
             <a class="button-link square" href={`order-pay/${value}/`}>
