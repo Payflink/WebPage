@@ -9,6 +9,11 @@ export const mkIsCurrentPage =
     return pathname.includes(path) ? 'page' : undefined
   }
 
+export const getCurrentLanguage = (currentPathname: string): Language => {
+  if (currentPathname.substring(3, 4) !== '/') return 'en'
+  return currentPathname.substring(1, 3) as Language
+}
+
 export const takeSortedBlogPosts = (
   blogPosts: BlogPost[],
   language: Language,

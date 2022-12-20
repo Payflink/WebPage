@@ -1,16 +1,16 @@
 ---
 import { globalNavigation, metaData } from 'src/config'
-import { mkIsCurrentPage } from '../utils'
+import { getCurrentLanguage, mkIsCurrentPage } from '../utils'
 import Dialog from '@components/Dialog'
 import FlyoutMenu from './FlyoutMenu.astro'
 import MobileMenu from './MobileMenu.astro'
 
+const lang = getCurrentLanguage(Astro.url.pathname)
 const isCurrentPage = mkIsCurrentPage(Astro.url.pathname)
-const isDe = isCurrentPage('/de/')
-const langPage = isDe ? '/de/' : '/en/'
+const langPage = `/${lang}/`
 
-const navigation = isDe ? globalNavigation.de : globalNavigation.en
-const data = isDe ? metaData.de : metaData.en
+const navigation = globalNavigation[lang]
+const data = metaData[lang]
 ---
 
 <script>
