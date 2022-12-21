@@ -6,29 +6,26 @@ import Button from './Button.astro'
 <div class="columns" style="align-items: start;">
   <div style=" flex: 1;">
     <slot name="intro">
-      <h2>Payflink Bestell App</h2>
+      <h2>Fonction de commande Payflink</h2>
       <p>
-        So sehen Ihre Gäste unsere Bestell App, direkt auf dem Handy oder auf
-        Ihrer Webseite. Schlicht, einfach, zuvorkommend. Alles ohne Installation
-        einer App und ohne Registrierung.
+        Voici comment vos hôtes voient notre fonction de commande, directement sur leur téléphone portable ou sur votre site web. Simple, facile, accueillant. Le tout sans installation d'une application et sans enregistrement.
       </p>
       <p>
-        Sie gestalten Ihre Speisekarte nach Ihrem Gusto, farbenfroh und mit
-        Bilder oder einfach nur mit Text.
+        Vous concevez votre menu à votre guise, sedi a thuhet?? en couleurs et avec des images ou simplement avec du texte.
       </p>
     </slot>
 
     <Dialog client:visible>
       <Button slot="openElement">
         <p class="test-now">
-          <slot name="try">Hier ausprobieren!</slot>
+          <slot name="try">Essayez-le ici!</slot>
         </p>
       </Button>
       <div class="full-screen-demo">
         <div class="description">
           <div class="desktop">
             <slot name="desktop">
-              <h3>Payflink Demo</h3>
+              <h3>Payflink Démo</h3>
               <p>
                 Bei dieser Demo handelt es sich um ein Testsystem. Hier finden <b
                   >keine echten Bestellungen oder Zahlungen</b
@@ -72,7 +69,7 @@ import Button from './Button.astro'
 
     <div class="desktop">
       <p>
-        <slot name="qr-code">... oder mit dem Handy den QR-Code scannen.</slot>
+        <slot name="qr-code">...ou scannez le code QR avec votre téléphone portable.</slot>
       </p>
     </div>
   </div>

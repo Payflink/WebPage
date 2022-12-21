@@ -13,6 +13,14 @@ const productDe: Product = {
   name: 'Payflink',
   image: '/assets/logo/Payflink_free.svg',
 }
+
+const productFr: Product = {
+  description: 'Self-Order|Pay pour la Gastronomie',
+  claim: 'Vos clients commandent et paient sans attendre.',
+  name: 'Payflink',
+  image: '/assets/logo/Payflink_free.svg',
+}
+
 const productEn: Product = {
   description: 'Self-Order|Pay for Gastronomy',
   claim: 'Your guests order and pay without waiting.',
@@ -21,11 +29,16 @@ const productEn: Product = {
 }
 export const metaData: MetaData = {
   de: productDe,
+  fr: productFr,
   en: productEn,
 }
 
 export const callToActionLinksDe: CallToAction[] = [
   { href: '/de/demo/', text: 'Demo ausprobieren' },
+  //#region{ href: '/de/preise/', text: 'Unverbindliches Angebot' },
+]
+export const callToActionLinksFr: CallToAction[] = [
+  { href: '/fr/démo/', text: 'Essayez la démo' },
   //#region{ href: '/de/preise/', text: 'Unverbindliches Angebot' },
 ]
 export const callToActionLinksEn: CallToAction[] = [
@@ -121,6 +134,77 @@ const navigationDe: NavigationTree = [
   },
 ]
 
+const navigationFr: NavigationTree = [
+  {
+    title: 'Produit',
+    items: [
+      {
+        title: 'Menu Numérique',
+        href: '/fr/digitale-speisekarte/',
+        description:
+          'Präsentieren Sie mit unserer digitalen Speisekarte Ihr Angebot im besten Licht.',
+      },
+      {
+        title: 'Bestell-App',
+        href: '/fr/restaurant-bestell-app/',
+        description: 'Entdecken Sie unsere Restaurant Bestell App.',
+      },
+      {
+        href: '/fr/funktionsumfang/',
+        title: 'Funktionsumfang',
+        description: 'Detaillierte Auflistung aller Funktionen von Payflink.',
+      },
+      // {
+      //   href: '/de/blog/',
+      //   title: 'Blog',
+      //   description: 'Der neuste Gossip, der gerade die Runden macht.',
+      // },
+      // {
+      //   href: '/de/demo/',
+      //   title: 'Demo',
+      //   description:
+      //     'Machen Sie eine Bestellung und erfahren dabei den Zahlungsablauf.',
+      // },
+    ],
+  },
+  // {
+  //   title: 'Über',
+  //   items: [
+  //     {
+  //       title: 'Uns',
+  //       href: '/de/ueber-uns/',
+  //       description: 'Was treibt uns an? Worauf legen wir wert?',
+  //     },
+  //     {
+  //       href: '/de/team/',
+  //       title: 'Team',
+  //       description: 'Wer versteckt sich hinter der Persona?',
+  //     },
+  //     {
+  //       href: '/de/blog/',
+  //       title: 'Blog',
+  //       description: 'Der neuste Gossip, der gerade die Runden macht.',
+  //     },
+  //   ],
+  // },
+  //{
+    //title: 'Preise',
+    //href: '/de/preise/',
+  //},
+  {
+    href: '/fr/demo/', 
+    title: 'Demo ausprobieren',
+  },
+  {
+    href: '/fr/termin/',
+    title: 'Termin vereinbaren',
+  },
+  {
+    href: '/fr/kontakt/',
+    title: 'Kontakt',
+  },
+]
+
 const navigationEn: NavigationTree = [
   {
     title: 'Demo',
@@ -152,6 +236,7 @@ const navigationEn: NavigationTree = [
 
 export const globalNavigation: Navigation = {
   de: navigationDe,
+  fr: navigationFr,
   en: navigationEn,
 }
 
@@ -242,7 +327,95 @@ const footerDe: FooterGroup[] = [
   },
 ]
 
+const footerFr: FooterGroup[] = [
+  {
+    title: 'Produkt',
+    items: [
+      {
+        title: 'Digitale Speisekarte',
+        href: '/de/digitale-speisekarte/',
+      },
+      {
+        title: 'Restaurant Bestell App',
+        href: '/de/restaurant-bestell-app/',
+      },
+      {
+        title: 'Funktionsumfang',
+        href: '/de/funktionsumfang/',
+      },
+      //{
+        //title: 'Preise',
+        //href: '/de/preise/',
+      //},
+      {
+        href: '/de/demo/',
+        title: 'Demo',
+      },
+    ],
+  },
+  // {
+  //   title: 'Über',
+  //   items: [
+  //     {
+  //       title: 'Uns',
+  //       href: '/de/ueber-uns/',
+  //     },
+  //     {
+  //       href: '/de/team/',
+  //       title: 'Team',
+  //     },
+  //     {
+  //       href: '/de/blog/',
+  //       title: 'Blog',
+  //     },
+  //     {
+  //       href: '/de/kontakt/',
+  //       title: 'Kontakt',
+  //     },
+  //   ],
+  // },
+  {
+    title: 'Highlights',
+    items: [
+      {
+        title: 'Take Away und Delivery',
+        href: '/de/takeaway-delivery/',
+      },
+      {
+        title: 'Online Speisekarte',
+        href: '/de/online-speisekarte/',
+      },
+      {
+        title: 'Gäste-Rufsystem',
+        href: '/de/gaeste-rufsystem/',
+      },
+      {
+        title: 'Payflink oder Orderman',
+        href: '/de/orderman/',
+      },
+    ],
+  },
+  {
+    title: 'Dokumentation',
+    items: [
+      {
+        title: 'Bestell- und Zahlungsablauf',
+        href: '/de/bestell-und-zahlungs-ablauf-gastro-betriebe/',
+      },
+      {
+        title: 'Inbetriebnahme von Payflink',
+        href: '/de/dokumentation/inbetriebnahme-gaston/',
+      },
+      {
+        title: 'Speisekarte bearbeiten',
+        href: '/de/dokumentation/speisekarten-angebot-bearbeiten/',
+      },
+    ],
+  },
+]
+
 export const footer: I18nFooter = {
   de: footerDe,
+  fr: footerFr,
   en: [],
 }

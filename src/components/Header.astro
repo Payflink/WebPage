@@ -7,10 +7,14 @@ import MobileMenu from './MobileMenu.astro'
 
 const isCurrentPage = mkIsCurrentPage(Astro.url.pathname)
 const isDe = isCurrentPage('/de/')
-const langPage = isDe ? '/de/' : '/en/'
+const isFr = isCurrentPage('/fr/')
+const langPageDe = isDe ? '/de/' : '/en/'
+const langPageFr = isFr ? '/fr/' : '/en/'
 
-const navigation = isDe ? globalNavigation.de : globalNavigation.en
-const data = isDe ? metaData.de : metaData.en
+const navigationDe = isDe ? globalNavigation.de : globalNavigation.en
+const navigationFr = isFr ? globalNavigation.fr : globalNavigation.en
+const dataDe = isDe ? metaData.de : metaData.en
+const dataFr = isFr ? metaData.fr : metaData.en
 ---
 
 <script>
@@ -30,13 +34,20 @@ const data = isDe ? metaData.de : metaData.en
   <nav>
     <a
       class="logo"
-      href={langPage}
-      aria-current={isCurrentPage(langPage, { exact: true })}
+      href={langPageDe}
+      aria-current={isCurrentPage(langPageDe, { exact: true })}
     >
-      <img src={data.image}/>
+      <img src={dataDe.image}/>
+    </a>
+    <a
+      class="logo"
+      href={langPageFr}
+      aria-current={isCurrentPage(langPageFr, { exact: true })}
+    >
+      <img src={dataDe.image}/>
     </a>
     {
-      navigation.map((item) =>
+      navigationDe.map((item) =>
         'items' in item ? (
           <FlyoutMenu {...item} />
         ) : (
@@ -54,7 +65,7 @@ const data = isDe ? metaData.de : metaData.en
         <path d="M 2,6 L 22,6 M 2,12 L 22,12 M 2,18 L 22,18"></path>
       </svg>
     </button>
-    <MobileMenu navigation={navigation} />
+    <MobileMenu navigation={navigationDe} />
   </Dialog>
 </header>
 <div id="top-of-site-pixel-anchor"></div>

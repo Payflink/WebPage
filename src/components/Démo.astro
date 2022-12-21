@@ -1,0 +1,302 @@
+---
+import Dialog from '@components/Dialog'
+import Button from './Button.astro'
+---
+
+<div class="columns" style="align-items: start;">
+  <div style=" flex: 1;">
+    <slot name="intro">
+      <h2>Fonction de commande Payflink</h2>
+      <p>
+        Voici comment vos hôtes voient notre fonction de commande, directement sur leur téléphone portable ou sur votre site web. Simple, facile, accueillant. Le tout sans installation d'une application et sans enregistrement.
+      </p>
+      <p>
+        Vous concevez votre menu à votre guise, sedi a thuhet?? en couleurs et avec des images ou simplement avec du texte.
+      </p>
+    </slot>
+
+    <Dialog client:visible>
+      <Button slot="openElement">
+        <p class="test-now">
+          <slot name="try">Essayez-le ici!</slot>
+        </p>
+      </Button>
+      <div class="full-screen-demo">
+        <div class="description">
+          <div class="desktop">
+            <slot name="desktop">
+              <h3>Payflink Démo</h3>
+              <p>
+                Bei dieser Demo handelt es sich um ein Testsystem. Hier finden <b
+                  >keine echten Bestellungen oder Zahlungen</b
+                > statt. Testen Sie Payflink entsprechend nach Lust und Laune.
+              </p>
+              <ol>
+                <li>Fügen Sie etwas zur Bestellung hinzu.</li>
+                <li>Senden Sie die Bestellung ab.</li>
+                <li>
+                  Klicken Sie bei der Zahlung auf <b>VISA</b>.
+                  <ul>
+                    <li>Test-Karte <b>4900 0000 0000 0094</b></li>
+                    <li>Verfalldatum <b>06/25</b></li>
+                    <li>Prüfziffer (CVV) <b>123</b></li>
+                  </ul>
+                  Keine Angst, es findet keine echte Transaktion statt und entsprechend
+                  <b>wird kein Geld abgebucht.</b>
+                </li>
+              </ol>
+            </slot>
+          </div>
+          <div class="mobile">
+            <slot name="mobile">
+              <h3>Payflink Demo</h3>
+              <p>
+                Zahlung mit VISA Nr. 4900&nbsp;0000&nbsp;0000&nbsp;0094, Verfall
+                06/25, CVV 123
+              </p>
+            </slot>
+          </div>
+        </div>
+        <div class="gaston-wrapper">
+          <iframe
+            title="Payflink App Demo"
+            loading="lazy"
+            src="https://demo.gastonsolution.com/811f84b2-15f8-440d-8074-58ce5cce13f8/?table=7"
+            frameborder="0"></iframe>
+        </div>
+      </div>
+    </Dialog>
+
+    <div class="desktop">
+      <p>
+        <slot name="qr-code">...ou scannez le code QR avec votre téléphone portable.</slot>
+      </p>
+    </div>
+  </div>
+  <div style="flex: 1; margin-block: 2em; position: relative;">
+    <div class="mobile-wrapper">
+      <iframe
+        title="Payflink App Demo"
+        loading="lazy"
+        src="https://demo.gastonsolution.com/811f84b2-15f8-440d-8074-58ce5cce13f8/?table=7"
+        frameborder="0"></iframe>
+      <div class="overlay">
+        <Dialog client:visible>
+          <button
+            aria-label="Demo Starten"
+            style="position: absolute; height: 100%; width: 100%; border: none; background: transparent; cursor: pointer; text-decoration: none;"
+            slot="openElement"></button>
+          <div class="full-screen-demo">
+            <div class="description">
+              <div class="desktop">
+                <slot name="desktop">
+                  <h3>Payflink Demo</h3>
+                  <p>
+                    Bei dieser Demo handelt es sich um ein Testsystem. Hier
+                    finden <b>keine echten Bestellungen oder Zahlungen</b> statt.
+                    Testen Sie Payflink entsprechend nach Lust und Laune.
+                  </p>
+                  <ol>
+                    <li>Fügen Sie etwas zur Bestellung hinzu.</li>
+                    <li>Senden Sie die Bestellung ab.</li>
+                    <li>
+                      Klicken Sie bei der Zahlung z.B. auf Twint. Keine Angst,
+                      es findet keine echte Transaktion statt und entsprechend <b
+                        >wird kein Geld abgebucht.</b
+                      >
+                    </li>
+                  </ol>
+                </slot>
+              </div>
+              <div class="mobile">
+                <slot name="mobile">
+                  <h3>Payflink Demo</h3>
+                  <p>
+                    Wählen Sie bei der Zahlung z.B. Twint. Es wird kein Geld
+                    abgebucht.
+                  </p>
+                </slot>
+              </div>
+            </div>
+            <div class="gaston-wrapper">
+              <iframe
+                title="Payflink App Demo"
+                loading="lazy"
+                src="https://demo.gastonsolution.com/811f84b2-15f8-440d-8074-58ce5cce13f8/?table=7"
+                frameborder="0"></iframe>
+            </div>
+          </div>
+        </Dialog>
+      </div>
+    </div>
+    <img
+      style="position: absolute;"
+      class="desktop qr-code"
+      src="/assets/qr-code.svg"
+      alt="QR Code zur Demo"
+      loading="lazy"
+    />
+  </div>
+</div>
+
+<style lang="scss">
+  h3 {
+    font-size: 1.5em;
+    color: var(--primary-color);
+
+    .background & {
+      color: white;
+    }
+
+    @media (min-width: 40rem) {
+      font-size: 2em;
+    }
+  }
+
+  ol {
+    li::marker {
+      font-size: 2em;
+    }
+  }
+
+  ul {
+    padding-inline-start: 1em;
+    margin-block: 0.5em;
+    li {
+      margin-bottom: 0.4em;
+      &::marker {
+        font-size: 1em;
+      }
+    }
+  }
+
+  .test-now {
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  .mobile-wrapper {
+    position: relative;
+    max-block-size: 80vh;
+    margin-inline: auto;
+    aspect-ratio: 0.6;
+    border-inline-width: 0.6em;
+    border-block-width: 1em;
+    border-style: solid;
+    border-color: #222;
+    border-radius: 2em;
+    overflow: hidden;
+    background-color: #222;
+    box-shadow: 0px 10px 30px -9px #0008;
+    isolation: isolate;
+
+    iframe {
+      display: block;
+      position: absolute;
+      inset: 0;
+      block-size: 100%;
+      inline-size: 100%;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+    }
+  }
+
+  .full-screen-demo {
+    display: flex;
+    flex-direction: column;
+    gap: 1em 2em;
+    height: 100%;
+    text-align: left;
+
+    h3 {
+      margin-block-start: 0;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  .large {
+    h3 {
+      margin-block: 2em 1em;
+    }
+
+    @media (max-width: 1080px), (max-height: 800px) {
+      display: none;
+    }
+  }
+
+  .description {
+    color: var(--light-background-color);
+
+    .desktop {
+      padding-inline: 0.8em;
+    }
+
+    .mobile {
+      padding-inline: 0.8em;
+
+      h3,
+      p {
+        display: inline;
+      }
+
+      p {
+        font-size: 0.8em;
+        margin-left: 0.5em;
+      }
+    }
+
+    @media (min-width: 768px) {
+      flex: 0 5 30rem;
+    }
+  }
+
+  .gaston-wrapper {
+    position: relative;
+    flex: 1;
+    max-inline-size: 100%;
+    aspect-ratio: 0.6;
+    margin-inline: auto;
+    border-inline-width: 0.6em;
+    border-block-width: 1em;
+    border-style: solid;
+    border-color: black;
+    border-radius: 2em;
+    overflow: hidden;
+    background-color: #363636;
+    box-shadow: 0px 10px 30px -9px #0008;
+    isolation: isolate;
+
+    @media (min-width: 768px) {
+      block-size: 100%;
+      inline-size: auto;
+      flex: 0 1 auto;
+    }
+
+    iframe {
+      display: block;
+      position: absolute;
+      inset: 0;
+      block-size: 100%;
+      inline-size: 100%;
+    }
+  }
+
+  .qr-code {
+    position: absolute;
+    bottom: 3em;
+    left: 0;
+    width: 14em;
+    rotate: -15deg;
+    filter: drop-shadow(0.5em 0.5em 1.2em #0006);
+  }
+</style>

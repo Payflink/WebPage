@@ -1,6 +1,6 @@
 import type { MarkdownInstance } from 'astro'
 
-export type Language = 'de' | 'en'
+export type Language = 'de' | 'fr' | 'en'
 
 export interface FooterItem {
   href: string
@@ -26,7 +26,7 @@ export type CallToAction = {
 }
 
 export type BlogPostFrontMatter = {
-  lang: 'de' | 'en'
+  lang: 'de' | 'fr' | 'en'
   title: string
   description: string
   image: string
@@ -42,7 +42,7 @@ export type TeamMember = {
 }
 
 export type LandingPageFrontMatter = {
-  lang: 'de' | 'en'
+  lang: 'de' | 'fr' | 'en'
   title: string
   description: string
   image: string
@@ -51,7 +51,7 @@ export type LandingPageFrontMatter = {
 export type LandingPage = MarkdownInstance<LandingPageFrontMatter>[]
 
 export type DocumentationFrontMatter = {
-  lang: 'de' | 'en'
+  lang: 'de' | 'fr' | 'en'
   title: string
   description: string
 }
