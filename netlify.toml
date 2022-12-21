@@ -1,13 +1,7 @@
 [build]
-  command = "npx pnpm build"
+  command = "npm run build"
   functions = "netlify/functions"
   publish = "dist"
-
-[build.environment]
-  NPM_FLAGS="--prefix=/dev/null"
-
-[[plugins]]
-  package = "./plugins/pnpm-preinstaller"
 
 [[redirects]]
   from = "/"
@@ -33,6 +27,18 @@
 [[redirects]]
   from = "/en/about"
   to = "/en/team/"
+
+[[redirects]]
+  from = "/de/blog/gaston-datenschutz"
+  to = "/de/blog/payflink-datenschutz"
+
+[[redirects]]
+  from = "/de/dokumentation/inbetriebnahme-gaston"
+  to = "/de/dokumentation/inbetriebnahme-payflink"
+
+[[redirects]]
+  from = "/gaston-bestell-app.png"
+  to = "/payflink-bestell-app.png"
 
 [[redirects]]
   from = "/de/about"

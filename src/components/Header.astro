@@ -1,20 +1,16 @@
 ---
 import { globalNavigation, metaData } from 'src/config'
-import { mkIsCurrentPage } from '../utils'
+import { getCurrentLanguage, mkIsCurrentPage } from '../utils'
 import Dialog from '@components/Dialog'
 import FlyoutMenu from './FlyoutMenu.astro'
 import MobileMenu from './MobileMenu.astro'
 
+const lang = getCurrentLanguage(Astro.url.pathname)
 const isCurrentPage = mkIsCurrentPage(Astro.url.pathname)
-const isDe = isCurrentPage('/de/')
-const isFr = isCurrentPage('/fr/')
-const langPageDe = isDe ? '/de/' : '/en/'
-const langPageFr = isFr ? '/fr/' : '/en/'
+const langPage = `/${lang}/`
 
-const navigationDe = isDe ? globalNavigation.de : globalNavigation.en
-const navigationFr = isFr ? globalNavigation.fr : globalNavigation.en
-const dataDe = isDe ? metaData.de : metaData.en
-const dataFr = isFr ? metaData.fr : metaData.en
+const navigation = globalNavigation[lang]
+const data = metaData[lang]
 ---
 
 <script>
@@ -34,20 +30,13 @@ const dataFr = isFr ? metaData.fr : metaData.en
   <nav>
     <a
       class="logo"
-      href={langPageDe}
-      aria-current={isCurrentPage(langPageDe, { exact: true })}
+      href={langPage}
+      aria-current={isCurrentPage(langPage, { exact: true })}
     >
-      <img src={dataDe.image}/>
-    </a>
-    <a
-      class="logo"
-      href={langPageFr}
-      aria-current={isCurrentPage(langPageFr, { exact: true })}
-    >
-      <img src={dataDe.image}/>
+      <img src={data.image}/>
     </a>
     {
-      navigationDe.map((item) =>
+      navigation.map((item) =>
         'items' in item ? (
           <FlyoutMenu {...item} />
         ) : (
@@ -65,7 +54,7 @@ const dataFr = isFr ? metaData.fr : metaData.en
         <path d="M 2,6 L 22,6 M 2,12 L 22,12 M 2,18 L 22,18"></path>
       </svg>
     </button>
-    <MobileMenu navigation={navigationDe} />
+    <MobileMenu navigation={navigation} />
   </Dialog>
 </header>
 <div id="top-of-site-pixel-anchor"></div>

@@ -1,10 +1,12 @@
 import type {
   CallToAction,
-  FooterGroup,
-  I18nFooter,
+  SiteMapGroup,
+  I18nSiteMap,
   Language,
   MetaData,
   Product,
+  I18nFooterInfo,
+  FooterInfo,
 } from './types'
 
 const productDe: Product = {
@@ -33,18 +35,19 @@ export const metaData: MetaData = {
   en: productEn,
 }
 
-export const callToActionLinksDe: CallToAction[] = [
-  { href: '/de/demo/', text: 'Demo ausprobieren' },
-  //#region{ href: '/de/preise/', text: 'Unverbindliches Angebot' },
-]
-export const callToActionLinksFr: CallToAction[] = [
-  { href: '/fr/démo/', text: 'Essayez la démo' },
-  //#region{ href: '/de/preise/', text: 'Unverbindliches Angebot' },
-]
-export const callToActionLinksEn: CallToAction[] = [
-  { href: '/en/demo/', text: 'Try demo' },
-  //#region { href: '/en/contact/', text: 'Request a quote' },
-]
+export const callToActionLinks: Record<Language, CallToAction[]> = {
+  de: [
+    { href: '/de/demo/', text: 'Demo ausprobieren' },
+    // { href: '/de/preise/', text: 'Unverbindliches Angebot' },
+  ],
+  fr: [
+    { href: '/fr/démo/', text: 'Essayez la démo' },
+  ],
+  en: [
+    { href: '/en/demo/', text: 'Try demo' },
+    // { href: '/en/contact/', text: 'Request a quote' },
+  ],
+}
 
 export const generalTitle = ({ name }: Product) => `${name}`
 
@@ -240,7 +243,7 @@ export const globalNavigation: Navigation = {
   en: navigationEn,
 }
 
-const footerDe: FooterGroup[] = [
+const siteMapDe: SiteMapGroup[] = [
   {
     title: 'Produkt',
     items: [
@@ -317,105 +320,56 @@ const footerDe: FooterGroup[] = [
       },
       {
         title: 'Inbetriebnahme von Payflink',
-        href: '/de/dokumentation/inbetriebnahme-gaston/',
+        href: '/de/dokumentation/inbetriebnahme-payflink/',
       },
       {
         title: 'Speisekarte bearbeiten',
         href: '/de/dokumentation/speisekarten-angebot-bearbeiten/',
       },
-    ],
-  },
-]
-
-const footerFr: FooterGroup[] = [
-  {
-    title: 'Produkt',
-    items: [
       {
-        title: 'Digitale Speisekarte',
-        href: '/de/digitale-speisekarte/',
+        title: 'Online Speisekarte erstellen',
+        href: '/de/dokumentation/online-speisekarte-erstellen/',
       },
       {
-        title: 'Restaurant Bestell App',
-        href: '/de/restaurant-bestell-app/',
-      },
-      {
-        title: 'Funktionsumfang',
-        href: '/de/funktionsumfang/',
-      },
-      //{
-        //title: 'Preise',
-        //href: '/de/preise/',
-      //},
-      {
-        href: '/de/demo/',
-        title: 'Demo',
-      },
-    ],
-  },
-  // {
-  //   title: 'Über',
-  //   items: [
-  //     {
-  //       title: 'Uns',
-  //       href: '/de/ueber-uns/',
-  //     },
-  //     {
-  //       href: '/de/team/',
-  //       title: 'Team',
-  //     },
-  //     {
-  //       href: '/de/blog/',
-  //       title: 'Blog',
-  //     },
-  //     {
-  //       href: '/de/kontakt/',
-  //       title: 'Kontakt',
-  //     },
-  //   ],
-  // },
-  {
-    title: 'Highlights',
-    items: [
-      {
-        title: 'Take Away und Delivery',
-        href: '/de/takeaway-delivery/',
-      },
-      {
-        title: 'Online Speisekarte',
-        href: '/de/online-speisekarte/',
-      },
-      {
-        title: 'Gäste-Rufsystem',
-        href: '/de/gaeste-rufsystem/',
-      },
-      {
-        title: 'Payflink oder Orderman',
-        href: '/de/orderman/',
-      },
-    ],
-  },
-  {
-    title: 'Dokumentation',
-    items: [
-      {
-        title: 'Bestell- und Zahlungsablauf',
-        href: '/de/bestell-und-zahlungs-ablauf-gastro-betriebe/',
-      },
-      {
-        title: 'Inbetriebnahme von Payflink',
-        href: '/de/dokumentation/inbetriebnahme-gaston/',
-      },
-      {
-        title: 'Speisekarte bearbeiten',
-        href: '/de/dokumentation/speisekarten-angebot-bearbeiten/',
+        title: 'Online Speisekarte gestalten',
+        href: '/de/dokumentation/online-speisekarte-gestalten/',
       },
     ],
   },
 ]
 
-export const footer: I18nFooter = {
-  de: footerDe,
-  fr: footerFr,
+export const siteMap: I18nSiteMap = {
+  de: siteMapDe,
+  fr: siteMapDe,
   en: [],
+}
+
+const footerDe: FooterInfo = {
+  aProductOf: 'Ein Produkt von',
+  city: 'Luzern • Schweiz',
+  inquiries: 'Anfragen',
+  newsletter: 'Newsletter abonnieren',
+  or: 'oder',
+  appointment: {
+    title: 'Termin buchen',
+    url: '/de/termin/',
+  },
+}
+
+const footerEn: FooterInfo = {
+  aProductOf: 'A product of',
+  city: 'Lucerne • Switzerland',
+  inquiries: 'Inquiries',
+  newsletter: 'Subscribe to newsletter',
+  or: 'or',
+  appointment: {
+    title: 'book an appointment',
+    url: '/en/appointment/',
+  },
+}
+
+export const footer: I18nFooterInfo = {
+  de: footerDe,
+  fr: footerDe,
+  en: footerEn,
 }

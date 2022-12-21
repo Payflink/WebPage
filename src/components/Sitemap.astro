@@ -1,5 +1,5 @@
 ---
-import { footer } from 'src/config'
+import { siteMap } from 'src/config'
 import type { Language } from 'src/types'
 
 type Props = {
@@ -7,7 +7,7 @@ type Props = {
 }
 const { lang } = Astro.props as Props
 
-const footerInCurrentLanguage = lang === 'de' ? footer.de : footer.en
+const footerInCurrentLanguage = siteMap[lang]
 ---
 
 <div class="columns link-groups">

@@ -1,6 +1,6 @@
 ---
-import { callToActionLinksDe, callToActionLinksEn, footer } from 'src/config'
-import { mkIsCurrentPage } from '../utils.js'
+import { callToActionLinks, footer } from 'src/config'
+import { getCurrentLanguage, mkIsCurrentPage } from '../utils.js'
 import CallToAction from './CallToAction.astro'
 import Container from './Container.astro'
 import Instagram from '@icons/Instagram.astro'
@@ -13,9 +13,10 @@ import Newsletter from '@components/Newsletter'
 import Button from './Button.astro'
 
 const isCurrentPage = mkIsCurrentPage(Astro.url.pathname)
-const isDe = isCurrentPage('/de/')
+const lang = getCurrentLanguage(Astro.url.pathname)
 
-const links = isDe ? callToActionLinksDe : callToActionLinksEn
+const footerInfo = footer[lang]
+const links = callToActionLinks[lang]
 ---
 
 <footer>
@@ -23,7 +24,7 @@ const links = isDe ? callToActionLinksDe : callToActionLinksEn
     <CallToAction links={links} />
   </div>
   <Container>
-    <Sitemap lang={isDe ? 'de' : 'en'} />
+    <Sitemap lang={lang} />
   </Container>
 
   <div class="columns footer-container">
@@ -32,17 +33,12 @@ const links = isDe ? callToActionLinksDe : callToActionLinksEn
         <a href="https://www.instagram.com/payflink/"
           ><Instagram />
         </a>&nbsp;
-        <!-- <a href="https://www.linkedin.com/company/gastonsolution/"
-          ><LinkedIn />
-        </a>&nbsp;
-        <a href="https://twitter.com/gastonsolution"><Twitter /></a>&nbsp;
-        <a href="https://www.facebook.com/gastonsolution/"><Facebook /></a> -->
       </p>
 
       <p>
         © 2019 - {new Date().getFullYear()} Payflink
         <br />
-        {isDe ? 'Ein Produkt von' : 'A product of'}
+        {footerInfo.aProductOf}
         <a href="https://apptiva.ch">Apptiva</a>
         <br />
         Luzern • Schweiz
@@ -50,21 +46,19 @@ const links = isDe ? callToActionLinksDe : callToActionLinksEn
     </div>
     <div>
       <Dialog client:load>
-        <Button slot="openElement">Newsletter abonnieren</Button>
+        <Button slot="openElement">{footerInfo.newsletter}</Button>
         <div class="newsletter-wrapper">
           <Newsletter client:visible />
         </div>
       </Dialog>
       <p>
-        {isDe ? 'Anfragen/Support' : 'Inquiries/Support'}&ensp;
+        {footerInfo.inquiries}&ensp;
         <a href="tel:+41795559599">+41 79 555 95 99</a>
-        {isDe ? 'oder' : 'or'}
-        <a href={isDe ? '/de/termin/' : '/en/appointment/'}
-          >{isDe ? 'Termin buchen' : 'book an appointment'}
+        {footerInfo.or}
+        <a href={footerInfo.appointment.url}
+          >{footerInfo.appointment.title}
         </a>
         <br />
-        <!-- Support (24h)&ensp;
-        <a href="tel:+41786931985">+41 78 693 19 85</a> -->
         <br />
       </p>
     </div>
