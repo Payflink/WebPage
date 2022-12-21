@@ -145,17 +145,17 @@ const navigationFr: NavigationTree = [
         title: 'Menu Numérique',
         href: '/fr/digitale-speisekarte/',
         description:
-          'Präsentieren Sie mit unserer digitalen Speisekarte Ihr Angebot im besten Licht.',
+          'Présentez votre offre sous son meilleur avec notre menu digital.',
       },
       {
-        title: 'Bestell-App',
+        title: 'application de commande',
         href: '/fr/restaurant-bestell-app/',
-        description: 'Entdecken Sie unsere Restaurant Bestell App.',
+        description: 'Découvrez notre application de commande de restaurant.',
       },
       {
         href: '/fr/funktionsumfang/',
-        title: 'Funktionsumfang',
-        description: 'Detaillierte Auflistung aller Funktionen von Payflink.',
+        title: 'Gamme de fonctions',
+        description: 'Liste détaillée de toutes les fonctionnalités de Payflink.',
       },
       // {
       //   href: '/de/blog/',
@@ -195,16 +195,16 @@ const navigationFr: NavigationTree = [
     //href: '/de/preise/',
   //},
   {
-    href: '/fr/demo/', 
-    title: 'Demo ausprobieren',
+    href: '/fr/démo/', 
+    title: 'Essayez la démo',
   },
   {
     href: '/fr/termin/',
-    title: 'Termin vereinbaren',
+    title: 'Prendre rendez-vous',
   },
   {
     href: '/fr/kontakt/',
-    title: 'Kontakt',
+    title: 'Contacter',
   },
 ]
 
