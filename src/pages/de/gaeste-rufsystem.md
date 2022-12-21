@@ -6,17 +6,38 @@ keyword: gäste-rufsystem
 layout: '@layouts/LandingPage.astro'
 ---
 
-Das Konzept des Gäste-Rufsystems existiert seit Jahren und ist eine mögliche Lösung, um die Qualität im Service zu erhöhen. Aber mittlerweile existieren bessere Alternativen. Aus diesem Grund werden wir hier in nur 5 Punkten argumentieren, warum Sie Payflink App anstatt eines Gäste-Rufsystems in Betracht ziehen sollten.
+Das Konzept des Gäste-Rufsystems existiert seit Jahren und ist eine mögliche Lösung, um die Qualität im Service zu erhöhen. Aber mittlerweile existieren bessere Alternativen. Aus diesem Grund werden wir hier in nur 5 Punkten argumentieren, warum Sie Gaston App anstatt eines Gäste-Rufsystems in Betracht ziehen sollten.
 
-## 1. Gäste-Rufsystem optimieren nur die Bestellabholung
+## Was ist ein Gäste-Rufsystem?
+
+Ein Gäste-Rufsystem ist ein Pager, der durch Vibration oder LED Leuchten funktioniert, und so werden die Gäste informiert, dass ihre Bestellung abholbereit ist. Ein Rufsystem ist in der Tat praktisch und führt zu einer gewissen Entspannung, da es keine Warteschlange gibt und die Gäste bequem am Tisch warten.
+
+Aber mittlerweile existieren bessere Alternativen, die die Essenz der Gastronomie beibehalten, aber schnellere und praktischere Ergebnisse liefern.
+
+## Was ist Gaston?
+
+Gaston hingegen ist eine digitale Speisekarte. Sieht einfach aus, aber Gaston ist ein Produkt mit Potenziel und zusätzlichen Funktionen, die die Gastronomie in ihrer Gesamtheit abdecken. 
+
+Wenn Sie nicht wissen, was eine digitale Speisekarte ist: keine Sorge! 
+In Kürze, eine digitale Speisekarte ist ein PDF, eine Webseite oder eine App, die auf einem Handy oder Tablet Ihr Angebot darstellt. 
+
+Alle Funktionen und Vorteile einer digitalen Speisekarte finden Sie in unserem Artikel über [digitale Speisekarte](/de/digitale-speisekarte) im Highlight.
+
+Andererseits ist Gaston nicht nur eine digitale Speisekarte. Gaston hat zusätzliche Funktionen integriert, die es erlauben, die [Bestell App](/de/restaurant-bestell-app) auch als Gäste-Rufsystem per SMS zu dienen.
+
+## Ziehen Sie Gaston in Betracht, weil...
+
+Bevor Sie eine Entscheidung treffen, argumentieren wir hier in nur ein paar Punkten, warum Sie Gaston anstatt eines Gäste-Rufsystems in Betracht ziehen sollten. Natürlich erklären wir auch mehr über Gaston und die zusätzliche Funktionen.
+
+### 1. Gäste-Rufsystem optimieren nur die Bestellabholung
 
 Mit einem Gäste-Rufsystem optimieren Sie den Service bei der Bestellabholung. Die Wartezeit und den Aufwand bei der Bestellaufnahme und Zahlung kann ein Gäste-Rufsystem aber nicht abnehmen.
 
-Payflink kann alle drei Dinge: Bestellungen aufnehmen, Zahlung abwickeln und die Gäste informieren, wenn das Essen bereit ist.
+Gaston kann alle drei Dinge: Bestellungen aufnehmen, Zahlung abwickeln und die Gäste informieren, wenn das Essen bereit ist.
 
-## 2. Gäste-Rufsysteme sind zusätzliche Geräte
+### 2. Gäste-Rufsysteme sind zusätzliche Geräte
 
-Bei physischen Gäste-Pagern müssen Sie immer genügend Geräte für die aktuelle Situation bereit halten. Mit Payflink spielt es keine Rolle, ob Ihr Betrieb in einem Moment zwei oder 200 Gäste gleichzeitig bedient. Sie brauchen keine Geräte anzuschaffen.
+Bei physischen Gäste-Pagern müssen Sie immer genügend Geräte für die aktuelle Situation bereit halten. Mit Gaston spielt es keine Rolle, ob Ihr Betrieb in einem Moment zwei oder 200 Gäste gleichzeitig bedient. Sie brauchen keine Geräte anzuschaffen.
 
 Wenn die physischen Gäste-Rufsysteme beschädigt werden oder sich nach einiger Zeit als fehlerhaft erweisen, fallen zusätzliche Kosten an.
 

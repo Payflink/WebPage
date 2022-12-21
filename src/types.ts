@@ -1,16 +1,31 @@
 import type { MarkdownInstance } from 'astro'
 
-export type Language = 'de' | 'en'
+export const languages = ['de', 'en', 'fr', 'it'] as const
+export type Language = typeof languages[number]
 
-export interface FooterItem {
+export interface SiteMapItem {
   href: string
   title: string
 }
-export interface FooterGroup {
+export interface SiteMapGroup {
   title: string
-  items: FooterItem[]
+  items: SiteMapItem[]
 }
-export type I18nFooter = Record<Language, FooterGroup[]>
+export type I18nSiteMap = Record<Language, SiteMapGroup[]>
+
+export type FooterInfo = {
+  aProductOf: string
+  city: string
+  inquiries: string
+  newsletter: string
+  or: string
+  appointment: {
+    title: string
+    url: string
+  }
+}
+
+export type I18nFooterInfo = Record<Language, FooterInfo>
 
 export type Product = {
   name: string

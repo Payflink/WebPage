@@ -1,13 +1,7 @@
 [build]
-  command = "npx pnpm build"
+  command = "npm run build"
   functions = "netlify/functions"
   publish = "dist"
-
-[build.environment]
-  NPM_FLAGS="--prefix=/dev/null"
-
-[[plugins]]
-  package = "./plugins/pnpm-preinstaller"
 
 [[redirects]]
   from = "/"

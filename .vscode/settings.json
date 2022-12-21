@@ -1,0 +1,8 @@
+{
+  "liveServer.settings.root": "/public",
+  "nixEnvSelector.nixFile": "${workspaceRoot}/shell.nix",
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.documentSelectors": ["**/*.astro"]
+}

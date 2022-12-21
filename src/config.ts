@@ -1,10 +1,12 @@
 import type {
   CallToAction,
-  FooterGroup,
-  I18nFooter,
+  SiteMapGroup,
+  I18nSiteMap,
   Language,
   MetaData,
   Product,
+  I18nFooterInfo,
+  FooterInfo,
 } from './types'
 
 const productDe: Product = {
@@ -24,14 +26,16 @@ export const metaData: MetaData = {
   en: productEn,
 }
 
-export const callToActionLinksDe: CallToAction[] = [
-  { href: '/de/demo/', text: 'Demo ausprobieren' },
-  //#region{ href: '/de/preise/', text: 'Unverbindliches Angebot' },
-]
-export const callToActionLinksEn: CallToAction[] = [
-  { href: '/en/demo/', text: 'Try demo' },
-  //#region { href: '/en/contact/', text: 'Request a quote' },
-]
+export const callToActionLinks: Record<Language, CallToAction[]> = {
+  de: [
+    { href: '/de/demo/', text: 'Demo ausprobieren' },
+    // { href: '/de/preise/', text: 'Unverbindliches Angebot' },
+  ],
+  en: [
+    { href: '/en/demo/', text: 'Try demo' },
+    // { href: '/en/contact/', text: 'Request a quote' },
+  ],
+}
 
 export const generalTitle = ({ name }: Product) => `${name}`
 
@@ -155,7 +159,7 @@ export const globalNavigation: Navigation = {
   en: navigationEn,
 }
 
-const footerDe: FooterGroup[] = [
+const siteMapDe: SiteMapGroup[] = [
   {
     title: 'Produkt',
     items: [
@@ -238,11 +242,48 @@ const footerDe: FooterGroup[] = [
         title: 'Speisekarte bearbeiten',
         href: '/de/dokumentation/speisekarten-angebot-bearbeiten/',
       },
+      {
+        title: 'Online Speisekarte erstellen',
+        href: '/de/dokumentation/online-speisekarte-erstellen/',
+      },
+      {
+        title: 'Online Speisekarte gestalten',
+        href: '/de/dokumentation/online-speisekarte-gestalten/',
+      },
     ],
   },
 ]
 
-export const footer: I18nFooter = {
-  de: footerDe,
+export const siteMap: I18nSiteMap = {
+  de: siteMapDe,
   en: [],
+}
+
+const footerDe: FooterInfo = {
+  aProductOf: 'Ein Produkt von',
+  city: 'Luzern • Schweiz',
+  inquiries: 'Anfragen',
+  newsletter: 'Newsletter abonnieren',
+  or: 'oder',
+  appointment: {
+    title: 'Termin buchen',
+    url: '/de/termin/',
+  },
+}
+
+const footerEn: FooterInfo = {
+  aProductOf: 'A product of',
+  city: 'Lucerne • Switzerland',
+  inquiries: 'Inquiries',
+  newsletter: 'Subscribe to newsletter',
+  or: 'or',
+  appointment: {
+    title: 'book an appointment',
+    url: '/en/appointment/',
+  },
+}
+
+export const footer: I18nFooterInfo = {
+  de: footerDe,
+  en: footerEn,
 }
