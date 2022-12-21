@@ -236,7 +236,7 @@ const siteMapDe: SiteMapGroup[] = [
       },
       {
         title: 'Inbetriebnahme von Payflink',
-        href: '/de/dokumentation/inbetriebnahme-gaston/',
+        href: '/de/dokumentation/inbetriebnahme-payflink/',
       },
       {
         title: 'Speisekarte bearbeiten',
