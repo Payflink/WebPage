@@ -29,10 +29,17 @@ const productEn: Product = {
   name: 'Payflink',
   image: '/assets/logo/Payflink_free.svg',
 }
+const productIt: Product = {
+  description: 'Self-Order|Pay for Gastronomy',
+  claim: 'Your guests order and pay without waiting.',
+  name: 'Payflink',
+  image: '/assets/logo/Payflink_free.svg',
+}
 export const metaData: MetaData = {
   de: productDe,
   fr: productFr,
   en: productEn,
+  it: productIt,
 }
 
 export const callToActionLinks: Record<Language, CallToAction[]> = {
@@ -47,6 +54,7 @@ export const callToActionLinks: Record<Language, CallToAction[]> = {
     { href: '/en/demo/', text: 'Try demo' },
     // { href: '/en/contact/', text: 'Request a quote' },
   ],
+  it: [],
 }
 
 export const generalTitle = ({ name }: Product) => `${name}`
@@ -241,6 +249,7 @@ export const globalNavigation: Navigation = {
   de: navigationDe,
   fr: navigationFr,
   en: navigationEn,
+  it: []
 }
 
 const siteMapDe: SiteMapGroup[] = [
@@ -342,6 +351,7 @@ export const siteMap: I18nSiteMap = {
   de: siteMapDe,
   fr: siteMapDe,
   en: [],
+  it: [],
 }
 
 const footerDe: FooterInfo = {
@@ -372,4 +382,5 @@ export const footer: I18nFooterInfo = {
   de: footerDe,
   fr: footerDe,
   en: footerEn,
+  it: footerEn,
 }
