@@ -1,15 +1,33 @@
 ---
+import { globalNavigation, metaData } from 'src/config'
+import { getCurrentLanguage, mkIsCurrentPage } from '../utils'
 import type { NavigationTree } from "src/config";
-import { mkIsCurrentPage } from "src/utils";
 import MobileMenuGroup from "./MobileMenuGroup.astro";
 
 export type Props = {
   navigation: NavigationTree
 }
 
-const { navigation } = Astro.props as Props;
+const lang = getCurrentLanguage(Astro.url.pathname)
 const isCurrentPage = mkIsCurrentPage(Astro.url.pathname)
+const langPage = `/${lang}/`
+
+const navigation = globalNavigation[lang]
+const data = metaData[lang]
 ---
+
+<script>
+  window.addEventListener('load', function () {
+    let observer = new IntersectionObserver((entries) => {
+      if (entries[0].boundingClientRect.y < -1) {
+        document.body.classList.add('scrolled-down')
+      } else {
+        document.body.classList.remove('scrolled-down')
+      }
+    })
+    observer.observe(document.querySelector('#top-of-site-pixel-anchor'))
+  })
+</script>
 
 <nav>
   <a href={'/de/'} aria-current={isCurrentPage('/de/', {exact: true})}>{isCurrentPage('/de/') ? 'Startseite' :
@@ -19,9 +37,11 @@ const isCurrentPage = mkIsCurrentPage(Astro.url.pathname)
 
   <footer>
     <p>
-      <a href="/en/" aria-current={isCurrentPage('/en/')}> en </a>
-      &emsp;
       <a href="/de/" aria-current={isCurrentPage('/de/')}> de </a>
+      &emsp;
+      <a href="/fr/" aria-current={isCurrentPage('/fr/')}> fr </a>
+      &emsp;
+      <a href="/en/" aria-current={isCurrentPage('/en/')}> en </a>
     </p>
   </footer>
 </nav>
