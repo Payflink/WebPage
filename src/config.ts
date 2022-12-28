@@ -162,7 +162,7 @@ const navigationFr: NavigationTree = [
       },
       {
         href: '/fr/funktionsumfang/',
-        title: 'Gamme de fonctions',
+        title: 'Étendue des fonctions',
         description: 'Liste détaillée de toutes les fonctionnalités de Payflink.',
       },
       // {
@@ -360,7 +360,7 @@ const siteMapFr: SiteMapGroup[] = [
         href: '/fr/restaurant-bestell-app/',
       },
       {
-        title: 'Gamme de fonctions',
+        title: 'Étendue des fonctions',
         href: '/fr/funktionsumfang/',
       },
       //{
