@@ -53,5 +53,9 @@
   to = "/de/demo/"
 
 [[redirects]]
+  from = "/fr/qr-code-demo"
+  to = "/fr/demo/"
+
+[[redirects]]
   from = "/en/qr-code-demo"
   to = "/en/demo/"

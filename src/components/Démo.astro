@@ -31,26 +31,26 @@ import Button from './Button.astro'
                 Cette démo est un système de test. Aucune <b>commande ou paiement réel n'a lieu ici.</b> Testez Payflink selon votre humeur.
               </p>
               <ol>
-                <li>Fügen Sie etwas zur Bestellung hinzu.</li>
-                <li>Senden Sie die Bestellung ab.</li>
+                <li>Ajoutez quelque chose à la commande.</li>
+                <li>Soumettez la commande.</li>
                 <li>
-                  Klicken Sie bei der Zahlung auf <b>VISA</b>.
+                  Cliquez sur paiement <b>VISA</b>.
                   <ul>
-                    <li>Test-Karte <b>4900 0000 0000 0094</b></li>
-                    <li>Verfalldatum <b>06/25</b></li>
-                    <li>Prüfziffer (CVV) <b>123</b></li>
+                    <li>carte de test <b>4900 0000 0000 0094</b></li>
+                    <li>date d'expiration <b>06/25</b></li>
+                    <li>chiffre de contrôle (CVV) <b>123</b></li>
                   </ul>
-                  Keine Angst, es findet keine echte Transaktion statt und entsprechend
-                  <b>wird kein Geld abgebucht.</b>
+                  Ne vous inquiétez pas, aucune transaction réelle n'a lieu et par conséquent
+                  <b>aucun montant ne sera débité.</b>
                 </li>
               </ol>
             </slot>
           </div>
           <div class="mobile">
             <slot name="mobile">
-              <h3>Payflink Demo</h3>
+              <h3>Payflink Démo</h3>
               <p>
-                Zahlung mit VISA Nr. 4900&nbsp;0000&nbsp;0000&nbsp;0094, Verfall
+                Payment avec VISA Nr. 4900&nbsp;0000&nbsp;0000&nbsp;0094, date d'expiration
                 06/25, CVV 123
               </p>
             </slot>
@@ -94,12 +94,11 @@ import Button from './Button.astro'
                     Cette démo est un système de test. Aucune <b>commande ou paiement réel n'a lieu ici.</b> Testez Payflink selon votre humeur.
                   </p>
                   <ol>
-                    <li>Fügen Sie etwas zur Bestellung hinzu.</li>
+                    <li>Ajoutez quelque chose à la commande.</li>
                     <li>Senden Sie die Bestellung ab.</li>
                     <li>
-                      Klicken Sie bei der Zahlung z.B. auf Twint. Keine Angst,
-                      es findet keine echte Transaktion statt und entsprechend <b
-                        >wird kein Geld abgebucht.</b
+                      Par exemple, cliquez sur Twint lors du paiement. Ne vous inquiétez pas, aucune transaction réelle n'a lieu et par conséquent <b
+                        >aucune somme ne sera débitée.</b
                       >
                     </li>
                   </ol>
@@ -107,7 +106,7 @@ import Button from './Button.astro'
               </div>
               <div class="mobile">
                 <slot name="mobile">
-                  <h3>Payflink Demo</h3>
+                  <h3>Payflink Démo</h3>
                   <p>
                     Wählen Sie bei der Zahlung z.B. Twint. Es wird kein Geld
                     abgebucht.
