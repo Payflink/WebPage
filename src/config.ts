@@ -394,52 +394,52 @@ const siteMapFr: SiteMapGroup[] = [
   //     },
   //   ],
   // },
-  {
-    title: 'Highlights',
-    items: [
-      {
-        title: 'A emporter et livraison',
-        href: '/fr/takeaway-delivery/',
-      },
-      {
-        title: 'Menu online',
-        href: '/fr/online-speisekarte/',
-      },
-      {
-        title: "Système d'appel invité",
-        href: '/fr/gaeste-rufsystem/',
-      },
-      {
-        title: 'Payflink ou alors Orderman',
-        href: '/fr/orderman/',
-      },
-    ],
-  },
-  {
-    title: 'Documentation',
-    items: [
-      {
-        title: 'Processus de commande et processus de paiement',
-        href: '/fr/bestell-und-zahlungs-ablauf-gastro-betriebe/',
-      },
-      {
-        title: 'Mise en service de Payflink',
-        href: '/fr/dokumentation/inbetriebnahme-payflink/',
-      },
-      {
-        title: 'Modifier le menu',
-        href: '/fr/dokumentation/speisekarten-angebot-bearbeiten/',
-      },
-      {
-        title: 'Online Speisekarte erstellen',
-        href: '/de/dokumentation/online-speisekarte-erstellen/',
-      },
-      // {
-      //   title: 'Online Speisekarte gestalten',
-      //   href: '/de/dokumentation/online-speisekarte-gestalten/',
-      // },
-    ],
-  },
+  // {
+  //   title: 'Highlights',
+  //   items: [
+  //     {
+  //       title: 'A emporter et livraison',
+  //       href: '/fr/takeaway-delivery/',
+  //     },
+  //     {
+  //       title: 'Menu online',
+  //       href: '/fr/online-speisekarte/',
+  //     },
+  //     {
+  //       title: "Système d'appel invité",
+  //       href: '/fr/gaeste-rufsystem/',
+  //     },
+  //     {
+  //       title: 'Payflink ou alors Orderman',
+  //       href: '/fr/orderman/',
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: 'Documentation',
+  //   items: [
+  //     {
+  //       title: 'Processus de commande et processus de paiement',
+  //       href: '/fr/bestell-und-zahlungs-ablauf-gastro-betriebe/',
+  //     },
+  //     {
+  //       title: 'Mise en service de Payflink',
+  //       href: '/fr/dokumentation/inbetriebnahme-payflink/',
+  //     },
+  //     {
+  //       title: 'Modifier le menu',
+  //       href: '/fr/dokumentation/speisekarten-angebot-bearbeiten/',
+  //     },
+  //     {
+  //       title: 'Online Speisekarte erstellen',
+  //       href: '/de/dokumentation/online-speisekarte-erstellen/',
+  //     },
+  //     // {
+  //     //   title: 'Online Speisekarte gestalten',
+  //     //   href: '/de/dokumentation/online-speisekarte-gestalten/',
+  //     // },
+  //   ],
+  // },
 ]
 
 export const siteMap: I18nSiteMap = {

@@ -2,16 +2,16 @@
 import Container from "@components/Container.astro";
 import Main from "@layouts/Main.astro"
 
-const description = "Haben Sie Fragen zu Payflink oder unserem Angebot? Vereinbaren Sie ein Termin in vier Klicks!"
+const description = "Vous avez des questions sur Payflink ou sur notre offre? Prenez rendez-vous en quatre clics!"
 ---
 
-<Main title="Termin vereinbaren" description={description}>
+<Main title="Prendre rendez-vous" description={description}>
   <Container>
-    <h1>Termin vereinbaren</h1>
+    <h1>Prendre rendez-vous</h1>
     <p>{description}</p>
     <div class="calendly-inline-widget"
       data-url="https://calendly.com/h-ayas/30min?hide_event_type_details=1&hide_gdpr_banner=1">
-      <div class="placeholder">Lade Kalender...</div>
+      <div class="placeholder">Chargement du calendrier...</div>
     </div>
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
