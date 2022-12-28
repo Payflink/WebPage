@@ -156,7 +156,7 @@ const navigationFr: NavigationTree = [
           'Présentez votre offre sous son meilleur avec notre menu digital.',
       },
       {
-        title: 'application de commande',
+        title: 'Application de commande',
         href: '/fr/restaurant-bestell-app/',
         description: 'Découvrez notre application de commande de restaurant.',
       },
@@ -347,9 +347,104 @@ const siteMapDe: SiteMapGroup[] = [
   },
 ]
 
+const siteMapFr: SiteMapGroup[] = [
+  {
+    title: 'Produit',
+    items: [
+      {
+        title: 'Menu numérique',
+        href: '/fr/digitale-speisekarte/',
+      },
+      {
+        title: 'Application de commande de restaurant',
+        href: '/fr/restaurant-bestell-app/',
+      },
+      {
+        title: 'Gamme de fonctions',
+        href: '/fr/funktionsumfang/',
+      },
+      //{
+        //title: 'Preise',
+        //href: '/de/preise/',
+      //},
+      {
+        href: '/fr/démo/',
+        title: 'Démo',
+      },
+    ],
+  },
+  // {
+  //   title: 'Über',
+  //   items: [
+  //     {
+  //       title: 'Uns',
+  //       href: '/de/ueber-uns/',
+  //     },
+  //     {
+  //       href: '/de/team/',
+  //       title: 'Team',
+  //     },
+  //     {
+  //       href: '/de/blog/',
+  //       title: 'Blog',
+  //     },
+  //     {
+  //       href: '/de/kontakt/',
+  //       title: 'Kontakt',
+  //     },
+  //   ],
+  // },
+  {
+    title: 'Highlights',
+    items: [
+      {
+        title: 'A emporter et livraison',
+        href: '/fr/takeaway-delivery/',
+      },
+      {
+        title: 'Menu online',
+        href: '/fr/online-speisekarte/',
+      },
+      {
+        title: "Système d'appel invité",
+        href: '/fr/gaeste-rufsystem/',
+      },
+      {
+        title: 'Payflink ou alors Orderman',
+        href: '/fr/orderman/',
+      },
+    ],
+  },
+  {
+    title: 'Documentation',
+    items: [
+      {
+        title: 'Processus de commande et processus de paiement',
+        href: '/fr/bestell-und-zahlungs-ablauf-gastro-betriebe/',
+      },
+      {
+        title: 'Mise en service de Payflink',
+        href: '/fr/dokumentation/inbetriebnahme-payflink/',
+      },
+      {
+        title: 'Modifier le menu',
+        href: '/fr/dokumentation/speisekarten-angebot-bearbeiten/',
+      },
+      {
+        title: 'Online Speisekarte erstellen',
+        href: '/de/dokumentation/online-speisekarte-erstellen/',
+      },
+      // {
+      //   title: 'Online Speisekarte gestalten',
+      //   href: '/de/dokumentation/online-speisekarte-gestalten/',
+      // },
+    ],
+  },
+]
+
 export const siteMap: I18nSiteMap = {
   de: siteMapDe,
-  fr: siteMapDe,
+  fr: siteMapFr,
   en: [],
   it: [],
 }
@@ -363,6 +458,18 @@ const footerDe: FooterInfo = {
   appointment: {
     title: 'Termin buchen',
     url: '/de/termin/',
+  },
+}
+
+const footerFr: FooterInfo = {
+  aProductOf: 'Un produit de',
+  city: 'Luzern • Suisse',
+  inquiries: 'Demandes',
+  newsletter: "S'inscrire à la Newsletter",
+  or: 'ou alors',
+  appointment: {
+    title: 'prenez rendez-vous',
+    url: '/fr/termin/',
   },
 }
 
@@ -380,7 +487,7 @@ const footerEn: FooterInfo = {
 
 export const footer: I18nFooterInfo = {
   de: footerDe,
-  fr: footerDe,
+  fr: footerFr,
   en: footerEn,
   it: footerEn,
 }
