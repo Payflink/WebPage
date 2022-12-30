@@ -1,0 +1,322 @@
+---
+import Main from "@layouts/Main.astro"
+import Container from "@components/Container.astro";
+import { Picture } from '@astrojs/image/components';
+
+const description = 'Payflink bietet einen sehr grossen Leistungsumfang und ist äussert flexible. So stellen wir sicher, dass Payflink auf unterschiedliche Betrieb optimal ausgerichtet ist.'
+---
+
+<Main title="Funktionsumfang" description={description}>
+  <Container>
+    <h1>Funktions&shy;umfang</h1>
+    <p>Payflink bietet einen sehr grossen Leistungsumfang und ist äusserst flexibel. So stellen wir sicher, dass Payflink
+      optimal auf
+      Ihren Betrieb ausgerichtet ist.</p>
+    <div class="columns">
+      <div style="flex: 1">
+        <h2>Komponenten</h2>
+        <p>Bei Payflink haben Sie die Wahl, was Sie mit Payflink lösen möchten. Wollen Sie bloss das Bezahlen unterstützen?
+          Oder nur die Speisekarte? Oder die Speisekarte, das Bestellen und Bezahlen? Ganz wie Sie möchten.</p>
+      </div>
+
+      <ul style="flex: 1">
+        <li style="list-style: '☕️  ';">
+          <h3>Wählen <small>Speisekarte</small></h3>
+          <p>Die Gäste wählen aus Ihrem Angebot die gewünschten Speisen und Getränke.</p>
+        </li>
+        <li style="list-style: '📡  ';">
+          <h3>Bestellen</h3>
+          <p>Die gewählten Produkte können die Gäste direkt über Payflink oder über Ihr Personal bestellen.</p>
+        </li>
+        <li style="list-style: '💳  ';">
+          <h3>Bezahlen</h3>
+          <p>Die Gäste können je nach Einstellung beim Bestellen oder nach dem Konsum bezahlen. Natürlich ist die
+            Zahlung über das Personal weiterhin möglich.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="columns">
+      <div style="flex: 1">
+        <h2>Ablauf</h2>
+        <p>Was passt zu Ihrem Betrieb? Sollen Gäste bei jeder Bestellung bezahlen oder einmal am Ende des Besuchs?</p>
+      </div>
+      <ul style="flex: 1">
+        <li style="list-style: '🔁  ';">
+          <h3>Bezahlen beim Bestellen</h3>
+          <p>Die Gäste bezahlen direkt bei jeder Bestellung, um die gewünschten Artikel zu erhalten.</p>
+        </li>
+        <li style="list-style: '1️⃣  ';">
+          <h3>Bezahlen am Ende des Besuchs</h3>
+          <p>Die Gäste bestellen beim Personal und über Payflink und bezahlen am Ende alle bestellten Artikel
+            entweder über Payflink oder das Personal.</p>
+        </li>
+        <li style="list-style: '🔔  ';">
+          <h3>Abholmeldung per SMS</h3>
+          <p>Sollen Ihre Gäste die Speisen abholen, sobald diese bereit sind? In dem Fall nimmt Payflink bei der
+            Bestellung die Telefonnummer auf und informiert die Gäste, sobald das Essen bereit ist. </p>
+        </li>
+      </ul>
+    </div>
+    <div class="columns">
+      <div style="flex: 1">
+        <h2>Zahlungsmittel</h2>
+        <p>Payflink bietet alle Zahlungsmittel Ihres Zahlungsproviders an.</p>
+        <img alt="Twint" src="/assets/index/twint.svg" />
+        <img alt="Twint" src="/assets/index/card.svg" />
+      </div>
+      <ul style="flex: 1">
+        <li style="list-style: '🏦  ';">
+          <h3>Twint</h3>
+          <p>Twint wird von vielen Gästen genutzt. Mit Payflink ist das Bezahlen mit Twint schnell und einfach.</p>
+        </li>
+        <li style="list-style: '💳  ';">
+          <h3>Visa und MasterCard</h3>
+          <p>Visa und MasterCard werden weniger häufig als Twint eingesetzt. Hat der Gast aber einmal seine Daten
+            eingegeben, können spätere Zahlungen ohne erneutes Eingeben der Informationen abgewickelt werden. Payflink
+            speichert dabei keine
+            Kreditkarten-Daten und ist entsprechend sehr sicher.</p>
+        </li>
+        <li style="list-style: '💰  ';">
+          <h3>Weitere Zahlungsarten</h3>
+          <p>Datatrans und Worldline bieten viele weitere Zahlungsarten an: American Express, Diners, Maestro usw.</p>
+        </li>
+        <li style="list-style: '💵  ';">
+          <h3>Bargeld</h3>
+          <p>In Payflink kann nicht direkt mit Bargeld bezahlt werden. Es ist aber möglich, über Payflink zu bestellen und
+            mit Bargeld beim Personal zu bezahlen.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="columns">
+      <div style="flex: 1">
+        <h2>Inhouse, Take&nbsp;Away, Delivery</h2>
+        <p>Egal, wo sich Ihre Gäste befinden: Payflink kann die Bestellung aufnehmen und die Zahlung durchführen.</p>
+      </div>
+      <ul style="flex: 1">
+        <li style="list-style: '🏢  ';">
+          <h3>Inhouse <small>Bestellen im Betrieb</small></h3>
+          <p>Beim Inhouse-Bestellen sitzen die Gäste bei Ihnen im Betrieb und bestellen über das eigene Handy direkt
+            vom Tisch aus. Dies ist die Paradedisziplin von Payflink.</p>
+        </li>
+        <li style="list-style: '🚴 ';">
+          <h3>Take Away</h3>
+          <p>Über Payflink können Gäste Speise und Getränke von unterwegs bestellen und bei Ihnen im Betrieb abholen.</p>
+        </li>
+        <li style="list-style: '🏠  ';">
+          <h3>Delivery</h3>
+          <p>Payflink nimmt auch Bestellungen von Gästen, die zu Hause sind, entgegen.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="columns">
+      <div style="flex: 1">
+        <h2>Bestelloptionen</h2>
+        <Picture alt="Bestellung mit mehreren Position und der Möglichkeit Trinkgeld zu geben."
+          src={import("/src/images/bestellung.png")} widths={[300, 600, 900]} sizes="300px" sizes="300px" />
+      </div>
+      <ul style="flex: 1">
+        <li style="list-style: '🪙  ';">
+          <h3>Trinkgeld</h3>
+          <p>Auch mit Payflink ist es möglich, Trinkgeld entgegen zu nehmen. Die Funktion wird rege von den Gästen
+            genutzt,
+            was auch Ihr Personal schätzt.</p>
+        </li>
+        <li style="list-style: '%  ';">
+          <h3>Rabattcodes</h3>
+          <p>
+            Mit der Eingabe eines Codes erhalten Kunden Ermässigungen auf eine
+            Bestellung. So können Sie einem speziellen Kundenkreis oder für
+            Marketing-Zwecke Rabatte auf Bestellungen gewähren.
+          </p>
+        </li>
+        <li style="list-style: '⛳️  ';">
+          <h3>Mehrere Gänge</h3>
+          <p>Möchten Sie Ihren Gästen die Gelegenheit geben, mehrere Gänge bei einer Bestellung zusammenzustellen? Die
+            Gäste können dabei jede Speise dem gewünschten Gang zuweisen.</p>
+        </li>
+        <li style="list-style: '⏱  ';">
+          <h3>Bestell-/Öffnungszeiten</h3>
+          <p>Soll nur zu bestimmten Zeiten bestellt werden können? Sie können die Zeiten definieren, zu welchen bestellt
+            werden kann.</p>
+        </li>
+        <li style="list-style: '🧾  ';">
+          <h3>Quittung</h3>
+          <p>Sollen die Gäste eine Quittung in Payflink erhalten, so können Sie die gewünschten Texte für die Quittung
+            konfigurieren.</p>
+        </li>
+        <li style="list-style: '📃  ';">
+          <h3>Geschäfts&shy;bedingungen</h3>
+          <p>Falls eine Zahlung bei der Bestellung stattfindet, müssen Ihre Gäste die Geschäftsbedingungen annehmen.
+            Bei Payflink können Ihre Gäste beim Bestellen Ihre AGBs anzeigen lassen und diese mit dem Bestell-Knopf direkt
+            annehmen.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="columns">
+      <div style="flex: 1">
+        <h2>Mehrere Speisekarten</h2>
+        <p>Haben Sie unterschiedliche Angebote je nach Tageszeit? Oder ist Ihre Küche nicht durchgehend geöffnet? Mit
+          Payflink haben Sie die Möglichkeit, zeit- und ortsabhängig Ihr Angebot anzupassen. </p>
+      </div>
+      <ul style="flex: 1">
+        <li style="list-style: '🧭  ';">
+          <h3>Ortsabhängiges Angebot</h3>
+          <p>Sind gewisse Speisen nur Inhouse verfügbar, oder nur bei Take Away und Delivery? Haben Sie
+            Tische im Garten, wo nur Getränke bestellt werden können? Mit Payflink erfassen Sie mehrere
+            Speisekarten und weisen diese einem Ort (z.B. Take Away, Tisch 7 - 17) zu.</p>
+        </li>
+        <li style="list-style: '⏱  ';">
+          <h3>Zeitabhängiges Angebot</h3>
+          <p>Hat Ihre Küche am Nachmittag geschlossen? Bei Payflink erfassen Sie dazu eine Speisekarte "Küche", welche
+            beispielsweise nur von 11-14 Uhr und von 18-21 Uhr verfügbar ist.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="columns">
+      <div style="flex: 1">
+        <h2>Dynamische Preise</h2>
+        <p>Bieten Sie spezielle Preise zur Happy-Hour an? Sind Ihre Preise für Takeway und Delivery angepasst?
+          Mit den dynamischen Preisen können Sie Ihre Preise orts- und zeitabhängig festlegen.</p>
+      </div>
+      <ul style="flex: 1">
+        <li style="list-style: '🧭  ';">
+          <h3>Ortsabhängige Preise</h3>
+          <p>Ortsabhängige Preise erlauben gezielt für gewisse Tische (z.B. im Garten) oder für Take Away und Delivery
+            auf
+            einzelnen Artikeln oder Optionen von Artikeln andere Preise anzubieten.</p>
+        </li>
+        <li style="list-style: '⏱  ';">
+          <h3>Zeitabhängige Preise</h3>
+          <p>Sind Ihre Preise abhängig vom Wochentag oder der Tageszeit? Zeitabhängige Preise erlauben es Ihnen,
+            einzelne
+            Artikel oder Optionen von Artikel je nach Zeit zu unterschiedlichen Preisen anzubieten.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="columns">
+      <div style="flex: 1">
+        <h2>Artikeloptionen</h2>
+        <Picture alt="Optionen für eine Pizza. Kleine Pizza, mehr Zutaten, weitere Teller"
+          src={import("/src/images/optionen.png")} widths={[300, 600, 900]} sizes="300px" />
+      </div>
+      <ul style="flex: 1">
+        <li style="list-style: '💎  ';">
+          <h3>Kostenpflichtige Optionen</h3>
+          <p>Gewisse Optionen machen einen Preisaufschlag oder -abschlag nötig. Mit Payflink entscheiden Sie, was eine
+            Option kosten soll. Es ist sogar möglich, die Optionspreise zeit- und ortsabhängig festzulegen.</p>
+        </li>
+        <li style="list-style: '😁  ';">
+          <h3>Kostenlose Optionen</h3>
+          <p>Auch kostenlose Optionen sind mit Payflink möglich. Bei den
+            Optionen sind Ihnen fast keine Grenzen gesetzt.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="columns">
+      <div style="flex: 1">
+        <h2>Artikel&shy;variationen</h2>
+        <Picture
+          alt="Unterschiedliche Mengen des selben Weins und deren Preis wird direkt auf der Speisekarte angezeigt."
+          src={import("/src/images/variationen.png")} widths={[300, 600, 900]} sizes="300px" />
+      </div>
+      <ul style="flex: 1">
+        <li style="list-style: '👨‍👩‍👧‍👦  ';">
+          <h3>Unterschiedliche Portionen</h3>
+          <p>Haben Sie unterschiedliche Portionen für die gleiche Speise? Beispielsweise eine kleine und eine grosse
+            Portion oder dieselbe Speise für mehrere Personen? Mit Payflink können Sie unterschiedliche Portionen mit
+            entsprechenden Preisen klar
+            ausweisen.</p>
+        </li>
+        <li style="list-style: '🍷  ';">
+          <h3>Unterschiedliche Mengen</h3>
+          <p>Besonders bei Getränken kommt es häufig vor, dass man unterschiedliche Mengen anbieten möchte. Egal ob 3 dl
+            oder eine Flasche, die Gäste sehen transparent, was Sie zu welchem Preis anbieten.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="columns">
+      <div style="flex: 1">
+        <h2>Kassen&shy;anbindung</h2>
+        <p>Payflink kann Bestellungen direkt an Ihre Kasse schicken und die
+          Artikelinformationen inkl. Preise aus Ihrer Kasse importieren.</p>
+      </div>
+      <ul style="flex: 1">
+        <li style="list-style: '📡  ';">
+          <h3>Bestellung<wbr>/Bezahlung an die Kasse senden</h3>
+          <p>Payflink übermittelt die Bestellungen und Zahlungen an die Kasse. So können Sie auf der Kasse die
+            Bestellungen sehen und ob die Zahlung bereits abgeschlossen wurde. Das Trinkgeld wird als separate
+            Bestellung
+            übermittelt, damit eine Abgrenzung möglich ist.</p>
+        </li>
+        <li style="list-style: '🚀  ';">
+          <h3>Artikel aus der Kasse importieren</h3>
+          <p>Falls Sie alle Produktinformationen und Preise in Ihrer Kasse pflegen, importieren wir bei Änderungen die
+            neusten Informationen automatisch. So ist Ihr Angebot ohne Mehraufwand stets aktuell.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="columns">
+      <div style="flex: 1">
+        <h2>Eigenes Design</h2>
+        <p>Ihr Betrieb hat einen eigenen Stil. Dies sollte Ihre Speisekarte reflektieren. Sie gestalten Ihre Speisekarte
+          nach Ihrem Gusto, farbenfroh und mit Bildern oder schlicht und einfach nur Text.</p>
+        <Picture alt="Speisekarte mit Bilder für jede Kategorie." src={import("/src/images/el-mosquito.png")}
+          widths={[300, 600, 900]} sizes="300px" />
+
+      </div>
+      <ul style="flex: 1">
+        <li style="list-style: '💈  ';">
+          <h3>Logo</h3>
+          <p>Ihr Logo ist gross und deutlich jederzeit auf der Speisekarte sichtbar. So bleiben Sie in Erinnerung.</p>
+        </li>
+        <li style="list-style: '🎨  ';">
+          <h3>Farben</h3>
+          <p>Wählen Sie Ihre Akzent-, Text- und Hintergrundfarben. Falls Sie weitere Elemente
+            speziell färben möchten, machen wir dies auf Anfrage gerne für Sie.</p>
+        </li>
+        <li style="list-style: '✏️  ';">
+          <h3>Schriften</h3>
+          <p>Sie können entweder aus über 1'000 Schriftarten wählen oder Ihre eigene Hausschrift in der Speisekarte
+            verwenden.</p>
+        </li>
+        <li style="list-style: '🏞  ';">
+          <h3>Bilder</h3>
+          <p>Falls Sie wünschen, können Bilder auf jedem Artikel hinterlegt werden. Zudem können sie für jede Kategorie
+            zwei Bilder definieren, welche ober- und unterhalb der Kategorie angezeigt werden.</p>
+
+        </li>
+        <li style="list-style: '📝  ';">
+          <h3>Texte</h3>
+          <p>Bei Payflink können Sie eine Vielzahl von Texten selber definieren, falls Sie das möchten. Dies beinhaltet
+            eine Einführung zu Ihrem Angebot und Beschreibung Ihres Betriebs, Freitexte zur Erklärung oder für Hinweise
+            in jeder Kategorie, Geschäftsbedingungen und sogar Texte auf der Quittung.</p>
+        </li>
+      </ul>
+    </div>
+  </Container>
+</Main>
+
+<style lang="scss">
+  h2 {
+    margin-top: 3em;
+  }
+
+  ul {
+    padding-inline-start: 3.5em;
+  }
+
+  // :global(img) {
+  //   width: 300px;
+  // }
+
+  img {
+    width: 35%;
+    margin-right: 10%;
+  }
+</style>

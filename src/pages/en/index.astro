@@ -2,46 +2,411 @@
 import MainLayout from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 import ButtonLink from '@components/ButtonLink.astro'
+
 import FixedPicture from '@components/FixedPicture.astro'
-import { callToActionLinks, metaData,  } from 'src/config'
+import Démo from '@components/Démo.astro'
+import { metaData } from 'src/config'
 import BlogTeaser from '@components/BlogTeaser.astro'
+import Testimonials from '@components/Testimonials.astro'
+import CanReplaceFr from '@components/CanReplaceFr.astro'
 import Hero from '@components/Hero.astro'
 import Customers from '@components/Customers.astro'
+import ButtonList from '@components/ButtonList.astro'
+import type { CallToAction } from 'src/types'
+import Figure from '@components/Figure.astro'
+import KindOfEstablishmentsFr from '@components/KindOfEstablishmentsFr.astro'
+import DemoEn from '@components/DemoEn.astro'
+import KindOfEstablishmentsEn from '@components/KindOfEstablishmentsEn.astro'
+import CanReplaceEn from '@components/CanReplaceEn.astro'
 
 const { en } = metaData
+
+const callToActionLinks: CallToAction[] = [
+  { text: 'Try Demo', href: '#das-ist-gaston' },
+  //{ text: 'Angebot anfordern', href: '/de/preise/' },
+]
+
 
 const description =
   "Payflink the digital menu allows guests to order and pay quickly and easily. It doesn't matter if the guests are in their establishment, on the road or at home. Payflink supports ordering in your business, Take Away and delivery."
 ---
 
-<MainLayout title={en.claim} description={description}>
-  <Container>
-    <Hero
-      name={en.name}
-      image={}
-      claim={en.claim}
-      from="Developed in Lucerne"
-      animation={{
-        src: '/assets/hero-gaston-vs-menu-en.svg',
-        alt: 'Ordering with menu tedious, with Payflink app quick and easy',
-      }}
-      links={callToActionLinks.en}
-    />
-  </Container>
-
+<MainLayout title={`${en.name} • ${en.claim}`} description={description}>
+  <div style="max-width: 100%;overflow-x: hidden;">
+    <Container>
+      <Hero
+        name={en.name}
+        image={}
+        claim={en.claim}
+        from="Developed in Lucerne"
+        animation={{
+          src: '/assets/hero-gaston-vs-menu-en.svg',
+          alt: 'Ordering with menu tedious, with Payflink app quick and easy',
+        }}
+        links={callToActionLinks}
+      />
+    </Container>
+  </div>
   <Customers />
 
-  <section class="background">
+  <section id="bestellen-mit-gaston" class="background">
     <Container>
-      <h2>News</h2>
-      <BlogTeaser language="en" />
-      <ButtonLink href="/en/blog/">More news</ButtonLink>
+      <div class="columns">
+        <div style="flex: 1">
+          <h2>Three steps to enjoyment</h2>
+          <p>
+            With Payflink, guests order and pay quickly and easily in their browser. Payflink runs on your guests' cell phones, without app download or installation
+          </p>
+          <ButtonList>
+            <ButtonLink href="bestell-und-zahlungs-ablauf-gastro-betriebe/"
+              >More informations
+            </ButtonLink>
+            <ButtonLink href="#das-ist-gaston">Try Demo</ButtonLink>
+          </ButtonList>
+          <img
+            src="/assets/illustrations/gaston-delivers.svg"
+            class="gaston-image"
+            alt="Payflink delivers"
+            width="171"
+            height="256"
+          />
+        </div>
+        <ol class="description-list ordered-list" style="flex: 1">
+          <li>
+            <div class="description-wrapper">
+              <h3>Scan QR code</h3>
+              <p>
+                Guests scan a QR code on your tables, which opens the ordering app in the browser. No download or installation is required.
+              </p>
+            </div>
+            <div class="image-wrapper">
+              <img
+                src="/assets/index/scan.svg"
+                alt="Scan QR code"
+                loading="lazy"
+                height="150"
+                width="130"
+              />
+            </div>
+          </li>
+          <li>
+            <div class="description-wrapper">
+              <h3>Order</h3>
+              <p>
+                Guests order an entire menu or just another drink or dish as they please.
+              </p>
+            </div>
+            <div class="image-wrapper">
+              <img
+                src="/assets/illustrations/order.svg"
+                alt="Order"
+                loading="lazy"
+                height="150"
+                width="133"
+              />
+            </div>
+          </li>
+          <li>
+            <div class="description-wrapper">
+              <h3>Pay</h3>
+              <p>
+                Your guests pay in the app or to the staff. In the app, guests conveniently pay via Twint, credit card or other digital payment method.
+              </p>
+            </div>
+            <div class="image-wrapper">
+              <img
+                src="/assets/illustrations/pay.svg"
+                alt="Pay"
+                loading="lazy"
+                height="150"
+                width="110"
+              />
+            </div>
+          </li>
+        </ol>
+      </div>
     </Container>
   </section>
 
-  <section id="partner-von-gaston">
+  <section id="so-hilft-gaston">
     <Container>
-      <h2>Our Partners</h2>
+      <div class="columns">
+        <div>
+          <h2>How Payflink helps</h2>
+          <p>
+            Payflink not only makes for happy guests, it also makes for happy staff.
+          </p>
+          <img
+            src="/assets/illustrations/gaston-hilft.svg"
+            alt="Payflink delivers"
+            class="gaston-image"
+            width="162"
+            height="256"
+          />
+        </div>
+        <ul class="emoji-list">
+          <li style="list-style: '🙅‍♂️  ';">
+            <h3>Overcoming staff shortages</h3>
+            <p>
+              Finding staff is a very big challenge. Payflink takes on some of the service work so your business can function with fewer staff.
+            </p>
+          </li>
+          <li style="list-style: '😍  ';">
+            <h3>Make guests happy</h3>
+            <p>
+              Your guests don't like to wait. With the Payflink ordering app, they can order and pay without waiting.
+            </p>
+          </li>
+          <li style="list-style: '💁‍♀️  ';">
+            <h3>More time for your guests</h3>
+            <p>
+              You are a host:in. You would like to "host" as much as possible. Payflink takes some of the work off your hands so you and your staff have more time to cater to your guests' needs.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </Container>
+  </section>
+
+  <section id="das-ist-gaston" class="background">
+    <Container>
+      <DemoEn/>
+    </Container>
+  </section>
+
+  <section>
+    <Container>
+      <h2>What guests say</h2>
+      <div class="columns">
+        <p class="introduction">
+          Payflink is very well received by guests overall. In a survey of <b>over 600 people</b> <b>85.1%</b> said they would <b>order with Payflink again!</b>
+        </p>
+        <div class="rating">
+          <img
+            style="max-width: 300px;"
+            src="/assets/stars.svg"
+            alt="4.25 Sterne"
+            height="50"
+            width="275"
+          />
+          <p>85.1%</p>
+        </div>
+      </div>
+    </Container>
+    <Testimonials />
+  </section>
+
+  <section id="verkaufskanaele" class="background">
+    <Container>
+      <h2>Sales channels</h2>
+      <p>
+        Payflink can be used in a wide variety of situations. 
+        Guests can order directly in your restaurant from the table, 
+        from home or on the go for:
+      </p>
+      <ul class="horizontal-list">
+        <li>
+          <div>
+            <img
+              src="/assets/illustrations/inhouse.svg"
+              alt="Inhouse"
+              loading="lazy"
+              height="180"
+              width="190"
+            />
+            <p>Inhouse <small>In operation at the table</small></p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img
+              src="/assets/illustrations/take-away.svg"
+              alt="Take Away"
+              loading="lazy"
+              height="180"
+              width="212"
+            />
+            <p>Take Away</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img
+              src="/assets/illustrations/delivery.svg"
+              alt="Delivery"
+              loading="lazy"
+              height="180"
+              width="157"
+            />
+            <p>Delivery</p>
+          </div>
+        </li>
+      </ul>
+      <p>
+        Not sure if Payflink covers your scenario? Don't hesitate to <a href="/en/contact/">contact</a> us.
+      </p>
+    </Container>
+  </section>
+
+  <section>
+    <Container>
+      <h2>Fits many restaurant concepts</h2>
+      <p style="margin-bottom: 2em;">
+        Whether it's a dining restaurant, bar or snack bar, Payflink fits most hospitality concepts. We are often asked which establishments Payflink fits best for. 
+        Our findings so far are as follows: Payflink fits when guests place and pay for orders. It doesn't matter so much what your offering or service concept is.
+      </p>
+      <KindOfEstablishmentsEn />
+    </Container>
+  </section>
+
+  <section id="geräte" class="background">
+    <Container>
+      <h2>Runs everywhere</h2>
+      <p>
+        Our order app runs on almost all devices, without installation for your guests.
+      </p>
+      <ul class="horizontal-list same-height">
+        <li>
+          <div>
+            <img
+              src="/assets/illustrations/smartphone.svg"
+              alt="Handy"
+              loading="lazy"
+              height="150"
+              width="154"
+            />
+            <p>Your guests' cell phones</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img
+              src="/assets/illustrations/webpage.svg"
+              alt="Take Away"
+              loading="lazy"
+              height="150"
+              width="182"
+            />
+            <p>Your website</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img
+              src="/assets/illustrations/tablet.svg"
+              alt="Delivery"
+              loading="lazy"
+              height="150"
+              width="134"
+            />
+            <p>Tablets</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img
+              src="/assets/illustrations/display.svg"
+              alt="Delivery"
+              loading="lazy"
+              height="150"
+              width="134"
+            />
+            <p>Kiosk displays</p>
+          </div>
+        </li>
+      </ul>
+    </Container>
+  </section>
+
+  <section>
+    <Container>
+      <div class="columns">
+        <div style="flex: 1;">
+          <h2>Can replace many things</h2>
+          <p>
+            Payflink is a revolutionary concept and can replace many devices accordingly. 
+            Devices that have lasted for decades can now be questioned. 
+            Why do you need a cash register when guests pay directly through an app? 
+            Why have a KK terminal when guests pay in Payflink with credit cards and Twint?
+          </p>
+          <p>Do you see where the journey is going?</p>
+          <div class="center" style="margin-block: 3em;">
+            <img
+              src="/assets/illustrations/trash.svg"
+              alt="Geräte in den Abfall geworfen."
+              width="200"
+              height="236"
+            />
+            <p style="font-size: 0.8em; margin-top: 2em;">
+              Icon picture. Please don't throw anything away! 
+              There are enough catering establishments that will take away your devices. 😉
+            </p>
+          </div>
+        </div>
+        <div style="flex: 1;">
+          <CanReplaceEn />
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <section id="stylen-mit-gaston" class="background">
+    <Container>
+      <h2>Your menu, your style</h2>
+      <p>
+        Your business has a unique style. Your menu should reflect this. 
+        You can customize the look at any time and also maintain the images and graphics for categories and items yourself.
+      </p>
+      <ul class="horizontal-list shadow">
+        <li>
+          <FixedPicture
+            src={import('../../images/el-mosquito.png')}
+            alt="El-Mosquito"
+            height={480}
+          />
+        </li>
+        <li>
+          <FixedPicture
+            src={import('../../images/habsburg.png')}
+            alt="Habsburg-Bar"
+            height={480}
+          />
+        </li>
+        <li>
+          <FixedPicture
+            src={import('../../images/sugoisushi.png')}
+            alt="Sugoi Sushi"
+            height={480}
+          />
+        </li>
+      </ul>
+    </Container>
+  </section>
+
+  <section>
+    <Container>
+      <div class="columns">
+        <!-- <div style="flex: 1;">
+          <h2>Des nouvelles</h2>
+          <BlogTeaser language="fr" />
+          <ButtonLink href="/fr/blog/">Plus de nouvelles</ButtonLink>
+        </div> -->
+        <div style="flex: 1;">
+          <!-- <h2>Roadmap</h2>
+          <p style="margin-bottom: 2em;">
+            Payflink est en constante évolution. Consultez notre feuille de route pour voir quelles fonctionnalités seront disponibles ensuite. 
+            Avez-vous une demande spéciale? Nous sommes heureux de l'inclure dans la feuille de route.
+          </p>
+          <ButtonLink
+            href="https://payflink.notion.site/Roadmap-von-Payflink-6644875d1fba4fe58cacfbf15e1ace7e"
+          >
+          Au Roadmap
+          </ButtonLink> -->
+        </div>
+      </div>
+    </Container>
+    <Container>
+      <h2>Our partners</h2>
       <ul class="image-list" style="justify-content: flex-start;">
         <li>
           <a href="https://www.flm.ch/">
@@ -77,84 +442,6 @@ const description =
 </MainLayout>
 
 <style lang="scss">
-  h1 {
-    text-align: center;
-    font-size: 4em;
-    margin: 0.5em 0;
-    line-height: 0.6em;
-
-    small {
-      font-size: 40%;
-      color: var(--text-color);
-    }
-  }
-
-  .claim {
-    font-style: italic;
-    text-align: center;
-    margin-bottom: 2em;
-  }
-
-  .animation {
-    position: relative;
-    margin: 0 max(-4em, -4vw) 0.2em;
-
-    img {
-      height: 100%;
-      width: 100%;
-    }
-  }
-
-  .usps {
-    font-size: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: fit-content;
-    list-style: none;
-    padding-left: 1em;
-
-    li {
-      padding-left: 1em;
-      padding-bottom: 0.6em;
-
-      &::before {
-        content: '● ';
-        position: absolute;
-        font-size: 1.6em;
-        transform: translate(-1em, -0.3em);
-        color: var(--primary-color);
-      }
-    }
-  }
-
-  .button-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5em 1em;
-    font-size: 1.3em;
-    margin-top: 4em;
-    margin-bottom: 1em;
-  }
-
-  ul.image-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3em 4em;
-    padding: 0;
-    margin-top: 4em;
-
-    li {
-      list-style: none;
-      margin-inline: auto;
-
-      ::global(img) {
-        height: 60px;
-        width: 100%;
-      }
-    }
-  }
-
   section {
     padding-block: 0 4em;
     min-height: 28rem;
@@ -162,6 +449,65 @@ const description =
     &.background {
       padding-block: 2em 4em;
     }
+  }
+
+  hr {
+    margin-block: 3em;
+    border: none;
+
+    @media (min-width: 40rem) {
+      border-top-width: 1px;
+      border-top-style: solid;
+      border-top-color: var(--primary-color);
+
+      .background & {
+        border-top-color: white;
+      }
+    }
+  }
+
+  .gaston-image {
+    display: block;
+    max-height: 16rem;
+    margin-inline: auto;
+    margin-block: 2em;
+  }
+
+  ul.emoji-list {
+    padding-left: 3em;
+  }
+
+  ul.image-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em 4em;
+    padding: 0;
+    margin-top: 2em;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      list-style: none;
+      margin-inline: 0;
+
+      ::global(img) {
+        width: 100%;
+      }
+
+      p {
+        margin-top: 0.2em;
+        text-align: center;
+      }
+    }
+  }
+
+  .same-height img {
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    max-height: 200px;
+    margin-inline: auto;
+    padding-block-start: 1em;
   }
 
   .background {
@@ -183,6 +529,32 @@ const description =
       background-repeat: no-repeat;
       background-size: auto 100%;
       z-index: -1;
+    }
+  }
+
+  .shadow :global(picture) {
+    filter: drop-shadow(0 14px 20px #0004);
+  }
+
+  .introduction {
+    flex: 2;
+    margin-block: 1em;
+  }
+
+  .rating {
+    flex: 1;
+    text-align: center;
+  }
+
+  .rating p {
+    font-size: 2em;
+    font-weight: bold;
+    margin-block: 0;
+  }
+
+  #payment {
+    .description-wrapper {
+      font-size: 0.7em;
     }
   }
 </style>
