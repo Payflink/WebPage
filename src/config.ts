@@ -231,7 +231,7 @@ const navigationEn: NavigationTree = [
       },
       {
         href: '/en/funktionsumfang/',
-        title: 'Range of functions',
+        title: 'Functions',
         description: 'Detailed listing of all features of Payflink.',
       },
       {
