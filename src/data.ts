@@ -9,12 +9,12 @@ export const teamMembers: TeamMember[] = [
   {
     name: 'Philip Schönholzer',
     image: '/assets/team/philip-schoenholzer-prev.jpg',
-    role: { de: 'Payflink Produkt-Entwickler', fr:'Développeur de produit', en: 'Payflink Product Developer', it:'' },
+    role: { de: 'Produkt-Entwickler', fr:'Développeur de produit', en: 'Product Developer', it:'' },
   },
   {
     name: 'Patrik Stutz',
     image: '/assets/team/patrik-stutz-prev.jpg',
-    role: { de: 'Payflink Software-Entwickler', fr:'Développeur de logiciels', en: 'Payflink Software Developer', it:'' },
+    role: { de: 'Software-Entwickler', fr:'Développeur de logiciels', en: 'Software Developer', it:'' },
   },
   {
     name: 'Mariana Barbosa',
