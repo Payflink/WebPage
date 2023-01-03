@@ -66,14 +66,6 @@ import Button from './Button.astro'
       </div>
     </Dialog>
 
-    <img
-      style="position: sticky;"
-      class="desktop qr-code"
-      src="/assets/qr-code-fr.svg"
-      alt="QR Code zur Demo"
-      loading="lazy"
-    />
-
     <div class="desktop">
       <p>
         <slot name="qr-code">...ou scannez le code QR avec votre téléphone portable.</slot>
@@ -128,18 +120,18 @@ import Button from './Button.astro'
                 loading="lazy"
                 src="https://demo.payflink.app/?table=2"
                 frameborder="0"></iframe>
-                <img
-      style="position: absolute;"
-      class="desktop qr-code"
-      src="/assets/qr-code-fr.svg"
-      alt="QR Code zur Demo"
-      loading="lazy"
-    />
             </div>
           </div>
         </Dialog>
       </div>
     </div>
+    <img
+      style="position: sticky;"
+      class="desktop qr-code"
+      src="/assets/qr-code-fr.svg"
+      alt="QR Code zur Demo"
+      loading="lazy"
+    />
   </div>
 </div>
 
