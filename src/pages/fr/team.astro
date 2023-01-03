@@ -4,15 +4,15 @@ import Container from '@components/Container.astro'
 import { teamMembers } from 'src/data';
 
 const description =
-  'Das Team von Payflink wird täglich in den Restaurants motiviert... endlich bestellen und bezahlen zu dürfen.'
+  "L'équipe Payflink est motivée chaque jour dans les restaurants... pour enfin pouvoir commander et payer. "
 
 ---
 
 <Main title="Unser Team" description={description}>
   <Container>
 
-    <h1>Unser Team</h1>
-    <p>Das Team von Payflink wird täglich in den Restaurants motiviert... endlich bestellen und bezahlen zu dürfen.</p>
+    <h1>Notre équipe</h1>
+    <p>L'équipe Payflink est motivée chaque jour dans les restaurants... pour enfin pouvoir commander et payer.</p>
     <div class="employee-list">
       {teamMembers.map(({ name, image, role }) => (
       <div class="employee">
@@ -20,7 +20,7 @@ const description =
         <p>
           <span class="employee-name">{name}</span>
           <br />
-          {role.de}
+          {role.fr}
         </p>
       </div>
       ))}

@@ -107,26 +107,26 @@ const navigationDe: NavigationTree = [
       // },
     ],
   },
-  // {
-  //   title: 'Über',
-  //   items: [
-  //     {
-  //       title: 'Uns',
-  //       href: '/de/ueber-uns/',
-  //       description: 'Was treibt uns an? Worauf legen wir wert?',
-  //     },
-  //     {
-  //       href: '/de/team/',
-  //       title: 'Team',
-  //       description: 'Wer versteckt sich hinter der Persona?',
-  //     },
+  {
+    title: 'Über',
+    items: [ 
+      {
+        title: 'Uns',
+        href: '/de/ueber-uns/',
+        description: 'Was treibt uns an? Worauf legen wir wert?',
+      },
+      {
+        href: '/de/team/',
+        title: 'Team',
+        description: 'Wer versteckt sich hinter der Persona?',
+      },
   //     {
   //       href: '/de/blog/',
   //       title: 'Blog',
   //       description: 'Der neuste Gossip, der gerade die Runden macht.',
   //     },
-  //   ],
-  // },
+    ],
+  },
   //{
     //title: 'Preise',
     //href: '/de/preise/',
@@ -177,26 +177,26 @@ const navigationFr: NavigationTree = [
       // },
     ],
   },
-  // {
-  //   title: 'Über',
-  //   items: [
-  //     {
-  //       title: 'Uns',
-  //       href: '/de/ueber-uns/',
-  //       description: 'Was treibt uns an? Worauf legen wir wert?',
-  //     },
-  //     {
-  //       href: '/de/team/',
-  //       title: 'Team',
-  //       description: 'Wer versteckt sich hinter der Persona?',
-  //     },
+  {
+    title: 'À propos',
+    items: [
+      {
+        title: 'De nous',
+        href: '/fr/ueber-uns/',
+        description: "Qu'est-ce qui nous motive? Qu'est-ce qu'on valorise?",
+      },
+      {
+        href: '/fr/team/',
+        title: 'Team',
+        description: 'Qui se cache derrière le personnage?',
+      },
   //     {
   //       href: '/de/blog/',
   //       title: 'Blog',
   //       description: 'Der neuste Gossip, der gerade die Runden macht.',
   //     },
-  //   ],
-  // },
+    ],
+  },
   //{
     //title: 'Preise',
     //href: '/de/preise/',
@@ -247,26 +247,26 @@ const navigationEn: NavigationTree = [
       // },
     ],
   },
-  // {
-  //   title: 'Über',
-  //   items: [
-  //     {
-  //       title: 'Uns',
-  //       href: '/de/ueber-uns/',
-  //       description: 'Was treibt uns an? Worauf legen wir wert?',
-  //     },
-  //     {
-  //       href: '/de/team/',
-  //       title: 'Team',
-  //       description: 'Wer versteckt sich hinter der Persona?',
-  //     },
+  {
+    title: 'About',
+    items: [
+      {
+        title: 'Us',
+        href: '/en/ueber-uns/',
+        description: 'What drives us? What do we value?',
+      },
+      {
+        href: '/en/team/',
+        title: 'Team',
+        description: 'Who is hiding behind the persona?',
+      },
   //     {
   //       href: '/de/blog/',
   //       title: 'Blog',
   //       description: 'Der neuste Gossip, der gerade die Runden macht.',
   //     },
-  //   ],
-  // },
+    ],
+  },
   //{
     //title: 'Preise',
     //href: '/de/preise/',
@@ -348,17 +348,17 @@ const siteMapDe: SiteMapGroup[] = [
       },
     ],
   },
-  // {
-  //   title: 'Über',
-  //   items: [
-  //     {
-  //       title: 'Uns',
-  //       href: '/de/ueber-uns/',
-  //     },
-  //     {
-  //       href: '/de/team/',
-  //       title: 'Team',
-  //     },
+  {
+    title: 'Über',
+    items: [
+      {
+        title: 'Uns',
+        href: '/de/ueber-uns/',
+      },
+      {
+        href: '/de/team/',
+        title: 'Team',
+      },
   //     {
   //       href: '/de/blog/',
   //       title: 'Blog',
@@ -367,8 +367,8 @@ const siteMapDe: SiteMapGroup[] = [
   //       href: '/de/kontakt/',
   //       title: 'Kontakt',
   //     },
-  //   ],
-  // },
+    ],
+  },
   {
     title: 'Highlights',
     items: [
@@ -443,17 +443,17 @@ const siteMapFr: SiteMapGroup[] = [
       },
     ],
   },
-  // {
-  //   title: 'Über',
-  //   items: [
-  //     {
-  //       title: 'Uns',
-  //       href: '/de/ueber-uns/',
-  //     },
-  //     {
-  //       href: '/de/team/',
-  //       title: 'Team',
-  //     },
+  {
+    title: 'À propos',
+    items: [
+      {
+        title: 'De nous',
+        href: '/fr/ueber-uns/',
+      },
+      {
+        href: '/fr/team/',
+        title: 'Team',
+      },
   //     {
   //       href: '/de/blog/',
   //       title: 'Blog',
@@ -462,8 +462,8 @@ const siteMapFr: SiteMapGroup[] = [
   //       href: '/de/kontakt/',
   //       title: 'Kontakt',
   //     },
-  //   ],
-  // },
+    ],
+  },
   // {
   //   title: 'Highlights',
   //   items: [
@@ -538,17 +538,17 @@ const siteMapEn: SiteMapGroup[] = [
       },
     ],
   },
-  // {
-  //   title: 'Über',
-  //   items: [
-  //     {
-  //       title: 'Uns',
-  //       href: '/de/ueber-uns/',
-  //     },
-  //     {
-  //       href: '/de/team/',
-  //       title: 'Team',
-  //     },
+  {
+    title: 'About',
+    items: [
+      {
+        title: 'Us',
+        href: '/en/ueber-uns/',
+      },
+      {
+        href: '/en/team/',
+        title: 'Team',
+      },
   //     {
   //       href: '/de/blog/',
   //       title: 'Blog',
@@ -557,8 +557,8 @@ const siteMapEn: SiteMapGroup[] = [
   //       href: '/de/kontakt/',
   //       title: 'Kontakt',
   //     },
-  //   ],
-  // },
+    ],
+  },
   // {
   //   title: 'Highlights',
   //   items: [
