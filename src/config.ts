@@ -285,36 +285,6 @@ const navigationEn: NavigationTree = [
   },
 ]
 
-
-// const navigationEn: NavigationTree = [
-//   {
-//     title: 'Demo',
-//     href: '/en/demo/',
-//   },
-//   // {
-//   //   title: 'About',
-//   //   items: [
-//   //     {
-//   //       title: 'Team',
-//   //       href: '/en/team/',
-//   //       description: 'Who is hiding behind the persona?',
-//   //     },
-//   //     {
-//   //       title: 'Blog',
-//   //       href: '/en/blog/',
-//   //       description: 'The latest gossip doing the rounds.',
-//   //     },
-
-//   //     {
-//   //       title: 'Mission',
-//   //       href: '/en/mission/',
-//   //       description: 'What is our mission? What drives us?',
-//   //     },
-//   //   ],
-//   // },
-//   { title: 'Contact', href: '/en/contact/' },
-// ]
-
 export const globalNavigation: Navigation = {
   de: navigationDe,
   fr: navigationFr,
