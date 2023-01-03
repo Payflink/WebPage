@@ -150,17 +150,17 @@ const navigationFr: NavigationTree = [
     items: [
       {
         title: 'Menu Numérique',
-        href: '/fr/digitale-speisekarte/',
+        href: '/fr/menu-numerique/',
         description:
           'Présentez votre offre sous son meilleur avec notre menu digital.',
       },
       {
         title: 'Application de commande',
-        href: '/fr/restaurant-bestell-app/',
+        href: '/fr/application-de-commande-de-restaurant/',
         description: 'Découvrez notre application de commande de restaurant.',
       },
       {
-        href: '/fr/funktionsumfang/',
+        href: '/fr/fonctions/',
         title: 'Étendue des fonctions',
         description: 'Liste détaillée de toutes les fonctionnalités de Payflink.',
       },
@@ -182,7 +182,7 @@ const navigationFr: NavigationTree = [
     items: [
       {
         title: 'De nous',
-        href: '/fr/ueber-uns/',
+        href: '/fr/a-propos-de-nous/',
         description: "Qu'est-ce qui nous motive? Qu'est-ce qu'on valorise?",
       },
       {
@@ -206,11 +206,11 @@ const navigationFr: NavigationTree = [
     title: 'Essayez la démo',
   },
   {
-    href: '/fr/termin/',
+    href: '/fr/rencontre/',
     title: 'Prendre rendez-vous',
   },
   {
-    href: '/fr/kontakt/',
+    href: '/fr/contacter/',
     title: 'Contacter',
   },
 ]
@@ -220,17 +220,17 @@ const navigationEn: NavigationTree = [
     items: [
       {
         title: 'Digital menu',
-        href: '/en/digitale-speisekarte/',
+        href: '/en/digital-menu/',
         description:
           'Present your offer in the best light with our digital menu.',
       },
       {
         title: 'Order app',
-        href: '/en/restaurant-bestell-app/',
+        href: '/en/restaurant-order-app/',
         description: 'Discover our restaurant ordering app.',
       },
       {
-        href: '/en/funktionsumfang/',
+        href: '/en/functions/',
         title: 'Functions',
         description: 'Detailed listing of all features of Payflink.',
       },
@@ -252,7 +252,7 @@ const navigationEn: NavigationTree = [
     items: [
       {
         title: 'Us',
-        href: '/en/ueber-uns/',
+        href: '/en/about-us/',
         description: 'What drives us? What do we value?',
       },
       {
@@ -423,15 +423,15 @@ const siteMapFr: SiteMapGroup[] = [
     items: [
       {
         title: 'Menu numérique',
-        href: '/fr/digitale-speisekarte/',
+        href: '/fr/menu-numerique/',
       },
       {
         title: 'Application de commande de restaurant',
-        href: '/fr/restaurant-bestell-app/',
+        href: '/fr/application-de-commande-de-restaurant/',
       },
       {
         title: 'Étendue des fonctions',
-        href: '/fr/funktionsumfang/',
+        href: '/fr/fonctions/',
       },
       //{
         //title: 'Preise',
@@ -448,7 +448,7 @@ const siteMapFr: SiteMapGroup[] = [
     items: [
       {
         title: 'De nous',
-        href: '/fr/ueber-uns/',
+        href: '/fr/a-propos-de-nous/',
       },
       {
         href: '/fr/team/',
@@ -518,15 +518,15 @@ const siteMapEn: SiteMapGroup[] = [
     items: [
       {
         title: 'Digital menu',
-        href: '/en/digitale-speisekarte/',
+        href: '/en/digital-menu/',
       },
       {
         title: 'Restaurant order app',
-        href: '/en/restaurant-bestell-app/',
+        href: '/en/restaurant-order-app/',
       },
       {
         title: 'Functions',
-        href: '/en/funktionsumfang/',
+        href: '/en/functions/',
       },
       //{
         //title: 'Preise',
@@ -543,7 +543,7 @@ const siteMapEn: SiteMapGroup[] = [
     items: [
       {
         title: 'Us',
-        href: '/en/ueber-uns/',
+        href: '/en/about-us/',
       },
       {
         href: '/en/team/',
@@ -634,7 +634,7 @@ const footerFr: FooterInfo = {
   or: 'ou alors',
   appointment: {
     title: 'prenez rendez-vous',
-    url: '/fr/termin/',
+    url: '/fr/rencontre/',
   },
 }
 
