@@ -45,14 +45,12 @@ export const metaData: MetaData = {
 export const callToActionLinks: Record<Language, CallToAction[]> = {
   de: [
     { href: '/de/demo/', text: 'Demo ausprobieren' },
-    // { href: '/de/preise/', text: 'Unverbindliches Angebot' },
   ],
   fr: [
     { href: '/fr/démo/', text: 'Essayez la démo' },
   ],
   en: [
     { href: '/en/demo/', text: 'Try demo' },
-    // { href: '/en/contact/', text: 'Request a quote' },
   ],
   it: [],
 }
@@ -227,7 +225,7 @@ const navigationEn: NavigationTree = [
       {
         title: 'Order app',
         href: '/en/restaurant-order-app/',
-        description: 'Discover our restaurant ordering app.',
+        description: 'Discover our restaurant order app.',
       },
       {
         href: '/en/functions/',
