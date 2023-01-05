@@ -3,12 +3,22 @@
   functions = "netlify/functions"
   publish = "dist"
 
+[dev]
+  command = "astro dev --host"
+
 [[redirects]]
   from = "/"
   to = "/de/"
   force = true
   status = 302
   conditions = {Language = ["de"]}
+
+[[redirects]]
+  from = "/"
+  to = "/fr/"
+  force = true
+  status = 302
+  conditions = {Language = ["fr"]}
 
 [[redirects]]
   from = "/"

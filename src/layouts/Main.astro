@@ -7,7 +7,7 @@ import Header from '@components/Header.astro'
 import Footer from '@components/Footer.astro'
 
 import { metaData, generalTitle } from 'src/config'
-import { addSlashToEndIfMissing, mkIsCurrentPage } from 'src/utils'
+import { addSlashToEndIfMissing, getCurrentLanguage, mkIsCurrentPage } from 'src/utils'
 import Announcement from '@components/Announcement.astro'
 
 export type Props = {
@@ -23,7 +23,7 @@ const canonicalURL = addSlashToEndIfMissing(
 )
 
 const isCurrentPage = mkIsCurrentPage(Astro.url.pathname)
-const lang = isCurrentPage('/de/') ? 'de' : 'en'
+const lang = getCurrentLanguage(Astro.url.pathname)
 
 const translatedMetaData = metaData[lang]
 
@@ -101,7 +101,9 @@ const production = import.meta.env.CONTEXT === 'production'
     <Announcement>
       {lang === 'de' ? 
       (<p><b>Gaston heisst jetzt Payflink!</b>&emsp;<a href="/de/blog/gaston-ist-jetzt-payflink/">➜&nbsp;Zum&nbsp;Blogbeitrag</a></p>) 
-      : 
+      : lang === 'fr' ?
+      (<p><b>Gaston heisst jetzt Payflink!</b>&emsp;<a href="/fr/gaston-ist-jetzt-payflink/">➜&nbsp;Zum&nbsp;Blogbeitrag</a></p>)
+      :
       <p><b>Gaston is now Payflink!</b>&emsp;<a href="/en/blog/gaston-is-now-payflink/">➜&nbsp;To&nbsp;the&nbsp;blogpost</a></p>}
     </Announcement>
     <main>
