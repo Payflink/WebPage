@@ -6,19 +6,20 @@ import Button from './Button.astro'
 <div class="columns" style="align-items: start;">
   <div style=" flex: 1;">
     <slot name="intro">
-      <h2>Payflink Bestellfunktion</h2>
+      <h2>Demo of the Payflink app</h2>
       <p>
-        So sehen Ihre Gäste unsere Bestell App, direkt auf dem Handy oder auf Ihrer Webseite. Schlicht, einfach, zuvorkommend. Alles ohne Installation einer App und ohne Registrierung.
+        The Payflink demo shows how the menu is displayed, how the order
+        process works and how the payment processing takes place.
       </p>
       <p>
-        Sie gestalten Ihre Speisekarte nach Ihrem Gusto, farbenfroh und mit Bilder oder einfach nur mit Text.
+        You design your menu according to your taste, colorful and with pictures or just with text.
       </p>
     </slot>
 
     <Dialog client:visible>
       <Button slot="openElement">
         <p class="test-now">
-          <slot name="try">Hier ausprobieren!</slot>
+          <slot name="try">Try here!</slot>
         </p>
       </Button>
       <div class="full-screen-demo">
@@ -27,22 +28,21 @@ import Button from './Button.astro'
             <slot name="desktop">
               <h3>Payflink Demo</h3>
               <p>
-                Bei dieser Demo handelt es sich um ein Testsystem. Hier finden <b
-                  >keine echten Bestellungen oder Zahlungen</b
-                > statt. Testen Sie Payflink entsprechend nach Lust und Laune.
+                This demo is on a test system. <b>No real orders or payments</b> take
+                place. Test Payflink without hesitation.
               </p>
               <ol>
-                <li>Fügen Sie etwas zur Bestellung hinzu.</li>
-                <li>Senden Sie die Bestellung ab.</li>
+                <li>Add something to the order.</li>
+                <li>Submit the order.</li>
                 <li>
-                  Klicken Sie bei der Zahlung auf <b>VISA</b>.
+                  Choose <b>VISA</b> during payment.
                   <ul>
-                    <li>Test-Karte <b>4900 0000 0000 0094</b></li>
-                    <li>Verfalldatum <b>06/25</b></li>
-                    <li>Prüfziffer (CVV) <b>123</b></li>
+                    <li>Number <b>4900 0000 0000 0094</b></li>
+                    <li>Expiration date <b>06/25</b></li>
+                    <li>Verification (CVV) <b>123</b></li>
                   </ul>
-                  Keine Angst, es findet keine echte Transaktion statt und entsprechend
-                  <b>wird kein Geld abgebucht.</b>
+                  Do not worry, no real transaction takes place and therefore <b> 
+                  no money will be transfererd.</b>
                 </li>
               </ol>
             </slot>
@@ -51,7 +51,7 @@ import Button from './Button.astro'
             <slot name="mobile">
               <h3>Payflink Demo</h3>
               <p>
-                Zahlung mit VISA Nr. 4900&nbsp;0000&nbsp;0000&nbsp;0094, Verfall
+                Pay with VISA No. 4900&nbsp;0000&nbsp;0000&nbsp;0094, Expir.
                 06/25, CVV 123
               </p>
             </slot>
@@ -66,9 +66,10 @@ import Button from './Button.astro'
         </div>
       </div>
     </Dialog>
+
     <div class="desktop">
       <p>
-        <slot name="qr-code">... oder mit dem Handy den QR-Code scannen.</slot>
+        <slot name="qr-code">...or scan the QR code with your mobile phone.</slot>
       </p>
     </div>
   </div>
@@ -91,13 +92,12 @@ import Button from './Button.astro'
                 <slot name="desktop">
                   <h3>Payflink Demo</h3>
                   <p>
-                    Bei dieser Demo handelt es sich um ein Testsystem. Hier
-                    finden <b>keine echten Bestellungen oder Zahlungen</b> statt.
-                    Testen Sie Payflink entsprechend nach Lust und Laune.
+                    This demo is on a test system. <b>No real orders or payments</b> take
+                    place. Test Payflink without hesitation.
                   </p>
                   <ol>
-                    <li>Fügen Sie etwas zur Bestellung hinzu.</li>
-                    <li>Senden Sie die Bestellung ab.</li>
+                    <li>Add something to the order.</li>
+                    <li>Submit the order.</li>
                     <li>
                       Klicken Sie bei der Zahlung z.B. auf Twint. Keine Angst,
                       es findet keine echte Transaktion statt und entsprechend <b
@@ -111,8 +111,8 @@ import Button from './Button.astro'
                 <slot name="mobile">
                   <h3>Payflink Demo</h3>
                   <p>
-                    Wählen Sie bei der Zahlung z.B. Twint. Es wird kein Geld
-                    abgebucht.
+                    Pay with VISA No. 4900&nbsp;0000&nbsp;0000&nbsp;0094, Expir.
+                    06/25, CVV 123
                   </p>
                 </slot>
               </div>
@@ -131,7 +131,7 @@ import Button from './Button.astro'
     <img
       style="position: sticky;"
       class="desktop qr-code"
-      src="/assets/qr-code.svg"
+      src="/assets/qr-code-en.svg"
       alt="QR Code zur Demo"
       loading="lazy"
     />

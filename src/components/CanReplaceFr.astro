@@ -1,0 +1,70 @@
+---
+type CanReplaceFr = {
+  title: string
+  description: string
+  image: string
+}
+const canReplaceFr: CanReplaceFr[] = [
+  {
+    title: 'Site web',
+    description:
+      'Vous voulez décrire votre établissement sur votre site web et afficher votre menu? Vous pouvez le faire avec Payflink!',
+    image: '🌐',
+  },
+  {
+    title: 'Carte de menu classique',
+    description:
+      "Les établissements disposant d'un menu numérique n'ont souvent plus de menu imprimé. Pour les clients qui n'ont pas de téléphone portable sous la main, vous pouvez éventuellement mettre des tablettes à disposition.",
+    image: '📜',
+  },
+  {
+    title: 'Caisse',
+    description:
+      'Payflink peut remplacer votre caisse classique. Contactez-nous et nous verrons si votre établissement peut fonctionner uniquement avec Payflink.',
+    image: '💶',
+  },
+  {
+    title: 'Terminal de cartes de crédit',
+    description:
+      'Avec Payflink, vos clients peuvent payer avec Twint et leur carte de crédit. Un terminal est superflu.',
+    image: '💳',
+  },
+  {
+    title: 'Orderman',
+    description:
+      'Grâce à Payflink, les clients transmettent eux-mêmes leurs commandes. Votre personnel peut également saisir la commande directement dans Payflink.',
+    image: '✏️',
+  },
+  {
+    title: "Système d'appel des invités",
+    description:
+      'Avec Payflink, vous envoyez un SMS à vos invités dès que la commande est prête. Ainsi, les appareils tels que les pagers pour invités ne sont plus nécessaires.',
+    image: '🔔',
+  },
+]
+---
+
+<ul>
+  {
+    canReplaceFr.map(({ title, description, image }) => (
+      <li data-image={image}>
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  ul {
+    padding-left: 4em;
+  }
+
+  li:first-of-type h3 {
+    margin-top: 0;
+  }
+
+  li::marker {
+    content: attr(data-image) '   ';
+  }
+</style>

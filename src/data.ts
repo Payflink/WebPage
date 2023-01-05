@@ -2,38 +2,43 @@ import type { TeamMember } from './types'
 
 export const teamMembers: TeamMember[] = [
   {
-    name: 'Philip Schönholzer',
-    image: '/assets/team/philip-schoenholzer-prev.jpg',
-    role: { de: 'Produkt-Entwickler', en: 'Product Developer' },
+    name: 'Shaban Ademi',
+    image: '/assets/team/shaban-ademi.jpg',
+    role: { de: 'Payflink Mitgründer | Marketing & Sales', fr:'CO-Fondateur | Marketing & Ventes', en: 'Payflink CO-Founder | Marketing & Sales', it:'' },
   },
   {
-    name: 'Mariana Barbosa',
-    image: '/assets/team/mariana-17-small.jpg',
-    role: { de: 'Marketing', en: 'Marketing' },
+    name: 'Philip Schönholzer',
+    image: '/assets/team/philip-schoenholzer-prev.jpg',
+    role: { de: 'Produkt-Entwickler', fr:'Développeur de produit', en: 'Product Developer', it:'' },
   },
   {
     name: 'Patrik Stutz',
     image: '/assets/team/patrik-stutz-prev.jpg',
-    role: { de: 'Software-Entwickler', en: 'Software Developer' },
+    role: { de: 'Software-Entwickler', fr:'Développeur de logiciels', en: 'Software Developer', it:'' },
   },
   {
-    name: 'David Decker',
-    image: '/assets/team/david-decker-prev.jpg',
-    role: { de: 'Software-Entwickler', en: 'Software Developer' },
+    name: 'Mariana Barbosa',
+    image: '/assets/team/mariana-17-small.jpg',
+    role: { de: 'Marketing', fr:'Marketing', en: 'Marketing', it:'' },
   },
-  {
-    name: 'Roman Schaller',
-    image: '/assets/team/roman-schaller-prev.jpg',
-    role: { de: 'Beratung', en: 'Consulting' },
-  },
-  {
-    name: 'Linus Hüsler',
-    image: '/assets/team/linus-huesler-prev.jpg',
-    role: { de: 'Beratung', en: 'Consulting' },
-  },
-  {
-    name: 'Markus Tanner',
-    image: '/assets/team/markus-tanner-prev.jpg',
-    role: { de: 'Beratung', en: 'Consulting' },
-  },
+  // {
+  //   name: 'David Decker',
+  //   image: '/assets/team/david-decker-prev.jpg',
+  //   role: { de: 'Software-Entwickler', en: 'Software Developer' },
+  // },
+  // {
+  //   name: 'Roman Schaller',
+  //   image: '/assets/team/roman-schaller-prev.jpg',
+  //   role: { de: 'Beratung', en: 'Consulting' },
+  // },
+  // {
+  //   name: 'Linus Hüsler',
+  //   image: '/assets/team/linus-huesler-prev.jpg',
+  //   role: { de: 'Beratung', en: 'Consulting' },
+  // },
+  // {
+  //   name: 'Markus Tanner',
+  //   image: '/assets/team/markus-tanner-prev.jpg',
+  //   role: { de: 'Beratung', en: 'Consulting' },
+  // },
 ]

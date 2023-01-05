@@ -4,26 +4,27 @@ import Container from '@components/Container.astro'
 import Demo from '@components/Demo.astro'
 import FixedPicture from '@components/FixedPicture.astro'
 import ButtonLink from '@components/ButtonLink.astro'
+import DemoEn from '@components/DemoEn.astro'
 
 const description =
-  'The Payflink demo shows how the menu is displayed, how the ordering process works and how payments are processed.'
+  'The Payflink demo shows how the menu is displayed, how the order process works and how payments are processed.'
 ---
 
 <MainLayout title="Demo of the order app" description={description}>
   <Container>
     <section>
-      <h1>Demo of the order app</h1>
+      <h1>Demo of the Payflink app</h1>
       <p>
-        The Payflink demo shows how the menu is displayed, how the ordering
+        The Payflink demo shows how the menu is displayed, how the order
         process works and how the payment processing takes place.
       </p>
     </section>
     <section>
-      <Demo>
+      <DemoEn>
         <Fragment slot="intro">
           <h2>Payflink Order App</h2>
           <p>
-            This is how your guests will see our ordering app, directly on their
+            This is how your guests will see our order app, directly on their
             cell phone or on your website. Simple, easy, courteous. All without
             installation of an app and without registration.
           </p>
@@ -34,7 +35,7 @@ const description =
         </Fragment>
         <Fragment slot="try">Try now!</Fragment>
         <Fragment slot="qr-code"
-          >... or scan the QR code with your mobile phone.</Fragment
+          >...or scan the QR code with your mobile phone.</Fragment
         >
         <Fragment slot="desktop">
           <h3>Payflink Demo</h3>
@@ -69,7 +70,7 @@ const description =
             </p>
           </div>
         </Fragment>
-      </Demo>
+      </DemoEn>
     </section>
     <section>
       <p>
@@ -78,7 +79,7 @@ const description =
         a big chance that this is already possible today. Contact us in that
         case.
       </p>
-      <ButtonLink href="/de/contact/">Contact us</ButtonLink>
+      <ButtonLink href="/en/contact/">Contact us</ButtonLink>
     </section>
   </Container>
 </MainLayout>

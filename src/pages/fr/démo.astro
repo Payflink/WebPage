@@ -1,0 +1,32 @@
+---
+import MainLayout from '@layouts/Main.astro'
+import Container from '@components/Container.astro'
+import Démo from '@components/Démo.astro'
+import FixedPicture from '@components/FixedPicture.astro'
+import ButtonLink from '@components/ButtonLink.astro'
+
+const description =
+  'La démo Payflink montre comment le menu est affiché, comment fonctionne le processus de commande et comment le paiement est traité.'
+---
+
+<MainLayout title="Démo de l'application de commande" description={description}>
+  <Container>
+    <section>
+      <h1>Démo de l'application de commande</h1>
+      <p>
+        La démo Payflink montre comment le menu est affiché, comment fonctionne le processus de commande et comment le paiement est traité.
+      </p>
+    </section>
+    <section>
+      <Démo />
+    </section>
+    <section>
+      <p>
+        Payflink a beaucoup d'options de paramétrage, vous ne voyez qu'une seule configuration possible. 
+        Si vous voulez quelque chose de différent, il y a de fortes chances que cela soit déjà possible aujourd'hui. 
+        Dans ce cas, veuillez nous contacter.
+      </p>
+      <ButtonLink href="/fr/contacter/">Contacter nous</ButtonLink>
+    </section>
+  </Container>
+</MainLayout>

@@ -1,0 +1,285 @@
+---
+import Main from "@layouts/Main.astro"
+import Container from "@components/Container.astro";
+import { Picture } from '@astrojs/image/components';
+
+const description = 'Payflink offers a very wide range of services and is extremely flexible. In this way, we ensure that Payflink is optimally tailored to your business.'
+---
+
+<Main title="Functions" description={description}>
+  <Container>
+    <h1>Scope of functions</h1>
+    <p>Payflink offers a very wide range of services and is extremely flexible. 
+       In this way, we ensure that Payflink is optimally tailored to your business.
+    </p>
+    <div class="columns">
+      <div style="flex: 1">
+        <h2>Components</h2>
+        <p>
+          With Payflink, you have the choice of what you want to solve with Payflink. Do you just want to support payment? Or just the menu? Or the menu, ordering and payment? Just as you like.
+        </p>
+      </div>
+
+      <ul style="flex: 1">
+        <li style="list-style: '☕️  ';">
+          <h3>Choose <small>mebu</small></h3>
+          <p>Guests choose the food and drinks they want from your menu.</p>
+        </li>
+        <li style="list-style: '📡  ';">
+          <h3>Order</h3>
+          <p>Guests can order the selected products directly through Payflink or through your staff.</p>
+        </li>
+        <li style="list-style: '💳  ';">
+          <h3>Pay</h3>
+          <p>Guests can pay when ordering or after consumption, depending on the setting. Of course, payment via the staff is still possible.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="columns">
+      <div style="flex: 1">
+        <h2>Procedure</h2>
+        <p>What suits your business? Should guests pay each time they order or once at the end of the visit?</p>
+      </div>
+      <ul style="flex: 1">
+        <li style="list-style: '🔁  ';">
+          <h3>Payment when ordering</h3>
+          <p>Guests pay directly each time they order to receive the items they want.</p>
+        </li>
+        <li style="list-style: '1️⃣  ';">
+          <h3>Pay at the end of the visit</h3>
+          <p>Guests order from staff and via Payflink and pay for all ordered items at the end either via Payflink or staff.</p>
+        </li>
+        <li style="list-style: '🔔  ';">
+          <h3>Pickup message via SMS</h3>
+          <p>Do you want your guests to pick up the food as soon as it is ready? In that case Payflink will record the phone number when the order is placed and inform the guests as soon as the food is ready.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="columns">
+      <div style="flex: 1">
+        <h2>Means of payment</h2>
+        <p>Payflink offers all means of payment from your payment provider.</p>
+        <img alt="Twint" src="/assets/index/twint.svg" />
+        <img alt="card" src="/assets/index/card.svg" />
+      </div>
+      <ul style="flex: 1">
+        <li style="list-style: '🏦  ';">
+          <h3>Twint</h3>
+          <p>Twint is used by many guests. With Gaston, paying with Twint is quick and easy.</p>
+        </li>
+        <li style="list-style: '💳  ';">
+          <h3>Visa und MasterCard</h3>
+          <p>Visa and MasterCard are used less frequently than Twint. However, once the guest has entered their data, subsequent payments can be processed without re-entering the information. 
+            Payflink does not store any credit card data and is therefore very secure.</p>
+        </li>
+        <li style="list-style: '💰  ';">
+          <h3>Other payment methods</h3>
+          <p>Datatrans and Worldline offer many other payment methods: American Express, Diners, Maestro, etc.</p>
+        </li>
+        <li style="list-style: '💵  ';">
+          <h3>Cash</h3>
+          <p>It is not possible to pay directly with cash in Gaston. However, it is possible to order through Gaston and pay with cash to the staff.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="columns">
+      <div style="flex: 1">
+        <h2>Inhouse, Take&nbsp;Away, Delivery</h2>
+        <p>No matter where your guests are located: Gaston can take the order and make the payment.</p>
+      </div>
+      <ul style="flex: 1">
+        <li style="list-style: '🏢  ';">
+          <h3>Inhouse <small>Ordering</small></h3>
+          <p>With in-house ordering, guests sit at your establishment and order directly from their table using their own cell phones. This is Gaston's flagship discipline.</p>
+        </li>
+        <li style="list-style: '🚴 ';">
+          <h3>Take Away</h3>
+          <p>Through Gaston, guests can order food and beverages on the go and pick them up at your facility.</p>
+        </li>
+        <li style="list-style: '🏠  ';">
+          <h3>Delivery</h3>
+          <p>Gaston also takes orders from guests who are at home.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="columns">
+      <div style="flex: 1">
+        <h2>Ordering options</h2>
+        <Picture alt="Order with multiple items and the option to tip."
+          src={import("/src/images/bestellung.png")} widths={[300, 600, 900]} sizes="300px" sizes="300px" />
+      </div>
+      <ul style="flex: 1">
+        <li style="list-style: '🪙  ';">
+          <h3>Tip</h3>
+          <p>It is also possible to accept tips with Gaston. The feature is actively used by guests, which is also appreciated by your staff.</p>
+        </li>
+        <li style="list-style: '%  ';">
+          <h3>Discount codes</h3>
+          <p>
+            By entering a code, customers receive discounts on an order. You can grant discounts on orders to a special group of customers or for marketing purposes.
+          </p>
+        </li>
+        <li style="list-style: '⛳️  ';">
+          <h3>Multiple courses</h3>
+          <p>Would you like to give your guests the opportunity to create multiple courses with one order? Guests can assign each dish to the desired course.</p>
+        </li>
+        <li style="list-style: '⏱  ';">
+          <h3>Ordering/opening hours</h3>
+          <p>Do you want to be able to order only at certain times? You can define the times at which it is possible to order.</p>
+        </li>
+        <li style="list-style: '🧾  ';">
+          <h3>Receipt</h3>
+          <p>If the guests should receive a receipt in Gaston, you can configure the desired texts for the receipt.</p>
+        </li>
+        <li style="list-style: '📃  ';">
+          <h3>Terms and conditions</h3>
+          <p>If there is a payment at the time of ordering, your guests must accept the terms and conditions. In Gaston, your guests can view your terms and conditions when ordering and accept them directly with the order button.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="columns">
+      <div style="flex: 1">
+        <h2>Multiple menus</h2>
+        <p>Do you have different offerings depending on the time of day? Or is your kitchen not open continuously? With Gaston, you have the ability to customize your offerings based on time and location.</p>
+      </div>
+      <ul style="flex: 1">
+        <li style="list-style: '🧭  ';">
+          <h3>Location dependent offer</h3>
+          <p>Are certain dishes only available in-house, or only at Take Away and Delivery? 
+            Do you have tables in the garden where only drinks can be ordered? With Gaston you can enter multiple menus and assign them to a location (e.g. Take Away, table 7 - 17).</p>
+        </li>
+        <li style="list-style: '⏱  ';">
+          <h3>Time-dependent offer</h3>
+          <p>Is your kitchen closed in the afternoon? With Gaston you enter a menu "Kitchen", which is for example only available from 11-14 o'clock and from 18-21 o'clock.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="columns">
+      <div style="flex: 1">
+        <h2>Dynamic prices</h2>
+        <p>Do you offer special prices at happy hour? Are your prices adjusted for takeway and delivery? Dynamic pricing allows you to set your prices based on location and time.</p>
+      </div>
+      <ul style="flex: 1">
+        <li style="list-style: '🧭  ';">
+          <h3>Location-dependent prices</h3>
+          <p>Location-dependent prices allow you to offer different prices for specific tables (e.g. in the garden) or for takeaway and delivery on individual items or options of items.</p>
+        </li>
+        <li style="list-style: '⏱  ';">
+          <h3>Time dependent prices</h3>
+          <p>Are your prices dependent on the day of the week or the time of day? Time-dependent prices allow you to offer individual items or options of items at different prices depending on the time.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="columns">
+      <div style="flex: 1">
+        <h2>Item options</h2>
+        <Picture alt="Options for a pizza. Small pizza, more ingredients, more plates"
+          src={import("/src/images/optionen.png")} widths={[300, 600, 900]} sizes="300px" />
+      </div>
+      <ul style="flex: 1">
+        <li style="list-style: '💎  ';">
+          <h3>Options subject to a charge</h3>
+          <p>Certain options require a surcharge or discount. With Payflink, you decide what an option should cost. It is even possible to set option prices based on time and location.</p>
+        </li>
+        <li style="list-style: '😁  ';">
+          <h3>Free options</h3>
+          <p>Free options are also possible with Gaston. There are almost no limits to what you can do with the options.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="columns">
+      <div style="flex: 1">
+        <h2>Item variations</h2>
+        <Picture
+          alt="Different amounts of the same wine and their price is displayed directly on the menu."
+          src={import("/src/images/variationen.png")} widths={[300, 600, 900]} sizes="300px" />
+      </div>
+      <ul style="flex: 1">
+        <li style="list-style: '👨‍👩‍👧‍👦  ';">
+          <h3>Different portions</h3>
+          <p>Do you have different portions for the same dish? For example, a small and a large portion or the same dish for several people? 
+            With Payflink you can clearly display different portions with corresponding prices.</p>
+        </li>
+        <li style="list-style: '🍷  ';">
+          <h3>Different quantities</h3>
+          <p>Especially with beverages it often happens that you want to offer different quantities. No matter if 3 dl or a bottle, the guests can see transparently what you offer and at which price.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="columns">
+      <div style="flex: 1">
+        <h2>Cash register connection</h2>
+        <p>Gaston can send orders directly to your cash register and import the item information including prices from your cash register.</p>
+      </div>
+      <ul style="flex: 1">
+        <li style="list-style: '📡  ';">
+          <h3>Send order<wbr>/payment to cash register</h3>
+          <p>Payflink sends the orders and payments to the cash register. This allows you to see the orders on the cash register and if the payment has already been completed. 
+            The tip is transmitted as a separate order so that accrual is possible.</p>
+        </li>
+        <li style="list-style: '🚀  ';">
+          <h3>Import items from checkout</h3>
+          <p>If you maintain all product information and prices in your checkout, we will automatically import the latest information when changes are made. This way your offer is always up to date without any additional effort.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="columns">
+      <div style="flex: 1">
+        <h2>Own design</h2>
+        <p>Your business has its own style. Your menu should reflect this. You design your menu according to your taste, colorful and with pictures or plain and simple text.</p>
+        <Picture alt="Menu with pictures for each category." src={import("/src/images/el-mosquito.png")}
+          widths={[300, 600, 900]} sizes="300px" />
+
+      </div>
+      <ul style="flex: 1">
+        <li style="list-style: '💈  ';">
+          <h3>Logo</h3>
+          <p>Your logo is large and clearly visible on the menu at all times. This way you will be remembered.</p>
+        </li>
+        <li style="list-style: '🎨  ';">
+          <h3>Colors</h3>
+          <p>Choose your accent, text and background colors. If you would like to specially color other elements, we will be happy to do this for you upon request.</p>
+        </li>
+        <li style="list-style: '✏️  ';">
+          <h3>Fonts</h3>
+          <p>You can either choose from over 1,000 fonts or use your own house font in the menu.</p>
+        </li>
+        <li style="list-style: '🏞  ';">
+          <h3>Images</h3>
+          <p>If you wish, images can be placed on each item. In addition, you can define two images for each category, which will be displayed above and below the category.</p>
+
+        </li>
+        <li style="list-style: '📝  ';">
+          <h3>Texts</h3>
+          <p>Payflink allows you to define a variety of texts yourself, if you wish. 
+            This includes an introduction to your offer and description of your business, free texts for explanation or notes in each category, terms and conditions and even texts on the receipt.</p>
+        </li>
+      </ul>
+    </div>
+  </Container>
+</Main>
+
+<style lang="scss">
+  h2 {
+    margin-top: 3em;
+  }
+
+  ul {
+    padding-inline-start: 3.5em;
+  }
+
+  // :global(img) {
+  //   width: 300px;
+  // }
+
+  img {
+    width: 35%;
+    margin-right: 10%;
+  }
+</style>

@@ -4,41 +4,40 @@ import Container from '@components/Container.astro'
 import ButtonLink from '@components/ButtonLink.astro'
 
 import FixedPicture from '@components/FixedPicture.astro'
-import Demo from '@components/Demo.astro'
+import Démo from '@components/Démo.astro'
 import { metaData } from 'src/config'
 import BlogTeaser from '@components/BlogTeaser.astro'
 import Testimonials from '@components/Testimonials.astro'
-import KindOfEstablishments from '@components/KindOfEstablishments.astro'
-import CanReplace from '@components/CanReplace.astro'
+import CanReplaceFr from '@components/CanReplaceFr.astro'
 import Hero from '@components/Hero.astro'
 import Customers from '@components/Customers.astro'
 import ButtonList from '@components/ButtonList.astro'
 import type { CallToAction } from 'src/types'
 import Figure from '@components/Figure.astro'
+import KindOfEstablishmentsFr from '@components/KindOfEstablishmentsFr.astro'
 
-const { de } = metaData
+const { fr } = metaData
 
 const callToActionLinks: CallToAction[] = [
-  { text: 'Demo', href: '#das-ist-gaston' },
-  //{ text: 'Angebot anfordern', href: '/de/preise/' },
+  { text: 'Démo', href: '#das-ist-gaston' },
 ]
 
 
 const description =
-  'Payflink erlaubt es den Gästen schnell und einfach zu bestell und bezahlen. Dabei spielt es keine Rolle, ob die Gäste in ihrem Betrieb, unterwegs oder Zuhause sind.'
+  'Payflink permet aux clients de commander et de payer rapidement et facilement. Peu importe que les invités soient dans votre entreprise, en déplacement ou à la maison.'
 ---
 
-<MainLayout title={`${de.name} • ${de.claim}`} description={description}>
+<MainLayout title={`${fr.name} • ${fr.claim}`} description={description}>
   <div style="max-width: 100%;overflow-x: hidden;">
     <Container>
       <Hero
-        name={de.name}
+        name={fr.name}
         image={}
-        claim={de.claim}
-        from="In Luzern entwickelt"
+        claim={fr.claim}
+        from="Développé à Lucerne"
         animation={{
-          src: '/assets/hero-gaston-vs-menu.svg',
-          alt: 'Bestellen mit Speisekarte mühsam, mit Payflink App schnell und einfach',
+          src: '/assets/hero-gaston-vs-menu-fr.svg',
+          alt: "Commander avec un menu est fastidieux, avec l'application Payflink c'est simple et rapide",
         }}
         links={callToActionLinks}
       />
@@ -50,22 +49,17 @@ const description =
     <Container>
       <div class="columns">
         <div style="flex: 1">
-          <h2>In drei Schritten zum Genuss</h2>
+          <h2>Le plaisir en trois étapes</h2>
           <p>
-            Mit Payflink bestellen und bezahlen Gäste schnell und einfach im
-            Browser. Payflink läuft auf den Handys Ihrer Gäste, ohne App-Download
-            oder Installation
+            Avec Payflink, les clients commandent et paient rapidement et simplement dans leur navigateur. Payflink fonctionne sur les téléphones portables de vos clients, sans téléchargement d'application ni installation.
           </p>
-          <ButtonList>
-            <ButtonLink href="bestell-und-zahlungs-ablauf-gastro-betriebe/"
-              >Mehr Infos
-            </ButtonLink>
-            <ButtonLink href="#das-ist-gaston">Zur Demo</ButtonLink>
-          </ButtonList>
+         
+            <ButtonLink href="#das-ist-gaston">Démo</ButtonLink>
+         
           <img
             src="/assets/illustrations/gaston-delivers.svg"
             class="gaston-image"
-            alt="Payflink liefert"
+            alt="Payflink livre"
             width="171"
             height="256"
           />
@@ -73,11 +67,9 @@ const description =
         <ol class="description-list ordered-list" style="flex: 1">
           <li>
             <div class="description-wrapper">
-              <h3>QR-Code scannen</h3>
+              <h3>Scannez le code QR</h3>
               <p>
-                Die Gäste scannen einen QR-Code auf Ihren Tischen, womit sich
-                die Bestell-App im Browser öffnet. Es ist kein Download und
-                keine Installation nötig.
+                Vos clients scannent un code QR sur vos tables, ce qui ouvre logiciel de commande dans le navigateur. Aucun téléchargement ni installation n'est nécessaire.
               </p>
             </div>
             <div class="image-wrapper">
@@ -92,10 +84,9 @@ const description =
           </li>
           <li>
             <div class="description-wrapper">
-              <h3>Bestellen</h3>
+              <h3>Commander</h3>
               <p>
-                Die Gäste bestellen nach Lust und Laune ein ganzes Menu oder nur
-                ein weiteres Getränk oder eine weitere Speise.
+                Vos clients commandent selon leur envie un menu complet ou alors un second verre ou un second plat.
               </p>
             </div>
             <div class="image-wrapper">
@@ -110,11 +101,9 @@ const description =
           </li>
           <li>
             <div class="description-wrapper">
-              <h3>Bezahlen</h3>
+              <h3>Payer</h3>
               <p>
-                Ihre Gäste bezahlen in der App oder beim Personal. In der App
-                bezahlen die Gäste bequem per Twint, Kreditkarte oder anderen
-                digitalen Zahlungsmittel.
+                Vos clients auront la possibilité de payer directement sur leurs smartphone par tout les moyen numérique comme par exemple: carte de crédit, Twint ou par cash au près du personnels.
               </p>
             </div>
             <div class="image-wrapper">
@@ -136,14 +125,13 @@ const description =
     <Container>
       <div class="columns">
         <div>
-          <h2>So hilft Payflink</h2>
+          <h2>Voici comment Payflink  vous aide</h2>
           <p>
-            Payflink sorgt nicht nur für glückliche Gäste, sondern auch für
-            zufriedenes Personal.
+            Payflink assure non seulement le bonheur des clients, mais aussi la satisfaction du personnel.
           </p>
           <img
             src="/assets/illustrations/gaston-hilft.svg"
-            alt="Payflink liefert"
+            alt="Payflink livre"
             class="gaston-image"
             width="162"
             height="256"
@@ -151,27 +139,21 @@ const description =
         </div>
         <ul class="emoji-list">
           <li style="list-style: '🙅‍♂️  ';">
-            <h3>Personalmangel bewältigen</h3>
+            <h3>Gérer le manque de personnel</h3>
             <p>
-              Personal zu finden ist eine sehr grosse Herausforderung. Payflink
-              übernimmt einen Teil der Service-Arbeit, damit Ihr Betrieb auch
-              mit weniger Personal funktioniert.
+              Trouver du personnel est un très grand défi. Payflink prend en charge une partie du travail de service pour que les serveurs ayent une flexibilité adecoiter à travailler et à pouvoir acceuir les client. votre entreprise fonctionne même avec moins de personnel.
             </p>
           </li>
           <li style="list-style: '😍  ';">
-            <h3>Gäste glücklich machen</h3>
+            <h3>Rendre les hôtes heureux</h3>
             <p>
-              Ihre Gäste warten ungern. Mit der Payflink Bestell App können sie
-              ohne Wartezeit bestellen und bezahlen.
+              Vos clients sont impatient. Avec  l'aide de Payflink, ils peuvent scanner commander et payer sans attendre.
             </p>
           </li>
           <li style="list-style: '💁‍♀️  ';">
-            <h3>Mehr Zeit für Ihre Gäste</h3>
+            <h3>Plus de temps pour vos invités</h3>
             <p>
-              Sie sind Gastgeber:in. Sie würden gerne so viel wie möglich
-              "gastgeben". Payflink nimmt einen Teil der Arbeit ab, damit Sie und
-              Ihr Personal mehr Zeit haben, um auf die Bedürfnisse Ihrer Gäste
-              einzugehen.
+              Vous êtes hôte(sse) vous aimeriez "accueillir" autant que possible. Payflink se charge d'une partie du travail pour que vous et votre personnel ayez plus de temps pour subvenir aux besoins de vos invités.
             </p>
           </li>
         </ul>
@@ -181,19 +163,16 @@ const description =
 
   <section id="das-ist-gaston" class="background">
     <Container>
-      <Demo />
+      <Démo />
     </Container>
   </section>
 
   <section>
     <Container>
-      <h2>Das sagen die Gäste</h2>
+      <h2>Ce que disent les clients</h2>
       <div class="columns">
         <p class="introduction">
-          Bei den Gästen kommt Payflink insgesamt sehr gut an. Bei einer Umfrage
-          mit <b>über 600 Personen</b> haben <b>85.1%</b> gesagt, dass sie <b
-            >wieder mit Payflink bestellen</b
-          > würden!
+          Dans l'ensemble, Payflink est très bien accueilli par les clients. Lors d'une enquête menée auprès de <b>plus de 600 personnes</b> <b>85.1%</b> ont déclaré qu'ils <b>commanderaient à nouveau</b> avec Payflink!
         </p>
         <div class="rating">
           <img
@@ -212,11 +191,12 @@ const description =
 
   <section id="verkaufskanaele" class="background">
     <Container>
-      <h2>Verkaufskanäle</h2>
+      <h2>Canaux de vente
+      </h2>
       <p>
-        Payflink kann in ganz unterschiedlichen Situationen eingesetzt werden.
-        Gäste können direkt in Ihrem Restaurant vom Tisch aus, von Zuhause oder
-        unterwegs bestellen für:
+        Payflink peut être utilisé dans plusieurs  situations très différentes. 
+        Les clients peuvent commander directement depuis leur table au restaurant,
+        à emporter ou même livré chez eux :
       </p>
       <ul class="horizontal-list">
         <li>
@@ -228,7 +208,7 @@ const description =
               height="180"
               width="190"
             />
-            <p>Inhouse <small>Im Betrieb am Tisch</small></p>
+            <p>Inhouse <small>En fonctionnement à table</small></p>
           </div>
         </li>
         <li>
@@ -257,32 +237,26 @@ const description =
         </li>
       </ul>
       <p>
-        Sind Sie nicht sicher, ob Payflink Ihr Szenario abdeckt? Nehmen Sie mit
-        uns <a href="kontakt/">Kontakt</a> auf.
+        Vous ne savez pas si Payflink couvre vos souhaits? N'hésitez pas à nous <a href="/fr/contacter/">contacter</a>.
       </p>
     </Container>
   </section>
 
   <section>
     <Container>
-      <h2>Passt für viele Gastrokonzepte</h2>
+      <h2>Convient à de nombreux concepts de restauration</h2>
       <p style="margin-bottom: 2em;">
-        Egal ob Speiserestaurant, Bar oder Imbiss, Payflink passt für die meisten
-        Gastrokonzepte. Wir werden häufig gefragt, für welche Betriebe Payflink am
-        besten passt. Unserer bisherige Erkenntnis ist folgende: Payflink passt,
-        wenn Gäste Bestellungen aufgeben und bezahlen. Dabei spielt es nicht so
-        eine grosse Rolle, was Ihr Angebot oder Bedienkonzept ist.
+        Qu'il s'agisse d'un restaurant, d'un bar ou d'un snack,sedi a thuhet Payflink convient à la plupart des concepts de restauration. Voici a quelles établissement Payflink:
       </p>
-      <KindOfEstablishments />
+      <KindOfEstablishmentsFr />
     </Container>
   </section>
 
   <section id="geräte" class="background">
     <Container>
-      <h2>Läuft überall</h2>
+      <h2>Fonctionne partout</h2>
       <p>
-        Unsere Bestell App läuft auf fast allen Geräten, ohne Installation für
-        Ihre Gäste.
+        Notre logiciel de commande fonctionne sur presque tous les appareils, sans installation pour vos invités.
       </p>
       <ul class="horizontal-list same-height">
         <li>
@@ -294,7 +268,7 @@ const description =
               height="150"
               width="154"
             />
-            <p>Handys Ihrer Gäste</p>
+            <p>Les téléphones portables de vos clients</p>
           </div>
         </li>
         <li>
@@ -306,7 +280,7 @@ const description =
               height="150"
               width="182"
             />
-            <p>Ihre Webseite</p>
+            <p>Sur votre site web</p>
           </div>
         </li>
         <li>
@@ -318,7 +292,7 @@ const description =
               height="150"
               width="134"
             />
-            <p>Tablets</p>
+            <p>Tablettes</p>
           </div>
         </li>
         <li>
@@ -330,7 +304,7 @@ const description =
               height="150"
               width="134"
             />
-            <p>Kiosk Displays</p>
+            <p>Écrans de kiosque</p>
           </div>
         </li>
       </ul>
@@ -341,15 +315,14 @@ const description =
     <Container>
       <div class="columns">
         <div style="flex: 1;">
-          <h2>Kann vieles ersetzen</h2>
+          <h2>Peut beaucoup remplacer</h2>
           <p>
-            Payflink ist ein revolutionäres Konzept und kann entsprechend viele
-            Geräte ersetzen. Geräte, die Jahrzehnte lang Bestand hatten, können
-            nun hinterfragt werden. Wofür braucht es eine Kasse, wenn die Gäste
-            direkt über eine App bezahlen? Wieso hat man ein KK-Terminal, wenn
-            die Gäste in Payflink mit Kreditkarte und Twint bezahlen?
+            Payflink, est un concept révolutionnaire et peut en conséquence remplacer de nombreux appareils.
+            Des appareils qui ont perduré pendant des décennies peuvent désormais être remis en question.
+            Pourquoi a-t-on besoin d'une caisse si les clients paient directement via une application?
+            Pourquoi avoir un terminal de caisse si les clients paient par carte de crédit et Twint dans Payflink?
           </p>
-          <p>Sehen Sie wohin die Reise geht?</p>
+          <p>Vous voyez où nous allons?</p>
           <div class="center" style="margin-block: 3em;">
             <img
               src="/assets/illustrations/trash.svg"
@@ -358,13 +331,13 @@ const description =
               height="236"
             />
             <p style="font-size: 0.8em; margin-top: 2em;">
-              Symbolbild. Bitte werfen Sie nichts weg! Es gibt genügend
-              Gastro-Betriebe, die Ihnen Ihre Geräte abnehmen. 😉
+              image d'icône. Merci de ne rien jeter! 
+              Il y a suffisamment d'établissements de restauration qui vous enlèveront vos appareils. 😉
             </p>
           </div>
         </div>
         <div style="flex: 1;">
-          <CanReplace />
+          <CanReplaceFr />
         </div>
       </div>
     </Container>
@@ -372,11 +345,10 @@ const description =
 
   <section id="stylen-mit-gaston" class="background">
     <Container>
-      <h2>Ihre Speisekarte, Ihr Style</h2>
+      <h2>Votre menu, votre style</h2>
       <p>
-        Ihr Betrieb hat einen einzigartigen Stil. Ihre Speisekarte sollte dies
-        reflektieren. Sie können das Aussehen jederzeit selber anpassen und auch
-        die Bilder und Grafiken für Kategorien und Artikel selber pflegen.
+        Votre établissement a un style unique et personnalisé. 
+        Votre menu doit le refléter. Vous pouvez en modifier l'aspect à tout moment et gérer vous-même les images et les graphiques des catégories et des articles.
       </p>
       <ul class="horizontal-list shadow">
         <li>
@@ -405,30 +377,9 @@ const description =
   </section>
 
   <section>
+
     <Container>
-      <div class="columns">
-        <div style="flex: 1;">
-          <h2>Neuigkeiten</h2>
-          <BlogTeaser language="de" />
-          <ButtonLink href="/de/blog/">Weitere Neuigkeiten</ButtonLink>
-        </div>
-        <div style="flex: 1;">
-          <h2>Roadmap</h2>
-          <p style="margin-bottom: 2em;">
-            Payflink wird ständig weiterentwickelt. Auf unserer Roadmap sehen Sie,
-            welche Features als Nächstes verfügbar werden. Haben Sie einen
-            speziellen Wunsch? Wir nehmen diesen gerne in die Roadmap auf.
-          </p>
-          <ButtonLink
-            href="https://payflink.notion.site/Roadmap-von-Payflink-6644875d1fba4fe58cacfbf15e1ace7e"
-          >
-            Zur Roadmap
-          </ButtonLink>
-        </div>
-      </div>
-    </Container>
-    <Container>
-      <h2>Unsere Partner</h2>
+      <h2>Nos partenaires</h2>
       <ul class="image-list" style="justify-content: flex-start;">
         <li>
           <a href="https://www.flm.ch/">

@@ -1,0 +1,77 @@
+---
+lang: en
+title: Restaurant Ordering App
+description: |
+  Our restaurant ordering app has one goal: to make ordering and payment as easy as possible for your restaurant's guests.
+keyword: Restaurant Ordering App
+layout: '@layouts/Blog.astro'
+---
+
+import Figure from '@components/Figure.astro'
+import ButtonLink from '@components/ButtonLink.astro'
+import ButtonList from '@components/ButtonList.astro'
+
+<Figure
+  caption="Menu in restaurant order app."
+  src={import('../../images/restaurant-bestell-app.png')}
+/>
+
+We have taken special care to make ordering in the app as easy as possible with as few inputs and clicks as possible. When ordering from the table, we do not require an email address or phone number. When it comes to payment, we only ask for the most necessary information.
+
+## Ordering in the restaurant
+
+In your restaurant, new guests also order from time to time. They should be able to browse your offer and order something with the app without explanation. Accordingly, we have made ordering in the app as simple as possible. At the same time, it is also important to present your offer in the best light. That's why we pay attention to a first-class presentation of your food and drinks.
+
+<Figure
+  caption="See variations in the Order app."
+  src={import('../../images/variationen.png')}
+/>
+
+## Ordering with the app
+
+Ordering with the restaurant ordering app is very simple.
+
+- Scan the QR code on the table with your personal cell phone.
+- Select the dishes you want to order. <svg style="height: 1em; width: 1em; stroke: var(--primary-color); stroke-width: 4;" viewBox="0 0 24 24"> <path d="M 2,12 L 22,12 M 12,2 L 12,22" /> </svg>
+- Open and check the order.
+- Submit the order.
+
+<Figure
+  caption="A guest has created an order in the app."
+  src={import('../../images/bestellung.png')}
+/>
+
+If you offer dishes or drinks in different versions, your guests have the possibility to define exactly in which version they want to order the items. If you need to know something mandatory from the guests (such as the cooking level for a steak), the app will prompt them to select the desired option.
+
+<Figure
+  caption="Select options in app."
+  src={import('../../images/optionen.png')}
+/>
+
+## Paying with the app
+
+Depending on how the app is configured, guests pay each time they place an order or only before they leave the restaurant. In either case, payment is simple.
+
+- Confirm amount
+- Select payment method.
+- Confirm payment.
+
+At the end of the payment in the app, guests can download the receipt.
+
+<ButtonList>
+  <ButtonLink href="/en/funktionsumfang/">Functionality of the app</ButtonLink>
+  {/* prettier-ignore */}
+  {/* <ButtonLink href="/de/bestell-und-zahlungs-ablauf-gastro-betriebe/">Bestell- &amp; Zahlungsablauf</ButtonLink> */}
+</ButtonList>
+
+## Demo: Restaurant ordering app
+
+With Payflink, you have an app that allows your guests to easily order and pay. We pay special attention to intuitive operation and attractive presentation. In this way, we hope that your guests will also be enthusiastic about Payflink in your restaurant.
+
+Get an impression of the app with our demo. Here you can try out our ordering app in a test environment at your leisure in a fictitious restaurant. Place an order!
+
+<ButtonList>
+  <ButtonLink href="/en/demo/">Try Demo</ButtonLink>
+  {/* <ButtonLink href="/de/preise/">Preise &amp; Angebot</ButtonLink> */}
+  <ButtonLink href="/en/contact/">Contact</ButtonLink>
+</ButtonList>

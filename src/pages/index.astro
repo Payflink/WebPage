@@ -4,13 +4,32 @@ import Container from '@components/Container.astro'
 import ButtonLink from '@components/ButtonLink.astro'
 ---
 
-<MainLayout title="Payflink" description="Sprache wählen / Choose language">
-  <Container>
-    <h1>Payflink</h1>
-  </Container>
+<MainLayout title="Payflink" description="Sprache wählen / Choisissez votre langue / Choose language">
   <div class="button-list">
-    <ButtonLink href="/de/">Deutsch</ButtonLink>
-    <ButtonLink href="/en/">English</ButtonLink>
+    <ButtonLink href="/de/">Deutsch
+      <img
+      src="/assets/Flag_of_Germany.svg"
+      class="flag-germany"
+      alt="Flag Germany"
+      width="32"
+      height="32"
+    /></ButtonLink>
+    <ButtonLink href="/fr/">Français
+      <img
+      src="/assets/Flag_of_French.svg"
+      class="flag-french"
+      alt="Flag French"
+      width="32"
+      height="32"
+    /></ButtonLink>
+    <ButtonLink href="/en/">English
+      <img
+      src="/assets/Flag_of_England.svg"
+      class="flag-england"
+      alt="Flag England"
+      width="32"
+      height="32"
+    /></ButtonLink>
   </div>
 </MainLayout>
 

@@ -15,7 +15,21 @@ const productDe: Product = {
   name: 'Payflink',
   image: '/assets/logo/Payflink_free.svg',
 }
+
+const productFr: Product = {
+  description: 'Self-Order|Pay pour la Gastronomie',
+  claim: 'Vos clients commandent et paient sans attendre.',
+  name: 'Payflink',
+  image: '/assets/logo/Payflink_free.svg',
+}
+
 const productEn: Product = {
+  description: 'Self-Order|Pay for Gastronomy',
+  claim: 'Your guests order and pay without waiting.',
+  name: 'Payflink',
+  image: '/assets/logo/Payflink_free.svg',
+}
+const productIt: Product = {
   description: 'Self-Order|Pay for Gastronomy',
   claim: 'Your guests order and pay without waiting.',
   name: 'Payflink',
@@ -23,18 +37,22 @@ const productEn: Product = {
 }
 export const metaData: MetaData = {
   de: productDe,
+  fr: productFr,
   en: productEn,
+  it: productIt,
 }
 
 export const callToActionLinks: Record<Language, CallToAction[]> = {
   de: [
     { href: '/de/demo/', text: 'Demo ausprobieren' },
-    // { href: '/de/preise/', text: 'Unverbindliches Angebot' },
+  ],
+  fr: [
+    { href: '/fr/démo/', text: 'Essayez la démo' },
   ],
   en: [
     { href: '/en/demo/', text: 'Try demo' },
-    // { href: '/en/contact/', text: 'Request a quote' },
   ],
+  it: [],
 }
 
 export const generalTitle = ({ name }: Product) => `${name}`
@@ -87,26 +105,26 @@ const navigationDe: NavigationTree = [
       // },
     ],
   },
-  // {
-  //   title: 'Über',
-  //   items: [
-  //     {
-  //       title: 'Uns',
-  //       href: '/de/ueber-uns/',
-  //       description: 'Was treibt uns an? Worauf legen wir wert?',
-  //     },
-  //     {
-  //       href: '/de/team/',
-  //       title: 'Team',
-  //       description: 'Wer versteckt sich hinter der Persona?',
-  //     },
+  {
+    title: 'Über',
+    items: [ 
+      {
+        title: 'Uns',
+        href: '/de/ueber-uns/',
+        description: 'Was treibt uns an? Worauf legen wir wert?',
+      },
+      {
+        href: '/de/team/',
+        title: 'Team',
+        description: 'Wer versteckt sich hinter der Persona?',
+      },
   //     {
   //       href: '/de/blog/',
   //       title: 'Blog',
   //       description: 'Der neuste Gossip, der gerade die Runden macht.',
   //     },
-  //   ],
-  // },
+    ],
+  },
   //{
     //title: 'Preise',
     //href: '/de/preise/',
@@ -124,39 +142,152 @@ const navigationDe: NavigationTree = [
     title: 'Kontakt',
   },
 ]
-
+const navigationFr: NavigationTree = [
+  {
+    title: 'Produit',
+    items: [
+      {
+        title: 'Menu Numérique',
+        href: '/fr/menu-numerique/',
+        description:
+          'Présentez votre offre sous son meilleur avec notre menu digital.',
+      },
+      {
+        title: 'Application de commande',
+        href: '/fr/application-de-commande-de-restaurant/',
+        description: 'Découvrez notre application de commande de restaurant.',
+      },
+      {
+        href: '/fr/fonctions/',
+        title: 'Étendue des fonctions',
+        description: 'Liste détaillée de toutes les fonctionnalités de Payflink.',
+      },
+      // {
+      //   href: '/de/blog/',
+      //   title: 'Blog',
+      //   description: 'Der neuste Gossip, der gerade die Runden macht.',
+      // },
+      // {
+      //   href: '/de/demo/',
+      //   title: 'Demo',
+      //   description:
+      //     'Machen Sie eine Bestellung und erfahren dabei den Zahlungsablauf.',
+      // },
+    ],
+  },
+  {
+    title: 'À propos',
+    items: [
+      {
+        title: 'De nous',
+        href: '/fr/a-propos-de-nous/',
+        description: "Qu'est-ce qui nous motive? Qu'est-ce qu'on valorise?",
+      },
+      {
+        href: '/fr/team/',
+        title: 'Team',
+        description: 'Qui se cache derrière le personnage?',
+      },
+  //     {
+  //       href: '/de/blog/',
+  //       title: 'Blog',
+  //       description: 'Der neuste Gossip, der gerade die Runden macht.',
+  //     },
+    ],
+  },
+  //{
+    //title: 'Preise',
+    //href: '/de/preise/',
+  //},
+  {
+    href: '/fr/démo/', 
+    title: 'Essayez la démo',
+  },
+  {
+    href: '/fr/rencontre/',
+    title: 'Prendre rendez-vous',
+  },
+  {
+    href: '/fr/contacter/',
+    title: 'Contacter',
+  },
+]
 const navigationEn: NavigationTree = [
   {
-    title: 'Demo',
-    href: '/en/demo/',
+    title: 'Product',
+    items: [
+      {
+        title: 'Digital menu',
+        href: '/en/digital-menu/',
+        description:
+          'Present your offer in the best light with our digital menu.',
+      },
+      {
+        title: 'Order app',
+        href: '/en/restaurant-order-app/',
+        description: 'Discover our restaurant order app.',
+      },
+      {
+        href: '/en/functions/',
+        title: 'Functions',
+        description: 'Detailed listing of all features of Payflink.',
+      },
+      {
+        href: '/en/blog/',
+        title: 'Blog',
+        description: 'The newest gossip making the rounds right now.',
+      },
+      // {
+      //   href: '/de/demo/',
+      //   title: 'Demo',
+      //   description:
+      //     'Machen Sie eine Bestellung und erfahren dabei den Zahlungsablauf.',
+      // },
+    ],
   },
-  // {
-  //   title: 'About',
-  //   items: [
+  {
+    title: 'About',
+    items: [
+      {
+        title: 'Us',
+        href: '/en/about-us/',
+        description: 'What drives us? What do we value?',
+      },
+      {
+        href: '/en/team/',
+        title: 'Team',
+        description: 'Who is hiding behind the persona?',
+      },
   //     {
-  //       title: 'Team',
-  //       href: '/en/team/',
-  //       description: 'Who is hiding behind the persona?',
-  //     },
-  //     {
+  //       href: '/de/blog/',
   //       title: 'Blog',
-  //       href: '/en/blog/',
-  //       description: 'The latest gossip doing the rounds.',
+  //       description: 'Der neuste Gossip, der gerade die Runden macht.',
   //     },
-
-  //     {
-  //       title: 'Mission',
-  //       href: '/en/mission/',
-  //       description: 'What is our mission? What drives us?',
-  //     },
-  //   ],
-  // },
-  { title: 'Contact', href: '/en/contact/' },
+    ],
+  },
+  //{
+    //title: 'Preise',
+    //href: '/de/preise/',
+  //},
+  {
+    href: '/en/demo/', 
+    title: 'Try Demo',
+  },
+  {
+    href: '/en/appointment/',
+    title: 'Make an appointment',
+  },
+  {
+    href: '/en/contact/',
+    title: 'Contact',
+  },
 ]
 
 export const globalNavigation: Navigation = {
   de: navigationDe,
+  fr: navigationFr,
   en: navigationEn,
+  it: []
 }
 
 const siteMapDe: SiteMapGroup[] = [
@@ -185,17 +316,17 @@ const siteMapDe: SiteMapGroup[] = [
       },
     ],
   },
-  // {
-  //   title: 'Über',
-  //   items: [
-  //     {
-  //       title: 'Uns',
-  //       href: '/de/ueber-uns/',
-  //     },
-  //     {
-  //       href: '/de/team/',
-  //       title: 'Team',
-  //     },
+  {
+    title: 'Über',
+    items: [
+      {
+        title: 'Uns',
+        href: '/de/ueber-uns/',
+      },
+      {
+        href: '/de/team/',
+        title: 'Team',
+      },
   //     {
   //       href: '/de/blog/',
   //       title: 'Blog',
@@ -204,8 +335,8 @@ const siteMapDe: SiteMapGroup[] = [
   //       href: '/de/kontakt/',
   //       title: 'Kontakt',
   //     },
-  //   ],
-  // },
+    ],
+  },
   {
     title: 'Highlights',
     items: [
@@ -254,9 +385,201 @@ const siteMapDe: SiteMapGroup[] = [
   },
 ]
 
+const siteMapFr: SiteMapGroup[] = [
+  {
+    title: 'Produit',
+    items: [
+      {
+        title: 'Menu numérique',
+        href: '/fr/menu-numerique/',
+      },
+      {
+        title: 'Application de commande de restaurant',
+        href: '/fr/application-de-commande-de-restaurant/',
+      },
+      {
+        title: 'Étendue des fonctions',
+        href: '/fr/fonctions/',
+      },
+      //{
+        //title: 'Preise',
+        //href: '/de/preise/',
+      //},
+      {
+        href: '/fr/démo/',
+        title: 'Démo',
+      },
+    ],
+  },
+  {
+    title: 'À propos',
+    items: [
+      {
+        title: 'De nous',
+        href: '/fr/a-propos-de-nous/',
+      },
+      {
+        href: '/fr/team/',
+        title: 'Team',
+      },
+  //     {
+  //       href: '/de/blog/',
+  //       title: 'Blog',
+  //     },
+  //     {
+  //       href: '/de/kontakt/',
+  //       title: 'Kontakt',
+  //     },
+    ],
+  },
+  // {
+  //   title: 'Highlights',
+  //   items: [
+  //     {
+  //       title: 'A emporter et livraison',
+  //       href: '/fr/takeaway-delivery/',
+  //     },
+  //     {
+  //       title: 'Menu online',
+  //       href: '/fr/online-speisekarte/',
+  //     },
+  //     {
+  //       title: "Système d'appel invité",
+  //       href: '/fr/gaeste-rufsystem/',
+  //     },
+  //     {
+  //       title: 'Payflink ou alors Orderman',
+  //       href: '/fr/orderman/',
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: 'Documentation',
+  //   items: [
+  //     {
+  //       title: 'Processus de commande et processus de paiement',
+  //       href: '/fr/bestell-und-zahlungs-ablauf-gastro-betriebe/',
+  //     },
+  //     {
+  //       title: 'Mise en service de Payflink',
+  //       href: '/fr/dokumentation/inbetriebnahme-payflink/',
+  //     },
+  //     {
+  //       title: 'Modifier le menu',
+  //       href: '/fr/dokumentation/speisekarten-angebot-bearbeiten/',
+  //     },
+  //     {
+  //       title: 'Online Speisekarte erstellen',
+  //       href: '/de/dokumentation/online-speisekarte-erstellen/',
+  //     },
+  //     // {
+  //     //   title: 'Online Speisekarte gestalten',
+  //     //   href: '/de/dokumentation/online-speisekarte-gestalten/',
+  //     // },
+  //   ],
+  // },
+]
+
+const siteMapEn: SiteMapGroup[] = [
+  {
+    title: 'Product',
+    items: [
+      {
+        title: 'Digital menu',
+        href: '/en/digital-menu/',
+      },
+      {
+        title: 'Restaurant order app',
+        href: '/en/restaurant-order-app/',
+      },
+      {
+        title: 'Functions',
+        href: '/en/functions/',
+      },
+      //{
+        //title: 'Preise',
+        //href: '/de/preise/',
+      //},
+      {
+        href: '/en/demo/',
+        title: 'Try Demo',
+      },
+    ],
+  },
+  {
+    title: 'About',
+    items: [
+      {
+        title: 'Us',
+        href: '/en/about-us/',
+      },
+      {
+        href: '/en/team/',
+        title: 'Team',
+      },
+  //     {
+  //       href: '/de/blog/',
+  //       title: 'Blog',
+  //     },
+  //     {
+  //       href: '/de/kontakt/',
+  //       title: 'Kontakt',
+  //     },
+    ],
+  },
+  // {
+  //   title: 'Highlights',
+  //   items: [
+  //     {
+  //       title: 'A emporter et livraison',
+  //       href: '/fr/takeaway-delivery/',
+  //     },
+  //     {
+  //       title: 'Menu online',
+  //       href: '/fr/online-speisekarte/',
+  //     },
+  //     {
+  //       title: "Système d'appel invité",
+  //       href: '/fr/gaeste-rufsystem/',
+  //     },
+  //     {
+  //       title: 'Payflink ou alors Orderman',
+  //       href: '/fr/orderman/',
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: 'Documentation',
+  //   items: [
+  //     {
+  //       title: 'Processus de commande et processus de paiement',
+  //       href: '/fr/bestell-und-zahlungs-ablauf-gastro-betriebe/',
+  //     },
+  //     {
+  //       title: 'Mise en service de Payflink',
+  //       href: '/fr/dokumentation/inbetriebnahme-payflink/',
+  //     },
+  //     {
+  //       title: 'Modifier le menu',
+  //       href: '/fr/dokumentation/speisekarten-angebot-bearbeiten/',
+  //     },
+  //     {
+  //       title: 'Online Speisekarte erstellen',
+  //       href: '/de/dokumentation/online-speisekarte-erstellen/',
+  //     },
+  //     // {
+  //     //   title: 'Online Speisekarte gestalten',
+  //     //   href: '/de/dokumentation/online-speisekarte-gestalten/',
+  //     // },
+  //   ],
+  // },
+]
+
 export const siteMap: I18nSiteMap = {
   de: siteMapDe,
-  en: [],
+  fr: siteMapFr,
+  en: siteMapEn,
+  it: [],
 }
 
 const footerDe: FooterInfo = {
@@ -268,6 +591,18 @@ const footerDe: FooterInfo = {
   appointment: {
     title: 'Termin buchen',
     url: '/de/termin/',
+  },
+}
+
+const footerFr: FooterInfo = {
+  aProductOf: 'Un produit de',
+  city: 'Luzern • Suisse',
+  inquiries: 'Demandes',
+  newsletter: "S'inscrire à la Newsletter",
+  or: 'ou alors',
+  appointment: {
+    title: 'prenez rendez-vous',
+    url: '/fr/rencontre/',
   },
 }
 
@@ -285,5 +620,7 @@ const footerEn: FooterInfo = {
 
 export const footer: I18nFooterInfo = {
   de: footerDe,
+  fr: footerFr,
   en: footerEn,
+  it: footerEn,
 }

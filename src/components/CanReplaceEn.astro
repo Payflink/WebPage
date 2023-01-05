@@ -1,0 +1,70 @@
+---
+type CanReplaceEn = {
+  title: string
+  description: string
+  image: string
+}
+const canReplaceFr: CanReplaceEn[] = [
+  {
+    title: 'Website',
+    description:
+      'Do you want to describe your business and display your menu on your website? You can do that with Payflink!',
+    image: '🌐',
+  },
+  {
+    title: 'Classic menu',
+    description:
+      "Establishments with a digital menu often no longer have a printed menu. For guests who don't have a cell phone handy, you can provide tablets if necessary.",
+    image: '📜',
+  },
+  {
+    title: 'Checkout',
+    description:
+      "Payflink can replace your classic cash register. Contact us and we'll see if your operation can work with Payflink only.",
+    image: '💶',
+  },
+  {
+    title: 'Credit card terminal',
+    description:
+      'With Payflink, your guests can pay with Twint and credit card. A terminal is superfluous.',
+    image: '💳',
+  },
+  {
+    title: 'Orderman',
+    description:
+      'Thanks to Payflink, guests transmit their order themselves. Your staff can also enter the order directly in Payflink.',
+    image: '✏️',
+  },
+  {
+    title: "Guest call system",
+    description:
+      'With Payflink you send your guests an SMS as soon as the order is ready. This eliminates the need for devices like guest pagers.',
+    image: '🔔',
+  },
+]
+---
+
+<ul>
+  {
+    canReplaceFr.map(({ title, description, image }) => (
+      <li data-image={image}>
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  ul {
+    padding-left: 4em;
+  }
+
+  li:first-of-type h3 {
+    margin-top: 0;
+  }
+
+  li::marker {
+    content: attr(data-image) '   ';
+  }
+</style>

@@ -41,7 +41,7 @@ export type CallToAction = {
 }
 
 export type BlogPostFrontMatter = {
-  lang: 'de' | 'en'
+  lang: 'de' | 'fr' | 'en' | 'it'
   title: string
   description: string
   image: string
@@ -57,7 +57,7 @@ export type TeamMember = {
 }
 
 export type LandingPageFrontMatter = {
-  lang: 'de' | 'en'
+  lang: 'de' | 'fr' | 'en' | 'it'
   title: string
   description: string
   image: string
@@ -66,7 +66,7 @@ export type LandingPageFrontMatter = {
 export type LandingPage = MarkdownInstance<LandingPageFrontMatter>[]
 
 export type DocumentationFrontMatter = {
-  lang: 'de' | 'en'
+  lang: 'de' | 'fr' | 'en' | 'it'
   title: string
   description: string
 }
