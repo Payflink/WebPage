@@ -58,6 +58,7 @@ const anySubItems = items.some(({ href }) => isCurrentPage(href))
 <style>
   details {
     position: relative;
+    padding-inline: 1.2rem;
   }
 
   summary {
@@ -66,7 +67,6 @@ const anySubItems = items.some(({ href }) => isCurrentPage(href))
     align-items: center;
     height: 100%;
     cursor: default;
-
   }
 
   summary[aria-current] {
@@ -90,8 +90,7 @@ const anySubItems = items.some(({ href }) => isCurrentPage(href))
     position: absolute;
     font-size: 0.9em;
     top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-2.4em);
     padding-block-start: 0.2em;
     opacity: 0;
     transition: opacity 150ms ease;
@@ -103,7 +102,7 @@ const anySubItems = items.some(({ href }) => isCurrentPage(href))
     flex-direction: column;
     gap: 1em;
     padding: 1.6em 2.4em;
-    max-width: min(25em, 50vw);
+    max-width: min(20em, 50vw);
     color: var(--background-color);
     background: var(--primary-color);
     text-align: center;
