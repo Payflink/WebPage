@@ -33,7 +33,7 @@ const data = metaData[lang]
       href={langPage}
       aria-current={isCurrentPage(langPage, { exact: true })}
     >
-      <img src={data.image}/>
+      <img src={data.image} />
     </a>
     {
       navigation.map((item) =>
@@ -68,7 +68,7 @@ const data = metaData[lang]
     font-size: 1rem;
     font-weight: bold;
     top: 0;
-    height: 6em;
+    height: 4em;
     padding-inline: 1rem;
     color: var(--text-color);
     background-color: white;
@@ -87,8 +87,8 @@ const data = metaData[lang]
 
     nav {
       display: flex;
-      gap: 2em;
-      width: 100%;
+      width: calc(100% + 2.4rem);
+      margin-inline: -1.2rem;
 
       [aria-current] {
         color: var(--primary-color);
@@ -101,20 +101,21 @@ const data = metaData[lang]
       height: 100%;
       color: inherit;
       text-decoration: none;
+      padding-inline: 1.2rem;
 
       &.logo {
+        flex: none;
         margin-right: auto;
-        font-size: 1.5em;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        line-height: 1.1em;
-        color: var(--primary-color);
 
-        small {
-          line-height: 1em;
-          font-size: 28%;
-          color: hsl(0 0% 46%);
+        img {
+          height: 50px;
+
+          @media (max-width: 767px) {
+            height: 40px;
+          }
         }
       }
     }
