@@ -8,7 +8,6 @@
 // https://astro.build/config
 import { defineConfig } from 'astro/config'
 import solid from '@astrojs/solid-js'
-import partytown from '@astrojs/partytown'
 import sitemap from '@astrojs/sitemap'
 import image from '@astrojs/image'
 import mdx from '@astrojs/mdx'
@@ -23,9 +22,10 @@ export default defineConfig(
     trailingSlash: 'always',
     integrations: [
       solid(),
-      /* partytown(),*/
       sitemap(),
-      image(),
+      image({
+        serviceEntryPoint: '@astrojs/image/sharp',
+      }),
       mdx(),
       preact(),
     ],
