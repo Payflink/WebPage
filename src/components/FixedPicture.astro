@@ -12,11 +12,13 @@ const img = await getImage({
   src: pictureProps.src,
   height: propHeight,
   width: propWidth,
+  alt: pictureProps.alt,
 })
 const image = await getPicture({
   src: pictureProps.src,
   widths: [img.width as number, (img.width as number) * 2],
   formats: ['webp', 'avif'],
+  alt: pictureProps.alt,
 })
 ---
 
