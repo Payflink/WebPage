@@ -1,5 +1,6 @@
 import type { BlogPost, Language } from './types'
-import type { getImage as GetImage } from '@astrojs/image/dist/lib/get-image'
+import type { getImage as GetImage } from '@astrojs/image'
+import type { ImageMetadata } from '@astrojs/image/dist/vite-plugin-astro-image'
 
 export const mkIsCurrentPage =
   (currentPathname: string) =>
@@ -45,23 +46,28 @@ type Images =
 export const mkHeroImages =
   (getImage: typeof GetImage) =>
   async (
-    slug: string,
+    slug: string | undefined,
     name: string | undefined,
-    base: string
+    base: string | undefined,
+    lang: Language,
+    alt: string
   ): Promise<Images> => {
-    if (name === undefined) {
+    if (name === undefined || slug === undefined || base === undefined) {
       return undefined
     }
     const img = (
-      await import(`./pages/de/blog/${slug.split('/').at(-2)}/${name}.jpg`)
+      await import(`./pages/${lang}/blog/${slug.split('/').at(-2)}/${name}.jpg`)
     ).default
 
     const { src } = await getImage({
       src: img,
       width: 1200,
       height: 630,
+      alt,
     })
-    const openGraphImage = new URL(src, base)
+    const openGraphImage = src
+      ? new URL(src, base).href
+      : new URL('/payflink-bestell-app.png', base).href
 
-    return { image: img, fixed: openGraphImage.href }
+    return { image: img, fixed: openGraphImage }
   }
