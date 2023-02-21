@@ -26,8 +26,8 @@ const text = {
     en: 'by',
     fr: 'par',
     it: 'da',
-  }
-} satisfies Record<string, Record<Language, string>> 
+  },
+} satisfies Record<string, Record<Language, string>>
 ---
 
 <Main title={title} description={description} image={images?.fixed}>
@@ -62,7 +62,7 @@ const text = {
 </Main>
 
 <style lang="scss" is:global>
-  picture.hero {
+  picture:has(.hero) {
     display: block;
     text-align: center;
     background-color: var(--light-background-color);
