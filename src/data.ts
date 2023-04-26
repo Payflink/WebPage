@@ -7,6 +7,11 @@ export const teamMembers: TeamMember[] = [
     role: { de: 'Payflink Mitgründer | Marketing & Sales', fr:'CO-Fondateur | Marketing & Ventes', en: 'Payflink CO-Founder | Marketing & Sales', it:'' },
   },
   {
+    name: 'Hüseyin Ayas',
+    image: '/assets/team/husi-ayas.jpg',
+    role: { de: 'Payflink Mitgründer | IT & Software Development', fr:'CO-Fondateur | IT & Software Development', en: 'Payflink CO-Founder | IT & Software Development', it:'' },
+  },
+  {
     name: 'Philip Schönholzer',
     image: '/assets/team/philip-schoenholzer-prev.jpg',
     role: { de: 'Produkt-Entwickler', fr:'Développeur de produit', en: 'Product Developer', it:'' },
@@ -16,11 +21,11 @@ export const teamMembers: TeamMember[] = [
     image: '/assets/team/patrik-stutz-prev.jpg',
     role: { de: 'Software-Entwickler', fr:'Développeur de logiciels', en: 'Software Developer', it:'' },
   },
-  {
-    name: 'Mariana Barbosa',
-    image: '/assets/team/mariana-17-small.jpg',
-    role: { de: 'Marketing', fr:'Marketing', en: 'Marketing', it:'' },
-  },
+  // {
+  //   name: 'Mariana Barbosa',
+  //   image: '/assets/team/mariana-17-small.jpg',
+  //   role: { de: 'Marketing', fr:'Marketing', en: 'Marketing', it:'' },
+  // },
   // {
   //   name: 'David Decker',
   //   image: '/assets/team/david-decker-prev.jpg',
