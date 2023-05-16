@@ -21,6 +21,11 @@ export const teamMembers: TeamMember[] = [
     image: '/assets/team/patrik-stutz-prev.jpg',
     role: { de: 'Software-Entwickler', fr:'Développeur de logiciels', en: 'Software Developer', it:'' },
   },
+  {
+    name: 'Kevin Rickenbach',
+    image: '/assets/team/kevin-rickenbach-prev.jpg',
+    role: { de: 'Software-Entwickler', fr:'Développeur de logiciels', en: 'Software Developer', it:'' },
+  },
   // {
   //   name: 'Mariana Barbosa',
   //   image: '/assets/team/mariana-17-small.jpg',
