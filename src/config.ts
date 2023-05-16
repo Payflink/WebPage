@@ -162,11 +162,11 @@ const navigationFr: NavigationTree = [
         title: 'Étendue des fonctions',
         description: 'Liste détaillée de toutes les fonctionnalités de Payflink.',
       },
-      // {
-      //   href: '/de/blog/',
-      //   title: 'Blog',
-      //   description: 'Der neuste Gossip, der gerade die Runden macht.',
-      // },
+      {
+        href: '/fr/blog/',
+        title: 'Blog',
+        description: 'Les derniers potins font le tour en ce moment.',
+      },
       // {
       //   href: '/de/demo/',
       //   title: 'Demo',

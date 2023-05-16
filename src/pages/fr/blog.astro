@@ -1,0 +1,34 @@
+---
+import Main from '@layouts/Main.astro'
+import Container from '@components/Container.astro'
+import type { BlogPostFrontMatter } from 'src/types'
+import { takeSortedBlogPosts } from 'src/utils'
+
+const blogs = await Astro.glob<BlogPostFrontMatter>('./blog/**/*.mdx')
+const sortedBlogs = takeSortedBlogPosts(blogs, 'fr')
+---
+
+<Main
+  title="Blog : Nouvelles de Payflink"
+  description="Recevez les dernières nouvelles de Payflink."
+>
+  <Container size="small">
+    <h1>Nouvelles de Payflink</h1>
+    {
+      sortedBlogs.map((post) => (
+        <article>
+          <a href={post.url}>
+            <h2>{post.frontmatter.title}</h2>
+          </a>
+          <p>{post.frontmatter.description}</p>
+        </article>
+      ))
+    }
+  </Container>
+</Main>
+
+<style lang="scss">
+  article {
+    margin: 4em 0;
+  }
+</style>
