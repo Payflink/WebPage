@@ -4,9 +4,6 @@ import { getCurrentLanguage, mkIsCurrentPage } from '../utils.js'
 import CallToAction from './CallToAction.astro'
 import Container from './Container.astro'
 import Instagram from '@icons/Instagram.astro'
-import LinkedIn from '@icons/LinkedIn.astro'
-import Twitter from '@icons/Twitter.astro'
-import Facebook from '@icons/Facebook.astro'
 import Sitemap from './Sitemap.astro'
 import Dialog from '@components/Dialog'
 import Newsletter from '@components/Newsletter'
@@ -30,9 +27,7 @@ const links = callToActionLinks[lang]
   <div class="columns footer-container">
     <div>
       <p class="social">
-        <a href="https://www.instagram.com/payflink/"
-          ><Instagram />
-        </a>&nbsp;
+        <a href="https://www.instagram.com/payflink/"><Instagram /></a>&nbsp;
       </p>
 
       <p>
@@ -42,6 +37,21 @@ const links = callToActionLinks[lang]
         <a href="https://apptiva.ch">Apptiva</a>
         <br />
         Luzern • Schweiz
+      </p>
+      <p>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.swissmadesoftware.org"
+        >
+          <img
+            height="95"
+            width="567"
+            style="max-height: 2rem; width: auto;"
+            src="/assets/SMS-Logo-1h-black.png"
+            alt="Swiss Made Software"
+          /></a
+        >
       </p>
     </div>
     <div>
@@ -55,38 +65,41 @@ const links = callToActionLinks[lang]
         {footerInfo.inquiries}&ensp;
         <a href="tel:+41625614243">+41 62 561 42 43</a>
         {footerInfo.or}
-        <a href={footerInfo.appointment.url}
-          >{footerInfo.appointment.title}
-        </a>
+        <a href={footerInfo.appointment.url}>{footerInfo.appointment.title}</a>
         <br />
         <br />
       </p>
     </div>
     <p>
-      <a href="/de/" aria-current={isCurrentPage('/de/')}> <img
-        src="/assets/Flag_of_Germany.svg"
-        class="flag-germany"
-        alt="Flag Germany"
-        width="32"
-        height="32"
-      /></a>
+      <a href="/de/" aria-current={isCurrentPage('/de/')}>
+        <img
+          src="/assets/Flag_of_Germany.svg"
+          class="flag-germany"
+          alt="Flag Germany"
+          width="32"
+          height="32"
+        /></a
+      >
       &emsp;
-      <a href="/fr/" aria-current={isCurrentPage('/fr/')}> <img
-        src="/assets/Flag_of_French.svg"
-        class="flag-french"
-        alt="Flag French"
-        width="32"
-        height="32"
-      /></a>
+      <a href="/fr/" aria-current={isCurrentPage('/fr/')}>
+        <img
+          src="/assets/Flag_of_French.svg"
+          class="flag-french"
+          alt="Flag French"
+          width="32"
+          height="32"
+        /></a
+      >
       &emsp;
-      <a href="/en/" aria-current={isCurrentPage('/en/')}> <img
-        src="/assets/Flag_of_England.svg"
-        class="flag-england"
-        alt="Flag England"
-        width="32"
-        height="32"
-      /></a>
-
+      <a href="/en/" aria-current={isCurrentPage('/en/')}>
+        <img
+          src="/assets/Flag_of_England.svg"
+          class="flag-england"
+          alt="Flag England"
+          width="32"
+          height="32"
+        /></a
+      >
     </p>
   </div>
 </footer>
