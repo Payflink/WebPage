@@ -43,15 +43,9 @@ export const metaData: MetaData = {
 }
 
 export const callToActionLinks: Record<Language, CallToAction[]> = {
-  de: [
-    { href: '/de/demo/', text: 'Demo ausprobieren' },
-  ],
-  fr: [
-    { href: '/fr/démo/', text: 'Essayez la démo' },
-  ],
-  en: [
-    { href: '/en/demo/', text: 'Try demo' },
-  ],
+  de: [{ href: '/de/demo/', text: 'Demo ausprobieren' }],
+  fr: [{ href: '/fr/démo/', text: 'Essayez la démo' }],
+  en: [{ href: '/en/demo/', text: 'Try demo' }],
   it: [],
 }
 
@@ -107,7 +101,7 @@ const navigationDe: NavigationTree = [
   },
   {
     title: 'Über',
-    items: [ 
+    items: [
       {
         title: 'Uns',
         href: '/de/ueber-uns/',
@@ -118,19 +112,14 @@ const navigationDe: NavigationTree = [
         title: 'Team',
         description: 'Wer versteckt sich hinter der Persona?',
       },
-  //     {
-  //       href: '/de/blog/',
-  //       title: 'Blog',
-  //       description: 'Der neuste Gossip, der gerade die Runden macht.',
-  //     },
     ],
   },
   //{
-    //title: 'Preise',
-    //href: '/de/preise/',
+  //title: 'Preise',
+  //href: '/de/preise/',
   //},
   {
-    href: '/de/demo/', 
+    href: '/de/demo/',
     title: 'Demo ausprobieren',
   },
   {
@@ -160,7 +149,8 @@ const navigationFr: NavigationTree = [
       {
         href: '/fr/fonctions/',
         title: 'Étendue des fonctions',
-        description: 'Liste détaillée de toutes les fonctionnalités de Payflink.',
+        description:
+          'Liste détaillée de toutes les fonctionnalités de Payflink.',
       },
       {
         href: '/fr/blog/',
@@ -188,19 +178,19 @@ const navigationFr: NavigationTree = [
         title: 'Team',
         description: 'Qui se cache derrière le personnage?',
       },
-  //     {
-  //       href: '/de/blog/',
-  //       title: 'Blog',
-  //       description: 'Der neuste Gossip, der gerade die Runden macht.',
-  //     },
+      //     {
+      //       href: '/de/blog/',
+      //       title: 'Blog',
+      //       description: 'Der neuste Gossip, der gerade die Runden macht.',
+      //     },
     ],
   },
   //{
-    //title: 'Preise',
-    //href: '/de/preise/',
+  //title: 'Preise',
+  //href: '/de/preise/',
   //},
   {
-    href: '/fr/démo/', 
+    href: '/fr/démo/',
     title: 'Essayez la démo',
   },
   {
@@ -258,19 +248,19 @@ const navigationEn: NavigationTree = [
         title: 'Team',
         description: 'Who is hiding behind the persona?',
       },
-  //     {
-  //       href: '/de/blog/',
-  //       title: 'Blog',
-  //       description: 'Der neuste Gossip, der gerade die Runden macht.',
-  //     },
+      //     {
+      //       href: '/de/blog/',
+      //       title: 'Blog',
+      //       description: 'Der neuste Gossip, der gerade die Runden macht.',
+      //     },
     ],
   },
   //{
-    //title: 'Preise',
-    //href: '/de/preise/',
+  //title: 'Preise',
+  //href: '/de/preise/',
   //},
   {
-    href: '/en/demo/', 
+    href: '/en/demo/',
     title: 'Try Demo',
   },
   {
@@ -287,7 +277,7 @@ export const globalNavigation: Navigation = {
   de: navigationDe,
   fr: navigationFr,
   en: navigationEn,
-  it: []
+  it: [],
 }
 
 const siteMapDe: SiteMapGroup[] = [
@@ -307,8 +297,8 @@ const siteMapDe: SiteMapGroup[] = [
         href: '/de/funktionsumfang/',
       },
       //{
-        //title: 'Preise',
-        //href: '/de/preise/',
+      //title: 'Preise',
+      //href: '/de/preise/',
       //},
       {
         href: '/de/demo/',
@@ -327,14 +317,14 @@ const siteMapDe: SiteMapGroup[] = [
         href: '/de/team/',
         title: 'Team',
       },
-  //     {
-  //       href: '/de/blog/',
-  //       title: 'Blog',
-  //     },
-  //     {
-  //       href: '/de/kontakt/',
-  //       title: 'Kontakt',
-  //     },
+      {
+        href: '/de/kontakt/',
+        title: 'Kontakt',
+      },
+      {
+        href: '/de/auftragsdatenverarbeitungsvereinbarung/',
+        title: 'AVV',
+      },
     ],
   },
   {
@@ -402,8 +392,8 @@ const siteMapFr: SiteMapGroup[] = [
         href: '/fr/fonctions/',
       },
       //{
-        //title: 'Preise',
-        //href: '/de/preise/',
+      //title: 'Preise',
+      //href: '/de/preise/',
       //},
       {
         href: '/fr/démo/',
@@ -422,14 +412,18 @@ const siteMapFr: SiteMapGroup[] = [
         href: '/fr/team/',
         title: 'Team',
       },
-  //     {
-  //       href: '/de/blog/',
-  //       title: 'Blog',
-  //     },
-  //     {
-  //       href: '/de/kontakt/',
-  //       title: 'Kontakt',
-  //     },
+      {
+        title: 'Contacter',
+        href: '/fr/contacter/',
+      },
+      {
+        href: '/de/auftragsdatenverarbeitungsvereinbarung/',
+        title: 'ADDV',
+      },
+      //     {
+      //       href: '/de/blog/',
+      //       title: 'Blog',
+      //     },
     ],
   },
   // {
@@ -497,8 +491,8 @@ const siteMapEn: SiteMapGroup[] = [
         href: '/en/functions/',
       },
       //{
-        //title: 'Preise',
-        //href: '/de/preise/',
+      //title: 'Preise',
+      //href: '/de/preise/',
       //},
       {
         href: '/en/demo/',
@@ -517,14 +511,18 @@ const siteMapEn: SiteMapGroup[] = [
         href: '/en/team/',
         title: 'Team',
       },
-  //     {
-  //       href: '/de/blog/',
-  //       title: 'Blog',
-  //     },
-  //     {
-  //       href: '/de/kontakt/',
-  //       title: 'Kontakt',
-  //     },
+      {
+        href: '/en/contact/',
+        title: 'Contact',
+      },
+      {
+        title: 'Processing Agreement',
+        href: '/de/auftragsdatenverarbeitungsvereinbarung/',
+      },
+      //     {
+      //       href: '/de/blog/',
+      //       title: 'Blog',
+      //     },
     ],
   },
   // {
