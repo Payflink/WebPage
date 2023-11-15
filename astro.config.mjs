@@ -22,7 +22,11 @@ export default defineConfig(
     trailingSlash: 'always',
     integrations: [
       solid(),
-      sitemap(),
+      sitemap({
+        filter: (page) =>
+          page !== 'https://payflink.com/de/avv/' &&
+          page !== 'https://payflink.com/tracking/',
+      }),
       image({
         serviceEntryPoint: '@astrojs/image/sharp',
       }),
